@@ -2,7 +2,7 @@
 <!--File created using MBINCompiler version (1.55.0)-->
 <Data template="TkMaterialData">
   <Property name="Name" value="GlowSparkParticleMatt" />
-  <Property name="Class" value="Translucent" />
+  <Property name="Class" value="Additive" />
   <Property name="TransparencyLayerID" value="0" />
   <Property name="CastShadow" value="False" />
   <Property name="DisableZTest" value="False" />
@@ -17,12 +17,6 @@
     </Property>
     <Property value="TkMaterialFlags.xml">
       <Property name="MaterialFlag" value="_F10_NORECEIVESHADOW" />
-    </Property>
-    <Property value="TkMaterialFlags.xml">
-      <Property name="MaterialFlag" value="_F26_STRETCHY_PARTICLE" />
-    </Property>
-    <Property value="TkMaterialFlags.xml">
-      <Property name="MaterialFlag" value="_F27_VBTANGENT" />
     </Property>
   </Property>
   <Property name="Uniforms">
@@ -70,7 +64,7 @@
   <Property name="Samplers">
     <Property value="TkMaterialSampler.xml">
       <Property name="Name" value="gDiffuseMap" />
-      <Property name="Map" value="TEXTURES/EFFECTS/GLOWLINE.DDS" />
+      <Property name="Map" value="TEXTURES/EFFECTS/LINES/GLOW.DDS" />
       <Property name="IsCube" value="False" />
       <Property name="UseCompression" value="True" />
       <Property name="UseMipMaps" value="True" />
