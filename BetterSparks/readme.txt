@@ -1,4 +1,4 @@
-This is version 1.0 of a mod that will change how Laser and Gun hits and sparks looks in game.
+This is version 1.1 of a mod that will change how Laser and Gun hits and sparks looks in game.
 It's called better, but it's only different, not better at all.
 
 
@@ -42,3 +42,9 @@ Installation:
 	- Delete DisableMods.txt
 	- Create a folder called MODS
 	- Extract the .pak file to MODS
+
+
+CHANGELOG:
+
+1.0 - Initial version. 
+1.1 - Added glow spark and decreased number of sparks on gunhit. Adjusted values to laser hit.
