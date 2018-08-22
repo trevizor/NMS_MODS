@@ -13,10 +13,10 @@
       <Property name="MaterialFlag" value="_F01_DIFFUSEMAP" />
     </Property>
     <Property value="TkMaterialFlags.xml">
-      <Property name="MaterialFlag" value="_F09_TRANSPARENT" />
+      <Property name="MaterialFlag" value="_F03_NORMALMAP" />
     </Property>
-        <Property value="TkMaterialFlags.xml">
-      <Property name="MaterialFlag" value="_F07_UNLIT" />
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F09_TRANSPARENT" />
     </Property>
     <Property value="TkMaterialFlags.xml">
       <Property name="MaterialFlag" value="_F10_NORECEIVESHADOW" />
@@ -67,11 +67,23 @@
   <Property name="Samplers">
     <Property value="TkMaterialSampler.xml">
       <Property name="Name" value="gDiffuseMap" />
-      <Property name="Map" value="/TEXTURES/EFFECTS/PARTICLES/LASERSPARK.DDS" />
+      <Property name="Map" value="TEXTURES/EFFECTS/PARTICLES/BLOODSPLAT.DDS" />
       <Property name="IsCube" value="False" />
       <Property name="UseCompression" value="True" />
       <Property name="UseMipMaps" value="True" />
       <Property name="IsSRGB" value="True" />
+      <Property name="MaterialAlternativeId" value="" />
+      <Property name="TextureAddressMode" value="Wrap" />
+      <Property name="TextureFilterMode" value="Trilinear" />
+      <Property name="Anisotropy" value="0" />
+    </Property>
+    <Property value="TkMaterialSampler.xml">
+      <Property name="Name" value="gNormalMap" />
+      <Property name="Map" value="TEXTURES/EFFECTS/PARTICLES/BLOODSPLAT.NORMAL.DDS" />
+      <Property name="IsCube" value="False" />
+      <Property name="UseCompression" value="True" />
+      <Property name="UseMipMaps" value="True" />
+      <Property name="IsSRGB" value="False" />
       <Property name="MaterialAlternativeId" value="" />
       <Property name="TextureAddressMode" value="Wrap" />
       <Property name="TextureFilterMode" value="Trilinear" />
