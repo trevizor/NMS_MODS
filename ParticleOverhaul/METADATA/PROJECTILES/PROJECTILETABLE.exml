@@ -67,7 +67,7 @@
       <Property name="BehaviourFlags" value="None" />
       <Property name="Class" value="Player" />
       <Property name="DefaultImpact" value="GUNHIT" />
-      <Property name="CriticalImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="ROBOSMACK" />
@@ -76,7 +76,7 @@
           </Property>
         </Property>
         <Property value="GcProjectileImpactData.xml">
-          <Property name="Effect" value="GUNHIT" />
+          <Property name="Effect" value="BLOODSPLAT" />
           <Property name="ImpactType" value="GcProjectileImpactType.xml">
             <Property name="Impact" value="Creature" />
           </Property>
@@ -148,7 +148,7 @@
       <Property name="BehaviourFlags" value="None" />
       <Property name="Class" value="Player" />
       <Property name="DefaultImpact" value="GUNHIT" />
-      <Property name="CriticalImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="ROBOSMACK" />
@@ -157,7 +157,7 @@
           </Property>
         </Property>
         <Property value="GcProjectileImpactData.xml">
-          <Property name="Effect" value="GUNHIT" />
+          <Property name="Effect" value="BLOODSPLAT" />
           <Property name="ImpactType" value="GcProjectileImpactType.xml">
             <Property name="Impact" value="Creature" />
           </Property>
@@ -229,7 +229,7 @@
       <Property name="BehaviourFlags" value="ScareCreatures" />
       <Property name="Class" value="Player" />
       <Property name="DefaultImpact" value="GUNHIT" />
-      <Property name="CriticalImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="GUNCRIT" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="GUNHIT_PLAYER" />
@@ -238,13 +238,13 @@
           </Property>
         </Property>
         <Property value="GcProjectileImpactData.xml">
-          <Property name="Effect" value="GUNHIT" />
+          <Property name="Effect" value="BLOODSPLAT" />
           <Property name="ImpactType" value="GcProjectileImpactType.xml">
             <Property name="Impact" value="Creature" />
           </Property>
         </Property>
         <Property value="GcProjectileImpactData.xml">
-          <Property name="Effect" value="GUNHIT" />
+          <Property name="Effect" value="DRONEHIT" />
           <Property name="ImpactType" value="GcProjectileImpactType.xml">
             <Property name="Impact" value="Robot" />
           </Property>
@@ -316,16 +316,16 @@
       <Property name="BehaviourFlags" value="ScareCreatures" />
       <Property name="Class" value="Player" />
       <Property name="DefaultImpact" value="GUNHIT" />
-      <Property name="CriticalImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
-          <Property name="Effect" value="GUNHIT" />
+          <Property name="Effect" value="BLOODSPLAT" />
           <Property name="ImpactType" value="GcProjectileImpactType.xml">
             <Property name="Impact" value="Creature" />
           </Property>
         </Property>
         <Property value="GcProjectileImpactData.xml">
-          <Property name="Effect" value="GUNHIT" />
+          <Property name="Effect" value="DRONEHIT" />
           <Property name="ImpactType" value="GcProjectileImpactType.xml">
             <Property name="Impact" value="Robot" />
           </Property>
@@ -397,16 +397,16 @@
       <Property name="BehaviourFlags" value="ScareCreatures" />
       <Property name="Class" value="Player" />
       <Property name="DefaultImpact" value="GUNHIT" />
-      <Property name="CriticalImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
-          <Property name="Effect" value="GUNHIT" />
+          <Property name="Effect" value="BLOODSPLAT" />
           <Property name="ImpactType" value="GcProjectileImpactType.xml">
             <Property name="Impact" value="Creature" />
           </Property>
         </Property>
         <Property value="GcProjectileImpactData.xml">
-          <Property name="Effect" value="GUNHIT" />
+          <Property name="Effect" value="DRONEHIT" />
           <Property name="ImpactType" value="GcProjectileImpactType.xml">
             <Property name="Impact" value="Robot" />
           </Property>
@@ -478,7 +478,7 @@
       <Property name="BehaviourFlags" value="ExplosionForce" />
       <Property name="Class" value="Player" />
       <Property name="DefaultImpact" value="GRENADEEXPLODE" />
-      <Property name="CriticalImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="" />
       <Property name="Impacts" />
     </Property>
     <Property value="GcProjectileData.xml">
@@ -546,7 +546,7 @@
       <Property name="BehaviourFlags" value="DestroyTerrain" />
       <Property name="Class" value="Player" />
       <Property name="DefaultImpact" value="GRENADEEXPLODE" />
-      <Property name="CriticalImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="" />
       <Property name="Impacts" />
     </Property>
     <Property value="GcProjectileData.xml">
@@ -614,7 +614,7 @@
       <Property name="BehaviourFlags" value="None" />
       <Property name="Class" value="Robot" />
       <Property name="DefaultImpact" value="GRENADEEXPLODE" />
-      <Property name="CriticalImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="" />
       <Property name="Impacts" />
     </Property>
     <Property value="GcProjectileData.xml">
@@ -682,10 +682,10 @@
       <Property name="BehaviourFlags" value="ScareCreatures" />
       <Property name="Class" value="Robot" />
       <Property name="DefaultImpact" value="GUNHIT" />
-      <Property name="CriticalImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
-          <Property name="Effect" value="GUNHIT" />
+          <Property name="Effect" value="BLOODSPLAT" />
           <Property name="ImpactType" value="GcProjectileImpactType.xml">
             <Property name="Impact" value="Creature" />
           </Property>
@@ -757,7 +757,7 @@
       <Property name="BehaviourFlags" value="None" />
       <Property name="Class" value="Robot" />
       <Property name="DefaultImpact" value="GUNHIT" />
-      <Property name="CriticalImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="" />
       <Property name="Impacts" />
     </Property>
     <Property value="GcProjectileData.xml">
@@ -825,7 +825,7 @@
       <Property name="BehaviourFlags" value="None" />
       <Property name="Class" value="PlayerShip" />
       <Property name="DefaultImpact" value="PLAYERSHIPHIT" />
-      <Property name="CriticalImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="SHIPGUNHIT" />
@@ -912,7 +912,7 @@
       <Property name="BehaviourFlags" value="None" />
       <Property name="Class" value="PlayerShip" />
       <Property name="DefaultImpact" value="PLAYERSHIPHIT" />
-      <Property name="CriticalImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="SHIPGUNHIT" />
@@ -999,7 +999,7 @@
       <Property name="BehaviourFlags" value="None" />
       <Property name="Class" value="PlayerShip" />
       <Property name="DefaultImpact" value="PLAYERSHIPHIT" />
-      <Property name="CriticalImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="SHIPGUNHIT" />
@@ -1086,7 +1086,7 @@
       <Property name="BehaviourFlags" value="None" />
       <Property name="Class" value="PlayerShip" />
       <Property name="DefaultImpact" value="PLAYERSHIPHIT" />
-      <Property name="CriticalImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="SHIPGUNHIT" />
@@ -1173,7 +1173,7 @@
       <Property name="BehaviourFlags" value="None" />
       <Property name="Class" value="Ship" />
       <Property name="DefaultImpact" value="SHIPGUNHIT" />
-      <Property name="CriticalImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="ASTEROIDEXPLODE" />
@@ -1248,7 +1248,7 @@
       <Property name="BehaviourFlags" value="ScareCreatures" />
       <Property name="Class" value="Ship" />
       <Property name="DefaultImpact" value="SHIPGUNHIT" />
-      <Property name="CriticalImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="ASTEROIDEXPLODE" />
@@ -1323,7 +1323,7 @@
       <Property name="BehaviourFlags" value="None" />
       <Property name="Class" value="Ship" />
       <Property name="DefaultImpact" value="SHIPGUNHIT" />
-      <Property name="CriticalImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="ASTEROIDEXPLODE" />
@@ -1398,7 +1398,7 @@
       <Property name="BehaviourFlags" value="None" />
       <Property name="Class" value="Ship" />
       <Property name="DefaultImpact" value="SHIPGUNHIT" />
-      <Property name="CriticalImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="ASTEROIDEXPLODE" />
@@ -1473,7 +1473,7 @@
       <Property name="BehaviourFlags" value="None" />
       <Property name="Class" value="Ship" />
       <Property name="DefaultImpact" value="SHIPGUNHIT" />
-      <Property name="CriticalImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="ASTEROIDEXPLODE" />
@@ -1548,7 +1548,7 @@
       <Property name="BehaviourFlags" value="None" />
       <Property name="Class" value="Ship" />
       <Property name="DefaultImpact" value="SHIPGUNHIT" />
-      <Property name="CriticalImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="ASTEROIDEXPLODE" />
@@ -1623,7 +1623,7 @@
       <Property name="BehaviourFlags" value="None" />
       <Property name="Class" value="Ship" />
       <Property name="DefaultImpact" value="SHIPGUNHIT" />
-      <Property name="CriticalImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="ASTEROIDEXPLODE" />
@@ -1698,7 +1698,7 @@
       <Property name="BehaviourFlags" value="None" />
       <Property name="Class" value="Ship" />
       <Property name="DefaultImpact" value="SHIPGUNHIT" />
-      <Property name="CriticalImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="ASTEROIDEXPLODE" />
@@ -1773,7 +1773,7 @@
       <Property name="BehaviourFlags" value="None" />
       <Property name="Class" value="Player" />
       <Property name="DefaultImpact" value="MISSILEHIT" />
-      <Property name="CriticalImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="" />
       <Property name="Impacts" />
     </Property>
     <Property value="GcProjectileData.xml">
@@ -1841,7 +1841,7 @@
       <Property name="BehaviourFlags" value="ScareCreatures" />
       <Property name="Class" value="Player" />
       <Property name="DefaultImpact" value="VEHICLEGUNHIT" />
-      <Property name="CriticalImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="" />
       <Property name="Impacts" />
     </Property>
     <Property value="GcProjectileData.xml">
@@ -1909,7 +1909,7 @@
       <Property name="BehaviourFlags" value="None" />
       <Property name="Class" value="PlayerShip" />
       <Property name="DefaultImpact" value="MISSILEHIT" />
-      <Property name="CriticalImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="" />
       <Property name="Impacts" />
     </Property>
     <Property value="GcProjectileData.xml">
@@ -2015,13 +2015,13 @@
           </Property>
         </Property>
         <Property value="GcProjectileImpactData.xml">
-          <Property name="Effect" value="LASERHIT" />
+          <Property name="Effect" value="LASERSUBSTANCE" />
           <Property name="ImpactType" value="GcProjectileImpactType.xml">
             <Property name="Impact" value="Rock" />
           </Property>
         </Property>
         <Property value="GcProjectileImpactData.xml">
-          <Property name="Effect" value="LASERHIT" />
+          <Property name="Effect" value="LASERSUBSTANCE" />
           <Property name="ImpactType" value="GcProjectileImpactType.xml">
             <Property name="Impact" value="Substance" />
           </Property>
@@ -2098,7 +2098,7 @@
           </Property>
         </Property>
         <Property value="GcProjectileImpactData.xml">
-          <Property name="Effect" value="LASERHIT" />
+          <Property name="Effect" value="LASERSUBSTANCE" />
           <Property name="ImpactType" value="GcProjectileImpactType.xml">
             <Property name="Impact" value="Rock" />
           </Property>
@@ -2458,13 +2458,13 @@
       <Property name="ImpactEffect" value="LASERHIT" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
-          <Property name="Effect" value="LASERHIT" />
+          <Property name="Effect" value="LASERSUBSTANCE" />
           <Property name="ImpactType" value="GcProjectileImpactType.xml">
             <Property name="Impact" value="Rock" />
           </Property>
         </Property>
         <Property value="GcProjectileImpactData.xml">
-          <Property name="Effect" value="LASERHIT" />
+          <Property name="Effect" value="LASERSUBSTANCE" />
           <Property name="ImpactType" value="GcProjectileImpactType.xml">
             <Property name="Impact" value="Substance" />
           </Property>
