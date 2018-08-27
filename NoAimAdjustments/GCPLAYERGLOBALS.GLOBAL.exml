@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (1.55.0)-->
+<!--File created using MBINCompiler version (1.58.0)-->
 <Data template="GcPlayerGlobals">
   <Property name="InteractNearbyRadiusEnabled" value="False" />
   <Property name="DebugExperience" value="False" />
@@ -18,6 +18,18 @@
     <Property name="t" value="0" />
   </Property>
   <Property name="DebugNumDrones" value="2" />
+  <Property name="DebugWalkerSpawn" value="Vector4f.xml">
+    <Property name="x" value="0" />
+    <Property name="y" value="1" />
+    <Property name="z" value="0" />
+    <Property name="t" value="0" />
+  </Property>
+  <Property name="DebugWalkerTarget" value="Vector4f.xml">
+    <Property name="x" value="0" />
+    <Property name="y" value="0" />
+    <Property name="z" value="0" />
+    <Property name="t" value="0" />
+  </Property>
   <Property name="DebugFlybyTarget" value="Vector4f.xml">
     <Property name="x" value="62000.39" />
     <Property name="y" value="-28276.99" />
@@ -36,7 +48,15 @@
     <Property name="UseSeedValue" value="False" />
   </Property>
   <Property name="DebugExperienceCamShake" value="" />
+  <Property name="CockpitEjectTestRadius" value="1" />
+  <Property name="CockpitEjectTestStartHeightOffset" value="2.5" />
+  <Property name="CockpitEjectTestEndHeightOffset" value="-2.5" />
+  <Property name="CockpitEjectFirstPersonOffsetTime" value="0.5" />
+  <Property name="CockpitEjectFirstPersonOffset" value="2.5" />
   <Property name="MinBinocActiveTime" value="0.6" />
+  <Property name="RobotMultiplierWithFriends" value="2" />
+  <Property name="DroneStartLocationRadius" value="3000" />
+  <Property name="ShipSummonLastSafeMargin" value="20" />
   <Property name="CreativeModeDeathFadeInTime" value="1" />
   <Property name="CreativeModeDeathFadeOutTime" value="1" />
   <Property name="NumberOfWarpsRequiredForFreightersToSpawn" value="2" />
@@ -350,10 +370,10 @@
   <Property name="WantedTimeoutAggressive" value="20" />
   <Property name="WantedTimeout">
     <Property value="30" />
-    <Property value="30" />
     <Property value="40" />
     <Property value="40" />
     <Property value="60" />
+    <Property value="80" />
   </Property>
   <Property name="WantedEscalateTime">
     <Property value="-1" />
