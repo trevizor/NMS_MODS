@@ -16,6 +16,7 @@ CHANGELOG:
 1.3 - General Improvements
 - Adjusted debris sizes
 - Changed texture for on groud glow sparks
+- Adjusted explosion shockwave size
 - Removed unused files to increase compatibility
 
 
