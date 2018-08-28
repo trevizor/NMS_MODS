@@ -18,6 +18,10 @@ CHANGELOG:
 - Changed texture for on groud glow sparks
 - Adjusted explosion shockwave size
 - Removed unused files to increase compatibility
+1.4 - Smoke everywhere!
+- Added smoke effects to sentinel explosions
+- Added sparks to spaceship engine debris
+- Increased draw distance for planet particle effects (This may affect performance)
 
 
 This mod changes the following files:
