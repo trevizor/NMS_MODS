@@ -21,8 +21,11 @@ CHANGELOG:
 1.4 - Smoke everywhere!
 - Added smoke effects to sentinel explosions
 - Added sparks to spaceship engine debris
-- Increased draw distance for planet particle effects (This may affect performance, please let me know if you experience slow downs)
-
+- Increased draw distance for planet particle effects 
+1.5 - Small tweaks and adjustments
+- Re-added debris to door explosions
+- Small tweaks to glowspark emitters and textures
+- Tweaked sentinel smoke effect
 
 This mod changes the following files:
 
