@@ -108,6 +108,12 @@ sampler gBufferMap = sampler_state
     TexUnit = 18;
 };
 
+sampler gRefraction = sampler_state
+{
+    Address = Wrap;
+    TexUnit = 7;
+};
+
 
 // Uniforms
 
