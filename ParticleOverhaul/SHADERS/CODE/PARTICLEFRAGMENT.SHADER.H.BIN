@@ -245,7 +245,7 @@ FRAGMENT_MAIN_COLOUR_SRT
         
    #endif
 
-   #ifdef D_REFRACT
+   #ifdef _F02_SKINNED
     half4 bumpTex=2.0 * tex2D(tex0, gRefraction.xy) - 1.0;
     float4 vScale = 1.5;
     // displace texture coordinates    
