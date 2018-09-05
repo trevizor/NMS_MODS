@@ -28,7 +28,7 @@
   </Property>
   <Property name="Children">
     <Property value="TkSceneNodeData.xml">
-      <Property name="Name" value="SpaceDebris" />
+      <Property name="Name" value="PHYS_SPARK" />
       <Property name="Type" value="MESH" />
       <Property name="Transform" value="TkTransformData.xml">
         <Property name="TransX" value="0" />
@@ -150,7 +150,7 @@
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="ATTACHMENT" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\DEBRIS\SPACE\SMALLDEBRIS\ENTITIES\SPACEDEBRIS.ENTITY.MBIN" />
+          <Property name="Value" value="MODELS\COMMON\PROJECTILES\PHYS_SPARK\PHYS_SPARK.ENTITY.MBIN" />
         </Property>
       </Property>
       <Property name="Children">
@@ -300,7 +300,7 @@
             <Property value="TkSceneNodeAttributeData.xml">
               <Property name="Name" value="RADIUS" />
               <Property name="AltID" value="" />
-              <Property name="Value" value="0.900933" />
+              <Property name="Value" value="0.01" />
             </Property>
           </Property>
           <Property name="Children" />
@@ -325,12 +325,12 @@
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="MATERIAL" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS\EFFECTS\DEBRIS\SPACE\SMALLDEBRIS\SMALLDEBRIS_SPARKS\GLOWSPARKPARTICLEMATT.MATERIAL.MBIN" />
+          <Property name="Value" value="MODELS\COMMON\PROJECTILES\PHYS_SPARK\FLASHMAT.MATERIAL.MBIN" />
         </Property>
         <Property value="TkSceneNodeAttributeData.xml">
           <Property name="Name" value="DATA" />
           <Property name="AltID" value="" />
-          <Property name="Value" value="MODELS/EFFECTS/DEBRIS/SPACE/SMALLDEBRIS/SMALLDEBRIS_SPARKS/GlowSparkEmitter.particle.mXml" />
+          <Property name="Value" value="MODELS/COMMON/PROJECTILES/PHYS_SPARK/FLASHEMITTER.PARTICLE.mXml" />
         </Property>
       </Property>
       <Property name="Children" />
