@@ -4,11 +4,11 @@
   <Property name="StartEnabled" value="True" />
   <Property name="Oneshot" value="False" />
   <Property name="MaxCount" value="1000" />
-  <Property name="EmissionRate" value="25" />
+  <Property name="EmissionRate" value="60" />
   <Property name="Delay" value="0" />
-  <Property name="ParticleLife" value="3" />
-  <Property name="EmitterLife" value="0.05" />
-  <Property name="EmitterMidLifeRatio" value="0.3" />
+  <Property name="ParticleLife" value="1.5" />
+  <Property name="EmitterLife" value="0.1" />
+  <Property name="EmitterMidLifeRatio" value="0.8" />
   <Property name="EmitterLifeCurve1" value="TkCurveType.xml">
     <Property name="Curve" value="Linear" />
   </Property>
@@ -19,13 +19,13 @@
   <Property name="EmitterSpreadAngleMin" value="0" />
   <Property name="EmitterDirection" value="Vector4f.xml">
     <Property name="x" value="0" />
-    <Property name="y" value="2.2" />
+    <Property name="y" value="3" />
     <Property name="z" value="0" />
     <Property name="t" value="0" />
   </Property>
-  <Property name="EmitterGravity" value="-25" />
+  <Property name="EmitterGravity" value="-20" />
   <Property name="EmitterDamping" value="0" />
-  <Property name="Variation" value="4" />
+  <Property name="Variation" value="3" />
   <Property name="StartOffset" value="0" />
   <Property name="SizeStart" value="0.075" />
   <Property name="SizeMiddle" value="0.025" />
@@ -39,20 +39,20 @@
   <Property name="AlphaVariance" value="0" />
   <Property name="ColourStart" value="Colour.xml">
     <Property name="R" value="1" />
-    <Property name="G" value="1" />
-    <Property name="B" value="1" />
+    <Property name="G" value="0.7" />
+    <Property name="B" value="0.5" />
     <Property name="A" value="1" />
   </Property>
   <Property name="ColourMiddle" value="Colour.xml">
     <Property name="R" value="1" />
-    <Property name="G" value="0.8" />
-    <Property name="B" value="0.3" />
+    <Property name="G" value="0.7" />
+    <Property name="B" value="0.5" />
     <Property name="A" value="0.7" />
   </Property>
   <Property name="ColourEnd" value="Colour.xml">
-    <Property name="R" value="0.7" />
-    <Property name="G" value="0.3" />
-    <Property name="B" value="0" />
+    <Property name="R" value="1" />
+    <Property name="G" value="0.7" />
+    <Property name="B" value="0.5" />
     <Property name="A" value="0" />
   </Property>
   <Property name="UserColour" value="" />
