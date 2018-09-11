@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (1.58.0)-->
+<!--File created using MBINCompiler version (1.59.0)-->
 <Data template="GcPlayerGlobals">
   <Property name="InteractNearbyRadiusEnabled" value="False" />
   <Property name="DebugExperience" value="False" />
+  <Property name="DefaultShipFilename" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTER_PROC.SCENE.MBIN" />
+  <Property name="DefaultShipSeed" value="GcSeed.xml">
+    <Property name="Seed" value="-6537067675307744199" />
+    <Property name="UseSeedValue" value="True" />
+  </Property>
   <Property name="DebugExperienceRender" value="False" />
   <Property name="DebugDroneScanPlayer" value="False" />
   <Property name="DebugDroneSpawn" value="Vector4f.xml">
@@ -517,7 +522,9 @@
   <Property name="AutoAimRadiusExtra" value="2" />
   <Property name="AutoAimStickyMin" value="1" />
   <Property name="AutoAimStickyMax" value="0.25" />
-  <Property name="AutoAimDotCurve" value="0" />
+  <Property name="AutoAimDotCurve" value="TkCurveType.xml">
+    <Property name="Curve" value="Linear" />
+  </Property>
   <Property name="AutoAimCentreOffsetCurve" value="TkCurveType.xml">
     <Property name="Curve" value="EaseOutSine" />
   </Property>
