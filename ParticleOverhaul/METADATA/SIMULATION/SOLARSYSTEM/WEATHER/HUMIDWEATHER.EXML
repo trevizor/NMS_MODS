@@ -86,7 +86,7 @@
         </Property>
       </Property>
     </Property>
-    <Property name="CloudRatio" value="0.85" />
+    <Property name="CloudRatio" value="0.55" />
     <Property name="FullscreenEffect" value="0" />
     <Property name="DepthOfField" value="1" />
     <Property name="DepthOfFieldDistance" value="2000" />
@@ -196,11 +196,11 @@
     <Property name="FogHeight" value="8" />
     <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
       <Property name="Settings">
-        <Property value="GcHeavyAirSettingValues.xml">
+        <Property value="GcHeavyAirSettingValues.xml"> <!-- fireflies -->
           <Property name="Thickness" value="1" />
           <Property name="Speed" value="4" />
-          <Property name="Alpha1" value="1" />
-          <Property name="Alpha2" value="1" />
+          <Property name="Alpha1" value="0" />
+          <Property name="Alpha2" value="0" />
           <Property name="Colour1" value="TkPaletteTexture.xml">
             <Property name="Palette" value="Leaf" />
             <Property name="ColourAlt" value="Primary" />
@@ -211,8 +211,8 @@
           </Property>
         </Property>
         <Property value="GcHeavyAirSettingValues.xml">
-          <Property name="Thickness" value="0.2" />
-          <Property name="Speed" value="5" />
+          <Property name="Thickness" value="1" />
+          <Property name="Speed" value="1" />
           <Property name="Alpha1" value="1" />
           <Property name="Alpha2" value="1" />
           <Property name="Colour1" value="TkPaletteTexture.xml">
@@ -224,7 +224,7 @@
             <Property name="ColourAlt" value="Alternative1" />
           </Property>
         </Property>
-        <Property value="GcHeavyAirSettingValues.xml">
+        <Property value="GcHeavyAirSettingValues.xml"> <!-- fog -->
           <Property name="Thickness" value="0.5" />
           <Property name="Speed" value="0.7" />
           <Property name="Alpha1" value="0.07" />
@@ -450,7 +450,7 @@
   </Property>
   <Property name="Storms">
     <Property value="GcStormProperties.xml">
-      <Property name="Weighting" value="1" />
+      <Property name="Weighting" value="0" />
       <Property name="Fog" value="GcFogProperties.xml">
         <Property name="FogStrength" value="2" />
         <Property name="FogMax" value="2" />
@@ -465,31 +465,31 @@
           <Property name="Settings">
             <Property value="GcHeavyAirSettingValues.xml">
               <Property name="Thickness" value="0" />
-              <Property name="Speed" value="2" />
+              <Property name="Speed" value="1" />
               <Property name="Alpha1" value="0" />
               <Property name="Alpha2" value="0" />
             </Property>
             <Property value="GcHeavyAirSettingValues.xml">
-              <Property name="Thickness" value="1" />
-              <Property name="Speed" value="2" />
+              <Property name="Thickness" value="3" />
+              <Property name="Speed" value="1" />
               <Property name="Alpha1" value="1" />
               <Property name="Alpha2" value="1" />
             </Property>
             <Property value="GcHeavyAirSettingValues.xml">
               <Property name="Thickness" value="3" />
-              <Property name="Speed" value="2" />
-              <Property name="Alpha1" value="0.8" />
-              <Property name="Alpha2" value="0.8" />
+              <Property name="Speed" value="1" />
+              <Property name="Alpha1" value="0.7" />
+              <Property name="Alpha2" value="0.4" />
             </Property>
             <Property value="GcHeavyAirSettingValues.xml">
-              <Property name="Thickness" value="1" />
-              <Property name="Speed" value="2" />
+              <Property name="Thickness" value="3" />
+              <Property name="Speed" value="1" />
               <Property name="Alpha1" value="1" />
               <Property name="Alpha2" value="1" />
             </Property>
             <Property value="GcHeavyAirSettingValues.xml">
-              <Property name="Thickness" value="2" />
-              <Property name="Speed" value="2" />
+              <Property name="Thickness" value="3" />
+              <Property name="Speed" value="1" />
               <Property name="Alpha1" value="1" />
               <Property name="Alpha2" value="1" />
             </Property>

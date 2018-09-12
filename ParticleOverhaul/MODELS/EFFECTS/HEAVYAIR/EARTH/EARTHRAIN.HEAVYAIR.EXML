@@ -2,12 +2,12 @@
 <!--File created using MBINCompiler version (1.59.0)-->
 <Data template="TkHeavyAirData">
   <Property name="Material" value="MODELS/EFFECTS/COMMON/MATERIALS/RAINDROP.MATERIAL.MBIN" />
-  <Property name="NumberOfParticles" value="1500" />
-  <Property name="Radius" value="50" />
+  <Property name="NumberOfParticles" value="6000" />
+  <Property name="Radius" value="30" />
   <Property name="RadiusY" value="150" />
-  <Property name="MinParticleLifetime" value="1" />
-  <Property name="MaxParticleLifetime" value="1" />
-  <Property name="FadeTime" value="0.2" />
+  <Property name="MinParticleLifetime" value="2" />
+  <Property name="MaxParticleLifetime" value="2" />
+  <Property name="FadeTime" value="0.01" />
   <Property name="SpeedFadeInTime" value="0" />
   <Property name="MinVisibleSpeed" value="0" />
   <Property name="SpeedFadeOutTime" value="0" />
@@ -33,8 +33,8 @@
   </Property>
   <Property name="TwinkleRange" value="Vector4f.xml">
     <Property name="x" value="0" />
-    <Property name="y" value="0" />
-    <Property name="z" value="0" />
+    <Property name="y" value="1" />
+    <Property name="z" value="20" />
     <Property name="t" value="0" />
   </Property>
   <Property name="AmplitudeMin" value="Vector4f.xml">
@@ -50,16 +50,16 @@
     <Property name="t" value="0" />
   </Property>
   <Property name="Colour1" value="Colour.xml">
-    <Property name="R" value="0.334" />
-    <Property name="G" value="0.33" />
-    <Property name="B" value="0.327" />
-    <Property name="A" value="0.5" />
+    <Property name="R" value="0.937255" />
+    <Property name="G" value="0.921569" />
+    <Property name="B" value="0.960784" />
+    <Property name="A" value="0.8" />
   </Property>
   <Property name="Colour2" value="Colour.xml">
-    <Property name="R" value="0.377" />
-    <Property name="G" value="0.321" />
-    <Property name="B" value="0.261" />
-    <Property name="A" value="0.3" />
+    <Property name="R" value="0.968627" />
+    <Property name="G" value="0.937255" />
+    <Property name="B" value="0.94902" />
+    <Property name="A" value="0.7" />
   </Property>
   <Property name="EmitterShape" value="Sphere" />
 </Data>
