@@ -86,15 +86,29 @@
           <Property name="Number" value="5" />
           <Property name="Radius" value="20" />
           <Property name="Scale" value="0.02" />
-          <Property name="Speed" value="10" />
-          <Property name="AngularSpeed" value="100" />
+          <Property name="Speed" value="15" />
+          <Property name="AngularSpeed" value="0.2" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="True" />
+          </Property>
+        </Property>
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/SPACE/ASTEROIDS/ASTEROIDXL.SCENE.MBIN" />
+          </Property>
+          <Property name="Number" value="3" />
+          <Property name="Radius" value="20" />
+          <Property name="Scale" value="0.02" />
+          <Property name="Speed" value="5" />
+          <Property name="AngularSpeed" value="0.1" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="True" />
           </Property>
         </Property>
       </Property>
-      <Property name="Life" value="0.6" />
+      <Property name="Life" value="6" />
       <Property name="Scale" value="40" />
       <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="50" />
@@ -132,11 +146,11 @@
           <Property name="Filename" value="TkModelResource.xml">
             <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/LARGERESOURCEDEBRIS.SCENE.MBIN" />
           </Property>
-          <Property name="Number" value="3" />
+          <Property name="Number" value="6" />
           <Property name="Radius" value="1" />
           <Property name="Scale" value="0.2" />
-          <Property name="Speed" value="2" />
-          <Property name="AngularSpeed" value="1" />
+          <Property name="Speed" value="8" />
+          <Property name="AngularSpeed" value="0.05" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -149,15 +163,15 @@
           <Property name="Number" value="6" />
           <Property name="Radius" value="0.8" />
           <Property name="Scale" value="0.2" />
-          <Property name="Speed" value="5" />
-          <Property name="AngularSpeed" value="1" />
+          <Property name="Speed" value="12" />
+          <Property name="AngularSpeed" value="0.1" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
           </Property>
         </Property>
       </Property>
-      <Property name="Life" value="1" />
+      <Property name="Life" value="6" />
       <Property name="Scale" value="5" />
       <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="50" />
@@ -181,8 +195,8 @@
           <Property name="Number" value="3" />
           <Property name="Radius" value="20" />
           <Property name="Scale" value="0.07" />
-          <Property name="Speed" value="10" />
-          <Property name="AngularSpeed" value="500" />
+          <Property name="Speed" value="300" />
+          <Property name="AngularSpeed" value="1" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -196,14 +210,14 @@
           <Property name="Radius" value="50" />
           <Property name="Scale" value="0.04" />
           <Property name="Speed" value="1000" />
-          <Property name="AngularSpeed" value="800" />
+          <Property name="AngularSpeed" value="2" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
           </Property>
         </Property>
       </Property>
-      <Property name="Life" value="0.6" />
+      <Property name="Life" value="6" />
       <Property name="Scale" value="40" />
       <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="50" />
@@ -224,18 +238,18 @@
           <Property name="Filename" value="TkModelResource.xml">
             <Property name="Filename" value="MODELS/SPACE/ASTEROIDS/SMALLASTEROID.SCENE.MBIN" />
           </Property>
-          <Property name="Number" value="5" />
+          <Property name="Number" value="10" />
           <Property name="Radius" value="20" />
           <Property name="Scale" value="0.2" />
-          <Property name="Speed" value="10" />
-          <Property name="AngularSpeed" value="100" />
+          <Property name="Speed" value="20" />
+          <Property name="AngularSpeed" value="1" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
           </Property>
         </Property>
       </Property>
-      <Property name="Life" value="0.5" />
+      <Property name="Life" value="6" />
       <Property name="Scale" value="40" />
       <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="50" />
@@ -251,8 +265,37 @@
       <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="1113666341" />
       </Property>
-      <Property name="Debris" />
-      <Property name="Life" value="0.8" />
+      <Property name="Debris">
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/LARGERESOURCEDEBRIS.SCENE.MBIN" />
+          </Property>
+          <Property name="Number" value="6" />
+          <Property name="Radius" value="1" />
+          <Property name="Scale" value="0.2" />
+          <Property name="Speed" value="12" />
+          <Property name="AngularSpeed" value="0.2" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/LARGERESOURCEDEBRIS.SCENE.MBIN" />
+          </Property>
+          <Property name="Number" value="6" />
+          <Property name="Radius" value="0.8" />
+          <Property name="Scale" value="0.2" />
+          <Property name="Speed" value="6" />
+          <Property name="AngularSpeed" value="0.4" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+      </Property>
+      <Property name="Life" value="6" />
       <Property name="Scale" value="20" />
       <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="50" />
@@ -327,7 +370,7 @@
           <Property name="Number" value="1" />
           <Property name="Radius" value="10" />
           <Property name="Scale" value="2" />
-          <Property name="Speed" value="100" />
+          <Property name="Speed" value="10" />
           <Property name="AngularSpeed" value="0.2" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
@@ -342,7 +385,7 @@
           <Property name="Radius" value="10" />
           <Property name="Scale" value="3" />
           <Property name="Speed" value="200" />
-          <Property name="AngularSpeed" value="40" />
+          <Property name="AngularSpeed" value="2" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -355,8 +398,8 @@
           <Property name="Number" value="10" />
           <Property name="Radius" value="15" />
           <Property name="Scale" value="3" />
-          <Property name="Speed" value="800" />
-          <Property name="AngularSpeed" value="12" />
+          <Property name="Speed" value="400" />
+          <Property name="AngularSpeed" value="1" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -370,7 +413,7 @@
           <Property name="Radius" value="10" />
           <Property name="Scale" value="4" />
           <Property name="Speed" value="20" />
-          <Property name="AngularSpeed" value="60" />
+          <Property name="AngularSpeed" value="3" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
