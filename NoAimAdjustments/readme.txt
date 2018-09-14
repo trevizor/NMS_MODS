@@ -6,8 +6,10 @@ Installation:
 	- Navigate to No Man's Sky/GAMEDATA/PCBANKS
 	- Delete DisableMods.txt
 	- Create a folder called MODS
-	- Extract the .pak file to MODS
+	- Extract the desired .pak file to MODS
+
+1.59 and Experimental builds.
 
 It modifies:
-GCGRAPHICSGLOBALS.GLOBAL.MBIN
+GCPLAYERGLOBALS.GLOBAL.MBIN
 
