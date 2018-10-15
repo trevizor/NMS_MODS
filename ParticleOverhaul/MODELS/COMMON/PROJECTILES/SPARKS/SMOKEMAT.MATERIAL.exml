@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (1.55.0)-->
 <Data template="TkMaterialData">
-  <Property name="Name" value="RobotSparkMat" />
+  <Property name="Name" value="SmokeMat" />
   <Property name="Class" value="Additive" />
   <Property name="TransparencyLayerID" value="0" />
   <Property name="CastShadow" value="False" />
@@ -23,6 +23,9 @@
     </Property>
     <Property value="TkMaterialFlags.xml">
       <Property name="MaterialFlag" value="_F22_TRANSPARENT_SCALAR" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F26_STRETCHY_PARTICLE" />
     </Property>
     <Property value="TkMaterialFlags.xml">
       <Property name="MaterialFlag" value="_F27_VBTANGENT" />
@@ -73,7 +76,7 @@
   <Property name="Samplers">
     <Property value="TkMaterialSampler.xml">
       <Property name="Name" value="gDiffuseMap" />
-      <Property name="Map" value="TEXTURES/EFFECTS/LINES/GLOW.DDS" />
+      <Property name="Map" value="TEXTURES/EFFECTS/GLOWLINE.DDS" />
       <Property name="IsCube" value="False" />
       <Property name="UseCompression" value="True" />
       <Property name="UseMipMaps" value="True" />

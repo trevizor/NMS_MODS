@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (1.55.0)-->
+<!--File created using MBINCompiler version (1.57.0)-->
 <Data template="TkMaterialData">
-  <Property name="Name" value="AnimatedSmokeMat" />
+  <Property name="Name" value="GlowSparkParticleMatt" />
   <Property name="Class" value="Additive" />
   <Property name="TransparencyLayerID" value="0" />
   <Property name="CastShadow" value="False" />
@@ -22,13 +22,10 @@
       <Property name="MaterialFlag" value="_F10_NORECEIVESHADOW" />
     </Property>
     <Property value="TkMaterialFlags.xml">
-      <Property name="MaterialFlag" value="_F13_UVANIMATION" />
-    </Property>
-    <Property value="TkMaterialFlags.xml">
-      <Property name="MaterialFlag" value="_F14_UVSCROLL" />
-    </Property>
-    <Property value="TkMaterialFlags.xml">
       <Property name="MaterialFlag" value="_F22_TRANSPARENT_SCALAR" />
+    </Property>
+    <Property value="TkMaterialFlags.xml">
+      <Property name="MaterialFlag" value="_F27_VBTANGENT" />
     </Property>
   </Property>
   <Property name="Uniforms">
@@ -63,11 +60,11 @@
       <Property name="ExtendedValues" />
     </Property>
     <Property value="TkMaterialUniform.xml">
-      <Property name="Name" value="gUVScrollStepVec4" />
+      <Property name="Name" value="gMaterialSFXColVec4" />
       <Property name="Values" value="Vector4f.xml">
-        <Property name="x" value="0.0625" />
-        <Property name="y" value="1" />
-        <Property name="z" value="20" />
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
         <Property name="t" value="0" />
       </Property>
       <Property name="ExtendedValues" />
@@ -76,7 +73,7 @@
   <Property name="Samplers">
     <Property value="TkMaterialSampler.xml">
       <Property name="Name" value="gDiffuseMap" />
-      <Property name="Map" value="TEXTURES/EFFECTS/ANIMATEDSMOKE.DDS" />
+      <Property name="Map" value="TEXTURES/EFFECTS/LINES/GLOW.DDS" />
       <Property name="IsCube" value="False" />
       <Property name="UseCompression" value="True" />
       <Property name="UseMipMaps" value="True" />
