@@ -2,12 +2,12 @@
 <!--File created using MBINCompiler version (1.59.0)-->
 <Data template="TkHeavyAirData">
   <Property name="Material" value="MODELS/EFFECTS/COMMON/MATERIALS/SNOW_TRANSLUCENT.MATERIAL.MBIN" />
-  <Property name="NumberOfParticles" value="1500" />
+  <Property name="NumberOfParticles" value="800" />
   <Property name="Radius" value="60" />
   <Property name="RadiusY" value="200" />
-  <Property name="MinParticleLifetime" value="4" />
-  <Property name="MaxParticleLifetime" value="4" />
-  <Property name="FadeTime" value="0.8" />
+  <Property name="MinParticleLifetime" value="1" />
+  <Property name="MaxParticleLifetime" value="1.2" />
+  <Property name="FadeTime" value="0.1" />
   <Property name="SpeedFadeInTime" value="0" />
   <Property name="MinVisibleSpeed" value="0" />
   <Property name="SpeedFadeOutTime" value="0" />
@@ -32,21 +32,21 @@
     <Property name="t" value="0" />
   </Property>
   <Property name="TwinkleRange" value="Vector4f.xml">
-    <Property name="x" value="40" />
-    <Property name="y" value="40" />
-    <Property name="z" value="40" />
+    <Property name="x" value="15" />
+    <Property name="y" value="15" />
+    <Property name="z" value="80" />
     <Property name="t" value="0" />
   </Property>
   <Property name="AmplitudeMin" value="Vector4f.xml">
     <Property name="x" value="0" />
-    <Property name="y" value="-0.6" />
-    <Property name="z" value="-0.6" />
+    <Property name="y" value="-1" />
+    <Property name="z" value="-1" />
     <Property name="t" value="0" />
   </Property>
   <Property name="AmplitudeMax" value="Vector4f.xml">
     <Property name="x" value="0" />
-    <Property name="y" value="0.6" />
-    <Property name="z" value="0.6" />
+    <Property name="y" value="1" />
+    <Property name="z" value="1" />
     <Property name="t" value="0" />
   </Property>
   <Property name="Colour1" value="Colour.xml">
