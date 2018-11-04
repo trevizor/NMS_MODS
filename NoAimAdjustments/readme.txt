@@ -8,7 +8,7 @@ Installation:
 	- Create a folder called MODS
 	- Extract the desired .pak file to MODS
 
-1.59 and Experimental builds.
+Works for NMS 1.71 The Abyss
 
 It modifies:
 GCPLAYERGLOBALS.GLOBAL.MBIN

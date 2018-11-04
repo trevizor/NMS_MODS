@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (1.59.0)-->
+<!--File created using MBINCompiler version (1.70.0)-->
 <Data template="GcPlayerGlobals">
   <Property name="InteractNearbyRadiusEnabled" value="False" />
   <Property name="DebugExperience" value="False" />
@@ -53,11 +53,35 @@
     <Property name="UseSeedValue" value="False" />
   </Property>
   <Property name="DebugExperienceCamShake" value="" />
+  <Property name="JetpackUnderwaterDrainRate" value="0.4" />
+  <Property name="JetpackUnderwaterFillRate" value="1" />
+  <Property name="UnderwaterMargin" value="1.5" />
+  <Property name="UnderwaterMinDepth" value="2" />
+  <Property name="UnderwaterSurfaceTension" value="2" />
+  <Property name="UnderwaterSurfaceTensionOffset" value="-0.6" />
+  <Property name="UnderwaterSurfaceForceFlattenAngleMin" value="10" />
+  <Property name="UnderwaterSurfaceForceFlattenAngleRange" value="20" />
+  <Property name="UnderwaterImpact" value="0.2" />
+  <Property name="UnderwaterMaxSpeed" value="4" />
+  <Property name="UnderwaterForce" value="15" />
+  <Property name="UnderwaterMaxJetpackSpeed" value="8" />
+  <Property name="UnderwaterJetpackForce" value="25" />
+  <Property name="UnderwaterMaxJetpackEscapeSpeed" value="4" />
+  <Property name="UnderwaterJetpackEscapeForce" value="15" />
+  <Property name="UnderwaterBrake" value="3" />
+  <Property name="UnderwaterFloat" value="0" />
+  <Property name="UnderwaterFloatForce" value="15" />
+  <Property name="UnderwaterFloatRange" value="2" />
+  <Property name="UnderwaterFloatFreq" value="0.5" />
+  <Property name="RespawnOnPadRadius" value="25" />
+  <Property name="DeepWaterDepth" value="45" />
   <Property name="CockpitEjectTestRadius" value="1" />
   <Property name="CockpitEjectTestStartHeightOffset" value="2.5" />
   <Property name="CockpitEjectTestEndHeightOffset" value="-2.5" />
   <Property name="CockpitEjectFirstPersonOffsetTime" value="0.5" />
   <Property name="CockpitEjectFirstPersonOffset" value="2.5" />
+  <Property name="BinocularRangePlanet" value="1000" />
+  <Property name="BinocularRangeSpace" value="10000" />
   <Property name="MinBinocActiveTime" value="0.6" />
   <Property name="RobotMultiplierWithFriends" value="2" />
   <Property name="DroneStartLocationRadius" value="3000" />
@@ -79,7 +103,6 @@
   <Property name="TrackArrowStaticTargetOffsetMultiplier" value="1.6" />
   <Property name="WitnessSenseEnhancementTime" value="5" />
   <Property name="WitnessSenseEnhancement" value="2" />
-  <Property name="UnderwaterMargin" value="0" />
   <Property name="MultiplayerMinWanteEscalationTime" value="10" />
   <Property name="HealthRechargeMinTimeSinceDamage" value="10" />
   <Property name="HealthPipRechargeRate" value="200" />
@@ -124,7 +147,7 @@
   <Property name="GrenadeBounceDamping" value="0.1" />
   <Property name="GrenadeBounceMaxSpeed" value="16" />
   <Property name="GrenadeStopExplodeTime" value="0.4" />
-  <Property name="CockpitEjectTestSphereRadius" value="2" />
+  <Property name="CockpitEjectTestSphereRadius" value="0.4" />
   <Property name="CockpitEjectTestSphereRange" value="2" />
   <Property name="CockpitEjectSideTestRange" value="1.5" />
   <Property name="WeaponShotgunSlowdown" value="0.7" />
@@ -168,6 +191,12 @@
     <Property name="R" value="0.16" />
     <Property name="G" value="0.798" />
     <Property name="B" value="1" />
+    <Property name="A" value="1" />
+  </Property>
+  <Property name="TerrainEditorMuzzleColourUndo" value="Colour.xml">
+    <Property name="R" value="1" />
+    <Property name="G" value="0.684" />
+    <Property name="B" value="0.07" />
     <Property name="A" value="1" />
   </Property>
   <Property name="DefaultMuzzleLaserColour" value="Colour.xml">
@@ -785,14 +814,6 @@
   <Property name="MaxBuildHeight" value="64" />
   <Property name="SpaceMaxGravityDist" value="1024" />
   <Property name="SpaceMinGravityDist" value="512" />
-  <Property name="UnderwaterImpact" value="0.2" />
-  <Property name="UnderwaterMaxSpeed" value="4" />
-  <Property name="UnderwaterForce" value="15" />
-  <Property name="UnderwaterBrake" value="3" />
-  <Property name="UnderwaterFloat" value="0" />
-  <Property name="UnderwaterFloatForce" value="15" />
-  <Property name="UnderwaterFloatRange" value="10" />
-  <Property name="UnderwaterFloatFreq" value="0.5" />
   <Property name="BulletBend" value="0.01" />
   <Property name="ShootSizeMinZ" value="0.1" />
   <Property name="ShootSizeMaxZ" value="1.5" />
