@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (1.70.0)-->
+<!--File created using MBINCompiler version (1.75.0)-->
 <Data template="GcPlayerGlobals">
   <Property name="InteractNearbyRadiusEnabled" value="False" />
+  <Property name="DebugSearchGroup" value="BONES" />
+  <Property name="SearchGroupIconColour" value="Colour.xml">
+    <Property name="R" value="0.254" />
+    <Property name="G" value="1" />
+    <Property name="B" value="0.537" />
+    <Property name="A" value="1" />
+  </Property>
   <Property name="DebugExperience" value="False" />
   <Property name="DefaultShipFilename" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTER_PROC.SCENE.MBIN" />
   <Property name="DefaultShipSeed" value="GcSeed.xml">
@@ -53,6 +60,29 @@
     <Property name="UseSeedValue" value="False" />
   </Property>
   <Property name="DebugExperienceCamShake" value="" />
+  <Property name="ArmourHighlightScanEffect" value="GcScanEffectData.xml">
+    <Property name="Id" value="" />
+    <Property name="ScanEffectType" value="Creature" />
+    <Property name="Colour" value="Colour.xml">
+      <Property name="R" value="1" />
+      <Property name="G" value="0.255" />
+      <Property name="B" value="0.113" />
+      <Property name="A" value="0.6" />
+    </Property>
+    <Property name="BasecolourIntensity" value="-0.2" />
+    <Property name="ScanlinesSeparation" value="0" />
+    <Property name="FresnelIntensity" value="-10" />
+    <Property name="GlowIntensity" value="0.1" />
+    <Property name="WaveOffset" value="0" />
+    <Property name="WaveActive" value="False" />
+    <Property name="FixedUpAxis" value="False" />
+    <Property name="Transparent" value="False" />
+    <Property name="FadeInTime" value="0.5" />
+    <Property name="FadeOutTime" value="0.3" />
+  </Property>
+  <Property name="HitReactNoiseAmount" value="0.7" />
+  <Property name="HitReactBlendOutSpeedMin" value="5" />
+  <Property name="HitReactBlendOutSpeedMax" value="20" />
   <Property name="JetpackUnderwaterDrainRate" value="0.4" />
   <Property name="JetpackUnderwaterFillRate" value="1" />
   <Property name="UnderwaterMargin" value="1.5" />
@@ -66,8 +96,8 @@
   <Property name="UnderwaterForce" value="15" />
   <Property name="UnderwaterMaxJetpackSpeed" value="8" />
   <Property name="UnderwaterJetpackForce" value="25" />
-  <Property name="UnderwaterMaxJetpackEscapeSpeed" value="4" />
-  <Property name="UnderwaterJetpackEscapeForce" value="15" />
+  <Property name="UnderwaterMaxJetpackEscapeSpeed" value="8" />
+  <Property name="UnderwaterJetpackEscapeForce" value="20" />
   <Property name="UnderwaterBrake" value="3" />
   <Property name="UnderwaterFloat" value="0" />
   <Property name="UnderwaterFloatForce" value="15" />
@@ -258,7 +288,7 @@
   <Property name="JetpackFillRateSpaceStationMultiplier" value="5" />
   <Property name="JetpackUpForceDeadPlanetExtra" value="10" />
   <Property name="JetpackForceDeadPlanetExtra" value="15" />
-  <Property name="JetpackIgnitionForceDeadPlanetExtra" value="80" />
+  <Property name="JetpackIgnitionForceDeadPlanetExtra" value="45" />
   <Property name="EnableHeadMovements" value="True" />
   <Property name="ClampPitch" value="False" />
   <Property name="DamageRepairFactor" value="0.5" />
@@ -429,11 +459,11 @@
   <Property name="WantedMinorCrimeAmount" value="0.1" />
   <Property name="WantedTimeoutAggressive" value="20" />
   <Property name="WantedTimeout">
-    <Property value="30" />
-    <Property value="40" />
-    <Property value="40" />
-    <Property value="60" />
-    <Property value="80" />
+    <Property value="20" />
+    <Property value="15" />
+    <Property value="10" />
+    <Property value="15" />
+    <Property value="10" />
   </Property>
   <Property name="WantedEscalateTime">
     <Property value="-1" />
@@ -599,6 +629,7 @@
   </Property>
   <Property name="CrosshairTime" value="0.5" />
   <Property name="BeaconActivateRange" value="20" />
+  <Property name="ExperienceMaxCivilianShipSpawns" value="100" />
   <Property name="ExperiencePirateFreighterAttackRange" value="40000" />
   <Property name="ExperienceWalkerSize" value="4" />
   <Property name="ExperienceInterestingShipDistance" value="2000" />
@@ -795,6 +826,12 @@
     <Property name="x" value="0" />
     <Property name="y" value="0" />
     <Property name="z" value="0" />
+    <Property name="t" value="0" />
+  </Property>
+  <Property name="WeaponOffset" value="Vector4f.xml">
+    <Property name="x" value="0" />
+    <Property name="y" value="-0.06" />
+    <Property name="z" value="0.02" />
     <Property name="t" value="0" />
   </Property>
   <Property name="WeaponLowerDelay" value="3" />
@@ -1184,19 +1221,39 @@
     </Property>
   </Property>
   <Property name="TraderHailReceiveRegular">
-    <Property value="3" />
-    <Property value="5" />
-    <Property value="2" />
-    <Property value="4" />
+    <Property value="GcShipDialogueTreeEnum.xml">
+      <Property name="DialogueTree" value="Trade" />
+    </Property>
+    <Property value="GcShipDialogueTreeEnum.xml">
+      <Property name="DialogueTree" value="Goods" />
+    </Property>
+    <Property value="GcShipDialogueTreeEnum.xml">
+      <Property name="DialogueTree" value="Ambush" />
+    </Property>
+    <Property value="GcShipDialogueTreeEnum.xml">
+      <Property name="DialogueTree" value="Help" />
+    </Property>
   </Property>
   <Property name="TraderHailReceiveFight">
-    <Property value="1" />
-    <Property value="0" />
+    <Property value="GcShipDialogueTreeEnum.xml">
+      <Property name="DialogueTree" value="Beg" />
+    </Property>
+    <Property value="GcShipDialogueTreeEnum.xml">
+      <Property name="DialogueTree" value="Bribe" />
+    </Property>
   </Property>
   <Property name="TraderHailSend">
-    <Property value="3" />
-    <Property value="6" />
-    <Property value="0" />
-    <Property value="0" />
+    <Property value="GcShipDialogueTreeEnum.xml">
+      <Property name="DialogueTree" value="Trade" />
+    </Property>
+    <Property value="GcShipDialogueTreeEnum.xml">
+      <Property name="DialogueTree" value="Hostile" />
+    </Property>
+    <Property value="GcShipDialogueTreeEnum.xml">
+      <Property name="DialogueTree" value="Bribe" />
+    </Property>
+    <Property value="GcShipDialogueTreeEnum.xml">
+      <Property name="DialogueTree" value="Bribe" />
+    </Property>
   </Property>
 </Data>
