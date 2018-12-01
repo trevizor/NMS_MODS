@@ -49193,6 +49193,7 @@
       <Property name="PinObjeective" value="UI_BUY_OBJ" />
       <Property name="PinObjeectiveTip" value="" />
     </Property>
+
     <Property value="GcProductData.xml">
       <Property name="Id" value="WATERFALL" />
       <Property name="Name" value="WATERFALL" />
@@ -49208,10 +49209,10 @@
       <Property name="DebrisFile" value="TkModelResource.xml">
         <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
       </Property>
-      <Property name="BaseValue" value="1" />
+      <Property name="BaseValue" value="10" />
       <Property name="Level" value="0" />
       <Property name="Icon" value="TkModelResource.xml">
-        <Property name="Filename" value="TEXTURES/EFFECTS/PARTICLES/SPLASH.DDS" />
+        <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SUBSTANCES/SUBSTANCE.TECH.RARE1.DDS" />
       </Property>
       <Property name="HeroIcon" value="TkModelResource.xml">
         <Property name="Filename" value="" />
@@ -49236,17 +49237,17 @@
       </Property>
       <Property name="Consumable" value="False" />
       <Property name="ChargeValue" value="0" />
-      <Property name="StackMultiplier" value="1" />
+      <Property name="StackMultiplier" value="0" />
       <Property name="DefaultCraftAmount" value="1" />
       <Property name="CraftAmountStepSize" value="1" />
       <Property name="CraftAmountMultiplier" value="1" />
       <Property name="Requirements">
         <Property value="GcTechnologyRequirement.xml">
-          <Property name="ID" value="CASING" />
+          <Property name="ID" value="OXYGEN" />
           <Property name="InventoryType" value="GcInventoryType.xml">
-            <Property name="InventoryType" value="Product" />
+            <Property name="InventoryType" value="Substance" />
           </Property>
-          <Property name="Amount" value="1" />
+          <Property name="Amount" value="15" />
         </Property>
       </Property>
       <Property name="AltRequirements" />
@@ -49270,5 +49271,6 @@
       <Property name="PinObjeective" value="" />
       <Property name="PinObjeectiveTip" value="" />
     </Property>
+
   </Property>
 </Data>
