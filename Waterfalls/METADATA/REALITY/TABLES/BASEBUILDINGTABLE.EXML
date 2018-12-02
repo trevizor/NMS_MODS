@@ -19586,7 +19586,119 @@
       <Property name="RegionSpawnLOD" value="0" />
       <Property name="BuildableOnBase" value="True" />
       <Property name="BuildableOnFreighter" value="True" />
-      <Property name="BuildableOnPlanet" value="False" />
+      <Property name="BuildableOnPlanet" value="True" />
+      <Property name="BuildableUnderwater" value="True" />
+      <Property name="BuildableAboveWater" value="True" />
+      <Property name="GlobalLimit" value="0" />
+      <Property name="SystemLimit" value="0" />
+      <Property name="PlanetLimit" value="0" />
+      <Property name="RegionLimit" value="0" />
+      <Property name="PlanetBaseLimit" value="0" />
+      <Property name="FreighterBaseLimit" value="0" />
+      <Property name="BaseLayoutRadius" value="1" />
+      <Property name="CheckCollision" value="False" />
+      <Property name="CollisionScale" value="0.9" />
+      <Property name="CollidesWithPlayer" value="True" />
+      <Property name="CanPlaceOnItself" value="True" />
+      <Property name="Group" value="PLANET_TECH" />
+      <Property name="ComplexityCost" value="400" />
+      <Property name="InactiveComplexityCost" value="0" />
+      <Property name="ForceExtraIdx" value="-1" />
+      <Property name="GroupSnappingLimit" value="0" />
+      <Property name="CanChangeColour" value="True" />
+      <Property name="CanChangeMaterial" value="False" />
+      <Property name="CanPickUp" value="False" />
+      <Property name="ScanRadius" value="0" />
+      <Property name="RemovesAttachedDecoration" value="True" />
+      <Property name="EditsTerrain" value="False" />
+      <Property name="BaseTerrainEditShape" value="Cube" />
+      <Property name="TerrainEditBaseYOffset" value="0" />
+      <Property name="TerrainEditTopYOffset" value="0" />
+      <Property name="TerrainEditBoundsScalar" value="1" />
+      <Property name="IsSealed" value="False" />
+      <Property name="CloseMenuAfterBuild" value="False" />
+    </Property>
+    <Property value="GcBaseBuildingEntry.xml">
+      <Property name="ID" value="WATERFALL_SMALL" />
+      <Property name="HasProduct" value="True" />
+      <Property name="SnapPoints" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/HQTREE01.SCENE.MBIN" />
+      </Property>
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/CUSTOM/WATERFALL_SMALL.SCENE.MBIN" />
+      </Property>
+      <Property name="InactiveModel" value="TkModelResource.xml">
+        <Property name="Filename" value="" />
+      </Property>
+      <Property name="Type" value="GcBaseBuildingObjectTypes.xml">
+        <Property name="BaseBuildingObjectType" value="Decoration" />
+      </Property>
+      <Property name="DecorationType" value="GcBaseBuildingObjectDecorationTypes.xml">
+        <Property name="BaseBuildingDecorationType" value="Normal" />
+      </Property>
+      <Property name="Biome" value="GcBiomeType.xml">
+        <Property name="Biome" value="Lush" />
+      </Property>
+      <Property name="RegionSpawnLOD" value="0" />
+      <Property name="BuildableOnBase" value="True" />
+      <Property name="BuildableOnFreighter" value="True" />
+      <Property name="BuildableOnPlanet" value="True" />
+      <Property name="BuildableUnderwater" value="True" />
+      <Property name="BuildableAboveWater" value="True" />
+      <Property name="GlobalLimit" value="0" />
+      <Property name="SystemLimit" value="0" />
+      <Property name="PlanetLimit" value="0" />
+      <Property name="RegionLimit" value="0" />
+      <Property name="PlanetBaseLimit" value="0" />
+      <Property name="FreighterBaseLimit" value="0" />
+      <Property name="BaseLayoutRadius" value="1" />
+      <Property name="CheckCollision" value="False" />
+      <Property name="CollisionScale" value="0.9" />
+      <Property name="CollidesWithPlayer" value="True" />
+      <Property name="CanPlaceOnItself" value="True" />
+      <Property name="Group" value="PLANET_TECH" />
+      <Property name="ComplexityCost" value="400" />
+      <Property name="InactiveComplexityCost" value="0" />
+      <Property name="ForceExtraIdx" value="-1" />
+      <Property name="GroupSnappingLimit" value="0" />
+      <Property name="CanChangeColour" value="True" />
+      <Property name="CanChangeMaterial" value="False" />
+      <Property name="CanPickUp" value="False" />
+      <Property name="ScanRadius" value="0" />
+      <Property name="RemovesAttachedDecoration" value="True" />
+      <Property name="EditsTerrain" value="False" />
+      <Property name="BaseTerrainEditShape" value="Cube" />
+      <Property name="TerrainEditBaseYOffset" value="0" />
+      <Property name="TerrainEditTopYOffset" value="0" />
+      <Property name="TerrainEditBoundsScalar" value="1" />
+      <Property name="IsSealed" value="False" />
+      <Property name="CloseMenuAfterBuild" value="False" />
+    </Property>
+    <Property value="GcBaseBuildingEntry.xml">
+      <Property name="ID" value="WATERFALL_LARGE" />
+      <Property name="HasProduct" value="True" />
+      <Property name="SnapPoints" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/PARTS/BUILDABLEPARTS/FOLIAGE/HQTREE01.SCENE.MBIN" />
+      </Property>
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/CUSTOM/WATERFALL_LARGE.SCENE.MBIN" />
+      </Property>
+      <Property name="InactiveModel" value="TkModelResource.xml">
+        <Property name="Filename" value="" />
+      </Property>
+      <Property name="Type" value="GcBaseBuildingObjectTypes.xml">
+        <Property name="BaseBuildingObjectType" value="Decoration" />
+      </Property>
+      <Property name="DecorationType" value="GcBaseBuildingObjectDecorationTypes.xml">
+        <Property name="BaseBuildingDecorationType" value="Normal" />
+      </Property>
+      <Property name="Biome" value="GcBiomeType.xml">
+        <Property name="Biome" value="Lush" />
+      </Property>
+      <Property name="RegionSpawnLOD" value="0" />
+      <Property name="BuildableOnBase" value="True" />
+      <Property name="BuildableOnFreighter" value="True" />
+      <Property name="BuildableOnPlanet" value="True" />
       <Property name="BuildableUnderwater" value="True" />
       <Property name="BuildableAboveWater" value="True" />
       <Property name="GlobalLimit" value="0" />
