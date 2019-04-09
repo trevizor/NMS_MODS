@@ -6,7 +6,7 @@
   <Property name="EnableNewStuff" value="True" />
   <Property name="CreatureSeed" value="0" />
   <Property name="MaxEcosystemCreatures" value="40" />
-  <Property name="UncapSpawningforVideo" value="True" />
+  <Property name="UncapSpawningforVideo" value="False" />
   <Property name="AllowSpawningOnscreen" value="False" />
   <Property name="ResourceSpawnTime" value="1" />
   <Property name="TurnInPlaceIdleTime" value="1" />
@@ -15,7 +15,7 @@
   <Property name="TurnInPlaceMaxSpeed" value="0.1" />
   <Property name="SceneTerrainSpawnMinDistance" value="0" />
   <Property name="CreatureMinAlignSpeed" value="0.05" />
-  <Property name="PatrolMinDist" value="20" />
+  <Property name="PatrolMinDist" value="0" />
   <Property name="PatrolMaxDist" value="100" />
   <Property name="PatrolHeightOffset" value="2" />
   <Property name="PatrolGradientFactor" value="1" />
@@ -30,8 +30,8 @@
   <Property name="CreatureMinAnimMoveSpeed" value="0.01" />
   <Property name="CreatureLookBeforeGoingTime" value="7" />
   <Property name="CreatureLookBeforeFleeingTime" value="2" />
-  <Property name="CreatureLookBeforeFleeingIfShotTime" value="0.5" />
-  <Property name="CreatureLookScaryThingTime" value="2.5" />
+  <Property name="CreatureLookBeforeFleeingIfShotTime" value="0.2" />
+  <Property name="CreatureLookScaryThingTime" value="0.5" />
   <Property name="CreatureLookPlayerForceLookTime" value="2.5" />
   <Property name="FootPlantError" value="0.9" />
   <Property name="RecoverHealthTime" value="10" />
@@ -380,7 +380,7 @@
   <Property name="FollowRunPlayerDistance" value="15" />
   <Property name="FollowRange" value="10" />
   <Property name="SearchItemDistance" value="60" />
-  <Property name="SearchItemFrequency" value="10" />
+  <Property name="SearchItemFrequency" value="1" />
   <Property name="SearchItemGiveUpDistance" value="100" />
   <Property name="SearchItemGiveUpTime" value="20" />
   <Property name="SearchItemNotifyTime" value="10" />
