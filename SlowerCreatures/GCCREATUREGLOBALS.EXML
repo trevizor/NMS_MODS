@@ -25,7 +25,7 @@
   <Property name="CreatureSightRange" value="100" />
   <Property name="CreatureMoveIdle" value="0.01" />
   <Property name="CreatureTurnMin" value="0.01" />
-  <Property name="CreatureTurnMax" value="0.1" />
+  <Property name="CreatureTurnMax" value="0.02" />
   <Property name="CreatureBrakeForce" value="2" />
   <Property name="CreatureMinAnimMoveSpeed" value="0.01" />
   <Property name="CreatureLookBeforeGoingTime" value="7" />
@@ -91,7 +91,7 @@
     <Property name="FOVStrength" value="0" />
     <Property name="FOVFrequency" value="0" />
   </Property>
-  <Property name="PatrolSwitchMinTime" value="10" />
+  <Property name="PatrolSwitchMinTime" value="20" />
   <Property name="ExtraFollowStrength" value="1" />
   <Property name="ExtraFollowFreq1" value="0.5" />
   <Property name="ExtraFollowFreq2" value="3" />
@@ -306,33 +306,33 @@
   <Property name="RagdollMotorFadeEnd" value="2" />
   <Property name="MaxRagdollsBeforeDespawnOffscreen" value="12" />
   <Property name="MaxRagdollsBeforeDespawnOnscreen" value="18" />
-  <Property name="TurnRadiusMultiplier" value="1" />
-  <Property name="TurnSlowAreaCos" value="0.75" />
-  <Property name="BadTurnPercent" value="0.7" />
+  <Property name="TurnRadiusMultiplier" value="0.5" />
+  <Property name="TurnSlowAreaCos" value="0.2" />
+  <Property name="BadTurnPercent" value="0" />
   <Property name="BadTurnWeight" value="0" />
   <Property name="MinScaleForNavMap" value="1" />
   <Property name="ImpassabilityBrakeTime" value="0.2" />
   <Property name="ImpassabilityUnbrakeTime" value="0.4" />
-  <Property name="ImpassabilityTurnSpeedMultiplier" value="4" />
-  <Property name="NavMapLookAhead" value="1.5" />
-  <Property name="VelocityAlignYFactorMin" value="0.2" />
-  <Property name="VelocityAlignYFactorMax" value="0.6" />
-  <Property name="BrakingForce" value="15" />
-  <Property name="BrakingForceY" value="16" />
+  <Property name="ImpassabilityTurnSpeedMultiplier" value="2" />
+  <Property name="NavMapLookAhead" value="2" />
+  <Property name="VelocityAlignYFactorMin" value="0.01" />
+  <Property name="VelocityAlignYFactorMax" value="0.3" />
+  <Property name="BrakingForce" value="5" />
+  <Property name="BrakingForceY" value="6" />
   <Property name="FlowFieldWeight" value="0.7" />
   <Property name="FollowWeight" value="2" />
   <Property name="AvoidCreaturesWeight" value="6" />
   <Property name="AvoidImpassableWeight" value="10" />
   <Property name="FollowLeaderAlignWeight" value="1" />
   <Property name="FollowLeaderCohereWeight" value="0.1" />
-  <Property name="DefaultSwimSpeed" value="1" />
+  <Property name="DefaultSwimSpeed" value="0.6" />
   <Property name="FastSwimSpeed" value="2.5" />
-  <Property name="DefaultWalkMoveSpeed" value="0.7" />
+  <Property name="DefaultWalkMoveSpeed" value="0.6" />
   <Property name="DefaultTrotMoveSpeed" value="1.5" />
   <Property name="DefaultRunMoveSpeed" value="4" />
   <Property name="PredatorWalkMoveSpeed" value="1" />
   <Property name="PredatorTrotMoveSpeed" value="3" />
-  <Property name="PredatorRunMoveSpeed" value="6" />
+  <Property name="PredatorRunMoveSpeed" value="4.1" />
   <Property name="HeightDiffPenalty" value="3" />
   <Property name="EdgeClosenessPenalty" value="6" />
   <Property name="PelvisIkStrength" value="0.3" />
@@ -392,7 +392,7 @@
   <Property name="FeedingFollowTime" value="20" />
   <Property name="FeedingNoticeTime" value="3" />
   <Property name="FeedingNoticeDistance" value="30" />
-  <Property name="AnimChangeCoolDown" value="1" />
+  <Property name="AnimChangeCoolDown" value="2" />
   <Property name="GroupRunProbability" value="0.6" />
   <Property name="GroupBabyRunProbability" value="0.8" />
   <Property name="GroupRunStormProbability" value="0.95" />
