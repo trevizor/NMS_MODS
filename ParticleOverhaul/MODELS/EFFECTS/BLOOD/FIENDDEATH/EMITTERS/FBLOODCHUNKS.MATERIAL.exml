@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (1.55.0)-->
+<!--File created using MBINCompiler version (1.78.0)-->
 <Data template="TkMaterialData">
   <Property name="Name" value="Steam" />
   <Property name="Class" value="Translucent" />
   <Property name="TransparencyLayerID" value="0" />
-  <Property name="CastShadow" value="False" />
+  <Property name="CastShadow" value="True" />
   <Property name="DisableZTest" value="False" />
   <Property name="Link" value="" />
   <Property name="Shader" value="SHADERS/PARTICLE.SHADER.BIN" />
@@ -13,10 +13,10 @@
       <Property name="MaterialFlag" value="_F01_DIFFUSEMAP" />
     </Property>
     <Property value="TkMaterialFlags.xml">
-      <Property name="MaterialFlag" value="_F03_NORMALMAP" />
+      <Property name="MaterialFlag" value="_F09_TRANSPARENT" />
     </Property>
     <Property value="TkMaterialFlags.xml">
-      <Property name="MaterialFlag" value="_F09_TRANSPARENT" />
+      <Property name="MaterialFlag" value="_F22_TRANSPARENT_SCALAR" />
     </Property>
   </Property>
   <Property name="Uniforms">
@@ -69,18 +69,6 @@
       <Property name="UseCompression" value="True" />
       <Property name="UseMipMaps" value="True" />
       <Property name="IsSRGB" value="True" />
-      <Property name="MaterialAlternativeId" value="" />
-      <Property name="TextureAddressMode" value="Wrap" />
-      <Property name="TextureFilterMode" value="Trilinear" />
-      <Property name="Anisotropy" value="0" />
-    </Property>
-    <Property value="TkMaterialSampler.xml">
-      <Property name="Name" value="gNormalMap" />
-      <Property name="Map" value="TEXTURES/EFFECTS/PARTICLES/BLOODSPLAT.NORMAL.DDS" />
-      <Property name="IsCube" value="False" />
-      <Property name="UseCompression" value="True" />
-      <Property name="UseMipMaps" value="True" />
-      <Property name="IsSRGB" value="False" />
       <Property name="MaterialAlternativeId" value="" />
       <Property name="TextureAddressMode" value="Wrap" />
       <Property name="TextureFilterMode" value="Trilinear" />
