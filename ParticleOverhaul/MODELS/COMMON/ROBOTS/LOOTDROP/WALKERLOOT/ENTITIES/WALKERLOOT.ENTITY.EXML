@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (1.75.0)-->
+<!--File created using MBINCompiler version (2.0.4)-->
 <Data template="TkAttachmentData">
   <Property name="Components">
     <Property value="TkPhysicsComponentData.xml">
@@ -18,14 +18,18 @@
       <Property name="TriggerVolume" value="False" />
       <Property name="Climbable" value="False" />
       <Property name="IgnoreModelOwner" value="False" />
-      <Property name="NoVehicleCollision" value="False" />
+      <Property name="NoVehicleCollide" value="False" />
+      <Property name="NoPlayerCollide" value="False" />
       <Property name="CameraInvisible" value="False" />
+      <Property name="InvisibleForInteraction" value="False" />
+      <Property name="AllowTeleporter" value="False" />
+      <Property name="BlockTeleporter" value="False" />
     </Property>
     <Property value="GcDestructableComponentData.xml">
       <Property name="Explosion" value="DOOREXPLODE" />
-      <Property name="ExplosionScale" value="0.6" />
+      <Property name="ExplosionScale" value="0.3" />
       <Property name="ExplosionScaleToBounds" value="False" />
-      <Property name="VehicleDestroyEffect" value="VEHICLECRASH" />
+      <Property name="VehicleDestroyEffect" value="DOOREXPLODE" />
       <Property name="TriggerAction" value="" />
       <Property name="IncreaseWanted" value="0" />
       <Property name="IncreaseFiendWanted" value="False" />
@@ -73,14 +77,18 @@
       <Property name="ScanRange" value="150" />
       <Property name="ScanName" value="SENTINEL_BARREL" />
       <Property name="ScanTime" value="15" />
-      <Property name="CompassRangeMultiplier" value="0.5" />
+      <Property name="CompassRangeMultiplier" value="0.25" />
       <Property name="AlwaysShowRange" value="0" />
-      <Property name="CantagIcon" value="True" />
+      <Property name="CanTagIcon" value="True" />
       <Property name="ClearTagOnArrival" value="True" />
+      <Property name="DisableIfBuildingPart" value="False" />
+      <Property name="DisableIfInBase" value="False" />
+      <Property name="UseModelNode" value="True" />
       <Property name="IconType" value="GcScannerIconTypes.xml">
         <Property name="ScanIconType" value="TechRecipe" />
       </Property>
       <Property name="ScannableType" value="Binoculars" />
+      <Property name="IsPlacedMarker" value="False" />
     </Property>
     <Property value="GcShootableComponentData.xml">
       <Property name="Health" value="800" />
@@ -100,6 +108,7 @@
       <Property name="RepairTime" value="8" />
       <Property name="MinDamage" value="0" />
       <Property name="StaticUntilShot" value="False" />
+      <Property name="IgnoreHitPush" value="True" />
       <Property name="HitEffectEnabled" value="False" />
       <Property name="HitEffectEntireModel" value="True" />
       <Property name="IsArmoured" value="False" />
