@@ -463,16 +463,31 @@
     <Property value="GcExplosionData.xml">
       <Property name="Id" value="ROCKEXPLODE" />
       <Property name="Model" value="TkModelResource.xml">
-        <Property name="Filename" value="MODELS/EFFECTS/VEHICLE/VEHICLECRASH.SCENE.MBIN" />
+        <Property name="Filename" value="MODELS/EFFECTS/PARTICLESOVERHAUL/ROCKEXPLODE.SCENE.MBIN" />
       </Property>
       <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="3050083982" />
       </Property>
-      <Property name="Debris" />
-      <Property name="Life" value="4.5" />
+      <Property name="Debris">
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/LARGERESOURCEDEBRIS.SCENE.MBIN" />
+          </Property>
+          <Property name="Number" value="3" />
+          <Property name="Radius" value="1" />
+          <Property name="Scale" value="0.3" />
+          <Property name="Speed" value="10" />
+          <Property name="AngularSpeed" value="1" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+      </Property>
+      <Property name="Life" value="5" />
       <Property name="Scale" value="1" />
       <Property name="DistanceScale" value="0" />
-      <Property name="DistanceScaleMax" value="50" />
+      <Property name="DistanceScaleMax" value="200" />
       <Property name="CamShake" value="True" />
       <Property name="CamShakeSpace" value="False" />
       <Property name="AllowTriggerActionOnDebris" value="False" />
@@ -481,7 +496,7 @@
     <Property value="GcExplosionData.xml">
       <Property name="Id" value="RESOURCEEXPLODE" />
       <Property name="Model" value="TkModelResource.xml">
-        <Property name="Filename" value="MODELS/EFFECTS/INEDITOR/PLANET/RESOURCEEXPLODE/RESOURCEEXPLODE.SCENE.MBIN" />
+        <Property name="Filename" value="MODELS/EFFECTS/PARTICLESOVERHAUL/ROCKEXPLODE.SCENE.MBIN" /> <!-- value="MODELS/EFFECTS/INEDITOR/PLANET/RESOURCEEXPLODE/RESOURCEEXPLODE.SCENE.MBIN"  -->
       </Property>
       <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="1113666341" />
@@ -494,7 +509,7 @@
           <Property name="Number" value="3" />
           <Property name="Radius" value="1" />
           <Property name="Scale" value="0.5" />
-          <Property name="Speed" value="2" />
+          <Property name="Speed" value="10" />
           <Property name="AngularSpeed" value="1" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
@@ -503,7 +518,7 @@
         </Property>
       </Property>
       <Property name="Life" value="5" />
-      <Property name="Scale" value="0.9" />
+      <Property name="Scale" value="1" />
       <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="50" />
       <Property name="CamShake" value="False" />
