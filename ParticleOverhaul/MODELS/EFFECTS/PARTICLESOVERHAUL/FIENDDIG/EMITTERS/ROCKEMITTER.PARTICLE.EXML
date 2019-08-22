@@ -4,9 +4,9 @@
   <Property name="StartEnabled" value="True" />
   <Property name="Oneshot" value="False" />
   <Property name="MaxCount" value="400" />
-  <Property name="EmissionRate" value="150" />
+  <Property name="EmissionRate" value="60" />
   <Property name="Delay" value="0" />
-  <Property name="ParticleLife" value="2" />
+  <Property name="ParticleLife" value="4" />
   <Property name="EmitterLife" value="0.2" />
   <Property name="EmitterMidLifeRatio" value="0.2" />
   <Property name="EmitterLifeCurve1" value="TkCurveType.xml">
@@ -15,27 +15,27 @@
   <Property name="EmitterLifeCurve2" value="TkCurveType.xml">
     <Property name="Curve" value="Linear" />
   </Property>
-  <Property name="EmitterSpreadAngle" value="70" />
+  <Property name="EmitterSpreadAngle" value="90" />
   <Property name="EmitterSpreadAngleMin" value="0" />
   <Property name="EmitterDirection" value="Vector4f.xml">
     <Property name="x" value="0" />
-    <Property name="y" value="5" />
+    <Property name="y" value="1.5" />
     <Property name="z" value="0" />
     <Property name="t" value="0" />
   </Property>
-  <Property name="EmitterGravity" value="-15" />
+  <Property name="EmitterGravity" value="-13" />
   <Property name="EmitterDamping" value="0.5" />
-  <Property name="Variation" value="0.5" />
+  <Property name="Variation" value="1.5" />
   <Property name="StartOffset" value="0.1" />
-  <Property name="SizeStart" value="0.1" />
-  <Property name="SizeMiddle" value="0.1" />
-  <Property name="SizeEnd" value="0.1" />
-  <Property name="Rotation" value="3000" />
+  <Property name="SizeStart" value="0.13" />
+  <Property name="SizeMiddle" value="0.13" />
+  <Property name="SizeEnd" value="0.13" />
+  <Property name="Rotation" value="120" />
   <Property name="VelocityInheritance" value="0" />
-  <Property name="Bounce" value="2" />
+  <Property name="Bounce" value="0.3" />
   <Property name="HueVariance" value="0" />
   <Property name="SaturationVariance" value="0" />
-  <Property name="LightnessVariance" value="0" />
+  <Property name="LightnessVariance" value="0.01" />
   <Property name="AlphaVariance" value="0" />
   <Property name="ColourStart" value="Colour.xml">
     <Property name="R" value="1" />
