@@ -2705,7 +2705,7 @@
       </Property>
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="0.1" />
-      <Property name="MaxScale" value="0.4" />
+      <Property name="MaxScale" value="0.3" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -2718,9 +2718,9 @@
       <Property name="Data">
         <Property value="GcBirdData.xml">
           <Property name="FlapSpeedMax" value="1" />
-          <Property name="FlapSpeedMin" value="4" />
-          <Property name="FlapSpeed" value="15" />
-          <Property name="FlapAccel" value="2" />
+          <Property name="FlapSpeedMin" value="0.25" />
+          <Property name="FlapSpeed" value="3" />
+          <Property name="FlapAccel" value="0.5" />
           <Property name="CircleAttractor" value="" />
         </Property>
         <Property value="GcCreatureMovementData.xml">
@@ -2760,28 +2760,28 @@
             </Property>
           </Property>
           <Property name="MoveRange" value="60" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveSpeedScale" value="0.1" />
           <Property name="HeightMin" value="0.1" />
           <Property name="HeightMax" value="0.5" />
-          <Property name="HeightTime" value="3" />
+          <Property name="HeightTime" value="12" />
           <Property name="Herd" value="False" />
         </Property>
         <Property value="GcCreatureSwarmData.xml">
-          <Property name="MinCount" value="4" />
+          <Property name="MinCount" value="1" />
           <Property name="MaxCount" value="8" />
-          <Property name="SwarmMovementSpeed" value="0.5" />
-          <Property name="SwarmMovementRadius" value="10" />
+          <Property name="SwarmMovementSpeed" value="0.1" />
+          <Property name="SwarmMovementRadius" value="40" />
           <Property name="SwarmMovementType" value="FollowPlayer" />
-          <Property name="Coherence" value="2" />
+          <Property name="Coherence" value="0" />
           <Property name="Alignment" value="0" />
           <Property name="Spacing" value="20" />
           <Property name="Follow" value="1.5" />
-          <Property name="Range" value="20" />
+          <Property name="Range" value="40" />
           <Property name="MaxbankingAmount" value="0.5" />
           <Property name="TurnRequiredForMaxBanking" value="0.3" />
           <Property name="MaxPitchAmount" value="0.5" />
           <Property name="UpwardMovementForMaxPitch" value="0.3" />
-          <Property name="MaxSpeed" value="10" />
+          <Property name="MaxSpeed" value="1" />
           <Property name="AlignTime" value="0.2" />
           <Property name="SpringSmoothTime" value="0.2" />
           <Property name="RepelList">
