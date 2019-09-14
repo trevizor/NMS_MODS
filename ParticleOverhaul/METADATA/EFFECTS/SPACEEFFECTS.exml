@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (1.75.0)-->
+<!--File created using MBINCompiler version (2.0.11)-->
 <Data template="GcExplosionDataTable">
   <Property name="Table">
     <Property value="GcExplosionData.xml">
@@ -8,7 +8,7 @@
         <Property name="Filename" value="MODELS/EFFECTS/SPACECRAFT/REACTORACTIVE.SCENE.MBIN" />
       </Property>
       <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="0" />
+        <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
       <Property name="Debris" />
       <Property name="Life" value="3" />
@@ -26,7 +26,7 @@
         <Property name="Filename" value="MODELS/EFFECTS/SMOKE/LANDINGSMOKE/LANDINGTHRUSTERS.SCENE.MBIN" />
       </Property>
       <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="0" />
+        <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
       <Property name="Debris" />
       <Property name="Life" value="3" />
@@ -44,7 +44,7 @@
         <Property name="Filename" value="MODELS/EFFECTS/SMOKE/LANDINGSMOKE/LANDINGNEARGROUNDSMOKE.SCENE.MBIN" />
       </Property>
       <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="0" />
+        <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
       <Property name="Debris" />
       <Property name="Life" value="3" />
@@ -62,7 +62,7 @@
         <Property name="Filename" value="MODELS/COMMON/PROJECTILES/MISSILETRAIL.SCENE.MBIN" />
       </Property>
       <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="0" />
+        <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
       <Property name="Debris" />
       <Property name="Life" value="3" />
@@ -80,7 +80,7 @@
         <Property name="Filename" value="MODELS/EFFECTS/INEDITOR/SPACE/ASTERIOID_M_EXP/ASTEROID_M_EXP.SCENE.MBIN" />
       </Property>
       <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="4179480828" />
+        <Property name="AkEvent" value="ASTEROID_EXPLODE" />
       </Property>
       <Property name="Debris">
         <Property value="GcDebrisData.xml">
@@ -127,7 +127,7 @@
         <Property name="Filename" value="MODELS/EFFECTS/EXPLOSION/GRENADEEXPLODE.SCENE.MBIN" />
       </Property>
       <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="1113666341" />
+        <Property name="AkEvent" value="EXPLOSION_RESOURCE_GATHER" />
       </Property>
       <Property name="Debris" />
       <Property name="Life" value="0.6" />
@@ -145,7 +145,7 @@
         <Property name="Filename" value="MODELS/EFFECTS/INEDITOR/SPACE/ASTERIOID_M_EXP/ASTEROID_M_EXP.SCENE.MBIN" />
       </Property>
       <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="4266722844" />
+        <Property name="AkEvent" value="ASTEROID_HIT" />
       </Property>
       <Property name="Debris">
         <Property value="GcDebrisData.xml">
@@ -192,7 +192,7 @@
         <Property name="Filename" value="MODELS/EFFECTS/INEDITOR/SPACE/ASTERIOID_M_EXP/ASTEROID_M_EXP.SCENE.MBIN" />
       </Property>
       <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="4179480828" />
+        <Property name="AkEvent" value="ASTEROID_EXPLODE" />
       </Property>
       <Property name="Debris">
         <Property value="GcDebrisData.xml">
@@ -239,7 +239,7 @@
         <Property name="Filename" value="MODELS/EFFECTS/INEDITOR/SPACE/ASTERIOID_M_EXP/ASTEROID_M_EXP.SCENE.MBIN" />
       </Property>
       <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="4179480828" />
+        <Property name="AkEvent" value="ASTEROID_EXPLODE" />
       </Property>
       <Property name="Debris">
         <Property value="GcDebrisData.xml">
@@ -272,7 +272,7 @@
         <Property name="Filename" value="MODELS/EFFECTS/INEDITOR/SPACE/ASTERIOID_M_EXP/ASTEROID_M_EXP.SCENE.MBIN" />
       </Property>
       <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="1113666341" />
+        <Property name="AkEvent" value="EXPLOSION_RESOURCE_GATHER" />
       </Property>
       <Property name="Debris">
         <Property value="GcDebrisData.xml">
@@ -319,7 +319,7 @@
         <Property name="Filename" value="MODELS/EFFECTS/SPACECRAFT/DAMAGE/DAMAGE_STAGE2.SCENE.MBIN" />
       </Property>
       <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="0" />
+        <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
       <Property name="Debris" />
       <Property name="Life" value="3" />
@@ -337,7 +337,7 @@
         <Property name="Filename" value="MODELS/EFFECTS/SPACECRAFT/DAMAGE/DAMAGED_STAGE1.SCENE.MBIN" />
       </Property>
       <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="0" />
+        <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
       <Property name="Debris" />
       <Property name="Life" value="3" />
@@ -355,7 +355,7 @@
         <Property name="Filename" value="MODELS/EFFECTS/INEDITOR/SPACE/SHIPEXPLODE/SHIPEXPLODE.SCENE.MBIN" />
       </Property>
       <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="1636690473" />
+        <Property name="AkEvent" value="EXPL_SHIPS_MED" />
       </Property>
       <Property name="Debris" />
       <Property name="Life" value="3" />
@@ -373,7 +373,7 @@
         <Property name="Filename" value="MODELS/EFFECTS/INEDITOR/EXPLOSION/EXPLOSION_1/EXPLOSION_1.SCENE.MBIN" />
       </Property>
       <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="3143410778" />
+        <Property name="AkEvent" value="EXPL_SHIPS_LARGE" />
       </Property>
       <Property name="Debris">
         <Property value="GcDebrisData.xml">
@@ -462,7 +462,7 @@
         <Property name="Filename" value="MODELS/EFFECTS/INEDITOR/EXPLOSION/EXPLOSION_1/EXPLOSION_1.SCENE.MBIN" />
       </Property>
       <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="3143410778" />
+        <Property name="AkEvent" value="EXPL_SHIPS_LARGE" />
       </Property>
       <Property name="Debris" />
       <Property name="Life" value="1" />
@@ -480,7 +480,7 @@
         <Property name="Filename" value="MODELS/EFFECTS/WEAPONS/SHIPS/LASERMUZZLEFLASH.SCENE.MBIN" />
       </Property>
       <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="0" />
+        <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
       <Property name="Debris" />
       <Property name="Life" value="3" />
@@ -498,7 +498,7 @@
         <Property name="Filename" value="MODELS/EFFECTS/WEAPONS/SHIPS/PROJECTILEMUZZLEFLASHGREEN.SCENE.MBIN" />
       </Property>
       <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="0" />
+        <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
       <Property name="Debris" />
       <Property name="Life" value="3" />
@@ -516,7 +516,7 @@
         <Property name="Filename" value="MODELS/EFFECTS/EXPLOSION/ANOMALYEFFECT.SCENE.MBIN" />
       </Property>
       <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="0" />
+        <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
       <Property name="Debris" />
       <Property name="Life" value="1.5" />
