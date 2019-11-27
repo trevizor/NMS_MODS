@@ -149,6 +149,7 @@ float4 gHorizonColourVec4         = {1.0, 0.0, 1.0, 0.0};
 float4 gSunColourVec4             = {1.0, 0.0, 1.0, 0.0};
 float4 gWaterFogColourNearVec4    = {1.0, 0.0, 1.0, 0.0};
 float4 gWaterFogColourFarVec4     = {1.0, 0.0, 1.0, 0.0};
+float4 gTerrainEditEffectsVec4    = {1.0, 0.0, 0.0, 0.0};
 float4 gWaterFogVec4              = {1.0, 0.0, 1.0, 0.0};
 float4 gFogColourVec4             = {1.0, 0.0, 1.0, 0.0};
 float4 gSpaceHorizonColourVec4    = {1.0, 0.0, 1.0, 0.0};
@@ -301,7 +302,7 @@ context DEPTHONLY_DEFER
 
 context DEPTHONLY_TESS
 {
-    VertexShader = compile GLSL VS_DEPTHONLY_DEFER;
+    VertexShader = compile GLSL VS_DEFER_TESS_DEPTHONLY;
     HullShader   = compile GLSL HS_DEPTHONLY_TESS;
     DomainShader = compile GLSL DS_DEPTHONLY_TESS;
     PixelShader  = compile GLSL FS_DEPTHONLY_DEFER;
@@ -365,7 +366,7 @@ context LIT_DEFER_STC_N_FACING
 
 context LIT_DEFER_TESS
 {
-    VertexShader  = compile GLSL VS_DEFER;
+    VertexShader  = compile GLSL VS_DEFER_TESS;
     HullShader    = compile GLSL HS_DEFER_TESS;
     DomainShader  = compile GLSL DS_DEFER_TESS;
     PixelShader   = compile GLSL FS_LIT_DEFER;
@@ -392,7 +393,7 @@ context LIT_DEFER_ASTEROID
 context LIT_FORWARD_MESH
 {
     VertexShader = compile GLSL VS_MESH;
-    PixelShader  = compile GLSL FS_LIT_FORWARD;
+    PixelShader = compile GLSL FS_MESH;
 }
 
 context LIT_DEFER_MESH
@@ -401,6 +402,43 @@ context LIT_DEFER_MESH
     PixelShader  = compile GLSL FS_LIT_DEFER;
 }
 
+context EDITS
+{
+    VertexShader = compile GLSL VS_EDITS;
+    PixelShader = compile GLSL FS_EDITS;
+}
+
+context EDITS_TESS
+{
+    VertexShader = compile GLSL VS_DEFER_TESS;
+    HullShader = compile GLSL HS_DEFER_TESS;
+    DomainShader = compile GLSL DS_DEFER_TESS;
+    PixelShader = compile GLSL FS_EDITS_TESS;
+}
+
+context EDITS_CACHE
+{
+    VertexShader = compile GLSL VS_DEFER_USE_CACHE;
+    HullShader = compile GLSL HS_DEFER_USE_CACHE;
+    DomainShader = compile GLSL DS_DEFER_USE_CACHE;
+    PixelShader = compile GLSL FS_EDITS_CACHE;
+}
+
+context EDITS_TESS_FB
+{
+    VertexShader = compile GLSL VS_DEFER_TESS;
+    HullShader = compile GLSL HS_DEFER_TESS;
+    DomainShader = compile GLSL DS_DEFER_TESS;
+    PixelShader = compile GLSL FS_EDITS_TESS;
+}
+
+context EDITS_CACHE_FB
+{
+    VertexShader = compile GLSL VS_DEFER_USE_CACHE;
+    HullShader = compile GLSL HS_DEFER_USE_CACHE;
+    DomainShader = compile GLSL DS_DEFER_USE_CACHE;
+    PixelShader = compile GLSL FS_EDITS_CACHE;
+}
 
 [[VS_SHADOW_FADE]]
 // =================================================================================================
@@ -423,6 +461,12 @@ context LIT_DEFER_MESH
 #define D_CUSTOM_TILES
 #define D_MESH
 #include "Custom/TerrainVertex.shader.h"
+
+[[FS_MESH]]
+// =================================================================================================
+#define D_CUSTOM_TILES
+#define D_MESH
+#include "Custom/TerrainFragment.shader.h"
 
 [[VS_DEFER_MESH]]
 // =================================================================================================
@@ -578,6 +622,12 @@ context LIT_DEFER_MESH
 [[VS_GENERAL_LOW]]
 // =================================================================================================
 #define D_NO_WATER
+#include "Custom/TerrainVertex.shader.h"
+
+[[VS_REFLECT_WATER]]
+// =================================================================================================
+#define D_LOW_QUALITY
+#define D_REFLECT_WATER
 #include "Custom/TerrainVertex.shader.h"
 
 [[VS_DEFER_LOW]]
@@ -789,6 +839,59 @@ context LIT_DEFER_MESH
 #define _F07_UNLIT
 #include "Custom/TerrainFragment.shader.h"
 
+[[FS_REFLECT_WATER_UP]]
+// =================================================================================================
+#define D_REFLECT_WATER_UP
+#define _F07_UNLIT
+#include "Custom/TerrainFragment.shader.h"
 
+[[VS_REFLECT_WATER_UP]]
+// =================================================================================================
+#define D_REFLECT_WATER_UP
+#define _F07_UNLIT
+#include "Custom/TerrainVertex.shader.h"
 
+[[FS_REFLECT_WATER]]
+// =================================================================================================
+#define D_REFLECT_WATER
+#define _F07_UNLIT
+#include "Custom/TerrainFragment.shader.h"
 
+[[VS_DEFER_TESS]]
+// =================================================================================================
+#define D_DEFER
+#define D_APPLY_DISPLACEMENT
+#include "Custom/TerrainVertex.shader.h"
+
+[[VS_DEFER_TESS_DEPTHONLY]]
+// =================================================================================================
+#define D_DEFER
+#define D_APPLY_DISPLACEMENT
+#define D_DEPTHONLY
+#include "Custom/TerrainVertex.shader.h"
+
+[[VS_EDITS]]
+// =================================================================================================
+#define D_TERRAIN_EDITS
+#define _F07_UNLIT
+#include "Custom/TerrainVertex.shader.h"
+
+[[FS_EDITS]]
+// =================================================================================================
+#define D_TERRAIN_EDITS
+#define _F07_UNLIT
+#include "Custom/TerrainFragment.shader.h"
+
+[[FS_EDITS_TESS]]
+// =================================================================================================
+#define D_TERRAIN_EDITS
+//#define D_ATTRIBUTES  //?
+#define _F07_UNLIT
+#include "Custom/TerrainFragment.shader.h"
+
+[[FS_EDITS_CACHE]]
+// =================================================================================================
+#define D_TERRAIN_EDITS
+#define D_READ_TEX_CACHE
+#define _F07_UNLIT
+#include "Custom/TerrainFragment.shader.h"
