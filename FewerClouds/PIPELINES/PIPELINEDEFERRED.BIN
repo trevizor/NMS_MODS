@@ -46,14 +46,14 @@
 
     <!--<RenderTarget id="CLOUDS_DEPTH"     depthBuf="true"  numColBufs="1" format="RED8" bilinear="true" scale="0.125" />
     <RenderTarget id="CLOUDS_LOW"     depthBuf="false"  numColBufs="2" format0="RGBA8"  format1="RED32F" bilinear="true" scale="0.125" />
-    <RenderTarget id="CLOUDS_MED"     depthBuf="false"  numColBufs="2" format0="RGBA8"  format1="RED32F" bilinear="true" scale="0.5" />-->
-    <RenderTarget id="CLOUDS_HIGH"    depthBuf="false"  numColBufs="2" format0="RGBA8"  format1="RED32F" bilinear="true" scale="2"  allowDcc="false"  />
+    <RenderTarget id="CLOUDS_MED"     depthBuf="false"  numColBufs="2" format0="RGBA8"  format1="RED32F" bilinear="false" scale="1" />-->
+    <RenderTarget id="CLOUDS_HIGH"    depthBuf="false"  numColBufs="2" format0="RGBA8"  format1="RED32F" bilinear="false" scale="2"  allowDcc="false"  />
     <RenderTarget id="CLOUDSHADOWS"   depthBuf="false" numColBufs="1" format="RED8" bilinear="true" scale="0.5" allowDcc="false" />
     
     <RenderTarget id="CLOUD_BLURBUF1" depthBuf="false" numColBufs="1" format="RGBA8" bilinear="true" scale="0.25" allowDcc="false" />
     <RenderTarget id="CLOUD_BLURBUF2" depthBuf="false" numColBufs="1" format="RGBA8" bilinear="true" scale="0.25" allowDcc="false" />
 
-    <RenderTarget id="WATER"          depthBuf="false" numColBufs="1" format="RGBA16F" bilinear="true" scale="0.5"  supersample="false" esramPageColBuf0="215"  />
+    <RenderTarget id="WATER"          depthBuf="false" numColBufs="1" format="RGBA16F" bilinear="true" scale="0.5"  supersample="true" esramPageColBuf0="215"  />
     <RenderTarget id="PARTICLES"      depthBuf="false" numColBufs="1" format="RGBA16F" bilinear="true" scale="0.5"  supersample="true" esramPageColBuf0="124" />
     <RenderTarget id="PARTICLES_DEPTH" depthBuf="true" numColBufs="0" format="RGBA8" scale="0.5" maxSamples="0" pointSampleColBuf0="true"  supersample="true" />
 
