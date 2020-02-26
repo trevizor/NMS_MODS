@@ -174,6 +174,8 @@ float4 gTextureScalesVec4           = {8.0, 0.5, 2.0, 2.0};
 float4 gTextureScales2Vec4          = {8.0, 0.5, 2.0, 2.0};
 float4 gTextureDistancesVec4        = {8.0, 0.5, 2.0, 2.0};
 float4 gTextureDistances2Vec4       = {8.0, 0.5, 2.0, 2.0};
+float4 gTerrainDistancesVec4        = {0.0, 0.0, 0.0, 0.0};
+
 float4 gHueOverlayParamsVec4        = {8.0, 0.5, 2.0, 2.0};
 float4 gSaturationOverlayParamsVec4 = {8.0, 0.5, 2.0, 2.0};
 float4 gValueOverlayParamsVec4      = {8.0, 0.5, 2.0, 2.0};
@@ -202,7 +204,6 @@ context REFLECT_DUALP
     VertexShader = compile GLSL VS_REFLECT_DUALP;
     PixelShader  = compile GLSL FS_REFLECT_DUALP;
 }
-
  
 context LIT_FORWARD
 {
@@ -364,6 +365,78 @@ context LIT_DEFER_STC_N_FACING
 	PixelShader = compile GLSL FS_LIT_DEFER_STC_N_FACING;
 }
 
+context LIT_DEFER_STC_N_FACING_FADE
+{
+    VertexShader = compile GLSL VS_DEFER;
+    PixelShader = compile GLSL FS_LIT_DEFER_STC_N_FACING_FADE;
+}
+
+context LIT_DEFER_STL_N_FACING
+{
+    VertexShader = compile GLSL VS_DEFER;
+    PixelShader = compile GLSL FS_LIT_DEFER_STL_N_FACING;
+}
+
+context LIT_DEFER_STL_N_FACING_FADE
+{
+    VertexShader = compile GLSL VS_DEFER;
+    PixelShader = compile GLSL FS_LIT_DEFER_STL_N_FACING_FADE;
+}
+
+context LIT_DEFER_STH_N_FACING
+{
+    VertexShader = compile GLSL VS_DEFER;
+    PixelShader = compile GLSL FS_LIT_DEFER_STH_N_FACING;
+}
+
+context LIT_DEFER_STH_N_FACING_FADE
+{
+    VertexShader = compile GLSL VS_DEFER;
+    PixelShader = compile GLSL FS_LIT_DEFER_STH_N_FACING_FADE;
+}
+
+context LIT_DEFER_STC_T_SPLIT
+{
+    VertexShader = compile GLSL VS_DEFER_T_SPLIT;
+    PixelShader = compile GLSL FS_LIT_DEFER_STC_T_SPLIT;
+}
+
+context LIT_DEFER_STC_T_SPLIT_FADE
+{
+    VertexShader = compile GLSL VS_DEFER_T_SPLIT;
+    PixelShader = compile GLSL FS_LIT_DEFER_STC_T_SPLIT_FADE;
+}
+
+context LIT_DEFER_STL_T_SPLIT
+{
+    VertexShader = compile GLSL VS_DEFER_T_SPLIT;
+    PixelShader = compile GLSL FS_LIT_DEFER_STL_T_SPLIT;
+}
+
+context LIT_DEFER_STL_T_SPLIT_FADE
+{
+    VertexShader = compile GLSL VS_DEFER_T_SPLIT;
+    PixelShader = compile GLSL FS_LIT_DEFER_STL_T_SPLIT_FADE;
+}
+
+context LIT_DEFER_STH_T_SPLIT
+{
+    VertexShader = compile GLSL VS_DEFER_T_SPLIT;
+    PixelShader = compile GLSL FS_LIT_DEFER_STH_T_SPLIT;
+}
+
+context LIT_DEFER_STH_T_SPLIT_FADE
+{
+    VertexShader = compile GLSL VS_DEFER_T_SPLIT;
+    PixelShader = compile GLSL FS_LIT_DEFER_STH_T_SPLIT_FADE;
+}
+
+context LIT_DEFER_TILE_BLEND
+{
+    VertexShader = compile GLSL VS_DEFER;
+    PixelShader = compile GLSL FS_LIT_DEFER;
+}
+
 context LIT_DEFER_TESS
 {
     VertexShader  = compile GLSL VS_DEFER_TESS;
@@ -491,6 +564,12 @@ context EDITS_CACHE_FB
 #define D_DEFER
 #define D_READ_TEX_CACHE
 #define D_DEPTHONLY
+#include "Custom/TerrainVertex.shader.h"
+
+[[VS_DEFER_T_SPLIT]]
+// =================================================================================================
+#define D_DEFER
+#define D_TERRAIN_T_SPLIT
 #include "Custom/TerrainVertex.shader.h"
 
 [[DS_DEFER_TESS]]
@@ -622,12 +701,6 @@ context EDITS_CACHE_FB
 [[VS_GENERAL_LOW]]
 // =================================================================================================
 #define D_NO_WATER
-#include "Custom/TerrainVertex.shader.h"
-
-[[VS_REFLECT_WATER]]
-// =================================================================================================
-#define D_LOW_QUALITY
-#define D_REFLECT_WATER
 #include "Custom/TerrainVertex.shader.h"
 
 [[VS_DEFER_LOW]]
@@ -780,6 +853,102 @@ context EDITS_CACHE_FB
 #define D_STOCHASTIC_TERRAIN
 #include "Custom/TerrainFragment.shader.h"
 
+[[FS_LIT_DEFER_STC_N_FACING_FADE]]
+// =================================================================================================
+#define D_DEFER
+#define D_ATTRIBUTES
+#define D_STOCHASTIC_TERRAIN
+#include "Custom/TerrainFragment.shader.h"
+
+[[FS_LIT_DEFER_STL_N_FACING]]
+// =================================================================================================
+#define D_DEFER
+#define D_ATTRIBUTES
+#define D_TERRAIN_N_FACING
+#define D_STOCHASTIC_TERRAIN
+#define D_TERRAIN_LOD
+#include "Custom/TerrainFragment.shader.h"
+
+[[FS_LIT_DEFER_STL_N_FACING_FADE]]
+// =================================================================================================
+#define D_DEFER
+#define D_ATTRIBUTES
+#define D_STOCHASTIC_TERRAIN
+#define D_TERRAIN_LOD
+#include "Custom/TerrainFragment.shader.h"
+
+[[FS_LIT_DEFER_STH_N_FACING]]
+// =================================================================================================
+#define D_DEFER
+#define D_ATTRIBUTES
+#define D_TERRAIN_N_FACING
+#define D_STOCHASTIC_TERRAIN
+#define D_TERRAIN_HEIGHT_LOD
+#include "Custom/TerrainFragment.shader.h"
+
+[[FS_LIT_DEFER_STH_N_FACING_FADE]]
+// =================================================================================================
+#define D_DEFER
+#define D_ATTRIBUTES
+#define D_STOCHASTIC_TERRAIN
+#define D_TERRAIN_HEIGHT_LOD
+#include "Custom/TerrainFragment.shader.h"
+
+[[FS_LIT_DEFER_STC_T_SPLIT]]
+// =================================================================================================
+#define D_DEFER
+#define D_ATTRIBUTES
+#define D_TERRAIN_T_SPLIT
+#define D_STOCHASTIC_TERRAIN_NO_FADE
+#define D_STOCHASTIC_TERRAIN
+#include "Custom/TerrainFragment.shader.h"
+
+[[FS_LIT_DEFER_STC_T_SPLIT_FADE]]
+// =================================================================================================
+#define D_DEFER
+#define D_ATTRIBUTES
+#define D_TERRAIN_T_SPLIT
+#define D_STOCHASTIC_TERRAIN
+#include "Custom/TerrainFragment.shader.h"
+
+[[FS_LIT_DEFER_STL_T_SPLIT]]
+// =================================================================================================
+#define D_DEFER
+#define D_ATTRIBUTES
+#define D_TERRAIN_T_SPLIT
+#define D_STOCHASTIC_TERRAIN_NO_FADE
+#define D_STOCHASTIC_TERRAIN
+#define D_TERRAIN_LOD
+#include "Custom/TerrainFragment.shader.h"
+
+[[FS_LIT_DEFER_STL_T_SPLIT_FADE]]
+// =================================================================================================
+#define D_DEFER
+#define D_ATTRIBUTES
+#define D_TERRAIN_T_SPLIT
+#define D_STOCHASTIC_TERRAIN
+#define D_TERRAIN_LOD
+#include "Custom/TerrainFragment.shader.h"
+
+[[FS_LIT_DEFER_STH_T_SPLIT]]
+// =================================================================================================
+#define D_DEFER
+#define D_ATTRIBUTES
+#define D_TERRAIN_T_SPLIT
+#define D_STOCHASTIC_TERRAIN_NO_FADE
+#define D_STOCHASTIC_TERRAIN
+#define D_TERRAIN_HEIGHT_LOD
+#include "Custom/TerrainFragment.shader.h"
+
+[[FS_LIT_DEFER_STH_T_SPLIT_FADE]]
+// =================================================================================================
+#define D_DEFER
+#define D_ATTRIBUTES
+#define D_TERRAIN_T_SPLIT
+#define D_STOCHASTIC_TERRAIN
+#define D_TERRAIN_HEIGHT_LOD
+#include "Custom/TerrainFragment.shader.h"
+
 [[FS_LIT_DEFER_FEEDBACK]]
 // =================================================================================================
 #define D_DEFER
@@ -839,23 +1008,6 @@ context EDITS_CACHE_FB
 #define _F07_UNLIT
 #include "Custom/TerrainFragment.shader.h"
 
-[[FS_REFLECT_WATER_UP]]
-// =================================================================================================
-#define D_REFLECT_WATER_UP
-#define _F07_UNLIT
-#include "Custom/TerrainFragment.shader.h"
-
-[[VS_REFLECT_WATER_UP]]
-// =================================================================================================
-#define D_REFLECT_WATER_UP
-#define _F07_UNLIT
-#include "Custom/TerrainVertex.shader.h"
-
-[[FS_REFLECT_WATER]]
-// =================================================================================================
-#define D_REFLECT_WATER
-#define _F07_UNLIT
-#include "Custom/TerrainFragment.shader.h"
 
 [[VS_DEFER_TESS]]
 // =================================================================================================
