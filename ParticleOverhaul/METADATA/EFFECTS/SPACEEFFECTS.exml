@@ -528,5 +528,41 @@
       <Property name="AllowTriggerActionOnDebris" value="False" />
       <Property name="MaxSpawnDistance" value="0" />
     </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="EXHALEBURST" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/SPACECRAFT/BIOSHIPNOSTRILS.SCENE.MBIN" />
+      </Property>
+      <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="3" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpace" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="SPACEPOI" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/EXPLOSION/SPACEPOIEXPLOSION.SCENE.MBIN" />
+      </Property>
+      <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="ASTEROID_EXPLODE" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="3" />
+      <Property name="Scale" value="10" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpace" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+    </Property>
   </Property>
 </Data>
