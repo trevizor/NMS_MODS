@@ -1,33 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (2.0.6)-->
+<!--File created using MBINCompiler version (2.31.0)-->
 <Data template="GcGraphicsGlobals">
   <Property name="LUTDistanceFlightMultiplier" value="0" />
   <Property name="SunLightIntensity" value="3" />
   <Property name="HBAOBias" value="0.1" />
   <Property name="HBAORadius" value="2" />
   <Property name="HBAOIntensity" value="5" />
-  <Property name="LightShaftScattering" value="0.45" />
+  <Property name="LightShaftScattering" value="0.001" /> <!--lesser is stronger -->
   <Property name="LightShaftStrength" value="0" />
-  <Property name="LightShaftBottom" value="0.01" />
-  <Property name="LightShaftTop" value="0.40" />
+  <Property name="LightShaftBottom" value="0" />
+  <Property name="LightShaftTop" value="0.35" />
   <Property name="LightShaftColourBottom" value="Colour.xml">
-    <Property name="R" value="0.2" />
-    <Property name="G" value="0.2" />
-    <Property name="B" value="0.2" />
+    <Property name="R" value="0.7" />
+    <Property name="G" value="0.7" />
+    <Property name="B" value="0.7" />
     <Property name="A" value="1" />
   </Property>
   <Property name="LightShaftColourTop" value="Colour.xml">
-    <Property name="R" value="0.6" />
-    <Property name="G" value="0.6" />
-    <Property name="B" value="0.6" />
+    <Property name="R" value="0.05" />
+    <Property name="G" value="0.05" />
+    <Property name="B" value="0.05" />
     <Property name="A" value="1" />
   </Property>
-  <Property name="SunRayDensity" value="1" />
+  <Property name="SunRayDensity" value="0.9" />
   <Property name="SunRayDecay" value="1" />
-  <Property name="SunRayExposure" value="0.1" />
+  <Property name="SunRayExposure" value="0.08" />
   <Property name="SunRayWeight" value="0.1" />
   <Property name="Brightness" value="0" />
-  <Property name="Contrast" value="1" />
+  <Property name="Contrast" value="0.9" />
   <Property name="Saturation" value="1" />
   <Property name="Redo_On" value="False" />
   <Property name="Redo_LightIntensity" value="1" />
@@ -347,6 +347,12 @@
   <Property name="Unknown0x464" value="0.15" />
   <Property name="Unknown0x468" value="0.45" />
   <Property name="Unknown0x46C" value="0.25" />
+  <Property name="Unknown0x470" value="0.1" />
+  <Property name="Unknown0x474" value="0.3" />
+  <Property name="Unknown0x478" value="0.15" />
+  <Property name="Unknown0x47C" value="0.25" />
+  <Property name="Unknown0x480" value="0.55" />
+  <Property name="Unknown0x484" value="0.25" />
   <Property name="LowHealthVignetteStart" value="0" />
   <Property name="LowHealthVignetteEnd" value="0.5" />
   <Property name="LowHealthDesaturationIntensity" value="0.85" />
@@ -447,7 +453,7 @@
   <Property name="WaterHueShift" value="0.1" />
   <Property name="WaterSaturation" value="0.8" />
   <Property name="WaterValue" value="0.4" />
-  <Property name="MaxParticleRenderRange" value="600" />
+  <Property name="MaxParticleRenderRange" value="75" />
   <Property name="MaxParticleRenderRangeSpace" value="10000" />
   <Property name="MotionBlurShutterSpeed" value="30" />
   <Property name="MotionBlurShutterAngle" value="180" />
@@ -455,20 +461,20 @@
   <Property name="TaaHighFreqConstant" value="100" />
   <Property name="TaaAccumDelay" value="0.9" />
   <Property name="FrustumJitterAmount" value="0.6" />
-  <Property name="Unknown0x5E4" value="False" />
-  <Property name="Unknown0x5E5" value="False" />
-  <Property name="Unknown0x5E6" value="False" />
-  <Property name="Unknown0x5E7" value="False" />
-  <Property name="Unknown0x5E8" value="False" />
-  <Property name="Unknown0x5E9" value="False" />
-  <Property name="Unknown0x5EA" value="False" />
+  <Property name="Unknown0x604" value="False" />
+  <Property name="Unknown0x605" value="False" />
+  <Property name="Unknown0x606" value="False" />
+  <Property name="Unknown0x607" value="False" />
+  <Property name="Unknown0x608" value="False" />
+  <Property name="Unknown0x609" value="False" />
+  <Property name="Unknown0x60A" value="False" />
   <Property name="TaaSettings" value="Vector4f.xml">
     <Property name="x" value="2" />
     <Property name="y" value="0.7" />
     <Property name="z" value="0.8" />
     <Property name="t" value="0.4" />
   </Property>
-  <Property name="Unknown0x600" value="Vector4f.xml">
+  <Property name="Unknown0x620" value="Vector4f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="0" />
     <Property name="z" value="0" />
@@ -537,9 +543,9 @@
   <Property name="SpaceIBLBlendDistance" value="200000" />
   <Property name="NoFocusMaxFPS" value="30" />
   <Property name="EnableCrossPipeSharing" value="True" />
-  <Property name="Unknown0x6D4" value="1" />
-  <Property name="Unknown0x6D8" value="2.5" />
-  <Property name="Unknown0x6DC" value="30" />
+  <Property name="Unknown0x6F4" value="1" />
+  <Property name="Unknown0x6F8" value="2.5" />
+  <Property name="Unknown0x6FC" value="30" />
   <Property name="GraphicsDetailPresets">
     <Property value="TkGraphicsDetailPreset.xml">
       <Property name="TextureQuality" value="TkGraphicsDetailTypes.xml">
@@ -566,7 +572,7 @@
       <Property name="BaseQuality" value="TkGraphicsDetailTypes.xml">
         <Property name="GraphicDetail" value="Medium" />
       </Property>
-      <Property name="AmbientOcclusion" value="Off" />
+      <Property name="AmbientOcclusion" value="GTAO_Low" />
       <Property name="AnisotropyLevel" value="_1" />
       <Property name="AntiAliasing" value="None" />
     </Property>
@@ -595,9 +601,9 @@
       <Property name="BaseQuality" value="TkGraphicsDetailTypes.xml">
         <Property name="GraphicDetail" value="Medium" />
       </Property>
-      <Property name="AmbientOcclusion" value="HBAO_Low" />
+      <Property name="AmbientOcclusion" value="GTAO_Medium" />
       <Property name="AnisotropyLevel" value="_2" />
-      <Property name="AntiAliasing" value="TAA_LOW" />
+      <Property name="AntiAliasing" value="TAA" />
     </Property>
     <Property value="TkGraphicsDetailPreset.xml">
       <Property name="TextureQuality" value="TkGraphicsDetailTypes.xml">
@@ -624,7 +630,7 @@
       <Property name="BaseQuality" value="TkGraphicsDetailTypes.xml">
         <Property name="GraphicDetail" value="High" />
       </Property>
-      <Property name="AmbientOcclusion" value="HBAO_High" />
+      <Property name="AmbientOcclusion" value="GTAO_High" />
       <Property name="AnisotropyLevel" value="_4" />
       <Property name="AntiAliasing" value="TAA" />
     </Property>
@@ -653,7 +659,7 @@
       <Property name="BaseQuality" value="TkGraphicsDetailTypes.xml">
         <Property name="GraphicDetail" value="Ultra" />
       </Property>
-      <Property name="AmbientOcclusion" value="HBAO_High" />
+      <Property name="AmbientOcclusion" value="GTAO_Ultra" />
       <Property name="AnisotropyLevel" value="_8" />
       <Property name="AntiAliasing" value="TAA" />
     </Property>
@@ -682,9 +688,9 @@
       <Property name="BaseQuality" value="TkGraphicsDetailTypes.xml">
         <Property name="GraphicDetail" value="Medium" />
       </Property>
-      <Property name="AmbientOcclusion" value="HBAO_High" />
-      <Property name="AnisotropyLevel" value="_4" />
-      <Property name="AntiAliasing" value="TAA" />
+      <Property name="AmbientOcclusion" value="GTAO_Low" />
+      <Property name="AnisotropyLevel" value="_2" />
+      <Property name="AntiAliasing" value="TAA_LOW" />
     </Property>
     <Property value="TkGraphicsDetailPreset.xml">
       <Property name="TextureQuality" value="TkGraphicsDetailTypes.xml">
@@ -711,66 +717,8 @@
       <Property name="BaseQuality" value="TkGraphicsDetailTypes.xml">
         <Property name="GraphicDetail" value="Low" />
       </Property>
-      <Property name="AmbientOcclusion" value="HBAO_Low" />
-      <Property name="AnisotropyLevel" value="_4" />
-      <Property name="AntiAliasing" value="TAA" />
-    </Property>
-    <Property value="TkGraphicsDetailPreset.xml">
-      <Property name="TextureQuality" value="TkGraphicsDetailTypes.xml">
-        <Property name="GraphicDetail" value="Medium" />
-      </Property>
-      <Property name="AnimationQuality" value="TkGraphicsDetailTypes.xml">
-        <Property name="GraphicDetail" value="Medium" />
-      </Property>
-      <Property name="ShadowQuality" value="TkGraphicsDetailTypes.xml">
-        <Property name="GraphicDetail" value="Medium" />
-      </Property>
-      <Property name="PostProcessingEffects" value="TkGraphicsDetailTypes.xml">
-        <Property name="GraphicDetail" value="Medium" />
-      </Property>
-      <Property name="VolumetricsQuality" value="TkGraphicsDetailTypes.xml">
-        <Property name="GraphicDetail" value="Medium" />
-      </Property>
-      <Property name="TerrainTessellation" value="TkGraphicsDetailTypes.xml">
-        <Property name="GraphicDetail" value="Medium" />
-      </Property>
-      <Property name="PlanetQuality" value="TkGraphicsDetailTypes.xml">
-        <Property name="GraphicDetail" value="Medium" />
-      </Property>
-      <Property name="BaseQuality" value="TkGraphicsDetailTypes.xml">
-        <Property name="GraphicDetail" value="Medium" />
-      </Property>
-      <Property name="AmbientOcclusion" value="HBAO_High" />
-      <Property name="AnisotropyLevel" value="_4" />
-      <Property name="AntiAliasing" value="TAA" />
-    </Property>
-    <Property value="TkGraphicsDetailPreset.xml">
-      <Property name="TextureQuality" value="TkGraphicsDetailTypes.xml">
-        <Property name="GraphicDetail" value="Medium" />
-      </Property>
-      <Property name="AnimationQuality" value="TkGraphicsDetailTypes.xml">
-        <Property name="GraphicDetail" value="Medium" />
-      </Property>
-      <Property name="ShadowQuality" value="TkGraphicsDetailTypes.xml">
-        <Property name="GraphicDetail" value="Medium" />
-      </Property>
-      <Property name="PostProcessingEffects" value="TkGraphicsDetailTypes.xml">
-        <Property name="GraphicDetail" value="Medium" />
-      </Property>
-      <Property name="VolumetricsQuality" value="TkGraphicsDetailTypes.xml">
-        <Property name="GraphicDetail" value="Medium" />
-      </Property>
-      <Property name="TerrainTessellation" value="TkGraphicsDetailTypes.xml">
-        <Property name="GraphicDetail" value="Medium" />
-      </Property>
-      <Property name="PlanetQuality" value="TkGraphicsDetailTypes.xml">
-        <Property name="GraphicDetail" value="Low" />
-      </Property>
-      <Property name="BaseQuality" value="TkGraphicsDetailTypes.xml">
-        <Property name="GraphicDetail" value="Medium" />
-      </Property>
-      <Property name="AmbientOcclusion" value="HBAO_High" />
-      <Property name="AnisotropyLevel" value="_4" />
+      <Property name="AmbientOcclusion" value="GTAO_Low" />
+      <Property name="AnisotropyLevel" value="_2" />
       <Property name="AntiAliasing" value="TAA" />
     </Property>
     <Property value="TkGraphicsDetailPreset.xml">
@@ -798,8 +746,66 @@
       <Property name="BaseQuality" value="TkGraphicsDetailTypes.xml">
         <Property name="GraphicDetail" value="Medium" />
       </Property>
-      <Property name="AmbientOcclusion" value="HBAO_High" />
+      <Property name="AmbientOcclusion" value="GTAO_Medium" />
       <Property name="AnisotropyLevel" value="_4" />
+      <Property name="AntiAliasing" value="TAA" />
+    </Property>
+    <Property value="TkGraphicsDetailPreset.xml">
+      <Property name="TextureQuality" value="TkGraphicsDetailTypes.xml">
+        <Property name="GraphicDetail" value="Medium" />
+      </Property>
+      <Property name="AnimationQuality" value="TkGraphicsDetailTypes.xml">
+        <Property name="GraphicDetail" value="Medium" />
+      </Property>
+      <Property name="ShadowQuality" value="TkGraphicsDetailTypes.xml">
+        <Property name="GraphicDetail" value="Medium" />
+      </Property>
+      <Property name="PostProcessingEffects" value="TkGraphicsDetailTypes.xml">
+        <Property name="GraphicDetail" value="Medium" />
+      </Property>
+      <Property name="VolumetricsQuality" value="TkGraphicsDetailTypes.xml">
+        <Property name="GraphicDetail" value="Medium" />
+      </Property>
+      <Property name="TerrainTessellation" value="TkGraphicsDetailTypes.xml">
+        <Property name="GraphicDetail" value="Medium" />
+      </Property>
+      <Property name="PlanetQuality" value="TkGraphicsDetailTypes.xml">
+        <Property name="GraphicDetail" value="Low" />
+      </Property>
+      <Property name="BaseQuality" value="TkGraphicsDetailTypes.xml">
+        <Property name="GraphicDetail" value="Medium" />
+      </Property>
+      <Property name="AmbientOcclusion" value="GTAO_Medium" />
+      <Property name="AnisotropyLevel" value="_2" />
+      <Property name="AntiAliasing" value="TAA" />
+    </Property>
+    <Property value="TkGraphicsDetailPreset.xml">
+      <Property name="TextureQuality" value="TkGraphicsDetailTypes.xml">
+        <Property name="GraphicDetail" value="Medium" />
+      </Property>
+      <Property name="AnimationQuality" value="TkGraphicsDetailTypes.xml">
+        <Property name="GraphicDetail" value="Medium" />
+      </Property>
+      <Property name="ShadowQuality" value="TkGraphicsDetailTypes.xml">
+        <Property name="GraphicDetail" value="Medium" />
+      </Property>
+      <Property name="PostProcessingEffects" value="TkGraphicsDetailTypes.xml">
+        <Property name="GraphicDetail" value="Medium" />
+      </Property>
+      <Property name="VolumetricsQuality" value="TkGraphicsDetailTypes.xml">
+        <Property name="GraphicDetail" value="Medium" />
+      </Property>
+      <Property name="TerrainTessellation" value="TkGraphicsDetailTypes.xml">
+        <Property name="GraphicDetail" value="Medium" />
+      </Property>
+      <Property name="PlanetQuality" value="TkGraphicsDetailTypes.xml">
+        <Property name="GraphicDetail" value="Medium" />
+      </Property>
+      <Property name="BaseQuality" value="TkGraphicsDetailTypes.xml">
+        <Property name="GraphicDetail" value="Medium" />
+      </Property>
+      <Property name="AmbientOcclusion" value="GTAO_Low" />
+      <Property name="AnisotropyLevel" value="_2" />
       <Property name="AntiAliasing" value="TAA" />
     </Property>
     <Property value="TkGraphicsDetailPreset.xml">
@@ -827,7 +833,7 @@
       <Property name="BaseQuality" value="TkGraphicsDetailTypes.xml">
         <Property name="GraphicDetail" value="High" />
       </Property>
-      <Property name="AmbientOcclusion" value="HBAO_High" />
+      <Property name="AmbientOcclusion" value="GTAO_Medium" />
       <Property name="AnisotropyLevel" value="_4" />
       <Property name="AntiAliasing" value="TAA" />
     </Property>
