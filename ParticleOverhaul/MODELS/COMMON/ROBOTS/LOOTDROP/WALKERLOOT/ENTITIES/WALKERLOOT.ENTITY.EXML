@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (2.0.4)-->
+<!--File created using MBINCompiler version (2.31.0)-->
 <Data template="TkAttachmentData">
   <Property name="Components">
     <Property value="TkPhysicsComponentData.xml">
@@ -29,7 +29,7 @@
       <Property name="Explosion" value="DOOREXPLODE" />
       <Property name="ExplosionScale" value="0.3" />
       <Property name="ExplosionScaleToBounds" value="False" />
-      <Property name="VehicleDestroyEffect" value="DOOREXPLODE" />
+      <Property name="VehicleDestroyEffect" value="VEHICLECRASH" />
       <Property name="TriggerAction" value="" />
       <Property name="IncreaseWanted" value="0" />
       <Property name="IncreaseFiendWanted" value="False" />
@@ -42,6 +42,8 @@
         <Property name="Stat" value="None" />
       </Property>
       <Property name="GivesReward" value="WALKER_LOOT" />
+      <Property name="HideReward" value="False" />
+      <Property name="OverrideRewardLoc" value="" />
       <Property name="HardModeSubstanceMultiplier" value="1" />
       <Property name="RewardOverrideTable" />
       <Property name="ActivateLocatorsFromRarity" value="False" />
