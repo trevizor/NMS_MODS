@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (2.31.0)-->
+<!--File created using MBINCompiler version (2.32.0)-->
 <Data template="GcCreatureRoleDescriptionTable">
   <Property name="RoleDescription">
+  	<!-- extra creatures -->
     <Property value="GcCreatureRoleDescription.xml">
       <Property name="CreatureRole" value="GcCreatureRoles.xml">
         <Property name="CreatureRole" value="Prey" />
@@ -9,16 +10,16 @@
       <Property name="CreatureType" value="GcCreatureTypes.xml">
         <Property name="CreatureType" value="None" />
       </Property>
-      <Property name="ForceID" value="TREX" />
+      <Property name="ForceID" value="FLYING_JELLY" />
       <Property name="MinGroupScale" value="1" />
       <Property name="MaxGroupScale" value="1" />
-      <Property name="MinGroupSize" value="2" />
-      <Property name="MaxGroupSize" value="10" />
-      <Property name="GroupsPerSquareKm" value="500" />
+      <Property name="MinGroupSize" value="20" />
+      <Property name="MaxGroupSize" value="60" />
+      <Property name="GroupsPerSquareKm" value="50" />
       <Property name="FractionActiveInDay" value="0" />
       <Property name="FractionActiveInNight" value="1" />
-      <Property name="ProbabilityOfBeingEnabled" value="1" />
-      <Property name="IncreasedSpawnDistance" value="1" />
+      <Property name="ProbabilityOfBeingEnabled" value="0.01" />
+      <Property name="IncreasedSpawnDistance" value="3" />
       <Property name="Filter" value="" />
     </Property>
   </Property>
@@ -28,6 +29,6 @@
     <Property name="TileType" value="Base" />
   </Property>
   <Property name="LifeLevel" value="GcPlanetLife.xml">
-    <Property name="LifeSetting" value="Mid" />
+    <Property name="LifeSetting" value="Dead" />
   </Property>
 </Data>
