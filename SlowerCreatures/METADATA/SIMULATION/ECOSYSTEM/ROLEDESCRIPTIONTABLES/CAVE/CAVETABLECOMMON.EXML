@@ -71,11 +71,11 @@
       <Property name="MinGroupScale" value="1" />
       <Property name="MaxGroupScale" value="1" />
       <Property name="MinGroupSize" value="2" />
-      <Property name="MaxGroupSize" value="8" />
+      <Property name="MaxGroupSize" value="12" />
       <Property name="GroupsPerSquareKm" value="80" />
-      <Property name="FractionActiveInDay" value="0" />
+      <Property name="FractionActiveInDay" value="1" />
       <Property name="FractionActiveInNight" value="1" />
-      <Property name="ProbabilityOfBeingEnabled" value="0.30" />
+      <Property name="ProbabilityOfBeingEnabled" value="0.65" />
       <Property name="IncreasedSpawnDistance" value="1" />
       <Property name="Filter" value="" />
     </Property>
@@ -92,11 +92,30 @@
       <Property name="MaxGroupScale" value="1" />
       <Property name="MinGroupSize" value="2" />
       <Property name="MaxGroupSize" value="12" />
-      <Property name="GroupsPerSquareKm" value="80" />
-      <Property name="FractionActiveInDay" value="0" />
+      <Property name="GroupsPerSquareKm" value="120" />
+      <Property name="FractionActiveInDay" value="1" />
       <Property name="FractionActiveInNight" value="1" />
       <Property name="ProbabilityOfBeingEnabled" value="0.05" />
       <Property name="IncreasedSpawnDistance" value="1" />
+      <Property name="Filter" value="" />
+    </Property>
+    <Property value="GcCreatureRoleDescription.xml">
+      <Property name="CreatureRole" value="GcCreatureRoles.xml">
+        <Property name="CreatureRole" value="Prey" />
+      </Property>
+      <Property name="CreatureType" value="GcCreatureTypes.xml">
+        <Property name="CreatureType" value="None" />
+      </Property>
+      <Property name="ForceID" value="BLOB" />
+      <Property name="MinGroupScale" value="0.7" />
+      <Property name="MaxGroupScale" value="0.8" />
+      <Property name="MinGroupSize" value="4" />
+      <Property name="MaxGroupSize" value="8" />
+      <Property name="GroupsPerSquareKm" value="250" />
+      <Property name="FractionActiveInDay" value="1" />
+      <Property name="FractionActiveInNight" value="0.25" />
+      <Property name="ProbabilityOfBeingEnabled" value="1" />
+      <Property name="IncreasedSpawnDistance" value="1.25" />
       <Property name="Filter" value="" />
     </Property>
   </Property>

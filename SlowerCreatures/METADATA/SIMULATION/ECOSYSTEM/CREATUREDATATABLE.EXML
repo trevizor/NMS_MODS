@@ -2842,8 +2842,8 @@
         <Property name="CreatureType" value="Shark" />
       </Property>
       <Property name="MoveArea" value="Water" />
-      <Property name="MinScale" value="0.2" />
-      <Property name="MaxScale" value="9.5" />
+      <Property name="MinScale" value="8" />
+      <Property name="MaxScale" value="19.5" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -6410,7 +6410,7 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="LEFT" />
               <Property name="AnimRight" value="RIGHT" />
-              <Property name="AnimSpeed" value="0.5" />
+              <Property name="AnimSpeed" value="0.25" />
               <Property name="MinSpeedScale" value="0.3" />
               <Property name="MaxSpeedScale" value="1.3" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
@@ -6421,7 +6421,7 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="LEFT" />
               <Property name="AnimRight" value="RIGHT" />
-              <Property name="AnimSpeed" value="0.5" />
+              <Property name="AnimSpeed" value="0.25" />
               <Property name="MinSpeedScale" value="0.3" />
               <Property name="MaxSpeedScale" value="1.3" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
@@ -6432,7 +6432,7 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="LEFT" />
               <Property name="AnimRight" value="RIGHT" />
-              <Property name="AnimSpeed" value="0.5" />
+              <Property name="AnimSpeed" value="0.25" />
               <Property name="MinSpeedScale" value="0.3" />
               <Property name="MaxSpeedScale" value="1.3" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
@@ -6459,11 +6459,11 @@
           <Property name="Follow" value="1.5" />
           <Property name="Range" value="30" />
           <Property name="MaxbankingAmount" value="0" />
-          <Property name="TurnRequiredForMaxBanking" value="0.3" />
-          <Property name="MaxPitchAmount" value="0.5" />
+          <Property name="TurnRequiredForMaxBanking" value="0" />
+          <Property name="MaxPitchAmount" value="0.01" />
           <Property name="UpwardMovementForMaxPitch" value="0.4" />
-          <Property name="MaxSpeed" value="5" />
-          <Property name="AlignTime" value="0.5" />
+          <Property name="MaxSpeed" value="2" />
+          <Property name="AlignTime" value="6" />
           <Property name="SpringSmoothTime" value="0.1" />
           <Property name="RepelList">
             <Property value="NMSString0x10.xml">
