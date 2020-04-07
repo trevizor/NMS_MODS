@@ -402,12 +402,12 @@
   <Property name="TurnInPlaceMinTime" value="1" />
   <Property name="TurnInPlaceMaxSpeed" value="5" />
   <Property name="SceneTerrainSpawnMinDistance" value="0" />
-  <Property name="CreatureMinAlignSpeed" value="0.8" />
+  <Property name="CreatureMinAlignSpeed" value="0.1" />
   <Property name="PatrolMinDist" value="10" />
   <Property name="PatrolMaxDist" value="20" />
   <Property name="PatrolHeightOffset" value="1" />
   <Property name="PatrolGradientFactor" value="1" />
-  <Property name="CreatureWaryTime" value="1" />
+  <Property name="CreatureWaryTime" value="3" />
   <Property name="CreatureMinRunTime" value="8" />
   <Property name="CreatureHearingRange" value="10" />
   <Property name="CreatureSightRange" value="100" />
@@ -511,27 +511,27 @@
   <Property name="TargetSearchTimeout" value="0.5" />
   <Property name="AttractMinDistance" value="50" />
   <Property name="SwarmMoveYFactor" value="0.2" />
-  <Property name="DroneExplodeRadius" value="10" />
-  <Property name="WeaponRepelRange" value="18" />
-  <Property name="WeaponRepelAmount" value="2" />
+  <Property name="DroneExplodeRadius" value="15" />
+  <Property name="WeaponRepelRange" value="40" />
+  <Property name="WeaponRepelAmount" value="4" />
   <Property name="VelocityAlignStrength" value="3" />
   <Property name="VelocityAlignSpeed" value="8" />
   <Property name="HeightLookAhead" value="2" />
   <Property name="MaxHeightTime" value="3" />
-  <Property name="PlayerBirdDistance" value="50" />
-  <Property name="FishSpeedMin" value="0.15" />
-  <Property name="FishSpeedMax" value="7" />
-  <Property name="FishSwimMaxAcceleration" value="0.5" />
+  <Property name="PlayerBirdDistance" value="15" />
+  <Property name="FishSpeedMin" value="0.1" />
+  <Property name="FishSpeedMax" value="10" />
+  <Property name="FishSwimMaxAcceleration" value="0.8" />
   <Property name="AlertDistance" value="25" />
   <Property name="RepelRange" value="5" />
   <Property name="RepelAmount" value="1" />
-  <Property name="FishTurn" value="2" />
+  <Property name="FishTurn" value="1" />
   <Property name="TargetReachedDistance" value="3" />
   <Property name="MaxSpeed" value="30" />
   <Property name="MaxForce" value="500" />
   <Property name="MaxTorque" value="50" />
-  <Property name="MinWaterSpawnDepth" value="0.1" />
-  <Property name="WaterSpawnOffset" value="1" />
+  <Property name="MinWaterSpawnDepth" value="0.4" />
+  <Property name="WaterSpawnOffset" value="0" />
   <Property name="SpawnDistanceModifierForUnderwater" value="0.1" />
   <Property name="FootDustGroundTintStrength" value="0.3" />
   <Property name="Unknown0x113C" value="1" />
@@ -677,7 +677,7 @@
   <Property name="DelayBetweenSpitAttacks" value="1" />
   <Property name="FiendMaxVerticalForPounce" value="0.3" />
   <Property name="FiendZigZagSpeed" value="3" />
-  <Property name="FiendZigZagStrength" value="1" />
+  <Property name="FiendZigZagStrength" value="3" />
   <Property name="FiendEggsToUnlockSpit" value="0" />
   <Property name="MaxFiendsToSpawn" value="6" />
   <Property name="FiendMinSpawnTime" value="0.25" />
@@ -732,8 +732,8 @@
   <Property name="Unknown0x1410" value="1" />
   <Property name="FollowLeaderCohereWeight" value="0.3" />
   <Property name="Unknown0x1418" value="0.2" />
-  <Property name="DefaultSwimSpeed" value="0.6" />
-  <Property name="FastSwimSpeed" value="2.5" />
+  <Property name="DefaultSwimSpeed" value="0.4" />
+  <Property name="FastSwimSpeed" value="3.5" />
   <Property name="DefaultWalkMoveSpeed" value="0.8" />
   <Property name="DefaultTrotMoveSpeed" value="2.2" />
   <Property name="DefaultRunMoveSpeed" value="5" />
@@ -744,12 +744,12 @@
   <Property name="EdgeClosenessPenalty" value="6" />
   <Property name="PelvisIkStrength" value="0.25" />
   <Property name="SteeringUpdateRate" value="0.25" />
-  <Property name="PathOverestimate" value="6" />
-  <Property name="FishWaterSurfaceAnticipate" value="5" />
-  <Property name="FishWaterSurfaceAvoidStrength" value="8" />
-  <Property name="FishDesiredDepth" value="1.5" />
-  <Property name="FishMinHeightAboveSeaBed" value="1.5" />
-  <Property name="FishSeaBedAvoidStrength" value="1.5" />
+  <Property name="PathOverestimate" value="3" />
+  <Property name="FishWaterSurfaceAnticipate" value="1" />
+  <Property name="FishWaterSurfaceAvoidStrength" value="2" />
+  <Property name="FishDesiredDepth" value="2" />
+  <Property name="FishMinHeightAboveSeaBed" value="2" />
+  <Property name="FishSeaBedAvoidStrength" value="2" />
   <Property name="FishObstacleAvoidStrength" value="2" />
   <Property name="FishPlayerAttractionFrontDist" value="40" />
   <Property name="FishPlayerAttractionAhead" value="8" />
@@ -772,9 +772,9 @@
   <Property name="DebugDrawTrails" value="False" />
   <Property name="TrailHalfLife" value="80" />
   <Property name="EnableTrailIk" value="True" />
-  <Property name="DetailAnimBlendInTime" value="0.6" />
-  <Property name="DetailAnimBlendOutTime" value="0.2" />
-  <Property name="DetailAnimMinPauseTime" value="0.6" />
+  <Property name="DetailAnimBlendInTime" value="1" />
+  <Property name="DetailAnimBlendOutTime" value="1" />
+  <Property name="DetailAnimMinPauseTime" value="2" />
   <Property name="DetailAnimMaxPauseTime" value="3.2" />
   <Property name="DetailAnimPlayWhileWalking" value="True" />
   <Property name="CreatureDeathEffectSmall" value="DEATHBLOODSMALL" />

@@ -78,7 +78,7 @@
           <Property name="Range" value="40" />
           <Property name="MaxbankingAmount" value="0" />
           <Property name="TurnRequiredForMaxBanking" value="0.3" />
-          <Property name="MaxPitchAmount" value="0.2" />
+          <Property name="MaxPitchAmount" value="0.1" />
           <Property name="UpwardMovementForMaxPitch" value="0.2" />
           <Property name="MaxSpeed" value="4.5" />
           <Property name="AlignTime" value="4" />
@@ -442,7 +442,7 @@
           <Property name="Range" value="8" />
           <Property name="MaxbankingAmount" value="0" />
           <Property name="TurnRequiredForMaxBanking" value="0.3" />
-          <Property name="MaxPitchAmount" value="0.2" />
+          <Property name="MaxPitchAmount" value="0.1" />
           <Property name="UpwardMovementForMaxPitch" value="0.3" />
           <Property name="MaxSpeed" value="7.5" />
           <Property name="AlignTime" value="4" />
@@ -2909,7 +2909,7 @@
           <Property name="MaxCount" value="5" />
           <Property name="SwarmMovementSpeed" value="1.5" />
           <Property name="SwarmMovementRadius" value="7000" />
-          <Property name="SwarmMovementType" value="FollowPlayer" />
+          <Property name="SwarmMovementType" value="Circle" />
           <Property name="Coherence" value="0.9" />
           <Property name="Alignment" value="1.44" />
           <Property name="Spacing" value="12" />
@@ -2917,7 +2917,7 @@
           <Property name="Range" value="40" />
           <Property name="MaxbankingAmount" value="0" />
           <Property name="TurnRequiredForMaxBanking" value="0.3" />
-          <Property name="MaxPitchAmount" value="0.1" />
+          <Property name="MaxPitchAmount" value="0.01" />
           <Property name="UpwardMovementForMaxPitch" value="0.4" />
           <Property name="MaxSpeed" value="6" />
           <Property name="AlignTime" value="4" />
@@ -3189,7 +3189,7 @@
           <Property name="Range" value="20" />
           <Property name="MaxbankingAmount" value="0.4" />
           <Property name="TurnRequiredForMaxBanking" value="0.3" />
-          <Property name="MaxPitchAmount" value="0.2" />
+          <Property name="MaxPitchAmount" value="0.1" />
           <Property name="UpwardMovementForMaxPitch" value="0.3" />
           <Property name="MaxSpeed" value="7.5" />
           <Property name="AlignTime" value="2" />
@@ -5074,7 +5074,7 @@
           <Property name="Range" value="40" />
           <Property name="MaxbankingAmount" value="0" />
           <Property name="TurnRequiredForMaxBanking" value="0.3" />
-          <Property name="MaxPitchAmount" value="0.2" />
+          <Property name="MaxPitchAmount" value="0.1" />
           <Property name="UpwardMovementForMaxPitch" value="0.3" />
           <Property name="MaxSpeed" value="1.5" />
           <Property name="AlignTime" value="4" />
@@ -5132,7 +5132,7 @@
           <Property name="Range" value="40" />
           <Property name="MaxbankingAmount" value="0" />
           <Property name="TurnRequiredForMaxBanking" value="0.3" />
-          <Property name="MaxPitchAmount" value="0.2" />
+          <Property name="MaxPitchAmount" value="0.1" />
           <Property name="UpwardMovementForMaxPitch" value="0" />
           <Property name="MaxSpeed" value="1.875" />
           <Property name="AlignTime" value="4" />
@@ -5354,7 +5354,7 @@
           <Property name="Range" value="40" />
           <Property name="MaxbankingAmount" value="0" />
           <Property name="TurnRequiredForMaxBanking" value="0" />
-          <Property name="MaxPitchAmount" value="0.5" />
+          <Property name="MaxPitchAmount" value="0.25" />
           <Property name="UpwardMovementForMaxPitch" value="0.2" />
           <Property name="MaxSpeed" value="3.75" />
           <Property name="AlignTime" value="4" />
@@ -5450,7 +5450,7 @@
           <Property name="Range" value="40" />
           <Property name="MaxbankingAmount" value="0" />
           <Property name="TurnRequiredForMaxBanking" value="0.3" />
-          <Property name="MaxPitchAmount" value="0.2" />
+          <Property name="MaxPitchAmount" value="0.1" />
           <Property name="UpwardMovementForMaxPitch" value="0.4" />
           <Property name="MaxSpeed" value="3.75" />
           <Property name="AlignTime" value="4" />
@@ -5505,7 +5505,7 @@
           <Property name="Range" value="40" />
           <Property name="MaxbankingAmount" value="0" />
           <Property name="TurnRequiredForMaxBanking" value="0" />
-          <Property name="MaxPitchAmount" value="0.5" />
+          <Property name="MaxPitchAmount" value="0.25" />
           <Property name="UpwardMovementForMaxPitch" value="0.3" />
           <Property name="MaxSpeed" value="3.75" />
           <Property name="AlignTime" value="4" />
@@ -6080,7 +6080,7 @@
           <Property name="Range" value="10" />
           <Property name="MaxbankingAmount" value="0.5" />
           <Property name="TurnRequiredForMaxBanking" value="0.3" />
-          <Property name="MaxPitchAmount" value="0.5" />
+          <Property name="MaxPitchAmount" value="0.25" />
           <Property name="UpwardMovementForMaxPitch" value="0.3" />
           <Property name="MaxSpeed" value="10" />
           <Property name="AlignTime" value="0.2" />
@@ -6177,7 +6177,7 @@
           <Property name="Range" value="10" />
           <Property name="MaxbankingAmount" value="0.5" />
           <Property name="TurnRequiredForMaxBanking" value="0.3" />
-          <Property name="MaxPitchAmount" value="0.5" />
+          <Property name="MaxPitchAmount" value="0.25" />
           <Property name="UpwardMovementForMaxPitch" value="0.3" />
           <Property name="MaxSpeed" value="7" />
           <Property name="AlignTime" value="0.2" />
@@ -6449,7 +6449,7 @@
         </Property>
         <Property value="GcCreatureSwarmData.xml">
           <Property name="MinCount" value="1" />
-          <Property name="MaxCount" value="3" />
+          <Property name="MaxCount" value="1" />
           <Property name="SwarmMovementSpeed" value="1.5" />
           <Property name="SwarmMovementRadius" value="70" />
           <Property name="SwarmMovementType" value="Random" />
