@@ -1,0 +1,24 @@
+[VERSION]: MBINCompiler v2.41.0.2
+[ARGS]: "CREATUREDATATABLE.EXML"
+
+If you encounter any errors, please submit a bug report and include this log file.
+Please check that there isn't already a similar issue open before creating a new one.
+https://github.com/monkeyman192/MBINCompiler/issues
+
+[INFO]: Auto-Detected --input-format=EXML
+[INFO]: --input-format=EXML --output-format=MBIN
+
+[ERROR]: [AggregateException]: Um ou mais erros.
+[ExmlException]: An EXML exception has occurred!
+[InvalidOperationException]: Erro no documento XML (6480, 3).
+[XmlException]: A marca de início 'Property' na linha 4 posição 4 não corresponde à marca de fim de 'Data'. Linha 6480, posição 3.
+
+   em System.Xml.XmlTextReaderImpl.Throw(Exception e)
+   em System.Xml.XmlTextReaderImpl.ThrowTagMismatch(NodeData startTag)
+   em System.Xml.XmlTextReaderImpl.ParseEndElement()
+   em System.Xml.XmlTextReaderImpl.ParseElementContent()
+   em System.Xml.XmlReader.MoveToContent()
+   em Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderEXmlData.Read1_EXmlProperty(Boolean isNullable, Boolean checkType)
+   em Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderEXmlData.Read5_EXmlData(Boolean isNullable, Boolean checkType)
+   em Microsoft.Xml.Serialization.GeneratedAssembly.XmlSerializationReaderEXmlData.Read6_Data()
+

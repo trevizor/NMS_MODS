@@ -633,21 +633,21 @@
   <Property name="LargeCreatureFleePlayerDistance" value="2" />
   <Property name="SmallCreatureAvoidPlayerDistance" value="1" />
   <Property name="LargeCreatureAvoidPlayerDistance" value="1" />
-  <Property name="PredatorPerceptionDistance" value="40" />
-  <Property name="PredatorFishPerceptionDistance" value="60" />
+  <Property name="PredatorPerceptionDistance" value="80" />
+  <Property name="PredatorFishPerceptionDistance" value="100" />
   <Property name="PassiveFleePlayerDistance" value="10" />
   <Property name="AdultBabyKilledNoticeDistance" value="70" />
-  <Property name="PercentagePlayerPredators" value="0.5" />
-  <Property name="PredatorSmallHealth" value="400" />
-  <Property name="PredatorMedHealth" value="1400" />
-  <Property name="PredatorLargeHealth" value="3000" />
-  <Property name="PredatorHugeHealth" value="3500" />
+  <Property name="PercentagePlayerPredators" value="0.7" />
+  <Property name="PredatorSmallHealth" value="2400" />
+  <Property name="PredatorMedHealth" value="3400" />
+  <Property name="PredatorLargeHealth" value="8000" />
+  <Property name="PredatorHugeHealth" value="13500" />
   <Property name="Unknown0x12B8" value="1.3" />
   <Property name="PredatorApproachTime" value="8" />
   <Property name="PredatorNoticePauseTime" value="1.5" />
-  <Property name="PredatorStealthDist" value="11" />
-  <Property name="PredatorChargeDist" value="7" />
-  <Property name="PredatorChargeDistScale" value="0.3" />
+  <Property name="PredatorStealthDist" value="30" />
+  <Property name="PredatorChargeDist" value="2" />
+  <Property name="PredatorChargeDistScale" value="0.2" />
   <Property name="FishPredatorChargeDist" value="7" />
   <Property name="FishPredatorChargeDistScale" value="0.3" />
   <Property name="PredatorBoredomDistance" value="80" />
@@ -655,11 +655,11 @@
   <Property name="PredatorRegainInterestTime" value="30" />
   <Property name="PlayerPredatorRegainInterestTime" value="30" />
   <Property name="PredatorRunAwayDist" value="5" />
-  <Property name="PredatorRoarProbAfterHit" value="0.6" />
-  <Property name="PredatorRoarProbAfterMiss" value="0.7" />
-  <Property name="PredatorRunAwayHealthPercent" value="40" />
-  <Property name="PredatorEnergyRecoverRate" value="0.1" />
-  <Property name="PredatorEnergyUseChasing" value="-0.1" />
+  <Property name="PredatorRoarProbAfterHit" value="0.1" />
+  <Property name="PredatorRoarProbAfterMiss" value="0.1" />
+  <Property name="PredatorRunAwayHealthPercent" value="30" />
+  <Property name="PredatorEnergyRecoverRate" value="0.13" />
+  <Property name="PredatorEnergyUseChasing" value="-0.07" />
   <Property name="Unknown0x1300" value="0" />
   <Property name="Unknown0x1304" value="10" />
   <Property name="AggressiveSharks" value="True" />
@@ -689,8 +689,8 @@
   <Property name="Unknown0x1364" value="10" />
   <Property name="Unknown0x1368" value="70" />
   <Property name="Unknown0x136C" value="10" />
-  <Property name="MaxFishFiends" value="10" />
-  <Property name="FishFiendSmallHealth" value="400" />
+  <Property name="MaxFishFiends" value="15" />
+  <Property name="FishFiendSmallHealth" value="600" />
   <Property name="FishFiendBigHealth" value="9000" />
   <Property name="FishFiendSmallBoostStrength" value="10" />
   <Property name="FishFiendSmallBoostTime" value="0.5" />
@@ -708,7 +708,7 @@
   <Property name="RagdollMotorFadeEnd" value="2" />
   <Property name="MaxRagdollsBeforeDespawnOffscreen" value="12" />
   <Property name="MaxRagdollsBeforeDespawnOnscreen" value="18" />
-  <Property name="TurnRadiusMultiplier" value="1" />
+  <Property name="TurnRadiusMultiplier" value="1.5" />
   <Property name="Unknown0x13C0" value="1" />
   <Property name="Unknown0x13C4" value="5" />
   <Property name="TurnSlowAreaCos" value="0.75" />
@@ -739,7 +739,7 @@
   <Property name="DefaultRunMoveSpeed" value="5" />
   <Property name="PredatorWalkMoveSpeed" value="1" />
   <Property name="PredatorTrotMoveSpeed" value="3" />
-  <Property name="PredatorRunMoveSpeed" value="6" />
+  <Property name="PredatorRunMoveSpeed" value="10" />
   <Property name="HeightDiffPenalty" value="4" />
   <Property name="EdgeClosenessPenalty" value="6" />
   <Property name="PelvisIkStrength" value="0.25" />
@@ -759,7 +759,7 @@
   <Property name="AttackPlayerDistance" value="1.5" />
   <Property name="SpawnCameraAngleCos" value="-0.8" />
   <Property name="SpawnMinDistPercentage" value="0.3" />
-  <Property name="SpawnOnscreenDist" value="10" />
+  <Property name="SpawnOnscreenDist" value="20" />
   <Property name="FadeScaleMultiplier" value="45" />
   <Property name="FadeScalePower" value="1" />
   <Property name="FadeDistance" value="400" />
@@ -772,9 +772,9 @@
   <Property name="DebugDrawTrails" value="False" />
   <Property name="TrailHalfLife" value="80" />
   <Property name="EnableTrailIk" value="True" />
-  <Property name="DetailAnimBlendInTime" value="1" />
-  <Property name="DetailAnimBlendOutTime" value="1" />
-  <Property name="DetailAnimMinPauseTime" value="2" />
+  <Property name="DetailAnimBlendInTime" value="0.6" />
+  <Property name="DetailAnimBlendOutTime" value="0.3" />
+  <Property name="DetailAnimMinPauseTime" value="1" />
   <Property name="DetailAnimMaxPauseTime" value="3.2" />
   <Property name="DetailAnimPlayWhileWalking" value="True" />
   <Property name="CreatureDeathEffectSmall" value="DEATHBLOODSMALL" />
