@@ -47,7 +47,7 @@
   <Property name="DoFAdjustMagnitudeMaxCurve" value="TkCurveType.xml">
     <Property name="Curve" value="Linear" />
   </Property>
-  <Property name="DayLength" value="6000" />
+  <Property name="DayLength" value="3000" />
   <Property name="SunRotationAxis" value="Vector4f.xml">
     <Property name="x" value="1" />
     <Property name="y" value="0" />
@@ -55,9 +55,9 @@
     <Property name="t" value="0" />
   </Property>
   <Property name="SafeSkyMinIndex" value="0" />
-  <Property name="SafeSkyMaxIndex" value="5" />
+  <Property name="SafeSkyMaxIndex" value="10" />
   <Property name="FrozenSkyMinIndex" value="0" />
-  <Property name="FrozenSkyMaxIndex" value="0" />
+  <Property name="FrozenSkyMaxIndex" value="10" />
   <Property name="SunClampAngle" value="86" />
   <Property name="PhotoModeSunSpeed" value="5" />
   <Property name="FreshStartTimeOfDay" value="0.3" />
@@ -177,7 +177,7 @@
   <Property name="CloudColourV" value="0.03" />
   <Property name="NebulaShadow" value="0.1" />
   <Property name="SpaceAtmosphereThickness" value="0.4" />
-  <Property name="WaterHeavyAirAlpha" value="0.2" />
+  <Property name="WaterHeavyAirAlpha" value="1" />
   <Property name="NightHorizonBlendMin" value="0.6" />
   <Property name="NightHorizonBlendMax" value="0.6" />
   <Property name="NightSkyBlendMin" value="0.1" />
@@ -211,9 +211,9 @@
     <Property name="FogColourStrength" value="10" />
     <Property name="FogColourMax" value="1" />
     <Property name="HeightFogStrength" value="0.1" />
-    <Property name="HeightFogFadeOutStrength" value="0.2" />
+    <Property name="HeightFogFadeOutStrength" value="0.1" />
     <Property name="HeightFogOffset" value="0" />
-    <Property name="HeightFogMax" value="0.7" />
+    <Property name="HeightFogMax" value="0.4" />
     <Property name="FogHeight" value="128" />
     <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
       <Property name="Settings">
