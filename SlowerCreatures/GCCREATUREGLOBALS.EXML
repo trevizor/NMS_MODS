@@ -394,7 +394,7 @@
   <Property name="MaxEcosystemCreatures" value="40" />
   <Property name="UnknownInt0xF24" value="20" />
   <Property name="UncapSpawningforVideo" value="False" />
-  <Property name="AllowSpawningOnscreen" value="True" />
+  <Property name="AllowSpawningOnscreen" value="False" />
   <Property name="ResourceSpawnTime" value="1" />
   <Property name="TurnInPlaceIdleTime" value="1" />
   <Property name="TurnInPlaceMaxAngle" value="15" />
@@ -402,15 +402,15 @@
   <Property name="TurnInPlaceMaxSpeed" value="5" />
   <Property name="SceneTerrainSpawnMinDistance" value="0" />
   <Property name="CreatureMinAlignSpeed" value="0.1" />
-  <Property name="PatrolMinDist" value="10" />
-  <Property name="PatrolMaxDist" value="20" />
+  <Property name="PatrolMinDist" value="40" />
+  <Property name="PatrolMaxDist" value="60" />
   <Property name="PatrolHeightOffset" value="1" />
   <Property name="PatrolGradientFactor" value="1" />
   <Property name="CreatureWaryTime" value="3" />
   <Property name="CreatureMinRunTime" value="8" />
   <Property name="CreatureHearingRange" value="10" />
   <Property name="CreatureSightRange" value="100" />
-  <Property name="CreatureMoveIdle" value="0.05" />
+  <Property name="CreatureMoveIdle" value="0.001" />
   <Property name="CreatureTurnMin" value="1" />
   <Property name="CreatureTurnMax" value="0.05" />
   <Property name="CreatureBrakeForce" value="10" />
@@ -757,8 +757,8 @@
   <Property name="FishPlayerAttractionStrength" value="1" />
   <Property name="AttackPlayerDistance" value="1.5" />
   <Property name="SpawnCameraAngleCos" value="-0.8" />
-  <Property name="SpawnMinDistPercentage" value="0.3" />
-  <Property name="SpawnOnscreenDist" value="20" />
+  <Property name="SpawnMinDistPercentage" value="0.4" />
+  <Property name="SpawnOnscreenDist" value="80" />
   <Property name="FadeScaleMultiplier" value="45" />
   <Property name="FadeScalePower" value="1" />
   <Property name="FadeDistance" value="400" />

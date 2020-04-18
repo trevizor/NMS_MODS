@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (2.32.0)-->
+<!--File created using MBINCompiler version (2.41.0)-->
 <Data template="GcEnvironmentGlobals">
   <Property name="LODSettings">
     <Property value="TkLODSettingsData.xml">
@@ -195,11 +195,11 @@
     <Property name="SunRayLength" value="50" />
     <Property name="ConeRadius" value="5" />
     <Property name="Density" value="1" />
-    <Property name="AmbientDensity" value="0.2" />
+    <Property name="AmbientDensity" value="0.1" />
     <Property name="ForwardScatteringG" value="0.9" />
     <Property name="BackwardScatteringG" value="0.3" />
     <Property name="DarkOutlineScalar" value="1" />
-    <Property name="AnimationScale" value="10" />
+    <Property name="AnimationScale" value="15" />
     <Property name="WindOffset" value="Vector2f.xml">
       <Property name="x" value="0.5" />
       <Property name="y" value="0.5" />
@@ -211,7 +211,7 @@
     <Property name="BaseScale" value="1" />
     <Property name="SampleScalar" value="5" />
     <Property name="SampleThreshold" value="0.25" />
-    <Property name="CloudBottomFade" value="0" />
+    <Property name="CloudBottomFade" value="2" />
     <Property name="CloudHeightGradient1" value="Vector4f.xml">
       <Property name="x" value="0.1" />
       <Property name="y" value="0.15" />
@@ -230,19 +230,19 @@
       <Property name="z" value="0.3" />
       <Property name="t" value="1" />
     </Property>
-    <Property name="DetailScale" value="3" />
+    <Property name="DetailScale" value="6" />
     <Property name="ErosionEdgeSize" value="0.5" />
-    <Property name="CloudDistortion" value="30" />
+    <Property name="CloudDistortion" value="50" />
     <Property name="CloudDistortionScale" value="1" />
     <Property name="MaxIterations" value="128" />
     <Property name="RayMinimumY" value="0" />
     <Property name="LODDistance" value="0" />
     <Property name="HorizonFadeStartAlpha" value="0" />
-    <Property name="HorizonFadeScalar" value="0" />
+    <Property name="HorizonFadeScalar" value="0.25" />
     <Property name="HorizonDistance" value="11165" />
     <Property name="AtmosphereStartHeight" value="600" />
     <Property name="AtmosphereEndHeight" value="1276" />
-    <Property name="StratosphereHeight" value="4500" />
+    <Property name="StratosphereHeight" value="4000" />
   </Property>
   <Property name="SenseProbingValueSmoothingTime" value="0.25" />
   <Property name="SenseProbingValueSmoothingTimeSlow" value="1" />
@@ -265,14 +265,14 @@
     <Property name="x" value="35" />
     <Property name="y" value="180" />
   </Property>
-  <Property name="DailyTempChangePercent" value="0.50" />
+  <Property name="DailyTempChangePercent" value="0.25" />
   <Property name="SpaceTemperature" value="0" />
   <Property name="ShipTemperature" value="19" />
   <Property name="SpaceRadiation" value="5" />
   <Property name="ShipRadiation" value="0" />
   <Property name="SpaceToxicity" value="0" />
   <Property name="ShipToxicity" value="0" />
-  <Property name="MatchPlantPalettes" value="True" />
+  <Property name="MatchPlantPalettes" value="False" />
   <Property name="DuplicateColourThreshold" value="1" />
   <Property name="SwitchType" value="2" />
   <Property name="GrassNormalUpright" value="1" />
@@ -286,10 +286,10 @@
   <Property name="SpaceStationStateBoundingBoxScaler" value="0.75" />
   <Property name="AtmosphereSpaceRadius" value="10800" />
   <Property name="SpawnLowerAtmosphereRadiusMultiplier" value="0.75" />
-  <Property name="TerrainFadeTime" value="0.2" />
-  <Property name="TerrainFadeTimeInShip" value="0.3" />
-  <Property name="CreatureFadeTime" value="0.5" />
-  <Property name="FloraFadeTimeMin" value="0.3" />
+  <Property name="TerrainFadeTime" value="2" />
+  <Property name="TerrainFadeTimeInShip" value="2" />
+  <Property name="CreatureFadeTime" value="1.5" />
+  <Property name="FloraFadeTimeMin" value="0.6" />
   <Property name="FloraFadeTimeMax" value="2.25" />
   <Property name="PlanetUnwrapMin" value="0" />
   <Property name="PlanetUnwrapMax" value="0" />
@@ -303,23 +303,23 @@
   <Property name="WaterFogHeightMax" value="102" />
   <Property name="WaterAlphaHeightMin" value="40" />
   <Property name="WaterAlphaHeightMax" value="84" />
-  <Property name="CloudHeightMin" value="1500" />
-  <Property name="CloudHeightMax" value="1800" />
+  <Property name="CloudHeightMin" value="650" />
+  <Property name="CloudHeightMax" value="900" />
   <Property name="DoFHeightMin" value="251" />
   <Property name="DoFHeightMax" value="300" />
   <Property name="SunClampHeightMin" value="300" />
   <Property name="SunClampHeightMax" value="390" />
-  <Property name="HeavyAirFadeDistance" value="350" />
+  <Property name="HeavyAirFadeDistance" value="200" />
   <Property name="HeavyAirHeightMin" value="700" />
   <Property name="HeavyAirHeightMax" value="750" />
   <Property name="HeavyAirFadeInTime" value="1.5" />
   <Property name="HeavyAirFadeOutTime" value="1.5" />
   <Property name="PlanetObjectSwitch" value="700" />
-  <Property name="PlanetLodSwitch0" value="400" />
+  <Property name="PlanetLodSwitch0" value="300" />
   <Property name="PlanetLodSwitch0Elevation" value="700" />
-  <Property name="PlanetLodSwitch1" value="3000" />
-  <Property name="PlanetLodSwitch2" value="13000" />
-  <Property name="PlanetLodSwitch3" value="23000" />
+  <Property name="PlanetLodSwitch1" value="2000" />
+  <Property name="PlanetLodSwitch2" value="10000" />
+  <Property name="PlanetLodSwitch3" value="20000" />
   <Property name="PlanetFlipDistance" value="2000" />
   <Property name="PlanetEffectEndDistance" value="6000" />
   <Property name="AsteroidFadeHeightMin" value="700" />
@@ -327,8 +327,8 @@
   <Property name="AsteroidScale" value="0.25" />
   <Property name="SmallAsteroidScale" value="0.15" />
   <Property name="AsteroidMinRotate" value="0" />
-  <Property name="AsteroidMaxRotate" value="0.9" />
-  <Property name="MinWaterReflections" value="0.01" />
+  <Property name="AsteroidMaxRotate" value="0.07" />
+  <Property name="MinWaterReflections" value="0.2" />
   <Property name="SpacePlanetFogStrength">
     <Property value="5" />
     <Property value="5" />

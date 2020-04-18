@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (2.31.0)-->
+<!--File created using MBINCompiler version (2.41.0)-->
 <Data template="GcPlayerGlobals">
   <Property name="Unknown0x0" value="0.9" />
   <Property name="Unknown0x4" value="0.7" />
@@ -206,12 +206,11 @@
   <Property name="Unknown0x304" value="0.05" />
   <Property name="Unknown0x308" value="0" />
   <Property name="Unknown0x30C" value="0" />
-  <Property name="Unknown0x310" value="0" />
-  <Property name="Unknown0x314" value="Vector2f.xml">
-    <Property name="x" value="0.07" />
-    <Property name="y" value="0" />
+  <Property name="Unknown0x310" value="Vector3f.xml">
+    <Property name="x" value="0" />
+    <Property name="y" value="0.07" />
+    <Property name="z" value="0" />
   </Property>
-  <Property name="Unknown0x31C" value="0" />
   <Property name="Unknown0x320" value="30" />
   <Property name="Unknown0x324" value="80" />
   <Property name="Unknown0x328" value="10" />
@@ -254,9 +253,11 @@
   <Property name="Unknown0x3B4" value="0" />
   <Property name="Unknown0x3B8" value="0" />
   <Property name="Unknown0x3BC" value="0" />
-  <Property name="Unknown0x3C0" value="-0.3" />
-  <Property name="Unknown0x3C4" value="-0.35" />
-  <Property name="Unknown0x3C8" value="0.5" />
+  <Property name="Unknown0x3C0" value="Vector3f.xml">
+    <Property name="x" value="-0.3" />
+    <Property name="y" value="-0.35" />
+    <Property name="z" value="0.5" />
+  </Property>
   <Property name="Unknown0x3D0" value="GcInWorldUIScreenData.xml">
     <Property name="ScreenScale" value="0.08" />
     <Property name="ScreenOffset" value="Vector3f.xml">
@@ -288,31 +289,29 @@
   <Property name="Unknown0x428" value="22.5" />
   <Property name="Unknown0x42C" value="300" />
   <Property name="UnknownInt0x430" value="80" />
-  <Property name="Unknown0x434" value="0" />
-  <Property name="Unknown0x438" value="0" />
-  <Property name="Unknown0x43C" value="0" />
-  <Property name="Unknown0x440" value="0" />
-  <Property name="Unknown0x444" value="-10" />
-  <Property name="Unknown0x448" value="0" />
-  <Property name="Unknown0x44C" value="0" />
+  <Property name="Unknown0x440" value="Vector3f.xml">
+    <Property name="x" value="0" />
+    <Property name="y" value="-10" />
+    <Property name="z" value="0" />
+  </Property>
   <Property name="Unknown0x450" value="False" />
   <Property name="Unknown0x454" value="90" />
-  <Property name="Unknown0x458" value="0" />
-  <Property name="Unknown0x45C" value="0" />
-  <Property name="Unknown0x460" value="0" />
-  <Property name="Unknown0x464" value="-0.1" />
-  <Property name="Unknown0x468" value="0.3" />
-  <Property name="Unknown0x46C" value="0" />
-  <Property name="Unknown0x470" value="-0.02" />
-  <Property name="Unknown0x474" value="0.15" />
-  <Property name="Unknown0x478" value="0.2" />
-  <Property name="Unknown0x47C" value="0" />
+  <Property name="Unknown0x460" value="Vector3f.xml">
+    <Property name="x" value="0" />
+    <Property name="y" value="-0.1" />
+    <Property name="z" value="0.3" />
+  </Property>
+  <Property name="Unknown0x470" value="Vector3f.xml">
+    <Property name="x" value="-0.02" />
+    <Property name="y" value="0.15" />
+    <Property name="z" value="0.2" />
+  </Property>
   <Property name="GroundWalkForce" value="100" />
   <Property name="GroundWalkBrake" value="11.5" />
   <Property name="GroundWalkBrakeWhileMoving" value="5.5" />
-  <Property name="GroundWalkSpeed" value="3.1" />
-  <Property name="GroundWalkSpeed_Unknown" value="3.1" />
-  <Property name="GroundRunSpeed" value="11" />
+  <Property name="GroundWalkSpeed" value="4" />
+  <Property name="GroundWalkSpeed_Unknown" value="4" />
+  <Property name="GroundRunSpeed" value="8.8" />
   <Property name="GroundWalkRecoverySpeedDamper" value="0.4" />
   <Property name="Unknown0x49C" value="3" />
   <Property name="Unknown0x4A0" value="6" />
@@ -353,14 +352,18 @@
   </Property>
   <Property name="UnknownInt0x528" value="1" />
   <Property name="UnknownInt0x52C" value="3" />
-  <Property name="Unknown0x530" value="1" />
-  <Property name="Unknown0x534" value="0.546" />
-  <Property name="Unknown0x538" value="0.243" />
-  <Property name="Unknown0x53C" value="1" />
-  <Property name="Unknown0x540" value="1" />
-  <Property name="Unknown0x544" value="1" />
-  <Property name="Unknown0x548" value="1" />
-  <Property name="Unknown0x54C" value="1" />
+  <Property name="Unknown0x530" value="Colour.xml">
+    <Property name="R" value="1" />
+    <Property name="G" value="0.546" />
+    <Property name="B" value="0.243" />
+    <Property name="A" value="1" />
+  </Property>
+  <Property name="Unknown0x540" value="Colour.xml">
+    <Property name="R" value="1" />
+    <Property name="G" value="1" />
+    <Property name="B" value="1" />
+    <Property name="A" value="1" />
+  </Property>
   <Property name="Unknown0x550" value="GcScanEffectData.xml">
     <Property name="Id" value="" />
     <Property name="ScanEffectType" value="Creature" />
@@ -430,10 +433,11 @@
   <Property name="Unknown0x6C4" value="False" />
   <Property name="Unknown0x6C8" value="0" />
   <Property name="Unknown0x6CC" value="0" />
-  <Property name="Unknown0x6D0" value="-0.2" />
-  <Property name="Unknown0x6D4" value="0.1" />
-  <Property name="Unknown0x6D8" value="-0.08" />
-  <Property name="Unknown0x6DC" value="0" />
+  <Property name="Unknown0x6D0" value="Vector3f.xml">
+    <Property name="x" value="-0.2" />
+    <Property name="y" value="0.1" />
+    <Property name="z" value="-0.08" />
+  </Property>
   <Property name="Unknown0x6E0" value="-0.2" />
   <Property name="Unknown0x6E4" value="0.25" />
   <Property name="DebugSearchGroup" value="BONES" />
@@ -723,9 +727,9 @@
   <Property name="JetpackMaxSpeed" value="5" />
   <Property name="JetpackMaxUpSpeed" value="30" />
   <Property name="JetpackUpForce" value="30" />
-  <Property name="JetpackIgnitionForce" value="60" />
-  <Property name="JetpackIgnitionTime" value="0.4" />
-  <Property name="JetpackMinIgnitionTime" value="0.2" />
+  <Property name="JetpackIgnitionForce" value="160" />
+  <Property name="JetpackIgnitionTime" value="0.1" />
+  <Property name="JetpackMinIgnitionTime" value="0.001" />
   <Property name="JetpackTankTimes">
     <Property value="4" />
     <Property value="6" />
@@ -739,7 +743,7 @@
   <Property name="Unknown0xBB8" value="20" />
   <Property name="JetpackUpForceDeadPlanetExtra" value="10" />
   <Property name="JetpackForceDeadPlanetExtra" value="15" />
-  <Property name="JetpackIgnitionForceDeadPlanetExtra" value="45" />
+  <Property name="JetpackIgnitionForceDeadPlanetExtra" value="55" />
   <Property name="Unknown0xBC8" value="0" />
   <Property name="Unknown0xBCC" value="0" />
   <Property name="Unknown0xBD0" value="40" />
@@ -763,6 +767,7 @@
   <Property name="HardModeHazardDamageWoundRateMultiplier" value="0.5" />
   <Property name="HardModeSubstanceRewardMultiplier" value="0.75" />
   <Property name="HardModeHazardRechargeUnderground" value="3.5" />
+  <Property name="Unknown0xC20" value="3" />
   <Property name="FreighterProbeScanTime" value="5" />
   <Property name="MaxNumDestroyEffects" value="8" />
   <Property name="MinNumDestroyEffects" value="3" />
@@ -782,8 +787,8 @@
   <Property name="MouseCrosshairVisible" value="True" />
   <Property name="MouseMaxLength" value="450" />
   <Property name="MouseDeadZone" value="30" />
-  <Property name="Unknown0xC6C" value="220" />
-  <Property name="Unknown0xC70" value="20" />
+  <Property name="Unknown0xC70" value="220" />
+  <Property name="Unknown0xC74" value="20" />
   <Property name="MouseAimZone" value="120" />
   <Property name="MouseCrosshairMaxAlpha" value="1" />
   <Property name="MouseCrosshairAlphaFade" value="20" />
@@ -792,10 +797,10 @@
   <Property name="MouseCrosshairLineWidth" value="2" />
   <Property name="MouseCrosshairShipStrength" value="2" />
   <Property name="MouseCrosshairMultiplier" value="1" />
-  <Property name="Unknown0xC94" value="-0.5" />
-  <Property name="Unknown0xC98" value="0.5" />
-  <Property name="Unknown0xC9C" value="0.65" />
-  <Property name="Unknown0xCA0" value="-0.1" />
+  <Property name="Unknown0xC98" value="-0.5" />
+  <Property name="Unknown0xC9C" value="0.5" />
+  <Property name="Unknown0xCA0" value="0.65" />
+  <Property name="Unknown0xCA4" value="-0.1" />
   <Property name="UseEnergy" value="True" />
   <Property name="InventoryDamage" value="True" />
   <Property name="NeverPreyedOn" value="False" />
@@ -989,6 +994,7 @@
   <Property name="ControlModes" value="0" />
   <Property name="InteractionScanRange" value="80" />
   <Property name="InteractionButtonRange" value="10" />
+  <Property name="Unknown0xFDC" value="30" />
   <Property name="InteractionFocusTime" value="0.5" />
   <Property name="InteractionSubstanceRange" value="40" />
   <Property name="HeatShieldTime" value="200" />
@@ -1136,8 +1142,8 @@
   </Property>
   <Property name="CrosshairTime" value="0.5" />
   <Property name="BeaconActivateRange" value="20" />
-  <Property name="UnknownInt0x11D8" value="10" />
-  <Property name="UnknownInt0x11DC" value="30" />
+  <Property name="UnknownInt0x11DC" value="10" />
+  <Property name="UnknownInt0x11E0" value="30" />
   <Property name="ExperiencePirateFreighterAttackRange" value="40000" />
   <Property name="ExperienceWalkerSize" value="4" />
   <Property name="ExperienceInterestingShipDistance" value="2000" />
