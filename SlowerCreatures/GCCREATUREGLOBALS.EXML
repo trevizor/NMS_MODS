@@ -397,7 +397,7 @@
   <Property name="AllowSpawningOnscreen" value="False" />
   <Property name="ResourceSpawnTime" value="1" />
   <Property name="TurnInPlaceIdleTime" value="1" />
-  <Property name="TurnInPlaceMaxAngle" value="15" />
+  <Property name="TurnInPlaceMaxAngle" value="3" />
   <Property name="TurnInPlaceMinTime" value="1" />
   <Property name="TurnInPlaceMaxSpeed" value="5" />
   <Property name="SceneTerrainSpawnMinDistance" value="0" />
@@ -628,15 +628,15 @@
   <Property name="CreatureHugeRunMaxShakeDist" value="15" />
   <Property name="SmallCreaturePerceptionDistance" value="30" />
   <Property name="largeCreaturePerceptionDistance" value="70" />
-  <Property name="SmallCreatureFleePlayerDistance" value="1" />
-  <Property name="LargeCreatureFleePlayerDistance" value="2" />
-  <Property name="SmallCreatureAvoidPlayerDistance" value="1" />
-  <Property name="LargeCreatureAvoidPlayerDistance" value="1" />
+  <Property name="SmallCreatureFleePlayerDistance" value="10" />
+  <Property name="LargeCreatureFleePlayerDistance" value="5" />
+  <Property name="SmallCreatureAvoidPlayerDistance" value="8" />
+  <Property name="LargeCreatureAvoidPlayerDistance" value="4" />
   <Property name="PredatorPerceptionDistance" value="80" />
   <Property name="PredatorFishPerceptionDistance" value="100" />
   <Property name="PassiveFleePlayerDistance" value="10" />
   <Property name="AdultBabyKilledNoticeDistance" value="70" />
-  <Property name="PercentagePlayerPredators" value="0.7" />
+  <Property name="PercentagePlayerPredators" value="0.5" />
   <Property name="PredatorSmallHealth" value="2400" />
   <Property name="PredatorMedHealth" value="3400" />
   <Property name="PredatorLargeHealth" value="8000" />
@@ -707,17 +707,17 @@
   <Property name="RagdollMotorFadeEnd" value="2" />
   <Property name="MaxRagdollsBeforeDespawnOffscreen" value="12" />
   <Property name="MaxRagdollsBeforeDespawnOnscreen" value="18" />
-  <Property name="TurnRadiusMultiplier" value="1" />
+  <Property name="TurnRadiusMultiplier" value="0.5" />
   <Property name="Unknown0x13C0" value="1" />
   <Property name="Unknown0x13C4" value="5" />
   <Property name="TurnSlowAreaCos" value="0.75" />
-  <Property name="BadTurnPercent" value="0.7" />
-  <Property name="BadTurnWeight" value="0" />
+  <Property name="BadTurnPercent" value="0.1" />
+  <Property name="BadTurnWeight" value="0.1" />
   <Property name="MinScaleForNavMap" value="1" />
   <Property name="ImpassabilityBrakeTime" value="0.2" />
   <Property name="ImpassabilityUnbrakeTime" value="0.4" />
   <Property name="ImpassabilityTurnSpeedMultiplier" value="4" />
-  <Property name="NavMapLookAhead" value="1.5" />
+  <Property name="NavMapLookAhead" value="3.5" />
   <Property name="VelocityAlignYFactorMin" value="0.2" />
   <Property name="VelocityAlignYFactorMax" value="0.6" />
   <Property name="BrakingForce" value="15" />
@@ -729,7 +729,7 @@
   <Property name="AvoidImpassableWeight" value="10" />
   <Property name="FollowLeaderAlignWeight" value="1" />
   <Property name="Unknown0x1410" value="1" />
-  <Property name="FollowLeaderCohereWeight" value="0.3" />
+  <Property name="FollowLeaderCohereWeight" value="0.8" />
   <Property name="Unknown0x1418" value="0.2" />
   <Property name="DefaultSwimSpeed" value="0.4" />
   <Property name="FastSwimSpeed" value="3.5" />
