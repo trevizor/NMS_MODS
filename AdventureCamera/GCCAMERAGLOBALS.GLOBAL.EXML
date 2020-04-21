@@ -3,7 +3,7 @@
 <Data template="GcCameraGlobals">
   <Property name="VehicleCamHmd" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="VEHICLE_HMD" />
-    <Property name="MinSpeed" value="0" />
+    <Property name="MinSpeed" value="4" />
     <Property name="SpeedRange" value="200" />
     <Property name="OffsetX" value="0" />
     <Property name="OffsetY" value="0" />
@@ -62,7 +62,7 @@
   </Property>
   <Property name="VehicleCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="VEHICLE" />
-    <Property name="MinSpeed" value="0" />
+    <Property name="MinSpeed" value="4" />
     <Property name="SpeedRange" value="200" />
     <Property name="OffsetX" value="0" />
     <Property name="OffsetY" value="0" />
@@ -165,16 +165,16 @@
   <Property name="VehicleThirdPersonShootOffsetBlendOutTime" value="2" />
   <Property name="CharacterUnarmedCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="CHARUNARMED" />
-    <Property name="MinSpeed" value="2" />
-    <Property name="SpeedRange" value="20" />
+    <Property name="MinSpeed" value="4" />
+    <Property name="SpeedRange" value="25" />
     <Property name="OffsetX" value="0.1" />
     <Property name="OffsetY" value="-0.1" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="1.3" />
+    <Property name="BackMinDistance" value="14" />
     <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="13.2" />
-    <Property name="UpMaxDistance" value="0" />
+    <Property name="BackMaxDistance" value="16" />
+    <Property name="UpMaxDistance" value="3" />
     <Property name="PanNear" value="-1" />
     <Property name="PanFar" value="3" />
     <Property name="UpGamma" value="1.5" />
@@ -224,16 +224,16 @@
   </Property>
   <Property name="CharacterRunCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="CHARRUN" />
-    <Property name="MinSpeed" value="2" />
-    <Property name="SpeedRange" value="20" />
+    <Property name="MinSpeed" value="4" />
+    <Property name="SpeedRange" value="25" />
     <Property name="OffsetX" value="0.1" />
     <Property name="OffsetY" value="-0.1" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="1.3" />
+    <Property name="BackMinDistance" value="14" />
     <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="13.2" />
-    <Property name="UpMaxDistance" value="0" />
+    <Property name="BackMaxDistance" value="16" />
+    <Property name="UpMaxDistance" value="3" />
     <Property name="PanNear" value="-1" />
     <Property name="PanFar" value="3" />
     <Property name="UpGamma" value="1.5" />
@@ -342,16 +342,16 @@
   </Property>
   <Property name="CharacterIndoorCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="CHARINDOOR" />
-    <Property name="MinSpeed" value="2" />
-    <Property name="SpeedRange" value="20" />
-    <Property name="OffsetX" value="0.1" />
-    <Property name="OffsetY" value="-0.1" />
+    <Property name="MinSpeed" value="5" />
+    <Property name="SpeedRange" value="10" />
+    <Property name="OffsetX" value="0.75" />
+    <Property name="OffsetY" value="-0.5" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="1.3" />
+    <Property name="BackMinDistance" value="3" />
     <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="13.2" />
-    <Property name="UpMaxDistance" value="0" />
+    <Property name="BackMaxDistance" value="4" />
+    <Property name="UpMaxDistance" value="1" />
     <Property name="PanNear" value="-1" />
     <Property name="PanFar" value="3" />
     <Property name="UpGamma" value="1.5" />
@@ -396,8 +396,8 @@
     <Property name="AvoidCollisionUDUseStickDelay" value="True" />
     <Property name="AvoidCollisionLRUseStickDelay" value="True" />
     <Property name="UseSpeedBasedSpring" value="True" />
-    <Property name="UseCustomBlendTime" value="False" />
-    <Property name="CustomBlendTime" value="0.5" />
+    <Property name="UseCustomBlendTime" value="True" />
+    <Property name="CustomBlendTime" value="3" />
   </Property>
   <Property name="CharacterNexusCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="CHARNEXUS" />
@@ -460,16 +460,16 @@
   </Property>
   <Property name="CharacterAirborneCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="CHARJETPACK" />
-    <Property name="MinSpeed" value="2" />
-    <Property name="SpeedRange" value="20" />
+    <Property name="MinSpeed" value="4" />
+    <Property name="SpeedRange" value="25" />
     <Property name="OffsetX" value="0.1" />
     <Property name="OffsetY" value="-0.1" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="1.3" />
+    <Property name="BackMinDistance" value="14" />
     <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="13.2" />
-    <Property name="UpMaxDistance" value="0" />
+    <Property name="BackMaxDistance" value="16" />
+    <Property name="UpMaxDistance" value="3" />
     <Property name="PanNear" value="-1" />
     <Property name="PanFar" value="3" />
     <Property name="UpGamma" value="1.5" />
@@ -578,16 +578,16 @@
   </Property>
   <Property name="CharacterRocketBootsCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="ROCKETBOOTS" />
-    <Property name="MinSpeed" value="2" />
-    <Property name="SpeedRange" value="20" />
+    <Property name="MinSpeed" value="4" />
+    <Property name="SpeedRange" value="25" />
     <Property name="OffsetX" value="0.1" />
     <Property name="OffsetY" value="-0.1" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="1.3" />
+    <Property name="BackMinDistance" value="14" />
     <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="13.2" />
-    <Property name="UpMaxDistance" value="0" />
+    <Property name="BackMaxDistance" value="16" />
+    <Property name="UpMaxDistance" value="3" />
     <Property name="PanNear" value="-1" />
     <Property name="PanFar" value="3" />
     <Property name="UpGamma" value="1.5" />
@@ -696,16 +696,16 @@
   </Property>
   <Property name="CharacterFallingCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="CHARFALL" />
-    <Property name="MinSpeed" value="2" />
-    <Property name="SpeedRange" value="20" />
+    <Property name="MinSpeed" value="4" />
+    <Property name="SpeedRange" value="25" />
     <Property name="OffsetX" value="0.1" />
     <Property name="OffsetY" value="-0.1" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="1.3" />
+    <Property name="BackMinDistance" value="14" />
     <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="13.2" />
-    <Property name="UpMaxDistance" value="0" />
+    <Property name="BackMaxDistance" value="16" />
+    <Property name="UpMaxDistance" value="3" />
     <Property name="PanNear" value="-1" />
     <Property name="PanFar" value="3" />
     <Property name="UpGamma" value="1.5" />
@@ -814,16 +814,16 @@
   </Property>
   <Property name="CharacterSpaceCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="CHARSPACE" />
-    <Property name="MinSpeed" value="2" />
-    <Property name="SpeedRange" value="20" />
+    <Property name="MinSpeed" value="4" />
+    <Property name="SpeedRange" value="25" />
     <Property name="OffsetX" value="0.1" />
     <Property name="OffsetY" value="-0.1" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="1.3" />
+    <Property name="BackMinDistance" value="14" />
     <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="13.2" />
-    <Property name="UpMaxDistance" value="0" />
+    <Property name="BackMaxDistance" value="16" />
+    <Property name="UpMaxDistance" value="3" />
     <Property name="PanNear" value="-1" />
     <Property name="PanFar" value="3" />
     <Property name="UpGamma" value="1.5" />
@@ -932,16 +932,16 @@
   </Property>
   <Property name="CharacterUnderwaterCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="CHARWATER" />
-    <Property name="MinSpeed" value="2" />
-    <Property name="SpeedRange" value="20" />
+    <Property name="MinSpeed" value="4" />
+    <Property name="SpeedRange" value="25" />
     <Property name="OffsetX" value="0.1" />
     <Property name="OffsetY" value="-0.1" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="1.3" />
+    <Property name="BackMinDistance" value="14" />
     <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="13.2" />
-    <Property name="UpMaxDistance" value="0" />
+    <Property name="BackMaxDistance" value="16" />
+    <Property name="UpMaxDistance" value="3" />
     <Property name="PanNear" value="-1" />
     <Property name="PanFar" value="3" />
     <Property name="UpGamma" value="1.5" />
@@ -1050,16 +1050,16 @@
   </Property>
   <Property name="CharacterUnderwaterJetpackCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="WETJETPACK" />
-    <Property name="MinSpeed" value="2" />
-    <Property name="SpeedRange" value="20" />
+    <Property name="MinSpeed" value="4" />
+    <Property name="SpeedRange" value="25" />
     <Property name="OffsetX" value="0.1" />
     <Property name="OffsetY" value="-0.1" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="1.3" />
+    <Property name="BackMinDistance" value="14" />
     <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="13.2" />
-    <Property name="UpMaxDistance" value="0" />
+    <Property name="BackMaxDistance" value="16" />
+    <Property name="UpMaxDistance" value="3" />
     <Property name="PanNear" value="-1" />
     <Property name="PanFar" value="3" />
     <Property name="UpGamma" value="1.5" />
@@ -1168,16 +1168,16 @@
   </Property>
   <Property name="CharacterSitCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="CHARSIT" />
-    <Property name="MinSpeed" value="2" />
-    <Property name="SpeedRange" value="20" />
+    <Property name="MinSpeed" value="4" />
+    <Property name="SpeedRange" value="25" />
     <Property name="OffsetX" value="0.1" />
     <Property name="OffsetY" value="-0.1" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="1.3" />
+    <Property name="BackMinDistance" value="14" />
     <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="13.2" />
-    <Property name="UpMaxDistance" value="0" />
+    <Property name="BackMaxDistance" value="16" />
+    <Property name="UpMaxDistance" value="3" />
     <Property name="PanNear" value="-1" />
     <Property name="PanFar" value="3" />
     <Property name="UpGamma" value="1.5" />
