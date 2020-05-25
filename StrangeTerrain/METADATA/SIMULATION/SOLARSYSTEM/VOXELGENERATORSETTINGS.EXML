@@ -46,7 +46,7 @@
             <Property name="Height" value="32" />
             <Property name="Width" value="600" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="5" />
+            <Property name="RegionScale" value="3" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -85,9 +85,9 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="64" />
+            <Property name="Height" value="96" />
             <Property name="Width" value="500" />
-            <Property name="RegionRatio" value="0.5" />
+            <Property name="RegionRatio" value="0.4" />
             <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
@@ -1232,7 +1232,7 @@
         </Property>
         <Property name="Features">
           <Property name="River" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- false river -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="True" />
             <Property name="Trench" value="True" />
@@ -1241,7 +1241,7 @@
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="100" />
-            <Property name="Height" value="25" />
+            <Property name="Height" value="0" />
             <Property name="Octaves" value="8" />
             <Property name="RegionSize" value="600" />
             <Property name="Ratio" value="1" />
@@ -1500,10 +1500,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="32" />
-            <Property name="Width" value="600" />
+            <Property name="Height" value="42" />
+            <Property name="Width" value="900" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="5" />
+            <Property name="RegionScale" value="8" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -1542,10 +1542,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="64" />
+            <Property name="Height" value="96" />
             <Property name="Width" value="500" />
             <Property name="RegionRatio" value="0.5" />
-            <Property name="RegionScale" value="2" />
+            <Property name="RegionScale" value="3" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -2689,7 +2689,7 @@
         </Property>
         <Property name="Features">
           <Property name="River" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- false river -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="True" />
             <Property name="Trench" value="True" />
@@ -2698,7 +2698,7 @@
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="100" />
-            <Property name="Height" value="25" />
+            <Property name="Height" value="0" />
             <Property name="Octaves" value="8" />
             <Property name="RegionSize" value="600" />
             <Property name="Ratio" value="1" />
@@ -2962,7 +2962,7 @@
             <Property name="Height" value="32" />
             <Property name="Width" value="500" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="5" />
+            <Property name="RegionScale" value="3" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -3001,9 +3001,9 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="64" />
+            <Property name="Height" value="96" />
             <Property name="Width" value="500" />
-            <Property name="RegionRatio" value="0.5" />
+            <Property name="RegionRatio" value="0.4" />
             <Property name="RegionScale" value="4" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
@@ -3045,7 +3045,7 @@
             </Property>
             <Property name="Height" value="128" />
             <Property name="Width" value="900" />
-            <Property name="RegionRatio" value="0.5" />
+            <Property name="RegionRatio" value="0.35" />
             <Property name="RegionScale" value="4" /> <!-- small mountain -->
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
@@ -4148,7 +4148,7 @@
         </Property>
         <Property name="Features">
           <Property name="River" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- false river -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="True" />
             <Property name="Trench" value="True" />
@@ -4157,7 +4157,7 @@
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="200" />
-            <Property name="Height" value="100" />
+            <Property name="Height" value="0" />
             <Property name="Octaves" value="9" />
             <Property name="RegionSize" value="2000" />
             <Property name="Ratio" value="1" />
@@ -4416,10 +4416,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="32" />
-            <Property name="Width" value="500" />
+            <Property name="Height" value="42" />
+            <Property name="Width" value="700" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="5" />
+            <Property name="RegionScale" value="8" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -4458,10 +4458,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="64" />
+            <Property name="Height" value="96" />
             <Property name="Width" value="500" />
             <Property name="RegionRatio" value="0.5" />
-            <Property name="RegionScale" value="4" />
+            <Property name="RegionScale" value="5" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -5605,7 +5605,7 @@
         </Property>
         <Property name="Features">
           <Property name="River" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- false river -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="True" />
             <Property name="Trench" value="True" />
@@ -5614,7 +5614,7 @@
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="200" />
-            <Property name="Height" value="100" />
+            <Property name="Height" value="0" />
             <Property name="Octaves" value="9" />
             <Property name="RegionSize" value="2000" />
             <Property name="Ratio" value="1" />
@@ -5878,7 +5878,7 @@
             <Property name="Height" value="32" />
             <Property name="Width" value="500" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="5" />
+            <Property name="RegionScale" value="3" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -5917,9 +5917,9 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="64" />
+            <Property name="Height" value="96" />
             <Property name="Width" value="350" />
-            <Property name="RegionRatio" value="0.75" />
+            <Property name="RegionRatio" value="0.55" />
             <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
@@ -5961,7 +5961,7 @@
             </Property>
             <Property name="Height" value="128" />
             <Property name="Width" value="900" />
-            <Property name="RegionRatio" value="0.2" />
+            <Property name="RegionRatio" value="0.12" />
             <Property name="RegionScale" value="2" /> <!-- small mountain -->
             <Property name="RegionGain" value="3" />
             <Property name="SmoothRadius" value="0" />
@@ -7064,7 +7064,7 @@
         </Property>
         <Property name="Features">
           <Property name="River" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- false river -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="True" />
             <Property name="Trench" value="True" />
@@ -7073,7 +7073,7 @@
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="100" />
-            <Property name="Height" value="50" />
+            <Property name="Height" value="0" />
             <Property name="Octaves" value="14" />
             <Property name="RegionSize" value="600" />
             <Property name="Ratio" value="1" />
@@ -7332,10 +7332,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="32" />
-            <Property name="Width" value="500" />
+            <Property name="Height" value="42" />
+            <Property name="Width" value="700" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="5" />
+            <Property name="RegionScale" value="8" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -7374,10 +7374,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="64" />
+            <Property name="Height" value="96" />
             <Property name="Width" value="350" />
             <Property name="RegionRatio" value="0.75" />
-            <Property name="RegionScale" value="2" />
+            <Property name="RegionScale" value="3" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -8521,7 +8521,7 @@
         </Property>
         <Property name="Features">
           <Property name="River" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- false river -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="True" />
             <Property name="Trench" value="True" />
@@ -8530,7 +8530,7 @@
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="100" />
-            <Property name="Height" value="50" />
+            <Property name="Height" value="0" />
             <Property name="Octaves" value="14" />
             <Property name="RegionSize" value="600" />
             <Property name="Ratio" value="1" />
@@ -8794,7 +8794,7 @@
             <Property name="Height" value="32" />
             <Property name="Width" value="500" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="5" />
+            <Property name="RegionScale" value="3" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -8833,9 +8833,9 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="64" />
+            <Property name="Height" value="96" />
             <Property name="Width" value="350" />
-            <Property name="RegionRatio" value="0.75" />
+            <Property name="RegionRatio" value="0.55" />
             <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
@@ -8877,7 +8877,7 @@
             </Property>
             <Property name="Height" value="128" />
             <Property name="Width" value="900" />
-            <Property name="RegionRatio" value="0.2" />
+            <Property name="RegionRatio" value="0.12" />
             <Property name="RegionScale" value="2" /> <!-- small mountain -->
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
@@ -9980,7 +9980,7 @@
         </Property>
         <Property name="Features">
           <Property name="River" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- false river -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="True" />
             <Property name="Trench" value="True" />
@@ -9989,7 +9989,7 @@
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="100" />
-            <Property name="Height" value="50" />
+            <Property name="Height" value="0" />
             <Property name="Octaves" value="8" />
             <Property name="RegionSize" value="600" />
             <Property name="Ratio" value="1" />
@@ -10248,10 +10248,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="32" />
-            <Property name="Width" value="500" />
+            <Property name="Height" value="52" />
+            <Property name="Width" value="700" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="5" />
+            <Property name="RegionScale" value="8" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -10290,10 +10290,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="64" />
+            <Property name="Height" value="96" />
             <Property name="Width" value="350" />
             <Property name="RegionRatio" value="0.75" />
-            <Property name="RegionScale" value="2" />
+            <Property name="RegionScale" value="3" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -11437,7 +11437,7 @@
         </Property>
         <Property name="Features">
           <Property name="River" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- false river -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="True" />
             <Property name="Trench" value="True" />
@@ -11446,7 +11446,7 @@
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="100" />
-            <Property name="Height" value="50" />
+            <Property name="Height" value="0" />
             <Property name="Octaves" value="8" />
             <Property name="RegionSize" value="600" />
             <Property name="Ratio" value="1" />
@@ -11710,7 +11710,7 @@
             <Property name="Height" value="32" />
             <Property name="Width" value="800" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="5" />
+            <Property name="RegionScale" value="3" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -11749,9 +11749,9 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="8" />
+            <Property name="Height" value="24" /> <!-- small hill -->
             <Property name="Width" value="100" />
-            <Property name="RegionRatio" value="0.5" />
+            <Property name="RegionRatio" value="0.4" />
             <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
@@ -11793,7 +11793,7 @@
             </Property>
             <Property name="Height" value="128" />
             <Property name="Width" value="1150" />
-            <Property name="RegionRatio" value="0.5" />
+            <Property name="RegionRatio" value="0.35" />
             <Property name="RegionScale" value="2" /> <!-- small mountain -->
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
@@ -12896,7 +12896,7 @@
         </Property>
         <Property name="Features">
           <Property name="River" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- false river -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="True" />
             <Property name="Trench" value="True" />
@@ -12905,7 +12905,7 @@
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="200" />
-            <Property name="Height" value="100" />
+            <Property name="Height" value="0" />
             <Property name="Octaves" value="9" />
             <Property name="RegionSize" value="2000" />
             <Property name="Ratio" value="1" />
@@ -13164,10 +13164,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="32" />
-            <Property name="Width" value="800" />
+            <Property name="Height" value="52" />
+            <Property name="Width" value="1200" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="5" />
+            <Property name="RegionScale" value="8" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -13206,10 +13206,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="8" />
+            <Property name="Height" value="24" /> <!-- small hill -->
             <Property name="Width" value="100" />
             <Property name="RegionRatio" value="0.5" />
-            <Property name="RegionScale" value="2" />
+            <Property name="RegionScale" value="3" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -14353,7 +14353,7 @@
         </Property>
         <Property name="Features">
           <Property name="River" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- false river -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="True" />
             <Property name="Trench" value="True" />
@@ -14362,7 +14362,7 @@
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="200" />
-            <Property name="Height" value="100" />
+            <Property name="Height" value="0" />
             <Property name="Octaves" value="9" />
             <Property name="RegionSize" value="2000" />
             <Property name="Ratio" value="1" />
@@ -14626,7 +14626,7 @@
             <Property name="Height" value="16" />
             <Property name="Width" value="500" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="5" />
+            <Property name="RegionScale" value="3" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -14665,9 +14665,9 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="64" />
+            <Property name="Height" value="96" />
             <Property name="Width" value="350" />
-            <Property name="RegionRatio" value="0.75" />
+            <Property name="RegionRatio" value="0.55" />
             <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
@@ -14709,7 +14709,7 @@
             </Property>
             <Property name="Height" value="128" />
             <Property name="Width" value="900" />
-            <Property name="RegionRatio" value="0.2" />
+            <Property name="RegionRatio" value="0.12" />
             <Property name="RegionScale" value="2" /> <!-- small mountain -->
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
@@ -16080,10 +16080,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="16" />
-            <Property name="Width" value="500" />
+            <Property name="Height" value="24" />
+            <Property name="Width" value="700" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="5" />
+            <Property name="RegionScale" value="8" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -16122,10 +16122,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="64" />
+            <Property name="Height" value="96" />
             <Property name="Width" value="350" />
             <Property name="RegionRatio" value="0.75" />
-            <Property name="RegionScale" value="2" />
+            <Property name="RegionScale" value="3" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -17542,7 +17542,7 @@
             <Property name="Height" value="128" />
             <Property name="Width" value="1200" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="5" />
+            <Property name="RegionScale" value="3" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -17581,9 +17581,9 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="64" />
+            <Property name="Height" value="96" />
             <Property name="Width" value="350" />
-            <Property name="RegionRatio" value="0.75" />
+            <Property name="RegionRatio" value="0.55" />
             <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
@@ -17625,7 +17625,7 @@
             </Property>
             <Property name="Height" value="128" />
             <Property name="Width" value="900" />
-            <Property name="RegionRatio" value="0.2" />
+            <Property name="RegionRatio" value="0.12" />
             <Property name="RegionScale" value="2" /> <!-- small mountain -->
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
@@ -18996,10 +18996,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="128" />
-            <Property name="Width" value="1200" />
+            <Property name="Height" value="158" />
+            <Property name="Width" value="1800" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="5" />
+            <Property name="RegionScale" value="8" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -19038,10 +19038,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="64" />
+            <Property name="Height" value="96" />
             <Property name="Width" value="350" />
             <Property name="RegionRatio" value="0.75" />
-            <Property name="RegionScale" value="2" />
+            <Property name="RegionScale" value="3" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -20458,7 +20458,7 @@
             <Property name="Height" value="32" />
             <Property name="Width" value="800" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="5" />
+            <Property name="RegionScale" value="3" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -20497,9 +20497,9 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="64" />
+            <Property name="Height" value="96" />
             <Property name="Width" value="350" />
-            <Property name="RegionRatio" value="0.75" />
+            <Property name="RegionRatio" value="0.55" />
             <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
@@ -20541,7 +20541,7 @@
             </Property>
             <Property name="Height" value="128" />
             <Property name="Width" value="1500" />
-            <Property name="RegionRatio" value="0.9" />
+            <Property name="RegionRatio" value="0.59" />
             <Property name="RegionScale" value="4" /> <!-- small mountain -->
             <Property name="RegionGain" value="5" />
             <Property name="SmoothRadius" value="0" />
@@ -21644,7 +21644,7 @@
         </Property>
         <Property name="Features">
           <Property name="River" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- false river -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="True" />
             <Property name="Trench" value="True" />
@@ -21653,7 +21653,7 @@
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="200" />
-            <Property name="Height" value="100" />
+            <Property name="Height" value="0" />
             <Property name="Octaves" value="9" />
             <Property name="RegionSize" value="2000" />
             <Property name="Ratio" value="1" />
@@ -21912,10 +21912,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="32" />
-            <Property name="Width" value="800" />
+            <Property name="Height" value="52" />
+            <Property name="Width" value="1000" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="5" />
+            <Property name="RegionScale" value="8" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -21954,10 +21954,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="64" />
+            <Property name="Height" value="96" />
             <Property name="Width" value="350" />
             <Property name="RegionRatio" value="0.75" />
-            <Property name="RegionScale" value="2" />
+            <Property name="RegionScale" value="3" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -23101,7 +23101,7 @@
         </Property>
         <Property name="Features">
           <Property name="River" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- false river -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="True" />
             <Property name="Trench" value="True" />
@@ -23110,7 +23110,7 @@
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="200" />
-            <Property name="Height" value="100" />
+            <Property name="Height" value="0" />
             <Property name="Octaves" value="9" />
             <Property name="RegionSize" value="2000" />
             <Property name="Ratio" value="1" />
@@ -23374,7 +23374,7 @@
             <Property name="Height" value="32" />
             <Property name="Width" value="800" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="5" />
+            <Property name="RegionScale" value="3" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -23413,9 +23413,9 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="8" />
+            <Property name="Height" value="24" />
             <Property name="Width" value="100" />
-            <Property name="RegionRatio" value="0.5" />
+            <Property name="RegionRatio" value="0.4" />
             <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
@@ -23457,7 +23457,7 @@
             </Property>
             <Property name="Height" value="128" />
             <Property name="Width" value="1150" />
-            <Property name="RegionRatio" value="0.2" />
+            <Property name="RegionRatio" value="0.12" />
             <Property name="RegionScale" value="2" /> <!-- small mountain -->
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
@@ -24560,7 +24560,7 @@
         </Property>
         <Property name="Features">
           <Property name="River" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- false river -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="True" />
             <Property name="Trench" value="True" />
@@ -24569,7 +24569,7 @@
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="100" />
-            <Property name="Height" value="50" />
+            <Property name="Height" value="0" />
             <Property name="Octaves" value="14" />
             <Property name="RegionSize" value="600" />
             <Property name="Ratio" value="1" />
@@ -24829,9 +24829,9 @@
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
             <Property name="Height" value="96" />
-            <Property name="Width" value="800" />
+            <Property name="Width" value="1000" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="5" />
+            <Property name="RegionScale" value="8" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -24870,10 +24870,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="8" />
+            <Property name="Height" value="24" />
             <Property name="Width" value="100" />
             <Property name="RegionRatio" value="0.5" />
-            <Property name="RegionScale" value="2" />
+            <Property name="RegionScale" value="3" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -26017,7 +26017,7 @@
         </Property>
         <Property name="Features">
           <Property name="River" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- false river -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="True" />
             <Property name="Trench" value="True" />
@@ -26026,7 +26026,7 @@
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="100" />
-            <Property name="Height" value="50" />
+            <Property name="Height" value="0" />
             <Property name="Octaves" value="14" />
             <Property name="RegionSize" value="600" />
             <Property name="Ratio" value="1" />
@@ -26290,7 +26290,7 @@
             <Property name="Height" value="32" />
             <Property name="Width" value="500" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="5" />
+            <Property name="RegionScale" value="3" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -26329,9 +26329,9 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="64" />
+            <Property name="Height" value="96" />
             <Property name="Width" value="500" />
-            <Property name="RegionRatio" value="0.5" />
+            <Property name="RegionRatio" value="0.4" />
             <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
@@ -26373,7 +26373,7 @@
             </Property>
             <Property name="Height" value="128" />
             <Property name="Width" value="1150" />
-            <Property name="RegionRatio" value="0.2" />
+            <Property name="RegionRatio" value="0.12" />
             <Property name="RegionScale" value="4" /> <!-- small mountain -->
             <Property name="RegionGain" value="3" />
             <Property name="SmoothRadius" value="0" />
@@ -27744,10 +27744,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="32" />
-            <Property name="Width" value="500" />
+            <Property name="Height" value="62" />
+            <Property name="Width" value="700" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="5" />
+            <Property name="RegionScale" value="8" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -27786,10 +27786,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="64" />
+            <Property name="Height" value="96" />
             <Property name="Width" value="500" />
             <Property name="RegionRatio" value="0.5" />
-            <Property name="RegionScale" value="2" />
+            <Property name="RegionScale" value="3" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
