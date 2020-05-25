@@ -188,7 +188,7 @@
           </Property>
           <Property name="UnderWater" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
-              <Property name="Octaves" value="9" />
+              <Property name="Octaves" value="12" />
               <Property name="SlopeGain" value="0.5" />
               <Property name="SlopeBias" value="0.4" />
               <Property name="SharpToRoundFeatures" value="0" />
@@ -214,7 +214,7 @@
             <Property name="Height" value="100" />
             <Property name="Width" value="250" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="1" />
+            <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -1258,13 +1258,13 @@
           <Property name="Crater" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="True" /> <!-- false crater -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="True" />
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
             <Property name="FeatureType" value="Tube" />
-            <Property name="Width" value="10" />
+            <Property name="Width" value="5" />
             <Property name="Height" value="2.5" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
@@ -1273,14 +1273,14 @@
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
-              <Property name="OffsetType" value="Base" />
+              <Property name="OffsetType" value="All" />
             </Property>
             <Property name="SmoothRadius" value="0" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Arches" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False Arches -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -1304,7 +1304,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -1328,7 +1328,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Blobs" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="True" />
+            <Property name="Active" value="True" /> <!-- True blobs -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -1352,7 +1352,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="BlobsSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -1645,7 +1645,7 @@
           </Property>
           <Property name="UnderWater" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
-              <Property name="Octaves" value="9" />
+              <Property name="Octaves" value="12" />
               <Property name="SlopeGain" value="0.5" />
               <Property name="SlopeBias" value="0.4" />
               <Property name="SharpToRoundFeatures" value="0" />
@@ -1668,10 +1668,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="100" />
-            <Property name="Width" value="250" />
+            <Property name="Height" value="200" />
+            <Property name="Width" value="500" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="1" />
+            <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -2715,13 +2715,13 @@
           <Property name="Crater" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="True" /> <!-- false crater -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="True" />
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
             <Property name="FeatureType" value="Tube" />
-            <Property name="Width" value="10" />
+            <Property name="Width" value="15" />
             <Property name="Height" value="2.5" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
@@ -2730,14 +2730,14 @@
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
-              <Property name="OffsetType" value="Base" />
+              <Property name="OffsetType" value="All" />
             </Property>
             <Property name="SmoothRadius" value="0" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Arches" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False Arches -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -2761,7 +2761,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -2785,7 +2785,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Blobs" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="True" />
+            <Property name="Active" value="True" /> <!-- True blobs -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -2809,7 +2809,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="BlobsSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -3104,7 +3104,7 @@
           </Property>
           <Property name="UnderWater" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
-              <Property name="Octaves" value="9" />
+              <Property name="Octaves" value="12" />
               <Property name="SlopeGain" value="0.5" />
               <Property name="SlopeBias" value="0.4" />
               <Property name="SharpToRoundFeatures" value="0" />
@@ -3130,7 +3130,7 @@
             <Property name="Height" value="100" />
             <Property name="Width" value="250" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="1" />
+            <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -4174,13 +4174,13 @@
           <Property name="Crater" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="True" /> <!-- false crater -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="True" />
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
             <Property name="FeatureType" value="Tube" />
-            <Property name="Width" value="10" />
+            <Property name="Width" value="5" />
             <Property name="Height" value="2.5" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
@@ -4189,14 +4189,14 @@
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
-              <Property name="OffsetType" value="Base" />
+              <Property name="OffsetType" value="All" />
             </Property>
             <Property name="SmoothRadius" value="0" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Arches" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False Arches -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -4220,7 +4220,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -4244,7 +4244,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Blobs" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -4268,7 +4268,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="BlobsSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -4561,7 +4561,7 @@
           </Property>
           <Property name="UnderWater" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
-              <Property name="Octaves" value="9" />
+              <Property name="Octaves" value="12" />
               <Property name="SlopeGain" value="0.5" />
               <Property name="SlopeBias" value="0.4" />
               <Property name="SharpToRoundFeatures" value="0" />
@@ -4584,10 +4584,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="100" />
-            <Property name="Width" value="250" />
+            <Property name="Height" value="200" />
+            <Property name="Width" value="500" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="1" />
+            <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -5631,13 +5631,13 @@
           <Property name="Crater" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="True" /> <!-- false crater -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="True" />
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
             <Property name="FeatureType" value="Tube" />
-            <Property name="Width" value="10" />
+            <Property name="Width" value="15" />
             <Property name="Height" value="2.5" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
@@ -5646,14 +5646,14 @@
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
-              <Property name="OffsetType" value="Base" />
+              <Property name="OffsetType" value="All" />
             </Property>
             <Property name="SmoothRadius" value="0" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Arches" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False Arches -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -5677,7 +5677,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -5701,7 +5701,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Blobs" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -5725,7 +5725,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="BlobsSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -6020,7 +6020,7 @@
           </Property>
           <Property name="UnderWater" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
-              <Property name="Octaves" value="9" />
+              <Property name="Octaves" value="12" />
               <Property name="SlopeGain" value="0.5" />
               <Property name="SlopeBias" value="0.4" />
               <Property name="SharpToRoundFeatures" value="0" />
@@ -6046,7 +6046,7 @@
             <Property name="Height" value="100" />
             <Property name="Width" value="250" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="1" />
+            <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -7090,13 +7090,13 @@
           <Property name="Crater" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="True" /> <!-- false crater -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="True" />
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
             <Property name="FeatureType" value="Tube" />
-            <Property name="Width" value="10" />
+            <Property name="Width" value="5" />
             <Property name="Height" value="2.5" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
@@ -7105,14 +7105,14 @@
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
-              <Property name="OffsetType" value="Base" />
+              <Property name="OffsetType" value="All" />
             </Property>
             <Property name="SmoothRadius" value="0" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Arches" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False Arches -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -7136,7 +7136,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -7160,7 +7160,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Blobs" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -7184,7 +7184,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="BlobsSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -7477,7 +7477,7 @@
           </Property>
           <Property name="UnderWater" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
-              <Property name="Octaves" value="9" />
+              <Property name="Octaves" value="12" />
               <Property name="SlopeGain" value="0.5" />
               <Property name="SlopeBias" value="0.4" />
               <Property name="SharpToRoundFeatures" value="0" />
@@ -7500,10 +7500,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="100" />
-            <Property name="Width" value="250" />
+            <Property name="Height" value="200" />
+            <Property name="Width" value="500" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="1" />
+            <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -8547,13 +8547,13 @@
           <Property name="Crater" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="True" /> <!-- false crater -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="True" />
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
             <Property name="FeatureType" value="Tube" />
-            <Property name="Width" value="10" />
+            <Property name="Width" value="15" />
             <Property name="Height" value="2.5" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
@@ -8562,14 +8562,14 @@
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
-              <Property name="OffsetType" value="Base" />
+              <Property name="OffsetType" value="All" />
             </Property>
             <Property name="SmoothRadius" value="0" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Arches" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False Arches -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -8593,7 +8593,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -8617,7 +8617,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Blobs" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -8641,7 +8641,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="BlobsSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -8936,7 +8936,7 @@
           </Property>
           <Property name="UnderWater" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
-              <Property name="Octaves" value="9" />
+              <Property name="Octaves" value="12" />
               <Property name="SlopeGain" value="0.5" />
               <Property name="SlopeBias" value="0.4" />
               <Property name="SharpToRoundFeatures" value="0" />
@@ -8962,7 +8962,7 @@
             <Property name="Height" value="100" />
             <Property name="Width" value="250" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="1" />
+            <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -10006,13 +10006,13 @@
           <Property name="Crater" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="True" /> <!-- false crater -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="True" />
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
             <Property name="FeatureType" value="Tube" />
-            <Property name="Width" value="10" />
+            <Property name="Width" value="5" />
             <Property name="Height" value="2.5" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
@@ -10021,14 +10021,14 @@
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
-              <Property name="OffsetType" value="Base" />
+              <Property name="OffsetType" value="All" />
             </Property>
             <Property name="SmoothRadius" value="0" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Arches" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="True" />
+            <Property name="Active" value="True" /> <!-- true arches -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -10052,7 +10052,7 @@
             <Property name="TileBlendMeters" value="10" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="True" />
+            <Property name="Active" value="True" /> <!-- True arches small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -10076,7 +10076,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Blobs" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="True" />
+            <Property name="Active" value="True" /> <!-- True blobs -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -10100,7 +10100,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="BlobsSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -10393,7 +10393,7 @@
           </Property>
           <Property name="UnderWater" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
-              <Property name="Octaves" value="9" />
+              <Property name="Octaves" value="12" />
               <Property name="SlopeGain" value="0.5" />
               <Property name="SlopeBias" value="0.4" />
               <Property name="SharpToRoundFeatures" value="0" />
@@ -10416,10 +10416,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="100" />
-            <Property name="Width" value="250" />
+            <Property name="Height" value="200" />
+            <Property name="Width" value="500" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="1" />
+            <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -11463,13 +11463,13 @@
           <Property name="Crater" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="True" /> <!-- false crater -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="True" />
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
             <Property name="FeatureType" value="Tube" />
-            <Property name="Width" value="10" />
+            <Property name="Width" value="15" />
             <Property name="Height" value="2.5" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
@@ -11478,14 +11478,14 @@
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
-              <Property name="OffsetType" value="Base" />
+              <Property name="OffsetType" value="All" />
             </Property>
             <Property name="SmoothRadius" value="0" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Arches" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="True" />
+            <Property name="Active" value="True" /> <!-- true arches -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -11509,7 +11509,7 @@
             <Property name="TileBlendMeters" value="10" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="True" />
+            <Property name="Active" value="True" /> <!-- True arches small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -11533,7 +11533,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Blobs" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="True" />
+            <Property name="Active" value="True" /> <!-- True blobs -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -11557,7 +11557,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="BlobsSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -11852,7 +11852,7 @@
           </Property>
           <Property name="UnderWater" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
-              <Property name="Octaves" value="9" />
+              <Property name="Octaves" value="12" />
               <Property name="SlopeGain" value="0.5" />
               <Property name="SlopeBias" value="0.4" />
               <Property name="SharpToRoundFeatures" value="0" />
@@ -11878,7 +11878,7 @@
             <Property name="Height" value="100" />
             <Property name="Width" value="250" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="1" />
+            <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -12922,13 +12922,13 @@
           <Property name="Crater" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="True" /> <!-- false crater -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="True" />
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
             <Property name="FeatureType" value="Tube" />
-            <Property name="Width" value="10" />
+            <Property name="Width" value="5" />
             <Property name="Height" value="2.5" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
@@ -12937,14 +12937,14 @@
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
-              <Property name="OffsetType" value="Base" />
+              <Property name="OffsetType" value="All" />
             </Property>
             <Property name="SmoothRadius" value="0" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Arches" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False Arches -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -12968,7 +12968,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -12992,7 +12992,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Blobs" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="True" />
+            <Property name="Active" value="True" /> <!-- True blobs -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -13016,7 +13016,7 @@
             <Property name="TileBlendMeters" value="10" />
           </Property>
           <Property name="BlobsSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="True" />
+            <Property name="Active" value="True" /> <!-- True blobs small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -13309,7 +13309,7 @@
           </Property>
           <Property name="UnderWater" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
-              <Property name="Octaves" value="9" />
+              <Property name="Octaves" value="12" />
               <Property name="SlopeGain" value="0.5" />
               <Property name="SlopeBias" value="0.4" />
               <Property name="SharpToRoundFeatures" value="0" />
@@ -13332,10 +13332,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="100" />
-            <Property name="Width" value="250" />
+            <Property name="Height" value="200" />
+            <Property name="Width" value="500" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="1" />
+            <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -14379,13 +14379,13 @@
           <Property name="Crater" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="True" /> <!-- false crater -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="True" />
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
             <Property name="FeatureType" value="Tube" />
-            <Property name="Width" value="10" />
+            <Property name="Width" value="15" />
             <Property name="Height" value="2.5" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
@@ -14394,14 +14394,14 @@
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
-              <Property name="OffsetType" value="Base" />
+              <Property name="OffsetType" value="All" />
             </Property>
             <Property name="SmoothRadius" value="0" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Arches" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False Arches -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -14425,7 +14425,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -14449,7 +14449,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Blobs" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="True" />
+            <Property name="Active" value="True" /> <!-- True blobs -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -14473,7 +14473,7 @@
             <Property name="TileBlendMeters" value="10" />
           </Property>
           <Property name="BlobsSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="True" />
+            <Property name="Active" value="True" /> <!-- True blobs small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -14768,7 +14768,7 @@
           </Property>
           <Property name="UnderWater" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
-              <Property name="Octaves" value="9" />
+              <Property name="Octaves" value="12" />
               <Property name="SlopeGain" value="0.5" />
               <Property name="SlopeBias" value="0.4" />
               <Property name="SharpToRoundFeatures" value="0" />
@@ -14794,7 +14794,7 @@
             <Property name="Height" value="100" />
             <Property name="Width" value="250" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="1" />
+            <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -15812,19 +15812,19 @@
         </Property>
         <Property name="Features">
           <Property name="River" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="True" />
+            <Property name="Active" value="True" /> <!-- true river -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
-            <Property name="Trench" value="False" />
+            <Property name="Subtract" value="True" />
+            <Property name="Trench" value="True" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
-            <Property name="FeatureType" value="Blob" />
+            <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="70" />
-            <Property name="Height" value="100" />
+            <Property name="Height" value="60" />
             <Property name="Octaves" value="4" />
-            <Property name="RegionSize" value="800" />
-            <Property name="Ratio" value="1" />
+            <Property name="RegionSize" value="600" />
+            <Property name="Ratio" value="0.9" />
             <Property name="HeightVarianceAmplitude" value="0" />
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="-30" />
@@ -15833,7 +15833,7 @@
             </Property>
             <Property name="SmoothRadius" value="5" />
             <Property name="SeedOffset" value="3" />
-            <Property name="TileBlendMeters" value="0" />
+            <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Crater" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="True" />
@@ -15860,7 +15860,7 @@
             <Property name="TileBlendMeters" value="0" />
           </Property>
           <Property name="Arches" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False Arches -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -15884,7 +15884,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -15908,7 +15908,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Blobs" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="True" />
             <Property name="Trench" value="True" />
@@ -15932,7 +15932,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="BlobsSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="True" />
             <Property name="Trench" value="False" />
@@ -16225,7 +16225,7 @@
           </Property>
           <Property name="UnderWater" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
-              <Property name="Octaves" value="9" />
+              <Property name="Octaves" value="12" />
               <Property name="SlopeGain" value="0.5" />
               <Property name="SlopeBias" value="0.4" />
               <Property name="SharpToRoundFeatures" value="0" />
@@ -16248,10 +16248,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="100" />
-            <Property name="Width" value="250" />
+            <Property name="Height" value="200" />
+            <Property name="Width" value="500" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="1" />
+            <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -17269,19 +17269,19 @@
         </Property>
         <Property name="Features">
           <Property name="River" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="True" />
+            <Property name="Active" value="True" /> <!-- true river -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
-            <Property name="Trench" value="False" />
+            <Property name="Subtract" value="True" />
+            <Property name="Trench" value="True" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
-            <Property name="FeatureType" value="Blob" />
+            <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="70" />
             <Property name="Height" value="100" />
             <Property name="Octaves" value="4" />
-            <Property name="RegionSize" value="800" />
-            <Property name="Ratio" value="1" />
+            <Property name="RegionSize" value="2000" />
+            <Property name="Ratio" value="0.9" />
             <Property name="HeightVarianceAmplitude" value="0" />
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="-30" />
@@ -17290,7 +17290,7 @@
             </Property>
             <Property name="SmoothRadius" value="5" />
             <Property name="SeedOffset" value="3" />
-            <Property name="TileBlendMeters" value="0" />
+            <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Crater" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="True" />
@@ -17317,7 +17317,7 @@
             <Property name="TileBlendMeters" value="0" />
           </Property>
           <Property name="Arches" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False Arches -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -17341,7 +17341,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -17365,7 +17365,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Blobs" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="True" />
             <Property name="Trench" value="True" />
@@ -17389,7 +17389,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="BlobsSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="True" />
             <Property name="Trench" value="False" />
@@ -17684,7 +17684,7 @@
           </Property>
           <Property name="UnderWater" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
-              <Property name="Octaves" value="9" />
+              <Property name="Octaves" value="12" />
               <Property name="SlopeGain" value="0.5" />
               <Property name="SlopeBias" value="0.4" />
               <Property name="SharpToRoundFeatures" value="0" />
@@ -17710,7 +17710,7 @@
             <Property name="Height" value="100" />
             <Property name="Width" value="250" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="1" />
+            <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -18728,19 +18728,19 @@
         </Property>
         <Property name="Features">
           <Property name="River" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="True" />
+            <Property name="Active" value="True" /> <!-- true river -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="True" />
-            <Property name="Trench" value="False" />
+            <Property name="Trench" value="True" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="100" />
-            <Property name="Height" value="40" />
+            <Property name="Height" value="60" />
             <Property name="Octaves" value="9" />
-            <Property name="RegionSize" value="2000" />
-            <Property name="Ratio" value="1" />
+            <Property name="RegionSize" value="600" />
+            <Property name="Ratio" value="0.9" />
             <Property name="HeightVarianceAmplitude" value="25" />
             <Property name="HeightVarianceFrequency" value="600" />
             <Property name="HeightOffset" value="50" />
@@ -18754,13 +18754,13 @@
           <Property name="Crater" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="True" /> <!-- false crater -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="True" />
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
             <Property name="FeatureType" value="Tube" />
-            <Property name="Width" value="10" />
+            <Property name="Width" value="5" />
             <Property name="Height" value="2.5" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
@@ -18769,14 +18769,14 @@
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
-              <Property name="OffsetType" value="Base" />
+              <Property name="OffsetType" value="All" />
             </Property>
             <Property name="SmoothRadius" value="0" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Arches" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False Arches -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -18800,7 +18800,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -18824,7 +18824,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Blobs" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -18848,7 +18848,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="BlobsSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -19141,7 +19141,7 @@
           </Property>
           <Property name="UnderWater" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
-              <Property name="Octaves" value="9" />
+              <Property name="Octaves" value="12" />
               <Property name="SlopeGain" value="0.5" />
               <Property name="SlopeBias" value="0.4" />
               <Property name="SharpToRoundFeatures" value="0" />
@@ -19164,10 +19164,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="100" />
-            <Property name="Width" value="250" />
+            <Property name="Height" value="200" />
+            <Property name="Width" value="500" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="1" />
+            <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -20185,19 +20185,19 @@
         </Property>
         <Property name="Features">
           <Property name="River" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="True" />
+            <Property name="Active" value="True" /> <!-- true river -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="True" />
-            <Property name="Trench" value="False" />
+            <Property name="Trench" value="True" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="100" />
-            <Property name="Height" value="40" />
+            <Property name="Height" value="100" />
             <Property name="Octaves" value="9" />
             <Property name="RegionSize" value="2000" />
-            <Property name="Ratio" value="1" />
+            <Property name="Ratio" value="0.9" />
             <Property name="HeightVarianceAmplitude" value="25" />
             <Property name="HeightVarianceFrequency" value="600" />
             <Property name="HeightOffset" value="50" />
@@ -20211,13 +20211,13 @@
           <Property name="Crater" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="True" /> <!-- false crater -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="True" />
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
             <Property name="FeatureType" value="Tube" />
-            <Property name="Width" value="10" />
+            <Property name="Width" value="15" />
             <Property name="Height" value="2.5" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
@@ -20226,14 +20226,14 @@
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
-              <Property name="OffsetType" value="Base" />
+              <Property name="OffsetType" value="All" />
             </Property>
             <Property name="SmoothRadius" value="0" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Arches" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False Arches -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -20257,7 +20257,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -20281,7 +20281,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Blobs" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -20305,7 +20305,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="BlobsSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -20600,7 +20600,7 @@
           </Property>
           <Property name="UnderWater" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
-              <Property name="Octaves" value="9" />
+              <Property name="Octaves" value="12" />
               <Property name="SlopeGain" value="0.5" />
               <Property name="SlopeBias" value="0.4" />
               <Property name="SharpToRoundFeatures" value="0" />
@@ -20626,7 +20626,7 @@
             <Property name="Height" value="100" />
             <Property name="Width" value="250" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="1" />
+            <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -21670,13 +21670,13 @@
           <Property name="Crater" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="True" /> <!-- false crater -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="True" />
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
             <Property name="FeatureType" value="Tube" />
-            <Property name="Width" value="10" />
+            <Property name="Width" value="5" />
             <Property name="Height" value="2.5" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
@@ -21685,14 +21685,14 @@
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
-              <Property name="OffsetType" value="Base" />
+              <Property name="OffsetType" value="All" />
             </Property>
             <Property name="SmoothRadius" value="0" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Arches" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False Arches -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -21716,7 +21716,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -21740,7 +21740,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Blobs" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -21764,7 +21764,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="BlobsSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -22057,7 +22057,7 @@
           </Property>
           <Property name="UnderWater" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
-              <Property name="Octaves" value="9" />
+              <Property name="Octaves" value="12" />
               <Property name="SlopeGain" value="0.5" />
               <Property name="SlopeBias" value="0.4" />
               <Property name="SharpToRoundFeatures" value="0" />
@@ -22080,10 +22080,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="100" />
-            <Property name="Width" value="250" />
+            <Property name="Height" value="200" />
+            <Property name="Width" value="500" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="1" />
+            <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -23127,13 +23127,13 @@
           <Property name="Crater" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="True" /> <!-- false crater -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="True" />
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
             <Property name="FeatureType" value="Tube" />
-            <Property name="Width" value="10" />
+            <Property name="Width" value="15" />
             <Property name="Height" value="2.5" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
@@ -23142,14 +23142,14 @@
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
-              <Property name="OffsetType" value="Base" />
+              <Property name="OffsetType" value="All" />
             </Property>
             <Property name="SmoothRadius" value="0" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Arches" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False Arches -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -23173,7 +23173,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -23197,7 +23197,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Blobs" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -23221,7 +23221,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="BlobsSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -23516,7 +23516,7 @@
           </Property>
           <Property name="UnderWater" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
-              <Property name="Octaves" value="9" />
+              <Property name="Octaves" value="12" />
               <Property name="SlopeGain" value="0.5" />
               <Property name="SlopeBias" value="0.4" />
               <Property name="SharpToRoundFeatures" value="0" />
@@ -23542,7 +23542,7 @@
             <Property name="Height" value="100" />
             <Property name="Width" value="250" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="1" />
+            <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -24586,13 +24586,13 @@
           <Property name="Crater" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="True" /> <!-- false crater -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="True" />
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
             <Property name="FeatureType" value="Tube" />
-            <Property name="Width" value="10" />
+            <Property name="Width" value="5" />
             <Property name="Height" value="2.5" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
@@ -24601,14 +24601,14 @@
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
-              <Property name="OffsetType" value="Base" />
+              <Property name="OffsetType" value="All" />
             </Property>
             <Property name="SmoothRadius" value="0" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Arches" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False Arches -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -24632,7 +24632,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -24656,7 +24656,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Blobs" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -24680,7 +24680,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="BlobsSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -24973,7 +24973,7 @@
           </Property>
           <Property name="UnderWater" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
-              <Property name="Octaves" value="9" />
+              <Property name="Octaves" value="12" />
               <Property name="SlopeGain" value="0.5" />
               <Property name="SlopeBias" value="0.4" />
               <Property name="SharpToRoundFeatures" value="0" />
@@ -24996,10 +24996,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="100" />
-            <Property name="Width" value="250" />
+            <Property name="Height" value="200" />
+            <Property name="Width" value="500" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="1" />
+            <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -26043,13 +26043,13 @@
           <Property name="Crater" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="True" /> <!-- false crater -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="True" />
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
             <Property name="FeatureType" value="Tube" />
-            <Property name="Width" value="10" />
+            <Property name="Width" value="15" />
             <Property name="Height" value="2.5" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
@@ -26058,14 +26058,14 @@
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
-              <Property name="OffsetType" value="Base" />
+              <Property name="OffsetType" value="All" />
             </Property>
             <Property name="SmoothRadius" value="0" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Arches" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False Arches -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -26089,7 +26089,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -26113,7 +26113,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Blobs" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -26137,7 +26137,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="BlobsSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -26432,7 +26432,7 @@
           </Property>
           <Property name="UnderWater" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
-              <Property name="Octaves" value="9" />
+              <Property name="Octaves" value="12" />
               <Property name="SlopeGain" value="0.5" />
               <Property name="SlopeBias" value="0.4" />
               <Property name="SharpToRoundFeatures" value="0" />
@@ -26458,7 +26458,7 @@
             <Property name="Height" value="100" />
             <Property name="Width" value="250" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="1" />
+            <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -27476,7 +27476,7 @@
         </Property>
         <Property name="Features">
           <Property name="River" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="True" />
+            <Property name="Active" value="True" /> <!-- true river -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="True" />
             <Property name="Trench" value="True" />
@@ -27485,10 +27485,10 @@
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="128" />
-            <Property name="Height" value="64" />
+            <Property name="Height" value="60" />
             <Property name="Octaves" value="4" />
-            <Property name="RegionSize" value="4000" />
-            <Property name="Ratio" value="1" />
+            <Property name="RegionSize" value="2000" />
+            <Property name="Ratio" value="0.9" />
             <Property name="HeightVarianceAmplitude" value="0" />
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="64" />
@@ -27502,13 +27502,13 @@
           <Property name="Crater" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="True" /> <!-- false crater -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="True" />
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
             <Property name="FeatureType" value="Tube" />
-            <Property name="Width" value="10" />
+            <Property name="Width" value="5" />
             <Property name="Height" value="2.5" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
@@ -27517,14 +27517,14 @@
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
-              <Property name="OffsetType" value="Base" />
+              <Property name="OffsetType" value="All" />
             </Property>
             <Property name="SmoothRadius" value="0" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Arches" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False Arches -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -27548,7 +27548,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -27572,7 +27572,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Blobs" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="True" />
+            <Property name="Active" value="True" /> <!-- True blobs -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -27596,7 +27596,7 @@
             <Property name="TileBlendMeters" value="10" />
           </Property>
           <Property name="BlobsSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -27889,7 +27889,7 @@
           </Property>
           <Property name="UnderWater" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
-              <Property name="Octaves" value="9" />
+              <Property name="Octaves" value="12" />
               <Property name="SlopeGain" value="0.5" />
               <Property name="SlopeBias" value="0.4" />
               <Property name="SharpToRoundFeatures" value="0" />
@@ -27912,10 +27912,10 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="100" />
-            <Property name="Width" value="250" />
+            <Property name="Height" value="200" />
+            <Property name="Width" value="500" />
             <Property name="RegionRatio" value="1" />
-            <Property name="RegionScale" value="1" />
+            <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
             <Property name="HeightOffset" value="0" />
@@ -28933,7 +28933,7 @@
         </Property>
         <Property name="Features">
           <Property name="River" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="True" />
+            <Property name="Active" value="True" /> <!-- true river -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="True" />
             <Property name="Trench" value="True" />
@@ -28942,10 +28942,10 @@
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="128" />
-            <Property name="Height" value="64" />
+            <Property name="Height" value="100" />
             <Property name="Octaves" value="4" />
             <Property name="RegionSize" value="4000" />
-            <Property name="Ratio" value="1" />
+            <Property name="Ratio" value="0.9" />
             <Property name="HeightVarianceAmplitude" value="0" />
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="64" />
@@ -28959,13 +28959,13 @@
           <Property name="Crater" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="True" /> <!-- false crater -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="True" />
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
             <Property name="FeatureType" value="Tube" />
-            <Property name="Width" value="10" />
+            <Property name="Width" value="15" />
             <Property name="Height" value="2.5" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
@@ -28974,14 +28974,14 @@
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
-              <Property name="OffsetType" value="Base" />
+              <Property name="OffsetType" value="All" />
             </Property>
             <Property name="SmoothRadius" value="0" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Arches" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False Arches -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -29005,7 +29005,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -29029,7 +29029,7 @@
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="Blobs" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="True" />
+            <Property name="Active" value="True" /> <!-- True blobs -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
@@ -29053,7 +29053,7 @@
             <Property name="TileBlendMeters" value="10" />
           </Property>
           <Property name="BlobsSmall" value="TkNoiseFeatureData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="False" /> <!-- False blobs small -->
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="Trench" value="False" />
