@@ -1635,11 +1635,11 @@
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="False" />
       <Property name="NotOnWeirdPlanets" value="False" />
-      <Property name="NotOnDeadPlanets" value="True" />
+      <Property name="NotOnDeadPlanets" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="All" />
       </Property>
-      <Property name="ProbabilityOfBeingActive" value="1" />
+      <Property name="ProbabilityOfBeingActive" value="0.9" />
       <Property name="MinFilesToChoose" value="1" />
       <Property name="MaxFilesToChoose" value="1" />
       <Property name="ExternalObjectFiles">
@@ -1709,7 +1709,7 @@
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="All" />
       </Property>
-      <Property name="ProbabilityOfBeingActive" value="1" />
+      <Property name="ProbabilityOfBeingActive" value="0" />
       <Property name="MinFilesToChoose" value="1" />
       <Property name="MaxFilesToChoose" value="1" />
       <Property name="ExternalObjectFiles">
@@ -1717,7 +1717,7 @@
           <Property name="Name" value="EXTRA_LUSHBIOME" />
           <Property name="ResourceHint" value="" />
           <Property name="ResourceHintIcon" value="" />
-          <Property name="Probability" value="0" />
+          <Property name="Probability" value="1" />
           <Property name="TileType" value="GcTerrainTileType.xml">
             <Property name="TileType" value="Base" />
           </Property>
@@ -1725,7 +1725,7 @@
           <Property name="ChooseUsingLifeLevel" value="False" />
           <Property name="Options">
             <Property value="NMSString0x80.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MULTIBIOMES/EXTRAOBJECTS/LUSH.MXML" />
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/FROZEN/FROZENOBJECTSFULL.MXML" />
             </Property>
           </Property>
         </Property>
