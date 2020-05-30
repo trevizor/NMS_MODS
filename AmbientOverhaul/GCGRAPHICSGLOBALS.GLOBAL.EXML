@@ -3,6 +3,7 @@
 <Data template="GcGraphicsGlobals">
   <Property name="LUTDistanceFlightMultiplier" value="0" />
   <Property name="SunLightIntensity" value="2" />
+  <Property name="Unknown0x8" value="5" />
   <Property name="HBAOBias" value="0.1" />
   <Property name="HBAORadius" value="2" />
   <Property name="HBAOIntensity" value="1" />
@@ -27,7 +28,7 @@
   <Property name="SunRayExposure" value="0.1" />
   <Property name="SunRayWeight" value="0.1" />
   <Property name="Brightness" value="0" />
-  <Property name="Contrast" value="1.05" />
+  <Property name="Contrast" value="1" />
   <Property name="Saturation" value="1" />
   <Property name="Redo_On" value="False" />
   <Property name="Redo_LightIntensity" value="1" />
@@ -242,7 +243,7 @@
   <Property name="WarpKCube" value="0.2" />
   <Property name="WarpScale" value="1.08" />
   <Property name="WarpKDispersion" value="0.025" />
-  <Property name="ShadowMapSize" value="2048" />
+  <Property name="ShadowMapSize" value="1024" />
   <Property name="DirectionLightRadius" value="500" />
   <Property name="DirectionLightFOV" value="212" />
   <Property name="DirectionLightShadowBias" value="0.007" />
@@ -448,7 +449,7 @@
   <Property name="SpaceSunFactor" value="20" />
   <Property name="MaxSpaceFogStrength" value="0.8" />
   <Property name="ReflectionStrength" value="0.05" />
-  <Property name="AlphaCutoutMin" value="0.3" />
+  <Property name="AlphaCutoutMin" value="0.45" />
   <Property name="AlphaCutoutMax" value="0.8" />
   <Property name="WaterHueShift" value="0.1" />
   <Property name="WaterSaturation" value="0.9" />
@@ -517,12 +518,12 @@
   <Property name="EnableTerrainCachePs4Base" value="True" />
   <Property name="EnableTerrainCachePs4Pro" value="True" />
   <Property name="EnableTerrainCacheXb1Base" value="False" />
-  <Property name="EnableTerrainCacheXb1X" value="False" />
-  <Property name="ForceCachedTerrain" value="False" />
+  <Property name="EnableTerrainCacheXb1X" value="True" />
+  <Property name="ForceCachedTerrain" value="True" />
   <Property name="ForceUncachedTerrain" value="False" />
   <Property name="MinPixelSizeOfObjectsInShadowsSpace" value="18" />
-  <Property name="MinPixelSizeOfObjectsInShadowsPlanet" value="2" />
-  <Property name="MinPixelSizeOfObjectsInShadowsCockpitOnPlanet" value="3" />
+  <Property name="MinPixelSizeOfObjectsInShadowsPlanet" value="6" />
+  <Property name="MinPixelSizeOfObjectsInShadowsCockpitOnPlanet" value="14" />
   <Property name="AllowPartialCascadeRender" value="False" />
   <Property name="CascadeRenderSequence">
     <Property value="3" />

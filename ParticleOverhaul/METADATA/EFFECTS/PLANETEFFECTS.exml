@@ -773,8 +773,23 @@
       <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
-      <Property name="Debris" />
-      <Property name="Life" value="3" />
+      <Property name="Debris">
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/LARGERESOURCEDEBRIS.SCENE.MBIN" />
+          </Property>
+          <Property name="Number" value="2" />
+          <Property name="Radius" value="0.1" />
+          <Property name="Scale" value="0.04" />
+          <Property name="Speed" value="0.1" />
+          <Property name="AngularSpeed" value="3" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+      </Property>
+      <Property name="Life" value="6" />
       <Property name="Scale" value="1" />
       <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="50" />
