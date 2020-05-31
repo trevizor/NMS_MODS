@@ -5758,9 +5758,9 @@
       <Property name="ForceType" value="GcCreatureTypes.xml">
         <Property name="CreatureType" value="Weird" />
       </Property>
-      <Property name="MoveArea" value="Air" />
-      <Property name="MinScale" value="1" />
-      <Property name="MaxScale" value="3.5" />
+      <Property name="MoveArea" value="Ground" />
+      <Property name="MinScale" value="0.2" />
+      <Property name="MaxScale" value="12" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -5771,16 +5771,55 @@
         <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
+        <Property value="GcCreatureVocalData.xml">
+          <Property name="ScaleBias" value="1" />
+          <Property name="IdleVocal" value="GcCreatureVocalSoundData.xml">
+            <Property name="Id" value="" />
+            <Property name="VocalEmote" value="EmoteIdle" />
+            <Property name="PlayFrequency" value="0.65" />
+            <Property name="MinCooldown" value="5" />
+            <Property name="MaxCooldown" value="10" />
+            <Property name="PlayImmediately" value="False" />
+            <Property name="PlayOnlyOnce" value="False" />
+          </Property>
+          <Property name="FleeVocal" value="GcCreatureVocalSoundData.xml">
+            <Property name="Id" value="" />
+            <Property name="VocalEmote" value="EmoteIdle" />
+            <Property name="PlayFrequency" value="0.3" />
+            <Property name="MinCooldown" value="2.5" />
+            <Property name="MaxCooldown" value="8" />
+            <Property name="PlayImmediately" value="True" />
+            <Property name="PlayOnlyOnce" value="False" />
+          </Property>
+          <Property name="DeathVocal" value="GcCreatureVocalSoundData.xml">
+            <Property name="Id" value="" />
+            <Property name="VocalEmote" value="EmoteDie" />
+            <Property name="PlayFrequency" value="1" />
+            <Property name="MinCooldown" value="5" />
+            <Property name="MaxCooldown" value="15" />
+            <Property name="PlayImmediately" value="True" />
+            <Property name="PlayOnlyOnce" value="True" />
+          </Property>
+          <Property name="AttackVocal" value="GcCreatureVocalSoundData.xml">
+            <Property name="Id" value="" />
+            <Property name="VocalEmote" value="EmoteAttack" />
+            <Property name="PlayFrequency" value="1" />
+            <Property name="MinCooldown" value="5" />
+            <Property name="MaxCooldown" value="15" />
+            <Property name="PlayImmediately" value="True" />
+            <Property name="PlayOnlyOnce" value="True" />
+          </Property>
+        </Property>
         <Property value="GcCreatureMovementData.xml">
           <Property name="Anims">
             <Property value="GcCreatureMoveAnimData.xml">
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="0.45" />
-              <Property name="MinSpeedScale" value="0.45" />
-              <Property name="MaxSpeedScale" value="0.8" />
-              <Property name="MaxPredatorSpeedScale" value="0.9" />
+              <Property name="AnimSpeed" value="1" />
+              <Property name="MinSpeedScale" value="1" />
+              <Property name="MaxSpeedScale" value="1" />
+              <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="AnimMoveSpeed" value="0" />
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
@@ -5788,20 +5827,27 @@
               <Property name="Anim" value="RUN" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="0.45" />
-              <Property name="MinSpeedScale" value="0.45" />
-              <Property name="MaxSpeedScale" value="0.8" />
-              <Property name="MaxPredatorSpeedScale" value="0.9" />
+              <Property name="AnimSpeed" value="1" />
+              <Property name="MinSpeedScale" value="1" />
+              <Property name="MaxSpeedScale" value="1" />
+              <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="AnimMoveSpeed" value="0" />
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="300" />
-          <Property name="MoveSpeedScale" value="1.1" />
+          <Property name="MoveRange" value="100" />
+          <Property name="MoveSpeedScale" value="1.5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
           <Property name="Herd" value="False" />
+        </Property>
+        <Property value="GcCreatureWeirdMovementData.xml">
+          <Property name="MoveMode" value="Float" />
+          <Property name="Node" value="_Weird_Float" />
+          <Property name="BobSpeed" value="2" />
+          <Property name="BobAmount" value="0.2" />
+          <Property name="FeetNames" />
         </Property>
       </Property>
     </Property>
@@ -6100,7 +6146,7 @@
     <!-- NEW CREATURES NOW WORK! -->
     <Property value="GcCreatureData.xml">
       <Property name="Id" value="BATS" />
-      <Property name="OnlySpawnWhenIdIsForced" value="False" />
+      <Property name="OnlySpawnWhenIdIsForced" value="True" />
       <Property name="Genus" value="RHOPALOCERA" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
         <Property name="CreatureType" value="Weird" />
@@ -6196,7 +6242,7 @@
     </Property>
     <Property value="GcCreatureData.xml"> <!-- FLYING JELLY FISH -->
       <Property name="Id" value="FLYINGJELLY" />
-      <Property name="OnlySpawnWhenIdIsForced" value="False" />
+      <Property name="OnlySpawnWhenIdIsForced" value="True" />
       <Property name="Genus" value="RHOPALOCERA" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
         <Property name="CreatureType" value="Weird" />
@@ -6292,7 +6338,7 @@
     </Property>
     <Property value="GcCreatureData.xml">
       <Property name="Id" value="FLYINGFISH" />
-      <Property name="OnlySpawnWhenIdIsForced" value="False" />
+      <Property name="OnlySpawnWhenIdIsForced" value="True" />
       <Property name="Genus" value="OXYACTA" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
         <Property name="CreatureType" value="Weird" />
@@ -6386,6 +6432,212 @@
         </Property>
       </Property>
     </Property>
-
+    <Property value="GcCreatureData.xml">
+      <Property name="Id" value="ASSASSIN_STRIDER" />
+      <Property name="OnlySpawnWhenIdIsForced" value="False" />
+      <Property name="Genus" value="ANASTOMUS" />
+      <Property name="ForceType" value="GcCreatureTypes.xml">
+        <Property name="CreatureType" value="None" />
+      </Property>
+      <Property name="MoveArea" value="Ground" />
+      <Property name="MinScale" value="0.8" />
+      <Property name="MaxScale" value="4.5" />
+      <Property name="Rarity" value="GcRarity.xml">
+        <Property name="Rarity" value="Uncommon" />
+      </Property>
+      <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
+      </Property>
+      <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+      </Property>
+      <Property name="Data">
+        <Property value="GcCreatureMovementData.xml">
+          <Property name="Anims">
+            <Property value="GcCreatureMoveAnimData.xml">
+              <Property name="Anim" value="SLOWWALK" />
+              <Property name="AnimLeft" value="" />
+              <Property name="AnimRight" value="" />
+              <Property name="AnimSpeed" value="1" />
+              <Property name="MinSpeedScale" value="1" />
+              <Property name="MaxSpeedScale" value="1" />
+              <Property name="MaxPredatorSpeedScale" value="1.6" />
+              <Property name="AnimMoveSpeed" value="0" />
+              <Property name="AnimMoveSpeedCached" value="False" />
+            </Property>
+            <Property value="GcCreatureMoveAnimData.xml">
+              <Property name="Anim" value="WALK" />
+              <Property name="AnimLeft" value="" />
+              <Property name="AnimRight" value="" />
+              <Property name="AnimSpeed" value="1" />
+              <Property name="MinSpeedScale" value="1" />
+              <Property name="MaxSpeedScale" value="1" />
+              <Property name="MaxPredatorSpeedScale" value="1.6" />
+              <Property name="AnimMoveSpeed" value="0" />
+              <Property name="AnimMoveSpeedCached" value="False" />
+            </Property>
+            <Property value="GcCreatureMoveAnimData.xml">
+              <Property name="Anim" value="FASTWALK" />
+              <Property name="AnimLeft" value="" />
+              <Property name="AnimRight" value="" />
+              <Property name="AnimSpeed" value="1" />
+              <Property name="MinSpeedScale" value="1" />
+              <Property name="MaxSpeedScale" value="1" />
+              <Property name="MaxPredatorSpeedScale" value="1.6" />
+              <Property name="AnimMoveSpeed" value="0" />
+              <Property name="AnimMoveSpeedCached" value="False" />
+            </Property>
+            <Property value="GcCreatureMoveAnimData.xml">
+              <Property name="Anim" value="TROT" />
+              <Property name="AnimLeft" value="" />
+              <Property name="AnimRight" value="" />
+              <Property name="AnimSpeed" value="1" />
+              <Property name="MinSpeedScale" value="1" />
+              <Property name="MaxSpeedScale" value="1" />
+              <Property name="MaxPredatorSpeedScale" value="1.6" />
+              <Property name="AnimMoveSpeed" value="0" />
+              <Property name="AnimMoveSpeedCached" value="False" />
+            </Property>
+            <Property value="GcCreatureMoveAnimData.xml">
+              <Property name="Anim" value="RUN" />
+              <Property name="AnimLeft" value="" />
+              <Property name="AnimRight" value="" />
+              <Property name="AnimSpeed" value="1" />
+              <Property name="MinSpeedScale" value="1" />
+              <Property name="MaxSpeedScale" value="1" />
+              <Property name="MaxPredatorSpeedScale" value="1.6" />
+              <Property name="AnimMoveSpeed" value="0" />
+              <Property name="AnimMoveSpeedCached" value="False" />
+            </Property>
+          </Property>
+          <Property name="MoveRange" value="300" />
+          <Property name="MoveSpeedScale" value="1" />
+          <Property name="HeightMin" value="0" />
+          <Property name="HeightMax" value="256" />
+          <Property name="HeightTime" value="1" />
+          <Property name="Herd" value="True" />
+        </Property>
+        <Property value="GcCreatureVocalData.xml">
+          <Property name="ScaleBias" value="1" />
+          <Property name="IdleVocal" value="GcCreatureVocalSoundData.xml">
+            <Property name="Id" value="" />
+            <Property name="VocalEmote" value="EmoteIdle" />
+            <Property name="PlayFrequency" value="0.35" />
+            <Property name="MinCooldown" value="5" />
+            <Property name="MaxCooldown" value="15" />
+            <Property name="PlayImmediately" value="False" />
+            <Property name="PlayOnlyOnce" value="False" />
+          </Property>
+          <Property name="FleeVocal" value="GcCreatureVocalSoundData.xml">
+            <Property name="Id" value="" />
+            <Property name="VocalEmote" value="EmoteFlee" />
+            <Property name="PlayFrequency" value="0.15" />
+            <Property name="MinCooldown" value="2.5" />
+            <Property name="MaxCooldown" value="10" />
+            <Property name="PlayImmediately" value="True" />
+            <Property name="PlayOnlyOnce" value="False" />
+          </Property>
+          <Property name="DeathVocal" value="GcCreatureVocalSoundData.xml">
+            <Property name="Id" value="" />
+            <Property name="VocalEmote" value="EmoteDie" />
+            <Property name="PlayFrequency" value="1" />
+            <Property name="MinCooldown" value="5" />
+            <Property name="MaxCooldown" value="15" />
+            <Property name="PlayImmediately" value="True" />
+            <Property name="PlayOnlyOnce" value="True" />
+          </Property>
+          <Property name="AttackVocal" value="GcCreatureVocalSoundData.xml">
+            <Property name="Id" value="" />
+            <Property name="VocalEmote" value="EmoteAttack" />
+            <Property name="PlayFrequency" value="1" />
+            <Property name="MinCooldown" value="5" />
+            <Property name="MaxCooldown" value="15" />
+            <Property name="PlayImmediately" value="True" />
+            <Property name="PlayOnlyOnce" value="True" />
+          </Property>
+        </Property>
+        <Property value="GcCreatureFootParticleData.xml">
+          <Property name="ParticleData">
+            <Property value="GcCreatureFootParticleSingleData.xml">
+              <Property name="EffectName" value="FOOTFROZEN" />
+              <Property name="Scale" value="1" />
+              <Property name="MinCreatureSize" value="0.5" />
+              <Property name="MaxCreatureSize" value="100" />
+              <Property name="MoveSpeed" value="Run" />
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcCreatureRidingData.xml">
+          <Property name="JointName" value="RootJNT" />
+          <Property name="AdditionalScaleJoint" value="" />
+          <Property name="Offset" value="Vector3f.xml">
+            <Property name="x" value="0" />
+            <Property name="y" value="0.145" />
+            <Property name="z" value="-0.145" />
+          </Property>
+          <Property name="RotationOffset" value="Vector3f.xml">
+            <Property name="x" value="-6" />
+            <Property name="y" value="0" />
+            <Property name="z" value="0" />
+          </Property>
+          <Property name="VROffset" value="Vector3f.xml">
+            <Property name="x" value="0" />
+            <Property name="y" value="0" />
+            <Property name="z" value="0.4" />
+          </Property>
+          <Property name="HeadCounterRotation" value="0" />
+          <Property name="UprightStrength" value="0.75" />
+          <Property name="LegSpread" value="True" />
+          <Property name="ScaleForNeutralLegSpread" value="2.75" />
+          <Property name="ScaleForMinLegSpread" value="0.5" />
+          <Property name="ScaleForMaxLegSpread" value="7.25" />
+          <Property name="RequiresMatchingPartModifier" value="False" />
+          <Property name="PartModifiers">
+            <Property value="GcCreatureRidingPartModifier.xml">
+              <Property name="Partname" value="_FILLE2_1" />
+              <Property name="JointName" value="" />
+              <Property name="MinScale" value="0" />
+              <Property name="MaxScale" value="100" />
+              <Property name="AdditionalScaleJoint" value="" />
+              <Property name="BreakIfNotSelected" value="False" />
+              <Property name="RelativeOffset" value="False" />
+              <Property name="Offset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0.15" />
+                <Property name="z" value="0.1" />
+              </Property>
+              <Property name="RotationOffset" value="Vector3f.xml">
+                <Property name="x" value="11" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="VROffset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="HeadCounterRotation" value="0" />
+              <Property name="LegSpreadOffset" value="0.25" />
+              <Property name="OverrideAnims" value="False" />
+              <Property name="IdleRidingAnim" value="" />
+              <Property name="DefaultRidingAnim" value="" />
+              <Property name="RidingAnims" />
+            </Property>
+          </Property>
+          <Property name="IdleRidingAnim" value="RIDE_STR_IDLE" />
+          <Property name="DefaultRidingAnim" value="RIDE_STR_WALK" />
+          <Property name="RidingAnims">
+            <Property value="GcCreatureRidingAnimation.xml">
+              <Property name="MovementAnim" value="TROT" />
+              <Property name="RidingAnim" value="RIDE_STR_TROT" />
+            </Property>
+            <Property value="GcCreatureRidingAnimation.xml">
+              <Property name="MovementAnim" value="RUN" />
+              <Property name="RidingAnim" value="RIDE_STR_RUN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
   </Property>
 </Data>
