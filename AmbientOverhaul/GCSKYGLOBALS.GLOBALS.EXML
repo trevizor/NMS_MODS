@@ -55,9 +55,9 @@
     <Property name="t" value="0" />
   </Property>
   <Property name="SafeSkyMinIndex" value="0" />
-  <Property name="SafeSkyMaxIndex" value="6000" />
+  <Property name="SafeSkyMaxIndex" value="16" />
   <Property name="FrozenSkyMinIndex" value="0" />
-  <Property name="FrozenSkyMaxIndex" value="6000" />
+  <Property name="FrozenSkyMaxIndex" value="16" />
   <Property name="SunClampAngle" value="86" />
   <Property name="PhotoModeSunSpeed" value="5" />
   <Property name="FreshStartTimeOfDay" value="0.3" />
@@ -108,19 +108,19 @@
   <Property name="DayLightColour" value="Colour.xml">
     <Property name="R" value="0.944" />
     <Property name="G" value="0.944" />
-    <Property name="B" value="0.900" />
+    <Property name="B" value="0.920" />
     <Property name="A" value="1" />
   </Property>
   <Property name="NightLightColour" value="Colour.xml">
-    <Property name="R" value="0.444" />
-    <Property name="G" value="0.444" />
-    <Property name="B" value="0.944" />
+    <Property name="R" value="0.404" />
+    <Property name="G" value="0.404" />
+    <Property name="B" value="0.424" />
     <Property name="A" value="1" />
   </Property>
   <Property name="DuskLightColour" value="Colour.xml">
     <Property name="R" value="0.963" />
     <Property name="G" value="0.917" />
-    <Property name="B" value="0.862" />
+    <Property name="B" value="0.832" />
     <Property name="A" value="1" />
   </Property>
   <Property name="NightHeavyAirColour" value="Colour.xml">
@@ -142,8 +142,8 @@
   <Property name="MinSunsetHorizonFade" value="0.4" />
   <Property name="MaxSunsetHorizonFade" value="0.5" />
   <Property name="MinNightFade" value="0.62" />
-  <Property name="MaxNightFade" value="0.68" />
-  <Property name="MinSunsetPosFade" value="0.68" />
+  <Property name="MaxNightFade" value="0.73" />
+  <Property name="MinSunsetPosFade" value="0.64" />
   <Property name="MaxSunsetPosFade" value="0.72" />
   <Property name="MinSunsetFogFade" value="0.65" />
   <Property name="MaxSunsetFogFade" value="0.7" />
@@ -155,10 +155,10 @@
   <Property name="MaxSaturation" value="0.85" />
   <Property name="MinValue" value="0.3" />
   <Property name="MaxValue" value="0.5" />
-  <Property name="MinFogSaturation" value="0.01" />
-  <Property name="MaxFogSaturation" value="0.8" />
-  <Property name="MinFogValue" value="0.001" />
-  <Property name="MaxFogValue" value="0.8" />
+  <Property name="MinFogSaturation" value="0.00" />
+  <Property name="MaxFogSaturation" value="0.9" />
+  <Property name="MinFogValue" value="0.0" />
+  <Property name="MaxFogValue" value="0.99" />
   <Property name="MinColourS" value="0" />
   <Property name="MaxColourS" value="1" />
   <Property name="MinColourV" value="0.4" />
@@ -196,7 +196,7 @@
     <Property name="HorizonMultiplier" value="1" />
     <Property name="DuskHorizonMultiplier" value="1.2" />
     <Property name="NightHorizonMultiplier" value="1.554867" />
-    <Property name="HorizonFadeSpeed" value="1" />
+    <Property name="HorizonFadeSpeed" value="0.9" />
     <Property name="DayHorizonTightness" value="0" />
     <Property name="SunSize" value="0.25" />
     <Property name="SunStrength" value="0.225806" />
@@ -206,13 +206,13 @@
     <Property name="UpperSkyFadeOffset" value="0.1" />
   </Property>
   <Property name="PlanetFog" value="GcFogProperties.xml">
-    <Property name="FogStrength" value="0.12" />
-    <Property name="FogMax" value="0.6" />
-    <Property name="FogColourStrength" value="2" />
+    <Property name="FogStrength" value="0.06" />
+    <Property name="FogMax" value="1" />
+    <Property name="FogColourStrength" value="0.15" />
     <Property name="FogColourMax" value="1" />
-    <Property name="HeightFogStrength" value="0.1" />
+    <Property name="HeightFogStrength" value="0.025" />
     <Property name="HeightFogFadeOutStrength" value="0.1" />
-    <Property name="HeightFogOffset" value="0.1" />
+    <Property name="HeightFogOffset" value="0.08" />
     <Property name="HeightFogMax" value="0.4" />
     <Property name="FogHeight" value="128" />
     <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
@@ -297,14 +297,14 @@
     <Property name="IsRaining" value="False" />
   </Property>
   <Property name="PlanetExtremeFog" value="GcFogProperties.xml">
-    <Property name="FogStrength" value="0.12" />
-    <Property name="FogMax" value="0.6" />
-    <Property name="FogColourStrength" value="2" />
+    <Property name="FogStrength" value="0.09" />
+    <Property name="FogMax" value="0.8" />
+    <Property name="FogColourStrength" value="0.15" />
     <Property name="FogColourMax" value="1" />
-    <Property name="HeightFogStrength" value="0.3" />
+    <Property name="HeightFogStrength" value="0.12" />
     <Property name="HeightFogFadeOutStrength" value="0.1" />
     <Property name="HeightFogOffset" value="0" />
-    <Property name="HeightFogMax" value="0.6" />
+    <Property name="HeightFogMax" value="0.5" />
     <Property name="FogHeight" value="8" />
     <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
       <Property name="Settings">
@@ -388,14 +388,14 @@
     <Property name="IsRaining" value="False" />
   </Property>
   <Property name="PlanetStormFog" value="GcFogProperties.xml">
-    <Property name="FogStrength" value="0.12" />
-    <Property name="FogMax" value="0.6" />
-    <Property name="FogColourStrength" value="2" />
+    <Property name="FogStrength" value="0.1" />
+    <Property name="FogMax" value="0.8" />
+    <Property name="FogColourStrength" value="0.15" />
     <Property name="FogColourMax" value="1" />
-    <Property name="HeightFogStrength" value="0.5" />
+    <Property name="HeightFogStrength" value="0.02" />
     <Property name="HeightFogFadeOutStrength" value="0.3" />
     <Property name="HeightFogOffset" value="0" />
-    <Property name="HeightFogMax" value="0.6" />
+    <Property name="HeightFogMax" value="0.2" />
     <Property name="FogHeight" value="4" />
     <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
       <Property name="Settings">
@@ -479,14 +479,14 @@
     <Property name="IsRaining" value="False" />
   </Property>
   <Property name="PlanetFlightFog" value="GcFogProperties.xml">
-    <Property name="FogStrength" value="0.12" />
-    <Property name="FogMax" value="0.6" />
-    <Property name="FogColourStrength" value="2" />
+    <Property name="FogStrength" value="0.05" />
+    <Property name="FogMax" value="0.7" />
+    <Property name="FogColourStrength" value="0.15" />
     <Property name="FogColourMax" value="1" />
-    <Property name="HeightFogStrength" value="0.15" />
+    <Property name="HeightFogStrength" value="0.028" />
     <Property name="HeightFogFadeOutStrength" value="0.25" />
     <Property name="HeightFogOffset" value="0" />
-    <Property name="HeightFogMax" value="0.6" />
+    <Property name="HeightFogMax" value="0.2" />
     <Property name="FogHeight" value="128" />
     <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
       <Property name="Settings">
@@ -1009,46 +1009,46 @@
   </Property>
   <Property name="NightSkyColours" value="GcPlanetWeatherColourData.xml">
     <Property name="SkyColour" value="Colour.xml">
-      <Property name="R" value="0" />
-      <Property name="G" value="0" />
-      <Property name="B" value="0" />
-      <Property name="A" value="0" />
+      <Property name="R" value="0.059" />
+      <Property name="G" value="0.129" />
+      <Property name="B" value="0.176" />
+      <Property name="A" value="0.1" />
     </Property>
     <Property name="SkyUpperColour" value="Colour.xml">
-      <Property name="R" value="0" />
-      <Property name="G" value="0" />
-      <Property name="B" value="0" />
-      <Property name="A" value="0" />
+      <Property name="R" value="0.133" />
+      <Property name="G" value="0.426" />
+      <Property name="B" value="0.77" />
+      <Property name="A" value="1" />
     </Property>
     <Property name="SkySolarColour" value="Colour.xml">
-      <Property name="R" value="0" />
-      <Property name="G" value="0" />
-      <Property name="B" value="0" />
-      <Property name="A" value="0" />
+      <Property name="R" value="0.059" />
+      <Property name="G" value="0.129" />
+      <Property name="B" value="0.176" />
+      <Property name="A" value="1" />
     </Property>
     <Property name="HorizonColour" value="Colour.xml">
-      <Property name="R" value="0" />
-      <Property name="G" value="0" />
-      <Property name="B" value="0" />
-      <Property name="A" value="0" />
+      <Property name="R" value="0.019" />
+      <Property name="G" value="0.024" />
+      <Property name="B" value="0.147" />
+      <Property name="A" value="1" />
     </Property>
     <Property name="SunColour" value="Colour.xml">
       <Property name="R" value="0" />
       <Property name="G" value="0" />
       <Property name="B" value="0" />
-      <Property name="A" value="0" />
+      <Property name="A" value="1" />
     </Property>
     <Property name="FogColour" value="Colour.xml">
-      <Property name="R" value="0" />
-      <Property name="G" value="0" />
-      <Property name="B" value="0" />
-      <Property name="A" value="0" />
+      <Property name="R" value="0.016" />
+      <Property name="G" value="0.063" />
+      <Property name="B" value="0.102" />
+      <Property name="A" value="1" />
     </Property>
     <Property name="HeightFogColour" value="Colour.xml">
-      <Property name="R" value="0" />
-      <Property name="G" value="0" />
-      <Property name="B" value="0" />
-      <Property name="A" value="0" />
+      <Property name="R" value="0.207" />
+      <Property name="G" value="0.207" />
+      <Property name="B" value="0.207" />
+      <Property name="A" value="1" />
     </Property>
     <Property name="SkyGradientSpeed" value="Vector4f.xml">
       <Property name="x" value="1" />
@@ -1057,21 +1057,21 @@
       <Property name="t" value="0" />
     </Property>
     <Property name="LightColour" value="Colour.xml">
-      <Property name="R" value="0.50" />
-      <Property name="G" value="0.53" />
-      <Property name="B" value="0.56" />
-      <Property name="A" value="0" />
+      <Property name="R" value="0.275" />
+      <Property name="G" value="0.275" />
+      <Property name="B" value="0.3" />
+      <Property name="A" value="1" />
     </Property>
     <Property name="CloudColour1" value="Colour.xml">
-      <Property name="R" value="0" />
-      <Property name="G" value="0" />
-      <Property name="B" value="0" />
+      <Property name="R" value="0.02" />
+      <Property name="G" value="0.031" />
+      <Property name="B" value="0.133" />
       <Property name="A" value="1" />
     </Property>
     <Property name="CloudColour2" value="Colour.xml">
-      <Property name="R" value="0.075" />
-      <Property name="G" value="0.075" />
-      <Property name="B" value="0.075" />
+      <Property name="R" value="0.114" />
+      <Property name="G" value="0.157" />
+      <Property name="B" value="0.29" />
       <Property name="A" value="1" />
     </Property>
   </Property>
@@ -1079,49 +1079,49 @@
   <Property name="HackSpaceInterp2" value="-1" />
   <Property name="HackSpaceColourIndex" value="-1" />
   <Property name="HeavyAirColour1" value="Colour.xml">
-    <Property name="R" value="0.25" />
-    <Property name="G" value="0.25" />
-    <Property name="B" value="0.25" />
+    <Property name="R" value="0.278" />
+    <Property name="G" value="0.549" />
+    <Property name="B" value="0.614" />
     <Property name="A" value="1" />
   </Property>
   <Property name="HeavyAirColour2" value="Colour.xml">
-    <Property name="R" value="0.25" />
-    <Property name="G" value="0.25" />
-    <Property name="B" value="0.25" />
+    <Property name="R" value="0.278" />
+    <Property name="G" value="0.549" />
+    <Property name="B" value="0.614" />
     <Property name="A" value="1" />
   </Property>
   <Property name="NightHorizonColour" value="Colour.xml">
-    <Property name="R" value="0" />
-    <Property name="G" value="0" />
-    <Property name="B" value="0" />
-    <Property name="A" value="0" />
+    <Property name="R" value="0.002" />
+    <Property name="G" value="0.024" />
+    <Property name="B" value="0.053" />
+    <Property name="A" value="1" />
   </Property>
   <Property name="NightSkyColour" value="Colour.xml">
-    <Property name="R" value="0" />
-    <Property name="G" value="0" />
-    <Property name="B" value="0" />
+    <Property name="R" value="0.008" />
+    <Property name="G" value="0.053" />
+    <Property name="B" value="0.1" />
     <Property name="A" value="0" />
   </Property>
   <Property name="NightFogColour" value="Colour.xml">
-    <Property name="R" value="0.32" />
+    <Property name="R" value="0.152" />
     <Property name="G" value="0.32" />
-    <Property name="B" value="0.32" />
-    <Property name="A" value="0.01" />
+    <Property name="B" value="0.121" />
+    <Property name="A" value="0" />
   </Property>
   <Property name="NightHeightFogColour" value="Colour.xml">
-    <Property name="R" value="0.6" />
-    <Property name="G" value="0.6" />
-    <Property name="B" value="0.6" />
-    <Property name="A" value="0.32" />
+    <Property name="R" value="0.398" />
+    <Property name="G" value="0.472" />
+    <Property name="B" value="0.577" />
+    <Property name="A" value="0.5" />
   </Property>
   <Property name="PlanetCloudsMin" value="GcPlanetCloudProperties.xml">
     <Property name="Seed" value="GcSeed.xml">
       <Property name="Seed" value="0" />
       <Property name="UseSeedValue" value="False" />
     </Property>
-    <Property name="Coverage1" value="0.01" />
-    <Property name="Coverage2" value="0.5" />
-    <Property name="Coverage3" value="0.25" />
+    <Property name="Coverage1" value="0.5" />
+    <Property name="Coverage2" value="1" />
+    <Property name="Coverage3" value="1" />
     <Property name="Offset1" value="0" />
     <Property name="Offset2" value="0" />
     <Property name="Offset3" value="0" />
@@ -1131,11 +1131,11 @@
       <Property name="Seed" value="0" />
       <Property name="UseSeedValue" value="False" />
     </Property>
-    <Property name="Coverage1" value="1" />
-    <Property name="Coverage2" value="4" />
-    <Property name="Coverage3" value="8" />
-    <Property name="Offset1" value="0" />
-    <Property name="Offset2" value="0" />
-    <Property name="Offset3" value="0" />
+    <Property name="Coverage1" value="3" />
+    <Property name="Coverage2" value="6" />
+    <Property name="Coverage3" value="6" />
+    <Property name="Offset1" value="5" />
+    <Property name="Offset2" value="5" />
+    <Property name="Offset3" value="5" />
   </Property>
 </Data>
