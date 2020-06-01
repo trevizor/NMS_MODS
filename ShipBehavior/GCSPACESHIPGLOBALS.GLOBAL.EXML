@@ -322,7 +322,7 @@
   <Property name="LateralDriftRange" value="60" />
   <Property name="PadTurnSpeed" value="1" />
   <Property name="KBThrustSmoothTime" value="0.2" />
-  <Property name="HoverTakeoffHeight" value="90" />
+  <Property name="HoverTakeoffHeight" value="20" />
   <Property name="HoverTime" value="2" />
   <Property name="HoverAlignTime" value="0.7" />
   <Property name="Unknown0x494" value="5" />
@@ -337,13 +337,13 @@
   <Property name="Unknown0x4B8" value="1.2" />
   <Property name="Unknown0x4BC" value="2" />
   <Property name="HoverLandManeuvreBrake" value="5" />
-  <Property name="LandingOnGroundTip" value="-5" />
+  <Property name="LandingOnGroundTip" value="0" />
   <Property name="LandingCheckBuildings" value="False" />
   <Property name="LandingCheckBuildingRadiusFactor" value="0.75" />
-  <Property name="AutoLevelWaterMargin" value="0.25" />
-  <Property name="AutoLevelWaterTorque" value="0.25" />
+  <Property name="AutoLevelWaterMargin" value="0.05" />
+  <Property name="AutoLevelWaterTorque" value="0.05" />
   <Property name="AutoLevelWaterAngle" value="20" />
-  <Property name="AutoLevelPitchCorrectMargin" value="0.5" />
+  <Property name="AutoLevelPitchCorrectMargin" value="0.1" />
   <Property name="PostCollisionAngularFactor" value="Vector4f.xml">
     <Property name="x" value="0.05" />
     <Property name="y" value="0.05" />
@@ -354,7 +354,7 @@
   <Property name="DamageFlashScale" value="50" />
   <Property name="DamageFlashMin" value="0.2" />
   <Property name="LandingButtonMinTime" value="0.25" />
-  <Property name="LandingPushNoseUpFactor" value="0.01" />
+  <Property name="LandingPushNoseUpFactor" value="0" />
   <Property name="GroundHeightSoftForce" value="2" />
   <Property name="GroundHeightSoft" value="1" />
   <Property name="GroundHeightSoftHorizontal" value="5" />
@@ -370,21 +370,21 @@
   <Property name="GroundHeightPostCollisionMultiplierTime" value="3" />
   <Property name="GroundHeightDownSpeedMultiplier" value="5" />
   <Property name="GroundHeightBrakeMultiplier" value="1.2" />
-  <Property name="PitchCorrectDownSpeedMinSpeed" value="15" />
+  <Property name="PitchCorrectDownSpeedMinSpeed" value="0" />
   <Property name="PitchCorrectDownSpeedRange" value="30" />
-  <Property name="PitchCorrectDownSpeedSoftAngle" value="-40" />
+  <Property name="PitchCorrectDownSpeedSoftAngle" value="-1" />
   <Property name="PitchCorrectDownSpeedMaxDownAngle" value="0" />
   <Property name="PitchCorrectDownSpeedHeightMin" value="300" />
   <Property name="PitchCorrectDownSpeedHeightMax" value="1000" />
-  <Property name="PitchCorrectCockpitSpring" value="3" />
-  <Property name="PitchCorrectSoftDownAngle" value="25" />
+  <Property name="PitchCorrectCockpitSpring" value="2" />
+  <Property name="PitchCorrectSoftDownAngle" value="10" />
   <Property name="PitchCorrectMaxDownAngle" value="50" />
   <Property name="PitchCorrectMaxDownAnglePostCollision" value="0" />
   <Property name="PitchCorrectSoftDownAnglePostCollision" value="0" />
   <Property name="PitchCorrectMaxDownAngleWater" value="0" />
   <Property name="PitchCorrectSoftDownAngleWater" value="0" />
   <Property name="PitchCorrectTimeMin" value="0.2" />
-  <Property name="PitchCorrectTimeMax" value="1" />
+  <Property name="PitchCorrectTimeMax" value="2" />
   <Property name="PitchCorrectTimeHeight" value="8" />
   <Property name="PitchCorrectHeightSpring" value="0.3" />
   <Property name="PitchCorrectHeightMin" value="10" />
@@ -424,7 +424,7 @@
       <Property name="BalanceTimeMax" value="4" /> <!-- Space Engine -->
     </Property>
     <Property name="PlanetEngine" value="GcPlayerSpaceshipEngineData.xml">
-      <Property name="ThrustForce" value="10" /> <!-- planet engine -->
+      <Property name="ThrustForce" value="15" /> <!-- planet engine -->
       <Property name="MaxSpeed" value="150" /> <!-- planet engine -->
       <Property name="MinSpeed" value="-150" /> <!-- planet engine -->
       <Property name="Falloff" value="0.2" /> <!-- planet engine -->
@@ -435,7 +435,7 @@
       <Property name="BoostingTurnDamp" value="0.85" /> <!-- planet engine -->
       <Property name="DirectionBrakeMin" value="1" /> <!-- planet engine -->
       <Property name="DirectionBrake" value="1.5" /> <!-- planet engine -->
-      <Property name="ReverseBrake" value="0.25" /> <!-- planet engine -->
+      <Property name="ReverseBrake" value="0.40" /> <!-- planet engine -->
       <Property name="OverspeedBrake" value="0" /> <!-- planet engine -->
       <Property name="LowSpeedTurnDamper" value="0.25" /> <!-- planet engine -->
       <Property name="TurnBrakeMin" value="0.5" /> <!-- planet engine -->
@@ -521,7 +521,7 @@
       <Property name="BalanceTimeMax" value="4" /> <!-- Space Engine -->
     </Property>
     <Property name="PlanetEngine" value="GcPlayerSpaceshipEngineData.xml">
-      <Property name="ThrustForce" value="10" /> <!-- planet engine -->
+      <Property name="ThrustForce" value="15" /> <!-- planet engine -->
       <Property name="MaxSpeed" value="150" /> <!-- planet engine -->
       <Property name="MinSpeed" value="-150" /> <!-- planet engine -->
       <Property name="Falloff" value="0.2" /> <!-- planet engine -->
@@ -532,7 +532,7 @@
       <Property name="BoostingTurnDamp" value="0.85" /> <!-- planet engine -->
       <Property name="DirectionBrakeMin" value="0.75" /> <!-- planet engine -->
       <Property name="DirectionBrake" value="1.15" /> <!-- planet engine -->
-      <Property name="ReverseBrake" value="0.25" /> <!-- planet engine -->
+      <Property name="ReverseBrake" value="0.40" /> <!-- planet engine -->
       <Property name="OverspeedBrake" value="0" /> <!-- planet engine -->
       <Property name="LowSpeedTurnDamper" value="0.01" /> <!-- planet engine -->
       <Property name="TurnBrakeMin" value="0.5" /> <!-- planet engine -->
@@ -618,7 +618,7 @@
       <Property name="BalanceTimeMax" value="4" /> <!-- Space Engine -->
     </Property>
     <Property name="PlanetEngine" value="GcPlayerSpaceshipEngineData.xml">
-      <Property name="ThrustForce" value="10" /> <!-- planet engine -->
+      <Property name="ThrustForce" value="15" /> <!-- planet engine -->
       <Property name="MaxSpeed" value="130" /> <!-- planet engine -->
       <Property name="MinSpeed" value="-130" /> <!-- planet engine -->
       <Property name="Falloff" value="0.2" /> <!-- planet engine -->
@@ -629,7 +629,7 @@
       <Property name="BoostingTurnDamp" value="0.85" /> <!-- planet engine -->
       <Property name="DirectionBrakeMin" value="0.35" /> <!-- planet engine -->
       <Property name="DirectionBrake" value="0.8" /> <!-- planet engine -->
-      <Property name="ReverseBrake" value="0.25" /> <!-- planet engine -->
+      <Property name="ReverseBrake" value="0.40" /> <!-- planet engine -->
       <Property name="OverspeedBrake" value="0" /> <!-- planet engine -->
       <Property name="LowSpeedTurnDamper" value="0.4" /> <!-- planet engine -->
       <Property name="TurnBrakeMin" value="0.5" /> <!-- planet engine -->
@@ -1069,7 +1069,7 @@
   <Property name="AnomalyStationMaxApproachSpeed" value="60" />
   <Property name="Unknown0xE3C" value="50" />
   <Property name="Unknown0xE40" value="1.5" />
-  <Property name="LandGroundTakeOffTime" value="1.2" />
+  <Property name="LandGroundTakeOffTime" value="1.7" />
   <Property name="LandLookingForward" value="160" />
   <Property name="LandHeightThreshold" value="100" />
   <Property name="LandWidthThreshold" value="2" />
