@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (2.41.0)-->
 <Data template="GcBiomeData">
-  <Property name="TextureFile" value="METADATA/SIMULATION/SOLARSYSTEM/TEXTURES/LUSH.MBIN" />
-  <Property name="TileTypesFile" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHTILETYPES.MBIN" />
-  <Property name="ColourPaletteFile" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHCOLOURPALETTES.MBIN" />
+  <Property name="TextureFile" value="METADATA/SIMULATION/SOLARSYSTEM/TEXTURES/TOXIC.MBIN" />
+  <Property name="TileTypesFile" value="METADATA/SIMULATION/SOLARSYSTEM/COLOURS/BASETILETYPES.MBIN" />
+  <Property name="ColourPaletteFile" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICCOLOURPALETTES.MBIN" />
   <Property name="LegacyColourPaletteFile" value="" />
   <Property name="MiningSubstance1" value="GcMiningSubstanceData.xml">
     <Property name="Category" value="GcRealitySubstanceCategory.xml">
-      <Property name="SubstanceCategory" value="Earth" />
+      <Property name="SubstanceCategory" value="Fuel" />
     </Property>
     <Property name="UseRarity" value="True" />
     <Property name="Rarity" value="GcRarity.xml">
@@ -16,7 +16,7 @@
   </Property>
   <Property name="MiningSubstance2" value="GcMiningSubstanceData.xml">
     <Property name="Category" value="GcRealitySubstanceCategory.xml">
-      <Property name="SubstanceCategory" value="Earth" />
+      <Property name="SubstanceCategory" value="Fuel" />
     </Property>
     <Property name="UseRarity" value="True" />
     <Property name="Rarity" value="GcRarity.xml">
@@ -25,7 +25,7 @@
   </Property>
   <Property name="MiningSubstance3" value="GcMiningSubstanceData.xml">
     <Property name="Category" value="GcRealitySubstanceCategory.xml">
-      <Property name="SubstanceCategory" value="Earth" />
+      <Property name="SubstanceCategory" value="Fuel" />
     </Property>
     <Property name="UseRarity" value="True" />
     <Property name="Rarity" value="GcRarity.xml">
@@ -146,7 +146,28 @@
       <Property name="ChooseUsingLifeLevel" value="False" />
       <Property name="Options">
         <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHOBJECTSDEAD.MBIN" />
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN" />
+        </Property>
+        <Property value="NMSString0x80.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN" />
+        </Property>
+        <Property value="NMSString0x80.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICOBJECTSMID.MBIN" />
+        </Property>
+        <Property value="NMSString0x80.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN" />
+        </Property> <!-- values are doubled so toxic has more chance of spawning -->
+        <Property value="NMSString0x80.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICOBJECTSDEAD.MBIN" />
+        </Property>
+        <Property value="NMSString0x80.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICOBJECTSLOW.MBIN" />
+        </Property>
+        <Property value="NMSString0x80.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICOBJECTSMID.MBIN" />
+        </Property>
+        <Property value="NMSString0x80.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/TOXIC/TOXICOBJECTSFULL.MBIN" />
         </Property>
         <Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHOBJECTSLOW.MBIN" />
@@ -156,6 +177,9 @@
         </Property>
         <Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHOBJECTSFULL.MBIN" />
+        </Property>
+        <Property value="NMSString0x80.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MULTIBIOMES/OBJECTS/LUSHHQOBJECTSFULL.MBIN" />
         </Property>
       </Property>
     </Property>
@@ -171,7 +195,7 @@
       <Property name="ChooseUsingLifeLevel" value="False" />
       <Property name="Options">
         <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/FULLSAFE.MBIN" />
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/FULL.MBIN" />
         </Property>
       </Property>
     </Property>
@@ -187,7 +211,7 @@
       <Property name="ChooseUsingLifeLevel" value="False" />
       <Property name="Options">
         <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/LEVELONEOBJECTS/FULLSAFE.MBIN" />
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/LEVELONEOBJECTS/FULL.MBIN" />
         </Property>
       </Property>
     </Property>
@@ -235,9 +259,9 @@
       <Property name="WeatherWeightings">
         <Property name="Clear" value="0" />
         <Property name="Dust" value="0" />
-        <Property name="Humid" value="1" />
+        <Property name="Humid" value="0" />
         <Property name="Snow" value="0" />
-        <Property name="Toxic" value="0" />
+        <Property name="Toxic" value="1" />
         <Property name="Scorched" value="0" />
         <Property name="Radioactive" value="0" />
         <Property name="RedWeather" value="0" />
@@ -249,9 +273,9 @@
       <Property name="WeatherWeightings">
         <Property name="Clear" value="0" />
         <Property name="Dust" value="0" />
-        <Property name="Humid" value="1" />
+        <Property name="Humid" value="0" />
         <Property name="Snow" value="0" />
-        <Property name="Toxic" value="0" />
+        <Property name="Toxic" value="1" />
         <Property name="Scorched" value="0" />
         <Property name="Radioactive" value="0" />
         <Property name="RedWeather" value="0" />
@@ -263,9 +287,9 @@
       <Property name="WeatherWeightings">
         <Property name="Clear" value="0" />
         <Property name="Dust" value="0" />
-        <Property name="Humid" value="1" />
+        <Property name="Humid" value="0" />
         <Property name="Snow" value="0" />
-        <Property name="Toxic" value="0" />
+        <Property name="Toxic" value="1" />
         <Property name="Scorched" value="0" />
         <Property name="Radioactive" value="0" />
         <Property name="RedWeather" value="0" />
@@ -277,9 +301,9 @@
       <Property name="WeatherWeightings">
         <Property name="Clear" value="0" />
         <Property name="Dust" value="0" />
-        <Property name="Humid" value="1" />
+        <Property name="Humid" value="0" />
         <Property name="Snow" value="0" />
-        <Property name="Toxic" value="0" />
+        <Property name="Toxic" value="1" />
         <Property name="Scorched" value="0" />
         <Property name="Radioactive" value="0" />
         <Property name="RedWeather" value="0" />
@@ -299,13 +323,13 @@
       <Property name="Mountain" value="1" />
       <Property name="Rock" value="1" />
       <Property name="UnderWater" value="1" />
-      <Property name="Texture" value="0.25" />
+      <Property name="Texture" value="0" />
       <Property name="Elevation" value="1" />
-      <Property name="Continent" value="0.25" />
+      <Property name="Continent" value="0" />
     </Property>
     <Property name="GridLayers">
-      <Property name="Small" value="1" />
-      <Property name="Large" value="1" />
+      <Property name="Small" value="0.75" />
+      <Property name="Large" value="0.75" />
       <Property name="Resources_Heridium" value="1" />
       <Property name="Resources_Iridium" value="1" />
       <Property name="Resources_Copper" value="1" />
@@ -326,11 +350,15 @@
     <Property name="Caves">
       <Property name="Underground" value="1" />
     </Property>
-    <Property name="WaterActiveFrequency" value="0.9" />
-    <Property name="HighWaterActiveFrequency" value="0.5" />
-    <Property name="RockTileFrequency" value="0.05" />
+    <Property name="WaterActiveFrequency" value="0.5" />
+    <Property name="HighWaterActiveFrequency" value="0.25" />
+    <Property name="RockTileFrequency" value="0.25" />
     <Property name="SubstanceTileFrequency" value="0.25" />
     <Property name="ForceContinentalNoise" value="False" />
   </Property>
-  <Property name="FilterOptions" />
+  <Property name="FilterOptions">
+    <Property value="GcScreenFilters.xml">
+      <Property name="ScreenFilters" value="Toxic" />
+    </Property>
+  </Property>
 </Data>
