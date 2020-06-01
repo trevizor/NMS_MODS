@@ -883,11 +883,11 @@
   <Property name="DeathDamageDrainChargeFactor" value="1" />
   <Property name="DeathDamageTechBrokenPercent" value="40" />
   <Property name="MaxProjectileRadiusMultiplier" value="5" />
-  <Property name="HardLandPainTime" value="4" />
+  <Property name="HardLandPainTime" value="1" />
   <Property name="GunBaseClipSize" value="0" />
   <Property name="GrenadeBaseClipSize" value="100" />
-  <Property name="MeleeCooldown" value="0.62" />
-  <Property name="ChargeMeleeCooldown" value="1.3" />
+  <Property name="MeleeCooldown" value="0.5" />
+  <Property name="ChargeMeleeCooldown" value="0.9" />
   <Property name="MeleeDistance" value="2.8" />
   <Property name="MeleeDistance3P" value="1.8" />
   <Property name="MeleeRadius" value="0.75" />
@@ -895,7 +895,7 @@
   <Property name="MeleeSpeedBoost" value="1" />
   <Property name="MeleeSpeedDamageBoost" value="1.2" />
   <Property name="MeleeSpeedBoostRangeMultiplier" value="1.2" />
-  <Property name="MeleeStaminaDrain" value="0.2" />
+  <Property name="MeleeStaminaDrain" value="1.2" />
   <Property name="Unknown0xE68" value="0.5" />
   <Property name="Unknown0xE6C" value="0.05" />
   <Property name="Unknown0xE70" value="3" />
@@ -1250,8 +1250,8 @@
         <Property name="CreatureType" value="None" />
       </Property>
       <Property name="HearingRange" value="25" />
-      <Property name="SightRange" value="25" />
-      <Property name="SightAngle" value="90" />
+      <Property name="SightRange" value="35" />
+      <Property name="SightAngle" value="70" />
       <Property name="FleeRange" value="15" />
     </Property>
     <Property value="GcCreatureAlertData.xml">
@@ -1262,16 +1262,16 @@
         <Property name="CreatureType" value="None" />
       </Property>
       <Property name="HearingRange" value="25" />
-      <Property name="SightRange" value="25" />
-      <Property name="SightAngle" value="90" />
+      <Property name="SightRange" value="35" />
+      <Property name="SightAngle" value="70" />
       <Property name="FleeRange" value="15" />
     </Property>
   </Property>
-  <Property name="PainFlickerAmount" value="1.3" />
+  <Property name="PainFlickerAmount" value="0.8" />
   <Property name="PainColourSeperateAmount" value="0.04" />
-  <Property name="PainTime" value="0.4" />
+  <Property name="PainTime" value="0.3" />
   <Property name="PlayerBullet" value="GcProjectileLineData.xml">
-    <Property name="BulletLength" value="3" />
+    <Property name="BulletLength" value="2" />
     <Property name="BulletGlowWidthTime" value="0.15" />
     <Property name="BulletGlowWidthMax" value="8" />
     <Property name="BulletGlowWidthMin" value="5" />
@@ -1431,7 +1431,7 @@
   <Property name="ClimbableStickinessAngle" value="30" />
   <Property name="MinUpAmount" value="0.4" />
   <Property name="FootOffset" value="0.2" />
-  <Property name="MaxFallSpeed" value="30" />
+  <Property name="MaxFallSpeed" value="60" />
   <Property name="PushForceDecay" value="40" />
   <Property name="LeanFwdMaxAngle" value="120" />
   <Property name="LeanBackMaxAngle" value="40" />
@@ -1448,7 +1448,7 @@
   <Property name="ShieldRestoreSpeed" value="0.2" />
   <Property name="ShieldRestoreDelay" value="10" />
   <Property name="TimeHoldDownAccelerateToLaunchFromOutpost" value="1" />
-  <Property name="DeathScreenFadeInThirdPerson" value="1.8" />
+  <Property name="DeathScreenFadeInThirdPerson" value="2.8" />
   <Property name="DeathScreenFadeInUnderwaterThirdPerson" value="4" />
   <Property name="DeathScreenFadeInTime" value="0.05" />
   <Property name="DeathScreenShipFadeInTime" value="2" />
@@ -1477,8 +1477,8 @@
   <Property name="LowHealthEffectPips" value="1" />
   <Property name="LowHealthEffectShield" value="40" />
   <Property name="CriticalHitTime" value="0.5" />
-  <Property name="CriticalHitDesatTime" value="5" />
-  <Property name="CriticalHitDesatFreq" value="2" />
+  <Property name="CriticalHitDesatTime" value="2" />
+  <Property name="CriticalHitDesatFreq" value="1" />
   <Property name="FirstSpawnDataTable">
     <Property value="GcCameraSpawnSetupData.xml">
       <Property name="Distance" value="20" />
