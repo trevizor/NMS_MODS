@@ -41,7 +41,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="RandomRock" />
             </Property>
             <Property name="Height" value="22" />
             <Property name="Width" value="600" />
@@ -125,7 +125,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="RandomRock" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="Height" value="1000" />
             <Property name="Width" value="700" />
@@ -1299,31 +1299,31 @@
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="30" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="False" /> <!-- false small arches -->
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="10" />
-            <Property name="Height" value="2.5" />
+            <Property name="Height" value="10" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
-            <Property name="Ratio" value="1" />
+            <Property name="Ratio" value="0.01" />
             <Property name="HeightVarianceAmplitude" value="0" />
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="3" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
@@ -1498,7 +1498,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="RandomRock" />
             </Property>
             <Property name="Height" value="42" />
             <Property name="Width" value="900" />
@@ -2756,31 +2756,31 @@
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="30" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="True" /> <!-- false small arches -->
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="10" />
-            <Property name="Height" value="2.5" />
+            <Property name="Height" value="10" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
-            <Property name="Ratio" value="1" />
+            <Property name="Ratio" value="0.01" />
             <Property name="HeightVarianceAmplitude" value="0" />
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="3" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
@@ -2957,7 +2957,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="Height" value="22" />
             <Property name="Width" value="500" />
@@ -4215,31 +4215,31 @@
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="30" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="False" /> <!-- false small arches -->
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="10" />
-            <Property name="Height" value="2.5" />
+            <Property name="Height" value="10" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
-            <Property name="Ratio" value="1" />
+            <Property name="Ratio" value="0.01" />
             <Property name="HeightVarianceAmplitude" value="0" />
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="3" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
@@ -4414,7 +4414,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="RandomRock" />
             </Property>
             <Property name="Height" value="42" />
             <Property name="Width" value="700" />
@@ -4498,7 +4498,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="RandomRock" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="Height" value="1000" />
             <Property name="Width" value="600" />
@@ -5672,31 +5672,31 @@
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="30" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="True" /> <!-- false small arches -->
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="10" />
-            <Property name="Height" value="2.5" />
+            <Property name="Height" value="10" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
-            <Property name="Ratio" value="1" />
+            <Property name="Ratio" value="0.01" />
             <Property name="HeightVarianceAmplitude" value="0" />
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="3" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
@@ -5873,7 +5873,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="RandomRock" />
             </Property>
             <Property name="Height" value="22" />
             <Property name="Width" value="500" />
@@ -7131,31 +7131,31 @@
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="30" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="False" /> <!-- false small arches -->
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="10" />
-            <Property name="Height" value="2.5" />
+            <Property name="Height" value="10" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
-            <Property name="Ratio" value="1" />
+            <Property name="Ratio" value="0.01" />
             <Property name="HeightVarianceAmplitude" value="0" />
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="3" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
@@ -7330,7 +7330,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="Height" value="42" />
             <Property name="Width" value="700" />
@@ -8588,31 +8588,31 @@
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="30" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="False" /> <!-- false small arches -->
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="10" />
-            <Property name="Height" value="2.5" />
+            <Property name="Height" value="10" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
-            <Property name="Ratio" value="1" />
+            <Property name="Ratio" value="0.01" />
             <Property name="HeightVarianceAmplitude" value="0" />
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="3" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
@@ -8789,7 +8789,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="RandomRock" />
             </Property>
             <Property name="Height" value="22" />
             <Property name="Width" value="500" />
@@ -8873,7 +8873,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="RandomRock" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="Height" value="1000" />
             <Property name="Width" value="400" />
@@ -10047,7 +10047,7 @@
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Zero" />
             </Property>
-            <Property name="SmoothRadius" value="20" />
+            <Property name="SmoothRadius" value="50" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="10" />
           </Property>
@@ -10071,7 +10071,7 @@
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Zero" />
             </Property>
-            <Property name="SmoothRadius" value="10" />
+            <Property name="SmoothRadius" value="40" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
@@ -10246,7 +10246,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="RandomRock" />
             </Property>
             <Property name="Height" value="52" />
             <Property name="Width" value="700" />
@@ -11504,7 +11504,7 @@
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Zero" />
             </Property>
-            <Property name="SmoothRadius" value="20" />
+            <Property name="SmoothRadius" value="50" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="10" />
           </Property>
@@ -11528,7 +11528,7 @@
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Zero" />
             </Property>
-            <Property name="SmoothRadius" value="10" />
+            <Property name="SmoothRadius" value="40" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
@@ -11705,7 +11705,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="Height" value="22" />
             <Property name="Width" value="800" />
@@ -12963,31 +12963,31 @@
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="30" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="False" /> <!-- false small arches -->
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="10" />
-            <Property name="Height" value="2.5" />
+            <Property name="Height" value="10" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
-            <Property name="Ratio" value="1" />
+            <Property name="Ratio" value="0.01" />
             <Property name="HeightVarianceAmplitude" value="0" />
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="3" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
@@ -13162,7 +13162,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="RandomRock" />
             </Property>
             <Property name="Height" value="52" />
             <Property name="Width" value="1200" />
@@ -13246,7 +13246,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="RandomRock" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="Height" value="1000" />
             <Property name="Width" value="900" />
@@ -14420,31 +14420,31 @@
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="30" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="True" /> <!-- false small arches -->
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="10" />
-            <Property name="Height" value="2.5" />
+            <Property name="Height" value="10" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
-            <Property name="Ratio" value="1" />
+            <Property name="Ratio" value="0.01" />
             <Property name="HeightVarianceAmplitude" value="0" />
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="3" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
@@ -14621,7 +14621,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="RandomRock" />
             </Property>
             <Property name="Height" value="16" />
             <Property name="Width" value="500" />
@@ -15879,31 +15879,31 @@
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="30" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="False" /> <!-- false small arches -->
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="10" />
-            <Property name="Height" value="2.5" />
+            <Property name="Height" value="10" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
-            <Property name="Ratio" value="1" />
+            <Property name="Ratio" value="0.01" />
             <Property name="HeightVarianceAmplitude" value="0" />
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="3" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
@@ -16078,7 +16078,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="Height" value="24" />
             <Property name="Width" value="700" />
@@ -17336,31 +17336,31 @@
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="30" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="False" /> <!-- false small arches -->
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="10" />
-            <Property name="Height" value="2.5" />
+            <Property name="Height" value="10" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
-            <Property name="Ratio" value="1" />
+            <Property name="Ratio" value="0.01" />
             <Property name="HeightVarianceAmplitude" value="0" />
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="3" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
@@ -17537,7 +17537,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="RandomRock" />
             </Property>
             <Property name="Height" value="38" />
             <Property name="Width" value="1200" />
@@ -17621,7 +17621,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="RandomRock" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="Height" value="1000" />
             <Property name="Width" value="400" />
@@ -18795,31 +18795,31 @@
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="30" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="False" /> <!-- false small arches -->
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="10" />
-            <Property name="Height" value="2.5" />
+            <Property name="Height" value="10" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
-            <Property name="Ratio" value="1" />
+            <Property name="Ratio" value="0.01" />
             <Property name="HeightVarianceAmplitude" value="0" />
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="3" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
@@ -18994,7 +18994,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="RandomRock" />
             </Property>
             <Property name="Height" value="48" />
             <Property name="Width" value="1800" />
@@ -20252,31 +20252,31 @@
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="30" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="True" /> <!-- false small arches -->
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="10" />
-            <Property name="Height" value="2.5" />
+            <Property name="Height" value="10" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
-            <Property name="Ratio" value="1" />
+            <Property name="Ratio" value="0.01" />
             <Property name="HeightVarianceAmplitude" value="0" />
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="3" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
@@ -20453,7 +20453,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="Height" value="22" />
             <Property name="Width" value="800" />
@@ -21711,31 +21711,31 @@
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="30" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="False" /> <!-- false small arches -->
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="10" />
-            <Property name="Height" value="2.5" />
+            <Property name="Height" value="10" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
-            <Property name="Ratio" value="1" />
+            <Property name="Ratio" value="0.01" />
             <Property name="HeightVarianceAmplitude" value="0" />
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="3" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
@@ -21910,7 +21910,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="RandomRock" />
             </Property>
             <Property name="Height" value="52" />
             <Property name="Width" value="1000" />
@@ -21994,7 +21994,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="RandomRock" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="Height" value="1000" />
             <Property name="Width" value="1100" />
@@ -23168,31 +23168,31 @@
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="30" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="False" /> <!-- false small arches -->
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="10" />
-            <Property name="Height" value="2.5" />
+            <Property name="Height" value="10" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
-            <Property name="Ratio" value="1" />
+            <Property name="Ratio" value="0.01" />
             <Property name="HeightVarianceAmplitude" value="0" />
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="3" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
@@ -23369,7 +23369,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="RandomRock" />
             </Property>
             <Property name="Height" value="22" />
             <Property name="Width" value="800" />
@@ -24627,31 +24627,31 @@
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="30" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="False" /> <!-- false small arches -->
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="10" />
-            <Property name="Height" value="2.5" />
+            <Property name="Height" value="10" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
-            <Property name="Ratio" value="1" />
+            <Property name="Ratio" value="0.01" />
             <Property name="HeightVarianceAmplitude" value="0" />
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="3" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
@@ -24826,7 +24826,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="Height" value="96" />
             <Property name="Width" value="1000" />
@@ -26084,31 +26084,31 @@
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="30" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="True" /> <!-- false small arches -->
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="10" />
-            <Property name="Height" value="2.5" />
+            <Property name="Height" value="10" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
-            <Property name="Ratio" value="1" />
+            <Property name="Ratio" value="0.01" />
             <Property name="HeightVarianceAmplitude" value="0" />
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="3" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
@@ -26285,7 +26285,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="RandomRock" />
             </Property>
             <Property name="Height" value="22" />
             <Property name="Width" value="500" />
@@ -27543,31 +27543,31 @@
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="30" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="False" /> <!-- false small arches -->
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="10" />
-            <Property name="Height" value="2.5" />
+            <Property name="Height" value="10" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
-            <Property name="Ratio" value="1" />
+            <Property name="Ratio" value="0.01" />
             <Property name="HeightVarianceAmplitude" value="0" />
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="3" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
@@ -27742,7 +27742,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="RandomRock" />
             </Property>
             <Property name="Height" value="62" />
             <Property name="Width" value="700" />
@@ -27826,7 +27826,7 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="RandomRock" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="Height" value="1000" />
             <Property name="Width" value="900" />
@@ -29000,31 +29000,31 @@
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="30" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
           <Property name="ArchesSmall" value="TkNoiseFeatureData.xml">
             <Property name="Active" value="False" /> <!-- False arches small -->
             <Property name="MaximumLOD" value="3" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="False" /> <!-- false small arches -->
             <Property name="Trench" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="10" />
-            <Property name="Height" value="2.5" />
+            <Property name="Height" value="10" />
             <Property name="Octaves" value="5" />
             <Property name="RegionSize" value="100" />
-            <Property name="Ratio" value="1" />
+            <Property name="Ratio" value="0.01" />
             <Property name="HeightVarianceAmplitude" value="0" />
             <Property name="HeightVarianceFrequency" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="SmoothRadius" value="0" />
+            <Property name="SmoothRadius" value="3" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="6" />
           </Property>
