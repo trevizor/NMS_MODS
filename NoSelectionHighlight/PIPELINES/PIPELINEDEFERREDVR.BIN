@@ -21,10 +21,10 @@
 
     <RenderTarget id="LUT_MASK"                        depthBuf="false"  numColBufs="1"  format="RED8" bilinear="true" scale="1.0"  numUniformBuffers="3" numSlices="2" />
 
-    <RenderTarget id="GTAO_FRAME_0"                     depthBuf="false"  numColBufs="1"  format="RED8" bilinear="false" scale="0.5" scale3="1.0" scaleGroup="AmbientOcclusion"  allowDcc="false" numUniformBuffers="3" numSlices="2" />
-    <RenderTarget id="GTAO_FRAME_1"                     depthBuf="false"  numColBufs="1"  format="RED8" bilinear="false" scale="0.5" scale3="1.0" scaleGroup="AmbientOcclusion"  allowDcc="false" numUniformBuffers="3" numSlices="2" />
-    <RenderTarget id="GTAO_HISTORY_0"                   depthBuf="false"  numColBufs="1"  format="RED8" bilinear="false" scale="0.5" scale3="1.0" scaleGroup="AmbientOcclusion"  allowDcc="false" numUniformBuffers="3" numSlices="2" />
-    <RenderTarget id="GTAO_HISTORY_1"                   depthBuf="false"  numColBufs="1"  format="RED8" bilinear="false" scale="0.5" scale3="1.0" scaleGroup="AmbientOcclusion"  allowDcc="false" numUniformBuffers="3" numSlices="2" />
+    <RenderTarget id="GTAO_FRAME_0"                     depthBuf="false"  numColBufs="1"  format="RED8" pointSampleColBuf0="true" scale="0.5" scale3="1.0" scaleGroup="AmbientOcclusion"  allowDcc="false" numUniformBuffers="3" numSlices="2" />
+    <RenderTarget id="GTAO_FRAME_1"                     depthBuf="false"  numColBufs="1"  format="RED8" pointSampleColBuf0="true" scale="0.5" scale3="1.0" scaleGroup="AmbientOcclusion"  allowDcc="false" numUniformBuffers="3" numSlices="2" />
+    <RenderTarget id="GTAO_HISTORY_0"                   depthBuf="false"  numColBufs="1"  format="RG8"  pointSampleColBuf0="true" scale="0.5" scale3="1.0" scaleGroup="AmbientOcclusion"  allowDcc="false" numUniformBuffers="3" numSlices="2" />
+    <RenderTarget id="GTAO_HISTORY_1"                   depthBuf="false"  numColBufs="1"  format="RG8"  pointSampleColBuf0="true" scale="0.5" scale3="1.0" scaleGroup="AmbientOcclusion"  allowDcc="false" numUniformBuffers="3" numSlices="2" />
 
     <RenderTarget id="HBAOBUF"                         depthBuf="false"  numColBufs="1"  format="RED8" bilinear="true" scale="1.0"  allowDcc="false" numUniformBuffers="3" numSlices="2" />
     
@@ -153,13 +153,17 @@
 
       <DrawGeometry type="Terrain"      class="PLANET"    context="LIT_DEFER_LOW"         order="FRONT_TO_BACK" />
       <DrawGeometry type="Terrain"      class="ASTEROID"  context="LIT_DEFER_ASTEROID"    order="STATECHANGES" />
-      <DrawGeometry type="Mesh"         class="Atmosphere"     context="PLANET"                order="STATECHANGES" />
-      <DrawGeometry type="Mesh"         class="AtmosphereNear" context="PLANET"                order="STATECHANGES" />
 
       <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="replace" depthTest="equal" stencilMode="maskWrite"/>      
       <DrawGeometry type="InstanceMesh" class="Cutout"      context="LIT_DEFER_ZE_INSTANCE" order="MESH" />
       <SetContext zwrite="false" colourWrite="true" cullMode="none" blendMode="replace" depthTest="equal" stencilMode="maskWrite" />
       <DrawGeometry type="InstanceMesh" class="DoubleSided" context="LIT_DEFER_ZE_INSTANCE" order="MESH" />
+
+      <SetContext zwrite="true" colourWrite="true" cullMode="back" blendMode="replace" depthTest="lessEqual" stencilMode="maskReadWriteInvert" stencilRef="0" stencilMaskRead="9" stencilMaskWrite="8"/>
+      <DrawGeometry type="Mesh"         class="AtmosphereNear" context="PLANET_NEAR"      order="STATECHANGES"  />
+
+      <SetContext zwrite="true" colourWrite="true" cullMode="back" blendMode="replace" depthTest="lessEqual" stencilMode="maskWrite" stencilRef="8"/>
+      <DrawGeometry type="Mesh"         class="Atmosphere"     context="PLANET"           order="STATECHANGES" />
       
       <SetContext zwrite="true" colourWrite="true" cullMode="back" blendMode="replace" depthTest="less" stencilMode="maskWrite" stencilRef="67"/>
       <DrawGeometry type="Mesh"         class="GunOpaque"    context="LIT_DEFER"             order="STATECHANGES" />
@@ -296,7 +300,7 @@
       <EndTarget flushCB="true" flushDB="false" />
            
       <BeginTarget target="GTAO_HISTORY_0" />
-        <ColourMask channels="R" />
+        <ColourMask channels="RG" />
         <BindBuffer sampler="gBuffer1Map" sourceRT="GTAO_HISTORY_1" bufIndex="0" />
         <BindBuffer sampler="gBuffer2Map" sourceRT="DEPTH" bufIndex="32" />
         <BindBuffer sampler="gBuffer3Map" sourceRT="GTAO_FRAME_0" bufIndex="0" />
@@ -304,18 +308,31 @@
         <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="replace" stencilMode="disabled" depthTest="always" />
         <DrawQuad material="materials/PostProcess.material.mbin" context="GTAO_TEMPORAL_FILTER" compute="async" wavesPerSimd="5" />
         <UnbindBuffers />
-      <EndTarget flushCB="true" flushDB="false" />
-
+      <EndTarget flushCB="true" flushDB="false" />      
+    </Stage>
+    
+    <Stage id="GTAOCopy" enabled="false">
       <BeginTarget target="HBAOBUF" />
-      <ColourMask channels="R" />
-      <BindBuffer sampler="gBufferMap" sourceRT="GTAO_HISTORY_0" bufIndex="0" />
-      <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="replace" stencilMode="disabled" depthTest="always" />
-      <DrawQuad material="materials/PostProcess.material.mbin" context="COPY" compute="async" wavesPerSimd="5"/>
-      <UnbindBuffers />
+        <ColourMask channels="R" />
+        <BindBuffer sampler="gBufferMap" sourceRT="GTAO_HISTORY_0" bufIndex="0" />
+        <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="replace" stencilMode="disabled" depthTest="always" />
+        <DrawQuad material="materials/PostProcess.material.mbin" context="BILATERAL_SIMPLE_REDONLY_UPSAMPLE" compute="async" wavesPerSimd="5"/>
+        <UnbindBuffers />
       <EndTarget flushCB="true" flushDB="false" />
 
       <SwapTargets targetA="GTAO_HISTORY_0" targetB="GTAO_HISTORY_1" />
+    </Stage>  
+    
+    <Stage id="GTAOCopyUltra" enabled="false">
+      <BeginTarget target="HBAOBUF" />
+        <ColourMask channels="R" />
+        <BindBuffer sampler="gBufferMap" sourceRT="GTAO_HISTORY_0" bufIndex="0" />
+        <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="replace" stencilMode="disabled" depthTest="always" />
+        <DrawQuad material="materials/PostProcess.material.mbin" context="COPY" compute="async" wavesPerSimd="5"/>
+        <UnbindBuffers />
+      <EndTarget flushCB="true" flushDB="false" />
 
+      <SwapTargets targetA="GTAO_HISTORY_0" targetB="GTAO_HISTORY_1" />
     </Stage>
 
     <Stage id="NO_HBAO" enabled="false">
@@ -365,6 +382,7 @@
       <SetContext zwrite="true" colourWrite="false" cullMode="back" blendMode="replace" depthTest="lessEqual" />
       <DrawShadowGeometry type="Mesh"         class="Glow"           context="SHADOW_FADE"            order="STATECHANGES"/>
       <DrawShadowGeometry type="Mesh"         class="Opaque"         context="SHADOW_FADE"            order="STATECHANGES"/>
+      <DrawShadowGeometry type="Mesh"         class="GunOpaque"      context="SHADOW_FADE"            order="STATECHANGES" />
       <DrawShadowGeometry type="Mesh"         class="OpaqueBeforeUI" context="SHADOW_FADE"            order="STATECHANGES"/>
       <DrawShadowGeometry type="Mesh"         class="Cutout"         context="SHADOW_FADE"            order="STATECHANGES"/>
       <DrawShadowGeometry type="Mesh"         class="Highlight"      context="SHADOW_FADE"            order="STATECHANGES"/>
@@ -409,6 +427,7 @@
       <SetContext zwrite="true" colourWrite="false" cullMode="back" blendMode="replace" depthTest="lessEqual" UniformBufferIndex="1" />
       <DrawShadowGeometry type="Mesh"         class="Glow"           context="SHADOW_FADE"            order="STATECHANGES"/>
       <DrawShadowGeometry type="Mesh"         class="Opaque"         context="SHADOW_FADE"            order="STATECHANGES" />
+      <DrawShadowGeometry type="Mesh"         class="GunOpaque"      context="SHADOW_FADE"            order="STATECHANGES" />
       <DrawShadowGeometry type="Mesh"         class="Cutout"         context="SHADOW_FADE"            order="STATECHANGES" />
       <DrawShadowGeometry type="Mesh"         class="Highlight"      context="SHADOW_FADE"            order="STATECHANGES"/>
       <DrawShadowGeometry type="Mesh"         class="ShadowOnly"     context="SHADOW_FADE"            order="STATECHANGES"/>
@@ -850,9 +869,8 @@
       <ColourMask channels="RGBA" colBuf1="false" />
       <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="blend" depthTest="less"  stencilMode="maskWrite" stencilRef="4"  stencilMask="4"/>
       <DoForwardLightLoop type="Mesh"     class="Translucent" context="LIT_FORWARD" order="BACK_TO_FRONT" />
-
-      <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="blend" depthTest="less"  stencilMode="maskWrite" stencilRef="4"  stencilMask="4"/>
-      <DoForwardLightLoop type="Mesh"     class="WarpInShip" context="LIT_FORWARD" order="BACK_TO_FRONT" />
+      <DoForwardLightLoop type="Mesh"     class="WarpInShip"  context="LIT_FORWARD" order="BACK_TO_FRONT" />
+      <DoForwardLightLoop type="Mesh"     class="Rainbow"     context="RAINBOW"     order="BACK_TO_FRONT" />
 
       <!-- PlaneSpotlight Object -->
       <ColourMask channels="RGB" colBuf1="false" />
@@ -862,7 +880,7 @@
       <!--<ClearTarget colBuf0="false" depthBuf="false" stencilBuf="true" />-->
       <ColourMask channels="RGB" colBuf1="true" />
       <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="blend" depthTest="lessEqual" stencilMode="maskWrite"  stencilRef="36"  stencilMask="36"/>
-      <!--DoForwardLightLoop type="Mesh"     class="Highlight"            context="LIT_FORWARD_WITH_MASK" order="BACK_TO_FRONT" /-->
+      <!-- <DoForwardLightLoop type="Mesh"     class="Highlight"            context="LIT_FORWARD_WITH_MASK" order="BACK_TO_FRONT" /> -->
       <SetContext stencilMode="disabled" />
 
       <SetContext zwrite="false" colourWrite="true" cullMode="none" blendMode="blend" depthTest="lessEqual" stencilMode="maskWrite"  stencilRef="36"  stencilMask="36"/>

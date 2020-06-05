@@ -6639,5 +6639,204 @@
         </Property>
       </Property>
     </Property>
+    <Property value="GcCreatureData.xml">
+      <Property name="Id" value="SLOW_BUTTERFLY" />
+      <Property name="OnlySpawnWhenIdIsForced" value="True" />
+      <Property name="Genus" value="RHOPALOCERA" />
+      <Property name="ForceType" value="GcCreatureTypes.xml">
+        <Property name="CreatureType" value="None" />
+      </Property>
+      <Property name="MoveArea" value="Air" />
+      <Property name="MinScale" value="1" />
+      <Property name="MaxScale" value="1" />
+      <Property name="Rarity" value="GcRarity.xml">
+        <Property name="Rarity" value="Common" />
+      </Property>
+      <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+      </Property>
+      <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+      </Property>
+      <Property name="Data">
+        <Property value="GcBirdData.xml">
+          <Property name="FlapSpeedMax" value="0.7" />
+          <Property name="FlapSpeedMin" value="5" />
+          <Property name="FlapSpeed" value="15" />
+          <Property name="FlapAccel" value="5" />
+          <Property name="CircleAttractor" value="" />
+        </Property>
+        <Property value="GcCreatureMovementData.xml">
+          <Property name="Anims">
+            <Property value="GcCreatureMoveAnimData.xml">
+              <Property name="Anim" value="WALK" />
+              <Property name="AnimLeft" value="LEFT" />
+              <Property name="AnimRight" value="RIGHT" />
+              <Property name="AnimSpeed" value="0.175" />
+              <Property name="MinSpeedScale" value="0.1" />
+              <Property name="MaxSpeedScale" value="1" />
+              <Property name="MaxPredatorSpeedScale" value="1.1" />
+              <Property name="AnimMoveSpeed" value="0" />
+              <Property name="AnimMoveSpeedCached" value="False" />
+            </Property>
+            <Property value="GcCreatureMoveAnimData.xml">
+              <Property name="Anim" value="WALK" />
+              <Property name="AnimLeft" value="LEFT" />
+              <Property name="AnimRight" value="RIGHT" />
+              <Property name="AnimSpeed" value="0.175" />
+              <Property name="MinSpeedScale" value="0.1" />
+              <Property name="MaxSpeedScale" value="1" />
+              <Property name="MaxPredatorSpeedScale" value="1.1" />
+              <Property name="AnimMoveSpeed" value="0" />
+              <Property name="AnimMoveSpeedCached" value="False" />
+            </Property>
+            <Property value="GcCreatureMoveAnimData.xml">
+              <Property name="Anim" value="WALK" />
+              <Property name="AnimLeft" value="LEFT" />
+              <Property name="AnimRight" value="RIGHT" />
+              <Property name="AnimSpeed" value="0.175" />
+              <Property name="MinSpeedScale" value="0.1" />
+              <Property name="MaxSpeedScale" value="1" />
+              <Property name="MaxPredatorSpeedScale" value="1.1" />
+              <Property name="AnimMoveSpeed" value="0" />
+              <Property name="AnimMoveSpeedCached" value="False" />
+            </Property>
+          </Property>
+          <Property name="MoveRange" value="180" />
+          <Property name="MoveSpeedScale" value="0.4" />
+          <Property name="HeightMin" value="0.2" />
+          <Property name="HeightMax" value="0.2" />
+          <Property name="HeightTime" value="5" />
+          <Property name="Herd" value="False" />
+        </Property>
+        <Property value="GcCreatureSwarmData.xml">
+          <Property name="MinCount" value="1" />
+          <Property name="MaxCount" value="4" />
+          <Property name="SwarmMovementSpeed" value="0.1" />
+          <Property name="SwarmMovementRadius" value="4" />
+          <Property name="SwarmMovementType" value="Random" />
+          <Property name="Coherence" value="0.6" />
+          <Property name="Alignment" value="0" />
+          <Property name="Spacing" value="20" />
+          <Property name="Follow" value="1.0" />
+          <Property name="Range" value="20" />
+          <Property name="MaxbankingAmount" value="0.4" />
+          <Property name="TurnRequiredForMaxBanking" value="0.3" />
+          <Property name="MaxPitchAmount" value="0.05" />
+          <Property name="UpwardMovementForMaxPitch" value="0.3" />
+          <Property name="MaxSpeed" value="2" />
+          <Property name="AlignTime" value="2" />
+          <Property name="SpringSmoothTime" value="0.8" />
+          <Property name="RepelList">
+            <Property value="NMSString0x10.xml">
+              <Property name="Value" value="" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcCreatureData.xml">
+      <Property name="Id" value="GROUNDBIRD" />
+      <Property name="OnlySpawnWhenIdIsForced" value="False" />
+      <Property name="Genus" value="AGNELIS" />
+      <Property name="ForceType" value="GcCreatureTypes.xml">
+        <Property name="CreatureType" value="Bird" />
+      </Property>
+      <Property name="MoveArea" value="Ground" />
+      <Property name="MinScale" value="0.3" />
+      <Property name="MaxScale" value="6.5" />
+      <Property name="Rarity" value="GcRarity.xml">
+        <Property name="Rarity" value="Common" />
+      </Property>
+      <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+      </Property>
+      <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+      </Property>
+      <Property name="Data">
+        <Property value="GcCreatureHealthData.xml">
+          <Property name="HurtAnim" value="" />
+          <Property name="DeathAnim" value="" />
+          <Property name="DeathEffect" value="" />
+          <Property name="HurtAudio" value="" />
+          <Property name="DeathAudio" value="" />
+        </Property>
+        <Property value="GcCreatureMovementData.xml">
+          <Property name="Anims">
+            <Property value="GcCreatureMoveAnimData.xml">
+              <Property name="Anim" value="WALK" />
+              <Property name="AnimLeft" value="LEFT" />
+              <Property name="AnimRight" value="RIGHT" />
+              <Property name="AnimSpeed" value="0.175" />
+              <Property name="MinSpeedScale" value="0.1" />
+              <Property name="MaxSpeedScale" value="1" />
+              <Property name="MaxPredatorSpeedScale" value="1.1" />
+              <Property name="AnimMoveSpeed" value="0" />
+              <Property name="AnimMoveSpeedCached" value="False" />
+            </Property>
+            <Property value="GcCreatureMoveAnimData.xml">
+              <Property name="Anim" value="WALK" />
+              <Property name="AnimLeft" value="LEFT" />
+              <Property name="AnimRight" value="RIGHT" />
+              <Property name="AnimSpeed" value="0.175" />
+              <Property name="MinSpeedScale" value="0.1" />
+              <Property name="MaxSpeedScale" value="1" />
+              <Property name="MaxPredatorSpeedScale" value="1.1" />
+              <Property name="AnimMoveSpeed" value="0" />
+              <Property name="AnimMoveSpeedCached" value="False" />
+            </Property>
+            <Property value="GcCreatureMoveAnimData.xml">
+              <Property name="Anim" value="WALK" />
+              <Property name="AnimLeft" value="LEFT" />
+              <Property name="AnimRight" value="RIGHT" />
+              <Property name="AnimSpeed" value="0.175" />
+              <Property name="MinSpeedScale" value="0.1" />
+              <Property name="MaxSpeedScale" value="1" />
+              <Property name="MaxPredatorSpeedScale" value="1.1" />
+              <Property name="AnimMoveSpeed" value="0" />
+              <Property name="AnimMoveSpeedCached" value="False" />
+            </Property>
+          </Property>
+          <Property name="MoveRange" value="450" />
+          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="HeightMin" value="30" />
+          <Property name="HeightMax" value="40" />
+          <Property name="HeightTime" value="2" />
+          <Property name="Herd" value="False" />
+        </Property>
+        <Property value="GcCreatureSwarmData.xml">
+          <Property name="MinCount" value="2" />
+          <Property name="MaxCount" value="8" />
+          <Property name="SwarmMovementSpeed" value="1" />
+          <Property name="SwarmMovementRadius" value="400" />
+          <Property name="SwarmMovementType" value="FollowPlayer" />
+          <Property name="Coherence" value="0.9" />
+          <Property name="Alignment" value="1.2" />
+          <Property name="Spacing" value="20" />
+          <Property name="Follow" value="1.5" />
+          <Property name="Range" value="40" />
+          <Property name="MaxbankingAmount" value="0" />
+          <Property name="TurnRequiredForMaxBanking" value="0.3" />
+          <Property name="MaxPitchAmount" value="0.1" />
+          <Property name="UpwardMovementForMaxPitch" value="0.2" />
+          <Property name="MaxSpeed" value="4.5" />
+          <Property name="AlignTime" value="4" />
+          <Property name="SpringSmoothTime" value="1" />
+          <Property name="RepelList">
+            <Property value="NMSString0x10.xml">
+              <Property name="Value" value="" />
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcBirdData.xml">
+          <Property name="FlapSpeedMax" value="0.6" />
+          <Property name="FlapSpeedMin" value="5" />
+          <Property name="FlapSpeed" value="15" />
+          <Property name="FlapAccel" value="5" />
+          <Property name="CircleAttractor" value="" />
+        </Property>
+      </Property>
+    </Property>
   </Property>
 </Data>

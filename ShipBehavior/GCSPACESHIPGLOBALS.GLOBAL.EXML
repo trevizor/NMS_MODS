@@ -322,8 +322,8 @@
   <Property name="LateralDriftRange" value="60" />
   <Property name="PadTurnSpeed" value="1" />
   <Property name="KBThrustSmoothTime" value="0.2" />
-  <Property name="HoverTakeoffHeight" value="20" />
-  <Property name="HoverTime" value="2" />
+  <Property name="HoverTakeoffHeight" value="10" />
+  <Property name="HoverTime" value="1" />
   <Property name="HoverAlignTime" value="0.7" />
   <Property name="Unknown0x494" value="5" />
   <Property name="Unknown0x498" value="1.5" />
@@ -353,7 +353,7 @@
   <Property name="DrawLineLockTargetLineWidth" value="5" />
   <Property name="DamageFlashScale" value="50" />
   <Property name="DamageFlashMin" value="0.2" />
-  <Property name="LandingButtonMinTime" value="0.25" />
+  <Property name="LandingButtonMinTime" value="0.1" />
   <Property name="LandingPushNoseUpFactor" value="0" />
   <Property name="GroundHeightSoftForce" value="2" />
   <Property name="GroundHeightSoft" value="1" />
@@ -747,8 +747,8 @@
   </Property>
   <Property name="HaulerTakeOffMod" value="1" />
   <Property name="FighterTakeOffMod" value="1" />
-  <Property name="ShuttleTakeOffMod" value="0.66" />
-  <Property name="ExplorerTakeOffMod" value="0.5" />
+  <Property name="ShuttleTakeOffMod" value="1" />
+  <Property name="ExplorerTakeOffMod" value="1" />
   <Property name="RoyalTakeOffMod" value="1" />
   <Property name="AlarmLightColour" value="Colour.xml">
     <Property name="R" value="0.169" />
@@ -1069,7 +1069,7 @@
   <Property name="AnomalyStationMaxApproachSpeed" value="60" />
   <Property name="Unknown0xE3C" value="50" />
   <Property name="Unknown0xE40" value="1.5" />
-  <Property name="LandGroundTakeOffTime" value="1.7" />
+  <Property name="LandGroundTakeOffTime" value="0.3" />
   <Property name="LandLookingForward" value="160" />
   <Property name="LandHeightThreshold" value="100" />
   <Property name="LandWidthThreshold" value="2" />
@@ -1102,14 +1102,14 @@
   <Property name="DeflectCurve" value="TkCurveType.xml">
     <Property name="Curve" value="EaseInSine" />
   </Property>
-  <Property name="CollisionRadiusMultiplier" value="0.8" />
+  <Property name="CollisionRadiusMultiplier" value="1" />
   <Property name="GroundHeightHardTimeMin" value="0.1" />
   <Property name="GroundHeightHardTimeMax" value="0.4" />
   <Property name="GroundHeightPostCollisionDamper" value="0.6" />
   <Property name="GroundHeightSpeedLength" value="220" />
   <Property name="GroundHeightSpeedAngle" value="-5" />
   <Property name="GroundHeightSpeedAngleRange" value="10" />
-  <Property name="GroundHeightNumRays" value="7" />
+  <Property name="GroundHeightNumRays" value="1" />
   <Property name="GroundHeightSmoothTime" value="0" />
   <Property name="LinearDamping" value="0.01" />
   <Property name="AngularDamping" value="0" />
