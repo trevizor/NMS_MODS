@@ -401,25 +401,25 @@
   <Property name="TurnInPlaceMinTime" value="1" />
   <Property name="TurnInPlaceMaxSpeed" value="5" />
   <Property name="SceneTerrainSpawnMinDistance" value="0" />
-  <Property name="CreatureMinAlignSpeed" value="0.1" />
+  <Property name="CreatureMinAlignSpeed" value="0.01" />
   <Property name="PatrolMinDist" value="40" />
   <Property name="PatrolMaxDist" value="60" />
   <Property name="PatrolHeightOffset" value="1" />
   <Property name="PatrolGradientFactor" value="1" />
-  <Property name="CreatureWaryTime" value="3" />
+  <Property name="CreatureWaryTime" value="0.2" />
   <Property name="CreatureMinRunTime" value="8" />
   <Property name="CreatureHearingRange" value="5" />
   <Property name="CreatureSightRange" value="100" />
   <Property name="CreatureMoveIdle" value="0.001" />
-  <Property name="CreatureTurnMin" value="0.05" />
-  <Property name="CreatureTurnMax" value="0.05" />
-  <Property name="CreatureBrakeForce" value="10" />
+  <Property name="CreatureTurnMin" value="0.01" />
+  <Property name="CreatureTurnMax" value="0.2" />
+  <Property name="CreatureBrakeForce" value="5" />
   <Property name="CreatureMinAnimMoveSpeed" value="0.05" />
   <Property name="CreatureLookBeforeGoingTime" value="4.5" />
-  <Property name="CreatureLookBeforeFleeingTime" value="0.4" />
-  <Property name="CreatureLookBeforeFleeingIfShotTime" value="0.25" />
+  <Property name="CreatureLookBeforeFleeingTime" value="0.1" />
+  <Property name="CreatureLookBeforeFleeingIfShotTime" value="0.01" />
   <Property name="CreatureLookScaryThingTime" value="1.5" />
-  <Property name="CreatureLookPlayerForceLookTime" value="1.5" />
+  <Property name="CreatureLookPlayerForceLookTime" value="0.5" />
   <Property name="FootPlantError" value="0.7" />
   <Property name="RecoverHealthTime" value="10" />
   <Property name="PainShake" value="GcCameraShakeData.xml">
@@ -636,7 +636,7 @@
   <Property name="PredatorFishPerceptionDistance" value="100" />
   <Property name="PassiveFleePlayerDistance" value="10" />
   <Property name="AdultBabyKilledNoticeDistance" value="70" />
-  <Property name="PercentagePlayerPredators" value="0.5" />
+  <Property name="PercentagePlayerPredators" value="0.7" />
   <Property name="PredatorSmallHealth" value="2400" />
   <Property name="PredatorMedHealth" value="3400" />
   <Property name="PredatorLargeHealth" value="8000" />
