@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (2.32.0)-->
+<!--File created using MBINCompiler version (2.43.0)-->
 <Data template="GcCreatureGlobals">
-  <Property name="Unknown0x0">
+  <Property name="Temperments">
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="GENERIC" />
     </Property>
@@ -32,6 +32,8 @@
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="ROBOT" />
     </Property>
+  </Property>
+  <Property name="TempermentDescriptions">
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="UI_CREA_DESC_PASSIVE%i_" />
     </Property>
@@ -62,6 +64,8 @@
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="ROBOT" />
     </Property>
+  </Property>
+  <Property name="Diets">
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="CARNIVORE" />
     </Property>
@@ -71,6 +75,8 @@
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="HERBIVORE" />
     </Property>
+  </Property>
+  <Property name="WaterDiets">
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="PREDFISHDIET" />
     </Property>
@@ -80,6 +86,8 @@
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="FISHDIET" />
     </Property>
+  </Property>
+  <Property name="DietMeat">
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="LUSH_MEAT_NAME" />
     </Property>
@@ -119,6 +127,8 @@
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="BARREN_MEAT_NAME" />
     </Property>
+  </Property>
+  <Property name="DietVeg">
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="UI_PLANT_10_NAME_L" />
     </Property>
@@ -158,6 +168,8 @@
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="UI_PLANTSUB_WATER_NAME_L" />
     </Property>
+  </Property>
+  <Property name="DietDescriptions">
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="UI_CREA_DESC_CARNIVORE%i_" />
     </Property>
@@ -167,6 +179,8 @@
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="UI_CREA_DESC_HERBIVORE%i_" />
     </Property>
+  </Property>
+  <Property name="WaterDietDescriptions">
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="UI_CREA_DESC_CARNIFISH%i_" />
     </Property>
@@ -176,6 +190,8 @@
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="UI_CREA_DESC_HERBIFISH%i_" />
     </Property>
+  </Property>
+  <Property name="BiomeDescriptions">
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="UI_CREA_DESC_BIOME_LUSH_" />
     </Property>
@@ -215,6 +231,8 @@
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="UI_CREA_DESC_BIOME_RGB_" />
     </Property>
+  </Property>
+  <Property name="BiomeWaterDescriptions">
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="UI_CREA_DESC_WATER_LUSH_" />
     </Property>
@@ -254,6 +272,8 @@
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="UI_CREA_DESC_WATER_RGB_" />
     </Property>
+  </Property>
+  <Property name="BiomeAirDescriptions">
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="UI_CREA_DESC_BIOME_AIR_LUSH_" />
     </Property>
@@ -293,6 +313,8 @@
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="UI_CREA_DESC_BIOME_AIR_RGB_" />
     </Property>
+  </Property>
+  <Property name="WeirdBiomeDescriptions">
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="UI_CREA_DESC_BIOME_DUST_" />
     </Property>
@@ -354,45 +376,38 @@
       <Property name="Value" value="UI_CREA_DESC_BIOME_DUST_" />
     </Property>
   </Property>
-  <Property name="Unknown0xEA0" value="True" />
-  <Property name="Unknown0xEA4" value="0.2" />
-  <Property name="Unknown0xEA8" value="0.5" />
-  <Property name="Unknown0xEAC" value="0.8" />
-  <Property name="Unknown0xEB0" value="0.2" />
+  <Property name="OverrideIKParams" value="True" />
+  <Property name="BodyMassWeight" value="0.2" />
+  <Property name="Omega" value="0.5" />
+  <Property name="OmegaDropOff" value="0.8" />
+  <Property name="MovementDamp" value="0.2" />
   <Property name="IsHurtingCreaturesACrime" value="False" />
   <Property name="EnableFlyingSnakeTails" value="False" />
   <Property name="EnableNewStuff" value="True" />
-  <Property name="Unknown0xEB7" value="False" />
-  <Property name="Unknown0xEB8" value="True" />
-  <Property name="Unknown0xEB9" value="True" />
-  <Property name="Unknown0xEBC" value="10" />
-  <Property name="Unknown0xEC0" value="10" />
-  <Property name="Unknown0xEC4" value="30" />
-  <Property name="Unknown0xEC8" value="-0.4" />
-  <Property name="Unknown0xECC" value="0" />
-  <Property name="Unknown0xED0" value="1" />
-  <Property name="Unknown0xED4" value="True" />
-  <Property name="Unknown0xED5" value="False" />
-  <Property name="Unknown0xED8" value="0.5" />
-  <Property name="Unknown0xEDC" value="2" />
-  <Property name="Unknown0xEE0" value="0.2" />
-  <Property name="Unknown0xEE4" value="0.3" />
-  <Property name="Unknown0xEE8" value="2" />
-  <Property name="Unknown0xEEC" value="4" />
-  <Property name="Unknown0xEF0" value="2" />
-  <Property name="Unknown0xEF4" value="30" />
-  <Property name="Unknown0xEF8" value="40" />
-  <Property name="Unknown0xEFC" value="0" />
-  <Property name="Unknown0xF00" value="0" />
-  <Property name="Unknown0xF04" value="0" />
-  <Property name="Unknown0xF08" value="0" />
-  <Property name="Unknown0xF0C" value="0" />
-  <Property name="Unknown0xF10" value="0" />
-  <Property name="Unknown0xF14" value="0" />
-  <Property name="Unknown0xF18" value="0" />
+  <Property name="InstantCreatureRide" value="False" />
+  <Property name="EnableVRCreatureRide" value="True" />
+  <Property name="EnableMPCreatureRide" value="True" />
+  <Property name="RidingReplicationRangeMultiplier" value="10" />
+  <Property name="RidingRollAdjustMaxAngle" value="10" />
+  <Property name="RidingRollMaxAngleAt" value="30" />
+  <Property name="RidingFirstPersonOffsetFwd" value="-0.4" />
+  <Property name="RidingFirstPersonOffsetUp" value="0" />
+  <Property name="CreatureScaleMangle" value="1" />
+  <Property name="CreatureRideDirectControl" value="True" />
+  <Property name="StaticCreatureRide" value="False" />
+  <Property name="RideSpeedSlow" value="0.5" />
+  <Property name="RideSpeedFast" value="2" />
+  <Property name="RideSpeedChangeTime" value="0.2" />
+  <Property name="RiderLeanTime" value="0.3" />
+  <Property name="PostRideMoveTime" value="2" />
+  <Property name="RideIdleTime" value="4" />
+  <Property name="MinRideSize" value="2" />
+  <Property name="MaxRideLeanCounterRotate" value="30" />
+  <Property name="PlayerDamageTransferScale" value="40" />
   <Property name="CreatureSeed" value="0" />
-  <Property name="MaxEcosystemCreatures" value="40" />
-  <Property name="UnknownInt0xF24" value="20" />
+  <Property name="CreatureFilter" value="" />
+  <Property name="MaxEcosystemCreaturesNormal" value="40" />
+  <Property name="MaxEcosystemCreaturesLow" value="20" />
   <Property name="UncapSpawningforVideo" value="False" />
   <Property name="AllowSpawningOnscreen" value="False" />
   <Property name="ResourceSpawnTime" value="1" />
@@ -533,9 +548,9 @@
   <Property name="WaterSpawnOffset" value="0" />
   <Property name="SpawnDistanceModifierForUnderwater" value="0.1" />
   <Property name="FootDustGroundTintStrength" value="0.3" />
-  <Property name="Unknown0x113C" value="1" />
-  <Property name="Unknown0x1140" value="-2" />
-  <Property name="Unknown0x1144" value="2" />
+  <Property name="StickToGroundSpeed" value="1" />
+  <Property name="StickToGroundCastBegin" value="-2" />
+  <Property name="StickToGroundCastEnd" value="2" />
   <Property name="FlyingSnakeData" value="GcFlyingSnakeData.xml">
     <Property name="CircleSpeed" value="6" />
     <Property name="ApproachBaitSpeed" value="30" />
@@ -608,12 +623,12 @@
   <Property name="CreatureMedMinSize" value="1.2" />
   <Property name="CreatureLargeMinSize" value="2.5" />
   <Property name="CreatureHugeMinSize" value="4.5" />
-  <Property name="Unknown0x11F8" value="5" />
-  <Property name="Unknown0x11FC" value="12" />
-  <Property name="Unknown0x1200" value="20" />
-  <Property name="Unknown0x1204" value="3" />
-  <Property name="Unknown0x1208" value="5" />
-  <Property name="Unknown0x120C" value="8" />
+  <Property name="CreatureRidingMedMinSize" value="5" />
+  <Property name="CreatureRidingLargeMinSize" value="12" />
+  <Property name="CreatureRidingHugeMinSize" value="20" />
+  <Property name="CreatureBlobRidingMedMinSize" value="3" />
+  <Property name="CreatureBlobRidingLargeMinSize" value="5" />
+  <Property name="CreatureBlobRidingHugeMinSize" value="8" />
   <Property name="CreatureSmallHealth" value="200" />
   <Property name="CreatureMedHealth" value="1400" />
   <Property name="CreatureLargeHealth" value="2800" />
@@ -641,7 +656,7 @@
   <Property name="PredatorMedHealth" value="3400" />
   <Property name="PredatorLargeHealth" value="8000" />
   <Property name="PredatorHugeHealth" value="13500" />
-  <Property name="Unknown0x12B8" value="1.3" />
+  <Property name="PlayerPredatorHealthModifier" value="1.8" />
   <Property name="PredatorApproachTime" value="8" />
   <Property name="PredatorNoticePauseTime" value="1.5" />
   <Property name="PredatorStealthDist" value="30" />
@@ -654,15 +669,15 @@
   <Property name="PredatorRegainInterestTime" value="30" />
   <Property name="PlayerPredatorRegainInterestTime" value="30" />
   <Property name="PredatorRunAwayDist" value="5" />
-  <Property name="PredatorRoarProbAfterHit" value="0.1" />
-  <Property name="PredatorRoarProbAfterMiss" value="0.1" />
+  <Property name="PredatorRoarProbAfterHit" value="0.001" />
+  <Property name="PredatorRoarProbAfterMiss" value="0.0001" />
   <Property name="PredatorRunAwayHealthPercent" value="30" />
   <Property name="PredatorEnergyRecoverRate" value="0.13" />
   <Property name="PredatorEnergyUseChasing" value="-0.07" />
-  <Property name="Unknown0x1300" value="False" />
-  <Property name="Unknown0x1304" value="10" />
   <Property name="AggressiveSharks" value="True" />
+  <Property name="DelayAfterRespawnBeforeAttackable" value="10" />
   <Property name="FiendsCanAttack" value="True" />
+  <Property name="FiendOnscreenMarkers" value="True" />
   <Property name="FiendHealth" value="1000" />
   <Property name="FiendPerceptionDistance" value="60" />
   <Property name="FiendSpawnDistance" value="70" />
@@ -685,9 +700,9 @@
   <Property name="FiendAggroIncreaseDestroyEgg" value="1" />
   <Property name="FiendAggroDecreasePerSpawn" value="0.1" />
   <Property name="FiendCritAreaSize" value="0.15" />
-  <Property name="Unknown0x1364" value="10" />
-  <Property name="Unknown0x1368" value="70" />
-  <Property name="Unknown0x136C" value="10" />
+  <Property name="FiendDistToConsiderTargetSwtich" value="10" />
+  <Property name="FiendDistReduceForBeingShot" value="70" />
+  <Property name="FiendBeingShotMemoryTime" value="10" />
   <Property name="MaxFishFiends" value="15" />
   <Property name="FishFiendSmallHealth" value="600" />
   <Property name="FishFiendBigHealth" value="9000" />
@@ -707,9 +722,9 @@
   <Property name="RagdollMotorFadeEnd" value="2" />
   <Property name="MaxRagdollsBeforeDespawnOffscreen" value="12" />
   <Property name="MaxRagdollsBeforeDespawnOnscreen" value="18" />
-  <Property name="TurnRadiusMultiplier" value="0.5" />
-  <Property name="Unknown0x13C0" value="1" />
-  <Property name="Unknown0x13C4" value="5" />
+  <Property name="RidingTurnRadiusMultiplier" value="0.5" />
+  <Property name="TurnRadiusMultiplier" value="1" />
+  <Property name="MaxTurnRadius" value="5" />
   <Property name="TurnSlowAreaCos" value="0.75" />
   <Property name="BadTurnPercent" value="0.1" />
   <Property name="BadTurnWeight" value="0.1" />
@@ -724,13 +739,13 @@
   <Property name="BrakingForceY" value="16" />
   <Property name="FlowFieldWeight" value="0.7" />
   <Property name="FollowWeight" value="2" />
-  <Property name="Unknown0x1400" value="2" />
+  <Property name="RidingSteerWeight" value="2" />
   <Property name="AvoidCreaturesWeight" value="6" />
   <Property name="AvoidImpassableWeight" value="10" />
+  <Property name="BaseAndTerrainModImpassableStrength" value="1" />
   <Property name="FollowLeaderAlignWeight" value="1" />
-  <Property name="Unknown0x1410" value="1" />
   <Property name="FollowLeaderCohereWeight" value="0.8" />
-  <Property name="Unknown0x1418" value="0.2" />
+  <Property name="SoftenAvoidanceRadiusMod" value="0.2" />
   <Property name="DefaultSwimSpeed" value="0.4" />
   <Property name="FastSwimSpeed" value="3.5" />
   <Property name="DefaultWalkMoveSpeed" value="0.8" />
@@ -798,10 +813,10 @@
   <Property name="FeedingFollowTime" value="20" />
   <Property name="FeedingNoticeTime" value="3" />
   <Property name="FeedingNoticeDistance" value="30" />
-  <Property name="Unknown0x1558" value="0" />
-  <Property name="Unknown0x155C" value="3" />
-  <Property name="Unknown0x1560" value="0.120661" />
-  <Property name="Unknown0x1564" value="7" />
+  <Property name="AttractedMinAvoidCreaturesStrength" value="0" />
+  <Property name="AttractedMinAvoidCreaturesDist" value="3" />
+  <Property name="AttractedMaxAvoidCreaturesStrength" value="0.120661" />
+  <Property name="AttractedMaxAvoidCreaturesDist" value="7" />
   <Property name="AnimChangeCoolDown" value="0.45" />
   <Property name="GroupRunProbability" value="0.8" />
   <Property name="GroupBabyRunProbability" value="0.8" />
@@ -848,11 +863,11 @@
       <Property name="Value" value="CREATURE1" />
     </Property>
   </Property>
-  <Property name="UnknownInt0x17A8" value="5" />
-  <Property name="UnknownInt0x17AC" value="8" />
-  <Property name="UnknownInt0x17B0" value="12" />
-  <Property name="UnknownInt0x17B4" value="20" />
-  <Property name="CreatureSubstanceLists">
+  <Property name="CreatureKillRewardAmountSmall" value="5" />
+  <Property name="CreatureKillRewardAmountMed" value="8" />
+  <Property name="CreatureKillRewardAmountLarge" value="12" />
+  <Property name="CreatureKillRewardAmountHuge" value="20" />
+  <Property name="KillingProducts">
     <Property name="Fish" value="GcCreatureSubstanceList.xml">
       <Property name="CreatureType" value="FISH" />
       <Property name="Item" value="FOOD_M_FISH" />
@@ -958,7 +973,7 @@
       <Property name="Item" value="FOOD_M_MEAT" />
     </Property>
   </Property>
-  <Property name="CreatureHarvestSubstanceLists">
+  <Property name="HarvestingProducts">
     <Property name="Fish" value="GcCreatureHarvestSubstanceList.xml">
       <Property name="CreatureType" value="FISH" />
       <Property name="Item" value="FOOD_V_FISH" />
@@ -1116,13 +1131,13 @@
       <Property name="MinBlobs" value="5" />
     </Property>
   </Property>
-  <Property name="UnknownInt0x2C08" value="1" />
-  <Property name="UnknownInt0x2C0C" value="1" />
-  <Property name="UnknownInt0x2C10" value="2" />
-  <Property name="UnknownInt0x2C14" value="3" />
-  <Property name="Unknown0x2884" value="30" />
-  <Property name="Unknown0x2888" value="60" />
-  <Property name="CreatureFoodLists">
+  <Property name="CreatureHarvestAmountSmall" value="1" />
+  <Property name="CreatureHarvestAmountMed" value="1" />
+  <Property name="CreatureHarvestAmountLarge" value="2" />
+  <Property name="CreatureHarvestAmountHuge" value="3" />
+  <Property name="HarvestCooldownMin" value="30" />
+  <Property name="HarvestCooldownMax" value="60" />
+  <Property name="HerbivoreFeedingProducts">
     <Property value="GcCreatureFoodList.xml">
       <Property name="FoodProduct" value="BAIT_BASIC" />
       <Property name="ResourceFile" value="BAIT_VEG_1" />
@@ -1143,6 +1158,8 @@
       <Property name="ResourceFile" value="BAIT_VEG_4" />
       <Property name="DebrisEffect" value="MODELS/PLANETS/BIOMES/COMMON/COOKING/SWEETENEDCOMPOST.SCENE.MBIN" />
     </Property>
+  </Property>
+  <Property name="CarnivoreFeedingProducts">
     <Property value="GcCreatureFoodList.xml">
       <Property name="FoodProduct" value="SWEETENEDCOMPOS" />
       <Property name="ResourceFile" value="BAIT_MEAT_1" />
@@ -1164,7 +1181,7 @@
       <Property name="DebrisEffect" value="MODELS/PLANETS/BIOMES/COMMON/COOKING/BLOODYORGAN.SCENE.MBIN" />
     </Property>
   </Property>
-  <Property name="Unknown0x2D90" value="BLOODYORGAN" />
+  <Property name="BasicFeedingProduct" value="BLOODYORGAN" />
   <Property name="WeirdKillingRewards" value="GcWeirdCreatureRewardList.xml">
     <Property name="Rewards">
       <Property value="NMSString0x10.xml">
