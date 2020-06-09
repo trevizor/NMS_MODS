@@ -1,78 +1,81 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (2.41.0)-->
+<!--File created using MBINCompiler version (2.43.0)-->
 <Data template="GcPlayerGlobals">
-  <Property name="Unknown0x0" value="0.9" />
-  <Property name="Unknown0x4" value="0.7" />
-  <Property name="Unknown0x8" value="0.4" />
-  <Property name="Unknown0xC" value="0.2" />
-  <Property name="Unknown0x10" value="0" />
-  <Property name="Unknown0x14" value="4" />
-  <Property name="Unknown0x18" value="4" />
-  <Property name="Unknown0x1C" value="True" />
-  <Property name="Unknown0x1D" value="True" />
-  <Property name="Unknown0x20" value="1" />
-  <Property name="Unknown0x24" value="0.3" />
-  <Property name="Unknown0x28" value="0.99" />
-  <Property name="Unknown0x2C" value="1.5" />
-  <Property name="Unknown0x30" value="40" />
-  <Property name="Unknown0x34" value="5" />
-  <Property name="Unknown0x38" value="0" />
-  <Property name="Unknown0x3C" value="0" />
-  <Property name="Unknown0x40" value="0.045" />
-  <Property name="Unknown0x50" value="GcInWorldUIScreenData.xml">
-    <Property name="ScreenScale" value="0.03" />
-    <Property name="ScreenOffset" value="Vector3f.xml">
-      <Property name="x" value="0.05" />
-      <Property name="y" value="0.15" />
-      <Property name="z" value="0" />
+  <Property name="FoodValueThresholdBest" value="0.9" />
+  <Property name="FoodValueThresholdGood" value="0.7" />
+  <Property name="FoodValueThresholdAverage" value="0.4" />
+  <Property name="FoodValueThresholdBad" value="0.2" />
+  <Property name="FoodValueThresholdWorst" value="0" />
+  <Property name="TeleportAppearEffectSpeed" value="4" />
+  <Property name="TeleportDisappearEffectSpeed" value="4" />
+  <Property name="RecenterViewWhenEnteringShip" value="True" />
+  <Property name="UseInitialFacingForMoveDirection" value="True" />
+  <Property name="EmulateNoHandsForHandScreens" value="True" />
+  <Property name="BinocularAimOffset" value="1" />
+  <Property name="BinocularScopeScale" value="0.3" />
+  <Property name="MaxArmExtension" value="0.99" />
+  <Property name="MinArmExtension" value="1.5" />
+  <Property name="SummonArcRange" value="40" />
+  <Property name="InteractionAimOffset" value="5" />
+  <Property name="QuickMenuLauncherTransforms" value="GcProjectorOffsetData.xml">
+    <Property name="Scale" value="0.045" />
+    <Property name="Active" value="GcInWorldUIScreenData.xml">
+      <Property name="ScreenScale" value="0.03" />
+      <Property name="ScreenOffset" value="Vector3f.xml">
+        <Property name="x" value="0.05" />
+        <Property name="y" value="0.15" />
+        <Property name="z" value="0" />
+      </Property>
+      <Property name="ScreenRotation" value="Vector3f.xml">
+        <Property name="x" value="20" />
+        <Property name="y" value="180" />
+        <Property name="z" value="30" />
+      </Property>
     </Property>
-    <Property name="ScreenRotation" value="Vector3f.xml">
-      <Property name="x" value="20" />
-      <Property name="y" value="180" />
-      <Property name="z" value="30" />
-    </Property>
-  </Property>
-  <Property name="Unknown0x80" value="GcInWorldUIScreenData.xml">
-    <Property name="ScreenScale" value="0.03" />
-    <Property name="ScreenOffset" value="Vector3f.xml">
-      <Property name="x" value="0.07" />
-      <Property name="y" value="-0.025" />
-      <Property name="z" value="0" />
-    </Property>
-    <Property name="ScreenRotation" value="Vector3f.xml">
-      <Property name="x" value="0" />
-      <Property name="y" value="270" />
-      <Property name="z" value="0" />
-    </Property>
-  </Property>
-  <Property name="Unknown0xB0" value="0.045" />
-  <Property name="Unknown0xC0" value="GcInWorldUIScreenData.xml">
-    <Property name="ScreenScale" value="0.03" />
-    <Property name="ScreenOffset" value="Vector3f.xml">
-      <Property name="x" value="0.02" />
-      <Property name="y" value="0.12" />
-      <Property name="z" value="-0.05" />
-    </Property>
-    <Property name="ScreenRotation" value="Vector3f.xml">
-      <Property name="x" value="0" />
-      <Property name="y" value="200" />
-      <Property name="z" value="0" />
+    <Property name="Inactive" value="GcInWorldUIScreenData.xml">
+      <Property name="ScreenScale" value="0.03" />
+      <Property name="ScreenOffset" value="Vector3f.xml">
+        <Property name="x" value="0.07" />
+        <Property name="y" value="-0.025" />
+        <Property name="z" value="0" />
+      </Property>
+      <Property name="ScreenRotation" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="270" />
+        <Property name="z" value="0" />
+      </Property>
     </Property>
   </Property>
-  <Property name="Unknown0xF0" value="GcInWorldUIScreenData.xml">
-    <Property name="ScreenScale" value="0.03" />
-    <Property name="ScreenOffset" value="Vector3f.xml">
-      <Property name="x" value="-0.07" />
-      <Property name="y" value="0.03" />
-      <Property name="z" value="0" />
+  <Property name="WeaponMenuLauncherTransforms" value="GcProjectorOffsetData.xml">
+    <Property name="Scale" value="0.045" />
+    <Property name="Active" value="GcInWorldUIScreenData.xml">
+      <Property name="ScreenScale" value="0.03" />
+      <Property name="ScreenOffset" value="Vector3f.xml">
+        <Property name="x" value="0.02" />
+        <Property name="y" value="0.12" />
+        <Property name="z" value="-0.05" />
+      </Property>
+      <Property name="ScreenRotation" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="200" />
+        <Property name="z" value="0" />
+      </Property>
     </Property>
-    <Property name="ScreenRotation" value="Vector3f.xml">
-      <Property name="x" value="0" />
-      <Property name="y" value="90" />
-      <Property name="z" value="0" />
+    <Property name="Inactive" value="GcInWorldUIScreenData.xml">
+      <Property name="ScreenScale" value="0.03" />
+      <Property name="ScreenOffset" value="Vector3f.xml">
+        <Property name="x" value="-0.07" />
+        <Property name="y" value="0.03" />
+        <Property name="z" value="0" />
+      </Property>
+      <Property name="ScreenRotation" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="90" />
+        <Property name="z" value="0" />
+      </Property>
     </Property>
   </Property>
-  <Property name="Unknown0x120" value="GcInWorldUIScreenData.xml">
+  <Property name="QuickMenuOffset" value="GcInWorldUIScreenData.xml">
     <Property name="ScreenScale" value="0.1" />
     <Property name="ScreenOffset" value="Vector3f.xml">
       <Property name="x" value="0" />
@@ -85,7 +88,7 @@
       <Property name="z" value="0" />
     </Property>
   </Property>
-  <Property name="Unknown0x150" value="GcInWorldUIScreenData.xml">
+  <Property name="InventoryOffset" value="GcInWorldUIScreenData.xml">
     <Property name="ScreenScale" value="0.2" />
     <Property name="ScreenOffset" value="Vector3f.xml">
       <Property name="x" value="0.1" />
@@ -98,7 +101,7 @@
       <Property name="z" value="0" />
     </Property>
   </Property>
-  <Property name="Unknown0x180" value="GcInWorldUIScreenData.xml">
+  <Property name="FrontendOffset" value="GcInWorldUIScreenData.xml">
     <Property name="ScreenScale" value="0.7" />
     <Property name="ScreenOffset" value="Vector3f.xml">
       <Property name="x" value="0" />
@@ -111,7 +114,7 @@
       <Property name="z" value="0" />
     </Property>
   </Property>
-  <Property name="Unknown0x1B0" value="GcInWorldUIScreenData.xml">
+  <Property name="FrontendMessagesOffset" value="GcInWorldUIScreenData.xml">
     <Property name="ScreenScale" value="0.8" />
     <Property name="ScreenOffset" value="Vector3f.xml">
       <Property name="x" value="0" />
@@ -124,7 +127,7 @@
       <Property name="z" value="0" />
     </Property>
   </Property>
-  <Property name="Unknown0x1E0" value="GcInWorldUIScreenData.xml">
+  <Property name="DefaultLeftHandTransform" value="GcInWorldUIScreenData.xml">
     <Property name="ScreenScale" value="3" />
     <Property name="ScreenOffset" value="Vector3f.xml">
       <Property name="x" value="0" />
@@ -137,7 +140,7 @@
       <Property name="z" value="0" />
     </Property>
   </Property>
-  <Property name="Unknown0x210" value="GcInWorldUIScreenData.xml">
+  <Property name="DefaultLeftHandTransformVehicle" value="GcInWorldUIScreenData.xml">
     <Property name="ScreenScale" value="2" />
     <Property name="ScreenOffset" value="Vector3f.xml">
       <Property name="x" value="0" />
@@ -150,7 +153,7 @@
       <Property name="z" value="0" />
     </Property>
   </Property>
-  <Property name="Unknown0x240" value="GcInWorldUIScreenData.xml">
+  <Property name="BinocularInfoScreenOffset" value="GcInWorldUIScreenData.xml">
     <Property name="ScreenScale" value="0.25" />
     <Property name="ScreenOffset" value="Vector3f.xml">
       <Property name="x" value="0" />
@@ -163,7 +166,7 @@
       <Property name="z" value="0" />
     </Property>
   </Property>
-  <Property name="Unknown0x270" value="GcInWorldUIScreenData.xml">
+  <Property name="BinocularInfoScreenOffsetGun" value="GcInWorldUIScreenData.xml">
     <Property name="ScreenScale" value="0.3" />
     <Property name="ScreenOffset" value="Vector3f.xml">
       <Property name="x" value="0" />
@@ -176,7 +179,7 @@
       <Property name="z" value="0" />
     </Property>
   </Property>
-  <Property name="Unknown0x2A0" value="GcInWorldUIScreenData.xml">
+  <Property name="FrontendPhotoModeVROffset" value="GcInWorldUIScreenData.xml">
     <Property name="ScreenScale" value="0.85" />
     <Property name="ScreenOffset" value="Vector3f.xml">
       <Property name="x" value="0" />
@@ -189,7 +192,7 @@
       <Property name="z" value="0" />
     </Property>
   </Property>
-  <Property name="Unknown0x2D0" value="GcInWorldUIScreenData.xml">
+  <Property name="FrontendBaseScreenshotVROffset" value="GcInWorldUIScreenData.xml">
     <Property name="ScreenScale" value="0.9" />
     <Property name="ScreenOffset" value="Vector3f.xml">
       <Property name="x" value="0" />
@@ -202,63 +205,58 @@
       <Property name="z" value="0" />
     </Property>
   </Property>
-  <Property name="Unknown0x300" value="0.2" />
-  <Property name="Unknown0x304" value="0.05" />
-  <Property name="Unknown0x308" value="0" />
-  <Property name="Unknown0x30C" value="0" />
-  <Property name="Unknown0x310" value="Vector3f.xml">
+  <Property name="BinocularRayThicknessVR" value="0.2" />
+  <Property name="BincoularRayThickness" value="0.05" />
+  <Property name="BinocularScopeOffset" value="Vector3f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="0.07" />
     <Property name="z" value="0" />
   </Property>
-  <Property name="Unknown0x320" value="30" />
-  <Property name="Unknown0x324" value="80" />
-  <Property name="Unknown0x328" value="10" />
-  <Property name="Unknown0x32C" value="30" />
-  <Property name="Unknown0x330" value="25" />
-  <Property name="Unknown0x334" value="0.05" />
-  <Property name="Unknown0x338" value="0.05" />
-  <Property name="Unknown0x33C" value="2" />
-  <Property name="Unknown0x340" value="Vector2f.xml">
-    <Property name="x" value="1" />
-    <Property name="y" value="0" />
+  <Property name="TeleportMaxTravelDistance" value="30" />
+  <Property name="TeleportMaxTravelDistanceVertical" value="80" />
+  <Property name="TeleportChargeMinDistance" value="10" />
+  <Property name="TeleportChargeMaxDistance" value="30" />
+  <Property name="TeleportChargeMoveSpeed" value="25" />
+  <Property name="TeleportChargeMinTime" value="0.05" />
+  <Property name="TeleportChargeFadeInTime" value="0.05" />
+  <Property name="TeleportBallFadeMinDistance" value="2" />
+  <Property name="TeleportBallFadeRange" value="1" />
+  <Property name="TeleportBallDistanceFadeAlpha" value="0" />
+  <Property name="TeleportBallRadius" value="0.5" />
+  <Property name="TeleportTravelSurfaceAngle" value="45" />
+  <Property name="TeleportBallCompletionFactorFadeout" value="0.5" />
+  <Property name="FingerTipOffset" value="0.03" />
+  <Property name="FingerButtonClickSize" value="0.2" />
+  <Property name="FingerButtonRadiusOffset" value="0.01" />
+  <Property name="FingerButtonClickTime" value="0.2" />
+  <Property name="FingerButtonQuickMenuOffset" value="1.05" />
+  <Property name="FingerButtonQuickMenuButtonSize" value="Vector2f.xml">
+    <Property name="x" value="0.06" />
+    <Property name="y" value="0.06" />
   </Property>
-  <Property name="Unknown0x348" value="0.5" />
-  <Property name="Unknown0x34C" value="45" />
-  <Property name="Unknown0x350" value="0.5" />
-  <Property name="Unknown0x354" value="0.03" />
-  <Property name="Unknown0x358" value="0.2" />
-  <Property name="Unknown0x35C" value="0.01" />
-  <Property name="Unknown0x360" value="0.2" />
-  <Property name="Unknown0x364" value="1.05" />
-  <Property name="Unknown0x368" value="0.06" />
-  <Property name="Unknown0x36C" value="0.06" />
-  <Property name="Unknown0x370" value="0.5" />
-  <Property name="Unknown0x374" value="4" />
-  <Property name="Unknown0x378" value="-9" />
-  <Property name="Unknown0x37C" value="-2" />
-  <Property name="Unknown0x380" value="0.2" />
-  <Property name="Unknown0x384" value="0.2" />
-  <Property name="Unknown0x388" value="0.3" />
-  <Property name="Unknown0x38C" value="30" />
-  <Property name="Unknown0x390" value="40" />
-  <Property name="Unknown0x394" value="75" />
-  <Property name="Unknown0x398" value="10" />
-  <Property name="Unknown0x39C" value="0.25" />
-  <Property name="Unknown0x3A0" value="40" />
-  <Property name="Unknown0x3A4" value="0.1" />
-  <Property name="Unknown0x3A8" value="20" />
-  <Property name="Unknown0x3AC" value="0.15" />
-  <Property name="Unknown0x3B0" value="20" />
-  <Property name="Unknown0x3B4" value="0" />
-  <Property name="Unknown0x3B8" value="0" />
-  <Property name="Unknown0x3BC" value="0" />
-  <Property name="Unknown0x3C0" value="Vector3f.xml">
+  <Property name="HandInteractionLightIntensity" value="0.5" />
+  <Property name="HandInteractionLightIntensityMax" value="4" />
+  <Property name="HandInteractionFresnel" value="-9" />
+  <Property name="HandInteractionFresnelMax" value="-2" />
+  <Property name="HandInteractionLightOffset" value="0.2" />
+  <Property name="HandInteractionLightOffsetAt" value="0.2" />
+  <Property name="HandInteractionLightTime" value="0.3" />
+  <Property name="HandScreenLookActiveAngle" value="30" />
+  <Property name="HandScreenMinAngle" value="40" />
+  <Property name="HandScreenMinAngleWithPoint" value="75" />
+  <Property name="HandScreenAngleRange" value="10" />
+  <Property name="HandScreenActivationRange" value="0.25" />
+  <Property name="HandScreenActivationAngle" value="40" />
+  <Property name="HandScreenActivationAngleOffset" value="0.1" />
+  <Property name="HandScreenActivationAngleDown" value="20" />
+  <Property name="HandScreenPenetration" value="0.15" />
+  <Property name="HandScreenRestingTurnAngle" value="20" />
+  <Property name="HandScreenRoboOnScreenOffset" value="Vector3f.xml">
     <Property name="x" value="-0.3" />
     <Property name="y" value="-0.35" />
     <Property name="z" value="0.5" />
   </Property>
-  <Property name="Unknown0x3D0" value="GcInWorldUIScreenData.xml">
+  <Property name="InWorldCompass" value="GcInWorldUIScreenData.xml">
     <Property name="ScreenScale" value="0.08" />
     <Property name="ScreenOffset" value="Vector3f.xml">
       <Property name="x" value="0" />
@@ -271,100 +269,98 @@
       <Property name="z" value="0" />
     </Property>
   </Property>
-  <Property name="Unknown0x400" value="0.1" />
-  <Property name="Unknown0x404" value="0.1" />
-  <Property name="Unknown0x408" value="False" />
-  <Property name="Unknown0x40C" value="0.75" />
-  <Property name="Unknown0x410" value="True" />
-  <Property name="Unknown0x411" value="False" />
-  <Property name="Unknown0x412" value="False" />
-  <Property name="Unknown0x413" value="False" />
-  <Property name="Unknown0x414" value="True" />
-  <Property name="Unknown0x418" value="0.75" />
-  <Property name="Unknown0x41C" value="40" />
-  <Property name="Unknown0x420" value="90" />
-  <Property name="Unknown0x424" value="False" />
-  <Property name="Unknown0x425" value="False" />
-  <Property name="Unknown0x426" value="False" />
-  <Property name="Unknown0x428" value="22.5" />
-  <Property name="Unknown0x42C" value="300" />
-  <Property name="UnknownInt0x430" value="80" />
-  <Property name="Unknown0x440" value="Vector3f.xml">
+  <Property name="FistClenchBlendInTime" value="0.1" />
+  <Property name="FistClenchBlendOutTime" value="0.1" />
+  <Property name="DoPlayerAppearInVehicleEffect" value="False" />
+  <Property name="StickYDampingThreshold" value="0.75" />
+  <Property name="RequireHandsOnShipControls" value="True" />
+  <Property name="ShowFirstPersonCharacterShadowPCVR" value="False" />
+  <Property name="ShowFirstPersonCharacterShadowPSVR" value="False" />
+  <Property name="InteractNearbyRadiusEnabled" value="False" />
+  <Property name="PassiveLook" value="True" />
+  <Property name="BodyRealignmentDelay" value="0.75" />
+  <Property name="PointDownToMoveAngle" value="40" />
+  <Property name="PointDownToMoveBackAngle" value="90" />
+  <Property name="EnableLeaning" value="False" />
+  <Property name="EnablePointDownToSmoothMove" value="False" />
+  <Property name="HmdSmoothTurnAlways" value="False" />
+  <Property name="HmdTurnSpeed" value="22.5" />
+  <Property name="HmdTurnSpeedPad" value="300" />
+  <Property name="PointingWristAdjustmentTimeMilliseconds" value="80" />
+  <Property name="PointingWristAngles" value="Vector3f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="-10" />
     <Property name="z" value="0" />
   </Property>
-  <Property name="Unknown0x450" value="False" />
-  <Property name="Unknown0x454" value="90" />
-  <Property name="Unknown0x460" value="Vector3f.xml">
+  <Property name="HolsterOnHip" value="False" />
+  <Property name="HolsterHeadRotX" value="90" />
+  <Property name="HolsterHeadOffset" value="Vector3f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="-0.1" />
     <Property name="z" value="0.3" />
   </Property>
-  <Property name="Unknown0x470" value="Vector3f.xml">
+  <Property name="HolsterGunHandOffset" value="Vector3f.xml">
     <Property name="x" value="-0.02" />
     <Property name="y" value="0.15" />
     <Property name="z" value="0.2" />
   </Property>
   <Property name="GroundWalkForce" value="50" />
   <Property name="GroundWalkBrake" value="6" />
-  <Property name="GroundWalkBrakeWhileMoving" value="6.0" />
+  <Property name="GroundWalkBrakeWhileMoving" value="6" />
   <Property name="GroundWalkSpeed" value="4" />
-  <Property name="GroundWalkSpeed_Unknown" value="4" />
+  <Property name="GroundWalkSpeedTeleportHmd" value="4" />
   <Property name="GroundRunSpeed" value="8.8" />
   <Property name="GroundWalkRecoverySpeedDamper" value="0.4" />
-  <Property name="Unknown0x49C" value="3" />
-  <Property name="Unknown0x4A0" value="6" />
-  <Property name="Unknown0x4A4" value="1" />
-  <Property name="Unknown0x4A8" value="15" />
-  <Property name="Unknown0x4AC" value="0.25" />
-  <Property name="Unknown0x4B0" value="0.1" />
-  <Property name="Unknown0x4B4" value="2" />
-  <Property name="Unknown0x4B8" value="30" />
-  <Property name="Unknown0x4BC" value="0.2" />
-  <Property name="Unknown0x4C0" value="0.3" />
-  <Property name="Unknown0x4C4" value="0.6" />
-  <Property name="Unknown0x4C8" value="20" />
-  <Property name="Unknown0x4CC" value="80" />
-  <Property name="Unknown0x4D0" value="2" />
-  <Property name="Unknown0x4D4" value="0.3" />
-  <Property name="Unknown0x4D8" value="2" />
-  <Property name="Unknown0x4DC" value="2" />
-  <Property name="Unknown0x4E0" value="0.15" />
-  <Property name="Unknown0x4E4" value="0.8" />
-  <Property name="Unknown0x4E8" value="0.3" />
-  <Property name="Unknown0x4EC" value="1" />
-  <Property name="Unknown0x4F0" value="0.9" />
-  <Property name="Unknown0x4F4" value="False" />
-  <Property name="Unknown0x4F8" value="0.8" />
-  <Property name="Unknown0x4FC" value="0.25" />
-  <Property name="Unknown0x500" value="1" />
-  <Property name="Unknown0x504" value="0.1" />
-  <Property name="Unknown0x508" value="0.5" />
-  <Property name="Unknown0x50C" value="2" />
-  <Property name="Unknown0x510" value="0.01" />
-  <Property name="Unknown0x514" value="6" />
-  <Property name="Unknown0x518" value="-0.3" />
-  <Property name="Unknown0x51C" value="1" />
-  <Property name="Unknown0x520" value="Vector2f.xml">
-    <Property name="x" value="1" />
-    <Property name="y" value="0" />
-  </Property>
-  <Property name="UnknownInt0x528" value="1" />
-  <Property name="UnknownInt0x52C" value="3" />
-  <Property name="Unknown0x530" value="Colour.xml">
+  <Property name="HandSmoothMinAngle" value="3" />
+  <Property name="HandSmoothAngleRange" value="6" />
+  <Property name="HmdResetButtonTime" value="1" />
+  <Property name="SummonShipDirectionChangeDeadZoneAngle" value="15" />
+  <Property name="TeleportArcRadius" value="0.25" />
+  <Property name="TeleportArcRadiusInner" value="0.1" />
+  <Property name="TeleportStrafeDistance" value="2" />
+  <Property name="NoStickTeleportDirectionChangeDeadzoneAngle" value="30" />
+  <Property name="TeleportHmdMinFade" value="0.2" />
+  <Property name="TeleportHmdMaxFade" value="0.3" />
+  <Property name="TeleportHmdOutFactor" value="0.6" />
+  <Property name="TeleportBeamGravity" value="20" />
+  <Property name="TeleportBeamGravityMax" value="80" />
+  <Property name="TeleportArcLengthMultiplier" value="2" />
+  <Property name="TeleportBeamAnimSpeed" value="0.3" />
+  <Property name="TeleportBeamAnimHeight" value="2" />
+  <Property name="TeleportLastKnownThreshold" value="2" />
+  <Property name="TeleportLineEndFadeStart" value="0.15" />
+  <Property name="TeleportLineEndFadeEnd" value="0.8" />
+  <Property name="TeleportLineFadeStart" value="0.3" />
+  <Property name="TeleportLineFadeRange" value="1" />
+  <Property name="TeleportInitiateThreshold" value="0.9" />
+  <Property name="TeleportRecentre" value="False" />
+  <Property name="TeleportLineBezierOffset" value="0.8" />
+  <Property name="TeleportLineBezierDistanceFactor" value="0.25" />
+  <Property name="InteractionLineSplineOffset" value="1" />
+  <Property name="InteractionLineSplineOffsetMin" value="0.1" />
+  <Property name="InteractionLineSplineMinDistance" value="0.5" />
+  <Property name="InteractionLineSplineOffsetRange" value="2" />
+  <Property name="InteractionLineCircleRadius" value="0.01" />
+  <Property name="InteractionLineCircleThickness" value="6" />
+  <Property name="InteractionLineCircleSpeed" value="-0.3" />
+  <Property name="InteractionLineCircleOffsetMin" value="1" />
+  <Property name="InteractionLineCircleOffsetMax" value="1" />
+  <Property name="InteractionLineNumCirclesPerMetre" value="0" />
+  <Property name="WordCategoriesRequiredToConverse" value="1" />
+  <Property name="MaxWordCategoriesToSayPerNPC" value="3" />
+  <Property name="InteractionLineActiveColour" value="Colour.xml">
     <Property name="R" value="1" />
     <Property name="G" value="0.546" />
     <Property name="B" value="0.243" />
     <Property name="A" value="1" />
   </Property>
-  <Property name="Unknown0x540" value="Colour.xml">
+  <Property name="InteractionLineBaseColour" value="Colour.xml">
     <Property name="R" value="1" />
     <Property name="G" value="1" />
     <Property name="B" value="1" />
     <Property name="A" value="1" />
   </Property>
-  <Property name="Unknown0x550" value="GcScanEffectData.xml">
+  <Property name="InteractHighlightEffect" value="GcScanEffectData.xml">
     <Property name="Id" value="" />
     <Property name="ScanEffectType" value="Creature" />
     <Property name="Colour" value="Colour.xml">
@@ -385,7 +381,7 @@
     <Property name="FadeInTime" value="0.1" />
     <Property name="FadeOutTime" value="0.2" />
   </Property>
-  <Property name="Unknown0x5A0" value="GcScanEffectData.xml">
+  <Property name="HolsterHighlightEffect" value="GcScanEffectData.xml">
     <Property name="Id" value="" />
     <Property name="ScanEffectType" value="Creature" />
     <Property name="Colour" value="Colour.xml">
@@ -406,40 +402,36 @@
     <Property name="FadeInTime" value="0.1" />
     <Property name="FadeOutTime" value="0.2" />
   </Property>
-  <Property name="Unknown0x5F0" value="5" />
-  <Property name="Unknown0x5F4" value="-0.005" />
-  <Property name="Unknown0x5F8" value="0.01" />
-  <Property name="Unknown0x5FC" value="0.2" />
-  <Property name="Unknown0x600" value="5" />
-  <Property name="Unknown0x604" value="50" />
-  <Property name="Unknown0x608" value="100" />
-  <Property name="Unknown0x60C" value="False" />
-  <Property name="Unknown0x610" value="0.1" />
-  <Property name="Unknown0x614" value="45" />
-  <Property name="Unknown0x618" value="45" />
-  <Property name="Unknown0x61C" value="10" />
-  <Property name="Unknown0x620" value="0.5" />
-  <Property name="Unknown0x624" value="Vector2f.xml">
-    <Property name="x" value="0.1" />
-    <Property name="y" value="0" />
-  </Property>
-  <Property name="Unknown0x62C" value="0.15" />
-  <Property name="PlayerMaterial" value="MODELS/COMMON/CHARACTERS/PLAYER/MATERIALS/PLAYER.MATERIAL.MBIN" />
-  <Property name="Unknown0x6B0" value="0.5" />
-  <Property name="Unknown0x6B4" value="0.1" />
-  <Property name="Unknown0x6B8" value="0.6" />
-  <Property name="Unknown0x6BC" value="-90" />
-  <Property name="Unknown0x6C0" value="90" />
-  <Property name="Unknown0x6C4" value="False" />
-  <Property name="Unknown0x6C8" value="0" />
-  <Property name="Unknown0x6CC" value="0" />
-  <Property name="Unknown0x6D0" value="Vector3f.xml">
+  <Property name="HandHoldInteractDistanceRate" value="5" />
+  <Property name="HandHoldInteractAngleRate" value="-0.005" />
+  <Property name="HandSwimMin" value="0.01" />
+  <Property name="HandSwimMax" value="0.2" />
+  <Property name="HandSwimDecayTime" value="5" />
+  <Property name="HandSwimForce" value="50" />
+  <Property name="HandSwimMaxForce" value="100" />
+  <Property name="HandSwimEnabled" value="False" />
+  <Property name="HmdTurnThreshold" value="0.1" />
+  <Property name="HmdTurnAngle" value="45" />
+  <Property name="HmdTurnAnglePad" value="45" />
+  <Property name="TeleportInstantTravelDistance" value="10" />
+  <Property name="TeleportDirectionAltHandRange" value="0.5" />
+  <Property name="TeleportMotionOffsetAmount" value="0.1" />
+  <Property name="TeleportMotionOffsetUp" value="0" />
+  <Property name="TeleportTotalTime" value="0.15" />
+  <Property name="NoShadowMaterial" value="MODELS/COMMON/CHARACTERS/PLAYER/MATERIALS/PLAYER.MATERIAL.MBIN" />
+  <Property name="HolsterGrabRadius" value="0.5" />
+  <Property name="HolsterGrabFrontOffset" value="0.1" />
+  <Property name="HolsterScale" value="0.6" />
+  <Property name="HolsterRotY" value="-90" />
+  <Property name="HolsterRotZ" value="90" />
+  <Property name="HolsterHold" value="False" />
+  <Property name="HolsterOffset" value="Vector3f.xml">
     <Property name="x" value="-0.2" />
     <Property name="y" value="0.1" />
     <Property name="z" value="-0.08" />
   </Property>
-  <Property name="Unknown0x6E0" value="-0.2" />
-  <Property name="Unknown0x6E4" value="0.25" />
+  <Property name="HeadBinocularsOffset" value="-0.2" />
+  <Property name="HeadBinocularsRadius" value="0.25" />
   <Property name="DebugSearchGroup" value="BONES" />
   <Property name="SearchGroupIconColour" value="Colour.xml">
     <Property name="R" value="0.254" />
@@ -552,17 +544,17 @@
   <Property name="BinocularRangePlanet" value="1000" />
   <Property name="BinocularRangeSpace" value="10000" />
   <Property name="MinBinocActiveTime" value="0.6" />
-  <Property name="Unknown0x924" value="2" />
+  <Property name="BinocularCreatureCastSphereSize" value="2" />
   <Property name="RobotMultiplierWithFriends" value="2" />
   <Property name="DroneStartLocationRadius" value="3000" />
   <Property name="ShipSummonLastSafeMargin" value="20" />
+  <Property name="FreighterSpawnedOnYouFadeInTime" value="1" />
   <Property name="CreativeModeDeathFadeInTime" value="1" />
   <Property name="CreativeModeDeathFadeOutTime" value="1" />
-  <Property name="Unknown0x93C" value="1" />
-  <Property name="Unknown0x940" value="True" />
-  <Property name="Unknown0x944" value="0.5" />
-  <Property name="Unknown0x948" value="0.2" />
-  <Property name="Unknown0x94C" value="0.3" />
+  <Property name="CreatureRideFade" value="True" />
+  <Property name="CreatureRideFadeInTime" value="0.5" />
+  <Property name="CreatureRideFadeOutTime" value="0.2" />
+  <Property name="HMDResetFlashTime" value="0.3" />
   <Property name="NumberOfWarpsRequiredForFreightersToSpawn" value="2" />
   <Property name="SpawningDistanceBetweenPlayersAfterWarp" value="1000" />
   <Property name="SpawningSpaceBattleLookOffset" value="1000" />
@@ -602,8 +594,8 @@
   <Property name="GhostbusterSpeed3" value="600" />
   <Property name="GhostbusterFreq3" value="3" />
   <Property name="GhostbusterAmp3" value="0.6" />
+  <Property name="FireButtonReloadsWeapon" value="True" />
   <Property name="WeaponZoomEnabled" value="True" />
-  <Property name="Unknown0x9E9" value="True" />
   <Property name="WeaponZoomFOV" value="0.7" />
   <Property name="WeaponZoomRecoilMultiplier" value="2" />
   <Property name="WeaponZoomVertRotation" value="8" />
@@ -627,7 +619,7 @@
   <Property name="CockpitEjectTestSphereRange" value="2" />
   <Property name="CockpitEjectSideTestRange" value="1.5" />
   <Property name="WeaponShotgunSlowdown" value="0.7" />
-  <Property name="MouseSmoothMode" value="1" />
+  <Property name="MouseSmoothMode" value="Sprung" />
   <Property name="MouseSpringStrength" value="Vector2f.xml">
     <Property name="x" value="0.03" />
     <Property name="y" value="0.09" />
@@ -669,7 +661,7 @@
     <Property name="B" value="1" />
     <Property name="A" value="1" />
   </Property>
-  <Property name="TerrainEditorMuzzleColourFlattening" value="Colour.xml">
+  <Property name="TerrainEditorMuzzleColourFlatten" value="Colour.xml">
     <Property name="R" value="1" />
     <Property name="G" value="0.684" />
     <Property name="B" value="0.07" />
@@ -737,26 +729,26 @@
   </Property>
   <Property name="JetpackFillRate" value="0.7" />
   <Property name="JetpackFillRateHardMode" value="0.2" />
-  <Property name="Unknown0xBAC" value="0.25" />
+  <Property name="JetpackFillRateMidair" value="0.25" />
   <Property name="JetpackFillRateSpaceStationMultiplier" value="5" />
-  <Property name="Unknown0xBB4" value="5" />
-  <Property name="Unknown0xBB8" value="20" />
+  <Property name="JetpackFillRateFleetMultiplier" value="5" />
+  <Property name="JetpackFillRateNexusMultiplier" value="20" />
   <Property name="JetpackUpForceDeadPlanetExtra" value="10" />
   <Property name="JetpackForceDeadPlanetExtra" value="15" />
   <Property name="JetpackIgnitionForceDeadPlanetExtra" value="55" />
-  <Property name="Unknown0xBC8" value="0" />
-  <Property name="Unknown0xBCC" value="0" />
-  <Property name="Unknown0xBD0" value="40" />
-  <Property name="Unknown0xBD4" value="30" />
-  <Property name="Unknown0xBD8" value="15" />
-  <Property name="Unknown0xBDC" value="10" />
-  <Property name="Unknown0xBE0" value="0.3" />
+  <Property name="JoystickOrientationTrimAltOc" value="0" />
+  <Property name="JoystickOrientationTrimAltOp" value="0" />
+  <Property name="SpaceJetpackForce" value="40" />
+  <Property name="SpaceJetpackUpForce" value="30" />
+  <Property name="SpaceJetpackIgnitionForce" value="15" />
+  <Property name="SpaceJetpackMaxSpeed" value="10" />
+  <Property name="SpaceJetpackDrainRate" value="0.3" />
   <Property name="EnableHeadMovements" value="True" />
   <Property name="ClampPitch" value="False" />
   <Property name="DamageRepairFactor" value="0.5" />
   <Property name="DamageRepairFactorHardMode" value="0.5" />
-  <Property name="Unknown0xBF0" value="1.6" />
-  <Property name="Unknown0xBF4" value="25" />
+  <Property name="VRModeHazardTimeMultiplier" value="1.6" />
+  <Property name="VRStartHazardTimeMultiplier" value="25" />
   <Property name="NormalModeHazardTimeMultiplier" value="0.9" />
   <Property name="NormalModeHazardDamageRateMultiplier" value="0.8" />
   <Property name="NormalModeHazardDamageWoundRateMultiplier" value="0.8" />
@@ -767,7 +759,7 @@
   <Property name="HardModeHazardDamageWoundRateMultiplier" value="0.5" />
   <Property name="HardModeSubstanceRewardMultiplier" value="0.75" />
   <Property name="HardModeHazardRechargeUnderground" value="3.5" />
-  <Property name="Unknown0xC20" value="3" />
+  <Property name="VehicleHazardDampingModifier" value="3" />
   <Property name="FreighterProbeScanTime" value="5" />
   <Property name="MaxNumDestroyEffects" value="8" />
   <Property name="MinNumDestroyEffects" value="3" />
@@ -787,8 +779,8 @@
   <Property name="MouseCrosshairVisible" value="True" />
   <Property name="MouseMaxLength" value="450" />
   <Property name="MouseDeadZone" value="30" />
-  <Property name="Unknown0xC70" value="220" />
-  <Property name="Unknown0xC74" value="20" />
+  <Property name="MouseMaxLengthVehicle" value="220" />
+  <Property name="MouseDeadZoneVehicle" value="20" />
   <Property name="MouseAimZone" value="120" />
   <Property name="MouseCrosshairMaxAlpha" value="1" />
   <Property name="MouseCrosshairAlphaFade" value="20" />
@@ -797,10 +789,10 @@
   <Property name="MouseCrosshairLineWidth" value="2" />
   <Property name="MouseCrosshairShipStrength" value="2" />
   <Property name="MouseCrosshairMultiplier" value="1" />
-  <Property name="Unknown0xC98" value="-0.5" />
-  <Property name="Unknown0xC9C" value="0.5" />
-  <Property name="Unknown0xCA0" value="0.65" />
-  <Property name="Unknown0xCA4" value="-0.1" />
+  <Property name="MaximumCrouchVR" value="-0.5" />
+  <Property name="MaximumHeadHeightIncreaseVR" value="0.5" />
+  <Property name="MaximumHorizontalOffsetVR" value="0.65" />
+  <Property name="CrouchHeightToDisableLegBlendingVR" value="-0.1" />
   <Property name="UseEnergy" value="True" />
   <Property name="InventoryDamage" value="True" />
   <Property name="NeverPreyedOn" value="False" />
@@ -856,24 +848,23 @@
   <Property name="TraderStayCloseLockSpread" value="20" />
   <Property name="TraderStayCloseLockSpreadAdd" value="10" />
   <Property name="TraderStayCloseLockSpreadTime" value="5" />
-  <Property name="Unknown0xDB8" value="0" />
-  <Property name="Unknown0xDBC" value="0" />
-  <Property name="Unknown0xDC0" value="5" />
-  <Property name="Unknown0xDC4" value="5" />
-  <Property name="Unknown0xDC8" value="0" />
-  <Property name="Unknown0xDCC" value="0" />
+  <Property name="TraderStayCloseLockBaseOffset" value="Vector3f.xml">
+    <Property name="x" value="5" />
+    <Property name="y" value="5" />
+    <Property name="z" value="0" />
+  </Property>
   <Property name="TraderHealthFightThreshold" value="75" />
   <Property name="TraderCommunicationBanMinTime" value="120" />
   <Property name="TraderCommunicationBanMaxTime" value="180" />
-  <Property name="Unknown0xDDC" value="1" />
-  <Property name="Unknown0xDE0" value="9" />
-  <Property name="Unknown0xDE4" value="20" />
-  <Property name="Unknown0xDE8" value="1" />
-  <Property name="Unknown0xDEC" value="1500" />
-  <Property name="Unknown0xDF0" value="500" />
-  <Property name="Unknown0xDF4" value="2000" />
-  <Property name="Unknown0xDF8" value="0.3" />
-  <Property name="Unknown0xE00" value="SPACE_EGG" />
+  <Property name="PulseEncounterMinTimeInPulse" value="1" />
+  <Property name="PulseEncounterProbeTime" value="9" />
+  <Property name="PulseEncounterProbeTimeRare" value="20" />
+  <Property name="PulseEncounterMarkerShowAngle" value="1" />
+  <Property name="PulseEncounterMarkerAlwaysShowDistance" value="1500" />
+  <Property name="PulseEncounterMarkerAlwaysHideDistance" value="500" />
+  <Property name="PulseEncounterSpawnEffectDistance" value="2000" />
+  <Property name="PulseEncounterSpawnEffectTime" value="0.3" />
+  <Property name="PulseEncounterSpaceEggID" value="SPACE_EGG" />
   <Property name="LaserMiningDamageMultiplier" value="1" />
   <Property name="ShieldRechargeMinTimeSinceDamage" value="35" />
   <Property name="ShieldRechargeRate" value="15" />
@@ -887,7 +878,7 @@
   <Property name="GunBaseClipSize" value="0" />
   <Property name="GrenadeBaseClipSize" value="100" />
   <Property name="MeleeCooldown" value="0.5" />
-  <Property name="ChargeMeleeCooldown" value="0.9" />
+  <Property name="ChargeMeleeCooldown" value="0.6" />
   <Property name="MeleeDistance" value="2.8" />
   <Property name="MeleeDistance3P" value="1.8" />
   <Property name="MeleeRadius" value="0.75" />
@@ -896,12 +887,12 @@
   <Property name="MeleeSpeedDamageBoost" value="1.2" />
   <Property name="MeleeSpeedBoostRangeMultiplier" value="1.2" />
   <Property name="MeleeStaminaDrain" value="1.2" />
-  <Property name="Unknown0xE68" value="0.5" />
-  <Property name="Unknown0xE6C" value="0.05" />
-  <Property name="Unknown0xE70" value="3" />
-  <Property name="Unknown0xE74" value="0.5" />
-  <Property name="Unknown0xE78" value="3" />
-  <Property name="Unknown0xE80" value="GcScanEffectData.xml">
+  <Property name="MeleeCooldownAlt" value="0.4" />
+  <Property name="MeleePosDelta" value="0.05" />
+  <Property name="MeleeDamageScale" value="3" />
+  <Property name="MeleeRadiusAlt" value="0.5" />
+  <Property name="MeleeDistanceAlt" value="3" />
+  <Property name="MeleeHitEffect" value="GcScanEffectData.xml">
     <Property name="Id" value="" />
     <Property name="ScanEffectType" value="Creature" />
     <Property name="Colour" value="Colour.xml">
@@ -991,10 +982,10 @@
     <Property value="120" />
     <Property value="-1" />
   </Property>
-  <Property name="ControlModes" value="0" />
+  <Property name="ControlModes" value="Normal" />
   <Property name="InteractionScanRange" value="80" />
   <Property name="InteractionButtonRange" value="10" />
-  <Property name="Unknown0xFDC" value="30" />
+  <Property name="InteractionButtonRangeVehicle" value="30" />
   <Property name="InteractionFocusTime" value="0.5" />
   <Property name="InteractionSubstanceRange" value="40" />
   <Property name="HeatShieldTime" value="200" />
@@ -1142,8 +1133,8 @@
   </Property>
   <Property name="CrosshairTime" value="0.5" />
   <Property name="BeaconActivateRange" value="20" />
-  <Property name="UnknownInt0x11DC" value="10" />
-  <Property name="UnknownInt0x11E0" value="30" />
+  <Property name="ExperienceMaxCivilianShipSpawnsOnPlanet" value="10" />
+  <Property name="ExperienceMaxCivilianShipSpawnsInSpace" value="30" />
   <Property name="ExperiencePirateFreighterAttackRange" value="40000" />
   <Property name="ExperienceWalkerSize" value="4" />
   <Property name="ExperienceInterestingShipDistance" value="2000" />
@@ -1332,21 +1323,18 @@
   <Property name="GrenadeTerrainDeformRadius" value="4" />
   <Property name="LaserBeamTerrainDeformRadius" value="2" />
   <Property name="LaserBeamTerrainDeformVariance" value="0.4" />
-  <Property name="LaserBeamOverheatTime" value="1.2" />
-  <Property name="LaserBeamAmmoUseTime" value="0.5" />
-  <Property name="ReloadButtonHoldTimeToHolster" value="0.25" />
-  <Property name="WeaponChangeModeTime" value="0" />
-  <Property name="WeaponBarrelOffset" value="Vector4f.xml">
+  <Property name="LaserBeamAmmoUseTime" value="1.2" />
+  <Property name="ReloadButtonHoldTimeToHolster" value="0.5" />
+  <Property name="WeaponChangeModeTime" value="0.25" />
+  <Property name="WeaponBarrelOffset" value="Vector3f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="0" />
     <Property name="z" value="0" />
-    <Property name="t" value="0" />
   </Property>
-  <Property name="WeaponOffset" value="Vector4f.xml">
+  <Property name="WeaponOffset" value="Vector3f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="-0.06" />
     <Property name="z" value="0.02" />
-    <Property name="t" value="0" />
   </Property>
   <Property name="WeaponLowerDelay" value="3" />
   <Property name="WeaponHolsterDelay" value="6" />
