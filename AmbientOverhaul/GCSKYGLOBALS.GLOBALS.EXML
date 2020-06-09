@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (2.41.0)-->
+<!--File created using MBINCompiler version (2.43.0)-->
 <Data template="GcSkyGlobals">
   <Property name="RainbowDistance" value="1300" />
   <Property name="RainbowScale" value="2000" />
@@ -155,9 +155,9 @@
   <Property name="MaxSaturation" value="0.85" />
   <Property name="MinValue" value="0.3" />
   <Property name="MaxValue" value="0.5" />
-  <Property name="MinFogSaturation" value="0.00" />
+  <Property name="MinFogSaturation" value="0" />
   <Property name="MaxFogSaturation" value="0.9" />
-  <Property name="MinFogValue" value="0.0" />
+  <Property name="MinFogValue" value="0" />
   <Property name="MaxFogValue" value="0.99" />
   <Property name="MinColourS" value="0" />
   <Property name="MaxColourS" value="1" />
@@ -569,7 +569,7 @@
     <Property name="DepthOfFieldFade" value="1000" />
     <Property name="IsRaining" value="False" />
   </Property>
- <Property name="SpaceSkyMin" value="GcSpaceSkyProperties.xml">
+  <Property name="SpaceSkyMin" value="GcSpaceSkyProperties.xml">
     <Property name="ColourIndex" value="GcPlanetWeatherColourIndex.xml">
       <Property name="WeatherColourSet" value="Common" />
       <Property name="Index" value="0" />
@@ -1014,7 +1014,7 @@
       <Property name="B" value="0.176" />
       <Property name="A" value="0.1" />
     </Property>
-    <Property name="SkyUpperColour" value="Colour.xml"> <!-- night shadow color -->
+    <Property name="SkyUpperColour" value="Colour.xml">
       <Property name="R" value="0.27" />
       <Property name="G" value="0.27" />
       <Property name="B" value="0.29" />
@@ -1056,7 +1056,7 @@
       <Property name="z" value="1" />
       <Property name="t" value="0" />
     </Property>
-    <Property name="LightColour" value="Colour.xml"> <!-- night moon light color -->
+    <Property name="LightColour" value="Colour.xml">
       <Property name="R" value="0.42" />
       <Property name="G" value="0.42" />
       <Property name="B" value="0.423" />
