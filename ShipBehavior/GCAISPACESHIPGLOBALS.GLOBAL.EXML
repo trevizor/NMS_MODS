@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (2.41.0)-->
+<!--File created using MBINCompiler version (2.43.0)-->
 <Data template="GcAISpaceshipGlobals">
-  <Property name="Unknown0x0" value="5" />
-  <Property name="Unknown0x4" value="3" />
-  <Property name="Unknown0x8" value="3500" />
-  <Property name="TraderHailingEnabled" value="True" />
+  <Property name="MinimumCircleTimeBeforeLanding" value="5" />
+  <Property name="MinimumTimeBetweenOutpostLandings" value="3" />
+  <Property name="VisibleDistance" value="3500" />
+  <Property name="TradersAttackPirates" value="True" />
   <Property name="FreightersAlwaysAttackPlayer" value="False" />
   <Property name="GroundEffectEnabled" value="True" />
   <Property name="AtmosphereEffectEnabled" value="False" />
   <Property name="FillUpOutposts" value="False" />
-  <Property name="Unknown0x14" value="0.4" />
-  <Property name="Unknown0x18" value="5" />
-  <Property name="Unknown0x1C" value="0.6" />
+  <Property name="SalvageTime" value="0.4" />
+  <Property name="SalvageRemovalTime" value="5" />
+  <Property name="SalvageValueMultiplier" value="0.6" />
   <Property name="DockingWaitDistance" value="10" />
   <Property name="MaxNumActiveTraders" value="15" />
   <Property name="MaxNumActiveTraderRadius" value="10000" />
@@ -547,7 +547,7 @@
   <Property name="WitnessSightAngle" value="45" />
   <Property name="FreighterImpactScale" value="5" />
   <Property name="FreighterAlertThreshold" value="10" />
-  <Property name="Unknown0x984" value="3000" />
+  <Property name="FreighterAttackDisengageDistance" value="3000" />
   <Property name="FreighterAttackAlertThreshold" value="8" />
   <Property name="FreighterAlertTimeOutRate" value="0" />
   <Property name="FreighterAlertTimeOutMinTime" value="0" />
@@ -831,136 +831,138 @@
     <Property name="BrakeForce" value="0.5" />
     <Property name="AlignForce" value="5" />
   </Property>
-  <Property name="Unknown0xDF0" value="GcAIShipDebugSpawnData.xml">
-    <Property name="Position" value="Vector3f.xml">
-      <Property name="x" value="-921929.2" />
-      <Property name="y" value="60968.2461" />
-      <Property name="z" value="394782.156" />
+  <Property name="DebugShipSpawns">
+    <Property value="GcAIShipDebugSpawnData.xml">
+      <Property name="Position" value="Vector3f.xml">
+        <Property name="x" value="-921929.2" />
+        <Property name="y" value="60968.2461" />
+        <Property name="z" value="394782.156" />
+      </Property>
+      <Property name="Facing" value="Vector3f.xml">
+        <Property name="x" value="0.01471" />
+        <Property name="y" value="-0.941322" />
+        <Property name="z" value="0.902784" />
+      </Property>
+      <Property name="Up" value="Vector3f.xml">
+        <Property name="x" value="1.302395" />
+        <Property name="y" value="-0.037728" />
+        <Property name="z" value="-0.06056" />
+      </Property>
+      <Property name="FlightDir" value="Vector3f.xml">
+        <Property name="x" value="0.5" />
+        <Property name="y" value="1" />
+        <Property name="z" value="1" />
+      </Property>
+      <Property name="Speed" value="5" />
+      <Property name="IgnitionDelay" value="1" />
+      <Property name="TakeOffDelay" value="1" />
+      <Property name="HoverTime" value="0.8" />
+      <Property name="HoverHeight" value="60" />
+      <Property name="WarpOutTime" value="3" />
+      <Property name="SpecificModel" value="MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN" />
+      <Property name="Seed" value="GcSeed.xml">
+        <Property name="Seed" value="-9143994965287652304" />
+        <Property name="UseSeedValue" value="True" />
+      </Property>
     </Property>
-    <Property name="Facing" value="Vector3f.xml">
-      <Property name="x" value="0.01471" />
-      <Property name="y" value="-0.941322" />
-      <Property name="z" value="0.902784" />
+    <Property value="GcAIShipDebugSpawnData.xml">
+      <Property name="Position" value="Vector3f.xml">
+        <Property name="x" value="-921928.3" />
+        <Property name="y" value="60988.45" />
+        <Property name="z" value="394808.344" />
+      </Property>
+      <Property name="Facing" value="Vector3f.xml">
+        <Property name="x" value="0.105348" />
+        <Property name="y" value="-1.215184" />
+        <Property name="z" value="0.462116" />
+      </Property>
+      <Property name="Up" value="Vector3f.xml">
+        <Property name="x" value="1.290577" />
+        <Property name="y" value="0.041772" />
+        <Property name="z" value="-0.184367" />
+      </Property>
+      <Property name="FlightDir" value="Vector3f.xml">
+        <Property name="x" value="-0.756727" />
+        <Property name="y" value="0.508068" />
+        <Property name="z" value="-0.411378" />
+      </Property>
+      <Property name="Speed" value="5" />
+      <Property name="IgnitionDelay" value="1" />
+      <Property name="TakeOffDelay" value="1" />
+      <Property name="HoverTime" value="0.8" />
+      <Property name="HoverHeight" value="60" />
+      <Property name="WarpOutTime" value="3" />
+      <Property name="SpecificModel" value="" />
+      <Property name="Seed" value="GcSeed.xml">
+        <Property name="Seed" value="0" />
+        <Property name="UseSeedValue" value="True" />
+      </Property>
     </Property>
-    <Property name="Up" value="Vector3f.xml">
-      <Property name="x" value="1.302395" />
-      <Property name="y" value="-0.037728" />
-      <Property name="z" value="-0.06056" />
+    <Property value="GcAIShipDebugSpawnData.xml">
+      <Property name="Position" value="Vector3f.xml">
+        <Property name="x" value="-921928.3" />
+        <Property name="y" value="60988.45" />
+        <Property name="z" value="394808.344" />
+      </Property>
+      <Property name="Facing" value="Vector3f.xml">
+        <Property name="x" value="0.105348" />
+        <Property name="y" value="-1.215184" />
+        <Property name="z" value="0.462116" />
+      </Property>
+      <Property name="Up" value="Vector3f.xml">
+        <Property name="x" value="1.290577" />
+        <Property name="y" value="0.041772" />
+        <Property name="z" value="-0.184367" />
+      </Property>
+      <Property name="FlightDir" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
+      <Property name="Speed" value="5" />
+      <Property name="IgnitionDelay" value="1" />
+      <Property name="TakeOffDelay" value="1" />
+      <Property name="HoverTime" value="0.8" />
+      <Property name="HoverHeight" value="60" />
+      <Property name="WarpOutTime" value="3" />
+      <Property name="SpecificModel" value="" />
+      <Property name="Seed" value="GcSeed.xml">
+        <Property name="Seed" value="0" />
+        <Property name="UseSeedValue" value="True" />
+      </Property>
     </Property>
-    <Property name="FlightDir" value="Vector3f.xml">
-      <Property name="x" value="0.5" />
-      <Property name="y" value="1" />
-      <Property name="z" value="1" />
-    </Property>
-    <Property name="Speed" value="5" />
-    <Property name="IgnitionDelay" value="1" />
-    <Property name="TakeOffDelay" value="1" />
-    <Property name="HoverTime" value="0.8" />
-    <Property name="HoverHeight" value="60" />
-    <Property name="WarpOutTime" value="3" />
-    <Property name="SpecificModel" value="MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN" />
-    <Property name="Seed" value="GcSeed.xml">
-      <Property name="Seed" value="-9143994965287652304" />
-      <Property name="UseSeedValue" value="True" />
-    </Property>
-  </Property>
-  <Property name="Unknown0xEE0" value="GcAIShipDebugSpawnData.xml">
-    <Property name="Position" value="Vector3f.xml">
-      <Property name="x" value="-921928.3" />
-      <Property name="y" value="60988.45" />
-      <Property name="z" value="394808.344" />
-    </Property>
-    <Property name="Facing" value="Vector3f.xml">
-      <Property name="x" value="0.105348" />
-      <Property name="y" value="-1.215184" />
-      <Property name="z" value="0.462116" />
-    </Property>
-    <Property name="Up" value="Vector3f.xml">
-      <Property name="x" value="1.290577" />
-      <Property name="y" value="0.041772" />
-      <Property name="z" value="-0.184367" />
-    </Property>
-    <Property name="FlightDir" value="Vector3f.xml">
-      <Property name="x" value="-0.756727" />
-      <Property name="y" value="0.508068" />
-      <Property name="z" value="-0.411378" />
-    </Property>
-    <Property name="Speed" value="5" />
-    <Property name="IgnitionDelay" value="1" />
-    <Property name="TakeOffDelay" value="1" />
-    <Property name="HoverTime" value="0.8" />
-    <Property name="HoverHeight" value="60" />
-    <Property name="WarpOutTime" value="3" />
-    <Property name="SpecificModel" value="" />
-    <Property name="Seed" value="GcSeed.xml">
-      <Property name="Seed" value="0" />
-      <Property name="UseSeedValue" value="True" />
-    </Property>
-  </Property>
-  <Property name="Unknown0xFD0" value="GcAIShipDebugSpawnData.xml">
-    <Property name="Position" value="Vector3f.xml">
-      <Property name="x" value="-921928.3" />
-      <Property name="y" value="60988.45" />
-      <Property name="z" value="394808.344" />
-    </Property>
-    <Property name="Facing" value="Vector3f.xml">
-      <Property name="x" value="0.105348" />
-      <Property name="y" value="-1.215184" />
-      <Property name="z" value="0.462116" />
-    </Property>
-    <Property name="Up" value="Vector3f.xml">
-      <Property name="x" value="1.290577" />
-      <Property name="y" value="0.041772" />
-      <Property name="z" value="-0.184367" />
-    </Property>
-    <Property name="FlightDir" value="Vector3f.xml">
-      <Property name="x" value="0" />
-      <Property name="y" value="0" />
-      <Property name="z" value="0" />
-    </Property>
-    <Property name="Speed" value="5" />
-    <Property name="IgnitionDelay" value="1" />
-    <Property name="TakeOffDelay" value="1" />
-    <Property name="HoverTime" value="0.8" />
-    <Property name="HoverHeight" value="60" />
-    <Property name="WarpOutTime" value="3" />
-    <Property name="SpecificModel" value="" />
-    <Property name="Seed" value="GcSeed.xml">
-      <Property name="Seed" value="0" />
-      <Property name="UseSeedValue" value="True" />
-    </Property>
-  </Property>
-  <Property name="Unknown0x10C0" value="GcAIShipDebugSpawnData.xml">
-    <Property name="Position" value="Vector3f.xml">
-      <Property name="x" value="-921928.3" />
-      <Property name="y" value="60988.45" />
-      <Property name="z" value="394808.344" />
-    </Property>
-    <Property name="Facing" value="Vector3f.xml">
-      <Property name="x" value="0.105348" />
-      <Property name="y" value="-1.215184" />
-      <Property name="z" value="0.462116" />
-    </Property>
-    <Property name="Up" value="Vector3f.xml">
-      <Property name="x" value="1.290577" />
-      <Property name="y" value="0.041772" />
-      <Property name="z" value="-0.184367" />
-    </Property>
-    <Property name="FlightDir" value="Vector3f.xml">
-      <Property name="x" value="0" />
-      <Property name="y" value="0" />
-      <Property name="z" value="0" />
-    </Property>
-    <Property name="Speed" value="5" />
-    <Property name="IgnitionDelay" value="1" />
-    <Property name="TakeOffDelay" value="1" />
-    <Property name="HoverTime" value="0.8" />
-    <Property name="HoverHeight" value="60" />
-    <Property name="WarpOutTime" value="3" />
-    <Property name="SpecificModel" value="" />
-    <Property name="Seed" value="GcSeed.xml">
-      <Property name="Seed" value="0" />
-      <Property name="UseSeedValue" value="True" />
+    <Property value="GcAIShipDebugSpawnData.xml">
+      <Property name="Position" value="Vector3f.xml">
+        <Property name="x" value="-921928.3" />
+        <Property name="y" value="60988.45" />
+        <Property name="z" value="394808.344" />
+      </Property>
+      <Property name="Facing" value="Vector3f.xml">
+        <Property name="x" value="0.105348" />
+        <Property name="y" value="-1.215184" />
+        <Property name="z" value="0.462116" />
+      </Property>
+      <Property name="Up" value="Vector3f.xml">
+        <Property name="x" value="1.290577" />
+        <Property name="y" value="0.041772" />
+        <Property name="z" value="-0.184367" />
+      </Property>
+      <Property name="FlightDir" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
+      <Property name="Speed" value="5" />
+      <Property name="IgnitionDelay" value="1" />
+      <Property name="TakeOffDelay" value="1" />
+      <Property name="HoverTime" value="0.8" />
+      <Property name="HoverHeight" value="60" />
+      <Property name="WarpOutTime" value="3" />
+      <Property name="SpecificModel" value="" />
+      <Property name="Seed" value="GcSeed.xml">
+        <Property name="Seed" value="0" />
+        <Property name="UseSeedValue" value="True" />
+      </Property>
     </Property>
   </Property>
 </Data>
