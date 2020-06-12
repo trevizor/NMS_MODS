@@ -10,13 +10,13 @@
   <Property name="TeleportDisappearEffectSpeed" value="4" />
   <Property name="RecenterViewWhenEnteringShip" value="True" />
   <Property name="UseInitialFacingForMoveDirection" value="True" />
-  <Property name="EmulateNoHandsForHandScreens" value="True" />
+  <Property name="EmulateNoHandsForHandScreens" value="False" />
   <Property name="BinocularAimOffset" value="1" />
   <Property name="BinocularScopeScale" value="0.3" />
   <Property name="MaxArmExtension" value="0.99" />
   <Property name="MinArmExtension" value="1.5" />
   <Property name="SummonArcRange" value="40" />
-  <Property name="InteractionAimOffset" value="5" />
+  <Property name="InteractionAimOffset" value="3" />
   <Property name="QuickMenuLauncherTransforms" value="GcProjectorOffsetData.xml">
     <Property name="Scale" value="0.045" />
     <Property name="Active" value="GcInWorldUIScreenData.xml">
@@ -447,42 +447,36 @@
   </Property>
   <Property name="DebugExperienceRender" value="False" />
   <Property name="DebugDroneScanPlayer" value="False" />
-  <Property name="DebugDroneSpawn" value="Vector4f.xml">
+  <Property name="DebugDroneSpawn" value="Vector3f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="0" />
     <Property name="z" value="0" />
-    <Property name="t" value="0" />
   </Property>
-  <Property name="DebugDroneTarget" value="Vector4f.xml">
+  <Property name="DebugDroneTarget" value="Vector3f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="0" />
     <Property name="z" value="0" />
-    <Property name="t" value="0" />
   </Property>
   <Property name="DebugNumDrones" value="2" />
-  <Property name="DebugWalkerSpawn" value="Vector4f.xml">
+  <Property name="DebugWalkerSpawn" value="Vector3f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="1" />
     <Property name="z" value="0" />
-    <Property name="t" value="0" />
   </Property>
-  <Property name="DebugWalkerTarget" value="Vector4f.xml">
+  <Property name="DebugWalkerTarget" value="Vector3f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="0" />
     <Property name="z" value="0" />
-    <Property name="t" value="0" />
   </Property>
-  <Property name="DebugFlybyTarget" value="Vector4f.xml">
+  <Property name="DebugFlybyTarget" value="Vector3f.xml">
     <Property name="x" value="62000.39" />
     <Property name="y" value="-28276.99" />
     <Property name="z" value="73562.53" />
-    <Property name="t" value="0" />
   </Property>
-  <Property name="DebugFlybyDir" value="Vector4f.xml">
+  <Property name="DebugFlybyDir" value="Vector3f.xml">
     <Property name="x" value="0.293965" />
     <Property name="y" value="-0.899766" />
     <Property name="z" value="0.3225" />
-    <Property name="t" value="0" />
   </Property>
   <Property name="DebugFlybyRange" value="300" />
   <Property name="DebugFlybySeed" value="GcSeed.xml">
@@ -529,7 +523,7 @@
   <Property name="UnderwaterJetpackForce" value="25" />
   <Property name="UnderwaterMaxJetpackEscapeSpeed" value="8" />
   <Property name="UnderwaterJetpackEscapeForce" value="20" />
-  <Property name="UnderwaterBrake" value="3" />
+  <Property name="UnderwaterBrake" value="1" />
   <Property name="UnderwaterFloat" value="0" />
   <Property name="UnderwaterFloatForce" value="15" />
   <Property name="UnderwaterFloatRange" value="2" />
@@ -983,6 +977,7 @@
     <Property value="-1" />
   </Property>
   <Property name="ControlModes" value="Normal" />
+  <Property name="PlayerViewTargetRange" value="100" />
   <Property name="InteractionScanRange" value="80" />
   <Property name="InteractionButtonRange" value="10" />
   <Property name="InteractionButtonRangeVehicle" value="30" />
@@ -1402,15 +1397,15 @@
   <Property name="AnimWalkBlendPoint" value="0.05" />
   <Property name="AnimRunBlendPoint" value="0.1" />
   <Property name="MaxSlopeAngle" value="89" />
-  <Property name="SlopeSlidingSpeed" value="-9" />
-  <Property name="SlopeSlideBrake" value="11" />
+  <Property name="SlopeSlidingSpeed" value="-10" />
+  <Property name="SlopeSlideBrake" value="4" />
   <Property name="MinSlideTime" value="0.1" />
   <Property name="MaxWalkableSlopeAngle" value="43" />
-  <Property name="MinSpidermanSlopeAngle" value="38" />
+  <Property name="MinSpidermanSlopeAngle" value="36" />
   <Property name="MinTimeToHoldSpidermanPose" value="0.1" />
-  <Property name="MaxSpidermanSlopeAngle" value="65" />
+  <Property name="MaxSpidermanSlopeAngle" value="90" />
   <Property name="MaxClingableSlopeAngle" value="81" />
-  <Property name="MinimumPushOffForceToSlide" value="0.2" />
+  <Property name="MinimumPushOffForceToSlide" value="0.45" />
   <Property name="FullClipReloadSpeedMultiplier" value="2" />
   <Property name="ReloadTapButtonSpeedIncrease" value="1" />
   <Property name="ClingBrakeMultiplier" value="1" />
