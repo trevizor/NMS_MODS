@@ -1,21 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (2.0.11)-->
+<!--File created using MBINCompiler version (2.51.0)-->
 <Data template="GcNGuiLayerData">
   <Property name="ElementData" value="GcNGuiElementData.xml">
     <Property name="ID" value="" />
     <Property name="PresetID" value="" />
-    <Property name="IsHidden" value="True" />
+    <Property name="IsHidden" value="False" />
     <Property name="Layout" value="GcNGuiLayoutData.xml">
-      <Property name="PositionX" value="1920" />
-      <Property name="PositionY" value="1080" />
-      <Property name="Width" value="0" />
+      <Property name="PositionX" value="100" />
+      <Property name="PositionY" value="100" />
+      <Property name="Width" value="1200" />
       <Property name="WidthPercentage" value="False" />
-      <Property name="Height" value="0" />
+      <Property name="Height" value="600" />
       <Property name="HeightPercentage" value="False" />
       <Property name="ConstrainProportions" value="False" />
       <Property name="ConstrainAspect" value="1" />
+      <Property name="ForceAspect" value="False" />
       <Property name="Anchor" value="True" />
-      <Property name="AnchorPercent" value="False" />
+      <Property name="AnchorPercent" value="True" />
       <Property name="SameLine" value="False" />
       <Property name="Align" value="TkNGuiAlignment.xml">
         <Property name="Vertical" value="Bottom" />
@@ -220,6 +221,7 @@
           <Property name="HeightPercentage" value="True" />
           <Property name="ConstrainProportions" value="False" />
           <Property name="ConstrainAspect" value="1" />
+          <Property name="ForceAspect" value="False" />
           <Property name="Anchor" value="True" />
           <Property name="AnchorPercent" value="False" />
           <Property name="SameLine" value="False" />
@@ -418,14 +420,15 @@
             <Property name="PresetID" value="" />
             <Property name="IsHidden" value="True" />
             <Property name="Layout" value="GcNGuiLayoutData.xml">
-              <Property name="PositionX" value="107.0833" />
-              <Property name="PositionY" value="23.33333" />
+              <Property name="PositionX" value="107.083336" />
+              <Property name="PositionY" value="23.3333321" />
               <Property name="Width" value="1200" />
               <Property name="WidthPercentage" value="False" />
               <Property name="Height" value="62" />
               <Property name="HeightPercentage" value="True" />
               <Property name="ConstrainProportions" value="False" />
               <Property name="ConstrainAspect" value="1" />
+              <Property name="ForceAspect" value="False" />
               <Property name="Anchor" value="True" />
               <Property name="AnchorPercent" value="True" />
               <Property name="SameLine" value="False" />
@@ -632,6 +635,7 @@
                   <Property name="HeightPercentage" value="False" />
                   <Property name="ConstrainProportions" value="False" />
                   <Property name="ConstrainAspect" value="1" />
+                  <Property name="ForceAspect" value="False" />
                   <Property name="Anchor" value="True" />
                   <Property name="AnchorPercent" value="False" />
                   <Property name="SameLine" value="False" />
@@ -940,222 +944,13 @@
               <Property name="Special" value="True" />
               <Property name="VROverrides" />
             </Property>
-            <Property value="GcNGuiLayerData.xml">
-              <Property name="ElementData" value="GcNGuiElementData.xml">
-                <Property name="ID" value="BODY_BACKGROUND" />
-                <Property name="PresetID" value="" />
-                <Property name="IsHidden" value="False" />
-                <Property name="Layout" value="GcNGuiLayoutData.xml">
-                  <Property name="PositionX" value="1119" />
-                  <Property name="PositionY" value="231" />
-                  <Property name="Width" value="100" />
-                  <Property name="WidthPercentage" value="False" />
-                  <Property name="Height" value="50" />
-                  <Property name="HeightPercentage" value="False" />
-                  <Property name="ConstrainProportions" value="False" />
-                  <Property name="ConstrainAspect" value="1" />
-                  <Property name="Anchor" value="True" />
-                  <Property name="AnchorPercent" value="False" />
-                  <Property name="SameLine" value="False" />
-                  <Property name="Align" value="TkNGuiAlignment.xml">
-                    <Property name="Vertical" value="Top" />
-                    <Property name="Horizontal" value="Right" />
-                  </Property>
-                  <Property name="SlowCursorOnHover" value="False" />
-                  <Property name="MaxWidth" value="0" />
-                  <Property name="VROverrides" />
-                </Property>
-              </Property>
-              <Property name="Style" value="TkNGuiGraphicStyle.xml">
-                <Property name="Default" value="TkNGuiGraphicStyleData.xml">
-                  <Property name="PaddingX" value="0" />
-                  <Property name="PaddingY" value="0" />
-                  <Property name="MarginX" value="0" />
-                  <Property name="MarginY" value="0" />
-                  <Property name="Colour" value="Colour.xml">
-                    <Property name="R" value="0" />
-                    <Property name="G" value="0" />
-                    <Property name="B" value="0" />
-                    <Property name="A" value="0.3" />
-                  </Property>
-                  <Property name="IconColour" value="Colour.xml">
-                    <Property name="R" value="1" />
-                    <Property name="G" value="1" />
-                    <Property name="B" value="1" />
-                    <Property name="A" value="1" />
-                  </Property>
-                  <Property name="StrokeColour" value="Colour.xml">
-                    <Property name="R" value="1" />
-                    <Property name="G" value="1" />
-                    <Property name="B" value="1" />
-                    <Property name="A" value="1" />
-                  </Property>
-                  <Property name="Shape" value="Rectangle" />
-                  <Property name="SolidColour" value="True" />
-                  <Property name="HasDropShadow" value="False" />
-                  <Property name="HasOuterGradient" value="False" />
-                  <Property name="HasInnerGradient" value="False" />
-                  <Property name="Gradient" value="None" />
-                  <Property name="GradientStartOffset" value="0" />
-                  <Property name="GradientEndOffset" value="0" />
-                  <Property name="GradientOffsetPercent" value="False" />
-                  <Property name="GradientColour" value="Colour.xml">
-                    <Property name="R" value="0" />
-                    <Property name="G" value="0" />
-                    <Property name="B" value="0" />
-                    <Property name="A" value="1" />
-                  </Property>
-                  <Property name="CornerRadius" value="6" />
-                  <Property name="StrokeSize" value="0" />
-                  <Property name="Image" value="0" />
-                  <Property name="Icon" value="0" />
-                  <Property name="StrokeGradient" value="False" />
-                  <Property name="StrokeGradientOffset" value="0" />
-                  <Property name="StrokeGradientFeather" value="0" />
-                  <Property name="StrokeGradientColour" value="Colour.xml">
-                    <Property name="R" value="1" />
-                    <Property name="G" value="1" />
-                    <Property name="B" value="1" />
-                    <Property name="A" value="1" />
-                  </Property>
-                </Property>
-                <Property name="Highlight" value="TkNGuiGraphicStyleData.xml">
-                  <Property name="PaddingX" value="0" />
-                  <Property name="PaddingY" value="0" />
-                  <Property name="MarginX" value="0" />
-                  <Property name="MarginY" value="0" />
-                  <Property name="Colour" value="Colour.xml">
-                    <Property name="R" value="0" />
-                    <Property name="G" value="0" />
-                    <Property name="B" value="0" />
-                    <Property name="A" value="0.3" />
-                  </Property>
-                  <Property name="IconColour" value="Colour.xml">
-                    <Property name="R" value="1" />
-                    <Property name="G" value="1" />
-                    <Property name="B" value="1" />
-                    <Property name="A" value="1" />
-                  </Property>
-                  <Property name="StrokeColour" value="Colour.xml">
-                    <Property name="R" value="1" />
-                    <Property name="G" value="1" />
-                    <Property name="B" value="1" />
-                    <Property name="A" value="1" />
-                  </Property>
-                  <Property name="Shape" value="Rectangle" />
-                  <Property name="SolidColour" value="True" />
-                  <Property name="HasDropShadow" value="False" />
-                  <Property name="HasOuterGradient" value="False" />
-                  <Property name="HasInnerGradient" value="False" />
-                  <Property name="Gradient" value="None" />
-                  <Property name="GradientStartOffset" value="0" />
-                  <Property name="GradientEndOffset" value="0" />
-                  <Property name="GradientOffsetPercent" value="False" />
-                  <Property name="GradientColour" value="Colour.xml">
-                    <Property name="R" value="0" />
-                    <Property name="G" value="0" />
-                    <Property name="B" value="0" />
-                    <Property name="A" value="1" />
-                  </Property>
-                  <Property name="CornerRadius" value="6" />
-                  <Property name="StrokeSize" value="0" />
-                  <Property name="Image" value="0" />
-                  <Property name="Icon" value="0" />
-                  <Property name="StrokeGradient" value="False" />
-                  <Property name="StrokeGradientOffset" value="0" />
-                  <Property name="StrokeGradientFeather" value="0" />
-                  <Property name="StrokeGradientColour" value="Colour.xml">
-                    <Property name="R" value="1" />
-                    <Property name="G" value="1" />
-                    <Property name="B" value="1" />
-                    <Property name="A" value="1" />
-                  </Property>
-                </Property>
-                <Property name="Active" value="TkNGuiGraphicStyleData.xml">
-                  <Property name="PaddingX" value="0" />
-                  <Property name="PaddingY" value="0" />
-                  <Property name="MarginX" value="0" />
-                  <Property name="MarginY" value="0" />
-                  <Property name="Colour" value="Colour.xml">
-                    <Property name="R" value="0" />
-                    <Property name="G" value="0" />
-                    <Property name="B" value="0" />
-                    <Property name="A" value="0.3" />
-                  </Property>
-                  <Property name="IconColour" value="Colour.xml">
-                    <Property name="R" value="1" />
-                    <Property name="G" value="1" />
-                    <Property name="B" value="1" />
-                    <Property name="A" value="1" />
-                  </Property>
-                  <Property name="StrokeColour" value="Colour.xml">
-                    <Property name="R" value="1" />
-                    <Property name="G" value="1" />
-                    <Property name="B" value="1" />
-                    <Property name="A" value="1" />
-                  </Property>
-                  <Property name="Shape" value="Rectangle" />
-                  <Property name="SolidColour" value="True" />
-                  <Property name="HasDropShadow" value="False" />
-                  <Property name="HasOuterGradient" value="False" />
-                  <Property name="HasInnerGradient" value="False" />
-                  <Property name="Gradient" value="None" />
-                  <Property name="GradientStartOffset" value="0" />
-                  <Property name="GradientEndOffset" value="0" />
-                  <Property name="GradientOffsetPercent" value="False" />
-                  <Property name="GradientColour" value="Colour.xml">
-                    <Property name="R" value="0" />
-                    <Property name="G" value="0" />
-                    <Property name="B" value="0" />
-                    <Property name="A" value="1" />
-                  </Property>
-                  <Property name="CornerRadius" value="6" />
-                  <Property name="StrokeSize" value="0" />
-                  <Property name="Image" value="0" />
-                  <Property name="Icon" value="0" />
-                  <Property name="StrokeGradient" value="False" />
-                  <Property name="StrokeGradientOffset" value="0" />
-                  <Property name="StrokeGradientFeather" value="0" />
-                  <Property name="StrokeGradientColour" value="Colour.xml">
-                    <Property name="R" value="1" />
-                    <Property name="G" value="1" />
-                    <Property name="B" value="1" />
-                    <Property name="A" value="1" />
-                  </Property>
-                </Property>
-                <Property name="HighlightTime" value="0.1" />
-                <Property name="HighlightScale" value="1" />
-                <Property name="GlobalFade" value="1" />
-                <Property name="Animate" value="CustomWipe" />
-                <Property name="AnimTime" value="0.4" />
-                <Property name="AnimSplit" value="0.4" />
-                <Property name="AnimCurve1" value="TkCurveType.xml">
-                  <Property name="Curve" value="EaseOutQuint" />
-                </Property>
-                <Property name="AnimCurve2" value="TkCurveType.xml">
-                  <Property name="Curve" value="SmoothInOut" />
-                </Property>
-                <Property name="CustomMinStart" value="Vector2f.xml">
-                  <Property name="x" value="1" />
-                  <Property name="y" value="0" />
-                </Property>
-                <Property name="CustomMaxStart" value="Vector2f.xml">
-                  <Property name="x" value="0" />
-                  <Property name="y" value="0" />
-                </Property>
-              </Property>
-              <Property name="Image" value="" />
-              <Property name="Children" />
-              <Property name="DataFilename" value="" />
-              <Property name="AltMode" value="None" />
-            </Property>
             <Property value="GcNGuiTextData.xml">
               <Property name="Data" value="GcNGuiElementData.xml">
                 <Property name="ID" value="BODY" />
                 <Property name="PresetID" value="DEFAULT" />
                 <Property name="IsHidden" value="False" />
                 <Property name="Layout" value="GcNGuiLayoutData.xml">
-                  <Property name="PositionX" value="1119" />
+                  <Property name="PositionX" value="1120" />
                   <Property name="PositionY" value="231" />
                   <Property name="Width" value="0" />
                   <Property name="WidthPercentage" value="False" />
@@ -1163,6 +958,7 @@
                   <Property name="HeightPercentage" value="False" />
                   <Property name="ConstrainProportions" value="False" />
                   <Property name="ConstrainAspect" value="1" />
+                  <Property name="ForceAspect" value="False" />
                   <Property name="Anchor" value="True" />
                   <Property name="AnchorPercent" value="False" />
                   <Property name="SameLine" value="False" />
@@ -1313,11 +1109,11 @@
                     <Property name="A" value="1" />
                   </Property>
                   <Property name="Shape" value="Rectangle" />
-                  <Property name="SolidColour" value="False" />
+                  <Property name="SolidColour" value="True" />
                   <Property name="HasDropShadow" value="False" />
                   <Property name="HasOuterGradient" value="False" />
                   <Property name="HasInnerGradient" value="False" />
-                  <Property name="Gradient" value="Horizontal" />
+                  <Property name="Gradient" value="None" />
                   <Property name="GradientStartOffset" value="550" />
                   <Property name="GradientEndOffset" value="749" />
                   <Property name="GradientOffsetPercent" value="False" />
@@ -1365,11 +1161,11 @@
                     <Property name="A" value="1" />
                   </Property>
                   <Property name="Shape" value="Rectangle" />
-                  <Property name="SolidColour" value="False" />
+                  <Property name="SolidColour" value="True" />
                   <Property name="HasDropShadow" value="False" />
                   <Property name="HasOuterGradient" value="False" />
                   <Property name="HasInnerGradient" value="False" />
-                  <Property name="Gradient" value="Horizontal" />
+                  <Property name="Gradient" value="None" />
                   <Property name="GradientStartOffset" value="550" />
                   <Property name="GradientEndOffset" value="749" />
                   <Property name="GradientOffsetPercent" value="False" />
@@ -1417,11 +1213,11 @@
                     <Property name="A" value="1" />
                   </Property>
                   <Property name="Shape" value="Rectangle" />
-                  <Property name="SolidColour" value="False" />
+                  <Property name="SolidColour" value="True" />
                   <Property name="HasDropShadow" value="False" />
                   <Property name="HasOuterGradient" value="False" />
                   <Property name="HasInnerGradient" value="False" />
-                  <Property name="Gradient" value="Horizontal" />
+                  <Property name="Gradient" value="None" />
                   <Property name="GradientStartOffset" value="550" />
                   <Property name="GradientEndOffset" value="749" />
                   <Property name="GradientOffsetPercent" value="False" />
@@ -1485,6 +1281,7 @@
                   <Property name="HeightPercentage" value="True" />
                   <Property name="ConstrainProportions" value="False" />
                   <Property name="ConstrainAspect" value="1" />
+                  <Property name="ForceAspect" value="False" />
                   <Property name="Anchor" value="True" />
                   <Property name="AnchorPercent" value="False" />
                   <Property name="SameLine" value="False" />
@@ -1684,13 +1481,14 @@
                     <Property name="IsHidden" value="False" />
                     <Property name="Layout" value="GcNGuiLayoutData.xml">
                       <Property name="PositionX" value="1150" />
-                      <Property name="PositionY" value="321.76" />
+                      <Property name="PositionY" value="321.759979" />
                       <Property name="Width" value="100" />
                       <Property name="WidthPercentage" value="False" />
                       <Property name="Height" value="200" />
                       <Property name="HeightPercentage" value="False" />
                       <Property name="ConstrainProportions" value="False" />
                       <Property name="ConstrainAspect" value="0.5" />
+                      <Property name="ForceAspect" value="False" />
                       <Property name="Anchor" value="True" />
                       <Property name="AnchorPercent" value="False" />
                       <Property name="SameLine" value="False" />
@@ -1897,6 +1695,7 @@
                           <Property name="HeightPercentage" value="False" />
                           <Property name="ConstrainProportions" value="True" />
                           <Property name="ConstrainAspect" value="0.833333" />
+                          <Property name="ForceAspect" value="False" />
                           <Property name="Anchor" value="True" />
                           <Property name="AnchorPercent" value="False" />
                           <Property name="SameLine" value="False" />
@@ -2103,6 +1902,7 @@
                               <Property name="HeightPercentage" value="True" />
                               <Property name="ConstrainProportions" value="False" />
                               <Property name="ConstrainAspect" value="1" />
+                              <Property name="ForceAspect" value="False" />
                               <Property name="Anchor" value="True" />
                               <Property name="AnchorPercent" value="True" />
                               <Property name="SameLine" value="False" />
@@ -2312,14 +2112,15 @@
                     <Property name="PresetID" value="" />
                     <Property name="IsHidden" value="False" />
                     <Property name="Layout" value="GcNGuiLayoutData.xml">
-                      <Property name="PositionX" value="1140" />
-                      <Property name="PositionY" value="329.76" />
+                      <Property name="PositionX" value="1140.00037" />
+                      <Property name="PositionY" value="329.759979" />
                       <Property name="Width" value="128" />
                       <Property name="WidthPercentage" value="False" />
                       <Property name="Height" value="200" />
                       <Property name="HeightPercentage" value="False" />
                       <Property name="ConstrainProportions" value="False" />
                       <Property name="ConstrainAspect" value="1" />
+                      <Property name="ForceAspect" value="False" />
                       <Property name="Anchor" value="True" />
                       <Property name="AnchorPercent" value="False" />
                       <Property name="SameLine" value="False" />
@@ -2526,6 +2327,7 @@
                           <Property name="HeightPercentage" value="False" />
                           <Property name="ConstrainProportions" value="True" />
                           <Property name="ConstrainAspect" value="1" />
+                          <Property name="ForceAspect" value="False" />
                           <Property name="Anchor" value="True" />
                           <Property name="AnchorPercent" value="True" />
                           <Property name="SameLine" value="False" />
@@ -2732,6 +2534,7 @@
                               <Property name="HeightPercentage" value="True" />
                               <Property name="ConstrainProportions" value="False" />
                               <Property name="ConstrainAspect" value="1" />
+                              <Property name="ForceAspect" value="False" />
                               <Property name="Anchor" value="True" />
                               <Property name="AnchorPercent" value="True" />
                               <Property name="SameLine" value="False" />
@@ -2946,6 +2749,7 @@
                       <Property name="HeightPercentage" value="False" />
                       <Property name="ConstrainProportions" value="False" />
                       <Property name="ConstrainAspect" value="1" />
+                      <Property name="ForceAspect" value="False" />
                       <Property name="Anchor" value="True" />
                       <Property name="AnchorPercent" value="False" />
                       <Property name="SameLine" value="False" />
@@ -3152,6 +2956,7 @@
                           <Property name="HeightPercentage" value="True" />
                           <Property name="ConstrainProportions" value="False" />
                           <Property name="ConstrainAspect" value="1" />
+                          <Property name="ForceAspect" value="False" />
                           <Property name="Anchor" value="True" />
                           <Property name="AnchorPercent" value="True" />
                           <Property name="SameLine" value="False" />
@@ -3358,6 +3163,7 @@
                               <Property name="HeightPercentage" value="True" />
                               <Property name="ConstrainProportions" value="False" />
                               <Property name="ConstrainAspect" value="1" />
+                              <Property name="ForceAspect" value="False" />
                               <Property name="Anchor" value="True" />
                               <Property name="AnchorPercent" value="True" />
                               <Property name="SameLine" value="False" />
@@ -3572,6 +3378,7 @@
                       <Property name="HeightPercentage" value="True" />
                       <Property name="ConstrainProportions" value="False" />
                       <Property name="ConstrainAspect" value="1" />
+                      <Property name="ForceAspect" value="False" />
                       <Property name="Anchor" value="True" />
                       <Property name="AnchorPercent" value="False" />
                       <Property name="SameLine" value="False" />
@@ -3778,6 +3585,7 @@
                           <Property name="HeightPercentage" value="False" />
                           <Property name="ConstrainProportions" value="False" />
                           <Property name="ConstrainAspect" value="1" />
+                          <Property name="ForceAspect" value="False" />
                           <Property name="Anchor" value="True" />
                           <Property name="AnchorPercent" value="False" />
                           <Property name="SameLine" value="False" />
@@ -3992,6 +3800,7 @@
                   <Property name="HeightPercentage" value="False" />
                   <Property name="ConstrainProportions" value="True" />
                   <Property name="ConstrainAspect" value="1" />
+                  <Property name="ForceAspect" value="False" />
                   <Property name="Anchor" value="True" />
                   <Property name="AnchorPercent" value="False" />
                   <Property name="SameLine" value="False" />
@@ -4192,16 +4001,17 @@
           <Property name="ElementData" value="GcNGuiElementData.xml">
             <Property name="ID" value="SENTINEL" />
             <Property name="PresetID" value="" />
-            <Property name="IsHidden" value="True" />
+            <Property name="IsHidden" value="False" />
             <Property name="Layout" value="GcNGuiLayoutData.xml">
               <Property name="PositionX" value="765" />
               <Property name="PositionY" value="521" />
-              <Property name="Width" value="0" />
+              <Property name="Width" value="200" />
               <Property name="WidthPercentage" value="False" />
-              <Property name="Height" value="0" />
+              <Property name="Height" value="200" />
               <Property name="HeightPercentage" value="False" />
               <Property name="ConstrainProportions" value="False" />
               <Property name="ConstrainAspect" value="1" />
+              <Property name="ForceAspect" value="False" />
               <Property name="Anchor" value="True" />
               <Property name="AnchorPercent" value="False" />
               <Property name="SameLine" value="False" />
@@ -4408,6 +4218,7 @@
                   <Property name="HeightPercentage" value="False" />
                   <Property name="ConstrainProportions" value="False" />
                   <Property name="ConstrainAspect" value="1" />
+                  <Property name="ForceAspect" value="False" />
                   <Property name="Anchor" value="True" />
                   <Property name="AnchorPercent" value="True" />
                   <Property name="SameLine" value="False" />
@@ -4610,10 +4421,11 @@
                       <Property name="PositionY" value="100" />
                       <Property name="Width" value="100" />
                       <Property name="WidthPercentage" value="True" />
-                      <Property name="Height" value="58.99999" />
+                      <Property name="Height" value="58.9999924" />
                       <Property name="HeightPercentage" value="True" />
                       <Property name="ConstrainProportions" value="False" />
                       <Property name="ConstrainAspect" value="1" />
+                      <Property name="ForceAspect" value="False" />
                       <Property name="Anchor" value="True" />
                       <Property name="AnchorPercent" value="True" />
                       <Property name="SameLine" value="False" />
@@ -4820,6 +4632,7 @@
                           <Property name="HeightPercentage" value="False" />
                           <Property name="ConstrainProportions" value="False" />
                           <Property name="ConstrainAspect" value="1" />
+                          <Property name="ForceAspect" value="False" />
                           <Property name="Anchor" value="True" />
                           <Property name="AnchorPercent" value="False" />
                           <Property name="SameLine" value="False" />
@@ -5030,6 +4843,7 @@
                       <Property name="HeightPercentage" value="True" />
                       <Property name="ConstrainProportions" value="False" />
                       <Property name="ConstrainAspect" value="1" />
+                      <Property name="ForceAspect" value="False" />
                       <Property name="Anchor" value="True" />
                       <Property name="AnchorPercent" value="True" />
                       <Property name="SameLine" value="False" />
@@ -5244,6 +5058,7 @@
               <Property name="HeightPercentage" value="False" />
               <Property name="ConstrainProportions" value="False" />
               <Property name="ConstrainAspect" value="1" />
+              <Property name="ForceAspect" value="False" />
               <Property name="Anchor" value="True" />
               <Property name="AnchorPercent" value="False" />
               <Property name="SameLine" value="False" />
@@ -5450,6 +5265,7 @@
                   <Property name="HeightPercentage" value="False" />
                   <Property name="ConstrainProportions" value="False" />
                   <Property name="ConstrainAspect" value="1" />
+                  <Property name="ForceAspect" value="False" />
                   <Property name="Anchor" value="True" />
                   <Property name="AnchorPercent" value="True" />
                   <Property name="SameLine" value="False" />
@@ -5646,16 +5462,17 @@
                   <Property name="ElementData" value="GcNGuiElementData.xml">
                     <Property name="ID" value="SCANNER" />
                     <Property name="PresetID" value="" />
-                    <Property name="IsHidden" value="True" />
+                    <Property name="IsHidden" value="False" />
                     <Property name="Layout" value="GcNGuiLayoutData.xml">
                       <Property name="PositionX" value="0" />
                       <Property name="PositionY" value="0" />
-                      <Property name="Width" value="0" />
+                      <Property name="Width" value="100" />
                       <Property name="WidthPercentage" value="True" />
-                      <Property name="Height" value="0" />
+                      <Property name="Height" value="100" />
                       <Property name="HeightPercentage" value="True" />
                       <Property name="ConstrainProportions" value="False" />
                       <Property name="ConstrainAspect" value="1" />
+                      <Property name="ForceAspect" value="False" />
                       <Property name="Anchor" value="True" />
                       <Property name="AnchorPercent" value="False" />
                       <Property name="SameLine" value="False" />
@@ -5862,6 +5679,7 @@
                           <Property name="HeightPercentage" value="True" />
                           <Property name="ConstrainProportions" value="False" />
                           <Property name="ConstrainAspect" value="1" />
+                          <Property name="ForceAspect" value="False" />
                           <Property name="Anchor" value="True" />
                           <Property name="AnchorPercent" value="True" />
                           <Property name="SameLine" value="False" />
@@ -6068,6 +5886,7 @@
                               <Property name="HeightPercentage" value="False" />
                               <Property name="ConstrainProportions" value="False" />
                               <Property name="ConstrainAspect" value="1" />
+                              <Property name="ForceAspect" value="False" />
                               <Property name="Anchor" value="True" />
                               <Property name="AnchorPercent" value="False" />
                               <Property name="SameLine" value="False" />
@@ -6278,6 +6097,7 @@
                           <Property name="HeightPercentage" value="True" />
                           <Property name="ConstrainProportions" value="False" />
                           <Property name="ConstrainAspect" value="1" />
+                          <Property name="ForceAspect" value="False" />
                           <Property name="Anchor" value="True" />
                           <Property name="AnchorPercent" value="True" />
                           <Property name="SameLine" value="False" />
@@ -6492,6 +6312,7 @@
                   <Property name="HeightPercentage" value="False" />
                   <Property name="ConstrainProportions" value="False" />
                   <Property name="ConstrainAspect" value="1" />
+                  <Property name="ForceAspect" value="False" />
                   <Property name="Anchor" value="True" />
                   <Property name="AnchorPercent" value="True" />
                   <Property name="SameLine" value="False" />
@@ -6688,16 +6509,17 @@
                   <Property name="ElementData" value="GcNGuiElementData.xml">
                     <Property name="ID" value="STAMINA" />
                     <Property name="PresetID" value="" />
-                    <Property name="IsHidden" value="True" />
+                    <Property name="IsHidden" value="False" />
                     <Property name="Layout" value="GcNGuiLayoutData.xml">
                       <Property name="PositionX" value="0" />
                       <Property name="PositionY" value="0" />
-                      <Property name="Width" value="0" />
+                      <Property name="Width" value="100" />
                       <Property name="WidthPercentage" value="True" />
-                      <Property name="Height" value="0" />
+                      <Property name="Height" value="100" />
                       <Property name="HeightPercentage" value="True" />
                       <Property name="ConstrainProportions" value="False" />
                       <Property name="ConstrainAspect" value="1" />
+                      <Property name="ForceAspect" value="False" />
                       <Property name="Anchor" value="True" />
                       <Property name="AnchorPercent" value="False" />
                       <Property name="SameLine" value="False" />
@@ -6904,6 +6726,7 @@
                           <Property name="HeightPercentage" value="True" />
                           <Property name="ConstrainProportions" value="False" />
                           <Property name="ConstrainAspect" value="1" />
+                          <Property name="ForceAspect" value="False" />
                           <Property name="Anchor" value="True" />
                           <Property name="AnchorPercent" value="True" />
                           <Property name="SameLine" value="False" />
@@ -7110,6 +6933,7 @@
                               <Property name="HeightPercentage" value="False" />
                               <Property name="ConstrainProportions" value="False" />
                               <Property name="ConstrainAspect" value="1" />
+                              <Property name="ForceAspect" value="False" />
                               <Property name="Anchor" value="True" />
                               <Property name="AnchorPercent" value="False" />
                               <Property name="SameLine" value="False" />
@@ -7320,6 +7144,7 @@
                           <Property name="HeightPercentage" value="True" />
                           <Property name="ConstrainProportions" value="False" />
                           <Property name="ConstrainAspect" value="1" />
+                          <Property name="ForceAspect" value="False" />
                           <Property name="Anchor" value="True" />
                           <Property name="AnchorPercent" value="True" />
                           <Property name="SameLine" value="False" />
@@ -7534,6 +7359,7 @@
                   <Property name="HeightPercentage" value="False" />
                   <Property name="ConstrainProportions" value="False" />
                   <Property name="ConstrainAspect" value="1" />
+                  <Property name="ForceAspect" value="False" />
                   <Property name="Anchor" value="True" />
                   <Property name="AnchorPercent" value="True" />
                   <Property name="SameLine" value="False" />
@@ -7734,12 +7560,13 @@
                     <Property name="Layout" value="GcNGuiLayoutData.xml">
                       <Property name="PositionX" value="0" />
                       <Property name="PositionY" value="0" />
-                      <Property name="Width" value="0" />
+                      <Property name="Width" value="100" />
                       <Property name="WidthPercentage" value="True" />
-                      <Property name="Height" value="0" />
+                      <Property name="Height" value="100" />
                       <Property name="HeightPercentage" value="True" />
                       <Property name="ConstrainProportions" value="False" />
                       <Property name="ConstrainAspect" value="1" />
+                      <Property name="ForceAspect" value="False" />
                       <Property name="Anchor" value="True" />
                       <Property name="AnchorPercent" value="False" />
                       <Property name="SameLine" value="False" />
@@ -7946,6 +7773,7 @@
                           <Property name="HeightPercentage" value="True" />
                           <Property name="ConstrainProportions" value="False" />
                           <Property name="ConstrainAspect" value="1" />
+                          <Property name="ForceAspect" value="False" />
                           <Property name="Anchor" value="True" />
                           <Property name="AnchorPercent" value="True" />
                           <Property name="SameLine" value="False" />
@@ -8152,6 +7980,7 @@
                               <Property name="HeightPercentage" value="False" />
                               <Property name="ConstrainProportions" value="False" />
                               <Property name="ConstrainAspect" value="1" />
+                              <Property name="ForceAspect" value="False" />
                               <Property name="Anchor" value="True" />
                               <Property name="AnchorPercent" value="False" />
                               <Property name="SameLine" value="False" />
@@ -8362,6 +8191,7 @@
                           <Property name="HeightPercentage" value="True" />
                           <Property name="ConstrainProportions" value="False" />
                           <Property name="ConstrainAspect" value="1" />
+                          <Property name="ForceAspect" value="False" />
                           <Property name="Anchor" value="True" />
                           <Property name="AnchorPercent" value="True" />
                           <Property name="SameLine" value="False" />
@@ -8576,6 +8406,7 @@
                   <Property name="HeightPercentage" value="False" />
                   <Property name="ConstrainProportions" value="False" />
                   <Property name="ConstrainAspect" value="1" />
+                  <Property name="ForceAspect" value="False" />
                   <Property name="Anchor" value="True" />
                   <Property name="AnchorPercent" value="True" />
                   <Property name="SameLine" value="False" />
@@ -8772,16 +8603,17 @@
                   <Property name="ElementData" value="GcNGuiElementData.xml">
                     <Property name="ID" value="INVENTORY" />
                     <Property name="PresetID" value="" />
-                    <Property name="IsHidden" value="True" />
+                    <Property name="IsHidden" value="False" />
                     <Property name="Layout" value="GcNGuiLayoutData.xml">
                       <Property name="PositionX" value="0" />
                       <Property name="PositionY" value="0" />
-                      <Property name="Width" value="0" />
+                      <Property name="Width" value="100" />
                       <Property name="WidthPercentage" value="True" />
-                      <Property name="Height" value="0" />
+                      <Property name="Height" value="100" />
                       <Property name="HeightPercentage" value="True" />
                       <Property name="ConstrainProportions" value="False" />
                       <Property name="ConstrainAspect" value="1" />
+                      <Property name="ForceAspect" value="False" />
                       <Property name="Anchor" value="True" />
                       <Property name="AnchorPercent" value="False" />
                       <Property name="SameLine" value="False" />
@@ -8988,6 +8820,7 @@
                           <Property name="HeightPercentage" value="True" />
                           <Property name="ConstrainProportions" value="False" />
                           <Property name="ConstrainAspect" value="1" />
+                          <Property name="ForceAspect" value="False" />
                           <Property name="Anchor" value="True" />
                           <Property name="AnchorPercent" value="True" />
                           <Property name="SameLine" value="False" />
@@ -9194,6 +9027,7 @@
                               <Property name="HeightPercentage" value="False" />
                               <Property name="ConstrainProportions" value="False" />
                               <Property name="ConstrainAspect" value="1" />
+                              <Property name="ForceAspect" value="False" />
                               <Property name="Anchor" value="True" />
                               <Property name="AnchorPercent" value="False" />
                               <Property name="SameLine" value="False" />
@@ -9404,6 +9238,7 @@
                           <Property name="HeightPercentage" value="True" />
                           <Property name="ConstrainProportions" value="False" />
                           <Property name="ConstrainAspect" value="1" />
+                          <Property name="ForceAspect" value="False" />
                           <Property name="Anchor" value="True" />
                           <Property name="AnchorPercent" value="True" />
                           <Property name="SameLine" value="False" />

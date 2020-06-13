@@ -234,8 +234,8 @@
     <Property name="x" value="0.06" />
     <Property name="y" value="0.06" />
   </Property>
-  <Property name="HandInteractionLightIntensity" value="0.5" />
-  <Property name="HandInteractionLightIntensityMax" value="4" />
+  <Property name="HandInteractionLightIntensity" value="0" />
+  <Property name="HandInteractionLightIntensityMax" value="0" />
   <Property name="HandInteractionFresnel" value="-9" />
   <Property name="HandInteractionFresnelMax" value="-2" />
   <Property name="HandInteractionLightOffset" value="0.2" />
@@ -281,7 +281,7 @@
   <Property name="BodyRealignmentDelay" value="0.75" />
   <Property name="PointDownToMoveAngle" value="40" />
   <Property name="PointDownToMoveBackAngle" value="90" />
-  <Property name="EnableLeaning" value="False" />
+  <Property name="EnableLeaning" value="True" />
   <Property name="EnablePointDownToSmoothMove" value="False" />
   <Property name="HmdSmoothTurnAlways" value="False" />
   <Property name="HmdTurnSpeed" value="22.5" />
@@ -364,22 +364,22 @@
     <Property name="Id" value="" />
     <Property name="ScanEffectType" value="Creature" />
     <Property name="Colour" value="Colour.xml">
-      <Property name="R" value="0.852" />
-      <Property name="G" value="1" />
-      <Property name="B" value="1" />
-      <Property name="A" value="1" />
+      <Property name="R" value="0" />
+      <Property name="G" value="0" />
+      <Property name="B" value="0" />
+      <Property name="A" value="0" />
     </Property>
     <Property name="BasecolourIntensity" value="-0.1" />
     <Property name="ScanlinesSeparation" value="0" />
     <Property name="FresnelIntensity" value="-2" />
     <Property name="GlowIntensity" value="0" />
     <Property name="WaveOffset" value="0" />
-    <Property name="WaveActive" value="True" />
+    <Property name="WaveActive" value="False" />
     <Property name="FixedUpAxis" value="False" />
     <Property name="Transparent" value="False" />
     <Property name="ModelFade" value="False" />
-    <Property name="FadeInTime" value="0.1" />
-    <Property name="FadeOutTime" value="0.2" />
+    <Property name="FadeInTime" value="0" />
+    <Property name="FadeOutTime" value="0" />
   </Property>
   <Property name="HolsterHighlightEffect" value="GcScanEffectData.xml">
     <Property name="Id" value="" />
