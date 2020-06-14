@@ -296,7 +296,7 @@
   <Property name="_3rdPersonTransitionTime" value="0.2" />
   <Property name="AvoidancePower" value="0" />
   <Property name="AvoidanceDistancePower" value="0" />
-  <Property name="CollisionDeflectForce" value="50" />
+  <Property name="CollisionDeflectForce" value="60" />
   <Property name="CollisionAlignStrength" value="0" />
   <Property name="DefaultCentreOffset" value="Vector3f.xml">
     <Property name="x" value="0" />
@@ -821,13 +821,13 @@
   <Property name="HitAsteroidDamage" value="10000" />
   <Property name="CameraPostWarpFovTime" value="0.1" />
   <Property name="CameraPostWarpFov" value="60" />
-  <Property name="NormalModeTakeOffCostMultiplier" value="1" />
+  <Property name="NormalModeTakeOffCostMultiplier" value="0.75" />
   <Property name="SurvivalTakeOffCostMultiplier" value="2" />
   <Property name="PlayerFreighterClearSpaceRadius" value="3000" />
   <Property name="DriftSpring" value="0" />
   <Property name="DriftTurnStrengthMultiplier" value="3" />
-  <Property name="DriftTurnBrakeMultiplier" value="0.0001" />
-  <Property name="DirectionBrakeVRBoost" value="0.1" />
+  <Property name="DriftTurnBrakeMultiplier" value="0.00001" />
+  <Property name="DirectionBrakeVRBoost" value="1" />
   <Property name="TurnRudderStrength" value="0.4" />
   <Property name="MuzzleLightIntensity" value="4.5" />
   <Property name="MuzzleAnimSpeed" value="1.5" />
@@ -948,7 +948,7 @@
   <Property name="AimSpeedTrackDistance" value="400" />
   <Property name="AimSpeedTrackForce" value="8" />
   <Property name="CombatBoostMultiplier" value="5" />
-  <Property name="CombatBoostTurnDamp" value="0.9" />
+  <Property name="CombatBoostTurnDamp" value="0.8" />
   <Property name="MarkerEventTime" value="3" />
   <Property name="GunAmmoMultiplier" value="5" />
   <Property name="LaserAimArray">
@@ -1071,7 +1071,7 @@
   <Property name="AnomalyStationMaxApproachSpeed" value="60" />
   <Property name="TakeOffSphereCastLength" value="50" />
   <Property name="TakeOffSphereCastRadiusMul" value="1.5" />
-  <Property name="LandGroundTakeOffTime" value="0.3" />
+  <Property name="LandGroundTakeOffTime" value="1.2" />
   <Property name="LandLookingForward" value="160" />
   <Property name="LandHeightThreshold" value="100" />
   <Property name="LandWidthThreshold" value="2" />
@@ -1111,7 +1111,7 @@
   <Property name="GroundHeightSpeedLength" value="220" />
   <Property name="GroundHeightSpeedAngle" value="-5" />
   <Property name="GroundHeightSpeedAngleRange" value="10" />
-  <Property name="GroundHeightNumRays" value="1" />
+  <Property name="GroundHeightNumRays" value="7" />
   <Property name="GroundHeightSmoothTime" value="0" />
   <Property name="LinearDamping" value="0.01" />
   <Property name="AngularDamping" value="0" />
@@ -1171,8 +1171,8 @@
     <Property name="ExitTunnelDistance" value="400" />
     <Property name="ExitWorldDistance" value="18000" />
   </Property>
-  <Property name="DockingRotateSpeed" value="0.4" />
-  <Property name="DockingRotateSpeedVR" value="0.4" />
+  <Property name="DockingRotateSpeed" value="1.2" />
+  <Property name="DockingRotateSpeedVR" value="1" />
   <Property name="EjectAnimSwitchPoint" value="0.7" />
   <Property name="EjectAnimSpeedFactor" value="1" />
   <Property name="ShipDifferentRepelRange" value="150" />

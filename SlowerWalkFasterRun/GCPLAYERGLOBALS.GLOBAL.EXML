@@ -9,14 +9,14 @@
   <Property name="TeleportAppearEffectSpeed" value="4" />
   <Property name="TeleportDisappearEffectSpeed" value="4" />
   <Property name="RecenterViewWhenEnteringShip" value="True" />
-  <Property name="UseInitialFacingForMoveDirection" value="True" />
+  <Property name="UseInitialFacingForMoveDirection" value="False" />
   <Property name="EmulateNoHandsForHandScreens" value="False" />
   <Property name="BinocularAimOffset" value="1" />
   <Property name="BinocularScopeScale" value="0.3" />
   <Property name="MaxArmExtension" value="0.99" />
   <Property name="MinArmExtension" value="1.5" />
   <Property name="SummonArcRange" value="40" />
-  <Property name="InteractionAimOffset" value="3" />
+  <Property name="InteractionAimOffset" value="5" />
   <Property name="QuickMenuLauncherTransforms" value="GcProjectorOffsetData.xml">
     <Property name="Scale" value="0.045" />
     <Property name="Active" value="GcInWorldUIScreenData.xml">
@@ -313,7 +313,7 @@
   <Property name="GroundWalkRecoverySpeedDamper" value="0.4" />
   <Property name="HandSmoothMinAngle" value="3" />
   <Property name="HandSmoothAngleRange" value="6" />
-  <Property name="HmdResetButtonTime" value="1" />
+  <Property name="HmdResetButtonTime" value="0.3" />
   <Property name="SummonShipDirectionChangeDeadZoneAngle" value="15" />
   <Property name="TeleportArcRadius" value="0.25" />
   <Property name="TeleportArcRadiusInner" value="0.1" />
@@ -419,7 +419,7 @@
   <Property name="TeleportMotionOffsetUp" value="0" />
   <Property name="TeleportTotalTime" value="0.15" />
   <Property name="NoShadowMaterial" value="MODELS/COMMON/CHARACTERS/PLAYER/MATERIALS/PLAYER.MATERIAL.MBIN" />
-  <Property name="HolsterGrabRadius" value="0.5" />
+  <Property name="HolsterGrabRadius" value="0.8" />
   <Property name="HolsterGrabFrontOffset" value="0.1" />
   <Property name="HolsterScale" value="0.6" />
   <Property name="HolsterRotY" value="-90" />
@@ -431,7 +431,7 @@
     <Property name="z" value="-0.08" />
   </Property>
   <Property name="HeadBinocularsOffset" value="-0.2" />
-  <Property name="HeadBinocularsRadius" value="0.25" />
+  <Property name="HeadBinocularsRadius" value="0.3" />
   <Property name="DebugSearchGroup" value="BONES" />
   <Property name="SearchGroupIconColour" value="Colour.xml">
     <Property name="R" value="0.254" />
@@ -783,8 +783,8 @@
   <Property name="MouseCrosshairLineWidth" value="2" />
   <Property name="MouseCrosshairShipStrength" value="2" />
   <Property name="MouseCrosshairMultiplier" value="1" />
-  <Property name="MaximumCrouchVR" value="-0.5" />
-  <Property name="MaximumHeadHeightIncreaseVR" value="0.5" />
+  <Property name="MaximumCrouchVR" value="-0.7" />
+  <Property name="MaximumHeadHeightIncreaseVR" value="0.8" />
   <Property name="MaximumHorizontalOffsetVR" value="0.65" />
   <Property name="CrouchHeightToDisableLegBlendingVR" value="-0.1" />
   <Property name="UseEnergy" value="True" />
@@ -798,7 +798,7 @@
   <Property name="LootForceMultiplier" value="20" />
   <Property name="WoundTimeMinimum" value="5" />
   <Property name="WoundDamageLimit" value="750" />
-  <Property name="WoundDamageLimitShip" value="250" />
+  <Property name="WoundDamageLimitShip" value="750" />
   <Property name="WoundDamageDecayTime" value="20" />
   <Property name="ResourceBlobFinalScaleDistance" value="0.8" />
   <Property name="LaserPlayerOffset" value="2" />
@@ -1320,7 +1320,7 @@
   <Property name="LaserBeamTerrainDeformVariance" value="0.4" />
   <Property name="LaserBeamAmmoUseTime" value="1.2" />
   <Property name="ReloadButtonHoldTimeToHolster" value="0.5" />
-  <Property name="WeaponChangeModeTime" value="0.25" />
+  <Property name="WeaponChangeModeTime" value="0.15" />
   <Property name="WeaponBarrelOffset" value="Vector3f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="0" />
@@ -1398,7 +1398,7 @@
   <Property name="AnimRunBlendPoint" value="0.1" />
   <Property name="MaxSlopeAngle" value="89" />
   <Property name="SlopeSlidingSpeed" value="-10" />
-  <Property name="SlopeSlideBrake" value="4" />
+  <Property name="SlopeSlideBrake" value="6" />
   <Property name="MinSlideTime" value="0.1" />
   <Property name="MaxWalkableSlopeAngle" value="43" />
   <Property name="MinSpidermanSlopeAngle" value="36" />
