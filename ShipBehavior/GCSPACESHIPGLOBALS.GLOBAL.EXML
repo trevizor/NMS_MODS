@@ -88,7 +88,7 @@
   <Property name="DrawLineLockTarget" value="True" />
   <Property name="ApplyHeightForce" value="True" />
   <Property name="ApplyHeightAlign" value="True" />
-  <Property name="DoPreCollision" value="False" />
+  <Property name="DoPreCollision" value="True" />
   <Property name="SpeedTrackModeEnabled" value="False" />
   <Property name="TrailMaxNumPointsPerFrameOverride" value="2" />
   <Property name="TestTrailSpeed" value="300" />
@@ -800,8 +800,8 @@
     <Property name="B" value="0" />
     <Property name="A" value="1" />
   </Property>
-  <Property name="ShieldRechargeMinHitTime" value="20" />
-  <Property name="ShieldRechargeRate" value="12" />
+  <Property name="ShieldRechargeMinHitTime" value="35" />
+  <Property name="ShieldRechargeRate" value="30" />
   <Property name="NoBoostStationDistance" value="1500" />
   <Property name="NoBoostAnomalyDistance" value="3000" />
   <Property name="NoBoostSpaceAnomalyDistance" value="700" />
@@ -813,12 +813,12 @@
   <Property name="NoBoostCombatEventMinBattleTime" value="35" />
   <Property name="NoBoostCombatEventMinFreighterBattleTime" value="55" />
   <Property name="NoBoostCombatEventTime" value="25" />
-  <Property name="ThrustDecaySpring" value="20" />
-  <Property name="ThrustDecaySpringCombat" value="30" />
+  <Property name="ThrustDecaySpring" value="10" />
+  <Property name="ThrustDecaySpringCombat" value="20" />
   <Property name="DriftEffectIntensity" value="0" />
   <Property name="SpeedCoolOffset" value="10" />
   <Property name="SpeedCoolNormalSpeedAmount" value="0.8" />
-  <Property name="HitAsteroidDamage" value="20000" />
+  <Property name="HitAsteroidDamage" value="10000" />
   <Property name="CameraPostWarpFovTime" value="0.1" />
   <Property name="CameraPostWarpFov" value="60" />
   <Property name="NormalModeTakeOffCostMultiplier" value="1" />
@@ -826,8 +826,8 @@
   <Property name="PlayerFreighterClearSpaceRadius" value="3000" />
   <Property name="DriftSpring" value="0" />
   <Property name="DriftTurnStrengthMultiplier" value="3" />
-  <Property name="DriftTurnBrakeMultiplier" value="0" />
-  <Property name="DirectionBrakeVRBoost" value="0" />
+  <Property name="DriftTurnBrakeMultiplier" value="0.0001" />
+  <Property name="DirectionBrakeVRBoost" value="0.1" />
   <Property name="TurnRudderStrength" value="0.4" />
   <Property name="MuzzleLightIntensity" value="4.5" />
   <Property name="MuzzleAnimSpeed" value="1.5" />
