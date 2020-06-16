@@ -1552,6 +1552,40 @@
       </Property>
     </Property>
     <Property value="GcExternalObjectFileList.xml">
+      <Property name="Id" value="EXTRA_FIENDS" />
+      <Property name="OnlyOnExtremeWeather" value="False" />
+      <Property name="OnlyOnExtremeSentinels" value="False" />
+      <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="NotOnExtremePlanets" value="False" />
+      <Property name="NotOnStartPlanets" value="False" />
+      <Property name="NotOnWeirdPlanets" value="False" />
+      <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
+        <Property name="Biome" value="All" />
+      </Property>
+      <Property name="ProbabilityOfBeingActive" value="0.25" />
+      <Property name="MinFilesToChoose" value="1" />
+      <Property name="MaxFilesToChoose" value="1" />
+      <Property name="ExternalObjectFiles">
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="FIENDEGGS" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/RARE/FIENDEGGS.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectFileList.xml">
       <Property name="Id" value="STORMCRYSTALS" />
       <Property name="OnlyOnExtremeWeather" value="True" />
       <Property name="OnlyOnExtremeSentinels" value="False" />
@@ -1665,7 +1699,7 @@
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="All" />
       </Property>
-      <Property name="ProbabilityOfBeingActive" value="1" />
+      <Property name="ProbabilityOfBeingActive" value="0.1" />
       <Property name="MinFilesToChoose" value="1" />
       <Property name="MaxFilesToChoose" value="1" />
       <Property name="ExternalObjectFiles">
@@ -1673,13 +1707,25 @@
           <Property name="Name" value="EXTRA_LUSHBIOME" />
           <Property name="ResourceHint" value="" />
           <Property name="ResourceHintIcon" value="" />
-          <Property name="Probability" value="0.02" />
-          <Property name="TileType" value="GcTerrainTileType.xml">
+          <Property name="Probability" value="0.9" />
+          <Property name="TileType" value="GcTrrainTileType.xml">
             <Property name="TileType" value="Base" />
           </Property>
           <Property name="AllowLimiting" value="False" />
           <Property name="ChooseUsingLifeLevel" value="False" />
           <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MULTIBIOMES/EXTRAOBJECTS/TOXICGRASS.MXML" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MULTIBIOMES/EXTRAOBJECTS/TOXICGRASS.MXML" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MULTIBIOMES/EXTRAOBJECTS/TOXICGRASS.MXML" />
+            </Property>
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MULTIBIOMES/EXTRAOBJECTS/TOXICGRASS.MXML" />
+            </Property>
             <Property value="NMSString0x80.xml">
               <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MULTIBIOMES/EXTRAOBJECTS/TOXICGRASS.MXML" />
             </Property>
