@@ -158,15 +158,11 @@
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN" />
         </Property>
         <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SCORCHED/SCORCHEDOBJECTSLOW.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SCORCHED/SCORCHEDOBJECTSMID.MBIN" />
         </Property>
         <Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/SCORCHED/SCORCHEDOBJECTSFULL.MBIN" />
         </Property>
-        <!-- copied to increased chance of keeping original biome -->
         <Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENOBJECTSDEAD.MBIN" />
         </Property>
@@ -177,10 +173,19 @@
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENOBJECTSMID.MBIN" />
         </Property>
         <Property value="NMSString0x80.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENOBJECTSMID.MBIN" />
+        </Property>
+        <Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENOBJECTSFULL.MBIN" />
         </Property>
         <Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHOBJECTSPLAINS.MBIN" />
+        </Property>
+        <Property value="NMSString0x80.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHOBJECTSLOW.MBIN" />
+        </Property>
+        <Property value="NMSString0x80.xml">
+          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHOBJECTSMID.MBIN" />
         </Property>
       </Property>
     </Property>
@@ -324,9 +329,9 @@
       <Property name="Mountain" value="1" />
       <Property name="Rock" value="1" />
       <Property name="UnderWater" value="1" />
-      <Property name="Texture" value="0" />
+      <Property name="Texture" value="0.25" />
       <Property name="Elevation" value="1" />
-      <Property name="Continent" value="0" />
+      <Property name="Continent" value="0.25" />
     </Property>
     <Property name="GridLayers">
       <Property name="Small" value="0.75" />
@@ -360,6 +365,21 @@
   <Property name="FilterOptions">
     <Property value="GcScreenFilters.xml">
       <Property name="ScreenFilters" value="Scorched" />
+    </Property>
+    <Property value="GcScreenFilters.xml">
+      <Property name="ScreenFilters" value="Scorched" />
+    </Property>
+    <Property value="GcScreenFilters.xml">
+      <Property name="ScreenFilters" value="Scorched" />
+    </Property>
+    <Property value="GcScreenFilters.xml">
+      <Property name="ScreenFilters" value="Scorched" />
+    </Property>
+    <Property value="GcScreenFilters.xml">
+      <Property name="ScreenFilters" value="Default" />
+    </Property>
+    <Property value="GcScreenFilters.xml">
+      <Property name="ScreenFilters" value="Vintage" />
     </Property>
   </Property>
 </Data>
