@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (1.78.0)-->
+<!--File created using MBINCompiler version (2.61.0)-->
 <Data template="TkHeavyAirData">
   <Property name="Material" value="MODELS/EFFECTS/COMMON/MATERIALS/SMOKE_BLUR.MATERIAL.MBIN" />
-  <Property name="NumberOfParticles" value="800" />
+  <Property name="NumberOfParticles" value="500" />
   <Property name="Radius" value="120" />
   <Property name="RadiusY" value="20" />
   <Property name="MinParticleLifetime" value="2" />
@@ -12,7 +12,7 @@
   <Property name="MinVisibleSpeed" value="0" />
   <Property name="SpeedFadeOutTime" value="0" />
   <Property name="MaxVisibleSpeed" value="1500" />
-  <Property name="SpawnRotationRange" value="0" />
+  <Property name="SpawnRotationRange" value="120" />
   <Property name="MajorDirection" value="Vector4f.xml">
     <Property name="x" value="0.05" />
     <Property name="y" value="-7" />
@@ -20,8 +20,8 @@
     <Property name="t" value="0" />
   </Property>
   <Property name="ScaleRange" value="Vector4f.xml">
-    <Property name="x" value="14" />
-    <Property name="y" value="14" />
+    <Property name="x" value="30" />
+    <Property name="y" value="30" />
     <Property name="z" value="0" />
     <Property name="t" value="0" />
   </Property>
@@ -44,22 +44,22 @@
     <Property name="t" value="0" />
   </Property>
   <Property name="AmplitudeMax" value="Vector4f.xml">
-    <Property name="x" value="0.0" />
-    <Property name="y" value="0.0" />
-    <Property name="z" value="0.0" />
+    <Property name="x" value="0" />
+    <Property name="y" value="0" />
+    <Property name="z" value="0" />
     <Property name="t" value="0" />
   </Property>
   <Property name="Colour1" value="Colour.xml">
     <Property name="R" value="0.937255" />
     <Property name="G" value="0.921569" />
     <Property name="B" value="0.960784" />
-    <Property name="A" value="0.1" />
+    <Property name="A" value="0.08" />
   </Property>
   <Property name="Colour2" value="Colour.xml">
     <Property name="R" value="0.968627" />
     <Property name="G" value="0.937255" />
     <Property name="B" value="0.94902" />
-    <Property name="A" value="0.1" />
+    <Property name="A" value="0.06" />
   </Property>
   <Property name="EmitterShape" value="UpperHalfSphere" />
 </Data>
