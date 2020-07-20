@@ -1,7 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (2.0.11)-->
+<!--File created using MBINCompiler version (2.61.0)-->
 <Data template="GcExplosionDataTable">
   <Property name="Table">
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="FLAMEIMPACT" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/IMPACTS/TERRAINDESTROY.SCENE.MBIN" />
+      </Property>
+      <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="WPN_GROUND_SIZZLE" />
+      </Property>
+      <Property name="Debris">
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/INEDITOR/SPACE/SHIPEXPLODE/FIREEMITTER.SCENE.MBIN" />
+          </Property>
+          <Property name="Number" value="3" />
+          <Property name="Radius" value="1" />
+          <Property name="Scale" value="0.3" />
+          <Property name="Speed" value="10" />
+          <Property name="AngularSpeed" value="10" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+      </Property>
+      <Property name="Life" value="0.5" />
+      <Property name="Scale" value="1.5" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="True" />
+      <Property name="CamShakeSpace" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+    </Property>
     <Property value="GcExplosionData.xml">
       <Property name="Id" value="UW_JET_BUBBLES" />
       <Property name="Model" value="TkModelResource.xml">
@@ -690,6 +723,42 @@
       <Property name="CamShakeSpace" value="False" />
       <Property name="AllowTriggerActionOnDebris" value="False" />
       <Property name="MaxSpawnDistance" value="200" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="CANNONMUZFLASH" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/WEAPONS/SHIPS/CANNONS/CANNONMUZZLEFLASH.SCENE.MBIN" />
+      </Property>
+      <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="0.5" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpace" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="TURRETINT" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/PROJECTILES/TURRETINT/TURRETINT_MUZZLEFLASH.SCENE.MBIN" />
+      </Property>
+      <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="0.1" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpace" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
     </Property>
   </Property>
 </Data>

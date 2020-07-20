@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (2.41.0)-->
+<!--File created using MBINCompiler version (2.61.0)-->
 <Data template="GcProjectileDataTable">
   <Property name="Table">
     <Property value="GcProjectileData.xml">
@@ -83,6 +83,11 @@
           </Property>
         </Property>
       </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
     </Property>
     <Property value="GcProjectileData.xml">
       <Property name="Id" value="MELEE_KICK" />
@@ -165,9 +170,14 @@
           </Property>
         </Property>
       </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
     </Property>
     <Property value="GcProjectileData.xml">
-      <Property name="Id" value="GUN" />
+      <Property name="Id" value="BOLTGUN" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/EFFECTS/WEAPONS/PLAYER/PLAYERPROJECTILE.SCENE.MBIN" />
         <Property name="Seed" value="GcSeed.xml">
@@ -187,8 +197,8 @@
       </Property>
       <Property name="Scale" value="1" />
       <Property name="IsAutonomous" value="False" />
-      <Property name="Radius" value="0.5" />
-      <Property name="Speed" value="150" />
+      <Property name="Radius" value="1" />
+      <Property name="Speed" value="260" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
@@ -232,7 +242,7 @@
       <Property name="BehaviourFlags" value="ScareCreatures" />
       <Property name="Class" value="Player" />
       <Property name="DefaultImpact" value="GUNHIT" />
-      <Property name="CriticalImpact" value="GUNCRIT" />
+      <Property name="CriticalImpact" value="" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="GUNHIT_PLAYER" />
@@ -246,12 +256,104 @@
             <Property name="Impact" value="Creature" />
           </Property>
         </Property>
+      </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0.2" />
+      </Property>
+    </Property>
+    <Property value="GcProjectileData.xml">
+      <Property name="Id" value="FLAMETHROW" />
+      <Property name="Model" value="GcResourceElement.xml">
+        <Property name="Filename" value="MODELS/COMMON/PROJECTILES/MULTITOOL_FLAMETHROWER.SCENE.MBIN" />
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="AltId" value="" />
+        <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+          <Property name="Samplers" />
+        </Property>
+      </Property>
+      <Property name="FireAudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="WPN_GROUND_SIZZLE" />
+      </Property>
+      <Property name="OverheatAudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Scale" value="1" />
+      <Property name="IsAutonomous" value="False" />
+      <Property name="Radius" value="0.5" />
+      <Property name="Speed" value="60" />
+      <Property name="Gravity" value="10" />
+      <Property name="Life" value="0.25" />
+      <Property name="Offset" value="0" />
+      <Property name="RagdollPush" value="5" />
+      <Property name="PhysicsPush" value="2.5" />
+      <Property name="Damage" value="1" />
+      <Property name="DamageType" value="GcDamageType.xml">
+        <Property name="DamageType" value="Explosion" />
+      </Property>
+      <Property name="Bounces" value="0" />
+      <Property name="BounceMaxSpeed" value="0" />
+      <Property name="BounceDamping" value="0.8" />
+      <Property name="BounceFinalStopTime" value="0" />
+      <Property name="HitOnBounce" value="True" />
+      <Property name="PlayerDamage" value="MPGUN" />
+      <Property name="UseCustomBulletData" value="False" />
+      <Property name="CustomBulletData" value="GcProjectileLineData.xml">
+        <Property name="BulletLength" value="1" />
+        <Property name="BulletGlowWidthTime" value="0.15" />
+        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMin" value="8" />
+        <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
+          <Property name="Curve" value="Linear" />
+        </Property>
+        <Property name="BulletScaler" value="5" />
+        <Property name="BulletScalerMinDist" value="0" />
+        <Property name="BulletScalerMaxDist" value="50" />
+        <Property name="BulletMinScaleDistance" value="0" />
+        <Property name="BulletMaxScaleDistance" value="50" />
+      </Property>
+      <Property name="UseDamageNumberData" value="False" />
+      <Property name="DamageImpactMergeTime" value="0.2" />
+      <Property name="DamageImpactTimeBetweenNumbers" value="0.2" />
+      <Property name="DamageImpactMinDistance" value="5" />
+      <Property name="Colour" value="Colour.xml">
+        <Property name="R" value="1" />
+        <Property name="G" value="0.055" />
+        <Property name="B" value="0.035" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="BehaviourFlags" value="ScareCreatures, ExplosionForce" />
+      <Property name="Class" value="Player" />
+      <Property name="DefaultImpact" value="FLAMEIMPACT" />
+      <Property name="CriticalImpact" value="FLAMEIMPACT" />
+      <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
-          <Property name="Effect" value="DRONEHIT" />
+          <Property name="Effect" value="FLAMEIMPACT" />
+          <Property name="ImpactType" value="GcProjectileImpactType.xml">
+            <Property name="Impact" value="Player" />
+          </Property>
+        </Property>
+        <Property value="GcProjectileImpactData.xml">
+          <Property name="Effect" value="FLAMEIMPACT" />
+          <Property name="ImpactType" value="GcProjectileImpactType.xml">
+            <Property name="Impact" value="Creature" />
+          </Property>
+        </Property>
+        <Property value="GcProjectileImpactData.xml">
+          <Property name="Effect" value="FLAMEIMPACT" />
           <Property name="ImpactType" value="GcProjectileImpactType.xml">
             <Property name="Impact" value="Robot" />
           </Property>
         </Property>
+      </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
       </Property>
     </Property>
     <Property value="GcProjectileData.xml">
@@ -268,7 +370,7 @@
         </Property>
       </Property>
       <Property name="FireAudioEvent" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="WPN_PL_SHOTGUN_PATHFINDER" />
+        <Property name="AkEvent" value="WPN_SHIP_CYCLOTRON_FIRE" />
       </Property>
       <Property name="OverheatAudioEvent" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
@@ -276,7 +378,7 @@
       <Property name="Scale" value="1" />
       <Property name="IsAutonomous" value="False" />
       <Property name="Radius" value="1" />
-      <Property name="Speed" value="200" />
+      <Property name="Speed" value="300" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="2" />
       <Property name="Offset" value="0" />
@@ -291,7 +393,7 @@
       <Property name="BounceDamping" value="0.8" />
       <Property name="BounceFinalStopTime" value="0" />
       <Property name="HitOnBounce" value="True" />
-      <Property name="PlayerDamage" value="BASICDAMAGE" />
+      <Property name="PlayerDamage" value="MPPLAYER_SHOT" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
         <Property name="BulletLength" value="0.1" />
@@ -334,6 +436,11 @@
             <Property name="Impact" value="Robot" />
           </Property>
         </Property>
+      </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0.2" />
       </Property>
     </Property>
     <Property value="GcProjectileData.xml">
@@ -373,7 +480,7 @@
       <Property name="BounceDamping" value="0.8" />
       <Property name="BounceFinalStopTime" value="0" />
       <Property name="HitOnBounce" value="True" />
-      <Property name="PlayerDamage" value="BASICDAMAGE" />
+      <Property name="PlayerDamage" value="MPPLAYER_SMG" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
         <Property name="BulletLength" value="0.1" />
@@ -401,7 +508,7 @@
       </Property>
       <Property name="BehaviourFlags" value="ScareCreatures" />
       <Property name="Class" value="Player" />
-      <Property name="DefaultImpact" value="GUNHIT" />
+      <Property name="DefaultImpact" value="GUNCRIT" />
       <Property name="CriticalImpact" value="" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
@@ -416,6 +523,11 @@
             <Property name="Impact" value="Robot" />
           </Property>
         </Property>
+      </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0.2" />
       </Property>
     </Property>
     <Property value="GcProjectileData.xml">
@@ -486,6 +598,11 @@
       <Property name="DefaultImpact" value="GRENADEEXPLODE" />
       <Property name="CriticalImpact" value="" />
       <Property name="Impacts" />
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
     </Property>
     <Property value="GcProjectileData.xml">
       <Property name="Id" value="MINE_GREN" />
@@ -555,6 +672,11 @@
       <Property name="DefaultImpact" value="GRENADEEXPLODE" />
       <Property name="CriticalImpact" value="" />
       <Property name="Impacts" />
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
     </Property>
     <Property value="GcProjectileData.xml">
       <Property name="Id" value="BOT_GREN" />
@@ -624,6 +746,92 @@
       <Property name="DefaultImpact" value="GRENADEEXPLODE" />
       <Property name="CriticalImpact" value="" />
       <Property name="Impacts" />
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
+    </Property>
+    <Property value="GcProjectileData.xml">
+      <Property name="Id" value="MINIROBOTGUN" />
+      <Property name="Model" value="GcResourceElement.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/WEAPONS/ROBOTS/ROBOTPROJECTILE.SCENE.MBIN" />
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="AltId" value="" />
+        <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+          <Property name="Samplers" />
+        </Property>
+      </Property>
+      <Property name="FireAudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="MINIDRONE_SHOOT" />
+      </Property>
+      <Property name="OverheatAudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Scale" value="1" />
+      <Property name="IsAutonomous" value="False" />
+      <Property name="Radius" value="0.5" />
+      <Property name="Speed" value="30" />
+      <Property name="Gravity" value="0" />
+      <Property name="Life" value="3" />
+      <Property name="Offset" value="0" />
+      <Property name="RagdollPush" value="5" />
+      <Property name="PhysicsPush" value="2.5" />
+      <Property name="Damage" value="1" />
+      <Property name="DamageType" value="GcDamageType.xml">
+        <Property name="DamageType" value="Gun" />
+      </Property>
+      <Property name="Bounces" value="0" />
+      <Property name="BounceMaxSpeed" value="0" />
+      <Property name="BounceDamping" value="0.8" />
+      <Property name="BounceFinalStopTime" value="0" />
+      <Property name="HitOnBounce" value="True" />
+      <Property name="PlayerDamage" value="ROBOTGUNDMG" />
+      <Property name="UseCustomBulletData" value="False" />
+      <Property name="CustomBulletData" value="GcProjectileLineData.xml">
+        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletGlowWidthTime" value="0.15" />
+        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMin" value="8" />
+        <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
+          <Property name="Curve" value="Linear" />
+        </Property>
+        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScalerMinDist" value="0" />
+        <Property name="BulletScalerMaxDist" value="800" />
+        <Property name="BulletMinScaleDistance" value="200" />
+        <Property name="BulletMaxScaleDistance" value="2000" />
+      </Property>
+      <Property name="UseDamageNumberData" value="False" />
+      <Property name="DamageImpactMergeTime" value="0.2" />
+      <Property name="DamageImpactTimeBetweenNumbers" value="0.2" />
+      <Property name="DamageImpactMinDistance" value="5" />
+      <Property name="Colour" value="Colour.xml">
+        <Property name="R" value="1" />
+        <Property name="G" value="1" />
+        <Property name="B" value="1" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="BehaviourFlags" value="ScareCreatures" />
+      <Property name="Class" value="Robot" />
+      <Property name="DefaultImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="" />
+      <Property name="Impacts">
+        <Property value="GcProjectileImpactData.xml">
+          <Property name="Effect" value="BLOODSPLAT" />
+          <Property name="ImpactType" value="GcProjectileImpactType.xml">
+            <Property name="Impact" value="Creature" />
+          </Property>
+        </Property>
+      </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
     </Property>
     <Property value="GcProjectileData.xml">
       <Property name="Id" value="ROBOTGUN" />
@@ -700,6 +908,11 @@
           </Property>
         </Property>
       </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
     </Property>
     <Property value="GcProjectileData.xml">
       <Property name="Id" value="ROBOTBIGGUN" />
@@ -769,6 +982,11 @@
       <Property name="DefaultImpact" value="GUNHIT" />
       <Property name="CriticalImpact" value="" />
       <Property name="Impacts" />
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
     </Property>
     <Property value="GcProjectileData.xml">
       <Property name="Id" value="SHIPGUN" />
@@ -856,6 +1074,11 @@
             <Property name="Impact" value="Asteroid" />
           </Property>
         </Property>
+      </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
       </Property>
     </Property>
     <Property value="GcProjectileData.xml">
@@ -945,6 +1168,11 @@
           </Property>
         </Property>
       </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
     </Property>
     <Property value="GcProjectileData.xml">
       <Property name="Id" value="SHIPMINIGUN" />
@@ -1032,6 +1260,11 @@
             <Property name="Impact" value="Asteroid" />
           </Property>
         </Property>
+      </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
       </Property>
     </Property>
     <Property value="GcProjectileData.xml">
@@ -1121,6 +1354,11 @@
           </Property>
         </Property>
       </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
     </Property>
     <Property value="GcProjectileData.xml">
       <Property name="Id" value="TRADERGUN" />
@@ -1196,6 +1434,11 @@
             <Property name="Impact" value="Asteroid" />
           </Property>
         </Property>
+      </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
       </Property>
     </Property>
     <Property value="GcProjectileData.xml">
@@ -1273,6 +1516,11 @@
           </Property>
         </Property>
       </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
     </Property>
     <Property value="GcProjectileData.xml">
       <Property name="Id" value="AISHIPGUN" />
@@ -1348,6 +1596,11 @@
             <Property name="Impact" value="Asteroid" />
           </Property>
         </Property>
+      </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
       </Property>
     </Property>
     <Property value="GcProjectileData.xml">
@@ -1425,6 +1678,11 @@
           </Property>
         </Property>
       </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
     </Property>
     <Property value="GcProjectileData.xml">
       <Property name="Id" value="COP_FREIGHTGUN" />
@@ -1500,6 +1758,11 @@
             <Property name="Impact" value="Asteroid" />
           </Property>
         </Property>
+      </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
       </Property>
     </Property>
     <Property value="GcProjectileData.xml">
@@ -1577,6 +1840,11 @@
           </Property>
         </Property>
       </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
     </Property>
     <Property value="GcProjectileData.xml">
       <Property name="Id" value="BOUNTYGUN2" />
@@ -1652,6 +1920,11 @@
             <Property name="Impact" value="Asteroid" />
           </Property>
         </Property>
+      </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
       </Property>
     </Property>
     <Property value="GcProjectileData.xml">
@@ -1729,6 +2002,11 @@
           </Property>
         </Property>
       </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
     </Property>
     <Property value="GcProjectileData.xml">
       <Property name="Id" value="BASE_TURRET_M" />
@@ -1798,6 +2076,11 @@
       <Property name="DefaultImpact" value="MISSILEHIT" />
       <Property name="CriticalImpact" value="" />
       <Property name="Impacts" />
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
     </Property>
     <Property value="GcProjectileData.xml">
       <Property name="Id" value="VEHICLEGUN" />
@@ -1867,6 +2150,11 @@
       <Property name="DefaultImpact" value="VEHICLEGUNHIT" />
       <Property name="CriticalImpact" value="" />
       <Property name="Impacts" />
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
     </Property>
     <Property value="GcProjectileData.xml">
       <Property name="Id" value="SHIPROCKET" />
@@ -1936,6 +2224,11 @@
       <Property name="DefaultImpact" value="MISSILEHIT" />
       <Property name="CriticalImpact" value="" />
       <Property name="Impacts" />
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
     </Property>
     <Property value="GcProjectileData.xml">
       <Property name="Id" value="" />
@@ -2005,6 +2298,11 @@
       <Property name="DefaultImpact" value="" />
       <Property name="CriticalImpact" value="" />
       <Property name="Impacts" />
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
     </Property>
     <Property value="GcProjectileData.xml">
       <Property name="Id" value="FIENDSPIT" />
@@ -2074,11 +2372,16 @@
       <Property name="DefaultImpact" value="FIENDSPITIMPACT" />
       <Property name="CriticalImpact" value="FIENDSPITIMPACT" />
       <Property name="Impacts" />
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
     </Property>
     <Property value="GcProjectileData.xml">
-      <Property name="Id" value="BASE_TURRET_P" />
+      <Property name="Id" value="SCUTTLERSPIT" />
       <Property name="Model" value="GcResourceElement.xml">
-        <Property name="Filename" value="MODELS/EFFECTS/WEAPONS/SHIPS/SHIPBULLET_RED.SCENE.MBIN" />
+        <Property name="Filename" value="MODELS/COMMON/PROJECTILES/FIENDSPITBALL.SCENE.MBIN" />
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -2089,21 +2392,21 @@
         </Property>
       </Property>
       <Property name="FireAudioEvent" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="NPC_WPN_FREIGHTER_GUN" />
+        <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
       <Property name="OverheatAudioEvent" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
       <Property name="Scale" value="1" />
       <Property name="IsAutonomous" value="False" />
-      <Property name="Radius" value="2" />
-      <Property name="Speed" value="200" />
-      <Property name="Gravity" value="0" />
+      <Property name="Radius" value="0.5" />
+      <Property name="Speed" value="41" />
+      <Property name="Gravity" value="20" />
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="2.5" />
-      <Property name="Damage" value="60" />
+      <Property name="Damage" value="1" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
       </Property>
@@ -2112,7 +2415,7 @@
       <Property name="BounceDamping" value="0.8" />
       <Property name="BounceFinalStopTime" value="0" />
       <Property name="HitOnBounce" value="True" />
-      <Property name="PlayerDamage" value="BASICDAMAGE" />
+      <Property name="PlayerDamage" value="SCUTTLERSPITDMG" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
         <Property name="BulletLength" value="0.1" />
@@ -2133,22 +2436,101 @@
       <Property name="DamageImpactTimeBetweenNumbers" value="0.2" />
       <Property name="DamageImpactMinDistance" value="5" />
       <Property name="Colour" value="Colour.xml">
-        <Property name="R" value="0.173" />
+        <Property name="R" value="1" />
         <Property name="G" value="1" />
-        <Property name="B" value="0.388" />
+        <Property name="B" value="1" />
         <Property name="A" value="1" />
       </Property>
       <Property name="BehaviourFlags" value="None" />
       <Property name="Class" value="Player" />
-      <Property name="DefaultImpact" value="SHIPGUNHIT" />
+      <Property name="DefaultImpact" value="FIENDSPITIMPACT" />
+      <Property name="CriticalImpact" value="FIENDSPITIMPACT" />
+      <Property name="Impacts" />
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
+    </Property>
+    <Property value="GcProjectileData.xml">
+      <Property name="Id" value="TURRETINT" />
+      <Property name="Model" value="GcResourceElement.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/PROJECTILES/TURRETINT/TURRETINT_PORJECTILE.SCENE.MBIN" />
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="AltId" value="" />
+        <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+          <Property name="Samplers" />
+        </Property>
+      </Property>
+      <Property name="FireAudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="DRONE_LASER" />
+      </Property>
+      <Property name="OverheatAudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Scale" value="1" />
+      <Property name="IsAutonomous" value="False" />
+      <Property name="Radius" value="0.1" />
+      <Property name="Speed" value="50" />
+      <Property name="Gravity" value="0" />
+      <Property name="Life" value="3" />
+      <Property name="Offset" value="0" />
+      <Property name="RagdollPush" value="5" />
+      <Property name="PhysicsPush" value="2.5" />
+      <Property name="Damage" value="1" />
+      <Property name="DamageType" value="GcDamageType.xml">
+        <Property name="DamageType" value="Gun" />
+      </Property>
+      <Property name="Bounces" value="0" />
+      <Property name="BounceMaxSpeed" value="0" />
+      <Property name="BounceDamping" value="0.8" />
+      <Property name="BounceFinalStopTime" value="0" />
+      <Property name="HitOnBounce" value="True" />
+      <Property name="PlayerDamage" value="BASETURRETPDMG" />
+      <Property name="UseCustomBulletData" value="False" />
+      <Property name="CustomBulletData" value="GcProjectileLineData.xml">
+        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletGlowWidthTime" value="0.15" />
+        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMin" value="8" />
+        <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
+          <Property name="Curve" value="Linear" />
+        </Property>
+        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScalerMinDist" value="0" />
+        <Property name="BulletScalerMaxDist" value="800" />
+        <Property name="BulletMinScaleDistance" value="200" />
+        <Property name="BulletMaxScaleDistance" value="2000" />
+      </Property>
+      <Property name="UseDamageNumberData" value="False" />
+      <Property name="DamageImpactMergeTime" value="0.2" />
+      <Property name="DamageImpactTimeBetweenNumbers" value="0.2" />
+      <Property name="DamageImpactMinDistance" value="5" />
+      <Property name="Colour" value="Colour.xml">
+        <Property name="R" value="1" />
+        <Property name="G" value="1" />
+        <Property name="B" value="1" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="BehaviourFlags" value="ScareCreatures" />
+      <Property name="Class" value="Player" />
+      <Property name="DefaultImpact" value="GUNHIT" />
       <Property name="CriticalImpact" value="" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
-          <Property name="Effect" value="ASTEROIDEXPLODE" />
+          <Property name="Effect" value="BLOODSPLAT" />
           <Property name="ImpactType" value="GcProjectileImpactType.xml">
-            <Property name="Impact" value="Asteroid" />
+            <Property name="Impact" value="Creature" />
           </Property>
         </Property>
+      </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
       </Property>
     </Property>
   </Property>
@@ -2230,6 +2612,11 @@
         <Property name="B" value="0.165" />
         <Property name="A" value="1" />
       </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
     </Property>
     <Property value="GcLaserBeamData.xml">
       <Property name="Id" value="PLAYER_RAIL" />
@@ -2255,34 +2642,34 @@
         <Property name="DamageType" value="Rail" />
       </Property>
       <Property name="PlayerDamage" value="MPPLAYER_RAIL" />
-      <Property name="ImpactEffect" value="LASERHIT" />
+      <Property name="ImpactEffect" value="RAILIMPACT" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
-          <Property name="Effect" value="LASERNEEDTECH" />
+          <Property name="Effect" value="RAILIMPACT" />
           <Property name="ImpactType" value="GcProjectileImpactType.xml">
             <Property name="Impact" value="NeedsTech" />
           </Property>
         </Property>
         <Property value="GcProjectileImpactData.xml">
-          <Property name="Effect" value="LASERPLAYER" />
+          <Property name="Effect" value="RAILIMPACT" />
           <Property name="ImpactType" value="GcProjectileImpactType.xml">
             <Property name="Impact" value="Player" />
           </Property>
         </Property>
         <Property value="GcProjectileImpactData.xml">
-          <Property name="Effect" value="LASERSUBSTANCE" />
+          <Property name="Effect" value="RAILIMPACT" />
           <Property name="ImpactType" value="GcProjectileImpactType.xml">
             <Property name="Impact" value="Rock" />
           </Property>
         </Property>
         <Property value="GcProjectileImpactData.xml">
-          <Property name="Effect" value="LASERCREATURE" />
+          <Property name="Effect" value="RAILIMPACT" />
           <Property name="ImpactType" value="GcProjectileImpactType.xml">
             <Property name="Impact" value="Creature" />
           </Property>
         </Property>
         <Property value="GcProjectileImpactData.xml">
-          <Property name="Effect" value="LASERROBOT" />
+          <Property name="Effect" value="RAILIMPACT" />
           <Property name="ImpactType" value="GcProjectileImpactType.xml">
             <Property name="Impact" value="Robot" />
           </Property>
@@ -2307,6 +2694,11 @@
         <Property name="G" value="1" />
         <Property name="B" value="1" />
         <Property name="A" value="1" />
+      </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0.5" />
       </Property>
     </Property>
     <Property value="GcLaserBeamData.xml">
@@ -2374,6 +2766,11 @@
         <Property name="B" value="1" />
         <Property name="A" value="1" />
       </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
     </Property>
     <Property value="GcLaserBeamData.xml">
       <Property name="Id" value="AI_SHIP" />
@@ -2420,6 +2817,11 @@
         <Property name="G" value="1" />
         <Property name="B" value="1" />
         <Property name="A" value="1" />
+      </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
       </Property>
     </Property>
     <Property value="GcLaserBeamData.xml">
@@ -2468,6 +2870,11 @@
         <Property name="B" value="1" />
         <Property name="A" value="1" />
       </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
     </Property>
     <Property value="GcLaserBeamData.xml">
       <Property name="Id" value="COP_FREIGHTER" />
@@ -2514,6 +2921,11 @@
         <Property name="G" value="1" />
         <Property name="B" value="1" />
         <Property name="A" value="1" />
+      </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
       </Property>
     </Property>
     <Property value="GcLaserBeamData.xml">
@@ -2562,6 +2974,11 @@
         <Property name="B" value="1" />
         <Property name="A" value="1" />
       </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
     </Property>
     <Property value="GcLaserBeamData.xml">
       <Property name="Id" value="ROBOT_WALKER" />
@@ -2608,6 +3025,11 @@
         <Property name="G" value="1" />
         <Property name="B" value="1" />
         <Property name="A" value="1" />
+      </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
       </Property>
     </Property>
     <Property value="GcLaserBeamData.xml">
@@ -2681,6 +3103,11 @@
         <Property name="B" value="1" />
         <Property name="A" value="1" />
       </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
     </Property>
     <Property value="GcLaserBeamData.xml">
       <Property name="Id" value="BASE_TURRET_L" />
@@ -2727,6 +3154,63 @@
         <Property name="G" value="1" />
         <Property name="B" value="1" />
         <Property name="A" value="1" />
+      </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
+    </Property>
+    <Property value="GcLaserBeamData.xml">
+      <Property name="Id" value="TURRET_POINTER" />
+      <Property name="BeamFile" value="MODELS/EFFECTS/LINES/TURRETLASERRAYCAST.SCENE.MBIN" />
+      <Property name="BeamCoreFile" value="MODELS/EFFECTS/LINES/TURRETLASERRAYCAST.SCENE.MBIN" />
+      <Property name="Width" value="1.5" />
+      <Property name="HitWidth" value="0.5" />
+      <Property name="PulseFrequency" value="0" />
+      <Property name="PulseAmplitude" value="0" />
+      <Property name="StartTime" value="0.15" />
+      <Property name="EndTime" value="0.4" />
+      <Property name="AudioStart" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="AudioStop" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Damage" value="0" />
+      <Property name="DamageType" value="GcDamageType.xml">
+        <Property name="DamageType" value="Gun" />
+      </Property>
+      <Property name="PlayerDamage" value="LASERDAMAGE" />
+      <Property name="ImpactEffect" value="" />
+      <Property name="Impacts" />
+      <Property name="HitRate" value="0.2" />
+      <Property name="SingleHit" value="False" />
+      <Property name="RagdollPush" value="0" />
+      <Property name="PhysicsPush" value="0.1" />
+      <Property name="MiningHitRate" value="0.4" />
+      <Property name="HasLight" value="False" />
+      <Property name="CanMine" value="False" />
+      <Property name="LightScale" value="1" />
+      <Property name="LightColour" value="Colour.xml">
+        <Property name="R" value="0.297" />
+        <Property name="G" value="1" />
+        <Property name="B" value="0.051" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="Colour" value="Colour.xml">
+        <Property name="R" value="1" />
+        <Property name="G" value="1" />
+        <Property name="B" value="1" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
       </Property>
     </Property>
   </Property>
