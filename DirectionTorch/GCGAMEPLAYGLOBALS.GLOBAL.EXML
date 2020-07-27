@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (2.43.0)-->
+<!--File created using MBINCompiler version (2.61.0)-->
 <Data template="GcGameplayGlobals">
+  <Property name="AlienPodThreshold2" value="0.55" />
+  <Property name="AlienPodThreshold1" value="0.25" />
+  <Property name="BulletTraceLineColour" value="Colour.xml">
+    <Property name="R" value="0.768" />
+    <Property name="G" value="0.768" />
+    <Property name="B" value="0.868" />
+    <Property name="A" value="0.02" />
+  </Property>
+  <Property name="BulletTraceLineWidth" value="0" />
+  <Property name="TracerBeamStart" value="0.2" />
+  <Property name="TracerBeamEnd" value="0.21" />
   <Property name="VehicleAllIconScanTime" value="20" />
   <Property name="GPSRandomChangeTimeWide" value="10" />
   <Property name="GPSRandomChangeTimeMid" value="5" />
@@ -379,7 +390,7 @@
   <Property name="AllRecipesKnownNanitesMax" value="200" />
   <Property name="MaxPossibleShipDamagePotential" value="17000" />
   <Property name="BuildingPlayerBaseIconOffset" value="4.6" />
-  <Property name="CriticalHitMultiplier" value="4" />
+  <Property name="CriticalHitMultiplier" value="3" />
   <Property name="HitEffectMinTime" value="0.1" />
   <Property name="GrabPlayerCooldownTime" value="2" />
   <Property name="TapInteractionIncreaseAmount" value="0.15" />
@@ -449,11 +460,10 @@
   </Property>
   <Property name="CommunicatorSpawnOffset" value="10" />
   <Property name="CommunicatorSpawnHeightOffset" value="-2" />
-  <Property name="CommunicatorShipSpawnOffset" value="Vector4f.xml">
+  <Property name="CommunicatorShipSpawnOffset" value="Vector3f.xml">
     <Property name="x" value="0.15" />
     <Property name="y" value="-0.27" />
     <Property name="z" value="0.41" />
-    <Property name="t" value="0" />
   </Property>
   <Property name="CommunicatorSpawnScale" value="0.1" />
   <Property name="CommunicatorSpawnRotation" value="-40" />
@@ -580,11 +590,11 @@
   <Property name="LowSentinelProbabilitySurvival" value="0.25" />
   <Property name="NonAggressiveLushSurvivalProbabability" value="0.5" />
   <Property name="MaxDronesLow" value="0" />
-  <Property name="MaxDronesLowSurvival" value="2" />
-  <Property name="MaxDronesNormal" value="3" />
-  <Property name="MaxDronesNormalSurvival" value="3" />
-  <Property name="MaxDronesAggressive" value="2" />
-  <Property name="MaxDronesAggressiveSurvival" value="2" />
+  <Property name="MaxDronesLowSurvival" value="1" />
+  <Property name="MaxDronesNormal" value="2" />
+  <Property name="MaxDronesNormalSurvival" value="2" />
+  <Property name="MaxDronesAggressive" value="1" />
+  <Property name="MaxDronesAggressiveSurvival" value="1" />
   <Property name="SentinelTimersLow" value="GcExperienceTimers.xml">
     <Property name="HighChance" value="10" />
     <Property name="LowChance" value="30" />
@@ -719,6 +729,12 @@
       <Property name="x" value="200" />
       <Property name="y" value="600" />
     </Property>
+  </Property>
+  <Property name="FreighterTechQualityWeightings">
+    <Property value="55" />
+    <Property value="25" />
+    <Property value="15" />
+    <Property value="5" />
   </Property>
   <Property name="SentinelsHigh" value="10" />
   <Property name="SentinelsLow" value="30" />
@@ -1488,9 +1504,9 @@
   <Property name="MouseSensitivity" value="0.75" />
   <Property name="MouseSensitivityShip" value="30" />
   <Property name="MouseSensitivityVehicle" value="20" />
-  <Property name="PainTime" value="1" />
+  <Property name="PainTime" value="1.5" />
   <Property name="PainCurve" value="TkCurveType.xml">
-    <Property name="Curve" value="Squared" />
+    <Property name="Curve" value="FastInSlowOut" />
   </Property>
   <Property name="PainColour" value="Colour.xml">
     <Property name="R" value="0.38" />
@@ -1524,33 +1540,48 @@
   <Property name="DefaultAnim" value="RUN" />
   <Property name="DebugDrawTriggerBoxes" value="False" />
   <Property name="SpeedReadoutMultiplier" value="1" />
-  <Property name="SpaceSpeedReadoutMultiplier" value="2" />
-  <Property name="TorchFoV" value="60" />
-  <Property name="TorchStrength" value="20" />
+  <Property name="SpaceSpeedReadoutMultiplier" value="1" />
+  <Property name="TorchCookieIndex" value="0" />
+  <Property name="TorchFoV" value="45" />
+  <Property name="TorchStrength" value="47" />
+  <Property name="TorchDimCookieIndex" value="0" />
+  <Property name="TorchDimFoV" value="45" />
+  <Property name="TorchDimStrength" value="24" />
   <Property name="TorchOffsetX" value="0" />
-  <Property name="TorchOffsetY" value="0.5" />
-  <Property name="TorchOffsetZ" value="2.75" />
+  <Property name="TorchOffsetY" value="-0.20" />
+  <Property name="TorchOffsetZ" value="-0.3" /> <!-- positive moves backwards -->
   <Property name="TorchHandOffsetX" value="0" />
   <Property name="TorchHandOffsetY" value="0" />
   <Property name="TorchHandOffsetZ" value="0" />
   <Property name="TorchDisabledInTheDay" value="False" />
   <Property name="TorchRotation" value="0" />
+  <Property name="TorchFollowCameraPitch" value="1" />
+  <Property name="TorchFollowCameraTime" value="0.03" />
   <Property name="TorchColour" value="Colour.xml">
     <Property name="R" value="0.19" />
     <Property name="G" value="0.193" />
-    <Property name="B" value="0.164" />
+    <Property name="B" value="0.174" />
     <Property name="A" value="1" />
   </Property>
+  <Property name="PlayerAmbientSpotLightIntensity" value="0" />
+  <Property name="PlayerAmbientSpotLightColour" value="Colour.xml">
+    <Property name="R" value="0" />
+    <Property name="G" value="0" />
+    <Property name="B" value="0" />
+    <Property name="A" value="0" />
+  </Property>
+  <Property name="PlayerAmbientSpotLightOffsetY" value="1.32" />
+  <Property name="PlayerAmbientSpotLightOffsetZ" value="0.5" />
   <Property name="SimpleInteractionPickupAngle" value="55" />
   <Property name="SimpleInteractionPickupRadius" value="10" />
   <Property name="SimpleInteractionMessageTime" value="2" />
   <Property name="InteractionPickupAngle" value="55" />
   <Property name="InteractionPickupRadius" value="15" />
   <Property name="ExplosionRadiusMultiplier" value="2" />
-  <Property name="ExplosionForce" value="600" />
-  <Property name="ExplosionForceMaxForceRadius" value="12" />
-  <Property name="LaserExplosionForceRadius" value="3" />
-  <Property name="LaserExplosionForce" value="60" />
+  <Property name="ExplosionForce" value="500" />
+  <Property name="ExplosionForceMaxForceRadius" value="8" />
+  <Property name="LaserExplosionForceRadius" value="4" />
+  <Property name="LaserExplosionForce" value="50" />
   <Property name="LaserExplosionForceMaxForceRadius" value="2" />
   <Property name="InitialDebrisScene" value="MODELS/PLANETS/BIOMES/COMMON/BUILDINGS/DISTRESSSIGNAL/DISTRESSSCENE.DAE" />
   <Property name="BonusSameTypeElementsAdd" value="0.06" />
@@ -1624,8 +1655,8 @@
   <Property name="CommunicatorFireteamNexusExitDialog" value="?NEXUS_EXIT" />
   <Property name="CommunicatorNexusExitAbandonWarningDialog" value="?NEXUS_ABANDON" />
   <Property name="PulseEncounterCheckTimer" value="1" />
-  <Property name="PulseEncounterChance" value="0.00005" />
-  <Property name="PulseEncounterChanceStandard" value="0.0005" />
+  <Property name="PulseEncounterChance" value="0.00066" />
+  <Property name="PulseEncounterChanceStandard" value="0.0066" />
   <Property name="PulseEncounterChanceRed" value="0.001" />
   <Property name="PulseEncounterChanceGreen" value="0.002" />
   <Property name="PulseEncounterChanceBlue" value="0.003" />

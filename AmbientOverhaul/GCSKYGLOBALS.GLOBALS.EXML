@@ -48,16 +48,15 @@
     <Property name="Curve" value="Linear" />
   </Property>
   <Property name="DayLength" value="1800" />
-  <Property name="SunRotationAxis" value="Vector4f.xml">
+  <Property name="SunRotationAxis" value="Vector3f.xml">
     <Property name="x" value="1" />
     <Property name="y" value="0" />
     <Property name="z" value="0" />
-    <Property name="t" value="0" />
   </Property>
   <Property name="SafeSkyMinIndex" value="0" />
-  <Property name="SafeSkyMaxIndex" value="16" />
+  <Property name="SafeSkyMaxIndex" value="16000" />
   <Property name="FrozenSkyMinIndex" value="0" />
-  <Property name="FrozenSkyMaxIndex" value="16" />
+  <Property name="FrozenSkyMaxIndex" value="16000" />
   <Property name="SunClampAngle" value="86" />
   <Property name="PhotoModeSunSpeed" value="5" />
   <Property name="FreshStartTimeOfDay" value="0.3" />
@@ -87,17 +86,15 @@
   <Property name="ExtremeAudioLevel" value="0.3" />
   <Property name="StormAudioLevel" value="0.5" />
   <Property name="SleepSunFromSettings" value="True" />
-  <Property name="SleepSunFromSettingsPos" value="Vector4f.xml">
+  <Property name="SleepSunFromSettingsPos" value="Vector3f.xml">
     <Property name="x" value="32.38451" />
     <Property name="y" value="83.82101" />
     <Property name="z" value="-43.8787" />
-    <Property name="t" value="0" />
   </Property>
-  <Property name="SunPosition" value="Vector4f.xml">
+  <Property name="SunPosition" value="Vector3f.xml">
     <Property name="x" value="-77.25284" />
     <Property name="y" value="61.62304" />
     <Property name="z" value="-21.84243" />
-    <Property name="t" value="0" />
   </Property>
   <Property name="AsteroidColour" value="Colour.xml">
     <Property name="R" value="0.427451" />
@@ -134,6 +131,12 @@
     <Property name="G" value="0.917" />
     <Property name="B" value="0.917" />
     <Property name="A" value="1" />
+  </Property>
+  <Property name="AbandonedFreighterFogColour" value="Colour.xml">  
+    <Property name="R" value="0" /> 
+    <Property name="G" value="0.046" /> 
+    <Property name="B" value="0.19" />  
+    <Property name="A" value="1" /> 
   </Property>
   <Property name="HeavyAirScale" value="1" />
   <Property name="AmbientFactor" value="0.4" />
@@ -177,7 +180,7 @@
   <Property name="CloudColourV" value="0.03" />
   <Property name="NebulaShadow" value="0.1" />
   <Property name="SpaceAtmosphereThickness" value="0.4" />
-  <Property name="WaterHeavyAirAlpha" value="1" />
+  <Property name="WaterHeavyAirAlpha" value="0.3" />
   <Property name="NightHorizonBlendMin" value="0.6" />
   <Property name="NightHorizonBlendMax" value="0.6" />
   <Property name="NightSkyBlendMin" value="0.05" />
@@ -568,6 +571,97 @@
     <Property name="DepthOfFieldDistance" value="700" />
     <Property name="DepthOfFieldFade" value="1000" />
     <Property name="IsRaining" value="False" />
+  </Property>
+  <Property name="AbandonedFreighterFog" value="GcFogProperties.xml"> 
+    <Property name="FogStrength" value="0.025" /> 
+    <Property name="FogMax" value="1" />  
+    <Property name="FogColourStrength" value="0" /> 
+    <Property name="FogColourMax" value="1" />  
+    <Property name="HeightFogStrength" value="0" /> 
+    <Property name="HeightFogFadeOutStrength" value="0" />  
+    <Property name="HeightFogOffset" value="0" /> 
+    <Property name="HeightFogMax" value="0" />  
+    <Property name="FogHeight" value="128" /> 
+    <Property name="HeavyAir" value="GcHeavyAirSetting.xml">  
+      <Property name="Settings">  
+        <Property value="GcHeavyAirSettingValues.xml">  
+          <Property name="Thickness" value="1" /> 
+          <Property name="Speed" value="1" /> 
+          <Property name="Alpha1" value="1" />  
+          <Property name="Alpha2" value="1" />  
+          <Property name="Colour1" value="TkPaletteTexture.xml">  
+            <Property name="Palette" value="Rock" />  
+            <Property name="ColourAlt" value="Primary" /> 
+          </Property> 
+          <Property name="Colour2" value="TkPaletteTexture.xml">  
+            <Property name="Palette" value="Rock" />  
+            <Property name="ColourAlt" value="Primary" /> 
+          </Property> 
+        </Property> 
+        <Property value="GcHeavyAirSettingValues.xml">  
+          <Property name="Thickness" value="1" /> 
+          <Property name="Speed" value="1" /> 
+          <Property name="Alpha1" value="1" />  
+          <Property name="Alpha2" value="1" />  
+          <Property name="Colour1" value="TkPaletteTexture.xml">  
+            <Property name="Palette" value="Rock" />  
+            <Property name="ColourAlt" value="Primary" /> 
+          </Property> 
+          <Property name="Colour2" value="TkPaletteTexture.xml">  
+            <Property name="Palette" value="Rock" />  
+            <Property name="ColourAlt" value="Primary" /> 
+          </Property> 
+        </Property> 
+        <Property value="GcHeavyAirSettingValues.xml">  
+          <Property name="Thickness" value="1" /> 
+          <Property name="Speed" value="1" /> 
+          <Property name="Alpha1" value="1" />  
+          <Property name="Alpha2" value="1" />  
+          <Property name="Colour1" value="TkPaletteTexture.xml">  
+            <Property name="Palette" value="Rock" />  
+            <Property name="ColourAlt" value="Primary" /> 
+          </Property> 
+          <Property name="Colour2" value="TkPaletteTexture.xml">  
+            <Property name="Palette" value="Rock" />  
+            <Property name="ColourAlt" value="Primary" /> 
+          </Property> 
+        </Property> 
+        <Property value="GcHeavyAirSettingValues.xml">  
+          <Property name="Thickness" value="1" /> 
+          <Property name="Speed" value="1" /> 
+          <Property name="Alpha1" value="1" />  
+          <Property name="Alpha2" value="1" />  
+          <Property name="Colour1" value="TkPaletteTexture.xml">  
+            <Property name="Palette" value="Rock" />  
+            <Property name="ColourAlt" value="Primary" /> 
+          </Property> 
+          <Property name="Colour2" value="TkPaletteTexture.xml">  
+            <Property name="Palette" value="Rock" />  
+            <Property name="ColourAlt" value="Primary" /> 
+          </Property> 
+        </Property> 
+        <Property value="GcHeavyAirSettingValues.xml">  
+          <Property name="Thickness" value="1" /> 
+          <Property name="Speed" value="1" /> 
+          <Property name="Alpha1" value="1" />  
+          <Property name="Alpha2" value="1" />  
+          <Property name="Colour1" value="TkPaletteTexture.xml">  
+            <Property name="Palette" value="Rock" />  
+            <Property name="ColourAlt" value="Primary" /> 
+          </Property> 
+          <Property name="Colour2" value="TkPaletteTexture.xml">  
+            <Property name="Palette" value="Rock" />  
+            <Property name="ColourAlt" value="Primary" /> 
+          </Property> 
+        </Property> 
+      </Property> 
+    </Property> 
+    <Property name="CloudRatio" value="0.55" /> 
+    <Property name="FullscreenEffect" value="0" />  
+    <Property name="DepthOfField" value="0" />  
+    <Property name="DepthOfFieldDistance" value="700" />  
+    <Property name="DepthOfFieldFade" value="1000" /> 
+    <Property name="IsRaining" value="False" /> 
   </Property>
   <Property name="SpaceSkyMin" value="GcSpaceSkyProperties.xml">
     <Property name="ColourIndex" value="GcPlanetWeatherColourIndex.xml">
@@ -1054,7 +1148,6 @@
       <Property name="x" value="1" />
       <Property name="y" value="1" />
       <Property name="z" value="1" />
-      <Property name="t" value="0" />
     </Property>
     <Property name="LightColour" value="Colour.xml">
       <Property name="R" value="0.42" />

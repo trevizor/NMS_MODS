@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (2.43.0)-->
+<!--File created using MBINCompiler version (2.61.1)-->
 <Data template="GcUIGlobals">
   <Property name="ForceOpenHazardProtInventoryThreshold" value="16" />
   <Property name="PlanetDataExtraRadius" value="1.125" />
@@ -54,9 +54,9 @@
     <Property name="y" value="0.4" />
     <Property name="z" value="0" />
   </Property>
-  <Property name="FrontendOffsetVR" value="500" />
+  <Property name="FrontendOffsetVR" value="600" />
   <Property name="ProjectorScale" value="0.045" />
-  <Property name="CockpitGlassFrostTime" value="0.5" />
+  <Property name="CockpitGlassFrostTime" value="1" />
   <Property name="CockpitGlassDefrostTime" value="2" />
   <Property name="TextPrintoutMultiplier" value="3.5" />
   <Property name="TextPrintoutMultiplierAlien" value="8" />
@@ -92,7 +92,7 @@
   </Property>
   <Property name="InWorldInteractLabelWidth" value="700" />
   <Property name="InWorldInteractLabelHeight" value="300" />
-  <Property name="VRDistanceWarningUIFile" value="UI//HUD//HUDVRWARNING.MBIN" />
+  <Property name="VRDistanceWarningUIFile" value="" />
   <Property name="ShowVRDistanceWarning" value="False" />
   <Property name="FaceLockedScreenOffset" value="Vector3f.xml">
     <Property name="x" value="0" />
@@ -196,6 +196,44 @@
       <Property name="Roll" value="0" />
       <Property name="Pitch" value="30" />
       <Property name="Rotate" value="-20" />
+      <Property name="LightPitch" value="45" />
+      <Property name="LightRotate" value="65" />
+      <Property name="Wander" value="TkCameraWanderData.xml">
+        <Property name="CamWander" value="False" />
+        <Property name="CamWanderPhase" value="0.003" />
+        <Property name="CamWanderAmplitude" value="0.5" />
+      </Property>
+    </Property>
+    <Property name="Fov" value="70" />
+    <Property name="AspectRatio" value="1" />
+    <Property name="ThumbnailMode" value="HUD" />
+    <Property name="FocusType" value="DiscoveryView" />
+    <Property name="FocusLocator" value="" />
+    <Property name="FocusOffset" value="Vector3f.xml">
+      <Property name="x" value="0" />
+      <Property name="y" value="0" />
+      <Property name="z" value="0" />
+    </Property>
+    <Property name="FocusInterpTime" value="1.2" />
+    <Property name="BlendInTime" value="0.8" />
+    <Property name="BlendInOffset" value="0" />
+    <Property name="Anim" value="" />
+    <Property name="HeightOffset" value="0" />
+    <Property name="UsePlayerCameraInHmd" value="True" />
+    <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
+    <Property name="LookForFocusInMasterModel" value="False" />
+  </Property>
+  <Property name="PetThumbnailModelView" value="TkModelRendererData.xml">
+    <Property name="Camera" value="TkModelRendererCameraData.xml">
+      <Property name="Distance" value="1" />
+      <Property name="Offset" value="Vector3f.xml">
+        <Property name="x" value="-0.1" />
+        <Property name="y" value="0.3" />
+        <Property name="z" value="0" />
+      </Property>
+      <Property name="Roll" value="0" />
+      <Property name="Pitch" value="0" />
+      <Property name="Rotate" value="150" />
       <Property name="LightPitch" value="45" />
       <Property name="LightRotate" value="65" />
       <Property name="Wander" value="TkCameraWanderData.xml">
@@ -466,10 +504,6 @@
     <Property value="Vector2f.xml">
       <Property name="x" value="0.85" />
       <Property name="y" value="0.6" />
-    </Property>
-    <Property value="Vector2f.xml">
-      <Property name="x" value="0" />
-      <Property name="y" value="0" />
     </Property>
   </Property>
   <Property name="PickedItemBorderColour" value="Colour.xml">
@@ -1064,17 +1098,15 @@
   <Property name="RefinerPadStartDecayTime" value="0.3" />
   <Property name="RefinerBeginDialInnerRadius" value="0.65" />
   <Property name="RefinerProgressDialInnerRadius" value="0.72" />
-  <Property name="DefaultRefinerOffsetIn" value="Vector4f.xml">
+  <Property name="DefaultRefinerOffsetIn" value="Vector3f.xml">
     <Property name="x" value="-0.3" />
     <Property name="y" value="0.8" />
     <Property name="z" value="0" />
-    <Property name="t" value="0" />
   </Property>
-  <Property name="DefaultRefinerOffsetOut" value="Vector4f.xml">
+  <Property name="DefaultRefinerOffsetOut" value="Vector3f.xml">
     <Property name="x" value="0.3" />
     <Property name="y" value="0.8" />
     <Property name="z" value="0" />
-    <Property name="t" value="0" />
   </Property>
   <Property name="RefinerParallax" value="Vector2f.xml">
     <Property name="x" value="0.12" />
@@ -1211,7 +1243,7 @@
   <Property name="ShipDamageDirectionIndicatorFadeRange" value="20" />
   <Property name="OnFootDamageDirectionIndicatorRadius" value="450" />
   <Property name="OnFootDamageDirectionIndicatorFadeRange" value="40" />
-  <Property name="DamageDirectionIndicatorOnScreenRadiusMultiplier" value="3" />
+  <Property name="DamageDirectionIndicatorOnScreenRadiusMultiplier" value="2" />
   <Property name="DialogPageCursorOffset" value="Vector2f.xml">
     <Property name="x" value="550" />
     <Property name="y" value="285" />
@@ -1219,11 +1251,10 @@
   <Property name="MissionSpecificMissionPercent" value="50" />
   <Property name="MissionLoopCount" value="15" />
   <Property name="MissionSeedOffset" value="1" />
-  <Property name="SpaceMapCockpitOffset" value="Vector4f.xml">
+  <Property name="SpaceMapCockpitOffset" value="Vector3f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="-0.31" />
     <Property name="z" value="-1.1" />
-    <Property name="t" value="0" />
   </Property>
   <Property name="SpaceMapCockpitScale" value="0.035" />
   <Property name="SpaceMapCockpitScaleAdjustDropShip" value="0.65" />
@@ -1235,11 +1266,10 @@
   <Property name="SpaceMapCockpitAngle" value="-18" />
   <Property name="TargetDisplayScale" value="0.01" />
   <Property name="TargetDisplayShipScale" value="0.08" />
-  <Property name="TargetDisplayShipOffset" value="Vector4f.xml">
+  <Property name="TargetDisplayShipOffset" value="Vector3f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="0" />
     <Property name="z" value="0" />
-    <Property name="t" value="0" />
   </Property>
   <Property name="TargetDisplayDamageFlashTime" value="0.2" />
   <Property name="TargetDisplayScanEffect" value="GcScanEffectData.xml">
@@ -1516,6 +1546,21 @@
   <Property name="CrosshairInterceptAlpha" value="1" />
   <Property name="CrosshairInterceptLockRange" value="600" />
   <Property name="CrosshairTargetLockSize" value="2" />
+  <Property name="CrosshairTargetLockSizeSpecific">
+    <Property value="0" />
+    <Property value="160" />
+    <Property value="260" />
+    <Property value="0" />
+    <Property value="0" />
+    <Property value="0" />
+    <Property value="0" />
+    <Property value="0" />
+    <Property value="0" />
+    <Property value="0" />
+    <Property value="0" />
+    <Property value="0" />
+    <Property value="0" />
+  </Property>
   <Property name="CrosshairTargetLockCurve" value="TkCurveType.xml">
     <Property name="Curve" value="Linear" />
   </Property>
@@ -2283,14 +2328,14 @@
   <Property name="KeepHazardBarActiveTime" value="6" />
   <Property name="KeepSecondHazardBarActiveTime" value="1" />
   <Property name="HazardBarPulseTime" value="1" />
-  <Property name="HazardScreenEffectPulseTime" value="6" />
-  <Property name="HazardScreenEffectStrength" value="0.5" />
-  <Property name="HazardWarningPulseTime" value="8" />
-  <Property name="HazardWarningPulseStrength" value="0.7" />
-  <Property name="HazardPainPulseStrength" value="1" />
+  <Property name="HazardScreenEffectPulseTime" value="2" />
+  <Property name="HazardScreenEffectStrength" value="0.25" />
+  <Property name="HazardWarningPulseTime" value="4" />
+  <Property name="HazardWarningPulseStrength" value="1.66" />
+  <Property name="HazardPainPulseStrength" value="2" />
   <Property name="ShieldSpringTime" value="0.6" />
-  <Property name="ShieldPulseTime" value="0.5" />
-  <Property name="ShieldHazardPulseRate" value="0.6" />
+  <Property name="ShieldPulseTime" value="0.25" />
+  <Property name="ShieldHazardPulseRate" value="0.3" />
   <Property name="ShieldHazardPulseThreshold" value="0.2" />
   <Property name="AlwaysOnHazardThreshold" value="0.5" />
   <Property name="AlwaysOnHazardStrengthTox" value="0.3" />
@@ -3456,11 +3501,11 @@
     <Property name="A" value="0.9" />
   </Property>
   <Property name="CursorHoverSlowFactor" value="0.85" />
-  <Property name="FrontendBGAlpha" value="1" />
-  <Property name="FrontendConfirmTimeMouseMultiplier" value="0.5" />
-  <Property name="FrontendConfirmTimeFast" value="0.35" />
+  <Property name="FrontendBGAlpha" value="0.4" />
+  <Property name="FrontendConfirmTimeMouseMultiplier" value="0.25" />
+  <Property name="FrontendConfirmTimeFast" value="0.15" />
   <Property name="FrontendConfirmTime" value="0.2" />
-  <Property name="FrontendConfirmTimeSlow" value="1.6" />
+  <Property name="FrontendConfirmTimeSlow" value="0.3" />
   <Property name="FrontendConfirmCurve" value="TkCurveType.xml">
     <Property name="Curve" value="Squared" />
   </Property>
@@ -3691,7 +3736,7 @@
   <Property name="TargetMarkerFadeAngleMin" value="10" />
   <Property name="TargetMarkerFadeAngleRange" value="45" />
   <Property name="HitMarkerPulseSize" value="1" />
-  <Property name="HitMarkerPulseTime" value="0.5" />
+  <Property name="HitMarkerPulseTime" value="0.2" />
   <Property name="WantedColour" value="Colour.xml">
     <Property name="R" value="1" />
     <Property name="G" value="0.218" />
@@ -4081,23 +4126,20 @@
   <Property name="NGuiAltPlacementDistanceScrollSpeed" value="10" />
   <Property name="NGuiPlacementAngleScrollSpeed" value="0.3" />
   <Property name="NGuiModelViewFractionOfBBHeightAboveReflectivePlane" value="0.005" />
-  <Property name="NGuiModelTranslationFactors" value="Vector4f.xml">
+  <Property name="NGuiModelTranslationFactors" value="Vector3f.xml">
     <Property name="x" value="-0.15" />
     <Property name="y" value="-0.035" />
     <Property name="z" value="0" />
-    <Property name="t" value="0" />
   </Property>
-  <Property name="NGuiModelTranslationFactorsInteraction" value="Vector4f.xml">
+  <Property name="NGuiModelTranslationFactorsInteraction" value="Vector3f.xml">
     <Property name="x" value="-0.15" />
     <Property name="y" value="-0.035" />
     <Property name="z" value="0" />
-    <Property name="t" value="0" />
   </Property>
-  <Property name="NGuiThumbnailModelTranslationFactors" value="Vector4f.xml">
+  <Property name="NGuiThumbnailModelTranslationFactors" value="Vector3f.xml">
     <Property name="x" value="0.04" />
     <Property name="y" value="-0.015" />
     <Property name="z" value="0" />
-    <Property name="t" value="0" />
   </Property>
   <Property name="NGuiThumbnailModelRotationDegreesY" value="-80" />
   <Property name="NGuiThumbnailModelViewDistance" value="1.1" />
@@ -4357,4 +4399,5 @@
   <Property name="ShipScreenTexScale" value="0.25" />
   <Property name="MultiplayerTeleportEffectDisappearTime" value="0" />
   <Property name="MultiplayerTeleportEffectAppearTime" value="0" />
+  <Property name="AbandonedFreighterAirlockRoomNumber" value="999" />
 </Data>

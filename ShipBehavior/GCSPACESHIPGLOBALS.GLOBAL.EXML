@@ -46,7 +46,7 @@
   </Property>
   <Property name="HandControllerValueMultiplierSpace" value="Vector2f.xml">
     <Property name="x" value="1.25" />
-    <Property name="y" value="1" />
+    <Property name="y" value="1.25" />
   </Property>
   <Property name="HandControllerDeadZone" value="Vector2f.xml">
     <Property name="x" value="0.05" />
@@ -62,7 +62,7 @@
   <Property name="HandControllerZReorientation" value="0" />
   <Property name="HandControllerThrottleDistance" value="0.03" />
   <Property name="HandControllerThrottleRange" value="30" />
-  <Property name="HandControllerThrottleDeadZone" value="2" />
+  <Property name="HandControllerThrottleDeadZone" value="1" />
   <Property name="HandControllerDirOffsetAngle" value="20" />
   <Property name="HandControllerDirOffsetAngleMove" value="0" />
   <Property name="CockpitRollAngleHmd" value="-20" />
@@ -148,8 +148,8 @@
     <Property name="y" value="5" />
     <Property name="z" value="15" />
   </Property>
-  <Property name="OutpostDockSpeedAlignMinDistance" value="100" />
-  <Property name="OutpostDockSpeedAlignRange" value="300" />
+  <Property name="OutpostDockSpeedAlignMinDistance" value="300" />
+  <Property name="OutpostDockSpeedAlignRange" value="100" />
   <Property name="NearGroundPitchCorrectMinHeight" value="0" />
   <Property name="NearGroundPitchCorrectRange" value="0" />
   <Property name="NearGroundPitchCorrectMinHeightRemote" value="0" />
@@ -179,7 +179,7 @@
   <Property name="WarpScaleNexus" value="300" />
   <Property name="WarpNexusRotation" value="15" />
   <Property name="WarpNexusPitch" value="15" />
-  <Property name="WarpNexusDistance" value="-9000" />
+  <Property name="WarpNexusDistance" value="-19000" />
   <Property name="NetworkDockSearchRadius" value="10" />
   <Property name="DirectionDockingIndicatorRange" value="500" />
   <Property name="DirectionDockingIndicatorAngleRange" value="28" />
@@ -236,7 +236,7 @@
   <Property name="PostWarpSlowDownTime" value="3" />
   <Property name="PulseDrivePlanetApproachMinAngle" value="5" />
   <Property name="PulseDrivePlanetApproachMaxAngle" value="10" />
-  <Property name="PulseDrivePlanetApproachHeight" value="3000" />
+  <Property name="PulseDrivePlanetApproachHeight" value="6000" />
   <Property name="TestJetsStage1" value="0" />
   <Property name="TestJetsStage2" value="0" />
   <Property name="TestJetsBoost" value="0" />
@@ -271,10 +271,10 @@
     <Property name="FadeOutTime" value="0.3" />
   </Property>
   <Property name="_3rdPersonUpOffsetRollChangeSpeed" value="10" />
-  <Property name="_3rdPersonRollAngle" value="75" />
-  <Property name="_3rdPersonRollAngleDropship" value="45" />
-  <Property name="_3rdPersonRollAngleScience" value="62" />
-  <Property name="_3rdPersonRollAngleAlien" value="30" />
+  <Property name="_3rdPersonRollAngle" value="0" />
+  <Property name="_3rdPersonRollAngleDropship" value="0" />
+  <Property name="_3rdPersonRollAngleScience" value="0" />
+  <Property name="_3rdPersonRollAngleAlien" value="0" />
   <Property name="_3rdPersonPitchAngle" value="12" />
   <Property name="_3rdPersonYawAngle" value="10" />
   <Property name="_3rdPersonYawAngleLateralExtra" value="0.075" />
@@ -1037,7 +1037,7 @@
   <Property name="MiniWarpMinPlanetDistance" value="1500" />
   <Property name="MiniWarpStoppingMarginStation" value="2500" />
   <Property name="MiniWarpTrackingMargin" value="100" />
-  <Property name="MiniWarpExitSpeed" value="2000" />
+  <Property name="MiniWarpExitSpeed" value="800" />
   <Property name="MiniWarpExitSpeedStation" value="500" />
   <Property name="MiniWarpExitTime" value="0.5" />
   <Property name="MiniWarpHUDArrowAttractAngle" value="2" />

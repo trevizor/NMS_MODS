@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (2.32.0)-->
+<!--File created using MBINCompiler version (2.61.1)-->
 <Data template="TkAttachmentData">
   <Property name="Components">
     <Property value="TkAnimPoseComponentData.xml">
@@ -21,7 +21,7 @@
       <Property name="Axis" value="GcPrimaryAxis.xml">
         <Property name="PrimaryAxis" value="ZNeg" />
       </Property>
-      <Property name="Scaler" value="1.0" />
+      <Property name="Scaler" value="1" />
       <Property name="DeathEffect" value="" />
       <Property name="ReplacementImpacts" />
       <Property name="DiscoveryUIScaler" value="1.8" />
@@ -79,6 +79,7 @@
       <Property name="SurfaceProperties" value="None" />
       <Property name="TriggerVolume" value="False" />
       <Property name="Climbable" value="False" />
+      <Property name="Floor" value="False" />
       <Property name="IgnoreModelOwner" value="False" />
       <Property name="NoVehicleCollide" value="False" />
       <Property name="NoPlayerCollide" value="False" />
@@ -86,6 +87,8 @@
       <Property name="InvisibleForInteraction" value="False" />
       <Property name="AllowTeleporter" value="False" />
       <Property name="BlockTeleporter" value="False" />
+      <Property name="DisableGravity" value="False" />
+      <Property name="SpinOnCreate" value="0" />
     </Property>
     <Property value="GcNetworkInterpolationComponentData.xml">
       <Property name="SynchroniseScale" value="Once" />
@@ -95,6 +98,7 @@
       <Property name="ReplicaComponentMask" />
       <Property name="ReplicationRange" value="PlanetLocal" />
       <Property name="SpawnType" value="Creature" />
+      <Property name="IgnoreComponents" value="False" />
     </Property>
   </Property>
   <Property name="LodDistances">

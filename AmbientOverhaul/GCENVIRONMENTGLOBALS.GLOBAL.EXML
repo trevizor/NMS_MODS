@@ -267,6 +267,8 @@
   </Property>
   <Property name="DailyTempChangePercent" value="0.25" />
   <Property name="SpaceTemperature" value="0" />
+  <Property name="AbandonedFreighterMinTemperature" value="-62" />
+  <Property name="AbandonedFreighterMaxTemperature" value="-10" />
   <Property name="ShipTemperature" value="19" />
   <Property name="SpaceRadiation" value="5" />
   <Property name="ShipRadiation" value="0" />
@@ -321,7 +323,7 @@
   <Property name="PlanetLodSwitch2" value="10000" />
   <Property name="PlanetLodSwitch3" value="20000" />
   <Property name="PlanetFlipDistance" value="2000" />
-  <Property name="PlanetEffectEndDistance" value="6000" />
+  <Property name="PlanetEffectEndDistance" value="12000" />
   <Property name="AsteroidFadeHeightMin" value="700" />
   <Property name="AsteroidFadeHeightMax" value="1300" />
   <Property name="AsteroidScale" value="0.25" />
@@ -347,7 +349,7 @@
     <Property value="2000" />
     <Property value="400" />
   </Property>
-  <Property name="SkyAtmospherePower" value="2" />
+  <Property name="SkyAtmospherePower" value="3" />
   <Property name="SkyAtmosphereHeight" value="6000" />
   <Property name="SkyAtmosphereBlendLength">
     <Property value="60000" />
@@ -368,6 +370,13 @@
   <Property name="SkyColourBlendLength" value="500" />
   <Property name="SkyPositionHeight" value="3000" />
   <Property name="SkyPositionBlendLength" value="1000" />
+  <Property name="IndoorColourBlendTime" value="0.6" />
+  <Property name="IndoorAmbientColour" value="Colour.xml">
+    <Property name="R" value="0" />
+    <Property name="G" value="0" />
+    <Property name="B" value="0" />
+    <Property name="A" value="0" />
+  </Property>
   <Property name="LightDirectionHeight" value="4000" />
   <Property name="LightDirectionBlend" value="5000" />
   <Property name="LightColourHeight" value="5000" />

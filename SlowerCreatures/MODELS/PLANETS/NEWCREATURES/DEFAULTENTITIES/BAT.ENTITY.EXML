@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (2.32.0)-->
+<!--File created using MBINCompiler version (2.61.1)-->
 <Data template="TkAttachmentData">
   <Property name="Components">
     <Property value="GcNetworkInterpolationComponentData.xml">
@@ -10,6 +10,7 @@
       <Property name="ReplicaComponentMask" />
       <Property name="ReplicationRange" value="PlanetLocal" />
       <Property name="SpawnType" value="Creature" />
+      <Property name="IgnoreComponents" value="False" />
     </Property>
     <Property value="TkAnimationComponentData.xml">
       <Property name="Idle" value="TkAnimationData.xml">
@@ -129,6 +130,7 @@
       <Property name="SurfaceProperties" value="None" />
       <Property name="TriggerVolume" value="False" />
       <Property name="Climbable" value="False" />
+      <Property name="Floor" value="False" />
       <Property name="IgnoreModelOwner" value="False" />
       <Property name="NoVehicleCollide" value="False" />
       <Property name="NoPlayerCollide" value="True" />
@@ -136,6 +138,8 @@
       <Property name="InvisibleForInteraction" value="False" />
       <Property name="AllowTeleporter" value="False" />
       <Property name="BlockTeleporter" value="False" />
+      <Property name="DisableGravity" value="False" />
+      <Property name="SpinOnCreate" value="0" />
     </Property>
   </Property>
   <Property name="LodDistances">

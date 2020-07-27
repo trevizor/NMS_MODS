@@ -1,9 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (2.41.0)-->
+<!--File created using MBINCompiler version (2.61.0)-->
 <Data template="GcCameraGlobals">
+  <Property name="FreighterCustomisationStandardCamera" value="TkModelRendererData.xml">
+    <Property name="Camera" value="TkModelRendererCameraData.xml">
+      <Property name="Distance" value="1.5" />
+      <Property name="Offset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="-0.2" />
+        <Property name="z" value="0" />
+      </Property>
+      <Property name="Roll" value="0" />
+      <Property name="Pitch" value="20" />
+      <Property name="Rotate" value="5" />
+      <Property name="LightPitch" value="45" />
+      <Property name="LightRotate" value="45" />
+      <Property name="Wander" value="TkCameraWanderData.xml">
+        <Property name="CamWander" value="False" />
+        <Property name="CamWanderPhase" value="0.003" />
+        <Property name="CamWanderAmplitude" value="0.5" />
+      </Property>
+    </Property>
+    <Property name="Fov" value="30" />
+    <Property name="AspectRatio" value="1.7777" />
+    <Property name="ThumbnailMode" value="None" />
+    <Property name="FocusType" value="ResourceBounds" />
+    <Property name="FocusLocator" value="" />
+    <Property name="FocusOffset" value="Vector3f.xml">
+      <Property name="x" value="0" />
+      <Property name="y" value="0" />
+      <Property name="z" value="0" />
+    </Property>
+    <Property name="FocusInterpTime" value="0" />
+    <Property name="BlendInTime" value="0.8" />
+    <Property name="BlendInOffset" value="0" />
+    <Property name="Anim" value="" />
+    <Property name="HeightOffset" value="0.005" />
+    <Property name="UsePlayerCameraInHmd" value="True" />
+    <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
+    <Property name="LookForFocusInMasterModel" value="False" />
+  </Property>
   <Property name="VehicleCamHmd" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="VEHICLE_HMD" />
-    <Property name="MinSpeed" value="4" />
+    <Property name="MinSpeed" value="0" />
     <Property name="SpeedRange" value="200" />
     <Property name="OffsetX" value="0" />
     <Property name="OffsetY" value="0" />
@@ -62,7 +100,7 @@
   </Property>
   <Property name="VehicleCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="VEHICLE" />
-    <Property name="MinSpeed" value="4" />
+    <Property name="MinSpeed" value="0" />
     <Property name="SpeedRange" value="200" />
     <Property name="OffsetX" value="0" />
     <Property name="OffsetY" value="0" />
@@ -166,15 +204,15 @@
   <Property name="CharacterUnarmedCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="CHARUNARMED" />
     <Property name="MinSpeed" value="4" />
-    <Property name="SpeedRange" value="25" />
-    <Property name="OffsetX" value="0.1" />
-    <Property name="OffsetY" value="-0.1" />
+    <Property name="SpeedRange" value="20" />
+    <Property name="OffsetX" value="0.8" />
+    <Property name="OffsetY" value="-0.6" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="12" />
+    <Property name="BackMinDistance" value="4.2" />
     <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="14" /> <!-- CHARUNARMED -->
-    <Property name="UpMaxDistance" value="3" />
+    <Property name="BackMaxDistance" value="5.2" />
+    <Property name="UpMaxDistance" value="0" />
     <Property name="PanNear" value="-1" />
     <Property name="PanFar" value="3" />
     <Property name="UpGamma" value="1.5" />
@@ -188,13 +226,13 @@
     <Property name="VertStartLookingDown" value="False" />
     <Property name="DistSpeed" value="5" />
     <Property name="DistSpeedOutsideMainRange" value="5" />
-    <Property name="DistStiffness" value="0.1" />
+    <Property name="DistStiffness" value="0.2" />
     <Property name="SpringSpeed" value="0.18" />
     <Property name="LockToObjectOnIdle" value="False" />
-    <Property name="CenterStartTime" value="10.2" />
-    <Property name="CenterBlendTime" value="10" />
-    <Property name="CenterMaxSpring" value="0.2" />
-    <Property name="CenterMaxSpeed" value="0.01" />
+    <Property name="CenterStartTime" value="2.2" />
+    <Property name="CenterBlendTime" value="0.8" />
+    <Property name="CenterMaxSpring" value="0.66" />
+    <Property name="CenterMaxSpeed" value="0.1" />
     <Property name="VelocityAnticipate" value="0.17" />
     <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
     <Property name="VertMaxSpring" value="0.5" />
@@ -225,46 +263,46 @@
   <Property name="CharacterRunCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="CHARRUN" />
     <Property name="MinSpeed" value="4" />
-    <Property name="SpeedRange" value="25" />
-    <Property name="OffsetX" value="0.1" />
-    <Property name="OffsetY" value="-0.1" />
+    <Property name="SpeedRange" value="8.8" />
+    <Property name="OffsetX" value="0.6" />
+    <Property name="OffsetY" value="-0.85" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="12" />
+    <Property name="BackMinDistance" value="3.5" />
     <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="14" /> <!-- CHARRUN -->
-    <Property name="UpMaxDistance" value="3" />
+    <Property name="BackMaxDistance" value="7" />
+    <Property name="UpMaxDistance" value="0" />
     <Property name="PanNear" value="-1" />
     <Property name="PanFar" value="3" />
     <Property name="UpGamma" value="1.5" />
-    <Property name="HorizRotationAngleMaxPerFrame" value="20" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="3" />
     <Property name="VertRotationSpeed" value="15" />
-    <Property name="VertRotationMin" value="-65" />
-    <Property name="VertRotationMax" value="65" />
+    <Property name="VertRotationMin" value="-60" />
+    <Property name="VertRotationMax" value="60" />
     <Property name="VertRotationOffset" value="1" />
     <Property name="VertRotationOffsetMinAngle" value="-150" />
     <Property name="VertRotationOffsetMaxAngle" value="180" />
     <Property name="VertStartLookingDown" value="False" />
     <Property name="DistSpeed" value="5" />
     <Property name="DistSpeedOutsideMainRange" value="5" />
-    <Property name="DistStiffness" value="0.1" />
-    <Property name="SpringSpeed" value="0.18" />
+    <Property name="DistStiffness" value="0.2" />
+    <Property name="SpringSpeed" value="0.08" />
     <Property name="LockToObjectOnIdle" value="False" />
-    <Property name="CenterStartTime" value="10.2" />
-    <Property name="CenterBlendTime" value="10" />
-    <Property name="CenterMaxSpring" value="0.2" />
-    <Property name="CenterMaxSpeed" value="0.01" />
+    <Property name="CenterStartTime" value="0.3" />
+    <Property name="CenterBlendTime" value="0.5" />
+    <Property name="CenterMaxSpring" value="1.2" />
+    <Property name="CenterMaxSpeed" value="1.2" />
     <Property name="VelocityAnticipate" value="0.17" />
     <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
     <Property name="VertMaxSpring" value="0.5" />
-    <Property name="CenterStartSpeed" value="1" />
+    <Property name="CenterStartSpeed" value="2.5" />
     <Property name="MinClose" value="0.4" />
     <Property name="MaxClose" value="0.6" />
     <Property name="CloseSpring" value="3" />
     <Property name="LookStickLimitAngle" value="0" />
     <Property name="EnableCollisionDetection" value="True" />
     <Property name="NumLRProbes" value="10" />
-    <Property name="LRProbesRange" value="13" />
+    <Property name="LRProbesRange" value="31" />
     <Property name="LRProbesRadius" value="0.3" />
     <Property name="NumUDProbes" value="5" />
     <Property name="UDProbesRange" value="1.5" />
@@ -285,13 +323,13 @@
     <Property name="Name" value="CHARCOMBAT" />
     <Property name="MinSpeed" value="10" />
     <Property name="SpeedRange" value="20" />
-    <Property name="OffsetX" value="0.7" />
-    <Property name="OffsetY" value="-0.5" />
+    <Property name="OffsetX" value="0.65" />
+    <Property name="OffsetY" value="-0.6" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="1.5" />
+    <Property name="BackMinDistance" value="2" />
     <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="9" /> <!-- CHARCOMBAT -->
+    <Property name="BackMaxDistance" value="5.2" />
     <Property name="UpMaxDistance" value="0" />
     <Property name="PanNear" value="0" />
     <Property name="PanFar" value="0" />
@@ -307,7 +345,7 @@
     <Property name="DistSpeed" value="0.9" />
     <Property name="DistSpeedOutsideMainRange" value="5" />
     <Property name="DistStiffness" value="3" />
-    <Property name="SpringSpeed" value="0.05" />
+    <Property name="SpringSpeed" value="0.01" />
     <Property name="LockToObjectOnIdle" value="False" />
     <Property name="CenterStartTime" value="1.5" />
     <Property name="CenterBlendTime" value="1.5" />
@@ -342,22 +380,140 @@
   </Property>
   <Property name="CharacterIndoorCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="CHARINDOOR" />
-    <Property name="MinSpeed" value="5" />
-    <Property name="SpeedRange" value="10" />
-    <Property name="OffsetX" value="0.75" />
-    <Property name="OffsetY" value="-0.5" />
+    <Property name="MinSpeed" value="10" />
+    <Property name="SpeedRange" value="1" />
+    <Property name="OffsetX" value="0.4" />
+    <Property name="OffsetY" value="-0.8" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="3" />
+    <Property name="BackMinDistance" value="2.3" />
     <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="4" /> <!-- CHARINDOOR -->
-    <Property name="UpMaxDistance" value="1" />
-    <Property name="PanNear" value="-1" />
-    <Property name="PanFar" value="3" />
+    <Property name="BackMaxDistance" value="2.9" />
+    <Property name="UpMaxDistance" value="0" />
+    <Property name="PanNear" value="-2" />
+    <Property name="PanFar" value="-1" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="15" />
+    <Property name="VertRotationSpeed" value="15" />
+    <Property name="VertRotationMin" value="-65" />
+    <Property name="VertRotationMax" value="68" />
+    <Property name="VertRotationOffset" value="1" />
+    <Property name="VertRotationOffsetMinAngle" value="-150" />
+    <Property name="VertRotationOffsetMaxAngle" value="180" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="5" />
+    <Property name="DistSpeedOutsideMainRange" value="5" />
+    <Property name="DistStiffness" value="3" />
+    <Property name="SpringSpeed" value="0.1" />
+    <Property name="LockToObjectOnIdle" value="False" />
+    <Property name="CenterStartTime" value="1.5" />
+    <Property name="CenterBlendTime" value="1" />
+    <Property name="CenterMaxSpring" value="0.1" />
+    <Property name="CenterMaxSpeed" value="0.5" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="1" />
+    <Property name="CenterStartSpeed" value="3" />
+    <Property name="MinClose" value="0.5" />
+    <Property name="MaxClose" value="2" />
+    <Property name="CloseSpring" value="3" />
+    <Property name="LookStickLimitAngle" value="0" />
+    <Property name="EnableCollisionDetection" value="True" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="13" />
+    <Property name="LRProbesRadius" value="0.3" />
+    <Property name="NumUDProbes" value="5" />
+    <Property name="UDProbesRange" value="1.5" />
+    <Property name="ProbeCenterX" value="0.3" />
+    <Property name="ProbeCenterY" value="-0.75" />
+    <Property name="PushForwardDropoffLR" value="1.6" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="0.005" />
+    <Property name="AvoidCollisionUDSpeed" value="0.005" />
+    <Property name="AvoidCollisionPushSpeed" value="0.01" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="True" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="False" />
+    <Property name="UseCustomBlendTime" value="False" />
+    <Property name="CustomBlendTime" value="0.5" />
+  </Property>
+  <Property name="CharacterAbandCombatCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="FREIGHTCOMBAT" />
+    <Property name="MinSpeed" value="1" />
+    <Property name="SpeedRange" value="20" />
+    <Property name="OffsetX" value="0.65" />
+    <Property name="OffsetY" value="-0.75" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="0" />
+    <Property name="BackMinDistance" value="1.6" />
+    <Property name="UpMinDistance" value="0" />
+    <Property name="BackMaxDistance" value="1.8" />
+    <Property name="UpMaxDistance" value="0" />
+    <Property name="PanNear" value="0" />
+    <Property name="PanFar" value="0" />
     <Property name="UpGamma" value="1.5" />
     <Property name="HorizRotationAngleMaxPerFrame" value="20" />
     <Property name="VertRotationSpeed" value="15" />
-    <Property name="VertRotationMin" value="-65" />
+    <Property name="VertRotationMin" value="-75" />
+    <Property name="VertRotationMax" value="65" />
+    <Property name="VertRotationOffset" value="1" />
+    <Property name="VertRotationOffsetMinAngle" value="-150" />
+    <Property name="VertRotationOffsetMaxAngle" value="180" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="0.9" />
+    <Property name="DistSpeedOutsideMainRange" value="5" />
+    <Property name="DistStiffness" value="3" />
+    <Property name="SpringSpeed" value="0.01" />
+    <Property name="LockToObjectOnIdle" value="False" />
+    <Property name="CenterStartTime" value="1.5" />
+    <Property name="CenterBlendTime" value="1.5" />
+    <Property name="CenterMaxSpring" value="0" />
+    <Property name="CenterMaxSpeed" value="0.5" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="0" />
+    <Property name="CenterStartSpeed" value="0.1" />
+    <Property name="MinClose" value="0.4" />
+    <Property name="MaxClose" value="0.6" />
+    <Property name="CloseSpring" value="0.3" />
+    <Property name="LookStickLimitAngle" value="0" />
+    <Property name="EnableCollisionDetection" value="True" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="31" />
+    <Property name="LRProbesRadius" value="0.2" />
+    <Property name="NumUDProbes" value="10" />
+    <Property name="UDProbesRange" value="15" />
+    <Property name="ProbeCenterX" value="0" />
+    <Property name="ProbeCenterY" value="0.5" />
+    <Property name="PushForwardDropoffLR" value="0.2" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="-4" />
+    <Property name="AvoidCollisionUDSpeed" value="3" />
+    <Property name="AvoidCollisionPushSpeed" value="0.5" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="True" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="False" />
+    <Property name="UseCustomBlendTime" value="False" />
+    <Property name="CustomBlendTime" value="0.5" />
+  </Property>
+  <Property name="CharacterAbandCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="ABANDFREIGHT" />
+    <Property name="MinSpeed" value="1" />
+    <Property name="SpeedRange" value="20" />
+    <Property name="OffsetX" value="0.65" />
+    <Property name="OffsetY" value="-0.75" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="0" />
+    <Property name="BackMinDistance" value="2" />
+    <Property name="UpMinDistance" value="0" />
+    <Property name="BackMaxDistance" value="4" />
+    <Property name="UpMaxDistance" value="0" />
+    <Property name="PanNear" value="0" />
+    <Property name="PanFar" value="0" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="20" />
+    <Property name="VertRotationSpeed" value="15" />
+    <Property name="VertRotationMin" value="-75" />
     <Property name="VertRotationMax" value="65" />
     <Property name="VertRotationOffset" value="1" />
     <Property name="VertRotationOffsetMinAngle" value="-150" />
@@ -365,13 +521,308 @@
     <Property name="VertStartLookingDown" value="False" />
     <Property name="DistSpeed" value="5" />
     <Property name="DistSpeedOutsideMainRange" value="5" />
-    <Property name="DistStiffness" value="0.1" />
+    <Property name="DistStiffness" value="3" />
+    <Property name="SpringSpeed" value="0.1" />
+    <Property name="LockToObjectOnIdle" value="False" />
+    <Property name="CenterStartTime" value="1.5" />
+    <Property name="CenterBlendTime" value="1.5" />
+    <Property name="CenterMaxSpring" value="1" />
+    <Property name="CenterMaxSpeed" value="0.5" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="1" />
+    <Property name="CenterStartSpeed" value="0.1" />
+    <Property name="MinClose" value="0.4" />
+    <Property name="MaxClose" value="0.6" />
+    <Property name="CloseSpring" value="0.3" />
+    <Property name="LookStickLimitAngle" value="0" />
+    <Property name="EnableCollisionDetection" value="True" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="31" />
+    <Property name="LRProbesRadius" value="0.2" />
+    <Property name="NumUDProbes" value="10" />
+    <Property name="UDProbesRange" value="15" />
+    <Property name="ProbeCenterX" value="0" />
+    <Property name="ProbeCenterY" value="0.5" />
+    <Property name="PushForwardDropoffLR" value="0.2" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="-4" />
+    <Property name="AvoidCollisionUDSpeed" value="3" />
+    <Property name="AvoidCollisionPushSpeed" value="0.5" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="True" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseCustomBlendTime" value="False" />
+    <Property name="CustomBlendTime" value="0.5" />
+  </Property>
+  <Property name="CharacterNexusCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="CHARNEXUS" />
+    <Property name="MinSpeed" value="6" />
+    <Property name="SpeedRange" value="5" />
+    <Property name="OffsetX" value="0.4" />
+    <Property name="OffsetY" value="-0.8" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="0" />
+    <Property name="BackMinDistance" value="3.5" />
+    <Property name="UpMinDistance" value="0" />
+    <Property name="BackMaxDistance" value="4.2" />
+    <Property name="UpMaxDistance" value="0" />
+    <Property name="PanNear" value="1" />
+    <Property name="PanFar" value="-3" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="15" />
+    <Property name="VertRotationSpeed" value="15" />
+    <Property name="VertRotationMin" value="-65" />
+    <Property name="VertRotationMax" value="68" />
+    <Property name="VertRotationOffset" value="1" />
+    <Property name="VertRotationOffsetMinAngle" value="-150" />
+    <Property name="VertRotationOffsetMaxAngle" value="180" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="5" />
+    <Property name="DistSpeedOutsideMainRange" value="5" />
+    <Property name="DistStiffness" value="3" />
+    <Property name="SpringSpeed" value="0.1" />
+    <Property name="LockToObjectOnIdle" value="False" />
+    <Property name="CenterStartTime" value="1.5" />
+    <Property name="CenterBlendTime" value="0.4" />
+    <Property name="CenterMaxSpring" value="1" />
+    <Property name="CenterMaxSpeed" value="0.5" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="1" />
+    <Property name="CenterStartSpeed" value="3" />
+    <Property name="MinClose" value="0.5" />
+    <Property name="MaxClose" value="2" />
+    <Property name="CloseSpring" value="3" />
+    <Property name="LookStickLimitAngle" value="0" />
+    <Property name="EnableCollisionDetection" value="True" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="13" />
+    <Property name="LRProbesRadius" value="0.3" />
+    <Property name="NumUDProbes" value="5" />
+    <Property name="UDProbesRange" value="1.5" />
+    <Property name="ProbeCenterX" value="0.3" />
+    <Property name="ProbeCenterY" value="-0.75" />
+    <Property name="PushForwardDropoffLR" value="1.6" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="0.005" />
+    <Property name="AvoidCollisionUDSpeed" value="0.005" />
+    <Property name="AvoidCollisionPushSpeed" value="0.01" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="True" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseCustomBlendTime" value="False" />
+    <Property name="CustomBlendTime" value="0.5" />
+  </Property>
+  <Property name="CharacterAirborneCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="CHARJETPACK" />
+    <Property name="MinSpeed" value="5" />
+    <Property name="SpeedRange" value="10" />
+    <Property name="OffsetX" value="0.6" />
+    <Property name="OffsetY" value="-0.5" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="0" />
+    <Property name="BackMinDistance" value="3.5" />
+    <Property name="UpMinDistance" value="0" />
+    <Property name="BackMaxDistance" value="7" />
+    <Property name="UpMaxDistance" value="0" />
+    <Property name="PanNear" value="0" />
+    <Property name="PanFar" value="10" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="10" />
+    <Property name="VertRotationSpeed" value="15" />
+    <Property name="VertRotationMin" value="-60" />
+    <Property name="VertRotationMax" value="60" />
+    <Property name="VertRotationOffset" value="1" />
+    <Property name="VertRotationOffsetMinAngle" value="-150" />
+    <Property name="VertRotationOffsetMaxAngle" value="180" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="0.9" />
+    <Property name="DistSpeedOutsideMainRange" value="5" />
+    <Property name="DistStiffness" value="3" />
+    <Property name="SpringSpeed" value="0.065" />
+    <Property name="LockToObjectOnIdle" value="False" />
+    <Property name="CenterStartTime" value="0.4" />
+    <Property name="CenterBlendTime" value="2" />
+    <Property name="CenterMaxSpring" value="2.2" />
+    <Property name="CenterMaxSpeed" value="2.8" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="3" />
+    <Property name="CenterStartSpeed" value="0.17" />
+    <Property name="MinClose" value="0.4" />
+    <Property name="MaxClose" value="0.6" />
+    <Property name="CloseSpring" value="0.3" />
+    <Property name="LookStickLimitAngle" value="0" />
+    <Property name="EnableCollisionDetection" value="True" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="31" />
+    <Property name="LRProbesRadius" value="0.3" />
+    <Property name="NumUDProbes" value="5" />
+    <Property name="UDProbesRange" value="1.5" />
+    <Property name="ProbeCenterX" value="0" />
+    <Property name="ProbeCenterY" value="-0.65" />
+    <Property name="PushForwardDropoffLR" value="1.6" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="0.005" />
+    <Property name="AvoidCollisionUDSpeed" value="0.005" />
+    <Property name="AvoidCollisionPushSpeed" value="0.01" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="True" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseCustomBlendTime" value="False" />
+    <Property name="CustomBlendTime" value="0.5" />
+  </Property>
+  <Property name="CharacterMeleeBoostCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="CHARMELBOOST" />
+    <Property name="MinSpeed" value="4" />
+    <Property name="SpeedRange" value="8.8" />
+    <Property name="OffsetX" value="0.6" />
+    <Property name="OffsetY" value="-0.85" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="0" />
+    <Property name="BackMinDistance" value="2.5" />
+    <Property name="UpMinDistance" value="0" />
+    <Property name="BackMaxDistance" value="10" />
+    <Property name="UpMaxDistance" value="0" />
+    <Property name="PanNear" value="-1" />
+    <Property name="PanFar" value="3" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="3" />
+    <Property name="VertRotationSpeed" value="15" />
+    <Property name="VertRotationMin" value="-60" />
+    <Property name="VertRotationMax" value="60" />
+    <Property name="VertRotationOffset" value="1" />
+    <Property name="VertRotationOffsetMinAngle" value="-150" />
+    <Property name="VertRotationOffsetMaxAngle" value="180" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="5" />
+    <Property name="DistSpeedOutsideMainRange" value="5" />
+    <Property name="DistStiffness" value="0.2" />
+    <Property name="SpringSpeed" value="0.08" />
+    <Property name="LockToObjectOnIdle" value="False" />
+    <Property name="CenterStartTime" value="1.2" />
+    <Property name="CenterBlendTime" value="0.8" />
+    <Property name="CenterMaxSpring" value="1.2" />
+    <Property name="CenterMaxSpeed" value="1.2" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="0.5" />
+    <Property name="CenterStartSpeed" value="2.5" />
+    <Property name="MinClose" value="0.4" />
+    <Property name="MaxClose" value="0.6" />
+    <Property name="CloseSpring" value="3" />
+    <Property name="LookStickLimitAngle" value="0" />
+    <Property name="EnableCollisionDetection" value="True" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="31" />
+    <Property name="LRProbesRadius" value="0.3" />
+    <Property name="NumUDProbes" value="5" />
+    <Property name="UDProbesRange" value="1.5" />
+    <Property name="ProbeCenterX" value="0" />
+    <Property name="ProbeCenterY" value="-0.65" />
+    <Property name="PushForwardDropoffLR" value="1.6" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="0.005" />
+    <Property name="AvoidCollisionUDSpeed" value="0.005" />
+    <Property name="AvoidCollisionPushSpeed" value="0.01" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="True" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseCustomBlendTime" value="False" />
+    <Property name="CustomBlendTime" value="0.5" />
+  </Property>
+  <Property name="CharacterRocketBootsCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="ROCKETBOOTS" />
+    <Property name="MinSpeed" value="5" />
+    <Property name="SpeedRange" value="10" />
+    <Property name="OffsetX" value="0.6" />
+    <Property name="OffsetY" value="-0.5" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="0" />
+    <Property name="BackMinDistance" value="3.5" />
+    <Property name="UpMinDistance" value="0" />
+    <Property name="BackMaxDistance" value="7" />
+    <Property name="UpMaxDistance" value="0" />
+    <Property name="PanNear" value="0" />
+    <Property name="PanFar" value="10" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="10" />
+    <Property name="VertRotationSpeed" value="15" />
+    <Property name="VertRotationMin" value="-30" />
+    <Property name="VertRotationMax" value="15" />
+    <Property name="VertRotationOffset" value="0" />
+    <Property name="VertRotationOffsetMinAngle" value="-150" />
+    <Property name="VertRotationOffsetMaxAngle" value="180" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="0.9" />
+    <Property name="DistSpeedOutsideMainRange" value="5" />
+    <Property name="DistStiffness" value="3" />
+    <Property name="SpringSpeed" value="0.065" />
+    <Property name="LockToObjectOnIdle" value="False" />
+    <Property name="CenterStartTime" value="0.4" />
+    <Property name="CenterBlendTime" value="2" />
+    <Property name="CenterMaxSpring" value="2.2" />
+    <Property name="CenterMaxSpeed" value="2.8" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="3" />
+    <Property name="CenterStartSpeed" value="0.17" />
+    <Property name="MinClose" value="0.4" />
+    <Property name="MaxClose" value="0.6" />
+    <Property name="CloseSpring" value="0.3" />
+    <Property name="LookStickLimitAngle" value="0" />
+    <Property name="EnableCollisionDetection" value="True" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="31" />
+    <Property name="LRProbesRadius" value="0.3" />
+    <Property name="NumUDProbes" value="5" />
+    <Property name="UDProbesRange" value="1.5" />
+    <Property name="ProbeCenterX" value="0" />
+    <Property name="ProbeCenterY" value="-0.65" />
+    <Property name="PushForwardDropoffLR" value="1.6" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="0.005" />
+    <Property name="AvoidCollisionUDSpeed" value="0.005" />
+    <Property name="AvoidCollisionPushSpeed" value="0.01" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="True" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseCustomBlendTime" value="True" />
+    <Property name="CustomBlendTime" value="0.4" />
+  </Property>
+  <Property name="CharacterRocketBootsChargeCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="ROCKETBOOTSCHRG" />
+    <Property name="MinSpeed" value="4" />
+    <Property name="SpeedRange" value="20" />
+    <Property name="OffsetX" value="0.8" />
+    <Property name="OffsetY" value="-0.8" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="0" />
+    <Property name="BackMinDistance" value="2.5" />
+    <Property name="UpMinDistance" value="0" />
+    <Property name="BackMaxDistance" value="3.5" />
+    <Property name="UpMaxDistance" value="0" />
+    <Property name="PanNear" value="-1" />
+    <Property name="PanFar" value="3" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="20" />
+    <Property name="VertRotationSpeed" value="15" />
+    <Property name="VertRotationMin" value="-60" />
+    <Property name="VertRotationMax" value="60" />
+    <Property name="VertRotationOffset" value="1" />
+    <Property name="VertRotationOffsetMinAngle" value="-150" />
+    <Property name="VertRotationOffsetMaxAngle" value="180" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="5" />
+    <Property name="DistSpeedOutsideMainRange" value="5" />
+    <Property name="DistStiffness" value="0.2" />
     <Property name="SpringSpeed" value="0.18" />
     <Property name="LockToObjectOnIdle" value="False" />
-    <Property name="CenterStartTime" value="10.2" />
-    <Property name="CenterBlendTime" value="10" />
-    <Property name="CenterMaxSpring" value="0.2" />
-    <Property name="CenterMaxSpeed" value="0.01" />
+    <Property name="CenterStartTime" value="2.2" />
+    <Property name="CenterBlendTime" value="0.8" />
+    <Property name="CenterMaxSpring" value="0.66" />
+    <Property name="CenterMaxSpeed" value="0.1" />
     <Property name="VelocityAnticipate" value="0.17" />
     <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
     <Property name="VertMaxSpring" value="0.5" />
@@ -397,346 +848,51 @@
     <Property name="AvoidCollisionLRUseStickDelay" value="True" />
     <Property name="UseSpeedBasedSpring" value="True" />
     <Property name="UseCustomBlendTime" value="True" />
-    <Property name="CustomBlendTime" value="3" />
-  </Property>
-  <Property name="CharacterNexusCam" value="GcCameraFollowSettings.xml">
-    <Property name="Name" value="CHARNEXUS" />
-    <Property name="MinSpeed" value="2" />
-    <Property name="SpeedRange" value="20" />
-    <Property name="OffsetX" value="0.1" />
-    <Property name="OffsetY" value="-0.1" />
-    <Property name="OffsetYAlt" value="0" />
-    <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="9.2" />
-    <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="12.2" /> <!-- CHARNEXUS -->
-    <Property name="UpMaxDistance" value="0" />
-    <Property name="PanNear" value="-1" />
-    <Property name="PanFar" value="3" />
-    <Property name="UpGamma" value="1.5" />
-    <Property name="HorizRotationAngleMaxPerFrame" value="20" />
-    <Property name="VertRotationSpeed" value="15" />
-    <Property name="VertRotationMin" value="-65" />
-    <Property name="VertRotationMax" value="65" />
-    <Property name="VertRotationOffset" value="1" />
-    <Property name="VertRotationOffsetMinAngle" value="-150" />
-    <Property name="VertRotationOffsetMaxAngle" value="180" />
-    <Property name="VertStartLookingDown" value="False" />
-    <Property name="DistSpeed" value="5" />
-    <Property name="DistSpeedOutsideMainRange" value="5" />
-    <Property name="DistStiffness" value="0.1" />
-    <Property name="SpringSpeed" value="0.18" />
-    <Property name="LockToObjectOnIdle" value="False" />
-    <Property name="CenterStartTime" value="10.2" />
-    <Property name="CenterBlendTime" value="10" />
-    <Property name="CenterMaxSpring" value="0.2" />
-    <Property name="CenterMaxSpeed" value="0.01" />
-    <Property name="VelocityAnticipate" value="0.17" />
-    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
-    <Property name="VertMaxSpring" value="0.5" />
-    <Property name="CenterStartSpeed" value="1" />
-    <Property name="MinClose" value="0.4" />
-    <Property name="MaxClose" value="0.6" />
-    <Property name="CloseSpring" value="3" />
-    <Property name="LookStickLimitAngle" value="0" />
-    <Property name="EnableCollisionDetection" value="True" />
-    <Property name="NumLRProbes" value="10" />
-    <Property name="LRProbesRange" value="13" />
-    <Property name="LRProbesRadius" value="0.3" />
-    <Property name="NumUDProbes" value="5" />
-    <Property name="UDProbesRange" value="1.5" />
-    <Property name="ProbeCenterX" value="0" />
-    <Property name="ProbeCenterY" value="-0.65" />
-    <Property name="PushForwardDropoffLR" value="1.6" />
-    <Property name="PushForwardDropoffUD" value="0.2" />
-    <Property name="AvoidCollisionLRSpeed" value="0.005" />
-    <Property name="AvoidCollisionUDSpeed" value="0.005" />
-    <Property name="AvoidCollisionPushSpeed" value="0.01" />
-    <Property name="AvoidCollisionUDUseStickDelay" value="True" />
-    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
-    <Property name="UseSpeedBasedSpring" value="True" />
-    <Property name="UseCustomBlendTime" value="False" />
-    <Property name="CustomBlendTime" value="0.5" />
-  </Property>
-  <Property name="CharacterAirborneCam" value="GcCameraFollowSettings.xml">
-    <Property name="Name" value="CHARJETPACK" />
-    <Property name="MinSpeed" value="4" />
-    <Property name="SpeedRange" value="25" />
-    <Property name="OffsetX" value="0.1" />
-    <Property name="OffsetY" value="-0.1" />
-    <Property name="OffsetYAlt" value="0" />
-    <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="12" />
-    <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="16" /> <!-- CHARJETPACK -->
-    <Property name="UpMaxDistance" value="3" />
-    <Property name="PanNear" value="-1" />
-    <Property name="PanFar" value="3" />
-    <Property name="UpGamma" value="1.5" />
-    <Property name="HorizRotationAngleMaxPerFrame" value="20" />
-    <Property name="VertRotationSpeed" value="15" />
-    <Property name="VertRotationMin" value="-65" />
-    <Property name="VertRotationMax" value="65" />
-    <Property name="VertRotationOffset" value="1" />
-    <Property name="VertRotationOffsetMinAngle" value="-150" />
-    <Property name="VertRotationOffsetMaxAngle" value="180" />
-    <Property name="VertStartLookingDown" value="False" />
-    <Property name="DistSpeed" value="5" />
-    <Property name="DistSpeedOutsideMainRange" value="5" />
-    <Property name="DistStiffness" value="0.1" />
-    <Property name="SpringSpeed" value="0.18" />
-    <Property name="LockToObjectOnIdle" value="False" />
-    <Property name="CenterStartTime" value="10.2" />
-    <Property name="CenterBlendTime" value="10" />
-    <Property name="CenterMaxSpring" value="0.2" />
-    <Property name="CenterMaxSpeed" value="0.01" />
-    <Property name="VelocityAnticipate" value="0.17" />
-    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
-    <Property name="VertMaxSpring" value="0.5" />
-    <Property name="CenterStartSpeed" value="1" />
-    <Property name="MinClose" value="0.4" />
-    <Property name="MaxClose" value="0.6" />
-    <Property name="CloseSpring" value="3" />
-    <Property name="LookStickLimitAngle" value="0" />
-    <Property name="EnableCollisionDetection" value="True" />
-    <Property name="NumLRProbes" value="10" />
-    <Property name="LRProbesRange" value="13" />
-    <Property name="LRProbesRadius" value="0.3" />
-    <Property name="NumUDProbes" value="5" />
-    <Property name="UDProbesRange" value="1.5" />
-    <Property name="ProbeCenterX" value="0" />
-    <Property name="ProbeCenterY" value="-0.65" />
-    <Property name="PushForwardDropoffLR" value="1.6" />
-    <Property name="PushForwardDropoffUD" value="0.2" />
-    <Property name="AvoidCollisionLRSpeed" value="0.005" />
-    <Property name="AvoidCollisionUDSpeed" value="0.005" />
-    <Property name="AvoidCollisionPushSpeed" value="0.01" />
-    <Property name="AvoidCollisionUDUseStickDelay" value="True" />
-    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
-    <Property name="UseSpeedBasedSpring" value="True" />
-    <Property name="UseCustomBlendTime" value="False" />
-    <Property name="CustomBlendTime" value="0.5" />
-  </Property>
-  <Property name="CharacterMeleeBoostCam" value="GcCameraFollowSettings.xml">
-    <Property name="Name" value="CHARMELBOOST" />
-    <Property name="MinSpeed" value="2" />
-    <Property name="SpeedRange" value="20" />
-    <Property name="OffsetX" value="0.1" />
-    <Property name="OffsetY" value="-0.1" />
-    <Property name="OffsetYAlt" value="0" />
-    <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="9.2" />
-    <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="12.2" /> <!-- CHARMELBOOST -->
-    <Property name="UpMaxDistance" value="0" />
-    <Property name="PanNear" value="-1" />
-    <Property name="PanFar" value="3" />
-    <Property name="UpGamma" value="1.5" />
-    <Property name="HorizRotationAngleMaxPerFrame" value="20" />
-    <Property name="VertRotationSpeed" value="15" />
-    <Property name="VertRotationMin" value="-65" />
-    <Property name="VertRotationMax" value="65" />
-    <Property name="VertRotationOffset" value="1" />
-    <Property name="VertRotationOffsetMinAngle" value="-150" />
-    <Property name="VertRotationOffsetMaxAngle" value="180" />
-    <Property name="VertStartLookingDown" value="False" />
-    <Property name="DistSpeed" value="5" />
-    <Property name="DistSpeedOutsideMainRange" value="5" />
-    <Property name="DistStiffness" value="0.1" />
-    <Property name="SpringSpeed" value="0.18" />
-    <Property name="LockToObjectOnIdle" value="False" />
-    <Property name="CenterStartTime" value="10.2" />
-    <Property name="CenterBlendTime" value="10" />
-    <Property name="CenterMaxSpring" value="0.2" />
-    <Property name="CenterMaxSpeed" value="0.01" />
-    <Property name="VelocityAnticipate" value="0.17" />
-    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
-    <Property name="VertMaxSpring" value="0.5" />
-    <Property name="CenterStartSpeed" value="1" />
-    <Property name="MinClose" value="0.4" />
-    <Property name="MaxClose" value="0.6" />
-    <Property name="CloseSpring" value="3" />
-    <Property name="LookStickLimitAngle" value="0" />
-    <Property name="EnableCollisionDetection" value="True" />
-    <Property name="NumLRProbes" value="10" />
-    <Property name="LRProbesRange" value="13" />
-    <Property name="LRProbesRadius" value="0.3" />
-    <Property name="NumUDProbes" value="5" />
-    <Property name="UDProbesRange" value="1.5" />
-    <Property name="ProbeCenterX" value="0" />
-    <Property name="ProbeCenterY" value="-0.65" />
-    <Property name="PushForwardDropoffLR" value="1.6" />
-    <Property name="PushForwardDropoffUD" value="0.2" />
-    <Property name="AvoidCollisionLRSpeed" value="0.005" />
-    <Property name="AvoidCollisionUDSpeed" value="0.005" />
-    <Property name="AvoidCollisionPushSpeed" value="0.01" />
-    <Property name="AvoidCollisionUDUseStickDelay" value="True" />
-    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
-    <Property name="UseSpeedBasedSpring" value="True" />
-    <Property name="UseCustomBlendTime" value="False" />
-    <Property name="CustomBlendTime" value="0.5" />
-  </Property>
-  <Property name="CharacterRocketBootsCam" value="GcCameraFollowSettings.xml">
-    <Property name="Name" value="ROCKETBOOTS" />
-    <Property name="MinSpeed" value="4" />
-    <Property name="SpeedRange" value="25" />
-    <Property name="OffsetX" value="0.1" />
-    <Property name="OffsetY" value="-0.1" />
-    <Property name="OffsetYAlt" value="0" />
-    <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="12" />
-    <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="16" />
-    <Property name="UpMaxDistance" value="3" />
-    <Property name="PanNear" value="-1" />
-    <Property name="PanFar" value="3" />
-    <Property name="UpGamma" value="1.5" />
-    <Property name="HorizRotationAngleMaxPerFrame" value="20" />
-    <Property name="VertRotationSpeed" value="15" />
-    <Property name="VertRotationMin" value="-65" />
-    <Property name="VertRotationMax" value="65" />
-    <Property name="VertRotationOffset" value="1" />
-    <Property name="VertRotationOffsetMinAngle" value="-150" />
-    <Property name="VertRotationOffsetMaxAngle" value="180" />
-    <Property name="VertStartLookingDown" value="False" />
-    <Property name="DistSpeed" value="5" />
-    <Property name="DistSpeedOutsideMainRange" value="5" />
-    <Property name="DistStiffness" value="0.1" />
-    <Property name="SpringSpeed" value="0.18" />
-    <Property name="LockToObjectOnIdle" value="False" />
-    <Property name="CenterStartTime" value="10.2" />
-    <Property name="CenterBlendTime" value="10" />
-    <Property name="CenterMaxSpring" value="0.2" />
-    <Property name="CenterMaxSpeed" value="0.01" />
-    <Property name="VelocityAnticipate" value="0.17" />
-    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
-    <Property name="VertMaxSpring" value="0.5" />
-    <Property name="CenterStartSpeed" value="1" />
-    <Property name="MinClose" value="0.4" />
-    <Property name="MaxClose" value="0.6" />
-    <Property name="CloseSpring" value="3" />
-    <Property name="LookStickLimitAngle" value="0" />
-    <Property name="EnableCollisionDetection" value="True" />
-    <Property name="NumLRProbes" value="10" />
-    <Property name="LRProbesRange" value="13" />
-    <Property name="LRProbesRadius" value="0.3" />
-    <Property name="NumUDProbes" value="5" />
-    <Property name="UDProbesRange" value="1.5" />
-    <Property name="ProbeCenterX" value="0" />
-    <Property name="ProbeCenterY" value="-0.65" />
-    <Property name="PushForwardDropoffLR" value="1.6" />
-    <Property name="PushForwardDropoffUD" value="0.2" />
-    <Property name="AvoidCollisionLRSpeed" value="0.005" />
-    <Property name="AvoidCollisionUDSpeed" value="0.005" />
-    <Property name="AvoidCollisionPushSpeed" value="0.01" />
-    <Property name="AvoidCollisionUDUseStickDelay" value="True" />
-    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
-    <Property name="UseSpeedBasedSpring" value="True" />
-    <Property name="UseCustomBlendTime" value="False" />
-    <Property name="CustomBlendTime" value="0.5" />
-  </Property>
-  <Property name="CharacterRocketBootsChargeCam" value="GcCameraFollowSettings.xml">
-    <Property name="Name" value="ROCKETBOOTSCHRG" />
-    <Property name="MinSpeed" value="2" />
-    <Property name="SpeedRange" value="20" />
-    <Property name="OffsetX" value="0.1" />
-    <Property name="OffsetY" value="-0.1" />
-    <Property name="OffsetYAlt" value="0" />
-    <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="9.2" />
-    <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="12.2" />
-    <Property name="UpMaxDistance" value="0" />
-    <Property name="PanNear" value="-1" />
-    <Property name="PanFar" value="3" />
-    <Property name="UpGamma" value="1.5" />
-    <Property name="HorizRotationAngleMaxPerFrame" value="20" />
-    <Property name="VertRotationSpeed" value="15" />
-    <Property name="VertRotationMin" value="-65" />
-    <Property name="VertRotationMax" value="65" />
-    <Property name="VertRotationOffset" value="1" />
-    <Property name="VertRotationOffsetMinAngle" value="-150" />
-    <Property name="VertRotationOffsetMaxAngle" value="180" />
-    <Property name="VertStartLookingDown" value="False" />
-    <Property name="DistSpeed" value="5" />
-    <Property name="DistSpeedOutsideMainRange" value="5" />
-    <Property name="DistStiffness" value="0.1" />
-    <Property name="SpringSpeed" value="0.18" />
-    <Property name="LockToObjectOnIdle" value="False" />
-    <Property name="CenterStartTime" value="10.2" />
-    <Property name="CenterBlendTime" value="10" />
-    <Property name="CenterMaxSpring" value="0.2" />
-    <Property name="CenterMaxSpeed" value="0.01" />
-    <Property name="VelocityAnticipate" value="0.17" />
-    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
-    <Property name="VertMaxSpring" value="0.5" />
-    <Property name="CenterStartSpeed" value="1" />
-    <Property name="MinClose" value="0.4" />
-    <Property name="MaxClose" value="0.6" />
-    <Property name="CloseSpring" value="3" />
-    <Property name="LookStickLimitAngle" value="0" />
-    <Property name="EnableCollisionDetection" value="True" />
-    <Property name="NumLRProbes" value="10" />
-    <Property name="LRProbesRange" value="13" />
-    <Property name="LRProbesRadius" value="0.3" />
-    <Property name="NumUDProbes" value="5" />
-    <Property name="UDProbesRange" value="1.5" />
-    <Property name="ProbeCenterX" value="0" />
-    <Property name="ProbeCenterY" value="-0.65" />
-    <Property name="PushForwardDropoffLR" value="1.6" />
-    <Property name="PushForwardDropoffUD" value="0.2" />
-    <Property name="AvoidCollisionLRSpeed" value="0.005" />
-    <Property name="AvoidCollisionUDSpeed" value="0.005" />
-    <Property name="AvoidCollisionPushSpeed" value="0.01" />
-    <Property name="AvoidCollisionUDUseStickDelay" value="True" />
-    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
-    <Property name="UseSpeedBasedSpring" value="True" />
-    <Property name="UseCustomBlendTime" value="False" />
-    <Property name="CustomBlendTime" value="0.5" />
+    <Property name="CustomBlendTime" value="0.4" />
   </Property>
   <Property name="CharacterFallingCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="CHARFALL" />
-    <Property name="MinSpeed" value="4" />
-    <Property name="SpeedRange" value="25" />
-    <Property name="OffsetX" value="0.1" />
-    <Property name="OffsetY" value="-0.1" />
+    <Property name="MinSpeed" value="5" />
+    <Property name="SpeedRange" value="20" />
+    <Property name="OffsetX" value="0.7" />
+    <Property name="OffsetY" value="-0.5" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="14" />
+    <Property name="BackMinDistance" value="5" />
     <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="18" /> <!-- CHARFALL -->
-    <Property name="UpMaxDistance" value="3" />
-    <Property name="PanNear" value="-1" />
-    <Property name="PanFar" value="3" />
+    <Property name="BackMaxDistance" value="20" />
+    <Property name="UpMaxDistance" value="-5" />
+    <Property name="PanNear" value="0" />
+    <Property name="PanFar" value="10" />
     <Property name="UpGamma" value="1.5" />
-    <Property name="HorizRotationAngleMaxPerFrame" value="20" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="0" />
     <Property name="VertRotationSpeed" value="15" />
-    <Property name="VertRotationMin" value="-65" />
-    <Property name="VertRotationMax" value="65" />
+    <Property name="VertRotationMin" value="-60" />
+    <Property name="VertRotationMax" value="60" />
     <Property name="VertRotationOffset" value="1" />
     <Property name="VertRotationOffsetMinAngle" value="-150" />
     <Property name="VertRotationOffsetMaxAngle" value="180" />
     <Property name="VertStartLookingDown" value="False" />
-    <Property name="DistSpeed" value="5" />
-    <Property name="DistSpeedOutsideMainRange" value="5" />
-    <Property name="DistStiffness" value="0.1" />
-    <Property name="SpringSpeed" value="0.18" />
+    <Property name="DistSpeed" value="0.9" />
+    <Property name="DistSpeedOutsideMainRange" value="15" />
+    <Property name="DistStiffness" value="3" />
+    <Property name="SpringSpeed" value="0.07" />
     <Property name="LockToObjectOnIdle" value="False" />
-    <Property name="CenterStartTime" value="10.2" />
-    <Property name="CenterBlendTime" value="10" />
-    <Property name="CenterMaxSpring" value="0.2" />
-    <Property name="CenterMaxSpeed" value="0.01" />
+    <Property name="CenterStartTime" value="0.2" />
+    <Property name="CenterBlendTime" value="2" />
+    <Property name="CenterMaxSpring" value="2.2" />
+    <Property name="CenterMaxSpeed" value="2.8" />
     <Property name="VelocityAnticipate" value="0.17" />
     <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
-    <Property name="VertMaxSpring" value="0.5" />
-    <Property name="CenterStartSpeed" value="1" />
+    <Property name="VertMaxSpring" value="3" />
+    <Property name="CenterStartSpeed" value="0.17" />
     <Property name="MinClose" value="0.4" />
     <Property name="MaxClose" value="0.6" />
-    <Property name="CloseSpring" value="3" />
+    <Property name="CloseSpring" value="0.3" />
     <Property name="LookStickLimitAngle" value="0" />
     <Property name="EnableCollisionDetection" value="True" />
     <Property name="NumLRProbes" value="10" />
-    <Property name="LRProbesRange" value="13" />
+    <Property name="LRProbesRange" value="31" />
     <Property name="LRProbesRadius" value="0.3" />
     <Property name="NumUDProbes" value="5" />
     <Property name="UDProbesRange" value="1.5" />
@@ -763,7 +919,7 @@
     <Property name="OffsetZFlat" value="0" />
     <Property name="BackMinDistance" value="3.5" />
     <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="7" /> <!-- CHARJETCOMBAT -->
+    <Property name="BackMaxDistance" value="7" />
     <Property name="UpMaxDistance" value="0" />
     <Property name="PanNear" value="0" />
     <Property name="PanFar" value="10" />
@@ -814,47 +970,47 @@
   </Property>
   <Property name="CharacterSpaceCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="CHARSPACE" />
-    <Property name="MinSpeed" value="4" />
-    <Property name="SpeedRange" value="25" />
-    <Property name="OffsetX" value="0.1" />
-    <Property name="OffsetY" value="-0.1" />
+    <Property name="MinSpeed" value="5" />
+    <Property name="SpeedRange" value="10" />
+    <Property name="OffsetX" value="0.6" />
+    <Property name="OffsetY" value="-0.5" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="12" />
+    <Property name="BackMinDistance" value="3.5" />
     <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="16" /> <!-- CHARSPACE -->
-    <Property name="UpMaxDistance" value="3" />
-    <Property name="PanNear" value="-1" />
-    <Property name="PanFar" value="3" />
+    <Property name="BackMaxDistance" value="7" />
+    <Property name="UpMaxDistance" value="0" />
+    <Property name="PanNear" value="0" />
+    <Property name="PanFar" value="10" />
     <Property name="UpGamma" value="1.5" />
-    <Property name="HorizRotationAngleMaxPerFrame" value="20" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="10" />
     <Property name="VertRotationSpeed" value="15" />
-    <Property name="VertRotationMin" value="-65" />
-    <Property name="VertRotationMax" value="65" />
+    <Property name="VertRotationMin" value="-60" />
+    <Property name="VertRotationMax" value="60" />
     <Property name="VertRotationOffset" value="1" />
     <Property name="VertRotationOffsetMinAngle" value="-150" />
     <Property name="VertRotationOffsetMaxAngle" value="180" />
     <Property name="VertStartLookingDown" value="False" />
-    <Property name="DistSpeed" value="5" />
+    <Property name="DistSpeed" value="0.9" />
     <Property name="DistSpeedOutsideMainRange" value="5" />
-    <Property name="DistStiffness" value="0.1" />
-    <Property name="SpringSpeed" value="0.18" />
+    <Property name="DistStiffness" value="3" />
+    <Property name="SpringSpeed" value="0.065" />
     <Property name="LockToObjectOnIdle" value="False" />
-    <Property name="CenterStartTime" value="10.2" />
-    <Property name="CenterBlendTime" value="10" />
-    <Property name="CenterMaxSpring" value="0.2" />
-    <Property name="CenterMaxSpeed" value="0.01" />
+    <Property name="CenterStartTime" value="0.4" />
+    <Property name="CenterBlendTime" value="2" />
+    <Property name="CenterMaxSpring" value="2.2" />
+    <Property name="CenterMaxSpeed" value="2.8" />
     <Property name="VelocityAnticipate" value="0.17" />
     <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
-    <Property name="VertMaxSpring" value="0.5" />
-    <Property name="CenterStartSpeed" value="1" />
+    <Property name="VertMaxSpring" value="3" />
+    <Property name="CenterStartSpeed" value="0.17" />
     <Property name="MinClose" value="0.4" />
     <Property name="MaxClose" value="0.6" />
-    <Property name="CloseSpring" value="3" />
+    <Property name="CloseSpring" value="0.3" />
     <Property name="LookStickLimitAngle" value="0" />
     <Property name="EnableCollisionDetection" value="True" />
     <Property name="NumLRProbes" value="10" />
-    <Property name="LRProbesRange" value="13" />
+    <Property name="LRProbesRange" value="31" />
     <Property name="LRProbesRadius" value="0.3" />
     <Property name="NumUDProbes" value="5" />
     <Property name="UDProbesRange" value="1.5" />
@@ -867,42 +1023,42 @@
     <Property name="AvoidCollisionPushSpeed" value="0.01" />
     <Property name="AvoidCollisionUDUseStickDelay" value="True" />
     <Property name="AvoidCollisionLRUseStickDelay" value="True" />
-    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseSpeedBasedSpring" value="False" />
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
   <Property name="CharacterSteepSlopeCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="CHARSLOPE" />
-    <Property name="MinSpeed" value="2" />
+    <Property name="MinSpeed" value="4" />
     <Property name="SpeedRange" value="20" />
-    <Property name="OffsetX" value="0.1" />
-    <Property name="OffsetY" value="-0.1" />
+    <Property name="OffsetX" value="0.4" />
+    <Property name="OffsetY" value="-1.2" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="9.2" />
+    <Property name="BackMinDistance" value="3" />
     <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="12.2" /> <!-- CHARSLOPE -->
+    <Property name="BackMaxDistance" value="6" />
     <Property name="UpMaxDistance" value="0" />
     <Property name="PanNear" value="-1" />
     <Property name="PanFar" value="3" />
     <Property name="UpGamma" value="1.5" />
     <Property name="HorizRotationAngleMaxPerFrame" value="20" />
     <Property name="VertRotationSpeed" value="15" />
-    <Property name="VertRotationMin" value="-65" />
-    <Property name="VertRotationMax" value="65" />
+    <Property name="VertRotationMin" value="-60" />
+    <Property name="VertRotationMax" value="60" />
     <Property name="VertRotationOffset" value="1" />
     <Property name="VertRotationOffsetMinAngle" value="-150" />
     <Property name="VertRotationOffsetMaxAngle" value="180" />
     <Property name="VertStartLookingDown" value="False" />
     <Property name="DistSpeed" value="5" />
     <Property name="DistSpeedOutsideMainRange" value="5" />
-    <Property name="DistStiffness" value="0.1" />
-    <Property name="SpringSpeed" value="0.18" />
+    <Property name="DistStiffness" value="1.2" />
+    <Property name="SpringSpeed" value="0.02" />
     <Property name="LockToObjectOnIdle" value="False" />
-    <Property name="CenterStartTime" value="10.2" />
-    <Property name="CenterBlendTime" value="10" />
-    <Property name="CenterMaxSpring" value="0.2" />
-    <Property name="CenterMaxSpeed" value="0.01" />
+    <Property name="CenterStartTime" value="2.2" />
+    <Property name="CenterBlendTime" value="0.8" />
+    <Property name="CenterMaxSpring" value="0.66" />
+    <Property name="CenterMaxSpeed" value="0.1" />
     <Property name="VelocityAnticipate" value="0.17" />
     <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
     <Property name="VertMaxSpring" value="0.5" />
@@ -933,38 +1089,38 @@
   <Property name="CharacterUnderwaterCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="CHARWATER" />
     <Property name="MinSpeed" value="4" />
-    <Property name="SpeedRange" value="25" />
-    <Property name="OffsetX" value="0.1" />
-    <Property name="OffsetY" value="-0.1" />
+    <Property name="SpeedRange" value="3" />
+    <Property name="OffsetX" value="0.55" />
+    <Property name="OffsetY" value="-0.6" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="12" />
+    <Property name="BackMinDistance" value="3.35" />
     <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="16" /> <!-- CHARWATER -->
-    <Property name="UpMaxDistance" value="3" />
-    <Property name="PanNear" value="-1" />
-    <Property name="PanFar" value="3" />
+    <Property name="BackMaxDistance" value="5.5" />
+    <Property name="UpMaxDistance" value="0" />
+    <Property name="PanNear" value="0" />
+    <Property name="PanFar" value="0" />
     <Property name="UpGamma" value="1.5" />
     <Property name="HorizRotationAngleMaxPerFrame" value="20" />
     <Property name="VertRotationSpeed" value="15" />
-    <Property name="VertRotationMin" value="-65" />
-    <Property name="VertRotationMax" value="65" />
+    <Property name="VertRotationMin" value="-60" />
+    <Property name="VertRotationMax" value="60" />
     <Property name="VertRotationOffset" value="1" />
     <Property name="VertRotationOffsetMinAngle" value="-150" />
     <Property name="VertRotationOffsetMaxAngle" value="180" />
     <Property name="VertStartLookingDown" value="False" />
     <Property name="DistSpeed" value="5" />
     <Property name="DistSpeedOutsideMainRange" value="5" />
-    <Property name="DistStiffness" value="0.1" />
-    <Property name="SpringSpeed" value="0.18" />
+    <Property name="DistStiffness" value="0.2" />
+    <Property name="SpringSpeed" value="0.11" />
     <Property name="LockToObjectOnIdle" value="False" />
-    <Property name="CenterStartTime" value="10.2" />
-    <Property name="CenterBlendTime" value="10" />
-    <Property name="CenterMaxSpring" value="0.2" />
-    <Property name="CenterMaxSpeed" value="0.01" />
+    <Property name="CenterStartTime" value="2.2" />
+    <Property name="CenterBlendTime" value="0.6" />
+    <Property name="CenterMaxSpring" value="0.66" />
+    <Property name="CenterMaxSpeed" value="0.1" />
     <Property name="VelocityAnticipate" value="0.17" />
     <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
-    <Property name="VertMaxSpring" value="0.5" />
+    <Property name="VertMaxSpring" value="0.2" />
     <Property name="CenterStartSpeed" value="1" />
     <Property name="MinClose" value="0.4" />
     <Property name="MaxClose" value="0.6" />
@@ -977,7 +1133,7 @@
     <Property name="NumUDProbes" value="5" />
     <Property name="UDProbesRange" value="1.5" />
     <Property name="ProbeCenterX" value="0" />
-    <Property name="ProbeCenterY" value="-0.65" />
+    <Property name="ProbeCenterY" value="0.65" />
     <Property name="PushForwardDropoffLR" value="1.6" />
     <Property name="PushForwardDropoffUD" value="0.2" />
     <Property name="AvoidCollisionLRSpeed" value="0.005" />
@@ -1050,47 +1206,47 @@
   </Property>
   <Property name="CharacterUnderwaterJetpackCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="WETJETPACK" />
-    <Property name="MinSpeed" value="4" />
-    <Property name="SpeedRange" value="25" />
-    <Property name="OffsetX" value="0.1" />
-    <Property name="OffsetY" value="-0.1" />
+    <Property name="MinSpeed" value="5" />
+    <Property name="SpeedRange" value="8" />
+    <Property name="OffsetX" value="0.6" />
+    <Property name="OffsetY" value="-0.5" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="12" />
+    <Property name="BackMinDistance" value="3.6" />
     <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="16" />
-    <Property name="UpMaxDistance" value="3" />
-    <Property name="PanNear" value="-1" />
-    <Property name="PanFar" value="3" />
+    <Property name="BackMaxDistance" value="10" />
+    <Property name="UpMaxDistance" value="0" />
+    <Property name="PanNear" value="0" />
+    <Property name="PanFar" value="10" />
     <Property name="UpGamma" value="1.5" />
-    <Property name="HorizRotationAngleMaxPerFrame" value="20" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="10" />
     <Property name="VertRotationSpeed" value="15" />
-    <Property name="VertRotationMin" value="-65" />
-    <Property name="VertRotationMax" value="65" />
+    <Property name="VertRotationMin" value="-60" />
+    <Property name="VertRotationMax" value="60" />
     <Property name="VertRotationOffset" value="1" />
     <Property name="VertRotationOffsetMinAngle" value="-150" />
     <Property name="VertRotationOffsetMaxAngle" value="180" />
     <Property name="VertStartLookingDown" value="False" />
-    <Property name="DistSpeed" value="5" />
+    <Property name="DistSpeed" value="0.9" />
     <Property name="DistSpeedOutsideMainRange" value="5" />
-    <Property name="DistStiffness" value="0.1" />
-    <Property name="SpringSpeed" value="0.18" />
+    <Property name="DistStiffness" value="3" />
+    <Property name="SpringSpeed" value="0.065" />
     <Property name="LockToObjectOnIdle" value="False" />
-    <Property name="CenterStartTime" value="10.2" />
-    <Property name="CenterBlendTime" value="10" />
-    <Property name="CenterMaxSpring" value="0.2" />
-    <Property name="CenterMaxSpeed" value="0.01" />
+    <Property name="CenterStartTime" value="0.4" />
+    <Property name="CenterBlendTime" value="1" />
+    <Property name="CenterMaxSpring" value="2.2" />
+    <Property name="CenterMaxSpeed" value="2.8" />
     <Property name="VelocityAnticipate" value="0.17" />
     <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
-    <Property name="VertMaxSpring" value="0.5" />
-    <Property name="CenterStartSpeed" value="1" />
+    <Property name="VertMaxSpring" value="3" />
+    <Property name="CenterStartSpeed" value="0.17" />
     <Property name="MinClose" value="0.4" />
     <Property name="MaxClose" value="0.6" />
-    <Property name="CloseSpring" value="3" />
+    <Property name="CloseSpring" value="0.3" />
     <Property name="LookStickLimitAngle" value="0" />
     <Property name="EnableCollisionDetection" value="True" />
     <Property name="NumLRProbes" value="10" />
-    <Property name="LRProbesRange" value="13" />
+    <Property name="LRProbesRange" value="31" />
     <Property name="LRProbesRadius" value="0.3" />
     <Property name="NumUDProbes" value="5" />
     <Property name="UDProbesRange" value="1.5" />
@@ -1169,41 +1325,41 @@
   <Property name="CharacterSitCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="CHARSIT" />
     <Property name="MinSpeed" value="4" />
-    <Property name="SpeedRange" value="25" />
-    <Property name="OffsetX" value="0.1" />
-    <Property name="OffsetY" value="-0.1" />
+    <Property name="SpeedRange" value="1" />
+    <Property name="OffsetX" value="0.4" />
+    <Property name="OffsetY" value="-1.2" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="12" />
+    <Property name="BackMinDistance" value="4" />
     <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="14" /> <!-- CHARSIT -->
-    <Property name="UpMaxDistance" value="3" />
-    <Property name="PanNear" value="-1" />
-    <Property name="PanFar" value="3" />
+    <Property name="BackMaxDistance" value="4.9" />
+    <Property name="UpMaxDistance" value="1" />
+    <Property name="PanNear" value="-2" />
+    <Property name="PanFar" value="-1" />
     <Property name="UpGamma" value="1.5" />
-    <Property name="HorizRotationAngleMaxPerFrame" value="20" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="15" />
     <Property name="VertRotationSpeed" value="15" />
-    <Property name="VertRotationMin" value="-65" />
-    <Property name="VertRotationMax" value="65" />
+    <Property name="VertRotationMin" value="2" />
+    <Property name="VertRotationMax" value="68" />
     <Property name="VertRotationOffset" value="1" />
     <Property name="VertRotationOffsetMinAngle" value="-150" />
     <Property name="VertRotationOffsetMaxAngle" value="180" />
     <Property name="VertStartLookingDown" value="False" />
     <Property name="DistSpeed" value="5" />
     <Property name="DistSpeedOutsideMainRange" value="5" />
-    <Property name="DistStiffness" value="0.1" />
-    <Property name="SpringSpeed" value="0.18" />
+    <Property name="DistStiffness" value="3" />
+    <Property name="SpringSpeed" value="0.1" />
     <Property name="LockToObjectOnIdle" value="False" />
-    <Property name="CenterStartTime" value="10.2" />
-    <Property name="CenterBlendTime" value="10" />
-    <Property name="CenterMaxSpring" value="0.2" />
-    <Property name="CenterMaxSpeed" value="0.01" />
+    <Property name="CenterStartTime" value="1.5" />
+    <Property name="CenterBlendTime" value="1" />
+    <Property name="CenterMaxSpring" value="0.1" />
+    <Property name="CenterMaxSpeed" value="0.5" />
     <Property name="VelocityAnticipate" value="0.17" />
     <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
-    <Property name="VertMaxSpring" value="0.5" />
-    <Property name="CenterStartSpeed" value="1" />
-    <Property name="MinClose" value="0.4" />
-    <Property name="MaxClose" value="0.6" />
+    <Property name="VertMaxSpring" value="1" />
+    <Property name="CenterStartSpeed" value="3" />
+    <Property name="MinClose" value="0.5" />
+    <Property name="MaxClose" value="2" />
     <Property name="CloseSpring" value="3" />
     <Property name="LookStickLimitAngle" value="0" />
     <Property name="EnableCollisionDetection" value="True" />
@@ -1212,8 +1368,8 @@
     <Property name="LRProbesRadius" value="0.3" />
     <Property name="NumUDProbes" value="5" />
     <Property name="UDProbesRange" value="1.5" />
-    <Property name="ProbeCenterX" value="0" />
-    <Property name="ProbeCenterY" value="-0.65" />
+    <Property name="ProbeCenterX" value="0.3" />
+    <Property name="ProbeCenterY" value="-0.75" />
     <Property name="PushForwardDropoffLR" value="1.6" />
     <Property name="PushForwardDropoffUD" value="0.2" />
     <Property name="AvoidCollisionLRSpeed" value="0.005" />
@@ -1221,63 +1377,63 @@
     <Property name="AvoidCollisionPushSpeed" value="0.01" />
     <Property name="AvoidCollisionUDUseStickDelay" value="True" />
     <Property name="AvoidCollisionLRUseStickDelay" value="True" />
-    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseSpeedBasedSpring" value="False" />
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
   <Property name="CharacterRideCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="CHARRIDEMED" />
-    <Property name="MinSpeed" value="2" />
-    <Property name="SpeedRange" value="20" />
-    <Property name="OffsetX" value="0.1" />
-    <Property name="OffsetY" value="-0.1" />
+    <Property name="MinSpeed" value="1" />
+    <Property name="SpeedRange" value="3" />
+    <Property name="OffsetX" value="0" />
+    <Property name="OffsetY" value="0" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="9.2" />
+    <Property name="BackMinDistance" value="10" />
     <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="12.2" /> <!-- CHARRIDEMED -->
+    <Property name="BackMaxDistance" value="15" />
     <Property name="UpMaxDistance" value="0" />
     <Property name="PanNear" value="-1" />
-    <Property name="PanFar" value="3" />
+    <Property name="PanFar" value="-1" />
     <Property name="UpGamma" value="1.5" />
-    <Property name="HorizRotationAngleMaxPerFrame" value="20" />
-    <Property name="VertRotationSpeed" value="15" />
-    <Property name="VertRotationMin" value="-65" />
-    <Property name="VertRotationMax" value="65" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="0" />
+    <Property name="VertRotationSpeed" value="10" />
+    <Property name="VertRotationMin" value="-10" />
+    <Property name="VertRotationMax" value="30" />
     <Property name="VertRotationOffset" value="1" />
-    <Property name="VertRotationOffsetMinAngle" value="-150" />
-    <Property name="VertRotationOffsetMaxAngle" value="180" />
+    <Property name="VertRotationOffsetMinAngle" value="-10" />
+    <Property name="VertRotationOffsetMaxAngle" value="0" />
     <Property name="VertStartLookingDown" value="False" />
-    <Property name="DistSpeed" value="5" />
+    <Property name="DistSpeed" value="0.4" />
     <Property name="DistSpeedOutsideMainRange" value="5" />
-    <Property name="DistStiffness" value="0.1" />
-    <Property name="SpringSpeed" value="0.18" />
-    <Property name="LockToObjectOnIdle" value="False" />
-    <Property name="CenterStartTime" value="10.2" />
-    <Property name="CenterBlendTime" value="10" />
-    <Property name="CenterMaxSpring" value="0.2" />
-    <Property name="CenterMaxSpeed" value="0.01" />
+    <Property name="DistStiffness" value="3" />
+    <Property name="SpringSpeed" value="0.2" />
+    <Property name="LockToObjectOnIdle" value="True" />
+    <Property name="CenterStartTime" value="1.5" />
+    <Property name="CenterBlendTime" value="1.5" />
+    <Property name="CenterMaxSpring" value="0.5" />
+    <Property name="CenterMaxSpeed" value="0.5" />
     <Property name="VelocityAnticipate" value="0.17" />
     <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
-    <Property name="VertMaxSpring" value="0.5" />
-    <Property name="CenterStartSpeed" value="1" />
+    <Property name="VertMaxSpring" value="1" />
+    <Property name="CenterStartSpeed" value="0.1" />
     <Property name="MinClose" value="0.4" />
     <Property name="MaxClose" value="0.6" />
-    <Property name="CloseSpring" value="3" />
+    <Property name="CloseSpring" value="0.3" />
     <Property name="LookStickLimitAngle" value="0" />
     <Property name="EnableCollisionDetection" value="True" />
     <Property name="NumLRProbes" value="10" />
     <Property name="LRProbesRange" value="13" />
-    <Property name="LRProbesRadius" value="0.3" />
-    <Property name="NumUDProbes" value="5" />
-    <Property name="UDProbesRange" value="1.5" />
+    <Property name="LRProbesRadius" value="0.2" />
+    <Property name="NumUDProbes" value="10" />
+    <Property name="UDProbesRange" value="15" />
     <Property name="ProbeCenterX" value="0" />
-    <Property name="ProbeCenterY" value="-0.65" />
-    <Property name="PushForwardDropoffLR" value="1.6" />
+    <Property name="ProbeCenterY" value="3" />
+    <Property name="PushForwardDropoffLR" value="0.2" />
     <Property name="PushForwardDropoffUD" value="0.2" />
-    <Property name="AvoidCollisionLRSpeed" value="0.005" />
-    <Property name="AvoidCollisionUDSpeed" value="0.005" />
-    <Property name="AvoidCollisionPushSpeed" value="0.01" />
+    <Property name="AvoidCollisionLRSpeed" value="-4" />
+    <Property name="AvoidCollisionUDSpeed" value="3" />
+    <Property name="AvoidCollisionPushSpeed" value="0.5" />
     <Property name="AvoidCollisionUDUseStickDelay" value="True" />
     <Property name="AvoidCollisionLRUseStickDelay" value="True" />
     <Property name="UseSpeedBasedSpring" value="True" />
@@ -1286,57 +1442,57 @@
   </Property>
   <Property name="CharacterRideCamMedium" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="CHARRIDEMED" />
-    <Property name="MinSpeed" value="2" />
-    <Property name="SpeedRange" value="20" />
-    <Property name="OffsetX" value="0.1" />
-    <Property name="OffsetY" value="-0.1" />
+    <Property name="MinSpeed" value="1" />
+    <Property name="SpeedRange" value="3" />
+    <Property name="OffsetX" value="0" />
+    <Property name="OffsetY" value="0" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="9.2" />
+    <Property name="BackMinDistance" value="10" />
     <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="12.2" /> <!-- CHARRIDEMED -->
+    <Property name="BackMaxDistance" value="15" />
     <Property name="UpMaxDistance" value="0" />
     <Property name="PanNear" value="-1" />
-    <Property name="PanFar" value="3" />
+    <Property name="PanFar" value="-1" />
     <Property name="UpGamma" value="1.5" />
-    <Property name="HorizRotationAngleMaxPerFrame" value="20" />
-    <Property name="VertRotationSpeed" value="15" />
-    <Property name="VertRotationMin" value="-65" />
-    <Property name="VertRotationMax" value="65" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="0" />
+    <Property name="VertRotationSpeed" value="10" />
+    <Property name="VertRotationMin" value="5" />
+    <Property name="VertRotationMax" value="30" />
     <Property name="VertRotationOffset" value="1" />
-    <Property name="VertRotationOffsetMinAngle" value="-150" />
-    <Property name="VertRotationOffsetMaxAngle" value="180" />
+    <Property name="VertRotationOffsetMinAngle" value="-10" />
+    <Property name="VertRotationOffsetMaxAngle" value="0" />
     <Property name="VertStartLookingDown" value="False" />
-    <Property name="DistSpeed" value="5" />
+    <Property name="DistSpeed" value="0.4" />
     <Property name="DistSpeedOutsideMainRange" value="5" />
-    <Property name="DistStiffness" value="0.1" />
-    <Property name="SpringSpeed" value="0.18" />
-    <Property name="LockToObjectOnIdle" value="False" />
-    <Property name="CenterStartTime" value="10.2" />
-    <Property name="CenterBlendTime" value="10" />
-    <Property name="CenterMaxSpring" value="0.2" />
-    <Property name="CenterMaxSpeed" value="0.01" />
+    <Property name="DistStiffness" value="3" />
+    <Property name="SpringSpeed" value="0.2" />
+    <Property name="LockToObjectOnIdle" value="True" />
+    <Property name="CenterStartTime" value="1.5" />
+    <Property name="CenterBlendTime" value="1.5" />
+    <Property name="CenterMaxSpring" value="0.5" />
+    <Property name="CenterMaxSpeed" value="0.5" />
     <Property name="VelocityAnticipate" value="0.17" />
     <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
-    <Property name="VertMaxSpring" value="0.5" />
-    <Property name="CenterStartSpeed" value="1" />
+    <Property name="VertMaxSpring" value="1" />
+    <Property name="CenterStartSpeed" value="0.1" />
     <Property name="MinClose" value="0.4" />
     <Property name="MaxClose" value="0.6" />
-    <Property name="CloseSpring" value="3" />
+    <Property name="CloseSpring" value="0.3" />
     <Property name="LookStickLimitAngle" value="0" />
     <Property name="EnableCollisionDetection" value="True" />
     <Property name="NumLRProbes" value="10" />
     <Property name="LRProbesRange" value="13" />
-    <Property name="LRProbesRadius" value="0.3" />
-    <Property name="NumUDProbes" value="5" />
-    <Property name="UDProbesRange" value="1.5" />
+    <Property name="LRProbesRadius" value="0.2" />
+    <Property name="NumUDProbes" value="10" />
+    <Property name="UDProbesRange" value="15" />
     <Property name="ProbeCenterX" value="0" />
-    <Property name="ProbeCenterY" value="-0.65" />
-    <Property name="PushForwardDropoffLR" value="1.6" />
+    <Property name="ProbeCenterY" value="3" />
+    <Property name="PushForwardDropoffLR" value="0.2" />
     <Property name="PushForwardDropoffUD" value="0.2" />
-    <Property name="AvoidCollisionLRSpeed" value="0.005" />
-    <Property name="AvoidCollisionUDSpeed" value="0.005" />
-    <Property name="AvoidCollisionPushSpeed" value="0.01" />
+    <Property name="AvoidCollisionLRSpeed" value="-4" />
+    <Property name="AvoidCollisionUDSpeed" value="3" />
+    <Property name="AvoidCollisionPushSpeed" value="0.5" />
     <Property name="AvoidCollisionUDUseStickDelay" value="True" />
     <Property name="AvoidCollisionLRUseStickDelay" value="True" />
     <Property name="UseSpeedBasedSpring" value="True" />
@@ -1353,7 +1509,7 @@
     <Property name="OffsetZFlat" value="0" />
     <Property name="BackMinDistance" value="18" />
     <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="25" /> <!-- CHARRIDELRG -->
+    <Property name="BackMaxDistance" value="25" />
     <Property name="UpMaxDistance" value="0" />
     <Property name="PanNear" value="-1" />
     <Property name="PanFar" value="-1" />
@@ -1412,7 +1568,7 @@
     <Property name="OffsetZFlat" value="0" />
     <Property name="BackMinDistance" value="38" />
     <Property name="UpMinDistance" value="0" />
-    <Property name="BackMaxDistance" value="50" /> <!-- CHARRIDEHUGE -->
+    <Property name="BackMaxDistance" value="50" />
     <Property name="UpMaxDistance" value="0" />
     <Property name="PanNear" value="-1" />
     <Property name="PanFar" value="-1" />
@@ -2052,8 +2208,480 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="DropshipFollowCam" value="GcCameraFollowSettings.xml">
+<Property name="DropshipFollowCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="DROPSHIP" />
+    <Property name="MinSpeed" value="0" />
+    <Property name="SpeedRange" value="150" />
+    <Property name="OffsetX" value="0" />
+    <Property name="OffsetY" value="4" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="2" />
+    <Property name="BackMinDistance" value="28" />
+    <Property name="UpMinDistance" value="7" />
+    <Property name="BackMaxDistance" value="27" />
+    <Property name="UpMaxDistance" value="18" />
+    <Property name="PanNear" value="5" />
+    <Property name="PanFar" value="6" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="0" />
+    <Property name="VertRotationSpeed" value="1" />
+    <Property name="VertRotationMin" value="-90" />
+    <Property name="VertRotationMax" value="90" />
+    <Property name="VertRotationOffset" value="20" />
+    <Property name="VertRotationOffsetMinAngle" value="-30" />
+    <Property name="VertRotationOffsetMaxAngle" value="30" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="0.2" />
+    <Property name="DistSpeedOutsideMainRange" value="1.5" />
+    <Property name="DistStiffness" value="2" />
+    <Property name="SpringSpeed" value="0" />
+    <Property name="LockToObjectOnIdle" value="True" />
+    <Property name="CenterStartTime" value="0.5" />
+    <Property name="CenterBlendTime" value="1" />
+    <Property name="CenterMaxSpring" value="8" />
+    <Property name="CenterMaxSpeed" value="5" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="5.5" />
+    <Property name="CenterStartSpeed" value="0.5" />
+    <Property name="MinClose" value="0.1" />
+    <Property name="MaxClose" value="1" />
+    <Property name="CloseSpring" value="6" />
+    <Property name="LookStickLimitAngle" value="75" />
+    <Property name="EnableCollisionDetection" value="False" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="30" />
+    <Property name="LRProbesRadius" value="0.2" />
+    <Property name="NumUDProbes" value="10" />
+    <Property name="UDProbesRange" value="15" />
+    <Property name="ProbeCenterX" value="0" />
+    <Property name="ProbeCenterY" value="0.5" />
+    <Property name="PushForwardDropoffLR" value="0.2" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="-1" />
+    <Property name="AvoidCollisionUDSpeed" value="1" />
+    <Property name="AvoidCollisionPushSpeed" value="0.1" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="False" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseCustomBlendTime" value="False" />
+    <Property name="CustomBlendTime" value="0.5" />
+  </Property>
+<Property name="RoyalShipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="ROYAL" />
+    <Property name="MinSpeed" value="0" />
+    <Property name="SpeedRange" value="150" />
+    <Property name="OffsetX" value="0" />
+    <Property name="OffsetY" value="4" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="2" />
+    <Property name="BackMinDistance" value="28" />
+    <Property name="UpMinDistance" value="7" />
+    <Property name="BackMaxDistance" value="27" />
+    <Property name="UpMaxDistance" value="18" />
+    <Property name="PanNear" value="3" />
+    <Property name="PanFar" value="4" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="0" />
+    <Property name="VertRotationSpeed" value="1" />
+    <Property name="VertRotationMin" value="-90" />
+    <Property name="VertRotationMax" value="90" />
+    <Property name="VertRotationOffset" value="13" />
+    <Property name="VertRotationOffsetMinAngle" value="-90" />
+    <Property name="VertRotationOffsetMaxAngle" value="90" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="0.2" />
+    <Property name="DistSpeedOutsideMainRange" value="1.5" />
+    <Property name="DistStiffness" value="2" />
+    <Property name="SpringSpeed" value="0" />
+    <Property name="LockToObjectOnIdle" value="True" />
+    <Property name="CenterStartTime" value="0.5" />
+    <Property name="CenterBlendTime" value="1" />
+    <Property name="CenterMaxSpring" value="8" />
+    <Property name="CenterMaxSpeed" value="5" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="5.5" />
+    <Property name="CenterStartSpeed" value="0.5" />
+    <Property name="MinClose" value="0.1" />
+    <Property name="MaxClose" value="2" />
+    <Property name="CloseSpring" value="6" />
+    <Property name="LookStickLimitAngle" value="75" />
+    <Property name="EnableCollisionDetection" value="False" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="30" />
+    <Property name="LRProbesRadius" value="0.2" />
+    <Property name="NumUDProbes" value="10" />
+    <Property name="UDProbesRange" value="15" />
+    <Property name="ProbeCenterX" value="0" />
+    <Property name="ProbeCenterY" value="0.5" />
+    <Property name="PushForwardDropoffLR" value="0.2" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="-1" />
+    <Property name="AvoidCollisionUDSpeed" value="1" />
+    <Property name="AvoidCollisionPushSpeed" value="0.1" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="False" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseCustomBlendTime" value="False" />
+    <Property name="CustomBlendTime" value="0.5" />
+  </Property>
+<Property name="ScienceShipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="SCIENCE" />
+    <Property name="MinSpeed" value="0" />
+    <Property name="SpeedRange" value="150" />
+    <Property name="OffsetX" value="0" />
+    <Property name="OffsetY" value="4" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="2" />
+    <Property name="BackMinDistance" value="28" />
+    <Property name="UpMinDistance" value="7" />
+    <Property name="BackMaxDistance" value="27" />
+    <Property name="UpMaxDistance" value="18" />
+    <Property name="PanNear" value="-1" />
+    <Property name="PanFar" value="-6" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="0" />
+    <Property name="VertRotationSpeed" value="1" />
+    <Property name="VertRotationMin" value="-90" />
+    <Property name="VertRotationMax" value="90" />
+    <Property name="VertRotationOffset" value="14" />
+    <Property name="VertRotationOffsetMinAngle" value="-90" />
+    <Property name="VertRotationOffsetMaxAngle" value="90" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="0.2" />
+    <Property name="DistSpeedOutsideMainRange" value="1.5" />
+    <Property name="DistStiffness" value="2" />
+    <Property name="SpringSpeed" value="0" />
+    <Property name="LockToObjectOnIdle" value="True" />
+    <Property name="CenterStartTime" value="0.5" />
+    <Property name="CenterBlendTime" value="1" />
+    <Property name="CenterMaxSpring" value="8" />
+    <Property name="CenterMaxSpeed" value="5" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="5.5" />
+    <Property name="CenterStartSpeed" value="0.5" />
+    <Property name="MinClose" value="0.1" />
+    <Property name="MaxClose" value="2" />
+    <Property name="CloseSpring" value="6" />
+    <Property name="LookStickLimitAngle" value="75" />
+    <Property name="EnableCollisionDetection" value="False" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="30" />
+    <Property name="LRProbesRadius" value="0.2" />
+    <Property name="NumUDProbes" value="10" />
+    <Property name="UDProbesRange" value="15" />
+    <Property name="ProbeCenterX" value="0" />
+    <Property name="ProbeCenterY" value="0.5" />
+    <Property name="PushForwardDropoffLR" value="0.2" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="-1" />
+    <Property name="AvoidCollisionUDSpeed" value="1" />
+    <Property name="AvoidCollisionPushSpeed" value="0.1" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="False" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseCustomBlendTime" value="False" />
+    <Property name="CustomBlendTime" value="0.5" />
+  </Property>
+<Property name="AlienShipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="ALIENSHIP" />
+    <Property name="MinSpeed" value="0" />
+    <Property name="SpeedRange" value="150" />
+    <Property name="OffsetX" value="0" />
+    <Property name="OffsetY" value="4" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="2" />
+    <Property name="BackMinDistance" value="28" />
+    <Property name="UpMinDistance" value="7" />
+    <Property name="BackMaxDistance" value="27" />
+    <Property name="UpMaxDistance" value="18" />
+    <Property name="PanNear" value="5" />
+    <Property name="PanFar" value="6" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="0" />
+    <Property name="VertRotationSpeed" value="1" />
+    <Property name="VertRotationMin" value="-90" />
+    <Property name="VertRotationMax" value="90" />
+    <Property name="VertRotationOffset" value="20" />
+    <Property name="VertRotationOffsetMinAngle" value="-30" />
+    <Property name="VertRotationOffsetMaxAngle" value="30" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="0.2" />
+    <Property name="DistSpeedOutsideMainRange" value="1.5" />
+    <Property name="DistStiffness" value="2" />
+    <Property name="SpringSpeed" value="0" />
+    <Property name="LockToObjectOnIdle" value="True" />
+    <Property name="CenterStartTime" value="0.5" />
+    <Property name="CenterBlendTime" value="1" />
+    <Property name="CenterMaxSpring" value="8" />
+    <Property name="CenterMaxSpeed" value="5" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="5.5" />
+    <Property name="CenterStartSpeed" value="0.5" />
+    <Property name="MinClose" value="0.1" />
+    <Property name="MaxClose" value="1" />
+    <Property name="CloseSpring" value="6" />
+    <Property name="LookStickLimitAngle" value="75" />
+    <Property name="EnableCollisionDetection" value="False" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="30" />
+    <Property name="LRProbesRadius" value="0.2" />
+    <Property name="NumUDProbes" value="10" />
+    <Property name="UDProbesRange" value="15" />
+    <Property name="ProbeCenterX" value="0" />
+    <Property name="ProbeCenterY" value="0.5" />
+    <Property name="PushForwardDropoffLR" value="0.2" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="-1" />
+    <Property name="AvoidCollisionUDSpeed" value="1" />
+    <Property name="AvoidCollisionPushSpeed" value="0.1" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="False" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseCustomBlendTime" value="False" />
+    <Property name="CustomBlendTime" value="0.5" />
+  </Property>
+  <Property name="SpaceshipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="SPACESHIP" />
+    <Property name="MinSpeed" value="0" />
+    <Property name="SpeedRange" value="150" />
+    <Property name="OffsetX" value="0" />
+    <Property name="OffsetY" value="4" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="2" />
+    <Property name="BackMinDistance" value="28" />
+    <Property name="UpMinDistance" value="7" />
+    <Property name="BackMaxDistance" value="27" />
+    <Property name="UpMaxDistance" value="18" />
+    <Property name="PanNear" value="-2" />
+    <Property name="PanFar" value="-4" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="0" />
+    <Property name="VertRotationSpeed" value="1" />
+    <Property name="VertRotationMin" value="-90" />
+    <Property name="VertRotationMax" value="90" />
+    <Property name="VertRotationOffset" value="14" />
+    <Property name="VertRotationOffsetMinAngle" value="-30" />
+    <Property name="VertRotationOffsetMaxAngle" value="30" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="0.2" />
+    <Property name="DistSpeedOutsideMainRange" value="1.5" />
+    <Property name="DistStiffness" value="2" />
+    <Property name="SpringSpeed" value="0" />
+    <Property name="LockToObjectOnIdle" value="True" />
+    <Property name="CenterStartTime" value="0.5" />
+    <Property name="CenterBlendTime" value="1" />
+    <Property name="CenterMaxSpring" value="8" />
+    <Property name="CenterMaxSpeed" value="5" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="5.5" />
+    <Property name="CenterStartSpeed" value="0.5" />
+    <Property name="MinClose" value="0.1" />
+    <Property name="MaxClose" value="1" />
+    <Property name="CloseSpring" value="6" />
+    <Property name="LookStickLimitAngle" value="75" />
+    <Property name="EnableCollisionDetection" value="False" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="30" />
+    <Property name="LRProbesRadius" value="0.2" />
+    <Property name="NumUDProbes" value="10" />
+    <Property name="UDProbesRange" value="15" />
+    <Property name="ProbeCenterX" value="0" />
+    <Property name="ProbeCenterY" value="0.5" />
+    <Property name="PushForwardDropoffLR" value="0.2" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="-1" />
+    <Property name="AvoidCollisionUDSpeed" value="1" />
+    <Property name="AvoidCollisionPushSpeed" value="0.1" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="False" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseCustomBlendTime" value="False" />
+    <Property name="CustomBlendTime" value="0.5" />
+  </Property>
+<Property name="DropshipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="DROPSHIP" />
+    <Property name="MinSpeed" value="0" />
+    <Property name="SpeedRange" value="150" />
+    <Property name="OffsetX" value="0" />
+    <Property name="OffsetY" value="4" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="2" />
+    <Property name="BackMinDistance" value="28" />
+    <Property name="UpMinDistance" value="7" />
+    <Property name="BackMaxDistance" value="27" />
+    <Property name="UpMaxDistance" value="18" />
+    <Property name="PanNear" value="5" />
+    <Property name="PanFar" value="6" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="0" />
+    <Property name="VertRotationSpeed" value="1" />
+    <Property name="VertRotationMin" value="-90" />
+    <Property name="VertRotationMax" value="90" />
+    <Property name="VertRotationOffset" value="20" />
+    <Property name="VertRotationOffsetMinAngle" value="-30" />
+    <Property name="VertRotationOffsetMaxAngle" value="30" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="0.2" />
+    <Property name="DistSpeedOutsideMainRange" value="1.5" />
+    <Property name="DistStiffness" value="2" />
+    <Property name="SpringSpeed" value="0" />
+    <Property name="LockToObjectOnIdle" value="True" />
+    <Property name="CenterStartTime" value="0.5" />
+    <Property name="CenterBlendTime" value="1" />
+    <Property name="CenterMaxSpring" value="8" />
+    <Property name="CenterMaxSpeed" value="5" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="5.5" />
+    <Property name="CenterStartSpeed" value="0.5" />
+    <Property name="MinClose" value="0.1" />
+    <Property name="MaxClose" value="1" />
+    <Property name="CloseSpring" value="6" />
+    <Property name="LookStickLimitAngle" value="75" />
+    <Property name="EnableCollisionDetection" value="False" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="30" />
+    <Property name="LRProbesRadius" value="0.2" />
+    <Property name="NumUDProbes" value="10" />
+    <Property name="UDProbesRange" value="15" />
+    <Property name="ProbeCenterX" value="0" />
+    <Property name="ProbeCenterY" value="0.5" />
+    <Property name="PushForwardDropoffLR" value="0.2" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="-1" />
+    <Property name="AvoidCollisionUDSpeed" value="1" />
+    <Property name="AvoidCollisionPushSpeed" value="0.1" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="False" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseCustomBlendTime" value="False" />
+    <Property name="CustomBlendTime" value="0.5" />
+  </Property>
+<Property name="RoyalShipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="ROYAL" />
+    <Property name="MinSpeed" value="0" />
+    <Property name="SpeedRange" value="150" />
+    <Property name="OffsetX" value="0" />
+    <Property name="OffsetY" value="4" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="2" />
+    <Property name="BackMinDistance" value="28" />
+    <Property name="UpMinDistance" value="7" />
+    <Property name="BackMaxDistance" value="27" />
+    <Property name="UpMaxDistance" value="18" />
+    <Property name="PanNear" value="3" />
+    <Property name="PanFar" value="4" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="0" />
+    <Property name="VertRotationSpeed" value="1" />
+    <Property name="VertRotationMin" value="-90" />
+    <Property name="VertRotationMax" value="90" />
+    <Property name="VertRotationOffset" value="13" />
+    <Property name="VertRotationOffsetMinAngle" value="-90" />
+    <Property name="VertRotationOffsetMaxAngle" value="90" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="0.2" />
+    <Property name="DistSpeedOutsideMainRange" value="1.5" />
+    <Property name="DistStiffness" value="2" />
+    <Property name="SpringSpeed" value="0" />
+    <Property name="LockToObjectOnIdle" value="True" />
+    <Property name="CenterStartTime" value="0.5" />
+    <Property name="CenterBlendTime" value="1" />
+    <Property name="CenterMaxSpring" value="8" />
+    <Property name="CenterMaxSpeed" value="5" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="5.5" />
+    <Property name="CenterStartSpeed" value="0.5" />
+    <Property name="MinClose" value="0.1" />
+    <Property name="MaxClose" value="2" />
+    <Property name="CloseSpring" value="6" />
+    <Property name="LookStickLimitAngle" value="75" />
+    <Property name="EnableCollisionDetection" value="False" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="30" />
+    <Property name="LRProbesRadius" value="0.2" />
+    <Property name="NumUDProbes" value="10" />
+    <Property name="UDProbesRange" value="15" />
+    <Property name="ProbeCenterX" value="0" />
+    <Property name="ProbeCenterY" value="0.5" />
+    <Property name="PushForwardDropoffLR" value="0.2" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="-1" />
+    <Property name="AvoidCollisionUDSpeed" value="1" />
+    <Property name="AvoidCollisionPushSpeed" value="0.1" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="False" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseCustomBlendTime" value="False" />
+    <Property name="CustomBlendTime" value="0.5" />
+  </Property>
+<Property name="ScienceShipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="SCIENCE" />
+    <Property name="MinSpeed" value="0" />
+    <Property name="SpeedRange" value="150" />
+    <Property name="OffsetX" value="0" />
+    <Property name="OffsetY" value="4" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="2" />
+    <Property name="BackMinDistance" value="28" />
+    <Property name="UpMinDistance" value="7" />
+    <Property name="BackMaxDistance" value="27" />
+    <Property name="UpMaxDistance" value="18" />
+    <Property name="PanNear" value="-1" />
+    <Property name="PanFar" value="-6" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="0" />
+    <Property name="VertRotationSpeed" value="1" />
+    <Property name="VertRotationMin" value="-90" />
+    <Property name="VertRotationMax" value="90" />
+    <Property name="VertRotationOffset" value="14" />
+    <Property name="VertRotationOffsetMinAngle" value="-90" />
+    <Property name="VertRotationOffsetMaxAngle" value="90" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="0.2" />
+    <Property name="DistSpeedOutsideMainRange" value="1.5" />
+    <Property name="DistStiffness" value="2" />
+    <Property name="SpringSpeed" value="0" />
+    <Property name="LockToObjectOnIdle" value="True" />
+    <Property name="CenterStartTime" value="0.5" />
+    <Property name="CenterBlendTime" value="1" />
+    <Property name="CenterMaxSpring" value="8" />
+    <Property name="CenterMaxSpeed" value="5" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="5.5" />
+    <Property name="CenterStartSpeed" value="0.5" />
+    <Property name="MinClose" value="0.1" />
+    <Property name="MaxClose" value="2" />
+    <Property name="CloseSpring" value="6" />
+    <Property name="LookStickLimitAngle" value="75" />
+    <Property name="EnableCollisionDetection" value="False" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="30" />
+    <Property name="LRProbesRadius" value="0.2" />
+    <Property name="NumUDProbes" value="10" />
+    <Property name="UDProbesRange" value="15" />
+    <Property name="ProbeCenterX" value="0" />
+    <Property name="ProbeCenterY" value="0.5" />
+    <Property name="PushForwardDropoffLR" value="0.2" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="-1" />
+    <Property name="AvoidCollisionUDSpeed" value="1" />
+    <Property name="AvoidCollisionPushSpeed" value="0.1" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="False" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseCustomBlendTime" value="False" />
+    <Property name="CustomBlendTime" value="0.5" />
+  </Property>
+<Property name="AlienShipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="ALIENSHIP" />
     <Property name="MinSpeed" value="0" />
     <Property name="SpeedRange" value="150" />
     <Property name="OffsetX" value="0" />
@@ -2170,7 +2798,125 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="RoyalShipFollowCam" value="GcCameraFollowSettings.xml">
+  <Property name="SpaceshipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="SPACESHIP" />
+    <Property name="MinSpeed" value="0" />
+    <Property name="SpeedRange" value="150" />
+    <Property name="OffsetX" value="0" />
+    <Property name="OffsetY" value="4" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="2" />
+    <Property name="BackMinDistance" value="28" />
+    <Property name="UpMinDistance" value="7" />
+    <Property name="BackMaxDistance" value="27" />
+    <Property name="UpMaxDistance" value="18" />
+    <Property name="PanNear" value="-2" />
+    <Property name="PanFar" value="-4" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="0" />
+    <Property name="VertRotationSpeed" value="1" />
+    <Property name="VertRotationMin" value="-90" />
+    <Property name="VertRotationMax" value="90" />
+    <Property name="VertRotationOffset" value="14" />
+    <Property name="VertRotationOffsetMinAngle" value="-30" />
+    <Property name="VertRotationOffsetMaxAngle" value="30" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="0.2" />
+    <Property name="DistSpeedOutsideMainRange" value="1.5" />
+    <Property name="DistStiffness" value="2" />
+    <Property name="SpringSpeed" value="0" />
+    <Property name="LockToObjectOnIdle" value="True" />
+    <Property name="CenterStartTime" value="0.5" />
+    <Property name="CenterBlendTime" value="1" />
+    <Property name="CenterMaxSpring" value="8" />
+    <Property name="CenterMaxSpeed" value="5" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="5.5" />
+    <Property name="CenterStartSpeed" value="0.5" />
+    <Property name="MinClose" value="0.1" />
+    <Property name="MaxClose" value="1" />
+    <Property name="CloseSpring" value="6" />
+    <Property name="LookStickLimitAngle" value="75" />
+    <Property name="EnableCollisionDetection" value="False" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="30" />
+    <Property name="LRProbesRadius" value="0.2" />
+    <Property name="NumUDProbes" value="10" />
+    <Property name="UDProbesRange" value="15" />
+    <Property name="ProbeCenterX" value="0" />
+    <Property name="ProbeCenterY" value="0.5" />
+    <Property name="PushForwardDropoffLR" value="0.2" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="-1" />
+    <Property name="AvoidCollisionUDSpeed" value="1" />
+    <Property name="AvoidCollisionPushSpeed" value="0.1" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="False" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseCustomBlendTime" value="False" />
+    <Property name="CustomBlendTime" value="0.5" />
+  </Property>
+<Property name="DropshipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="DROPSHIP" />
+    <Property name="MinSpeed" value="0" />
+    <Property name="SpeedRange" value="150" />
+    <Property name="OffsetX" value="0" />
+    <Property name="OffsetY" value="4" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="2" />
+    <Property name="BackMinDistance" value="28" />
+    <Property name="UpMinDistance" value="7" />
+    <Property name="BackMaxDistance" value="27" />
+    <Property name="UpMaxDistance" value="18" />
+    <Property name="PanNear" value="5" />
+    <Property name="PanFar" value="6" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="0" />
+    <Property name="VertRotationSpeed" value="1" />
+    <Property name="VertRotationMin" value="-90" />
+    <Property name="VertRotationMax" value="90" />
+    <Property name="VertRotationOffset" value="20" />
+    <Property name="VertRotationOffsetMinAngle" value="-30" />
+    <Property name="VertRotationOffsetMaxAngle" value="30" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="0.2" />
+    <Property name="DistSpeedOutsideMainRange" value="1.5" />
+    <Property name="DistStiffness" value="2" />
+    <Property name="SpringSpeed" value="0" />
+    <Property name="LockToObjectOnIdle" value="True" />
+    <Property name="CenterStartTime" value="0.5" />
+    <Property name="CenterBlendTime" value="1" />
+    <Property name="CenterMaxSpring" value="8" />
+    <Property name="CenterMaxSpeed" value="5" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="5.5" />
+    <Property name="CenterStartSpeed" value="0.5" />
+    <Property name="MinClose" value="0.1" />
+    <Property name="MaxClose" value="1" />
+    <Property name="CloseSpring" value="6" />
+    <Property name="LookStickLimitAngle" value="75" />
+    <Property name="EnableCollisionDetection" value="False" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="30" />
+    <Property name="LRProbesRadius" value="0.2" />
+    <Property name="NumUDProbes" value="10" />
+    <Property name="UDProbesRange" value="15" />
+    <Property name="ProbeCenterX" value="0" />
+    <Property name="ProbeCenterY" value="0.5" />
+    <Property name="PushForwardDropoffLR" value="0.2" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="-1" />
+    <Property name="AvoidCollisionUDSpeed" value="1" />
+    <Property name="AvoidCollisionPushSpeed" value="0.1" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="False" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseCustomBlendTime" value="False" />
+    <Property name="CustomBlendTime" value="0.5" />
+  </Property>
+<Property name="RoyalShipFollowCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="ROYAL" />
     <Property name="MinSpeed" value="0" />
     <Property name="SpeedRange" value="150" />
@@ -2229,7 +2975,7 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="ScienceShipFollowCam" value="GcCameraFollowSettings.xml">
+<Property name="ScienceShipFollowCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="SCIENCE" />
     <Property name="MinSpeed" value="0" />
     <Property name="SpeedRange" value="150" />
@@ -2288,7 +3034,597 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="AlienShipFollowCam" value="GcCameraFollowSettings.xml">
+<Property name="AlienShipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="ALIENSHIP" />
+    <Property name="MinSpeed" value="0" />
+    <Property name="SpeedRange" value="150" />
+    <Property name="OffsetX" value="0" />
+    <Property name="OffsetY" value="4" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="2" />
+    <Property name="BackMinDistance" value="28" />
+    <Property name="UpMinDistance" value="7" />
+    <Property name="BackMaxDistance" value="27" />
+    <Property name="UpMaxDistance" value="18" />
+    <Property name="PanNear" value="5" />
+    <Property name="PanFar" value="6" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="0" />
+    <Property name="VertRotationSpeed" value="1" />
+    <Property name="VertRotationMin" value="-90" />
+    <Property name="VertRotationMax" value="90" />
+    <Property name="VertRotationOffset" value="20" />
+    <Property name="VertRotationOffsetMinAngle" value="-30" />
+    <Property name="VertRotationOffsetMaxAngle" value="30" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="0.2" />
+    <Property name="DistSpeedOutsideMainRange" value="1.5" />
+    <Property name="DistStiffness" value="2" />
+    <Property name="SpringSpeed" value="0" />
+    <Property name="LockToObjectOnIdle" value="True" />
+    <Property name="CenterStartTime" value="0.5" />
+    <Property name="CenterBlendTime" value="1" />
+    <Property name="CenterMaxSpring" value="8" />
+    <Property name="CenterMaxSpeed" value="5" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="5.5" />
+    <Property name="CenterStartSpeed" value="0.5" />
+    <Property name="MinClose" value="0.1" />
+    <Property name="MaxClose" value="1" />
+    <Property name="CloseSpring" value="6" />
+    <Property name="LookStickLimitAngle" value="75" />
+    <Property name="EnableCollisionDetection" value="False" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="30" />
+    <Property name="LRProbesRadius" value="0.2" />
+    <Property name="NumUDProbes" value="10" />
+    <Property name="UDProbesRange" value="15" />
+    <Property name="ProbeCenterX" value="0" />
+    <Property name="ProbeCenterY" value="0.5" />
+    <Property name="PushForwardDropoffLR" value="0.2" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="-1" />
+    <Property name="AvoidCollisionUDSpeed" value="1" />
+    <Property name="AvoidCollisionPushSpeed" value="0.1" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="False" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseCustomBlendTime" value="False" />
+    <Property name="CustomBlendTime" value="0.5" />
+  </Property>
+  <Property name="SpaceshipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="SPACESHIP" />
+    <Property name="MinSpeed" value="0" />
+    <Property name="SpeedRange" value="150" />
+    <Property name="OffsetX" value="0" />
+    <Property name="OffsetY" value="4" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="2" />
+    <Property name="BackMinDistance" value="28" />
+    <Property name="UpMinDistance" value="7" />
+    <Property name="BackMaxDistance" value="27" />
+    <Property name="UpMaxDistance" value="18" />
+    <Property name="PanNear" value="-2" />
+    <Property name="PanFar" value="-4" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="0" />
+    <Property name="VertRotationSpeed" value="1" />
+    <Property name="VertRotationMin" value="-90" />
+    <Property name="VertRotationMax" value="90" />
+    <Property name="VertRotationOffset" value="14" />
+    <Property name="VertRotationOffsetMinAngle" value="-30" />
+    <Property name="VertRotationOffsetMaxAngle" value="30" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="0.2" />
+    <Property name="DistSpeedOutsideMainRange" value="1.5" />
+    <Property name="DistStiffness" value="2" />
+    <Property name="SpringSpeed" value="0" />
+    <Property name="LockToObjectOnIdle" value="True" />
+    <Property name="CenterStartTime" value="0.5" />
+    <Property name="CenterBlendTime" value="1" />
+    <Property name="CenterMaxSpring" value="8" />
+    <Property name="CenterMaxSpeed" value="5" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="5.5" />
+    <Property name="CenterStartSpeed" value="0.5" />
+    <Property name="MinClose" value="0.1" />
+    <Property name="MaxClose" value="1" />
+    <Property name="CloseSpring" value="6" />
+    <Property name="LookStickLimitAngle" value="75" />
+    <Property name="EnableCollisionDetection" value="False" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="30" />
+    <Property name="LRProbesRadius" value="0.2" />
+    <Property name="NumUDProbes" value="10" />
+    <Property name="UDProbesRange" value="15" />
+    <Property name="ProbeCenterX" value="0" />
+    <Property name="ProbeCenterY" value="0.5" />
+    <Property name="PushForwardDropoffLR" value="0.2" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="-1" />
+    <Property name="AvoidCollisionUDSpeed" value="1" />
+    <Property name="AvoidCollisionPushSpeed" value="0.1" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="False" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseCustomBlendTime" value="False" />
+    <Property name="CustomBlendTime" value="0.5" />
+  </Property>
+<Property name="DropshipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="DROPSHIP" />
+    <Property name="MinSpeed" value="0" />
+    <Property name="SpeedRange" value="150" />
+    <Property name="OffsetX" value="0" />
+    <Property name="OffsetY" value="4" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="2" />
+    <Property name="BackMinDistance" value="28" />
+    <Property name="UpMinDistance" value="7" />
+    <Property name="BackMaxDistance" value="27" />
+    <Property name="UpMaxDistance" value="18" />
+    <Property name="PanNear" value="5" />
+    <Property name="PanFar" value="6" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="0" />
+    <Property name="VertRotationSpeed" value="1" />
+    <Property name="VertRotationMin" value="-90" />
+    <Property name="VertRotationMax" value="90" />
+    <Property name="VertRotationOffset" value="20" />
+    <Property name="VertRotationOffsetMinAngle" value="-30" />
+    <Property name="VertRotationOffsetMaxAngle" value="30" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="0.2" />
+    <Property name="DistSpeedOutsideMainRange" value="1.5" />
+    <Property name="DistStiffness" value="2" />
+    <Property name="SpringSpeed" value="0" />
+    <Property name="LockToObjectOnIdle" value="True" />
+    <Property name="CenterStartTime" value="0.5" />
+    <Property name="CenterBlendTime" value="1" />
+    <Property name="CenterMaxSpring" value="8" />
+    <Property name="CenterMaxSpeed" value="5" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="5.5" />
+    <Property name="CenterStartSpeed" value="0.5" />
+    <Property name="MinClose" value="0.1" />
+    <Property name="MaxClose" value="1" />
+    <Property name="CloseSpring" value="6" />
+    <Property name="LookStickLimitAngle" value="75" />
+    <Property name="EnableCollisionDetection" value="False" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="30" />
+    <Property name="LRProbesRadius" value="0.2" />
+    <Property name="NumUDProbes" value="10" />
+    <Property name="UDProbesRange" value="15" />
+    <Property name="ProbeCenterX" value="0" />
+    <Property name="ProbeCenterY" value="0.5" />
+    <Property name="PushForwardDropoffLR" value="0.2" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="-1" />
+    <Property name="AvoidCollisionUDSpeed" value="1" />
+    <Property name="AvoidCollisionPushSpeed" value="0.1" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="False" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseCustomBlendTime" value="False" />
+    <Property name="CustomBlendTime" value="0.5" />
+  </Property>
+<Property name="RoyalShipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="ROYAL" />
+    <Property name="MinSpeed" value="0" />
+    <Property name="SpeedRange" value="150" />
+    <Property name="OffsetX" value="0" />
+    <Property name="OffsetY" value="4" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="2" />
+    <Property name="BackMinDistance" value="28" />
+    <Property name="UpMinDistance" value="7" />
+    <Property name="BackMaxDistance" value="27" />
+    <Property name="UpMaxDistance" value="18" />
+    <Property name="PanNear" value="3" />
+    <Property name="PanFar" value="4" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="0" />
+    <Property name="VertRotationSpeed" value="1" />
+    <Property name="VertRotationMin" value="-90" />
+    <Property name="VertRotationMax" value="90" />
+    <Property name="VertRotationOffset" value="13" />
+    <Property name="VertRotationOffsetMinAngle" value="-90" />
+    <Property name="VertRotationOffsetMaxAngle" value="90" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="0.2" />
+    <Property name="DistSpeedOutsideMainRange" value="1.5" />
+    <Property name="DistStiffness" value="2" />
+    <Property name="SpringSpeed" value="0" />
+    <Property name="LockToObjectOnIdle" value="True" />
+    <Property name="CenterStartTime" value="0.5" />
+    <Property name="CenterBlendTime" value="1" />
+    <Property name="CenterMaxSpring" value="8" />
+    <Property name="CenterMaxSpeed" value="5" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="5.5" />
+    <Property name="CenterStartSpeed" value="0.5" />
+    <Property name="MinClose" value="0.1" />
+    <Property name="MaxClose" value="2" />
+    <Property name="CloseSpring" value="6" />
+    <Property name="LookStickLimitAngle" value="75" />
+    <Property name="EnableCollisionDetection" value="False" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="30" />
+    <Property name="LRProbesRadius" value="0.2" />
+    <Property name="NumUDProbes" value="10" />
+    <Property name="UDProbesRange" value="15" />
+    <Property name="ProbeCenterX" value="0" />
+    <Property name="ProbeCenterY" value="0.5" />
+    <Property name="PushForwardDropoffLR" value="0.2" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="-1" />
+    <Property name="AvoidCollisionUDSpeed" value="1" />
+    <Property name="AvoidCollisionPushSpeed" value="0.1" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="False" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseCustomBlendTime" value="False" />
+    <Property name="CustomBlendTime" value="0.5" />
+  </Property>
+<Property name="ScienceShipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="SCIENCE" />
+    <Property name="MinSpeed" value="0" />
+    <Property name="SpeedRange" value="150" />
+    <Property name="OffsetX" value="0" />
+    <Property name="OffsetY" value="4" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="2" />
+    <Property name="BackMinDistance" value="28" />
+    <Property name="UpMinDistance" value="7" />
+    <Property name="BackMaxDistance" value="27" />
+    <Property name="UpMaxDistance" value="18" />
+    <Property name="PanNear" value="-1" />
+    <Property name="PanFar" value="-6" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="0" />
+    <Property name="VertRotationSpeed" value="1" />
+    <Property name="VertRotationMin" value="-90" />
+    <Property name="VertRotationMax" value="90" />
+    <Property name="VertRotationOffset" value="14" />
+    <Property name="VertRotationOffsetMinAngle" value="-90" />
+    <Property name="VertRotationOffsetMaxAngle" value="90" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="0.2" />
+    <Property name="DistSpeedOutsideMainRange" value="1.5" />
+    <Property name="DistStiffness" value="2" />
+    <Property name="SpringSpeed" value="0" />
+    <Property name="LockToObjectOnIdle" value="True" />
+    <Property name="CenterStartTime" value="0.5" />
+    <Property name="CenterBlendTime" value="1" />
+    <Property name="CenterMaxSpring" value="8" />
+    <Property name="CenterMaxSpeed" value="5" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="5.5" />
+    <Property name="CenterStartSpeed" value="0.5" />
+    <Property name="MinClose" value="0.1" />
+    <Property name="MaxClose" value="2" />
+    <Property name="CloseSpring" value="6" />
+    <Property name="LookStickLimitAngle" value="75" />
+    <Property name="EnableCollisionDetection" value="False" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="30" />
+    <Property name="LRProbesRadius" value="0.2" />
+    <Property name="NumUDProbes" value="10" />
+    <Property name="UDProbesRange" value="15" />
+    <Property name="ProbeCenterX" value="0" />
+    <Property name="ProbeCenterY" value="0.5" />
+    <Property name="PushForwardDropoffLR" value="0.2" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="-1" />
+    <Property name="AvoidCollisionUDSpeed" value="1" />
+    <Property name="AvoidCollisionPushSpeed" value="0.1" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="False" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseCustomBlendTime" value="False" />
+    <Property name="CustomBlendTime" value="0.5" />
+  </Property>
+<Property name="AlienShipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="ALIENSHIP" />
+    <Property name="MinSpeed" value="0" />
+    <Property name="SpeedRange" value="150" />
+    <Property name="OffsetX" value="0" />
+    <Property name="OffsetY" value="4" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="2" />
+    <Property name="BackMinDistance" value="28" />
+    <Property name="UpMinDistance" value="7" />
+    <Property name="BackMaxDistance" value="27" />
+    <Property name="UpMaxDistance" value="18" />
+    <Property name="PanNear" value="5" />
+    <Property name="PanFar" value="6" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="0" />
+    <Property name="VertRotationSpeed" value="1" />
+    <Property name="VertRotationMin" value="-90" />
+    <Property name="VertRotationMax" value="90" />
+    <Property name="VertRotationOffset" value="20" />
+    <Property name="VertRotationOffsetMinAngle" value="-30" />
+    <Property name="VertRotationOffsetMaxAngle" value="30" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="0.2" />
+    <Property name="DistSpeedOutsideMainRange" value="1.5" />
+    <Property name="DistStiffness" value="2" />
+    <Property name="SpringSpeed" value="0" />
+    <Property name="LockToObjectOnIdle" value="True" />
+    <Property name="CenterStartTime" value="0.5" />
+    <Property name="CenterBlendTime" value="1" />
+    <Property name="CenterMaxSpring" value="8" />
+    <Property name="CenterMaxSpeed" value="5" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="5.5" />
+    <Property name="CenterStartSpeed" value="0.5" />
+    <Property name="MinClose" value="0.1" />
+    <Property name="MaxClose" value="1" />
+    <Property name="CloseSpring" value="6" />
+    <Property name="LookStickLimitAngle" value="75" />
+    <Property name="EnableCollisionDetection" value="False" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="30" />
+    <Property name="LRProbesRadius" value="0.2" />
+    <Property name="NumUDProbes" value="10" />
+    <Property name="UDProbesRange" value="15" />
+    <Property name="ProbeCenterX" value="0" />
+    <Property name="ProbeCenterY" value="0.5" />
+    <Property name="PushForwardDropoffLR" value="0.2" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="-1" />
+    <Property name="AvoidCollisionUDSpeed" value="1" />
+    <Property name="AvoidCollisionPushSpeed" value="0.1" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="False" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseCustomBlendTime" value="False" />
+    <Property name="CustomBlendTime" value="0.5" />
+  </Property>
+  <Property name="SpaceshipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="SPACESHIP" />
+    <Property name="MinSpeed" value="0" />
+    <Property name="SpeedRange" value="150" />
+    <Property name="OffsetX" value="0" />
+    <Property name="OffsetY" value="4" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="2" />
+    <Property name="BackMinDistance" value="28" />
+    <Property name="UpMinDistance" value="7" />
+    <Property name="BackMaxDistance" value="27" />
+    <Property name="UpMaxDistance" value="18" />
+    <Property name="PanNear" value="-2" />
+    <Property name="PanFar" value="-4" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="0" />
+    <Property name="VertRotationSpeed" value="1" />
+    <Property name="VertRotationMin" value="-90" />
+    <Property name="VertRotationMax" value="90" />
+    <Property name="VertRotationOffset" value="14" />
+    <Property name="VertRotationOffsetMinAngle" value="-30" />
+    <Property name="VertRotationOffsetMaxAngle" value="30" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="0.2" />
+    <Property name="DistSpeedOutsideMainRange" value="1.5" />
+    <Property name="DistStiffness" value="2" />
+    <Property name="SpringSpeed" value="0" />
+    <Property name="LockToObjectOnIdle" value="True" />
+    <Property name="CenterStartTime" value="0.5" />
+    <Property name="CenterBlendTime" value="1" />
+    <Property name="CenterMaxSpring" value="8" />
+    <Property name="CenterMaxSpeed" value="5" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="5.5" />
+    <Property name="CenterStartSpeed" value="0.5" />
+    <Property name="MinClose" value="0.1" />
+    <Property name="MaxClose" value="1" />
+    <Property name="CloseSpring" value="6" />
+    <Property name="LookStickLimitAngle" value="75" />
+    <Property name="EnableCollisionDetection" value="False" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="30" />
+    <Property name="LRProbesRadius" value="0.2" />
+    <Property name="NumUDProbes" value="10" />
+    <Property name="UDProbesRange" value="15" />
+    <Property name="ProbeCenterX" value="0" />
+    <Property name="ProbeCenterY" value="0.5" />
+    <Property name="PushForwardDropoffLR" value="0.2" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="-1" />
+    <Property name="AvoidCollisionUDSpeed" value="1" />
+    <Property name="AvoidCollisionPushSpeed" value="0.1" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="False" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseCustomBlendTime" value="False" />
+    <Property name="CustomBlendTime" value="0.5" />
+  </Property>
+<Property name="DropshipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="DROPSHIP" />
+    <Property name="MinSpeed" value="0" />
+    <Property name="SpeedRange" value="150" />
+    <Property name="OffsetX" value="0" />
+    <Property name="OffsetY" value="4" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="2" />
+    <Property name="BackMinDistance" value="28" />
+    <Property name="UpMinDistance" value="7" />
+    <Property name="BackMaxDistance" value="27" />
+    <Property name="UpMaxDistance" value="18" />
+    <Property name="PanNear" value="5" />
+    <Property name="PanFar" value="6" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="0" />
+    <Property name="VertRotationSpeed" value="1" />
+    <Property name="VertRotationMin" value="-90" />
+    <Property name="VertRotationMax" value="90" />
+    <Property name="VertRotationOffset" value="20" />
+    <Property name="VertRotationOffsetMinAngle" value="-30" />
+    <Property name="VertRotationOffsetMaxAngle" value="30" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="0.2" />
+    <Property name="DistSpeedOutsideMainRange" value="1.5" />
+    <Property name="DistStiffness" value="2" />
+    <Property name="SpringSpeed" value="0" />
+    <Property name="LockToObjectOnIdle" value="True" />
+    <Property name="CenterStartTime" value="0.5" />
+    <Property name="CenterBlendTime" value="1" />
+    <Property name="CenterMaxSpring" value="8" />
+    <Property name="CenterMaxSpeed" value="5" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="5.5" />
+    <Property name="CenterStartSpeed" value="0.5" />
+    <Property name="MinClose" value="0.1" />
+    <Property name="MaxClose" value="1" />
+    <Property name="CloseSpring" value="6" />
+    <Property name="LookStickLimitAngle" value="75" />
+    <Property name="EnableCollisionDetection" value="False" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="30" />
+    <Property name="LRProbesRadius" value="0.2" />
+    <Property name="NumUDProbes" value="10" />
+    <Property name="UDProbesRange" value="15" />
+    <Property name="ProbeCenterX" value="0" />
+    <Property name="ProbeCenterY" value="0.5" />
+    <Property name="PushForwardDropoffLR" value="0.2" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="-1" />
+    <Property name="AvoidCollisionUDSpeed" value="1" />
+    <Property name="AvoidCollisionPushSpeed" value="0.1" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="False" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseCustomBlendTime" value="False" />
+    <Property name="CustomBlendTime" value="0.5" />
+  </Property>
+<Property name="RoyalShipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="ROYAL" />
+    <Property name="MinSpeed" value="0" />
+    <Property name="SpeedRange" value="150" />
+    <Property name="OffsetX" value="0" />
+    <Property name="OffsetY" value="4" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="2" />
+    <Property name="BackMinDistance" value="28" />
+    <Property name="UpMinDistance" value="7" />
+    <Property name="BackMaxDistance" value="27" />
+    <Property name="UpMaxDistance" value="18" />
+    <Property name="PanNear" value="3" />
+    <Property name="PanFar" value="4" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="0" />
+    <Property name="VertRotationSpeed" value="1" />
+    <Property name="VertRotationMin" value="-90" />
+    <Property name="VertRotationMax" value="90" />
+    <Property name="VertRotationOffset" value="13" />
+    <Property name="VertRotationOffsetMinAngle" value="-90" />
+    <Property name="VertRotationOffsetMaxAngle" value="90" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="0.2" />
+    <Property name="DistSpeedOutsideMainRange" value="1.5" />
+    <Property name="DistStiffness" value="2" />
+    <Property name="SpringSpeed" value="0" />
+    <Property name="LockToObjectOnIdle" value="True" />
+    <Property name="CenterStartTime" value="0.5" />
+    <Property name="CenterBlendTime" value="1" />
+    <Property name="CenterMaxSpring" value="8" />
+    <Property name="CenterMaxSpeed" value="5" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="5.5" />
+    <Property name="CenterStartSpeed" value="0.5" />
+    <Property name="MinClose" value="0.1" />
+    <Property name="MaxClose" value="2" />
+    <Property name="CloseSpring" value="6" />
+    <Property name="LookStickLimitAngle" value="75" />
+    <Property name="EnableCollisionDetection" value="False" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="30" />
+    <Property name="LRProbesRadius" value="0.2" />
+    <Property name="NumUDProbes" value="10" />
+    <Property name="UDProbesRange" value="15" />
+    <Property name="ProbeCenterX" value="0" />
+    <Property name="ProbeCenterY" value="0.5" />
+    <Property name="PushForwardDropoffLR" value="0.2" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="-1" />
+    <Property name="AvoidCollisionUDSpeed" value="1" />
+    <Property name="AvoidCollisionPushSpeed" value="0.1" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="False" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseCustomBlendTime" value="False" />
+    <Property name="CustomBlendTime" value="0.5" />
+  </Property>
+<Property name="ScienceShipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="SCIENCE" />
+    <Property name="MinSpeed" value="0" />
+    <Property name="SpeedRange" value="150" />
+    <Property name="OffsetX" value="0" />
+    <Property name="OffsetY" value="4" />
+    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetZFlat" value="2" />
+    <Property name="BackMinDistance" value="28" />
+    <Property name="UpMinDistance" value="7" />
+    <Property name="BackMaxDistance" value="27" />
+    <Property name="UpMaxDistance" value="18" />
+    <Property name="PanNear" value="-1" />
+    <Property name="PanFar" value="-6" />
+    <Property name="UpGamma" value="1.5" />
+    <Property name="HorizRotationAngleMaxPerFrame" value="0" />
+    <Property name="VertRotationSpeed" value="1" />
+    <Property name="VertRotationMin" value="-90" />
+    <Property name="VertRotationMax" value="90" />
+    <Property name="VertRotationOffset" value="14" />
+    <Property name="VertRotationOffsetMinAngle" value="-90" />
+    <Property name="VertRotationOffsetMaxAngle" value="90" />
+    <Property name="VertStartLookingDown" value="False" />
+    <Property name="DistSpeed" value="0.2" />
+    <Property name="DistSpeedOutsideMainRange" value="1.5" />
+    <Property name="DistStiffness" value="2" />
+    <Property name="SpringSpeed" value="0" />
+    <Property name="LockToObjectOnIdle" value="True" />
+    <Property name="CenterStartTime" value="0.5" />
+    <Property name="CenterBlendTime" value="1" />
+    <Property name="CenterMaxSpring" value="8" />
+    <Property name="CenterMaxSpeed" value="5" />
+    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+    <Property name="VertMaxSpring" value="5.5" />
+    <Property name="CenterStartSpeed" value="0.5" />
+    <Property name="MinClose" value="0.1" />
+    <Property name="MaxClose" value="2" />
+    <Property name="CloseSpring" value="6" />
+    <Property name="LookStickLimitAngle" value="75" />
+    <Property name="EnableCollisionDetection" value="False" />
+    <Property name="NumLRProbes" value="10" />
+    <Property name="LRProbesRange" value="30" />
+    <Property name="LRProbesRadius" value="0.2" />
+    <Property name="NumUDProbes" value="10" />
+    <Property name="UDProbesRange" value="15" />
+    <Property name="ProbeCenterX" value="0" />
+    <Property name="ProbeCenterY" value="0.5" />
+    <Property name="PushForwardDropoffLR" value="0.2" />
+    <Property name="PushForwardDropoffUD" value="0.2" />
+    <Property name="AvoidCollisionLRSpeed" value="-1" />
+    <Property name="AvoidCollisionUDSpeed" value="1" />
+    <Property name="AvoidCollisionPushSpeed" value="0.1" />
+    <Property name="AvoidCollisionUDUseStickDelay" value="False" />
+    <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+    <Property name="UseSpeedBasedSpring" value="True" />
+    <Property name="UseCustomBlendTime" value="False" />
+    <Property name="CustomBlendTime" value="0.5" />
+  </Property>
+<Property name="AlienShipFollowCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="ALIENSHIP" />
     <Property name="MinSpeed" value="0" />
     <Property name="SpeedRange" value="150" />
@@ -2349,49 +3685,57 @@
   </Property>
   <Property name="FrontendModelCameraSpringTime" value="0" />
   <Property name="ModelViewFlashTime" value="0.8" />
-  <Property name="ModelViewOffset" value="Vector3f.xml">
+  <Property name="ModelViewOffset" value="Vector4f.xml">
     <Property name="x" value="0.5" />
     <Property name="y" value="0" />
     <Property name="z" value="8" />
+    <Property name="t" value="0" />
   </Property>
   <Property name="ModelViewFocusOffset" value="Vector2f.xml">
     <Property name="x" value="-1.8" />
     <Property name="y" value="0.2" />
   </Property>
-  <Property name="InteractionOffset" value="Vector3f.xml">
+  <Property name="InteractionOffset" value="Vector4f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="-0.4" />
     <Property name="z" value="1.6" />
+    <Property name="t" value="0" />
   </Property>
-  <Property name="InteractionOffsetExtraVR" value="Vector3f.xml">
+  <Property name="InteractionOffsetExtraVR" value="Vector4f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="0" />
     <Property name="z" value="-0.75" />
+    <Property name="t" value="0" />
   </Property>
-  <Property name="InteractionOffsetExtraVRSeated" value="Vector3f.xml">
+  <Property name="InteractionOffsetExtraVRSeated" value="Vector4f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="0.45" />
     <Property name="z" value="-0.55" />
+    <Property name="t" value="0" />
   </Property>
-  <Property name="InteractionOffsetDefault" value="Vector3f.xml">
+  <Property name="InteractionOffsetDefault" value="Vector4f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="0.15" />
     <Property name="z" value="2.2" />
+    <Property name="t" value="0" />
   </Property>
-  <Property name="InteractionOffsetGek" value="Vector3f.xml">
+  <Property name="InteractionOffsetGek" value="Vector4f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="0.15" />
     <Property name="z" value="2.2" />
+    <Property name="t" value="0" />
   </Property>
-  <Property name="InteractionShipFocusOffset" value="Vector3f.xml">
+  <Property name="InteractionShipFocusOffset" value="Vector4f.xml">
     <Property name="x" value="-1.7" />
     <Property name="y" value="0" />
     <Property name="z" value="0" />
+    <Property name="t" value="0" />
   </Property>
-  <Property name="InteractionHailingFocusOffset" value="Vector3f.xml">
+  <Property name="InteractionHailingFocusOffset" value="Vector4f.xml">
     <Property name="x" value="-3.1" />
     <Property name="y" value="1.5" />
     <Property name="z" value="0" />
+    <Property name="t" value="0" />
   </Property>
   <Property name="InteractionHeadHeightDefault" value="1.65" />
   <Property name="InteractionHeadHeightGek" value="1.4" />
@@ -2405,15 +3749,17 @@
   <Property name="DistanceForFleetInteraction" value="3900" />
   <Property name="DistanceForFrigateInteraction" value="650" />
   <Property name="DistanceForFrigatePurchaseInteraction" value="500" />
-  <Property name="OffsetForFleetInteraction" value="Vector3f.xml">
+  <Property name="OffsetForFleetInteraction" value="Vector4f.xml">
     <Property name="x" value="800" />
     <Property name="y" value="500" />
     <Property name="z" value="0" />
+    <Property name="t" value="0" />
   </Property>
-  <Property name="OffsetForFrigateInteraction" value="Vector3f.xml">
+  <Property name="OffsetForFrigateInteraction" value="Vector4f.xml">
     <Property name="x" value="111" />
     <Property name="y" value="18" />
     <Property name="z" value="0" />
+    <Property name="t" value="0" />
   </Property>
   <Property name="FleetUIOrbitRate" value="0.3" />
   <Property name="FleetUIVerticalMotionDuration" value="90" />
@@ -2446,15 +3792,17 @@
   <Property name="PhotoModeRollSpeed" value="45" />
   <Property name="PhotoModeFlashDuration" value="0.5" />
   <Property name="PhotoModeFlashIntensity" value="0.5" />
-  <Property name="PhotoModeShipOffset" value="Vector3f.xml">
+  <Property name="PhotoModeShipOffset" value="Vector4f.xml">
     <Property name="x" value="2" />
     <Property name="y" value="1.5" />
     <Property name="z" value="10" />
+    <Property name="t" value="0" />
   </Property>
-  <Property name="BuildingModeInitialOffset" value="Vector3f.xml">
+  <Property name="BuildingModeInitialOffset" value="Vector4f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="4.2" />
     <Property name="z" value="10" />
+    <Property name="t" value="0" />
   </Property>
   <Property name="BuildingModeMaxDistance" value="60" />
   <Property name="RunningFoVAdjust" value="-2" />
@@ -3664,7 +5012,7 @@
       <Property name="TimeStart" value="0" />
       <Property name="TotalTime" value="0.5" />
       <Property name="DecayRate" value="1" />
-      <Property name="StrengthSale" value="1000" />
+      <Property name="StrengthSale" value="50" />
       <Property name="ThirdPersonDamp" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="False" />
@@ -3672,6 +5020,62 @@
         <Property name="ShakeFrequency" value="5" />
         <Property name="VibrateStrength" value="0.1" />
         <Property name="VibrateFrequency" value="3" />
+      </Property>
+      <Property name="MechanicalData" value="GcCameraShakeMechanicalData.xml">
+        <Property name="Active" value="True" />
+        <Property name="ShakeStrength" value="Vector4f.xml">
+          <Property name="x" value="2" />
+          <Property name="y" value="0" />
+          <Property name="z" value="0" />
+          <Property name="t" value="0" />
+        </Property>
+        <Property name="ShakeFrequency" value="Vector4f.xml">
+          <Property name="x" value="7" />
+          <Property name="y" value="3" />
+          <Property name="z" value="0" />
+          <Property name="t" value="0" />
+        </Property>
+        <Property name="ExtraShakeFrequency" value="Vector4f.xml">
+          <Property name="x" value="13" />
+          <Property name="y" value="9" />
+          <Property name="z" value="0" />
+          <Property name="t" value="0" />
+        </Property>
+        <Property name="VibrateStrength" value="Vector4f.xml">
+          <Property name="x" value="0" />
+          <Property name="y" value="0" />
+          <Property name="z" value="1" />
+          <Property name="t" value="0" />
+        </Property>
+        <Property name="VibrateFrequency" value="Vector4f.xml">
+          <Property name="x" value="3" />
+          <Property name="y" value="13" />
+          <Property name="z" value="7" />
+          <Property name="t" value="0" />
+        </Property>
+        <Property name="ExtraVibrateFrequency" value="Vector4f.xml">
+          <Property name="x" value="13" />
+          <Property name="y" value="29" />
+          <Property name="z" value="23" />
+          <Property name="t" value="0" />
+        </Property>
+      </Property>
+      <Property name="FOVStrength" value="0" />
+      <Property name="FOVFrequency" value="0" />
+    </Property>
+    <Property value="GcCameraShakeData.xml">
+      <Property name="Name" value="GUNSHAKE" />
+      <Property name="TimeStart" value="0" />
+      <Property name="TotalTime" value="0.4" />
+      <Property name="DecayRate" value="1" />
+      <Property name="StrengthSale" value="50" />
+      <Property name="ThirdPersonDamp" value="1" />
+      <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
+        <Property name="Active" value="False" />
+        <Property name="ShakeStrength" value="0" />
+        <Property name="ShakeFrequency" value="3" />
+        <Property name="VibrateStrength" value="0.1" />
+        <Property name="VibrateFrequency" value="2" />
       </Property>
       <Property name="MechanicalData" value="GcCameraShakeMechanicalData.xml">
         <Property name="Active" value="True" />
@@ -4612,6 +6016,62 @@
       <Property name="FOVFrequency" value="0" />
     </Property>
     <Property value="GcCameraShakeData.xml">
+      <Property name="Name" value="MEDIUMRUMBLE" />
+      <Property name="TimeStart" value="0" />
+      <Property name="TotalTime" value="4" />
+      <Property name="DecayRate" value="5" />
+      <Property name="StrengthSale" value="5" />
+      <Property name="ThirdPersonDamp" value="1" />
+      <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
+        <Property name="Active" value="True" />
+        <Property name="ShakeStrength" value="0.15" />
+        <Property name="ShakeFrequency" value="3" />
+        <Property name="VibrateStrength" value="0.15" />
+        <Property name="VibrateFrequency" value="3" />
+      </Property>
+      <Property name="MechanicalData" value="GcCameraShakeMechanicalData.xml">
+        <Property name="Active" value="False" />
+        <Property name="ShakeStrength" value="Vector4f.xml">
+          <Property name="x" value="0.01" />
+          <Property name="y" value="0" />
+          <Property name="z" value="0.01" />
+          <Property name="t" value="0" />
+        </Property>
+        <Property name="ShakeFrequency" value="Vector4f.xml">
+          <Property name="x" value="7" />
+          <Property name="y" value="1.7" />
+          <Property name="z" value="7" />
+          <Property name="t" value="0" />
+        </Property>
+        <Property name="ExtraShakeFrequency" value="Vector4f.xml">
+          <Property name="x" value="1" />
+          <Property name="y" value="0" />
+          <Property name="z" value="11" />
+          <Property name="t" value="0" />
+        </Property>
+        <Property name="VibrateStrength" value="Vector4f.xml">
+          <Property name="x" value="0.01" />
+          <Property name="y" value="0.2" />
+          <Property name="z" value="0" />
+          <Property name="t" value="0" />
+        </Property>
+        <Property name="VibrateFrequency" value="Vector4f.xml">
+          <Property name="x" value="7" />
+          <Property name="y" value="8" />
+          <Property name="z" value="0" />
+          <Property name="t" value="0" />
+        </Property>
+        <Property name="ExtraVibrateFrequency" value="Vector4f.xml">
+          <Property name="x" value="19" />
+          <Property name="y" value="3" />
+          <Property name="z" value="0" />
+          <Property name="t" value="0" />
+        </Property>
+      </Property>
+      <Property name="FOVStrength" value="0" />
+      <Property name="FOVFrequency" value="0" />
+    </Property>
+    <Property value="GcCameraShakeData.xml">
       <Property name="Name" value="MECHTITANFALL" />
       <Property name="TimeStart" value="0" />
       <Property name="TotalTime" value="1.5" />
@@ -4724,6 +6184,8 @@
       <Property name="FOVFrequency" value="2" />
     </Property>
   </Property>
+  <Property name="BobAmountAbandFreighter" value="0.1" />
+  <Property name="BobFactorAbandFreighter" value="0.3" />
   <Property name="BobAmount" value="0.06" />
   <Property name="BobFactor" value="0.19" />
   <Property name="BobFocus" value="500" />
@@ -4742,15 +6204,17 @@
   <Property name="DebugCameraFastFactor" value="15" />
   <Property name="DebugCameraSpaceFastFactor" value="500" />
   <Property name="OffsetCamFOV" value="90" />
-  <Property name="OffsetCamOffset" value="Vector3f.xml">
+  <Property name="OffsetCamOffset" value="Vector4f.xml">
     <Property name="x" value="12" />
     <Property name="y" value="4" />
     <Property name="z" value="12" />
+    <Property name="t" value="0" />
   </Property>
-  <Property name="OffsetCamRotation" value="Vector3f.xml">
+  <Property name="OffsetCamRotation" value="Vector4f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="0" />
     <Property name="z" value="0" />
+    <Property name="t" value="0" />
   </Property>
   <Property name="ObjectFocusTime" value="0.7" />
   <Property name="CharCamFocusHeight" value="1.3" />
@@ -4816,13 +6280,15 @@
       <Property name="t" value="0" />
     </Property>
   </Property>
-  <Property name="FirstPersonInShipCamOffset" value="Vector3f.xml">
+  <Property name="FirstPersonInShipCamOffset" value="Vector4f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="2.45" />
     <Property name="z" value="0.5" />
+    <Property name="t" value="0" />
   </Property>
   <Property name="FirstPersonFoV" value="75" />
   <Property name="ThirdPersonFoV" value="70" />
+  <Property name="CombatFoV" value="65" />
   <Property name="FirstPersonZoom1FoV" value="40" />
   <Property name="FirstPersonZoom2FoV" value="15" />
   <Property name="ShipFoVMin" value="75" />
@@ -4836,9 +6302,10 @@
   <Property name="ShipFoVSpring" value="0.6" />
   <Property name="ShipMiniJumpFoVSpring" value="0.6" />
   <Property name="FoVSpring" value="0.2" />
+  <Property name="FoVSpringSights" value="0.05" />
   <Property name="FoVAdjust" value="1" />
   <Property name="FollowDrawCamProbes" value="False" />
-  <Property name="CameraAnimations" value="GcCameraAnimationData.xml">
+  <Property name="AmbientCameraAnimations" value="GcCameraAnimationData.xml">
     <Property name="CameraAnimation" value="TkModelResource.xml">
       <Property name="Filename" value="MODELS/COMMON/UTILS/CAMERA/AMBIENTCAMERA.SCENE.MBIN" />
     </Property>
