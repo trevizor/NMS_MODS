@@ -11,7 +11,7 @@
   <Property name="ZoomFactorOverride" value="1" />
   <Property name="PlacedMarkerFadeTime" value="2.5" />
   <Property name="LoadingTravelDistance" value="12500" />
-  <Property name="LoadingScreenTravelSpeed" value="50" />
+  <Property name="LoadingScreenTravelSpeed" value="25" />
   <Property name="LoadingScreenTime" value="15" />
   <Property name="OSDMessagePauseOffscreenAngle" value="25" />
   <Property name="QuickMenuCentrePos" value="375" />
@@ -58,7 +58,7 @@
   <Property name="ProjectorScale" value="0.045" />
   <Property name="CockpitGlassFrostTime" value="1" />
   <Property name="CockpitGlassDefrostTime" value="2" />
-  <Property name="TextPrintoutMultiplier" value="3.5" />
+  <Property name="TextPrintoutMultiplier" value="4.5" />
   <Property name="TextPrintoutMultiplierAlien" value="8" />
   <Property name="EnableHandMenuButtons" value="True" />
   <Property name="AllowInWorldDebugBorders" value="False" />
@@ -67,7 +67,7 @@
     <Property name="y" value="0.1" />
   </Property>
   <Property name="CompassIconOffsetVR" value="0.6" />
-  <Property name="LowerHelmetScreenScale" value="0.2" />
+  <Property name="LowerHelmetScreenScale" value="0.1" />
   <Property name="LowerHelmetScreenPitch" value="45" />
   <Property name="LowerHelmetScreenOffset" value="Vector3f.xml">
     <Property name="x" value="0" />
@@ -1198,7 +1198,7 @@
   <Property name="MaxDialogCharSizeRomanString" value="..." />
   <Property name="MaxDialogCharSizeIdeographic" value="1000" />
   <Property name="MaxDialogCharSizeIdeographicString" value="..." />
-  <Property name="ShipOverheatSwitchMessageWait" value="0.9" />
+  <Property name="ShipOverheatSwitchMessageWait" value="0" />
   <Property name="ShipOverheatSwitchMessageTime" value="1.6" />
   <Property name="LeadTargetEnabled" value="True" />
   <Property name="SaveIconPosition" value="Vector2f.xml">
@@ -4173,9 +4173,9 @@
   </Property>
   <Property name="NGuiUseSeparateLayersForModelAndReflection" value="True" />
   <Property name="DiscoveryHelperTimings" value="GcDiscoveryHelperTimings.xml">
-    <Property name="DiscoverPlanetTotalTime" value="10" />
-    <Property name="DiscoverPlanetMessageWait" value="1" />
-    <Property name="DiscoverPlanetMessageTime" value="7" />
+    <Property name="DiscoverPlanetTotalTime" value="7" />
+    <Property name="DiscoverPlanetMessageWait" value="0" />
+    <Property name="DiscoverPlanetMessageTime" value="4" />
   </Property>
   <Property name="IntroTiming" value="GcHUDStartupTable.xml">
     <Property name="FadeInFlashTime" value="12" />
