@@ -3993,7 +3993,152 @@
         </Property>
       </Property>
     </Property>
+    <Property value="GcPlayerExperienceSpawnTable.xml">
+      <Property name="Event" value="SANDWORM" />
+      <Property name="ExperienceSpawnType" value="Mission" />
+      <Property name="ResponseRate" value="1" />
+      <Property name="PerSpawnDelay" value="0" />
+      <Property name="Destroy" value="False" />
+      <Property name="Spawns">
+        <Property value="GcPlayerExperienceSpawnData.xml">
+          <Property name="Archetype" value="SANDWORM" />
+          <Property name="AppearAnim" value="" />
+          <Property name="SpawnLocator" value="" />
+          <Property name="FaceDir" value="TowardsPlayer" />
+          <Property name="MinDist" value="500" />
+          <Property name="MaxDist" value="600" />
+          <Property name="MinNum">
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+          </Property>
+          <Property name="MaxNum">
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+          </Property>
+          <Property name="ActiveTime" value="-1" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcPlayerExperienceSpawnTable.xml">
+      <Property name="Event" value="TEST" />
+      <Property name="ExperienceSpawnType" value="Mission" />
+      <Property name="ResponseRate" value="1" />
+      <Property name="PerSpawnDelay" value="0" />
+      <Property name="Destroy" value="False" />
+      <Property name="Spawns">
+        <Property value="GcPlayerExperienceSpawnData.xml">
+          <Property name="Archetype" value="TEST" />
+          <Property name="AppearAnim" value="" />
+          <Property name="SpawnLocator" value="" />
+          <Property name="FaceDir" value="Random" />
+          <Property name="MinDist" value="4" />
+          <Property name="MaxDist" value="5" />
+          <Property name="MinNum">
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+          </Property>
+          <Property name="MaxNum">
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+          </Property>
+          <Property name="ActiveTime" value="-1" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcPlayerExperienceSpawnTable.xml">
+      <Property name="Event" value="BUTTERFLY" />
+      <Property name="ExperienceSpawnType" value="Mission" />
+      <Property name="ResponseRate" value="1" />
+      <Property name="PerSpawnDelay" value="0" />
+      <Property name="Destroy" value="False" />
+      <Property name="Spawns">
+        <Property value="GcPlayerExperienceSpawnData.xml">
+          <Property name="Archetype" value="BUTTERFLY" />
+          <Property name="AppearAnim" value="" />
+          <Property name="SpawnLocator" value="" />
+          <Property name="FaceDir" value="Random" />
+          <Property name="MinDist" value="4" />
+          <Property name="MaxDist" value="5" />
+          <Property name="MinNum">
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+          </Property>
+          <Property name="MaxNum">
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+          </Property>
+          <Property name="ActiveTime" value="-1" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcPlayerExperienceSpawnTable.xml">
+      <Property name="Event" value="SANDWORMPOS" />
+      <Property name="ExperienceSpawnType" value="Freighter" />
+      <Property name="ResponseRate" value="1" />
+      <Property name="PerSpawnDelay" value="0" />
+      <Property name="Destroy" value="False" />
+      <Property name="Spawns">
+        <Property value="GcPlayerExperienceSpawnData.xml">
+          <Property name="Archetype" value="SANDWORM" />
+          <Property name="AppearAnim" value="" />
+          <Property name="SpawnLocator" value="" />
+          <Property name="FaceDir" value="TowardsPlayer" />
+          <Property name="MinDist" value="0" />
+          <Property name="MaxDist" value="0" />
+          <Property name="MinNum">
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+          </Property>
+          <Property name="MaxNum">
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+            <Property value="1" />
+          </Property>
+          <Property name="ActiveTime" value="-1" />
+        </Property>
+      </Property>
+    </Property>
   </Property>
+
   <Property name="CreatureSpawnArchetypes">
     <Property value="GcPlayerExperienceSpawnArchetypeData.xml">
       <Property name="Id" value="BUG" />
@@ -4073,6 +4218,57 @@
       <Property name="DamageReceivedMultiplier" value="ABAND_HOSTILE" />
       <Property name="SpawnDistOverride" value="60" />
       <Property name="DespawnDistOverride" value="80" />
+      <Property name="BehaviourOverrides" />
+    </Property>
+    <Property value="GcPlayerExperienceSpawnArchetypeData.xml">
+      <Property name="Id" value="SANDWORM" />
+      <Property name="GenerateResource" value="SANDWORM" />
+      <Property name="Type" value="GcCreatureTypes.xml">
+        <Property name="CreatureType" value="SandWorm" />
+      </Property>
+      <Property name="Scale" value="80" />
+      <Property name="ScaleVariation" value="0" />
+      <Property name="AppearAnim" value="" />
+      <Property name="SpeedMultiplier" value="1" />
+      <Property name="HealthOverride" value="-1" />
+      <Property name="DamageOverride" value="" />
+      <Property name="DamageReceivedMultiplier" value="" />
+      <Property name="SpawnDistOverride" value="1500" />
+      <Property name="DespawnDistOverride" value="2000" />
+      <Property name="BehaviourOverrides" />
+    </Property>
+    <Property value="GcPlayerExperienceSpawnArchetypeData.xml">
+      <Property name="Id" value="TEST" />
+      <Property name="GenerateResource" value="FLYINGSNAKE" />
+      <Property name="Type" value="GcCreatureTypes.xml">
+        <Property name="CreatureType" value="FlyingSnake" />
+      </Property>
+      <Property name="Scale" value="2" />
+      <Property name="ScaleVariation" value="0" />
+      <Property name="AppearAnim" value="" />
+      <Property name="SpeedMultiplier" value="1" />
+      <Property name="HealthOverride" value="-1" />
+      <Property name="DamageOverride" value="" />
+      <Property name="DamageReceivedMultiplier" value="" />
+      <Property name="SpawnDistOverride" value="-1" />
+      <Property name="DespawnDistOverride" value="-1" />
+      <Property name="BehaviourOverrides" />
+    </Property>
+    <Property value="GcPlayerExperienceSpawnArchetypeData.xml">
+      <Property name="Id" value="BUTTERFLY" />
+      <Property name="GenerateResource" value="FLYINGBEETLE" />
+      <Property name="Type" value="GcCreatureTypes.xml">
+        <Property name="CreatureType" value="FlyingBeetle" />
+      </Property>
+      <Property name="Scale" value="2" />
+      <Property name="ScaleVariation" value="0" />
+      <Property name="AppearAnim" value="" />
+      <Property name="SpeedMultiplier" value="1" />
+      <Property name="HealthOverride" value="-1" />
+      <Property name="DamageOverride" value="" />
+      <Property name="DamageReceivedMultiplier" value="" />
+      <Property name="SpawnDistOverride" value="-1" />
+      <Property name="DespawnDistOverride" value="-1" />
       <Property name="BehaviourOverrides" />
     </Property>
   </Property>
