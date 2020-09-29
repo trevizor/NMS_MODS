@@ -911,14 +911,14 @@
       <DoForwardLightLoop type="Mesh"     class="HighlightTransDoubleSided" context="LIT_FORWARD_WITH_MASK" order="BACK_TO_FRONT" />
       <SetContext stencilMode="disabled" />
 
-      <ColourMask channels="RGB" colBuf1="false" />
       <!-- Trails -->
+      <ColourMask channels="RGB" colBuf1="false" />
       <SetContext zwrite="false" colourWrite="true" cullMode="none" blendMode="blend" depthTest="less"  stencilMode="maskWrite" stencilRef="4"  stencilMask="4"/>
       <DoForwardLightLoop type="Trail" class="Translucent" context="LIGHTING" order="STATECHANGES" />
 
       <ColourMask channels="RGB" colBuf1="false" />
       <SetContext zwrite="false" colourWrite="true" cullMode="none" blendMode="add" depthTest="less"  stencilMode="maskWrite" stencilRef="4"  stencilMask="4"  />
-      <DoForwardLightLoop type="Trail" class="Additive" context="LIGHTING_ADD" order="STATECHANGES" />
+      <DoForwardLightLoop type="Trail" class="Additive" context="LIGHTING"    order="STATECHANGES" />
 
       <!--Single Lines-->
       <ColourMask channels="RGBA" colBuf1="false" />
@@ -968,7 +968,9 @@
       <BindBuffer sampler="gShadowMap"       sourceRT="SHADOWBUF"       bufIndex="32" />
       <BindBuffer sampler="gCloudShadowMap"  sourceRT="CLOUDSHADOWS"    bufIndex="0" addressMode="wrap" />
       <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="Blend_OutputAlpha" depthTest="less" />
-      <DoForwardLightLoop type="Mesh"  class="GlowTranslucent" context="LIT_FORWARD" order="BACK_TO_FRONT" />
+      <DoForwardLightLoop type="Mesh"  class="GlowTranslucent" context="LIT_FORWARD"   order="BACK_TO_FRONT" />
+      <DoForwardLightLoop type="Trail" class="Translucent"     context="LIGHTING_GLOW" order="STATECHANGES"  />
+      <DoForwardLightLoop type="Trail" class="Additive"        context="LIGHTING_GLOW" order="STATECHANGES"  />
       <UnbindBuffers />
       <EndTarget flushCB="true" flushDB="false" />
 

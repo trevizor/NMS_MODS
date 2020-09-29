@@ -17,22 +17,33 @@
   </Property>
   <Property name="EmitterSpreadAngle" value="25" />
   <Property name="EmitterSpreadAngleMin" value="1" />
-  <Property name="EmitterDirection" value="Vector4f.xml">
+  <Property name="EmitterDirection" value="Vector3f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="1.5" />
     <Property name="z" value="0" />
-    <Property name="t" value="0" />
   </Property>
   <Property name="EmitterGravity" value="-7" />
   <Property name="EmitterDamping" value="0.2" />
   <Property name="Variation" value="2.6" />
-  <Property name="StartOffset" value="0" />
+    <Property name="StartOffset" value="0" />
+  <Property name="SpawnOffsetType" value="Sphere" />
+  <Property name="SpawnOffsetParams" value="Vector3f.xml">
+    <Property name="x" value="0" />
+    <Property name="y" value="0" />
+    <Property name="z" value="0" />
+  </Property>
   <Property name="SizeStart" value="0.12" />
   <Property name="SizeMiddle" value="0.06" />
   <Property name="SizeEnd" value="0" />
   <Property name="Rotation" value="0" />
   <Property name="VelocityInheritance" value="0" />
   <Property name="Bounce" value="0.8" />
+    <Property name="RotateAroundEmitter" value="0" />
+  <Property name="RotateAroundEmitterAxis" value="Vector3f.xml">
+    <Property name="x" value="0" />
+    <Property name="y" value="0" />
+    <Property name="z" value="0" />
+  </Property>
   <Property name="HueVariance" value="0.01" />
   <Property name="SaturationVariance" value="0" />
   <Property name="LightnessVariance" value="0" />

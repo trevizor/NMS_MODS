@@ -117,10 +117,10 @@
         <Property value="999" />
       </Property>
       <Property name="RegionLODRadius">
-        <Property value="5" />
-        <Property value="10" />
-        <Property value="16" />
+        <Property value="7" />
         <Property value="12" />
+        <Property value="16" />
+        <Property value="18" />
         <Property value="10" />
         <Property value="10" />
       </Property>
@@ -179,8 +179,8 @@
     <Property name="HorizonCoverageStart" value="0" />
     <Property name="HorizonCoverageEnd" value="0" />
     <Property name="CloudBaseColour" value="Colour.xml">
-      <Property name="R" value="0.026" />
-      <Property name="G" value="0.151" />
+      <Property name="R" value="0.275" />
+      <Property name="G" value="0.275" />
       <Property name="B" value="0.275" />
       <Property name="A" value="1" />
     </Property>
@@ -211,7 +211,7 @@
     <Property name="BaseScale" value="1" />
     <Property name="SampleScalar" value="5" />
     <Property name="SampleThreshold" value="0.25" />
-    <Property name="CloudBottomFade" value="0.1" />
+    <Property name="CloudBottomFade" value="0.01" />
     <Property name="CloudHeightGradient1" value="Vector4f.xml">
       <Property name="x" value="0.1" />
       <Property name="y" value="0.15" />
@@ -230,9 +230,9 @@
       <Property name="z" value="0.3" />
       <Property name="t" value="1" />
     </Property>
-    <Property name="DetailScale" value="6" />
+    <Property name="DetailScale" value="8" />
     <Property name="ErosionEdgeSize" value="0.5" />
-    <Property name="CloudDistortion" value="50" />
+    <Property name="CloudDistortion" value="20" />
     <Property name="CloudDistortionScale" value="1" />
     <Property name="MaxIterations" value="128" />
     <Property name="RayMinimumY" value="0" />

@@ -1,0 +1,21 @@
+[VERSION]: MBINCompiler v3.0.0.2
+[ARGS]: "."
+
+If you encounter any errors, please submit a bug report and include this log file.
+Please check that there isn't already a similar issue open before creating a new one.
+https://github.com/monkeyman192/MBINCompiler/issues
+
+[WARN]: Unable to automatically determine the --input-format type.
+[INFO]: --input-format=EXML --output-format=MBIN
+
+[ERROR]: [AggregateException]: Um ou mais erros.
+[ExmlException]: An EXML exception has occurred!
+[NullReferenceException]: Referência de objeto não definida para uma instância de um objeto.
+
+   em libMBIN.NMSTemplate.DeserializeEXml(EXmlBase xmlData)
+   em libMBIN.NMSTemplate.DeserializeEXmlValue(NMSTemplate template, Type fieldType, FieldInfo field, EXmlProperty xmlProperty, Type templateType, NMSAttribute settings)
+   em libMBIN.NMSTemplate.DeserializeEXml(EXmlBase xmlData)
+   em libMBIN.EXmlFile.ReadTemplateFromXmlReader(XmlReader reader, String& templateName)
+   em libMBIN.EXmlFile.ReadTemplateFromStream(Stream input, String& templateName)
+   em MBINCompiler.Commands.Convert.ConvertEXML(String inputPath, FileStream fIn, MemoryStream msOut, String fileOut)
+

@@ -386,7 +386,7 @@
   <Property name="BodyMassWeight" value="0.6" />
   <Property name="Omega" value="0.5" />
   <Property name="OmegaDropOff" value="0.8" />
-  <Property name="MovementDamp" value="0.2" />
+  <Property name="MovementDamp" value="0.4" />
   <Property name="IsHurtingCreaturesACrime" value="False" />
   <Property name="EnableFlyingSnakeTails" value="False" />
   <Property name="EnableNewStuff" value="True" />
@@ -421,13 +421,13 @@
   <Property name="AllowSpawningOnscreen" value="False" />
   <Property name="ResourceSpawnTime" value="1" />
   <Property name="TurnInPlaceIdleTime" value="1" />
-  <Property name="TurnInPlaceMaxAngle" value="1" />
+  <Property name="TurnInPlaceMaxAngle" value="0.4" />
   <Property name="TurnInPlaceMinTime" value="1" />
   <Property name="TurnInPlaceMaxSpeed" value="5" />
   <Property name="SceneTerrainSpawnMinDistance" value="0" />
   <Property name="CreatureMinAlignSpeed" value="0.1" />
   <Property name="PatrolMinDist" value="80" />
-  <Property name="PatrolMaxDist" value="260" />
+  <Property name="PatrolMaxDist" value="360" />
   <Property name="PatrolHeightOffset" value="20" />
   <Property name="PatrolGradientFactor" value="1" />
   <Property name="CreatureWaryTime" value="0.2" />
@@ -525,7 +525,7 @@
   <Property name="SharkPatrolEnd" value="5.1" />
   <Property name="SharkGetToPathSpeed" value="1" />
   <Property name="SharkAlignSpeed" value="0.3" />
-  <Property name="FishBobFrequency" value="0.5" />
+  <Property name="FishBobFrequency" value="0.4" />
   <Property name="FishBobAmplitude" value="0.3" />
   <Property name="FreighterJellyBobFrequency" value="0.01" />
   <Property name="FreighterJellyBobAmplitude" value="0" />
@@ -578,7 +578,7 @@
     <Property name="TwistLimit" value="5" />
     <Property name="AltitudeSinPeriod" value="6" />
     <Property name="AltitudeSinAmp" value="3" />
-    <Property name="AscendDescendSpeed" value="8" />
+    <Property name="AscendDescendSpeed" value="1" />
   </Property>
   <Property name="AlertTable">
     <Property value="GcCreatureAlertData.xml">

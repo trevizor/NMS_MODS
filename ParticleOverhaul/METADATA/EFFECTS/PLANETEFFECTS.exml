@@ -2393,6 +2393,42 @@
       <Property name="MaxSpawnDistance" value="0" />
     </Property>
     <Property value="GcExplosionData.xml">
+      <Property name="Id" value="VOLEXPLODE" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/EXPLOSION/VOLCANOEXPLOSION.SCENE.MBIN" />
+      </Property>
+      <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="EXPL_ROCK" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="4.5" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="True" />
+      <Property name="CamShakeSpace" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="GEYSERSMOKE01" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/SMOKE/GEYSERSMOKE01.SCENE.MBIN" />
+      </Property>
+      <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="10" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpace" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
       <Property name="Id" value="JETREDFX" />
       <Property name="Model" value="TkModelResource.xml">
         <Property name="Filename" value="MODELS/EFFECTS/PLAYER/JETPACKEFFECTS/REDJETPACKFX.SCENE.MBIN" />
@@ -2525,6 +2561,348 @@
       </Property>
       <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="ABANDONED_JELLYFISH_DEATH" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="3" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpace" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="VOLSMOKE" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/SMOKE/UNDERWATERSMOKE.SCENE.MBIN" />
+      </Property>
+      <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="15" />
+      <Property name="Scale" value="10" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="True" />
+      <Property name="CamShakeSpace" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="VOLSMOKESMALL" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/SMOKE/USMOKESMALL.SCENE.MBIN" />
+      </Property>
+      <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="5" />
+      <Property name="Scale" value="10" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="True" />
+      <Property name="CamShakeSpace" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="LIGHTNINGBOLTFX" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/WEATHER/LIGHTNINGBOLTFX.SCENE.MBIN" />
+      </Property>
+      <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="1" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpace" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="9999999" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="LIGHTNINGBUILD" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/WEATHER/LIGHTNINGBUILDFX.SCENE.MBIN" />
+      </Property>
+      <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="5" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpace" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="9999999" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="LIGHTNINGSPARK" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/WEATHER/LIGHTNINGSPARK.SCENE.MBIN" />
+      </Property>
+      <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="3" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpace" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="LIGHTNINGBOLT" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/WEATHER/LIGHTNINGBOLT.SCENE.MBIN" />
+      </Property>
+      <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="1" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpace" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="9999999" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="TORNADOBASE" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/SMOKE/TORNADOBASE.SCENE.MBIN" />
+      </Property>
+      <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="0" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpace" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="TORNADODEBRIS" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/WEATHER/TORNADODEBRIS.SCENE.MBIN" />
+      </Property>
+      <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="0" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpace" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="TORNADOTOP" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/SMOKE/TORNADOTOP.SCENE.MBIN" />
+      </Property>
+      <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="0" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpace" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="METEORSPARKS" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/WEATHER/METEORSPARKFX.SCENE.MBIN" />
+      </Property>
+      <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="0" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpace" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="METEORAURA" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/WEATHER/METEORAURAFX.SCENE.MBIN" />
+      </Property>
+      <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="0" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpace" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="METEORIMPACT" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/WEATHER/METEORIMPACTFX.SCENE.MBIN" />
+      </Property>
+      <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="3628527645" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="4.5" />
+      <Property name="Scale" value="2" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpace" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="METEOREXPLODE" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/WEATHER/METEOREXPLODEFX.SCENE.MBIN" />
+      </Property>
+      <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="5" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpace" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="SANDWORMDUST" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/DUST/SANDWORMDUST.SCENE.MBIN" />
+      </Property>
+      <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="1" />
+      <Property name="Scale" value="1.5" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpace" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="SANDWORMEMERGE" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/DUST/SANDWORMEXPLODE.SCENE.MBIN" />
+      </Property>
+      <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="5.5" />
+      <Property name="Scale" value="4" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpace" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="MOLEDIG" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/CREATURES/MOLEDIG.SCENE.MBIN" />
+      </Property>
+      <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="1.5" />
+      <Property name="Scale" value="0.3" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpace" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="100" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="DRILLEMERGE" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/DUST/DRILLEXPLODE.SCENE.MBIN" />
+      </Property>
+      <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="5.5" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpace" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="FIRESMOKE" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/SMOKE/FIRESMOKE.SCENE.MBIN" />
+      </Property>
+      <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="10" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpace" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="DIGGER" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/VEHICLE/VEHICLECRASH.SCENE.MBIN" />
+      </Property>
+      <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
       <Property name="Debris" />
       <Property name="Life" value="3" />
