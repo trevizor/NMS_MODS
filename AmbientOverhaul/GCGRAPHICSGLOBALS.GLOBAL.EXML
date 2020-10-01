@@ -1,27 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (2.43.0)-->
+<!--File created using MBINCompiler version (3.2.0)-->
 <Data template="GcGraphicsGlobals">
   <Property name="LUTDistanceFlightMultiplier" value="0" />
-  <Property name="SunLightIntensity" value="2" />
-  <Property name="SunLightBlendTime" value="0" />
+  <Property name="SunLightIntensity" value="3" />
+  <Property name="SunLightBlendTime" value="5" />
   <Property name="HBAOBias" value="0.1" />
   <Property name="HBAORadius" value="2" />
-  <Property name="HBAOIntensity" value="1" />
-  <Property name="LightShaftScattering" value="0.008" /> <!-- lesser is stronger -->
-  <Property name="LightShaftStrength" value="0.00001" />
-  <Property name="LightShaftBottom" value="0.01" />
-  <Property name="LightShaftTop" value="0.25" />
-  <Property name="LightShaftColourBottom" value="Colour.xml">
-    <Property name="R" value="0.1" />
-    <Property name="G" value="0.1" />
-    <Property name="B" value="0.1" />
-    <Property name="A" value="0.1" />
+  <Property name="HBAOIntensity" value="5" />
+  <Property name="LightShaftProperties" value="GcLightShaftProperties.xml">
+    <Property name="LightShaftScattering" value="0.008" /> <!-- lesser is stronger -->
+    <Property name="LightShaftStrength" value="0.00001" />
+    <Property name="LightShaftBottom" value="0.01" />
+    <Property name="LightShaftTop" value="0.25" />
+    <Property name="LightShaftColourBottom" value="Colour.xml">
+      <Property name="R" value="0.1" />
+      <Property name="G" value="0.1" />
+      <Property name="B" value="0.1" />
+      <Property name="A" value="0.1" />
+    </Property>
+    <Property name="LightShaftColourTop" value="Colour.xml">
+      <Property name="R" value="0.5" />
+      <Property name="G" value="0.5" />
+      <Property name="B" value="0.5" />
+      <Property name="A" value="0.5" />
+    </Property>
   </Property>
-  <Property name="LightShaftColourTop" value="Colour.xml">
-    <Property name="R" value="0.5" />
-    <Property name="G" value="0.5" />
-    <Property name="B" value="0.5" />
-    <Property name="A" value="0.5" />
+  <Property name="StormLightShaftProperties" value="GcLightShaftProperties.xml">
+    <Property name="LightShaftScattering" value="0.004" /> <!-- lesser is stronger -->
+    <Property name="LightShaftStrength" value="0.00001" />
+    <Property name="LightShaftBottom" value="0.01" />
+    <Property name="LightShaftTop" value="0.25" />
+    <Property name="LightShaftColourBottom" value="Colour.xml">
+      <Property name="R" value="0.5" />
+      <Property name="G" value="0.5" />
+      <Property name="B" value="0.5" />
+      <Property name="A" value="0.5" />
+    </Property>
+    <Property name="LightShaftColourTop" value="Colour.xml">
+      <Property name="R" value="0.8" />
+      <Property name="G" value="0.8" />
+      <Property name="B" value="0.8" />
+      <Property name="A" value="0.8" />
+    </Property>
   </Property>
   <Property name="SunRayDensity" value="1" />
   <Property name="SunRayDecay" value="1" />
@@ -252,7 +272,7 @@
   <Property name="ShadowLengthSpace" value="20000" />
   <Property name="ShadowLengthStation" value="1300" />
   <Property name="ShadowLengthFreighterAbandoned" value="2500" />
-  <Property name="ShadowLengthCameraView" value="2800" />
+  <Property name="ShadowLengthCameraView" value="1300" />
   <Property name="ShadowSplit" value="Vector4f.xml">
     <Property name="x" value="0.06" />
     <Property name="y" value="0.22" />
@@ -318,6 +338,10 @@
   <Property name="DOFNearPlane" value="0" />
   <Property name="DOFFarPlane" value="600" />
   <Property name="DOFAmountManual" value="1" />
+  <Property name="DOFAmountManualLightIndoor" value="0.66" />
+  <Property name="DOFAmountManualFullIndoor" value="1" />
+  <Property name="DOFAmountManualLight" value="0.2" />
+  <Property name="DOFAmountManualFull" value="0.85" />
   <Property name="DOFNearFadeDistance" value="1" />
   <Property name="DOFNearFadeDistanceManual" value="3" />
   <Property name="DOFFarFadeDistance" value="1200" />
@@ -329,7 +353,12 @@
   <Property name="DOFFarPlaneWater" value="200" />
   <Property name="DOFFarFadeDistanceWater" value="600" />
   <Property name="DOFFarPlaneManual" value="50" />
-  <Property name="DOFFarFadeDistanceManual" value="40" />
+  <Property name="DOFFarFadeDistanceManualIndoor" value="10" />
+  <Property name="DOFFarFadeDistanceManual" value="50" />
+  <Property name="DOFAutoFarAmount" value="0.3" />
+  <Property name="DOFAutoFarFarPlaneFade" value="1000" />
+  <Property name="DOFAutoFarFarPlane" value="100000" />
+  <Property name="DOFAutoFarNearPlane" value="5" />
   <Property name="DOFNearMinInteraction" value="2" />
   <Property name="DOFNearAdjustInteraction" value="-1" />
   <Property name="DOFFarPlaneInteraction" value="0.2" />
@@ -357,10 +386,10 @@
   <Property name="VignetteVRRidingInterpTime" value="0.25" />
   <Property name="LowHealthVignetteStart" value="0" />
   <Property name="LowHealthVignetteEnd" value="0.5" />
-  <Property name="LowHealthDesaturationIntensity" value="0.25" />
-  <Property name="LowHealthOverlayIntensity" value="0.25" />
-  <Property name="LowHealthFadeInTime" value="0.5" />
-  <Property name="LowHealthFadeOutTime" value="0.5" />
+  <Property name="LowHealthDesaturationIntensity" value="0.85" />
+  <Property name="LowHealthOverlayIntensity" value="0.85" />
+  <Property name="LowHealthFadeInTime" value="5" />
+  <Property name="LowHealthFadeOutTime" value="1.5" />
   <Property name="LowHealthPulseRateLowShield" value="4.2" />
   <Property name="LowHealthPulseRateFullShield" value="2" />
   <Property name="LowHealthStrengthLowShield" value="0.5" />
@@ -433,31 +462,31 @@
   <Property name="HueVariance" value="1.04" />
   <Property name="SaturationVariance" value="0.05" />
   <Property name="ValueVariance" value="0.05" />
-  <Property name="FoliageSaturationMin" value="0.5" />
+  <Property name="FoliageSaturationMin" value="0.4" />
   <Property name="FoliageSaturationMax" value="0.8" />
   <Property name="FoliageValueMin" value="0.7" />
   <Property name="FoliageValueMax" value="0.85" />
-  <Property name="GrassSaturationMin" value="0.3" />
-  <Property name="GrassSaturationMax" value="0.8" />
-  <Property name="GrassValueMin" value="0.4" />
-  <Property name="GrassValueMax" value="0.8" />
-  <Property name="SkySaturationMin" value="0.3" />
-  <Property name="SkySaturationMax" value="0.9" />
-  <Property name="SkyValueMin" value="0.22" />
-  <Property name="SkyValueMax" value="0.62" />
+  <Property name="GrassSaturationMin" value="0.4" />
+  <Property name="GrassSaturationMax" value="0.7" />
+  <Property name="GrassValueMin" value="0.7" />
+  <Property name="GrassValueMax" value="0.6" />
+  <Property name="SkySaturationMin" value="0.7" />
+  <Property name="SkySaturationMax" value="0.8" />
+  <Property name="SkyValueMin" value="0.52" />
+  <Property name="SkyValueMax" value="0.52" />
   <Property name="SpaceScale" value="18000" />
   <Property name="SpaceMieFactor" value="0.3" />
   <Property name="SpaceSunFactor" value="20" />
   <Property name="MaxSpaceFogStrength" value="0.8" />
-  <Property name="ReflectionStrength" value="0.05" />
+  <Property name="ReflectionStrength" value="0.2" />
   <Property name="AlphaCutoutMin" value="0.45" />
   <Property name="AlphaCutoutMax" value="0.8" />
   <Property name="WaterHueShift" value="0.1" />
-  <Property name="WaterSaturation" value="0.9" />
-  <Property name="WaterValue" value="0.2" />
-  <Property name="MaxParticleRenderRange" value="300" />
+  <Property name="WaterSaturation" value="0.8" />
+  <Property name="WaterValue" value="0.4" />
+  <Property name="MaxParticleRenderRange" value="800" />
   <Property name="MaxParticleRenderRangeSpace" value="10000" />
-  <Property name="MotionBlurShutterSpeed" value="50" />
+  <Property name="MotionBlurShutterSpeed" value="30" />
   <Property name="MotionBlurShutterAngle" value="180" />
   <Property name="TaaLowFreqConstant" value="0.5" />
   <Property name="TaaHighFreqConstant" value="100" />
@@ -476,7 +505,7 @@
     <Property name="z" value="0.8" />
     <Property name="t" value="0.4" />
   </Property>
-    <Property name="TessSettings">
+  <Property name="TessSettings">
     <Property name="Low" value="Vector4f.xml">
       <Property name="x" value="0" />
       <Property name="y" value="0" />
@@ -501,6 +530,30 @@
       <Property name="z" value="-0.3" />
       <Property name="t" value="3" />
     </Property>
+  </Property>
+  <Property name="TerrainMipDistanceLow" value="Vector4f.xml">
+    <Property name="x" value="0" />
+    <Property name="y" value="0" />
+    <Property name="z" value="0" />
+    <Property name="t" value="0" />
+  </Property>
+  <Property name="TerrainMipDistanceMed" value="Vector4f.xml">
+    <Property name="x" value="0" />
+    <Property name="y" value="0" />
+    <Property name="z" value="0" />
+    <Property name="t" value="0" />
+  </Property>
+  <Property name="TerrainMipDistanceHigh" value="Vector4f.xml">
+    <Property name="x" value="0" />
+    <Property name="y" value="32" />
+    <Property name="z" value="64" />
+    <Property name="t" value="128" />
+  </Property>
+  <Property name="TerrainMipDistanceUlt" value="Vector4f.xml">
+    <Property name="x" value="0" />
+    <Property name="y" value="64" />
+    <Property name="z" value="128" />
+    <Property name="t" value="256" />
   </Property>
   <Property name="ShellsSettings">
     <Property name="Low" value="Vector4f.xml">
@@ -539,11 +592,12 @@
   <Property name="TerrainBlocksPerFrameLow" value="16" />
   <Property name="TerrainBlocksPerFrameMed" value="24" />
   <Property name="TerrainBlocksPerFrameHi" value="48" />
-  <Property name="TerrainBlocksPerFrameUlt" value="96" />
-  <Property name="TerrainBlocksPerFramePs430" value="96" />
-  <Property name="TerrainBlocksPerFramePs460" value="48" />
-  <Property name="TerrainBlocksPerFrameXb130" value="96" />
-  <Property name="TerrainBlocksPerFrameXb160" value="48" />
+  <Property name="TerrainBlocksPerFrameUlt" value="64" />
+  <Property name="TerrainBlocksPerFramePs430" value="192" />
+  <Property name="TerrainBlocksPerFramePs460" value="96" />
+  <Property name="TerrainBlocksPerFrameXb130" value="192" />
+  <Property name="TerrainBlocksPerFrameXb160" value="96" />
+  <Property name="TerrainBlocksPerFrameOberon" value="192" />
   <Property name="EnableTerrainCachePs4Base" value="True" />
   <Property name="EnableTerrainCachePs4Pro" value="True" />
   <Property name="EnableTerrainCacheXb1Base" value="False" />
@@ -564,7 +618,7 @@
   <Property name="EnableTextureStreaming" value="True" />
   <Property name="ForceStreamAllTextures" value="False" />
   <Property name="ForceEvictAllTextures" value="False" />
-  <Property name="TargetTextureMemUsageMB" value="1580" />
+  <Property name="TargetTextureMemUsageMB" value="1280" />
   <Property name="MotionBlurThresholdOnFoot" value="4" />
   <Property name="MotionBlurThresholdInVehicle" value="4" />
   <Property name="MotionBlurThresholdSpace" value="4" />
@@ -577,7 +631,7 @@
   <Property name="SharpenFilterDepthFactorStart" value="2.5" />
   <Property name="SharpenFilterDepthFactorEnd" value="30" />
   <Property name="GraphicsDetailPresetsPC">
-    <Property value="TkGraphicsDetailPreset.xml">
+    <Property name="Low" value="TkGraphicsDetailPreset.xml">
       <Property name="TextureQuality" value="TkGraphicsDetailTypes.xml">
         <Property name="GraphicDetail" value="Low" />
       </Property>
@@ -606,7 +660,7 @@
       <Property name="AnisotropyLevel" value="_1" />
       <Property name="AntiAliasing" value="None" />
     </Property>
-    <Property value="TkGraphicsDetailPreset.xml">
+    <Property name="Medium" value="TkGraphicsDetailPreset.xml">
       <Property name="TextureQuality" value="TkGraphicsDetailTypes.xml">
         <Property name="GraphicDetail" value="Medium" />
       </Property>
@@ -635,7 +689,7 @@
       <Property name="AnisotropyLevel" value="_2" />
       <Property name="AntiAliasing" value="TAA" />
     </Property>
-    <Property value="TkGraphicsDetailPreset.xml">
+    <Property name="High" value="TkGraphicsDetailPreset.xml">
       <Property name="TextureQuality" value="TkGraphicsDetailTypes.xml">
         <Property name="GraphicDetail" value="High" />
       </Property>
@@ -664,7 +718,7 @@
       <Property name="AnisotropyLevel" value="_4" />
       <Property name="AntiAliasing" value="TAA" />
     </Property>
-    <Property value="TkGraphicsDetailPreset.xml">
+    <Property name="Ultra" value="TkGraphicsDetailPreset.xml">
       <Property name="TextureQuality" value="TkGraphicsDetailTypes.xml">
         <Property name="GraphicDetail" value="Ultra" />
       </Property>
@@ -863,6 +917,35 @@
     </Property>
     <Property name="BaseQuality" value="TkGraphicsDetailTypes.xml">
       <Property name="GraphicDetail" value="High" />
+    </Property>
+    <Property name="AmbientOcclusion" value="GTAO_Medium" />
+    <Property name="AnisotropyLevel" value="_4" />
+    <Property name="AntiAliasing" value="TAA" />
+  </Property>
+  <Property name="GraphicsDetailPresetOberon" value="TkGraphicsDetailPreset.xml">
+    <Property name="TextureQuality" value="TkGraphicsDetailTypes.xml">
+      <Property name="GraphicDetail" value="High" />
+    </Property>
+    <Property name="AnimationQuality" value="TkGraphicsDetailTypes.xml">
+      <Property name="GraphicDetail" value="High" />
+    </Property>
+    <Property name="ShadowQuality" value="TkGraphicsDetailTypes.xml">
+      <Property name="GraphicDetail" value="High" />
+    </Property>
+    <Property name="PostProcessingEffects" value="TkGraphicsDetailTypes.xml">
+      <Property name="GraphicDetail" value="Medium" />
+    </Property>
+    <Property name="VolumetricsQuality" value="TkGraphicsDetailTypes.xml">
+      <Property name="GraphicDetail" value="High" />
+    </Property>
+    <Property name="TerrainTessellation" value="TkGraphicsDetailTypes.xml">
+      <Property name="GraphicDetail" value="High" />
+    </Property>
+    <Property name="PlanetQuality" value="TkGraphicsDetailTypes.xml">
+      <Property name="GraphicDetail" value="Ultra" />
+    </Property>
+    <Property name="BaseQuality" value="TkGraphicsDetailTypes.xml">
+      <Property name="GraphicDetail" value="Ultra" />
     </Property>
     <Property name="AmbientOcclusion" value="GTAO_Medium" />
     <Property name="AnisotropyLevel" value="_4" />
