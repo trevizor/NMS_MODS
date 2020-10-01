@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (2.41.0)-->
+<!--File created using MBINCompiler version (3.2.0)-->
 <Data template="GcTerrainGlobals">
   <Property name="RegisterTerrainMinDistance" value="0.1" />
   <Property name="TerrainBeamUndoRangeFromLastAdd" value="100" />
@@ -21,30 +21,10 @@
   <Property name="TextureFadePower" value="0.5" />
   <Property name="TextureScaleMultiplier" value="2" />
   <Property name="TextureScalePower" value="3" />
-  <Property name="TextureScales">
-    <Property value="4" />
-    <Property value="24" />
-    <Property value="32" />
-    <Property value="64" />
-    <Property value="128" />
-    <Property value="256" />
-    <Property value="2048" />
-    <Property value="16384" />
-  </Property>
-  <Property name="TextureDistances">
-    <Property value="64" />
-    <Property value="224" />
-    <Property value="324" />
-    <Property value="576" />
-    <Property value="900" />
-    <Property value="4000" />
-    <Property value="8000" />
-    <Property value="16000" />
-  </Property>
-  <Property name="HeightBlend" value="0.1" />
-  <Property name="SmoothStepBelow" value="0.0" />
-  <Property name="SmoothStepAbove" value="0.0" />
-  <Property name="SmoothStepStrength" value="0.25" />
+  <Property name="HeightBlend" value="0" />
+  <Property name="SmoothStepBelow" value="0" />
+  <Property name="SmoothStepAbove" value="0" />
+  <Property name="SmoothStepStrength" value="0.5" />
   <Property name="TileBlendMultiplier" value="1" />
   <Property name="DebugFlattenAllTerrain" value="False" />
   <Property name="DebugNoFlattenForBuildings" value="False" />
@@ -96,8 +76,17 @@
     <Property name="Test" value="NMSString0x10.xml">
       <Property name="Value" value="LAND3" />
     </Property>
-    <Property name="All" value="NMSString0x10.xml">
+    <Property name="Swamp" value="NMSString0x10.xml">
+      <Property name="Value" value="PLANT_POOP" />
+    </Property>
+    <Property name="Lava" value="NMSString0x10.xml">
+      <Property name="Value" value="LAVA1" />
+    </Property>
+    <Property name="Waterworld" value="NMSString0x10.xml">
       <Property name="Value" value="LAND3" />
+    </Property>
+    <Property name="All" value="NMSString0x10.xml">
+      <Property name="Value" value="CREATURE1" />
     </Property>
   </Property>
   <Property name="MiningSubstanceStar">
@@ -149,8 +138,6 @@
   <Property name="TextureBlendScale1" value="0.01" />
   <Property name="TextureBlendScale2" value="0.6" />
   <Property name="TextureBlendOffset" value="0.19" />
-  <Property name="BaseSlopePower" value="1" />
-  <Property name="MountainSlopePower" value="1" />
   <Property name="HueOverlay" value="GcTerrainOverlayColours.xml">
     <Property name="Cutoff" value="0" />
     <Property name="Scale" value="0.2" />
@@ -234,6 +221,7 @@
   <Property name="TerrainUndoCubesNoiseFactor" value="0" />
   <Property name="TerrainUndoFadeDepthConstant" value="1" />
   <Property name="TerrainUndoFadeDepthScalar" value="1000" />
-  <Property name="TerrainEditUndosEnabled" value="False" />
-  <Property name="RegionHotspotTable" value="METADATA/SIMULATION/SCANNING/REGIONHOTSPOTSTABLE.MXML" />
+  <Property name="DebugRegionHotspots" value="False" />
+  <Property name="RegionHotspotsTable" value="METADATA/SIMULATION/SCANNING/REGIONHOTSPOTSTABLE.MXML" />
+  <Property name="TerrainPrimeIndexStart" value="10" />
 </Data>

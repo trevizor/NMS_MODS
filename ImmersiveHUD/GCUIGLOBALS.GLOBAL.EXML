@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (2.61.1)-->
 <Data template="GcUIGlobals">
+  <Property name="ExplorationLogMissionID" value="EXPLORE_LOG" />
   <Property name="ForceOpenHazardProtInventoryThreshold" value="16" />
   <Property name="PlanetDataExtraRadius" value="1.125" />
   <Property name="StackSizeRateChangeRate" value="1.25" />
@@ -1091,7 +1092,7 @@
     <Property name="x" value="930" />
     <Property name="y" value="580" />
   </Property>
-  <Property name="RefinerPopupEmptyOutputIcon" value="TkMaterialResource.xml">
+  <Property name="RefinerPopupEmptyOutputIcon" value="TkTextureResource.xml">
     <Property name="Filename" value="/TEXTURES/UI/FRONTEND/COMPONENTS/EMPTYSLOTCIRCLE.DDS" />
   </Property>
   <Property name="RefinerPadStartTime" value="1" />
@@ -3436,6 +3437,44 @@
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
+      <Property name="DiscoveryPlanetaryMapping" value="TkModelRendererData.xml">
+        <Property name="Camera" value="TkModelRendererCameraData.xml">
+          <Property name="Distance" value="1.5" />
+          <Property name="Offset" value="Vector3f.xml">
+            <Property name="x" value="0" />
+            <Property name="y" value="0" />
+            <Property name="z" value="0" />
+          </Property>
+          <Property name="Roll" value="0" />
+          <Property name="Pitch" value="0" />
+          <Property name="Rotate" value="0" />
+          <Property name="LightPitch" value="45" />
+          <Property name="LightRotate" value="45" />
+          <Property name="Wander" value="TkCameraWanderData.xml">
+            <Property name="CamWander" value="False" />
+            <Property name="CamWanderPhase" value="0.003" />
+            <Property name="CamWanderAmplitude" value="0.5" />
+          </Property>
+        </Property>
+        <Property name="Fov" value="30" />
+        <Property name="AspectRatio" value="1.7777" />
+        <Property name="ThumbnailMode" value="None" />
+        <Property name="FocusType" value="ResourceBounds" />
+        <Property name="FocusLocator" value="" />
+        <Property name="FocusOffset" value="Vector3f.xml">
+          <Property name="x" value="0" />
+          <Property name="y" value="0" />
+          <Property name="z" value="0" />
+        </Property>
+        <Property name="FocusInterpTime" value="0" />
+        <Property name="BlendInTime" value="0.8" />
+        <Property name="BlendInOffset" value="0" />
+        <Property name="Anim" value="" />
+        <Property name="HeightOffset" value="0.005" />
+        <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
+        <Property name="LookForFocusInMasterModel" value="False" />
+      </Property>
       <Property name="Mech" value="TkModelRendererData.xml">
         <Property name="Camera" value="TkModelRendererCameraData.xml">
           <Property name="Distance" value="1.15" />
@@ -3512,7 +3551,7 @@
   <Property name="FrontendCursorSize" value="18" />
   <Property name="FrontendCursorOffset" value="0" />
   <Property name="PopupXClampOffset" value="3" />
-  <Property name="PopupXClampOffsetRightAligne" value="20" />
+  <Property name="PopupXClampOffsetRightAligned" value="20" />
   <Property name="PopupSlotWidthOffset" value="110" />
   <Property name="FrontendCursorWidth" value="9" />
   <Property name="FrontendDeactivateTime" value="0.4" />
@@ -3743,6 +3782,12 @@
     <Property name="G" value="0.218" />
     <Property name="B" value="0.489" />
     <Property name="A" value="1" />
+  </Property>
+  <Property name="UnseenItemColour" value="Colour.xml">
+    <Property name="R" value="0" />
+    <Property name="G" value="0" />
+    <Property name="B" value="0" />
+    <Property name="A" value="0.2" />
   </Property>
   <Property name="PlanetPoleMaxDotProduct" value="0.999999" />
   <Property name="SpaceMapLineWidth" value="0.1" />
@@ -4008,33 +4053,15 @@
     <Property name="x" value="0" />
     <Property name="y" value="-8" />
   </Property>
-  <Property name="HUDMarkerIcon" value="NMSString0x100.xml">
-    <Property name="Value" value="TEXTURES\\UI\\HUD\\POIDIAMONDFRAME.DDS" />
-  </Property>
-  <Property name="HUDMarkerPrimaryIndicatorIcon" value="NMSString0x100.xml">
-    <Property name="Value" value="TEXTURES\\UI\\HUD\\Icons\\Buildings\\ArrowLarge.DDS" />
-  </Property>
-  <Property name="HUDMarkerColourIcon" value="NMSString0x100.xml">
-    <Property name="Value" value="TEXTURES\\UI\\HUD\\POIDIAMONDCOLOUR.DDS" />
-  </Property>
-  <Property name="HUDPointIcon" value="NMSString0x100.xml">
-    <Property name="Value" value="TEXTURES\\UI\\HUD\\ICONS\\PLAYER\\POINT.DDS" />
-  </Property>
-  <Property name="HUDSpaceshipIcon" value="NMSString0x100.xml">
-    <Property name="Value" value="TEXTURES\\UI\\HUD\\ICONS\\PLAYER\\SHIP.DDS" />
-  </Property>
-  <Property name="HUDSaveIcon" value="NMSString0x100.xml">
-    <Property name="Value" value="TEXTURES\\UI\\HUD\\ICONS\\PLAYER\\SAVE.DDS" />
-  </Property>
-  <Property name="HUDDeathPointIcon" value="NMSString0x100.xml">
-    <Property name="Value" value="TEXTURES\\UI\\HUD\\ICONS\\PLAYER\\DEATH.DDS" />
-  </Property>
-  <Property name="HUDHexAnimIcon" value="NMSString0x100.xml">
-    <Property name="Value" value="TEXTURES\\UI\\HUD\\ICONS\\PLAYER\\HEX.DDS" />
-  </Property>
-  <Property name="HUDCircleAnimIcon" value="NMSString0x100.xml">
-    <Property name="Value" value="TEXTURES\\UI\\HUD\\ICONS\\PLAYER\\CIRCLE.DDS" />
-  </Property>
+  <Property name="HUDMarkerIcon" value="TEXTURES\\UI\\HUD\\POIDIAMONDFRAME.DDS" />
+  <Property name="HUDMarkerPrimaryIndicatorIcon" value="TEXTURES\\UI\\HUD\\Icons\\Buildings\\ArrowLarge.DDS" />
+  <Property name="HUDMarkerColourIcon" value="TEXTURES\\UI\\HUD\\POIDIAMONDCOLOUR.DDS" />
+  <Property name="HUDPointIcon" value="TEXTURES\\UI\\HUD\\ICONS\\PLAYER\\POINT.DDS" />
+  <Property name="HUDSpaceshipIcon" value="TEXTURES\\UI\\HUD\\ICONS\\PLAYER\\SHIP.DDS" />
+  <Property name="HUDSaveIcon" value="TEXTURES\\UI\\HUD\\ICONS\\PLAYER\\SAVE.DDS" />
+  <Property name="HUDDeathPointIcon" value="TEXTURES\\UI\\HUD\\ICONS\\PLAYER\\DEATH.DDS" />
+  <Property name="HUDHexAnimIcon" value="TEXTURES\\UI\\HUD\\ICONS\\PLAYER\\HEX.DDS" />
+  <Property name="HUDCircleAnimIcon" value="TEXTURES\\UI\\HUD\\ICONS\\PLAYER\\CIRCLE.DDS" />
   <Property name="HUDMarkerAnimSpeed" value="0.6" />
   <Property name="HUDMarkerAnimScale" value="120" />
   <Property name="HUDMarkerAnimOffset" value="0.11" />
@@ -4186,79 +4213,79 @@
     <Property name="ButtonFlashAlpha" value="0.2" />
     <Property name="BackgroundAlpha" value="1" />
     <Property name="HUDStartup">
-      <Property value="GcHUDStartup.xml">
+      <Property name="WaitingForInit" value="GcHUDStartup.xml">
         <Property name="Audio" value="GcAudioWwiseEvents.xml">
           <Property name="AkEvent" value="INVALID_EVENT" />
         </Property>
         <Property name="Time" value="1" />
       </Property>
-      <Property value="GcHUDStartup.xml">
+      <Property name="Startup" value="GcHUDStartup.xml">
         <Property name="Audio" value="GcAudioWwiseEvents.xml">
           <Property name="AkEvent" value="SUITBOOT_INIT" />
         </Property>
         <Property name="Time" value="0" />
       </Property>
-      <Property value="GcHUDStartup.xml">
+      <Property name="Booting" value="GcHUDStartup.xml">
         <Property name="Audio" value="GcAudioWwiseEvents.xml">
           <Property name="AkEvent" value="SUITBOOT_INIT" />
         </Property>
         <Property name="Time" value="9" />
       </Property>
-      <Property value="GcHUDStartup.xml">
+      <Property name="LifeSupport" value="GcHUDStartup.xml">
         <Property name="Audio" value="GcAudioWwiseEvents.xml">
           <Property name="AkEvent" value="SUITBOOT_LIFESUPPORT" />
         </Property>
         <Property name="Time" value="8" />
       </Property>
-      <Property value="GcHUDStartup.xml">
+      <Property name="Shield" value="GcHUDStartup.xml">
         <Property name="Audio" value="GcAudioWwiseEvents.xml">
           <Property name="AkEvent" value="SUITBOOT_SHIELD" />
         </Property>
         <Property name="Time" value="2" />
       </Property>
-      <Property value="GcHUDStartup.xml">
+      <Property name="ShieldEffect" value="GcHUDStartup.xml">
         <Property name="Audio" value="GcAudioWwiseEvents.xml">
           <Property name="AkEvent" value="PL_SHIELD_CHARGE" />
         </Property>
         <Property name="Time" value="7.5" />
       </Property>
-      <Property value="GcHUDStartup.xml">
+      <Property name="Scanner" value="GcHUDStartup.xml">
         <Property name="Audio" value="GcAudioWwiseEvents.xml">
           <Property name="AkEvent" value="SUITBOOT_SCANNER" />
         </Property>
         <Property name="Time" value="8" />
       </Property>
-      <Property value="GcHUDStartup.xml">
+      <Property name="jetpack" value="GcHUDStartup.xml">
         <Property name="Audio" value="GcAudioWwiseEvents.xml">
           <Property name="AkEvent" value="SUITBOOT_JETPACK" />
         </Property>
         <Property name="Time" value="8" />
       </Property>
-      <Property value="GcHUDStartup.xml">
+      <Property name="Weapon" value="GcHUDStartup.xml">
         <Property name="Audio" value="GcAudioWwiseEvents.xml">
           <Property name="AkEvent" value="SUITBOOT_WEAPON" />
         </Property>
         <Property name="Time" value="8" />
       </Property>
-      <Property value="GcHUDStartup.xml">
+      <Property name="Finishing" value="GcHUDStartup.xml">
         <Property name="Audio" value="GcAudioWwiseEvents.xml">
           <Property name="AkEvent" value="SUITBOOT_FINISHED" />
         </Property>
         <Property name="Time" value="0" />
       </Property>
-      <Property value="GcHUDStartup.xml">
+      <Property name="DiscoverPlanet" value="GcHUDStartup.xml">
         <Property name="Audio" value="GcAudioWwiseEvents.xml">
           <Property name="AkEvent" value="UI_NEW_DISCOVERY" />
         </Property>
         <Property name="Time" value="0" />
       </Property>
-      <Property value="GcHUDStartup.xml">
+      <Property name="Done" value="GcHUDStartup.xml">
         <Property name="Audio" value="GcAudioWwiseEvents.xml">
           <Property name="AkEvent" value="INVALID_EVENT" />
         </Property>
         <Property name="Time" value="1" />
       </Property>
-      <Property value="GcHUDStartup.xml">
+      <Property name="Inactive" value="GcHUDStartup.xml">
         <Property name="Audio" value="GcAudioWwiseEvents.xml">
           <Property name="AkEvent" value="INVALID_EVENT" />
         </Property>

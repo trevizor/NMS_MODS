@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (2.61.0)-->
 <Data template="GcGameplayGlobals">
+  <Property name="TechnologyOverrideForSmuggler" value="GcTechnologyCategory.xml">
+    <Property name="TechnologyCategory" value="Maintenance" />
+  </Property>
+  <Property name="MaxMeteorSurfaceAngle" value="70" />
+  <Property name="StormGravityChangeTime" value="5" />
+  <Property name="StormBonusJetpackMod" value="0.25" />
+  <Property name="StormBonusSprintMod" value="0.25" />
+  <Property name="StormBonusMiningHeatMod" value="3" />
+  <Property name="StormBonusMiningAmountMod" value="2.55" />
+  <Property name="StormBonusJetpackWeather" value="GcPlayerHazardType.xml">
+    <Property name="ActionUseHazardType" value="ExtremeHeat" />
+  </Property>
+  <Property name="StormBonusSprintWeather" value="GcPlayerHazardType.xml">
+    <Property name="ActionUseHazardType" value="ToxicGas" />
+  </Property>
+  <Property name="StormBonusMiningHeatWeather" value="GcPlayerHazardType.xml">
+    <Property name="ActionUseHazardType" value="ExtremeCold" />
+  </Property>
+  <Property name="StormBonusMiningAmountWeather" value="GcPlayerHazardType.xml">
+    <Property name="ActionUseHazardType" value="Radiation" />
+  </Property>
   <Property name="AlienPodThreshold2" value="0.55" />
   <Property name="AlienPodThreshold1" value="0.25" />
   <Property name="BulletTraceLineColour" value="Colour.xml">
@@ -208,6 +229,19 @@
   <Property name="AngleFromBaseComputerWhenTeleporting" value="225" />
   <Property name="DistanceFromBaseComputerWhenTeleporting" value="2.5" />
   <Property name="AutoTranslateWordChance" value="0.33" />
+  <Property name="MissionSurveryDistanceToHideDistanceLabel" value="100" />
+  <Property name="MissionSurveyMarkerAutoHideTime" value="30" />
+  <Property name="MissionSurveyScanRangeMultiplier" value="0.8" />
+  <Property name="MissionSurveyMaxScanAngle" value="60" />
+  <Property name="MissionSurveyBeginScanPercentageScannable" value="0.1" />
+  <Property name="MissionSurveyBeginScanPercentageEvent" value="0.03" />
+  <Property name="MissionSurveyScanSpeed" value="0.5" />
+  <Property name="MissionSurveyAutoScanDistance" value="80" />
+  <Property name="MissionSurveySonarMinPulseSpeed" value="0.1" />
+  <Property name="MissionSurveySonarMaxPulseSpeed" value="2" />
+  <Property name="MissionSurveySonarPulseSpeedBandCount" value="6" />
+  <Property name="MissionSurveyMaxAngleOffset" value="60" />
+  <Property name="MissionSurveyMaxSignalConeAngle" value="60" />
   <Property name="SurveyBeginScanPercentage" value="0.01" />
   <Property name="SurveyScanMinSpeed" value="0.75" />
   <Property name="SurveyScanMaxSpeed" value="0.75" />
@@ -578,6 +612,7 @@
   <Property name="ScanAngle" value="0.04" />
   <Property name="NewDiscoveryDisplayTime" value="2" />
   <Property name="FailToFindBuildings" value="False" />
+  <Property name="WaterLandingDamageMultiplier" value="0.333333" />
   <Property name="CritDamage" value="2" />
   <Property name="CritScale" value="1.5" />
   <Property name="NumMissionsPerSolarSystem" value="4" />
@@ -735,6 +770,7 @@
     <Property value="25" />
     <Property value="15" />
     <Property value="5" />
+    <Property value="0" />
   </Property>
   <Property name="SentinelsHigh" value="10" />
   <Property name="SentinelsLow" value="30" />
@@ -1666,6 +1702,7 @@
     <Property value="100" />
     <Property value="210" />
     <Property value="310" />
+    <Property value="430" />
     <Property value="430" />
   </Property>
 </Data>

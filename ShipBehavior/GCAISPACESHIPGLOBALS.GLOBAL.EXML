@@ -45,6 +45,7 @@
   <Property name="RewardLootOffset" value="2.5" />
   <Property name="RewardLootOffsetSpeed" value="2.5" />
   <Property name="RewardLootAngularSpeed" value="15" />
+  <Property name="FlybyPlanetLandingProbability" value="0.05" />
   <Property name="PirateTravel" value="GcSpaceshipTravelData.xml">
     <Property name="Id" value="" />
     <Property name="MinSpeed" value="60" />
@@ -61,6 +62,29 @@
     <Property name="PlanetForce" value="40" />
     <Property name="PlanetTurnMin" value="0.15" />
     <Property name="PlanetTurnMax" value="2" />
+    <Property name="PlanetDirectionBrake" value="1.2" />
+    <Property name="Falloff" value="0.8" />
+    <Property name="Roll" value="2" />
+    <Property name="MinHeight" value="15" />
+    <Property name="AvoidTime" value="0" />
+    <Property name="Hovering" value="False" />
+  </Property>
+  <Property name="PlanetLanding" value="GcSpaceshipTravelData.xml">
+    <Property name="Id" value="" />
+    <Property name="MinSpeed" value="15" />
+    <Property name="MaxSpeed" value="20" />
+    <Property name="BoostSpeed" value="1000" />
+    <Property name="Force" value="200" />
+    <Property name="MinSpeedForce" value="5" />
+    <Property name="TurnMin" value="2" />
+    <Property name="TurnMax" value="2" />
+    <Property name="DirectionBrake" value="10" />
+    <Property name="PlanetMinSpeed" value="15" />
+    <Property name="PlanetMaxSpeed" value="20" />
+    <Property name="PlanetBoostSpeed" value="200" />
+    <Property name="PlanetForce" value="40" />
+    <Property name="PlanetTurnMin" value="0.5" />
+    <Property name="PlanetTurnMax" value="3" />
     <Property name="PlanetDirectionBrake" value="1.2" />
     <Property name="Falloff" value="0.8" />
     <Property name="Roll" value="0" />
@@ -333,11 +357,10 @@
   <Property name="MaxNumTurretMissiles" value="0" />
   <Property name="TurretOriginOffset" value="15" />
   <Property name="TurretAlertLightIntensity" value="10" />
-  <Property name="TurretAlertLightOffset" value="Vector4f.xml">
+  <Property name="TurretAlertLightOffset" value="Vector3f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="15" />
     <Property name="z" value="0" />
-    <Property name="t" value="0" />
   </Property>
   <Property name="DisableTradeRoutes" value="False" />
   <Property name="AttackFreighterGetThereBoost" value="4" />

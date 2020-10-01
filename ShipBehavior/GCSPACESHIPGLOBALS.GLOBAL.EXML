@@ -104,21 +104,6 @@
   <Property name="WingmanSpeedTrackOffset" value="70" />
   <Property name="WingmanSpeedApproachSpeed" value="50" />
   <Property name="WingmanSpeedApproachSpeedSpace" value="500" />
-  <Property name="DebugShipSpawnPos" value="Vector3f.xml">
-    <Property name="x" value="56216.71" />
-    <Property name="y" value="21133.67" />
-    <Property name="z" value="-35991.93" />
-  </Property>
-  <Property name="DebugShipSpawnFacing" value="Vector3f.xml">
-    <Property name="x" value="-0.803708" />
-    <Property name="y" value="0.44732" />
-    <Property name="z" value="0.392376" />
-  </Property>
-  <Property name="DebugShipSpawnUp" value="Vector3f.xml">
-    <Property name="x" value="0.515052" />
-    <Property name="y" value="0.192795" />
-    <Property name="z" value="0.835195" />
-  </Property>
   <Property name="DockingAttractAlign" value="1" />
   <Property name="DockingAttractAlignRange" value="80" />
   <Property name="LandingEffectSpaceColourOverride" value="Colour.xml">
@@ -346,11 +331,10 @@
   <Property name="AutoLevelWaterTorque" value="0.05" />
   <Property name="AutoLevelWaterAngle" value="20" />
   <Property name="AutoLevelPitchCorrectMargin" value="0.1" />
-  <Property name="PostCollisionAngularFactor" value="Vector4f.xml">
+  <Property name="PostCollisionAngularFactor" value="Vector3f.xml">
     <Property name="x" value="0.05" />
     <Property name="y" value="0.05" />
     <Property name="z" value="0.05" />
-    <Property name="t" value="0" />
   </Property>
   <Property name="DrawLineLockTargetLineWidth" value="5" />
   <Property name="DamageFlashScale" value="50" />
@@ -759,17 +743,15 @@
     <Property name="A" value="1" />
   </Property>
   <Property name="AlarmLightOffsets">
-    <Property value="Vector4f.xml">
+    <Property value="Vector3f.xml">
       <Property name="x" value="-0.6" />
       <Property name="y" value="0.3" />
       <Property name="z" value="0" />
-      <Property name="t" value="0" />
     </Property>
-    <Property value="Vector4f.xml">
+    <Property value="Vector3f.xml">
       <Property name="x" value="2" />
       <Property name="y" value="0" />
       <Property name="z" value="0" />
-      <Property name="t" value="0" />
     </Property>
   </Property>
   <Property name="AlarmLightIntensity" value="4" />
@@ -849,23 +831,20 @@
     <Property name="B" value="1" />
     <Property name="A" value="1" />
   </Property>
-  <Property name="DamageLightOffsetTop" value="Vector4f.xml">
+  <Property name="DamageLightOffsetTop" value="Vector3f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="0.3" />
     <Property name="z" value="-0.2" />
-    <Property name="t" value="0" />
   </Property>
-  <Property name="DamageLightOffsetLeft" value="Vector4f.xml">
+  <Property name="DamageLightOffsetLeft" value="Vector3f.xml">
     <Property name="x" value="-2" />
     <Property name="y" value="-1" />
     <Property name="z" value="1" />
-    <Property name="t" value="0" />
   </Property>
-  <Property name="DamageLightOffsetRight" value="Vector4f.xml">
+  <Property name="DamageLightOffsetRight" value="Vector3f.xml">
     <Property name="x" value="2" />
     <Property name="y" value="-1" />
     <Property name="z" value="1" />
-    <Property name="t" value="0" />
   </Property>
   <Property name="DamageLightIntensity" value="1" />
   <Property name="DamageLightCurve" value="TkHitCurveData.xml">
@@ -1018,7 +997,7 @@
   <Property name="MissileLockSpeedUp" value="2" />
   <Property name="MissileLockTime" value="3" />
   <Property name="AutoPilotAlignStrength" value="3" />
-  <Property name="Unknown0xD78" value="1.2" />
+  <Property name="AutoPilotSmallShipAlignStrength" value="1.2" />
   <Property name="FreighterApproachDistanceMin" value="50" />
   <Property name="FreighterApproachDistanceMax" value="300" />
   <Property name="FreighterApproachSpeedDamper" value="0.5" />
@@ -1187,11 +1166,10 @@
   <Property name="DroneWarpTime" value="1.2" />
   <Property name="DroneWarpMinForce" value="100" />
   <Property name="DroneWarpMaxForce" value="1000000" />
-  <Property name="CockpitScale" value="Vector4f.xml">
+  <Property name="CockpitScale" value="Vector3f.xml">
     <Property name="x" value="1" />
     <Property name="y" value="1" />
     <Property name="z" value="1" />
-    <Property name="t" value="0" />
   </Property>
   <Property name="ShakePowerScaler" value="0.7" />
   <Property name="ShakeSpeed" value="250" />

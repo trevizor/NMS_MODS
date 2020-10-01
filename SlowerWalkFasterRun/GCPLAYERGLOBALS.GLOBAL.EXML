@@ -307,7 +307,7 @@
     <Property name="y" value="0.15" />
     <Property name="z" value="0.2" />
   </Property>
-  <Property name="GroundWalkForce" value="50" />
+  <Property name="GroundWalkForceMultiplier" value="50" />
   <Property name="GroundWalkBrake" value="6" />
   <Property name="GroundWalkBrakeWhileMoving" value="6" />
   <Property name="GroundWalkSpeed" value="4" />
@@ -444,51 +444,11 @@
     <Property name="B" value="0.537" />
     <Property name="A" value="1" />
   </Property>
-  <Property name="DebugExperience" value="False" />
   <Property name="DefaultShipFilename" value="MODELS/COMMON/SPACECRAFT/FIGHTERS/FIGHTER_PROC.SCENE.MBIN" />
   <Property name="DefaultShipSeed" value="GcSeed.xml">
     <Property name="Seed" value="-6537067675307744199" />
     <Property name="UseSeedValue" value="True" />
   </Property>
-  <Property name="DebugExperienceRender" value="False" />
-  <Property name="DebugDroneScanPlayer" value="False" />
-  <Property name="DebugDroneSpawn" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="DebugDroneTarget" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="DebugNumDrones" value="2" />
-  <Property name="DebugWalkerSpawn" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="1" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="DebugWalkerTarget" value="Vector3f.xml">
-    <Property name="x" value="0" />
-    <Property name="y" value="0" />
-    <Property name="z" value="0" />
-  </Property>
-  <Property name="DebugFlybyTarget" value="Vector3f.xml">
-    <Property name="x" value="62000.39" />
-    <Property name="y" value="-28276.99" />
-    <Property name="z" value="73562.53" />
-  </Property>
-  <Property name="DebugFlybyDir" value="Vector3f.xml">
-    <Property name="x" value="0.293965" />
-    <Property name="y" value="-0.899766" />
-    <Property name="z" value="0.3225" />
-  </Property>
-  <Property name="DebugFlybyRange" value="300" />
-  <Property name="DebugFlybySeed" value="GcSeed.xml">
-    <Property name="Seed" value="0" />
-    <Property name="UseSeedValue" value="False" />
-  </Property>
-  <Property name="DebugExperienceCamShake" value="" />
   <Property name="ArmourHighlightScanEffect" value="GcScanEffectData.xml">
     <Property name="Id" value="" />
     <Property name="ScanEffectType" value="Creature" />
@@ -679,6 +639,7 @@
     <Property name="A" value="1" />
   </Property>
   <Property name="FreeJetpackRange" value="4" />
+  <Property name="FreeJetpackRangePrime" value="6" />
   <Property name="FreeJetpackRangeNonTerrain" value="1.1" />
   <Property name="JetpackDrainHorizontalFactor" value="2.6" />
   <Property name="MinTimeAfterMeleeBeforeBoost" value="0.05" />
@@ -743,7 +704,6 @@
   <Property name="SpaceJetpackMaxSpeed" value="10" />
   <Property name="SpaceJetpackDrainRate" value="0.3" />
   <Property name="EnableHeadMovements" value="True" />
-  <Property name="ClampPitch" value="False" />
   <Property name="DamageRepairFactor" value="0.5" />
   <Property name="DamageRepairFactorHardMode" value="0.5" />
   <Property name="AbandonedFreighterStaminaRecoveryMod" value="2" />
@@ -802,6 +762,7 @@
   <Property name="PermanantFire" value="False" />
   <Property name="PermanantAltFire" value="False" />
   <Property name="LuckyWithTech" value="False" />
+  <Property name="ChanceHighGradeIllegal" value="10" />
   <Property name="BulletCostReducer" value="2" />
   <Property name="BulletClipMultiplier" value="2" />
   <Property name="LootForceMultiplier" value="20" />
@@ -885,7 +846,7 @@
   <Property name="MeleeDistance" value="2.8" />
   <Property name="MeleeDistance3P" value="1.8" />
   <Property name="MeleeRadius" value="0.75" />
-  <Property name="MeleeHitTimeDelay" value="0.2" />
+  <Property name="MeleeHitTime" value="0.2" />
   <Property name="MeleeSpeedBoost" value="1" />
   <Property name="MeleeSpeedDamageBoost" value="1.2" />
   <Property name="MeleeSpeedBoostRangeMultiplier" value="1.2" />
@@ -1520,7 +1481,6 @@
   <Property name="AnimWalkBlendPoint" value="0.05" />
   <Property name="AnimRunBlendPoint" value="0.1" />
   <Property name="MaxSlopeAngle" value="89" />
-  
   <Property name="SlopeSlidingSpeed" value="-12" />
   <Property name="SlopeSlideBrake" value="6" />
   <Property name="MinSlideTime" value="0.1" />
@@ -1530,6 +1490,8 @@
   <Property name="MaxSpidermanSlopeAngle" value="90" />
   <Property name="MaxClingableSlopeAngle" value="81" />
   <Property name="MinimumPushOffForceToSlide" value="0.85" />
+  <Property name="FreeJetpackSlopeAngle" value="65" />
+  <Property name="FreeJetpackSlopeAnglePrime" value="45" />
   <Property name="FullClipReloadSpeedMultiplier" value="2" />
   <Property name="ReloadTapButtonSpeedIncrease" value="1" />
   <Property name="ClingBrakeMultiplier" value="1" />

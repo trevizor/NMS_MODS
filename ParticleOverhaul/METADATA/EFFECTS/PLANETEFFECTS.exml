@@ -1571,7 +1571,7 @@
       <Property name="CamShake" value="True" />
       <Property name="CamShakeSpace" value="False" />
       <Property name="AllowTriggerActionOnDebris" value="False" />
-      <Property name="MaxSpawnDistance" value="500" />
+      <Property name="MaxSpawnDistance" value="0" />
     </Property>
     <Property value="GcExplosionData.xml">
       <Property name="Id" value="FIENDSPLAT" />
@@ -1880,7 +1880,7 @@
       <Property name="CamShake" value="True" />
       <Property name="CamShakeSpace" value="False" />
       <Property name="AllowTriggerActionOnDebris" value="False" />
-      <Property name="MaxSpawnDistance" value="500" />
+      <Property name="MaxSpawnDistance" value="0" />
     </Property>
     <Property value="GcExplosionData.xml">
       <Property name="Id" value="FIREWORKEXP02" />
@@ -1898,7 +1898,7 @@
       <Property name="CamShake" value="True" />
       <Property name="CamShakeSpace" value="False" />
       <Property name="AllowTriggerActionOnDebris" value="False" />
-      <Property name="MaxSpawnDistance" value="500" />
+      <Property name="MaxSpawnDistance" value="0" />
     </Property>
     <Property value="GcExplosionData.xml">
       <Property name="Id" value="FIREWORKEXP03" />
@@ -1916,7 +1916,7 @@
       <Property name="CamShake" value="True" />
       <Property name="CamShakeSpace" value="False" />
       <Property name="AllowTriggerActionOnDebris" value="False" />
-      <Property name="MaxSpawnDistance" value="500" />
+      <Property name="MaxSpawnDistance" value="0" />
     </Property>
     <Property value="GcExplosionData.xml">
       <Property name="Id" value="STORMCRYSTAL" />
@@ -2743,7 +2743,7 @@
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
       <Property name="Debris" />
-      <Property name="Life" value="0" />
+      <Property name="Life" value="5" />
       <Property name="Scale" value="1" />
       <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="50" />
@@ -2761,7 +2761,7 @@
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
       <Property name="Debris" />
-      <Property name="Life" value="0" />
+      <Property name="Life" value="5" />
       <Property name="Scale" value="1" />
       <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="50" />
@@ -2778,14 +2778,29 @@
       <Property name="AkEvent" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="3628527645" />
       </Property>
-      <Property name="Debris" />
-      <Property name="Life" value="4.5" />
+      <Property name="Debris">
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/FIENDEGGPARTS/FIENDEGGREWARD.SCENE.MBIN" />
+          </Property>
+          <Property name="Number" value="1" />
+          <Property name="Radius" value="0.2" />
+          <Property name="Scale" value="4" />
+          <Property name="Speed" value="2" />
+          <Property name="AngularSpeed" value="1" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+      </Property>
+      <Property name="Life" value="60" />
       <Property name="Scale" value="2" />
       <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="50" />
       <Property name="CamShake" value="False" />
       <Property name="CamShakeSpace" value="False" />
-      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="True" />
       <Property name="MaxSpawnDistance" value="0" />
     </Property>
     <Property value="GcExplosionData.xml">
