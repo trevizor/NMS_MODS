@@ -829,7 +829,7 @@
   <Property name="FishFiendBigBoostStrength" value="4" />
   <Property name="FishFiendBigBoostTime" value="1" />
   <Property name="FishFiendBigScale" value="3" />
-  <Property name="RoutineSpeed" value="1" />
+  <Property name="RoutineSpeed" value="0.5" />
   <Property name="RoutineOffset" value="4242" />
   <Property name="RagdollTau" value="0.6" />
   <Property name="RagdollDamping" value="0.9" />
@@ -840,9 +840,9 @@
   <Property name="MaxRagdollsBeforeDespawnOffscreen" value="12" />
   <Property name="MaxRagdollsBeforeDespawnOnscreen" value="18" />
   <Property name="RidingTurnRadiusMultiplier" value="1" />
-  <Property name="TurnRadiusMultiplier" value="0.5" />
+  <Property name="TurnRadiusMultiplier" value="4" />
   <Property name="PredatorTurnRadiusMultiplier" value="1" />
-  <Property name="MaxTurnRadius" value="1" />
+  <Property name="MaxTurnRadius" value="4" />
   <Property name="TurnSlowAreaCos" value="0.35" />
   <Property name="BadTurnPercent" value="0.1" />
   <Property name="BadTurnWeight" value="0.1" />
@@ -867,8 +867,8 @@
   <Property name="FreighterJellySwimSpeed" value="0.6" />
   <Property name="DefaultSwimSpeed" value="0.5" />
   <Property name="FastSwimSpeed" value="2.5" />
-  <Property name="DefaultWalkMoveSpeed" value="0.75" />
-  <Property name="DefaultTrotMoveSpeed" value="2.5" />
+  <Property name="DefaultWalkMoveSpeed" value="0.5" />
+  <Property name="DefaultTrotMoveSpeed" value="2" />
   <Property name="DefaultRunMoveSpeed" value="5" />
   <Property name="PredatorWalkMoveSpeed" value="1" />
   <Property name="PredatorTrotMoveSpeed" value="3" />
@@ -957,9 +957,14 @@
   <Property name="DrawRoutineFollowDebug" value="False" />
   <Property name="DrawRoutineInfo" value="False" />
   <Property name="AdultCorrelationValue" value="0.7" />
-  <Property name="GrassPushRadius" value="3" />
-  <Property name="GrassPushStrength" value="1" />
-  <Property name="GrassPushMaxSize" value="1.25" />
+  <Property name="GrassHeightForMaxPush" value="0.6" />
+  <Property name="GrassHeightForMinPush" value="2" />
+  <Property name="GrassPushMaxStrength" value="4" />
+  <Property name="GrassPushMinStrength" value="1.2" />
+  <Property name="GrassPushMaxLimit" value="0.4" />
+  <Property name="GrassPushMinLimit" value="0.2" />
+  <Property name="GrassPushRadius" value="5.5" />
+  <Property name="GrassPushMaxSize" value="2" />
   <Property name="DrawGrassPushRadius" value="False" />
   <Property name="CreatureIndoorSpeedMultiplier" value="0.7" />
   <Property name="CreatureSpeedMultiplier" value="1.2" />

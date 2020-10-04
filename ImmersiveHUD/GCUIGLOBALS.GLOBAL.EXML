@@ -44,11 +44,22 @@
   <Property name="InWorldInteractLabelNearRange" value="2" />
   <Property name="InWorldInteractLabelFarDistance" value="10" />
   <Property name="InWorldInteractLabelFarRange" value="20" />
-  <Property name="BinocularScreenOffset" value="2" />
-  <Property name="BinocularScreenScale" value="2" />
-  <Property name="BinocularMarkerSideAngle" value="0" />
-  <Property name="BinocularMarkerUpAngle" value="-8" />
-  <Property name="BinocularScanScreen" value="False" />
+  <Property name="BinocularEdgeFade" value="Vector2f.xml">  
+    <Property name="x" value="0.9" /> 
+    <Property name="y" value="0.8" /> 
+  </Property> 
+  <Property name="BinocularScreenOffset" value="2" /> 
+  <Property name="BinocularScreenScale" value="2" />  
+  <Property name="BinocularMarkerSideAngle" value="0" />  
+  <Property name="BinocularMarkerUpAngle" value="-8" /> 
+  <Property name="BinocularScanScreen" value="False" /> 
+  <Property name="BinocularsNearIconOpacity" value="1" /> 
+  <Property name="BinocularsNearIconDist" value="50" /> 
+  <Property name="BinocularsNearIconFadeDist" value="150" />  
+  <Property name="BinocularsMidIconOpacity" value="0.65" /> 
+  <Property name="BinocularsFarIconOpacity" value="0.2" />  
+  <Property name="BinocularsFarIconDist" value="1000" />  
+  <Property name="BinocularsFarIconFadeDist" value="500" />
   <Property name="AlignmentRequiredToDisableFrostedGlass" value="15" />
   <Property name="BinocularPanelLinePointOffset" value="Vector3f.xml">
     <Property name="x" value="-1.4" />
