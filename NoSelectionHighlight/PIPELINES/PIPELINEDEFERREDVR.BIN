@@ -34,6 +34,7 @@
     <RenderTarget id="VOLUME"      depthBuf="false" numColBufs="2"  format0="RGBA16F" format1="RED16F" scale="0.5" maxSamples="0" pointSampleColBuf0="true" pointSampleColBuf1="true"   numUniformBuffers="3" numSlices="2" />
     <RenderTarget id="BLUR1"       depthBuf="false"  numColBufs="1"  format="RGBA16F" scale="0.5" maxSamples="0" pointSampleColBuf0="true"  esramPageColBuf0="215" numUniformBuffers="3" numSlices="2" />
 
+    <RenderTarget id="DEPTHUI"       depthBuf="true" numColBufs="0"  format="RGBA8" scale="1.0" maxSamples="0" stencilBuf="true"   esramPageDepthBuf="0" numUniformBuffers="3" numSlices="2" />
     <RenderTarget id="DEPTH"       depthBuf="true"   depthBufUsesBB="true" numColBufs="0"  format="RGBA8" scale="1.0" maxSamples="0" stencilBuf="true"   esramPageDepthBuf="0" crossPipeShareId="DEPTH_SHARED" numUniformBuffers="3" numSlices="2" />
     <RenderTarget id="DEPTH_DOWN"  depthBuf="false"  numColBufs="1"  format="RED32F"   scale="0.5" maxSamples="0" pointSampleColBuf0="true"  allowDcc="false"   esramPageColBuf0="488" crossPipeShareId="DEPTHD_SHARED" numUniformBuffers="3" numSlices="2"  />
     <RenderTarget id="DEPTH_PART"  depthBuf="false"  numColBufs="1"  format="RED32F"   scale="0.5" maxSamples="0" pointSampleColBuf0="true"  numUniformBuffers="3" numSlices="2"  />
@@ -48,14 +49,6 @@
     <RenderTarget id="WATER"          depthBuf="false" numColBufs="1" format="RGBA16F" bilinear="true" scale="0.5"   esramPageColBuf0="215" shareTarget0="PARTICLES" numUniformBuffers="3" numSlices="2" />
     <RenderTarget id="PARTICLES"      depthBuf="false" numColBufs="1" format="RGBA16F" bilinear="true" scale="0.5"   esramPageColBuf0="124" numUniformBuffers="3" numSlices="2" />
     <RenderTarget id="PARTICLES_DEPTH" depthBuf="true" numColBufs="0" format="RGBA8" scale="0.5" maxSamples="0" pointSampleColBuf0="true"   numUniformBuffers="3" numSlices="2" />
-    
-    <!--
-    <RenderTarget id="BLOOM_BLURBUF1" depthBuf="false" numColBufs="1" format="R11FG11FB10F" bilinear="true" scale="0.25"  allowDcc="false" numUniformBuffers="3" numSlices="2" />
-    <RenderTarget id="BLOOM_BLURBUF2" depthBuf="false" numColBufs="1" format="R11FG11FB10F" bilinear="true" scale="0.25"  allowDcc="false" esramPageColBuf0="488" numUniformBuffers="3" numSlices="2" />
-    <RenderTarget id="BLOOM_BLURBUF2DG" depthBuf="false" numColBufs="1" format="R11FG11FB10F" bilinear="true" scale="0.25" allowDcc="false" esramPageColBuf0="488" numUniformBuffers="3" numSlices="2" />
-    <RenderTarget id="BLOOM_BLURBUF3" depthBuf="false" numColBufs="1" format="R11FG11FB10F" bilinear="true" scale="0.25"  allowDcc="false" numUniformBuffers="3" numSlices="2" />
-    <RenderTarget id="BLOOM_BLURBUF4" depthBuf="false" numColBufs="1" format="R11FG11FB10F" bilinear="true" scale="0.25"  allowDcc="false" esramPageColBuf0="500" numUniformBuffers="3" numSlices="2" />
-    -->
     
     <RenderTarget id="BLOOM_BLURBUF_2A"   depthBuf="false" numColBufs="1" format="R11FG11FB10F" bilinear="true" scale="0.5"       allowDcc="false" numUniformBuffers="3" numSlices="2"/>
     <RenderTarget id="BLOOM_BLURBUF_2B"   depthBuf="false" numColBufs="1" format="R11FG11FB10F" bilinear="true" scale="0.5"       allowDcc="false" numUniformBuffers="3" numSlices="2"/>
@@ -103,7 +96,7 @@
       <ColourMask channels="RGBA"/>
       <!-- Clear targets, colbuf1 is cleared separately to max depth -->
       <ClearTarget colBuf0="false"  colBuf1="false" colBuf2="false"  colBuf3="false" colBuf4="false" depthBuf="true"   stencilBuf="true" />
-      <DiscardTargetContents colBuf0="true"  colBuf1="true" colBuf2="true"  colBuf3="true" colBuf4="true" />
+      <DiscardTargetContents colBuf0="false"  colBuf1="false" colBuf2="false"  colBuf3="false" colBuf4="false" />
       <SetContext zwrite="true" colourWrite="false" cullMode="none" blendMode="replace" depthTest="always" stencilMode="maskWrite" stencilRef="128" />
       <ColourMask channels="RGBA"/>
       <DrawHiddenAreaMesh />
@@ -209,7 +202,7 @@
 
     <Stage id="MOTIONRESOLVE">
       <BeginTarget target="MOTIONRESOLVE" depthTarget="DEPTH" readOnlyDepth="true"  />
-      <DiscardTargetContents colBuf0="true" />
+      <!--<DiscardTargetContents colBuf0="true" />   -->
       <ColourMask channels="RGBA"/>
 
       <BindBuffer sampler="gBufferMap"  sourceRT="GBUFFER" bufIndex="1" />
@@ -299,6 +292,7 @@
 
       <BeginTarget target="GTAO_FRAME_1" />
         <ColourMask channels="R" />
+        <BindBuffer sampler="gBufferMap"  sourceRT="GBUFFER" bufIndex="2" />               
         <BindBuffer sampler="gBuffer1Map" sourceRT="GTAO_FRAME_0" bufIndex="0" />
         <BindBuffer sampler="gBuffer2Map" sourceRT="DEPTH_LINEAR" bufIndex="0"  />
         <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="replace" stencilMode="disabled" depthTest="always" />
@@ -308,7 +302,8 @@
 
       <BeginTarget target="GTAO_FRAME_0" />
         <ColourMask channels="R" />
-        <BindBuffer sampler="gBuffer1Map" sourceRT="GTAO_FRAME_1" bufIndex="0" />
+       <BindBuffer sampler="gBufferMap"  sourceRT="GBUFFER" bufIndex="2" />
+       <BindBuffer sampler="gBuffer1Map" sourceRT="GTAO_FRAME_1" bufIndex="0" />
         <BindBuffer sampler="gBuffer2Map" sourceRT="DEPTH_LINEAR" bufIndex="0"  />
         <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="replace" stencilMode="disabled" depthTest="always" />
         <DrawQuad material="materials/PostProcess.material.mbin" context="GTAO_SPATIAL_V_DENOISE" compute="async" wavesPerSimd="5" />
@@ -317,6 +312,7 @@
            
       <BeginTarget target="GTAO_HISTORY_0" />
         <ColourMask channels="RG" />
+        <BindBuffer sampler="gBufferMap"  sourceRT="GBUFFER" bufIndex="2" /> 
         <BindBuffer sampler="gBuffer1Map" sourceRT="GTAO_HISTORY_1" bufIndex="0" />
         <BindBuffer sampler="gBuffer2Map" sourceRT="DEPTH" bufIndex="32" />
         <BindBuffer sampler="gBuffer3Map" sourceRT="GTAO_FRAME_0" bufIndex="0" />
@@ -588,6 +584,9 @@
       <EndTarget flushCB="false" flushDB="false" />
     </Stage>
 
+    <Stage id="SpotlightsTiled" enabled="false">
+    </Stage>
+
 
     <Stage id="Spotlights">
       <BeginTarget target="HDRBUF_0" depthTarget="DEPTH" />
@@ -612,6 +611,9 @@
       <SetContext stencilMode="disabled" />
       <UnbindBuffers />
       <EndTarget flushCB="false" flushDB="false" />
+    </Stage>
+
+    <Stage id="TileVisualise" enabled="false">
     </Stage>
 
     <!--<Stage id="WaterFromAbove" >
@@ -672,7 +674,9 @@
 
     </Stage>
 
-     
+    <Stage id="Shadow_DS" enabled="false">
+    </Stage>
+
     <Stage id="Volumetrics">
 
       <BeginTarget target="VOLUME" />
@@ -687,7 +691,7 @@
       <DoForwardLightLoop type="Mesh" class="AtmosphereNear" context="SCATTER_MASK" order="FRONT_TO_BACK" singlePassStereo="false" />
       <SetContext cullMode="back"/>
       <UnbindBuffers />
-
+      
       <ColourMask channels="RGBA"/>
 
       <BindBuffer sampler="gBufferMap"   sourceRT="DEPTH_DOWN" bufIndex="0" />
@@ -896,7 +900,7 @@
       <!--<ClearTarget colBuf0="false" depthBuf="false" stencilBuf="true" />-->
       <ColourMask channels="RGB" colBuf1="true" />
       <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="blend" depthTest="lessEqual" stencilMode="maskWrite"  stencilRef="36"  stencilMask="36"/>
-      <!--<DoForwardLightLoop type="Mesh"     class="Highlight"            context="LIT_FORWARD_WITH_MASK" order="BACK_TO_FRONT" />-->
+      <!-- <DoForwardLightLoop type="Mesh"     class="Highlight"            context="LIT_FORWARD_WITH_MASK" order="BACK_TO_FRONT" /> -->
       <SetContext stencilMode="disabled" />
 
       <SetContext zwrite="false" colourWrite="true" cullMode="none" blendMode="blend" depthTest="lessEqual" stencilMode="maskWrite"  stencilRef="36"  stencilMask="36"/>
@@ -1042,26 +1046,6 @@
 
     </Stage>
 
-    <Stage id="MOTIONRESOLVE">
-      <BeginTarget target="MOTIONRESOLVE" depthTarget="DEPTH" readOnlyDepth="true"  />
-      <DiscardTargetContents colBuf0="true" />
-      <ColourMask channels="RGBA"/>
-
-      <BindBuffer sampler="gBufferMap"  sourceRT="GBUFFER" bufIndex="1" />
-      <BindBuffer sampler="gBuffer1Map" sourceRT="DEPTH_LINEAR" bufIndex="0" />
-      <BindBuffer sampler="gBuffer3Map" sourceRT="GBUFFER" bufIndex="3" />
-      <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="replace" depthTest="always" alphaToCoverage="false" stencilMode="maskread" stencilMask="140" stencilRef="0"/>
-      <DrawQuadMT material="materials/PostProcess.material.mbin" context="MOTIONRESOLVE" />
-
-      <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="replace" depthTest="always" alphaToCoverage="false" stencilMode="maskread" stencilMask="136" stencilRef="8"/>
-      <DrawQuadMT material="materials/PostProcess.material.mbin" context="MOTIONRES_TERR" />
-
-      <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="replace" depthTest="always" alphaToCoverage="false" stencilMode="maskread" stencilMask="132" stencilRef="4"/>
-      <DrawQuadMT material="materials/PostProcess.material.mbin" context="MOTIONRES_CLIP" />
-
-      <EndTarget flushCB="true" flushDB="false" />   
-    </Stage> 
-
     <Stage id="MOTIONDILATE">
       <BeginTarget target="MOTION_MAXBUF_H" />
       <DiscardTargetContents colBuf0="true" />
@@ -1088,7 +1072,7 @@
 
    <Stage id="TAA_APPLY" enabled="false">
       <BeginTarget target="TAA_FRONT"  depthTarget="DEPTH" readOnlyDepth="true" />
-      <DiscardTargetContents colBuf0="true" colBuf1="true" colBuf2="true" />     
+      <!-- <DiscardTargetContents colBuf0="true" colBuf1="true" colBuf2="true" />     -->
       <ColourMask channels="RGBA"/>
       
       <BindBuffer sampler="gBufferMap"  sourceRT="HDRBUF_0" bufIndex="0" />
@@ -1111,7 +1095,7 @@
 
    <Stage id="TAA_APPLY_CLIP" enabled="false">
       <BeginTarget target="TAA_FRONT" depthTarget="DEPTH" readOnlyDepth="true" />
-      <DiscardTargetContents colBuf0="true" colBuf1="true" colBuf2="true" />     
+     <!--  <DiscardTargetContents colBuf0="true" colBuf1="true" colBuf2="true" />     -->
       <ColourMask channels="RGBA"/>
       <BindBuffer sampler="gBufferMap"  sourceRT="HDRBUF_0" bufIndex="0" />
       <BindBuffer sampler="gBuffer1Map" sourceRT="TAA_BACK" bufIndex="1" />
@@ -1230,102 +1214,6 @@
     
     <Stage id="DepthOfFieldBlur">    
     </Stage>
-
-    <!--
-    <Stage id="Bloom" enabled="false">
-                       
-      <SetContext zwrite="false" colourWrite="true" cullMode="none" blendMode="replace" depthTest="always" alphaToCoverage="false"/>
-      <ColourMask channels="RGB"/>
-
-      <BeginTarget target="BLOOM_BLURBUF1" />
-      <BindBuffer sampler="gBufferMap"  sourceRT="HDRBUF_1" bufIndex="0" />
-      <BindBuffer sampler="gBuffer1Map" sourceRT="GBUFFER"  bufIndex="0"  />
-      <DrawQuadMT material="materials/PostProcess.material.mbin" context="BRIGHTPASS" />
-      <UnbindBuffers />
-      <EndTarget flushCB="true" flushDB="false" />   
-           
-      <BeginTarget target="BLOOM_BLURBUF2" />
-      <BindBuffer sampler="gBufferMap" sourceRT="BLOOM_BLURBUF1" bufIndex="0" />
-      <SetUniform material="materials/PostProcess.material.mbin" uniform="gBlurParamsVec4" a="0.0" />
-      <DrawQuad material="materials/PostProcess.material.mbin" context="BLUR_KAWASE" />
-      <UnbindBuffers />
-      <EndTarget flushCB="true" flushDB="false" />   
-      
-      <BeginTarget target="BLOOM_BLURBUF1" />
-      <BindBuffer sampler="gBufferMap" sourceRT="BLOOM_BLURBUF2" bufIndex="0" />
-      <SetUniform material="materials/PostProcess.material.mbin" uniform="gBlurParamsVec4" a="1.0" />
-      <DrawQuad material="materials/PostProcess.material.mbin" context="BLUR_KAWASE" />
-      <UnbindBuffers />
-      <EndTarget flushCB="true" flushDB="false" />   
-      
-      <BeginTarget target="BLOOM_BLURBUF2" />
-      <BindBuffer sampler="gBufferMap" sourceRT="BLOOM_BLURBUF1" bufIndex="0" />
-      <SetUniform material="materials/PostProcess.material.mbin" uniform="gBlurParamsVec4" a="2.0" />
-      <DrawQuad material="materials/PostProcess.material.mbin" context="BLUR_KAWASE" />
-      <UnbindBuffers />
-      <EndTarget flushCB="true" flushDB="false" />   
-
-      <BeginTarget target="BLOOM_BLURBUF1" />
-      <BindBuffer sampler="gBufferMap" sourceRT="BLOOM_BLURBUF2" bufIndex="0" />
-      <SetUniform material="materials/PostProcess.material.mbin" uniform="gBlurParamsVec4" a="3.0" />
-      <DrawQuad material="materials/PostProcess.material.mbin" context="BLUR_KAWASE" />
-      <UnbindBuffers />
-      <EndTarget flushCB="true" flushDB="false" />   
-      
-      <SetContext zwrite="false" colourWrite="true" cullMode="none" blendMode="add" depthTest="always" alphaToCoverage="false"/>
-
-      <BeginTarget target="BLOOM_BLURBUF2" />
-      <BindBuffer sampler="gBufferMap" sourceRT="BLOOM_BLURBUF1" bufIndex="0" />
-      <SetUniform material="materials/PostProcess.material.mbin" uniform="gBlurParamsVec4" a="4.0" />
-      <DrawQuadMT material="materials/PostProcess.material.mbin" context="BLUR_KAWASE_ADD" />
-      <UnbindBuffers />
-      <EndTarget flushCB="true" flushDB="false" />   
-
-      <SetContext zwrite="false" colourWrite="true" cullMode="none" blendMode="replace" depthTest="always" alphaToCoverage="false"/>
-
-      <BeginTarget target="BLOOM_BLURBUF3" />
-      <ClearTarget depthBuf="false" colBuf0="true" excludeX360="true" col_R="0.0" col_G="0.0" col_B="0.0" />
-      <BindBuffer sampler="gBufferMap" sourceRT="BLOOM_BLURBUF2" bufIndex="0" />
-      <SetUniform material="materials/PostProcess.material.mbin" uniform="gBlurParamsVec4" a="5.0" />
-      <DrawQuadMT material="materials/PostProcess.material.mbin" context="BLUR_KAWASE" />
-      <UnbindBuffers />
-      <EndTarget flushCB="true" flushDB="false" />   
-      
-      <BeginTarget target="BLOOM_BLURBUF2" />
-      <BindBuffer sampler="gBufferMap" sourceRT="BLOOM_BLURBUF3" bufIndex="0" />
-      <SetUniform material="materials/PostProcess.material.mbin" uniform="gBlurParamsVec4" a="6.0" />
-      <DrawQuadMT material="materials/PostProcess.material.mbin" context="BLUR_KAWASE" />
-      <UnbindBuffers />
-      <EndTarget flushCB="true" flushDB="false" />   
-
-      <BeginTarget target="BLOOM_BLURBUF3" />
-      <BindBuffer sampler="gBufferMap" sourceRT="BLOOM_BLURBUF2" bufIndex="0" />
-      <SetUniform material="materials/PostProcess.material.mbin" uniform="gBlurParamsVec4" a="7.0" />
-      <DrawQuad material="materials/PostProcess.material.mbin" context="BLUR_KAWASE" />
-      <UnbindBuffers />
-      <EndTarget flushCB="true" flushDB="false" />   
-
-      <SetContext zwrite="false" colourWrite="true" cullMode="none" blendMode="add" depthTest="always" alphaToCoverage="false"/>
-
-      <BeginTarget target="BLOOM_BLURBUF4" />
-      <ClearTarget depthBuf="false" colBuf0="true" excludeX360="true" col_R="0.0" col_G="0.0" col_B="0.0" />
-      <BindBuffer sampler="gBufferMap" sourceRT="BLOOM_BLURBUF3" bufIndex="0" />
-      <SetUniform material="materials/PostProcess.material.mbin" uniform="gBlurParamsVec4" a="1.0" b="0.0" c="5.0" />
-      <DrawQuadMT material="materials/PostProcess.material.mbin" context="GUASS_9_ADD" />
-      <UnbindBuffers />
-      <EndTarget flushCB="true" flushDB="false" />   
-
-      <SetContext zwrite="false" colourWrite="true" cullMode="none" blendMode="blend" depthTest="always" alphaToCoverage="false"/>
-
-      <BeginTarget target="BLOOM_BLURBUF3" />
-      <BindBuffer sampler="gBufferMap" sourceRT="BLOOM_BLURBUF4" bufIndex="0" />
-      <SetUniform material="materials/PostProcess.material.mbin" uniform="gBlurParamsVec4" a="0.0" b="1.0" c="5.0" />
-      <DrawQuad material="materials/PostProcess.material.mbin" context="GUASS_9" />
-      <UnbindBuffers />
-      <EndTarget flushCB="true" flushDB="false" />   
-
-    </Stage>
-    -->
 
     <Stage id="NewBloomBright" enabled="true">
       <BeginTarget target="BLOOM_BLURBUF_2A" />
@@ -1546,24 +1434,24 @@
     </Stage>
     
     <Stage id="DepthClear" enabled="true" >
-      <BeginTarget target="" depthTarget="DEPTH" />
+      <BeginTarget target="" depthTarget="DEPTHUI" />
       <ColourMask channels="RGBA" />
       <ClearTarget colBuf0="false"  colBuf1="false" colBuf2="false"  colBuf3="false" colBuf4="false" depthBuf="true" stencilBuf="false" />
       <EndTarget flushCB="false" flushDB="false" />
     </Stage>
     
     <Stage id="StencilClear" enabled="false" >
-      <BeginTarget target="" depthTarget="DEPTH" onlyStencil="true"/>
+      <BeginTarget target="" depthTarget="DEPTHUI" onlyStencil="true"/>
       <ColourMask channels="RGBA" />
       <ClearTarget colBuf0="false"  colBuf1="false" colBuf2="false"  colBuf3="false" colBuf4="false" depthBuf="false" stencilBuf="true" />
       <EndTarget flushCB="false" flushDB="false" />
     </Stage>
     
     <Stage id="FlipMask" enabled="false" >
-      <BeginTarget target="" depthTarget="DEPTH" />
+      <BeginTarget target="" depthTarget="DEPTHUI" />
       <ColourMask channels="RGBA" />
       <SetContext zwrite="true" colourWrite="false" cullMode="none" blendMode="replace" depthTest="always" stencilMode="maskWrite" stencilRef="128" />
-      <DrawHiddenAreaMesh flipped="true"/>
+      <DrawHiddenAreaMesh flipped="false"/>
       <EndTarget flushCB="false" flushDB="false" />
     </Stage>
 
@@ -1607,7 +1495,7 @@
     </Stage>
 
     <Stage id="BeforeUI"  enabled="true">
-      <BeginTarget target="" depthTarget="DEPTH" />
+      <BeginTarget target="" depthTarget="DEPTHUI" />
       <ColourMask channels="RGBA"/>
       
       <SetContext zwrite="true" colourWrite="false" cullMode="back" blendMode="replace" depthTest="less" stencilMode="maskRead"      stencilRef="0"  stencilMask="128" />
@@ -1620,7 +1508,7 @@
     </Stage> 
     
     <Stage id="UI"  enabled="true">
-      <BeginTarget target="" depthTarget="DEPTH" readOnlyDepth="true" />
+      <BeginTarget target="" depthTarget="DEPTHUI" readOnlyDepth="true" />
       <ColourMask channels="RGBA"/>
       <BindBuffer sampler="gBufferMap"  sourceRT="DEPTH_LINEAR" bufIndex="0" />
       <SetContext zwrite="false" colourWrite="true" cullMode="none"   blendMode="invSourceAlpha"   depthTest="lessEqual" alphaToCoverage="false" stencilMode="maskRead"      stencilRef="0"  stencilMask="128" />      

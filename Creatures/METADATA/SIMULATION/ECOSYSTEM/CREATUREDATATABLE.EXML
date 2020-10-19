@@ -2,7 +2,7 @@
 <!--File created using MBINCompiler version (3.3.0)-->
 <Data template="GcCreatureDataTable">
   <Property name="Table">
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- FISH -->
       <Property name="Id" value="FISH" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -15,8 +15,8 @@
       <Property name="CanBeFemale" value="False" />
       <Property name="Tags" />
       <Property name="MoveArea" value="Water" />
-      <Property name="MinScale" value="0.6" />
-      <Property name="MaxScale" value="1.2" />
+      <Property name="MinScale" value="0.2" />
+      <Property name="MaxScale" value="2" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -80,15 +80,15 @@
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
-              <Property name="Coherence" value="0.5" />
-              <Property name="Alignment" value="0.1" />
+              <Property name="Coherence" value="1.00" />
+              <Property name="Alignment" value="0.20" />
               <Property name="SeparateStrength" value="0.5" />
               <Property name="Spacing" value="2" />
               <Property name="Follow" value="1" />
               <Property name="Range" value="30" />
               <Property name="MaxBankingAmount" value="0" />
               <Property name="TurnRequiredForMaxBanking" value="0.3" />
-              <Property name="MaxPitchAmount" value="0.4" />
+              <Property name="MaxPitchAmount" value="0.02" />
               <Property name="UpwardMovementForMaxPitch" value="0.2" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
@@ -120,7 +120,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- FISHFLOCK -->
       <Property name="Id" value="FISHFLOCK" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -133,8 +133,8 @@
       <Property name="CanBeFemale" value="False" />
       <Property name="Tags" />
       <Property name="MoveArea" value="Water" />
-      <Property name="MinScale" value="0.1" />
-      <Property name="MaxScale" value="0.4" />
+      <Property name="MinScale" value="0.05" />
+      <Property name="MaxScale" value="0.5" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -148,21 +148,21 @@
         <Property value="GcCreatureSwarmData.xml">
           <Property name="MinCount" value="1" />
           <Property name="MaxCount" value="1" />
-          <Property name="SwarmMovementSpeed" value="1" />
+          <Property name="SwarmMovementSpeed" value="0.2" />
           <Property name="SwarmMovementRadius" value="1" />
           <Property name="SwarmMovementType" value="None" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
-              <Property name="Coherence" value="0.5" />
-              <Property name="Alignment" value="0.2" />
+              <Property name="Coherence" value="1.00" />
+              <Property name="Alignment" value="0.40" />
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="2" />
               <Property name="Follow" value="0.5" />
-              <Property name="Range" value="30" />
+              <Property name="Range" value="90" />
               <Property name="MaxBankingAmount" value="0.3" />
               <Property name="TurnRequiredForMaxBanking" value="1" />
-              <Property name="MaxPitchAmount" value="0.3" />
+              <Property name="MaxPitchAmount" value="0.01" />
               <Property name="UpwardMovementForMaxPitch" value="1" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
@@ -174,8 +174,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="0.5" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -185,10 +185,10 @@
               <Property name="LandWalkTimeMin" value="2" />
               <Property name="LandWalkTimeMax" value="4" />
               <Property name="MaxSpeed" value="5" />
-              <Property name="AlignTime" value="0.5" />
+              <Property name="AlignTime" value="3" />
               <Property name="BankingTime" value="0.5" />
               <Property name="SpringSmoothTime" value="0.5" />
-              <Property name="ApplyScaleToSpeed" value="False" />
+              <Property name="ApplyScaleToSpeed" value="True" />
             </Property>
           </Property>
         </Property>
@@ -198,8 +198,8 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="0.9" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="AnimSpeed" value="0.4" />
+              <Property name="MinSpeedScale" value="0.1" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="AnimMoveSpeed" value="0" />
@@ -243,17 +243,17 @@
           <Property name="FlockAvoidPredatorsMaxDist" value="40" />
           <Property name="FlockAvoidPredatorsSpeedBoost" value="0.3" />
           <Property name="MoveInFacingStrength" value="0.9" />
-          <Property name="FlockMoveSpeed" value="0.7" />
+          <Property name="FlockMoveSpeed" value="0.1" />
           <Property name="FlockMoveDirectionTime" value="0.1" />
           <Property name="FlockTurnAngle" value="7" />
           <Property name="MaxBank" value="30" />
           <Property name="BankTime" value="0.1" />
-          <Property name="MinFlapSpeed" value="2.5" />
-          <Property name="MaxFlapSpeed" value="6" />
+          <Property name="MinFlapSpeed" value="1" />
+          <Property name="MaxFlapSpeed" value="4" />
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- SWIMCOW -->
       <Property name="Id" value="SWIMCOW" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -267,7 +267,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Water" />
       <Property name="MinScale" value="1.2" />
-      <Property name="MaxScale" value="1.4" />
+      <Property name="MaxScale" value="3" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Rare" />
       </Property>
@@ -340,8 +340,8 @@
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
-              <Property name="Coherence" value="0.2" />
-              <Property name="Alignment" value="0.4" />
+              <Property name="Coherence" value="0.40" />
+              <Property name="Alignment" value="0.80" />
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="15" />
               <Property name="Follow" value="0.7" />
@@ -380,7 +380,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- SWIMRODENT -->
       <Property name="Id" value="SWIMRODENT" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -394,7 +394,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Water" />
       <Property name="MinScale" value="0.8" />
-      <Property name="MaxScale" value="1.2" />
+      <Property name="MaxScale" value="2" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Rare" />
       </Property>
@@ -433,8 +433,8 @@
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
-              <Property name="Coherence" value="0.2" />
-              <Property name="Alignment" value="0.4" />
+              <Property name="Coherence" value="0.40" />
+              <Property name="Alignment" value="0.80" />
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="15" />
               <Property name="Follow" value="1.7" />
@@ -473,7 +473,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- JELLYFISH -->
       <Property name="Id" value="JELLYFISH" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -487,7 +487,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Water" />
       <Property name="MinScale" value="1" />
-      <Property name="MaxScale" value="1" />
+      <Property name="MaxScale" value="2" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Uncommon" />
       </Property>
@@ -517,8 +517,8 @@
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
-              <Property name="Coherence" value="0.5" />
-              <Property name="Alignment" value="0" />
+              <Property name="Coherence" value="1.00" />
+              <Property name="Alignment" value="0.20" />
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="30" />
               <Property name="Follow" value="2.5" />
@@ -557,7 +557,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- CRAB -->
       <Property name="Id" value="CRAB" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -571,7 +571,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.75" />
-      <Property name="MaxScale" value="2" />
+      <Property name="MaxScale" value="4" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -594,7 +594,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- SEASNAKE -->
       <Property name="Id" value="SEASNAKE" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -608,7 +608,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Water" />
       <Property name="MinScale" value="1" />
-      <Property name="MaxScale" value="2" />
+      <Property name="MaxScale" value="6" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Uncommon" />
       </Property>
@@ -672,15 +672,15 @@
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
-              <Property name="Coherence" value="0.5" />
-              <Property name="Alignment" value="0.1" />
+              <Property name="Coherence" value="1.00" />
+              <Property name="Alignment" value="0.20" />
               <Property name="SeparateStrength" value="0.5" />
               <Property name="Spacing" value="2" />
               <Property name="Follow" value="1" />
               <Property name="Range" value="30" />
               <Property name="MaxBankingAmount" value="0" />
               <Property name="TurnRequiredForMaxBanking" value="0.3" />
-              <Property name="MaxPitchAmount" value="0.4" />
+              <Property name="MaxPitchAmount" value="0.2" />
               <Property name="UpwardMovementForMaxPitch" value="0.2" />
               <Property name="FaceMoveDirStrength" value="0.9" />
               <Property name="TiltMoveDirStrength" value="0" />
@@ -712,7 +712,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- SHARK -->
       <Property name="Id" value="SHARK" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -726,7 +726,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Water" />
       <Property name="MinScale" value="2" />
-      <Property name="MaxScale" value="3" />
+      <Property name="MaxScale" value="6" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -799,15 +799,15 @@
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
-              <Property name="Coherence" value="0.5" />
-              <Property name="Alignment" value="0.12" />
+              <Property name="Coherence" value="1.00" />
+              <Property name="Alignment" value="0.24" />
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="12" />
               <Property name="Follow" value="1.5" />
               <Property name="Range" value="30" />
               <Property name="MaxBankingAmount" value="0" />
               <Property name="TurnRequiredForMaxBanking" value="0.3" />
-              <Property name="MaxPitchAmount" value="0.3" />
+              <Property name="MaxPitchAmount" value="0.1" />
               <Property name="UpwardMovementForMaxPitch" value="0.4" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
@@ -839,7 +839,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- BIRD -->
       <Property name="Id" value="BIRD" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -853,7 +853,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="0.8" />
-      <Property name="MaxScale" value="2" />
+      <Property name="MaxScale" value="4" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -926,15 +926,15 @@
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
-              <Property name="Coherence" value="0.1" />
-              <Property name="Alignment" value="0.12" />
+              <Property name="Coherence" value="0.20" />
+              <Property name="Alignment" value="0.24" />
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="10" />
               <Property name="Follow" value="1.5" />
               <Property name="Range" value="1" />
               <Property name="MaxBankingAmount" value="0.3" />
               <Property name="TurnRequiredForMaxBanking" value="0.2" />
-              <Property name="MaxPitchAmount" value="0.6" />
+              <Property name="MaxPitchAmount" value="0.2" />
               <Property name="UpwardMovementForMaxPitch" value="0.6" />
               <Property name="FaceMoveDirStrength" value="0.8" />
               <Property name="TiltMoveDirStrength" value="0" />
@@ -978,7 +978,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- FLYINGSNAKE -->
       <Property name="Id" value="FLYINGSNAKE" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -992,7 +992,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="3.5" />
-      <Property name="MaxScale" value="4" />
+      <Property name="MaxScale" value="8" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Rare" />
       </Property>
@@ -1056,8 +1056,8 @@
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
-              <Property name="Coherence" value="0.1" />
-              <Property name="Alignment" value="0.05" />
+              <Property name="Coherence" value="0.20" />
+              <Property name="Alignment" value="0.10" />
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="40" />
               <Property name="Follow" value="1.5" />
@@ -1108,7 +1108,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- FLYINGLIZARD -->
       <Property name="Id" value="FLYINGLIZARD" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -1122,7 +1122,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="1" />
-      <Property name="MaxScale" value="4.5" />
+      <Property name="MaxScale" value="9" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -1195,15 +1195,15 @@
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
-              <Property name="Coherence" value="0.1" />
-              <Property name="Alignment" value="0.05" />
+              <Property name="Coherence" value="0.20" />
+              <Property name="Alignment" value="0.10" />
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="40" />
               <Property name="Follow" value="1.5" />
               <Property name="Range" value="1" />
               <Property name="MaxBankingAmount" value="0.5" />
               <Property name="TurnRequiredForMaxBanking" value="0.2" />
-              <Property name="MaxPitchAmount" value="0.3" />
+              <Property name="MaxPitchAmount" value="0.1" />
               <Property name="UpwardMovementForMaxPitch" value="0.3" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
@@ -1247,7 +1247,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- BUTTERFLY -->
       <Property name="Id" value="BUTTERFLY" />
       <Property name="OnlySpawnWhenIdIsForced" value="True" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -1261,7 +1261,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="0.25" />
-      <Property name="MaxScale" value="0.4" />
+      <Property name="MaxScale" value="1" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Uncommon" />
       </Property>
@@ -1341,8 +1341,8 @@
                   <Property name="Value" value="_INSECT_ALIEN" />
                 </Property>
               </Property>
-              <Property name="Coherence" value="1.5" />
-              <Property name="Alignment" value="0.2" />
+              <Property name="Coherence" value="3.00" />
+              <Property name="Alignment" value="0.40" />
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="20" />
               <Property name="Follow" value="1" />
@@ -1379,8 +1379,8 @@
             </Property>
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
-              <Property name="Coherence" value="1" />
-              <Property name="Alignment" value="0" />
+              <Property name="Coherence" value="2.00" />
+              <Property name="Alignment" value="0.10" />
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="20" />
               <Property name="Follow" value="1.5" />
@@ -1419,7 +1419,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- SMALLBIRD -->
       <Property name="Id" value="SMALLBIRD" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -1433,7 +1433,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="0.5" />
-      <Property name="MaxScale" value="0.9" />
+      <Property name="MaxScale" value="2" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Uncommon" />
       </Property>
@@ -1453,15 +1453,15 @@
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
-              <Property name="Coherence" value="0.5" />
-              <Property name="Alignment" value="0.2" />
+              <Property name="Coherence" value="1.00" />
+              <Property name="Alignment" value="0.40" />
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="2" />
               <Property name="Follow" value="0.5" />
               <Property name="Range" value="30" />
               <Property name="MaxBankingAmount" value="0.3" />
               <Property name="TurnRequiredForMaxBanking" value="1" />
-              <Property name="MaxPitchAmount" value="0.3" />
+              <Property name="MaxPitchAmount" value="0.1" />
               <Property name="UpwardMovementForMaxPitch" value="1" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
@@ -1554,7 +1554,7 @@
           <Property name="FlockAvoidPredatorsMaxDist" value="20" />
           <Property name="FlockAvoidPredatorsSpeedBoost" value="0.1" />
           <Property name="MoveInFacingStrength" value="0.9" />
-          <Property name="FlockMoveSpeed" value="0.7" />
+          <Property name="FlockMoveSpeed" value="0.3" />
           <Property name="FlockMoveDirectionTime" value="0.1" />
           <Property name="FlockTurnAngle" value="8" />
           <Property name="MaxBank" value="180" />
@@ -1564,7 +1564,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- BUTTERFLOCK -->
       <Property name="Id" value="BUTTERFLOCK" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -1578,7 +1578,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="0.25" />
-      <Property name="MaxScale" value="0.4" />
+      <Property name="MaxScale" value="1" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Uncommon" />
       </Property>
@@ -1598,8 +1598,8 @@
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
-              <Property name="Coherence" value="0.5" />
-              <Property name="Alignment" value="0.2" />
+              <Property name="Coherence" value="1.00" />
+              <Property name="Alignment" value="0.40" />
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="2" />
               <Property name="Follow" value="0.5" />
@@ -1709,7 +1709,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- LARGEBUTTERFLY -->
       <Property name="Id" value="LARGEBUTTERFLY" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -1723,7 +1723,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="2" />
-      <Property name="MaxScale" value="3" />
+      <Property name="MaxScale" value="6" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Rare" />
       </Property>
@@ -1808,8 +1808,8 @@
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
-              <Property name="Coherence" value="3" />
-              <Property name="Alignment" value="0" />
+              <Property name="Coherence" value="6.00" />
+              <Property name="Alignment" value="0.10" />
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="8" />
               <Property name="Follow" value="1.5" />
@@ -1873,7 +1873,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- FLYINGBEETLE -->
       <Property name="Id" value="FLYINGBEETLE" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -1887,7 +1887,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="0.4" />
-      <Property name="MaxScale" value="7" />
+      <Property name="MaxScale" value="14" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Rare" />
       </Property>
@@ -1972,8 +1972,8 @@
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
-              <Property name="Coherence" value="0" />
-              <Property name="Alignment" value="0" />
+              <Property name="Coherence" value="0.00" />
+              <Property name="Alignment" value="0.10" />
               <Property name="SeparateStrength" value="0.1" />
               <Property name="Spacing" value="4" />
               <Property name="Follow" value="1.5" />
@@ -2037,7 +2037,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- ANTELOPE -->
       <Property name="Id" value="ANTELOPE" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -2058,7 +2058,7 @@
       </Property>
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.4" />
-      <Property name="MaxScale" value="3" />
+      <Property name="MaxScale" value="6" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -2226,7 +2226,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- ROBOTANTELOPE -->
       <Property name="Id" value="ROBOTANTELOPE" />
       <Property name="OnlySpawnWhenIdIsForced" value="True" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -2247,7 +2247,7 @@
       </Property>
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.4" />
-      <Property name="MaxScale" value="3" />
+      <Property name="MaxScale" value="6" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -2415,7 +2415,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- TRICERATOPS -->
       <Property name="Id" value="TRICERATOPS" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -2436,7 +2436,7 @@
       </Property>
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.4" />
-      <Property name="MaxScale" value="12" />
+      <Property name="MaxScale" value="24" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Uncommon" />
       </Property>
@@ -2593,7 +2593,7 @@
               <Property name="Partname" value="_HEAD_ALIEN" />
               <Property name="JointName" value="NeckJNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="Back3JNT" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -2623,7 +2623,7 @@
               <Property name="Partname" value="_HEAD_HIPPO" />
               <Property name="JointName" value="NeckJNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="Back3JNT" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -2653,7 +2653,7 @@
               <Property name="Partname" value="_HEAD_RHINO" />
               <Property name="JointName" value="NeckJNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="Back3JNT" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -2683,7 +2683,7 @@
               <Property name="Partname" value="_HEAD_STEG" />
               <Property name="JointName" value="NeckJNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="Back3JNT" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -2713,7 +2713,7 @@
               <Property name="Partname" value="_HEAD_TAPIR" />
               <Property name="JointName" value="NeckJNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -2743,7 +2743,7 @@
               <Property name="Partname" value="_HEAD_TRI" />
               <Property name="JointName" value="NeckJNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="Back3JNT" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -2773,7 +2773,7 @@
               <Property name="Partname" value="_HEAD_TURTLE" />
               <Property name="JointName" value="NeckJNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -2803,7 +2803,7 @@
               <Property name="Partname" value="_ALHEAD_2X" />
               <Property name="JointName" value="" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="True" />
@@ -2833,7 +2833,7 @@
               <Property name="Partname" value="_HEAD_DIPLO" />
               <Property name="JointName" value="Back3JNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -2863,7 +2863,7 @@
               <Property name="Partname" value="_HEAD_DIPLO" />
               <Property name="JointName" value="HeadJNT" />
               <Property name="MinScale" value="8" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="True" />
               <Property name="RelativeOffset" value="False" />
@@ -2893,7 +2893,7 @@
               <Property name="Partname" value="_HDACC_9" />
               <Property name="JointName" value="" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -2923,7 +2923,7 @@
               <Property name="Partname" value="_HAC_1Z" />
               <Property name="JointName" value="HeadJNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -2953,7 +2953,7 @@
               <Property name="Partname" value="_HDACC_1" />
               <Property name="JointName" value="TopHeadJNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -2983,7 +2983,7 @@
               <Property name="Partname" value="_HDACC_3" />
               <Property name="JointName" value="HeadJNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -3013,7 +3013,7 @@
               <Property name="Partname" value="_HDACC_4" />
               <Property name="JointName" value="TopHeadJNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -3043,7 +3043,7 @@
               <Property name="Partname" value="_HDACC_5" />
               <Property name="JointName" value="TopHeadJNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -3073,7 +3073,7 @@
               <Property name="Partname" value="_HDACC_6" />
               <Property name="JointName" value="HeadJNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -3103,7 +3103,7 @@
               <Property name="Partname" value="_HDACC_NULL" />
               <Property name="JointName" value="TopHeadJNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -3133,7 +3133,7 @@
               <Property name="Partname" value="_ADIPACC_5Z" />
               <Property name="JointName" value="HeadJNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -3163,7 +3163,7 @@
               <Property name="Partname" value="_ADIPACC_1" />
               <Property name="JointName" value="HeadJNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="TopHeadJNT" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -3193,7 +3193,7 @@
               <Property name="Partname" value="_ADIPACC_2" />
               <Property name="JointName" value="HeadJNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -3223,7 +3223,7 @@
               <Property name="Partname" value="_ADIPACC_4Z" />
               <Property name="JointName" value="HeadJNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -3253,7 +3253,7 @@
               <Property name="Partname" value="_ADIPACC_6" />
               <Property name="JointName" value="" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="True" />
@@ -3283,7 +3283,7 @@
               <Property name="Partname" value="_ADIPACC_NULLZ" />
               <Property name="JointName" value="" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="True" />
@@ -3313,7 +3313,7 @@
               <Property name="Partname" value="_ADIPACC_XX" />
               <Property name="JointName" value="" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="True" />
@@ -3346,7 +3346,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- RODENT -->
       <Property name="Id" value="RODENT" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -3367,7 +3367,7 @@
       </Property>
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="1.4" />
-      <Property name="MaxScale" value="2.5" />
+      <Property name="MaxScale" value="5" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -3524,7 +3524,7 @@
               <Property name="Partname" value="_BODY_SLOTH" />
               <Property name="JointName" value="sPINE_IK_4" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -3554,7 +3554,7 @@
               <Property name="Partname" value="_BODY_LIZARD" />
               <Property name="JointName" value="Spine_ik_3" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -3584,7 +3584,7 @@
               <Property name="Partname" value="_BODY_RODENT" />
               <Property name="JointName" value="Spine_ik_3" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -3622,7 +3622,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- MOLE -->
       <Property name="Id" value="MOLE" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -3636,7 +3636,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.4" />
-      <Property name="MaxScale" value="3" />
+      <Property name="MaxScale" value="6" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="3" />
       </Property>
@@ -3721,7 +3721,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- COW -->
       <Property name="Id" value="COW" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -3742,7 +3742,7 @@
       </Property>
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.4" />
-      <Property name="MaxScale" value="3" />
+      <Property name="MaxScale" value="6" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -3899,7 +3899,7 @@
               <Property name="Partname" value="_COW_HINDXRARE" />
               <Property name="JointName" value="Back3JNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="Neck1JNT" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -3938,7 +3938,7 @@
               <Property name="Partname" value="_BRA_TURTSHELLX" />
               <Property name="JointName" value="" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="True" />
@@ -3968,7 +3968,7 @@
               <Property name="Partname" value="_COW_FLOATXRARE" />
               <Property name="JointName" value="" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="True" />
@@ -4006,7 +4006,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- CAT -->
       <Property name="Id" value="CAT" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -4020,7 +4020,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.4" />
-      <Property name="MaxScale" value="4" />
+      <Property name="MaxScale" value="8" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -4177,7 +4177,7 @@
               <Property name="Partname" value="_BODY_CATHINDXR" />
               <Property name="JointName" value="Neck1JNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -4216,7 +4216,7 @@
               <Property name="Partname" value="_VAR_2" />
               <Property name="JointName" value="HeadJNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -4259,7 +4259,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- BONECAT -->
       <Property name="Id" value="BONECAT" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -4273,7 +4273,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.4" />
-      <Property name="MaxScale" value="4" />
+      <Property name="MaxScale" value="8" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Rare" />
       </Property>
@@ -4430,7 +4430,7 @@
               <Property name="Partname" value="_BODY_CATHINDXR" />
               <Property name="JointName" value="Neck1JNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -4469,7 +4469,7 @@
               <Property name="Partname" value="_VAR_2" />
               <Property name="JointName" value="HeadJNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -4512,7 +4512,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- STRIDER -->
       <Property name="Id" value="STRIDER" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -4533,7 +4533,7 @@
       </Property>
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.4" />
-      <Property name="MaxScale" value="12" />
+      <Property name="MaxScale" value="24" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Uncommon" />
       </Property>
@@ -4690,7 +4690,7 @@
               <Property name="Partname" value="_FILLE2_1" />
               <Property name="JointName" value="" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -4732,7 +4732,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- TREX -->
       <Property name="Id" value="TREX" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -4746,7 +4746,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.6" />
-      <Property name="MaxScale" value="5" />
+      <Property name="MaxScale" value="10" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Uncommon" />
       </Property>
@@ -4903,7 +4903,7 @@
               <Property name="Partname" value="_BLOB_1" />
               <Property name="JointName" value="Back3JNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -4933,7 +4933,7 @@
               <Property name="Partname" value="_BLOB_2" />
               <Property name="JointName" value="Neck1JNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -4963,7 +4963,7 @@
               <Property name="Partname" value="_BACKPACK_1" />
               <Property name="JointName" value="HeadJNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -5001,7 +5001,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- TWOLEGANTELOPE -->
       <Property name="Id" value="TWOLEGANTELOPE" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -5022,7 +5022,7 @@
       </Property>
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.4" />
-      <Property name="MaxScale" value="3.6" />
+      <Property name="MaxScale" value="7" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Uncommon" />
       </Property>
@@ -5190,7 +5190,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- SIXLEGCOW -->
       <Property name="Id" value="SIXLEGCOW" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -5211,7 +5211,7 @@
       </Property>
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.4" />
-      <Property name="MaxScale" value="3" />
+      <Property name="MaxScale" value="6" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Uncommon" />
       </Property>
@@ -5368,7 +5368,7 @@
               <Property name="Partname" value="_B6RA_TURTSHELL" />
               <Property name="JointName" value="" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="True" />
@@ -5410,7 +5410,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- SIXLEGCAT -->
       <Property name="Id" value="SIXLEGCAT" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -5424,7 +5424,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.4" />
-      <Property name="MaxScale" value="4" />
+      <Property name="MaxScale" value="8" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Uncommon" />
       </Property>
@@ -5588,7 +5588,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- GRUNT -->
       <Property name="Id" value="GRUNT" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -5602,7 +5602,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.6" />
-      <Property name="MaxScale" value="12" />
+      <Property name="MaxScale" value="24" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Rare" />
       </Property>
@@ -5759,7 +5759,7 @@
               <Property name="Partname" value="_GH2ACCS_D" />
               <Property name="JointName" value="" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="True" />
@@ -5789,7 +5789,7 @@
               <Property name="Partname" value="_MESH_TURTLE" />
               <Property name="JointName" value="" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -5819,7 +5819,7 @@
               <Property name="Partname" value="_TBACC_NONE" />
               <Property name="JointName" value="" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -5849,7 +5849,7 @@
               <Property name="Partname" value="_TBACC_1" />
               <Property name="JointName" value="" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -5879,7 +5879,7 @@
               <Property name="Partname" value="_BGM_SHELLXRARE" />
               <Property name="JointName" value="" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="True" />
@@ -5909,7 +5909,7 @@
               <Property name="Partname" value="_BODY_GRUNTFLOA" />
               <Property name="JointName" value="NeckJNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="Back2JNT" />
               <Property name="BreakIfNotSelected" value="True" />
               <Property name="RelativeOffset" value="False" />
@@ -5948,7 +5948,7 @@
               <Property name="Partname" value="_MESH_GRUNT" />
               <Property name="JointName" value="" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="True" />
@@ -5978,7 +5978,7 @@
               <Property name="Partname" value="_TBACC_2" />
               <Property name="JointName" value="" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="True" />
@@ -6008,7 +6008,7 @@
               <Property name="Partname" value="_TBACC_1" />
               <Property name="JointName" value="" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="True" />
@@ -6038,7 +6038,7 @@
               <Property name="Partname" value="_HEAD_GRUNT" />
               <Property name="JointName" value="" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -6080,7 +6080,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- BLOB -->
       <Property name="Id" value="BLOB" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -6107,7 +6107,7 @@
       </Property>
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.2" />
-      <Property name="MaxScale" value="12" />
+      <Property name="MaxScale" value="24" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Rare" />
       </Property>
@@ -6264,7 +6264,7 @@
               <Property name="Partname" value="_BODY_BLOB" />
               <Property name="JointName" value="BACK2JNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -6294,7 +6294,7 @@
               <Property name="Partname" value="_BODY_OCTO" />
               <Property name="JointName" value="Back2JNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="BACK1JNT" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -6324,7 +6324,7 @@
               <Property name="Partname" value="_BODY_EEL" />
               <Property name="JointName" value="Back3JNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="ROOTJNTZ" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -6354,7 +6354,7 @@
               <Property name="Partname" value="_BODY_PLANT" />
               <Property name="JointName" value="BACK3JNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value=" " />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -6384,7 +6384,7 @@
               <Property name="Partname" value="_BODY_EYEBALLPL" />
               <Property name="JointName" value="Back2JNT" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -6414,7 +6414,7 @@
               <Property name="Partname" value="_BODY_JELLY" />
               <Property name="JointName" value="BACKEND" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -6444,7 +6444,7 @@
               <Property name="Partname" value="_BOB_MHAWK" />
               <Property name="JointName" value="BackEND" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -6474,7 +6474,7 @@
               <Property name="Partname" value="_PLANTTEETH_3" />
               <Property name="JointName" value="BACKEND" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -6504,7 +6504,7 @@
               <Property name="Partname" value="_BODY_FINGERS" />
               <Property name="JointName" value="" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -6534,7 +6534,7 @@
               <Property name="Partname" value="_BODY_SHROOM" />
               <Property name="JointName" value="BackEND" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="BACK3JNT" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -6567,7 +6567,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- SPIDER -->
       <Property name="Id" value="SPIDER" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -6588,7 +6588,7 @@
       </Property>
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.4" />
-      <Property name="MaxScale" value="12" />
+      <Property name="MaxScale" value="24" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Uncommon" />
       </Property>
@@ -6706,7 +6706,7 @@
               <Property name="Partname" value="_ACCR_MANTISTAI" />
               <Property name="JointName" value="" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -6736,7 +6736,7 @@
               <Property name="Partname" value="_ACC1_BULBTOP" />
               <Property name="JointName" value="" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="True" />
@@ -6766,7 +6766,7 @@
               <Property name="Partname" value="_HEAD_MUFFIN" />
               <Property name="JointName" value="" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="True" />
@@ -6796,7 +6796,7 @@
               <Property name="Partname" value="_BODY_1XRARE" />
               <Property name="JointName" value="" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="True" />
@@ -6826,7 +6826,7 @@
               <Property name="Partname" value="_NECK_MANTIS" />
               <Property name="JointName" value="" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="True" />
@@ -6856,7 +6856,7 @@
               <Property name="Partname" value="_CAPB_11" />
               <Property name="JointName" value="" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
@@ -6886,7 +6886,7 @@
               <Property name="Partname" value="_ACCR_BULBTOP" />
               <Property name="JointName" value="" />
               <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
+              <Property name="MaxScale" value="200" />
               <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="True" />
@@ -6919,7 +6919,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- FLOATSPIDER -->
       <Property name="Id" value="FLOATSPIDER" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -6933,7 +6933,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.4" />
-      <Property name="MaxScale" value="12" />
+      <Property name="MaxScale" value="24" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Rare" />
       </Property>
@@ -7042,7 +7042,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- PROTOROLLER -->
       <Property name="Id" value="PROTOROLLER" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -7069,7 +7069,7 @@
       </Property>
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="1" />
-      <Property name="MaxScale" value="5" />
+      <Property name="MaxScale" value="10" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="3" />
       </Property>
@@ -7233,7 +7233,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- PROTOFLYER -->
       <Property name="Id" value="PROTOFLYER" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -7254,7 +7254,7 @@
       </Property>
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="1" />
-      <Property name="MaxScale" value="3" />
+      <Property name="MaxScale" value="6" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Rare" />
       </Property>
@@ -7350,8 +7350,8 @@
                   <Property name="Value" value="_FLOAT_METALORB" />
                 </Property>
               </Property>
-              <Property name="Coherence" value="10" />
-              <Property name="Alignment" value="0.2" />
+              <Property name="Coherence" value="20.00" />
+              <Property name="Alignment" value="0.40" />
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="0.001" />
               <Property name="Follow" value="0.5" />
@@ -7392,8 +7392,8 @@
                   <Property name="Value" value="_FLOAT_FLATCREATURE" />
                 </Property>
               </Property>
-              <Property name="Coherence" value="1" />
-              <Property name="Alignment" value="0.1" />
+              <Property name="Coherence" value="2.00" />
+              <Property name="Alignment" value="0.20" />
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="10" />
               <Property name="Follow" value="1.5" />
@@ -7434,8 +7434,8 @@
                   <Property name="Value" value="_FLOAT_ELEPHLOATER" />
                 </Property>
               </Property>
-              <Property name="Coherence" value="1" />
-              <Property name="Alignment" value="0.1" />
+              <Property name="Coherence" value="2.00" />
+              <Property name="Alignment" value="0.20" />
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="20" />
               <Property name="Follow" value="1.5" />
@@ -7476,8 +7476,8 @@
                   <Property name="Value" value="_FLOAT_ROSEFISH" />
                 </Property>
               </Property>
-              <Property name="Coherence" value="10" />
-              <Property name="Alignment" value="0" />
+              <Property name="Coherence" value="20.00" />
+              <Property name="Alignment" value="0.10" />
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="6" />
               <Property name="Follow" value="1.5" />
@@ -7518,8 +7518,8 @@
                   <Property name="Value" value="_FLOAT_EYEFISH" />
                 </Property>
               </Property>
-              <Property name="Coherence" value="1" />
-              <Property name="Alignment" value="0.1" />
+              <Property name="Coherence" value="2.00" />
+              <Property name="Alignment" value="0.20" />
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="20" />
               <Property name="Follow" value="1.5" />
@@ -7560,8 +7560,8 @@
                   <Property name="Value" value="_FLOAT_RIDGEEEL" />
                 </Property>
               </Property>
-              <Property name="Coherence" value="1" />
-              <Property name="Alignment" value="0.1" />
+              <Property name="Coherence" value="2.00" />
+              <Property name="Alignment" value="0.20" />
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="15" />
               <Property name="Follow" value="1.5" />
@@ -7602,8 +7602,8 @@
                   <Property name="Value" value="_FLOAT_RADIALWAVE" />
                 </Property>
               </Property>
-              <Property name="Coherence" value="1" />
-              <Property name="Alignment" value="0.1" />
+              <Property name="Coherence" value="2.00" />
+              <Property name="Alignment" value="0.20" />
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="15" />
               <Property name="Follow" value="0.5" />
@@ -7640,8 +7640,8 @@
             </Property>
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
-              <Property name="Coherence" value="5" />
-              <Property name="Alignment" value="0.1" />
+              <Property name="Coherence" value="10.00" />
+              <Property name="Alignment" value="0.20" />
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="0" />
               <Property name="Follow" value="5" />
@@ -7880,7 +7880,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- PROTODIGGER -->
       <Property name="Id" value="PROTODIGGER" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -7907,7 +7907,7 @@
       </Property>
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="1" />
-      <Property name="MaxScale" value="5" />
+      <Property name="MaxScale" value="10" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="3" />
       </Property>
@@ -8012,7 +8012,7 @@
               <Property name="MaxTilt" value="0" />
               <Property name="OffsetTilt" value="0" />
               <Property name="MinScale" value="1" />
-              <Property name="MaxScale" value="2" />
+              <Property name="MaxScale" value="4" />
               <Property name="MinAppearTime" value="0.3" />
               <Property name="MaxAppearTime" value="0.5" />
               <Property name="AppearOvershoot" value="1" />
@@ -8084,7 +8084,7 @@
               <Property name="MaxTilt" value="0" />
               <Property name="OffsetTilt" value="0.75" />
               <Property name="MinScale" value="0.5" />
-              <Property name="MaxScale" value="1" />
+              <Property name="MaxScale" value="2" />
               <Property name="MinAppearTime" value="0.3" />
               <Property name="MaxAppearTime" value="0.5" />
               <Property name="AppearOvershoot" value="0.8" />
@@ -8156,7 +8156,7 @@
               <Property name="MaxTilt" value="0" />
               <Property name="OffsetTilt" value="0" />
               <Property name="MinScale" value="1" />
-              <Property name="MaxScale" value="3.000001" />
+              <Property name="MaxScale" value="6" />
               <Property name="MinAppearTime" value="1.1" />
               <Property name="MaxAppearTime" value="1.6" />
               <Property name="AppearOvershoot" value="0.3" />
@@ -8228,7 +8228,7 @@
               <Property name="MaxTilt" value="0.3" />
               <Property name="OffsetTilt" value="0" />
               <Property name="MinScale" value="0.5" />
-              <Property name="MaxScale" value="1.2" />
+              <Property name="MaxScale" value="2" />
               <Property name="MinAppearTime" value="0.2" />
               <Property name="MaxAppearTime" value="0.4" />
               <Property name="AppearOvershoot" value="1.7" />
@@ -8300,7 +8300,7 @@
               <Property name="MaxTilt" value="0" />
               <Property name="OffsetTilt" value="0" />
               <Property name="MinScale" value="0.5" />
-              <Property name="MaxScale" value="1.2" />
+              <Property name="MaxScale" value="2" />
               <Property name="MinAppearTime" value="0.3" />
               <Property name="MaxAppearTime" value="0.5" />
               <Property name="AppearOvershoot" value="1.5" />
@@ -8356,7 +8356,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- PLOUGH -->
       <Property name="Id" value="PLOUGH" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -8377,7 +8377,7 @@
       </Property>
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="1" />
-      <Property name="MaxScale" value="3" />
+      <Property name="MaxScale" value="6" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="3" />
       </Property>
@@ -8462,8 +8462,8 @@
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
-              <Property name="Coherence" value="2" />
-              <Property name="Alignment" value="0.1" />
+              <Property name="Coherence" value="4.00" />
+              <Property name="Alignment" value="0.20" />
               <Property name="SeparateStrength" value="0" />
               <Property name="Spacing" value="10" />
               <Property name="Follow" value="1.5" />
@@ -8561,7 +8561,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- DRILL -->
       <Property name="Id" value="DRILL" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -8582,7 +8582,7 @@
       </Property>
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="1" />
-      <Property name="MaxScale" value="3" />
+      <Property name="MaxScale" value="6" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="3" />
       </Property>
@@ -8667,8 +8667,8 @@
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
-              <Property name="Coherence" value="0" />
-              <Property name="Alignment" value="0.1" />
+              <Property name="Coherence" value="0.00" />
+              <Property name="Alignment" value="0.20" />
               <Property name="SeparateStrength" value="0" />
               <Property name="Spacing" value="10" />
               <Property name="Follow" value="1.5" />
@@ -8732,7 +8732,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- WEIRDROLL -->
       <Property name="Id" value="WEIRDROLL" />
       <Property name="OnlySpawnWhenIdIsForced" value="True" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -8753,7 +8753,7 @@
       </Property>
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="5" />
-      <Property name="MaxScale" value="5" />
+      <Property name="MaxScale" value="10" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -8884,7 +8884,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- WEIRDFLOAT -->
       <Property name="Id" value="WEIRDFLOAT" />
       <Property name="OnlySpawnWhenIdIsForced" value="True" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -8898,7 +8898,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="3" />
-      <Property name="MaxScale" value="3" />
+      <Property name="MaxScale" value="6" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -8992,7 +8992,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- WEIRDCRYSTAL -->
       <Property name="Id" value="WEIRDCRYSTAL" />
       <Property name="OnlySpawnWhenIdIsForced" value="True" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -9006,7 +9006,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="3" />
-      <Property name="MaxScale" value="3" />
+      <Property name="MaxScale" value="6" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -9111,7 +9111,7 @@
               <Property name="MaxTilt" value="0" />
               <Property name="OffsetTilt" value="0" />
               <Property name="MinScale" value="0.5" />
-              <Property name="MaxScale" value="1.2" />
+              <Property name="MaxScale" value="2" />
               <Property name="MinAppearTime" value="0.1" />
               <Property name="MaxAppearTime" value="0.1" />
               <Property name="AppearOvershoot" value="1" />
@@ -9183,7 +9183,7 @@
               <Property name="MaxTilt" value="0.1" />
               <Property name="OffsetTilt" value="0.5" />
               <Property name="MinScale" value="0.5" />
-              <Property name="MaxScale" value="1.5" />
+              <Property name="MaxScale" value="3" />
               <Property name="MinAppearTime" value="0.7" />
               <Property name="MaxAppearTime" value="1" />
               <Property name="AppearOvershoot" value="1.6" />
@@ -9258,7 +9258,7 @@
               <Property name="MaxTilt" value="0.3" />
               <Property name="OffsetTilt" value="1" />
               <Property name="MinScale" value="0.5" />
-              <Property name="MaxScale" value="2" />
+              <Property name="MaxScale" value="4" />
               <Property name="MinAppearTime" value="0.2" />
               <Property name="MaxAppearTime" value="0.4" />
               <Property name="AppearOvershoot" value="1" />
@@ -9314,7 +9314,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- WEIRDBUTTERFLY -->
       <Property name="Id" value="WEIRDBUTTERFLY" />
       <Property name="OnlySpawnWhenIdIsForced" value="True" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -9328,7 +9328,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="0.6" />
-      <Property name="MaxScale" value="0.8" />
+      <Property name="MaxScale" value="2" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -9404,8 +9404,8 @@
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
-              <Property name="Coherence" value="2" />
-              <Property name="Alignment" value="0" />
+              <Property name="Coherence" value="4.00" />
+              <Property name="Alignment" value="0.20" />
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="20" />
               <Property name="Follow" value="1.5" />
@@ -9444,7 +9444,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- FIEND -->
       <Property name="Id" value="FIEND" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -9458,7 +9458,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="1" />
-      <Property name="MaxScale" value="1" />
+      <Property name="MaxScale" value="2" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -9531,7 +9531,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- SCUTTLER -->
       <Property name="Id" value="SCUTTLER" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -9545,7 +9545,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="1" />
-      <Property name="MaxScale" value="1" />
+      <Property name="MaxScale" value="2" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -9625,8 +9625,8 @@
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
-              <Property name="Coherence" value="0" />
-              <Property name="Alignment" value="0" />
+              <Property name="Coherence" value="0.00" />
+              <Property name="Alignment" value="0.20" />
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="2" />
               <Property name="Follow" value="2.5" />
@@ -9665,7 +9665,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- SLUG -->
       <Property name="Id" value="SLUG" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -9679,7 +9679,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="1" />
-      <Property name="MaxScale" value="1" />
+      <Property name="MaxScale" value="2" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -9741,7 +9741,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- MINIFIEND -->
       <Property name="Id" value="MINIFIEND" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -9755,7 +9755,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="1" />
-      <Property name="MaxScale" value="1" />
+      <Property name="MaxScale" value="2" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -9828,7 +9828,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- FIENDFISHSMALL -->
       <Property name="Id" value="FIENDFISHSMALL" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -9842,7 +9842,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Water" />
       <Property name="MinScale" value="0.5" />
-      <Property name="MaxScale" value="1.5" />
+      <Property name="MaxScale" value="3" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -9915,8 +9915,8 @@
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
-              <Property name="Coherence" value="0.5" />
-              <Property name="Alignment" value="0" />
+              <Property name="Coherence" value="1.00" />
+              <Property name="Alignment" value="0.20" />
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="30" />
               <Property name="Follow" value="2.5" />
@@ -9955,7 +9955,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- FLOATER -->
       <Property name="Id" value="FLOATER" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -9969,7 +9969,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Water" />
       <Property name="MinScale" value="0.5" />
-      <Property name="MaxScale" value="1.5" />
+      <Property name="MaxScale" value="3" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -10042,8 +10042,8 @@
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
-              <Property name="Coherence" value="1" />
-              <Property name="Alignment" value="0" />
+              <Property name="Coherence" value="2.00" />
+              <Property name="Alignment" value="0.20" />
               <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="4" />
               <Property name="Follow" value="1" />
@@ -10082,7 +10082,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- MINIDRONE -->
       <Property name="Id" value="MINIDRONE" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -10096,7 +10096,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Water" />
       <Property name="MinScale" value="0.5" />
-      <Property name="MaxScale" value="1.5" />
+      <Property name="MaxScale" value="3" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -10169,8 +10169,8 @@
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
-              <Property name="Coherence" value="1" />
-              <Property name="Alignment" value="0" />
+              <Property name="Coherence" value="2.00" />
+              <Property name="Alignment" value="0.20" />
               <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="16" />
               <Property name="Follow" value="0.8" />
@@ -10225,7 +10225,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- FIENDFISHBIG -->
       <Property name="Id" value="FIENDFISHBIG" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -10239,7 +10239,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Water" />
       <Property name="MinScale" value="0.8" />
-      <Property name="MaxScale" value="8" />
+      <Property name="MaxScale" value="16" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -10312,8 +10312,8 @@
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
-              <Property name="Coherence" value="0.5" />
-              <Property name="Alignment" value="0.12" />
+              <Property name="Coherence" value="1.00" />
+              <Property name="Alignment" value="0.24" />
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="12" />
               <Property name="Follow" value="1.5" />
@@ -10352,7 +10352,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- ROCKCREATURE -->
       <Property name="Id" value="ROCKCREATURE" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -10366,7 +10366,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="1" />
-      <Property name="MaxScale" value="1" />
+      <Property name="MaxScale" value="2" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -10423,7 +10423,7 @@
         </Property>
       </Property>
     </Property>
-    <Property value="GcCreatureData.xml">
+    <Property value="GcCreatureData.xml"> <!-- SANDWORM -->
       <Property name="Id" value="SANDWORM" />
       <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
@@ -10437,7 +10437,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="50" />
-      <Property name="MaxScale" value="50" />
+      <Property name="MaxScale" value="100" />
       <Property name="Rarity" value="GcRarity.xml">
         <Property name="Rarity" value="Common" />
       </Property>
@@ -10501,8 +10501,8 @@
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
-              <Property name="Coherence" value="0.1" />
-              <Property name="Alignment" value="0.05" />
+              <Property name="Coherence" value="0.20" />
+              <Property name="Alignment" value="0.10" />
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="40" />
               <Property name="Follow" value="1.5" />
