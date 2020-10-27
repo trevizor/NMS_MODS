@@ -274,7 +274,7 @@
   </Property>
   <Property name="FistClenchBlendInTime" value="0.1" />
   <Property name="FistClenchBlendOutTime" value="0.1" />
-  <Property name="DoPlayerAppearInVehicleEffect" value="True" />
+  <Property name="DoPlayerAppearInVehicleEffect" value="False" />
   <Property name="StickYDampingThreshold" value="0.75" />
   <Property name="RequireHandsOnShipControls" value="True" />
   <Property name="ShowFirstPersonCharacterShadowPCVR" value="False" />
@@ -307,12 +307,12 @@
     <Property name="y" value="0.15" />
     <Property name="z" value="0.2" />
   </Property>
-  <Property name="GroundWalkForceMultiplier" value="50" />
-  <Property name="GroundWalkBrake" value="6" />
-  <Property name="GroundWalkBrakeWhileMoving" value="6" />
-  <Property name="GroundWalkSpeed" value="3.8" />
+  <Property name="GroundWalkForceMultiplier" value="13" />
+  <Property name="GroundWalkBrake" value="3" />
+  <Property name="GroundWalkBrakeWhileMoving" value="3" />
+  <Property name="GroundWalkSpeed" value="4" />
   <Property name="GroundWalkSpeedTeleportHmd" value="3.8" />
-  <Property name="GroundRunSpeed" value="8.8" />
+  <Property name="GroundRunSpeed" value="9" />
   <Property name="GroundWalkSpeedLowG" value="1.7" />
   <Property name="GroundRunSpeedLowG" value="3.4" />
   <Property name="GroundWalkRecoverySpeedDamper" value="0.4" />
@@ -537,8 +537,8 @@
   <Property name="OtherPlayerTrackArrowRange" value="100" />
   <Property name="WantedLevelPlayerRange" value="50" />
   <Property name="WantedLevelPlayerRangeSpace" value="2000" />
-  <Property name="PlayerTransferRange" value="20" />
-  <Property name="PlayerSpaceTransferRange" value="2000" />
+  <Property name="PlayerTransferRange" value="60" />
+  <Property name="PlayerSpaceTransferRange" value="6000" />
   <Property name="DroneScanTimeToForget" value="1" />
   <Property name="GhostbusterStartLength" value="10" />
   <Property name="GhostbusterStart1" value="0" />
@@ -674,10 +674,10 @@
   <Property name="RocketBootsDriftBraking" value="0.6" />
   <Property name="RocketBootsDriftDownwardForce" value="0.5" />
   <Property name="JetpackForce" value="31" />
-  <Property name="JetpackBrake" value="2.2" />
+  <Property name="JetpackBrake" value="0" />
   <Property name="JetpackMinLevel" value="0.5" />
-  <Property name="JetpackMaxSpeed" value="5" />
-  <Property name="JetpackMaxUpSpeed" value="30" />
+  <Property name="JetpackMaxSpeed" value="10" />
+  <Property name="JetpackMaxUpSpeed" value="60" />
   <Property name="JetpackUpForce" value="30" />
   <Property name="JetpackIgnitionForce" value="180" />
   <Property name="JetpackIgnitionTime" value="0.1" />
@@ -1483,7 +1483,7 @@
   <Property name="AnimRunBlendPoint" value="0.1" />
   <Property name="MaxSlopeAngle" value="89" />
   <Property name="SlopeSlidingSpeed" value="-12" />
-  <Property name="SlopeSlideBrake" value="6" />
+  <Property name="SlopeSlideBrake" value="0" />
   <Property name="MinSlideTime" value="0.1" />
   <Property name="MaxWalkableSlopeAngle" value="43" />
   <Property name="MinSpidermanSlopeAngle" value="36" />
@@ -1496,7 +1496,7 @@
   <Property name="FullClipReloadSpeedMultiplier" value="2" />
   <Property name="ReloadTapButtonSpeedIncrease" value="1" />
   <Property name="FootDustEffect" value="FOOTFROZEN" />
-  <Property name="FootDustScale" value="0.5" />
+  <Property name="FootDustScale" value="0.8" />
   <Property name="ClingBrakeMultiplier" value="1" />
   <Property name="ClingAngleThreshold" value="50" />
   <Property name="ClingSpeedThreshold" value="0.8" />
