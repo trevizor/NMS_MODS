@@ -309,7 +309,7 @@
   </Property>
   <Property name="GroundWalkForceMultiplier" value="13" />
   <Property name="GroundWalkBrake" value="3" />
-  <Property name="GroundWalkBrakeWhileMoving" value="3" />
+  <Property name="GroundWalkBrakeWhileMoving" value="2" />
   <Property name="GroundWalkSpeed" value="4" />
   <Property name="GroundWalkSpeedTeleportHmd" value="3.8" />
   <Property name="GroundRunSpeed" value="9" />
@@ -638,10 +638,10 @@
     <Property name="B" value="0.388" />
     <Property name="A" value="1" />
   </Property>
-  <Property name="FreeJetpackRange" value="4" />
-  <Property name="FreeJetpackRangePrime" value="6" />
+  <Property name="FreeJetpackRange" value="1" />
+  <Property name="FreeJetpackRangePrime" value="2" />
   <Property name="FreeJetpackRangeNonTerrain" value="1.1" />
-  <Property name="JetpackDrainHorizontalFactor" value="2.6" />
+  <Property name="JetpackDrainHorizontalFactor" value="2" />
   <Property name="MinTimeAfterMeleeBeforeBoost" value="0.05" />
   <Property name="MaxTimeAfterMeleeBeforeBoost" value="0.5" />
   <Property name="MeleeBoostAirForce" value="3" />
@@ -673,22 +673,22 @@
   <Property name="RocketBootsWindUpBraking" value="0.9" />
   <Property name="RocketBootsDriftBraking" value="0.6" />
   <Property name="RocketBootsDriftDownwardForce" value="0.5" />
-  <Property name="JetpackForce" value="31" />
+  <Property name="JetpackForce" value="18" />
   <Property name="JetpackBrake" value="0" />
-  <Property name="JetpackMinLevel" value="0.5" />
-  <Property name="JetpackMaxSpeed" value="10" />
+  <Property name="JetpackMinLevel" value="0.1" />
+  <Property name="JetpackMaxSpeed" value="15" />
   <Property name="JetpackMaxUpSpeed" value="60" />
-  <Property name="JetpackUpForce" value="30" />
-  <Property name="JetpackIgnitionForce" value="180" />
-  <Property name="JetpackIgnitionTime" value="0.1" />
-  <Property name="JetpackMinIgnitionTime" value="0.001" />
+  <Property name="JetpackUpForce" value="20" />
+  <Property name="JetpackIgnitionForce" value="410" />
+  <Property name="JetpackIgnitionTime" value="0.03" />
+  <Property name="JetpackMinIgnitionTime" value="0.01" />
   <Property name="JetpackTankTimes">
     <Property value="4" />
     <Property value="6" />
     <Property value="8" />
   </Property>
   <Property name="JetpackFillRate" value="0.7" />
-  <Property name="JetpackFillRateHardMode" value="0.2" />
+  <Property name="JetpackFillRateHardMode" value="0.4" />
   <Property name="JetpackFillRateMidair" value="0.25" />
   <Property name="JetpackFillRateSpaceStationMultiplier" value="5" />
   <Property name="JetpackFillRateFleetMultiplier" value="5" />
@@ -716,7 +716,7 @@
   <Property name="NormalModeHazardTimeMultiplier" value="0.9" />
   <Property name="NormalModeHazardDamageRateMultiplier" value="0.8" />
   <Property name="NormalModeHazardDamageWoundRateMultiplier" value="0.8" />
-  <Property name="NormalModeSubstanceRewardMultiplier" value="0.9" />
+  <Property name="NormalModeSubstanceRewardMultiplier" value="1.1" />
   <Property name="NormalModeHazardRechargeUnderground" value="1.5" />
   <Property name="HardModeHazardTimeMultiplier" value="0.3" />
   <Property name="HardModeHazardDamageRateMultiplier" value="0.3" />
@@ -1503,7 +1503,7 @@
   <Property name="ClimbableStickinessAngle" value="30" />
   <Property name="MinUpAmount" value="0.4" />
   <Property name="FootOffset" value="0.2" />
-  <Property name="MaxFallSpeed" value="160" />
+  <Property name="MaxFallSpeed" value="260" />
   <Property name="PushForceDecay" value="40" />
   <Property name="LeanFwdMaxAngle" value="120" />
   <Property name="LeanBackMaxAngle" value="40" />

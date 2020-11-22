@@ -65,7 +65,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="3" />
@@ -81,11 +81,11 @@
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
               <Property name="Coherence" value="1.00" />
-              <Property name="Alignment" value="0.20" />
+              <Property name="Alignment" value="0.1" />
               <Property name="SeparateStrength" value="0.5" />
               <Property name="Spacing" value="2" />
               <Property name="Follow" value="1" />
-              <Property name="Range" value="30" />
+              <Property name="Range" value="60" />
               <Property name="MaxBankingAmount" value="0" />
               <Property name="TurnRequiredForMaxBanking" value="0.3" />
               <Property name="MaxPitchAmount" value="0.02" />
@@ -155,11 +155,11 @@
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
               <Property name="Coherence" value="1.00" />
-              <Property name="Alignment" value="0.40" />
-              <Property name="SeparateStrength" value="1" />
+              <Property name="Alignment" value="0.2" />
+              <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="2" />
               <Property name="Follow" value="0.5" />
-              <Property name="Range" value="90" />
+              <Property name="Range" value="140" />
               <Property name="MaxBankingAmount" value="0.3" />
               <Property name="TurnRequiredForMaxBanking" value="1" />
               <Property name="MaxPitchAmount" value="0.01" />
@@ -219,7 +219,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="3" />
@@ -325,7 +325,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="3" />
@@ -341,11 +341,11 @@
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
               <Property name="Coherence" value="0.40" />
-              <Property name="Alignment" value="0.80" />
-              <Property name="SeparateStrength" value="1" />
+              <Property name="Alignment" value="0.4" />
+              <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="15" />
               <Property name="Follow" value="0.7" />
-              <Property name="Range" value="30" />
+              <Property name="Range" value="60" />
               <Property name="MaxBankingAmount" value="0.2" />
               <Property name="TurnRequiredForMaxBanking" value="0.3" />
               <Property name="MaxPitchAmount" value="0.5" />
@@ -418,7 +418,7 @@
           <Property name="Anims" />
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="3" />
@@ -434,11 +434,11 @@
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
               <Property name="Coherence" value="0.40" />
-              <Property name="Alignment" value="0.80" />
-              <Property name="SeparateStrength" value="1" />
+              <Property name="Alignment" value="0.4" />
+              <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="15" />
               <Property name="Follow" value="1.7" />
-              <Property name="Range" value="30" />
+              <Property name="Range" value="60" />
               <Property name="MaxBankingAmount" value="0.2" />
               <Property name="TurnRequiredForMaxBanking" value="0.3" />
               <Property name="MaxPitchAmount" value="0.5" />
@@ -492,17 +492,17 @@
         <Property name="Rarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
           <Property name="Anims" />
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -518,11 +518,11 @@
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
               <Property name="Coherence" value="1.00" />
-              <Property name="Alignment" value="0.20" />
-              <Property name="SeparateStrength" value="1" />
+              <Property name="Alignment" value="0" />
+              <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="30" />
               <Property name="Follow" value="2.5" />
-              <Property name="Range" value="30" />
+              <Property name="Range" value="60" />
               <Property name="MaxBankingAmount" value="0" />
               <Property name="TurnRequiredForMaxBanking" value="0" />
               <Property name="MaxPitchAmount" value="0.9" />
@@ -586,7 +586,7 @@
           <Property name="Anims" />
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="2" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -613,7 +613,7 @@
         <Property name="Rarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
         <Property name="CreatureRoleFrequencyModifier" value="Normal" />
@@ -657,7 +657,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="3" />
@@ -673,11 +673,11 @@
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
               <Property name="Coherence" value="1.00" />
-              <Property name="Alignment" value="0.20" />
+              <Property name="Alignment" value="0.1" />
               <Property name="SeparateStrength" value="0.5" />
               <Property name="Spacing" value="2" />
               <Property name="Follow" value="1" />
-              <Property name="Range" value="30" />
+              <Property name="Range" value="60" />
               <Property name="MaxBankingAmount" value="0" />
               <Property name="TurnRequiredForMaxBanking" value="0.3" />
               <Property name="MaxPitchAmount" value="0.2" />
@@ -731,10 +731,10 @@
         <Property name="Rarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -784,7 +784,7 @@
           </Property>
           <Property name="MoveRange" value="300" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="25" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="3" />
@@ -800,11 +800,11 @@
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
               <Property name="Coherence" value="1.00" />
-              <Property name="Alignment" value="0.24" />
-              <Property name="SeparateStrength" value="1" />
+              <Property name="Alignment" value="0.12" />
+              <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="12" />
               <Property name="Follow" value="1.5" />
-              <Property name="Range" value="30" />
+              <Property name="Range" value="60" />
               <Property name="MaxBankingAmount" value="0" />
               <Property name="TurnRequiredForMaxBanking" value="0.3" />
               <Property name="MaxPitchAmount" value="0.1" />
@@ -911,7 +911,7 @@
           </Property>
           <Property name="MoveRange" value="300" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="30" />
           <Property name="HeightMax" value="40" />
           <Property name="HeightTime" value="2" />
@@ -927,11 +927,11 @@
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
               <Property name="Coherence" value="0.20" />
-              <Property name="Alignment" value="0.24" />
-              <Property name="SeparateStrength" value="1" />
+              <Property name="Alignment" value="0.12" />
+              <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="10" />
               <Property name="Follow" value="1.5" />
-              <Property name="Range" value="1" />
+              <Property name="Range" value="4" />
               <Property name="MaxBankingAmount" value="0.3" />
               <Property name="TurnRequiredForMaxBanking" value="0.2" />
               <Property name="MaxPitchAmount" value="0.2" />
@@ -1041,7 +1041,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="45" />
           <Property name="HeightMax" value="100" />
           <Property name="HeightTime" value="2" />
@@ -1057,11 +1057,11 @@
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
               <Property name="Coherence" value="0.20" />
-              <Property name="Alignment" value="0.10" />
-              <Property name="SeparateStrength" value="1" />
+              <Property name="Alignment" value="0.05" />
+              <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="40" />
               <Property name="Follow" value="1.5" />
-              <Property name="Range" value="1" />
+              <Property name="Range" value="4" />
               <Property name="MaxBankingAmount" value="0.3" />
               <Property name="TurnRequiredForMaxBanking" value="0.3" />
               <Property name="MaxPitchAmount" value="0.5" />
@@ -1127,7 +1127,7 @@
         <Property name="Rarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
         <Property name="CreatureRoleFrequencyModifier" value="Normal" />
@@ -1180,7 +1180,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="55" />
           <Property name="HeightMax" value="100" />
           <Property name="HeightTime" value="2" />
@@ -1196,11 +1196,11 @@
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
               <Property name="Coherence" value="0.20" />
-              <Property name="Alignment" value="0.10" />
-              <Property name="SeparateStrength" value="1" />
+              <Property name="Alignment" value="0.05" />
+              <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="40" />
               <Property name="Follow" value="1.5" />
-              <Property name="Range" value="1" />
+              <Property name="Range" value="4" />
               <Property name="MaxBankingAmount" value="0.5" />
               <Property name="TurnRequiredForMaxBanking" value="0.2" />
               <Property name="MaxPitchAmount" value="0.1" />
@@ -1322,7 +1322,7 @@
           </Property>
           <Property name="MoveRange" value="30" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0.1" />
           <Property name="HeightMax" value="0.4" />
           <Property name="HeightTime" value="1" />
@@ -1342,8 +1342,8 @@
                 </Property>
               </Property>
               <Property name="Coherence" value="3.00" />
-              <Property name="Alignment" value="0.40" />
-              <Property name="SeparateStrength" value="1" />
+              <Property name="Alignment" value="0.2" />
+              <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="20" />
               <Property name="Follow" value="1" />
               <Property name="Range" value="10" />
@@ -1380,8 +1380,8 @@
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
               <Property name="Coherence" value="2.00" />
-              <Property name="Alignment" value="0.10" />
-              <Property name="SeparateStrength" value="1" />
+              <Property name="Alignment" value="0" />
+              <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="20" />
               <Property name="Follow" value="1.5" />
               <Property name="Range" value="10" />
@@ -1454,11 +1454,11 @@
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
               <Property name="Coherence" value="1.00" />
-              <Property name="Alignment" value="0.40" />
-              <Property name="SeparateStrength" value="1" />
+              <Property name="Alignment" value="0.2" />
+              <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="2" />
               <Property name="Follow" value="0.5" />
-              <Property name="Range" value="30" />
+              <Property name="Range" value="60" />
               <Property name="MaxBankingAmount" value="0.3" />
               <Property name="TurnRequiredForMaxBanking" value="1" />
               <Property name="MaxPitchAmount" value="0.1" />
@@ -1530,7 +1530,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1.5" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0.1" />
           <Property name="HeightMax" value="5" />
           <Property name="HeightTime" value="5" />
@@ -1599,11 +1599,11 @@
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
               <Property name="Coherence" value="1.00" />
-              <Property name="Alignment" value="0.40" />
-              <Property name="SeparateStrength" value="1" />
+              <Property name="Alignment" value="0.2" />
+              <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="2" />
               <Property name="Follow" value="0.5" />
-              <Property name="Range" value="30" />
+              <Property name="Range" value="60" />
               <Property name="MaxBankingAmount" value="0.3" />
               <Property name="TurnRequiredForMaxBanking" value="1" />
               <Property name="MaxPitchAmount" value="0.3" />
@@ -1675,7 +1675,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1.5" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0.1" />
           <Property name="HeightMax" value="5" />
           <Property name="HeightTime" value="5" />
@@ -1793,7 +1793,7 @@
           </Property>
           <Property name="MoveRange" value="30" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0.1" />
           <Property name="HeightMax" value="5" />
           <Property name="HeightTime" value="1" />
@@ -1809,8 +1809,8 @@
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
               <Property name="Coherence" value="6.00" />
-              <Property name="Alignment" value="0.10" />
-              <Property name="SeparateStrength" value="1" />
+              <Property name="Alignment" value="0" />
+              <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="8" />
               <Property name="Follow" value="1.5" />
               <Property name="Range" value="10" />
@@ -1957,7 +1957,7 @@
           </Property>
           <Property name="MoveRange" value="30" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0.1" />
           <Property name="HeightMax" value="5" />
           <Property name="HeightTime" value="1" />
@@ -1973,7 +1973,7 @@
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
               <Property name="Coherence" value="0.00" />
-              <Property name="Alignment" value="0.10" />
+              <Property name="Alignment" value="0" />
               <Property name="SeparateStrength" value="0.1" />
               <Property name="Spacing" value="4" />
               <Property name="Follow" value="1.5" />
@@ -2129,7 +2129,7 @@
           </Property>
           <Property name="MoveRange" value="30" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="5" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="1" />
@@ -2204,7 +2204,7 @@
             <Property name="z" value="-0.3" />
           </Property>
           <Property name="HeadCounterRotation" value="0" />
-          <Property name="UprightStrength" value="1" />
+          <Property name="UprightStrength" value="2" />
           <Property name="LegSpread" value="True" />
           <Property name="ScaleForNeutralLegSpread" value="2" />
           <Property name="ScaleForMinLegSpread" value="0.25" />
@@ -2318,7 +2318,7 @@
           </Property>
           <Property name="MoveRange" value="30" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="5" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="1" />
@@ -2393,7 +2393,7 @@
             <Property name="z" value="-0.3" />
           </Property>
           <Property name="HeadCounterRotation" value="0" />
-          <Property name="UprightStrength" value="1" />
+          <Property name="UprightStrength" value="2" />
           <Property name="LegSpread" value="True" />
           <Property name="ScaleForNeutralLegSpread" value="2" />
           <Property name="ScaleForMinLegSpread" value="0.25" />
@@ -2441,7 +2441,7 @@
         <Property name="Rarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
         <Property name="CreatureRoleFrequencyModifier" value="Normal" />
@@ -2507,7 +2507,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="1" />
@@ -3438,7 +3438,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="5" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -3513,7 +3513,7 @@
             <Property name="z" value="0" />
           </Property>
           <Property name="HeadCounterRotation" value="0" />
-          <Property name="UprightStrength" value="1" />
+          <Property name="UprightStrength" value="2" />
           <Property name="LegSpread" value="True" />
           <Property name="ScaleForNeutralLegSpread" value="1.75" />
           <Property name="ScaleForMinLegSpread" value="0.75" />
@@ -3663,7 +3663,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -3813,7 +3813,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -3888,7 +3888,7 @@
             <Property name="z" value="0.4" />
           </Property>
           <Property name="HeadCounterRotation" value="0" />
-          <Property name="UprightStrength" value="1" />
+          <Property name="UprightStrength" value="2" />
           <Property name="LegSpread" value="True" />
           <Property name="ScaleForNeutralLegSpread" value="1" />
           <Property name="ScaleForMinLegSpread" value="0" />
@@ -4091,7 +4091,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -4344,7 +4344,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -4419,7 +4419,7 @@
             <Property name="z" value="0.4" />
           </Property>
           <Property name="HeadCounterRotation" value="0" />
-          <Property name="UprightStrength" value="1" />
+          <Property name="UprightStrength" value="2" />
           <Property name="LegSpread" value="True" />
           <Property name="ScaleForNeutralLegSpread" value="1" />
           <Property name="ScaleForMinLegSpread" value="0.5" />
@@ -4538,7 +4538,7 @@
         <Property name="Rarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
         <Property name="CreatureRoleFrequencyModifier" value="Normal" />
@@ -4604,7 +4604,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="1" />
@@ -4817,7 +4817,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="1" />
@@ -5093,7 +5093,7 @@
           </Property>
           <Property name="MoveRange" value="30" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="1" />
@@ -5168,7 +5168,7 @@
             <Property name="z" value="0" />
           </Property>
           <Property name="HeadCounterRotation" value="0" />
-          <Property name="UprightStrength" value="1" />
+          <Property name="UprightStrength" value="2" />
           <Property name="LegSpread" value="True" />
           <Property name="ScaleForNeutralLegSpread" value="1.25" />
           <Property name="ScaleForMinLegSpread" value="0.5" />
@@ -5282,7 +5282,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -5495,7 +5495,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -5673,7 +5673,7 @@
           </Property>
           <Property name="MoveRange" value="30" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="5" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="1" />
@@ -6217,7 +6217,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -6253,7 +6253,7 @@
             <Property name="z" value="0" />
           </Property>
           <Property name="HeadCounterRotation" value="0" />
-          <Property name="UprightStrength" value="1" />
+          <Property name="UprightStrength" value="2" />
           <Property name="LegSpread" value="True" />
           <Property name="ScaleForNeutralLegSpread" value="1" />
           <Property name="ScaleForMinLegSpread" value="0.5" />
@@ -6593,7 +6593,7 @@
         <Property name="Rarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
         <Property name="CreatureRoleFrequencyModifier" value="Normal" />
@@ -6659,7 +6659,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -7004,7 +7004,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -7107,7 +7107,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1.5" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -7331,7 +7331,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0.1" />
           <Property name="HeightMax" value="2" />
           <Property name="HeightTime" value="1" />
@@ -7351,8 +7351,8 @@
                 </Property>
               </Property>
               <Property name="Coherence" value="20.00" />
-              <Property name="Alignment" value="0.40" />
-              <Property name="SeparateStrength" value="1" />
+              <Property name="Alignment" value="0.2" />
+              <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="0.001" />
               <Property name="Follow" value="0.5" />
               <Property name="Range" value="4" />
@@ -7393,8 +7393,8 @@
                 </Property>
               </Property>
               <Property name="Coherence" value="2.00" />
-              <Property name="Alignment" value="0.20" />
-              <Property name="SeparateStrength" value="1" />
+              <Property name="Alignment" value="0.1" />
+              <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="10" />
               <Property name="Follow" value="1.5" />
               <Property name="Range" value="4" />
@@ -7435,8 +7435,8 @@
                 </Property>
               </Property>
               <Property name="Coherence" value="2.00" />
-              <Property name="Alignment" value="0.20" />
-              <Property name="SeparateStrength" value="1" />
+              <Property name="Alignment" value="0.1" />
+              <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="20" />
               <Property name="Follow" value="1.5" />
               <Property name="Range" value="4" />
@@ -7477,8 +7477,8 @@
                 </Property>
               </Property>
               <Property name="Coherence" value="20.00" />
-              <Property name="Alignment" value="0.10" />
-              <Property name="SeparateStrength" value="1" />
+              <Property name="Alignment" value="0" />
+              <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="6" />
               <Property name="Follow" value="1.5" />
               <Property name="Range" value="4" />
@@ -7519,8 +7519,8 @@
                 </Property>
               </Property>
               <Property name="Coherence" value="2.00" />
-              <Property name="Alignment" value="0.20" />
-              <Property name="SeparateStrength" value="1" />
+              <Property name="Alignment" value="0.1" />
+              <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="20" />
               <Property name="Follow" value="1.5" />
               <Property name="Range" value="4" />
@@ -7561,8 +7561,8 @@
                 </Property>
               </Property>
               <Property name="Coherence" value="2.00" />
-              <Property name="Alignment" value="0.20" />
-              <Property name="SeparateStrength" value="1" />
+              <Property name="Alignment" value="0.1" />
+              <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="15" />
               <Property name="Follow" value="1.5" />
               <Property name="Range" value="4" />
@@ -7603,8 +7603,8 @@
                 </Property>
               </Property>
               <Property name="Coherence" value="2.00" />
-              <Property name="Alignment" value="0.20" />
-              <Property name="SeparateStrength" value="1" />
+              <Property name="Alignment" value="0.1" />
+              <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="15" />
               <Property name="Follow" value="0.5" />
               <Property name="Range" value="4" />
@@ -7641,8 +7641,8 @@
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
               <Property name="Coherence" value="10.00" />
-              <Property name="Alignment" value="0.20" />
-              <Property name="SeparateStrength" value="1" />
+              <Property name="Alignment" value="0.1" />
+              <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="0" />
               <Property name="Follow" value="5" />
               <Property name="Range" value="4" />
@@ -7984,7 +7984,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1.3" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -8447,7 +8447,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="10" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0.1" />
           <Property name="HeightMax" value="0.1" />
           <Property name="HeightTime" value="1" />
@@ -8463,7 +8463,7 @@
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
               <Property name="Coherence" value="4.00" />
-              <Property name="Alignment" value="0.20" />
+              <Property name="Alignment" value="0.1" />
               <Property name="SeparateStrength" value="0" />
               <Property name="Spacing" value="10" />
               <Property name="Follow" value="1.5" />
@@ -8587,7 +8587,7 @@
         <Property name="Rarity" value="3" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
         <Property name="CreatureRoleFrequencyModifier" value="Normal" />
@@ -8620,7 +8620,7 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="LEFT" />
               <Property name="AnimRight" value="RIGHT" />
-              <Property name="AnimSpeed" value="0.5" />
+              <Property name="AnimSpeed" value="0.25" />
               <Property name="MinSpeedScale" value="0.3" />
               <Property name="MaxSpeedScale" value="1.3" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
@@ -8631,7 +8631,7 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="LEFT" />
               <Property name="AnimRight" value="RIGHT" />
-              <Property name="AnimSpeed" value="0.5" />
+              <Property name="AnimSpeed" value="0.25" />
               <Property name="MinSpeedScale" value="0.3" />
               <Property name="MaxSpeedScale" value="1.3" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
@@ -8642,7 +8642,7 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="LEFT" />
               <Property name="AnimRight" value="RIGHT" />
-              <Property name="AnimSpeed" value="0.5" />
+              <Property name="AnimSpeed" value="0.25" />
               <Property name="MinSpeedScale" value="0.3" />
               <Property name="MaxSpeedScale" value="1.3" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
@@ -8651,8 +8651,8 @@
             </Property>
           </Property>
           <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="10" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="MoveSpeedScale" value="5" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0.1" />
           <Property name="HeightMax" value="0.1" />
           <Property name="HeightTime" value="1" />
@@ -8668,7 +8668,7 @@
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
               <Property name="Coherence" value="0.00" />
-              <Property name="Alignment" value="0.20" />
+              <Property name="Alignment" value="0.1" />
               <Property name="SeparateStrength" value="0" />
               <Property name="Spacing" value="10" />
               <Property name="Follow" value="1.5" />
@@ -8830,7 +8830,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1.5" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -8975,7 +8975,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1.5" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -9083,7 +9083,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1.3" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -9389,7 +9389,7 @@
           </Property>
           <Property name="MoveRange" value="100" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="2.5" />
           <Property name="HeightMax" value="3.5" />
           <Property name="HeightTime" value="1" />
@@ -9405,8 +9405,8 @@
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
               <Property name="Coherence" value="4.00" />
-              <Property name="Alignment" value="0.20" />
-              <Property name="SeparateStrength" value="1" />
+              <Property name="Alignment" value="0" />
+              <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="20" />
               <Property name="Follow" value="1.5" />
               <Property name="Range" value="10" />
@@ -9496,7 +9496,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -9583,7 +9583,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -9626,11 +9626,11 @@
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
               <Property name="Coherence" value="0.00" />
-              <Property name="Alignment" value="0.20" />
-              <Property name="SeparateStrength" value="1" />
+              <Property name="Alignment" value="0" />
+              <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="2" />
               <Property name="Follow" value="2.5" />
-              <Property name="Range" value="30" />
+              <Property name="Range" value="60" />
               <Property name="MaxBankingAmount" value="0" />
               <Property name="TurnRequiredForMaxBanking" value="0.3" />
               <Property name="MaxPitchAmount" value="0" />
@@ -9696,7 +9696,7 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="0.9" />
+              <Property name="AnimSpeed" value="0.2" />
               <Property name="MinSpeedScale" value="1" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
@@ -9705,8 +9705,8 @@
             </Property>
           </Property>
           <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="MoveSpeedScale" value="0.2" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -9793,7 +9793,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -9900,7 +9900,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="10" />
           <Property name="HeightTime" value="3" />
@@ -9916,11 +9916,11 @@
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
               <Property name="Coherence" value="1.00" />
-              <Property name="Alignment" value="0.20" />
-              <Property name="SeparateStrength" value="1" />
+              <Property name="Alignment" value="0" />
+              <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="30" />
               <Property name="Follow" value="2.5" />
-              <Property name="Range" value="30" />
+              <Property name="Range" value="60" />
               <Property name="MaxBankingAmount" value="0" />
               <Property name="TurnRequiredForMaxBanking" value="0" />
               <Property name="MaxPitchAmount" value="0.9" />
@@ -10027,7 +10027,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="10" />
           <Property name="HeightTime" value="3" />
@@ -10043,11 +10043,11 @@
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
               <Property name="Coherence" value="2.00" />
-              <Property name="Alignment" value="0.20" />
+              <Property name="Alignment" value="0" />
               <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="4" />
               <Property name="Follow" value="1" />
-              <Property name="Range" value="30" />
+              <Property name="Range" value="60" />
               <Property name="MaxBankingAmount" value="1" />
               <Property name="TurnRequiredForMaxBanking" value="0.5" />
               <Property name="MaxPitchAmount" value="1" />
@@ -10154,7 +10154,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="10" />
           <Property name="HeightTime" value="3" />
@@ -10170,11 +10170,11 @@
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
               <Property name="Coherence" value="2.00" />
-              <Property name="Alignment" value="0.20" />
+              <Property name="Alignment" value="0" />
               <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="16" />
               <Property name="Follow" value="0.8" />
-              <Property name="Range" value="30" />
+              <Property name="Range" value="60" />
               <Property name="MaxBankingAmount" value="0" />
               <Property name="TurnRequiredForMaxBanking" value="1" />
               <Property name="MaxPitchAmount" value="0.2" />
@@ -10297,7 +10297,7 @@
           </Property>
           <Property name="MoveRange" value="300" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="25" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="3" />
@@ -10313,11 +10313,11 @@
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
               <Property name="Coherence" value="1.00" />
-              <Property name="Alignment" value="0.24" />
-              <Property name="SeparateStrength" value="1" />
+              <Property name="Alignment" value="0.12" />
+              <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="12" />
               <Property name="Follow" value="1.5" />
-              <Property name="Range" value="30" />
+              <Property name="Range" value="60" />
               <Property name="MaxBankingAmount" value="0" />
               <Property name="TurnRequiredForMaxBanking" value="0.3" />
               <Property name="MaxPitchAmount" value="0.5" />
@@ -10404,7 +10404,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -10486,7 +10486,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="1" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="10" />
           <Property name="HeightMin" value="45" />
           <Property name="HeightMax" value="100" />
           <Property name="HeightTime" value="2" />
@@ -10502,11 +10502,11 @@
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
               <Property name="Coherence" value="0.20" />
-              <Property name="Alignment" value="0.10" />
-              <Property name="SeparateStrength" value="1" />
+              <Property name="Alignment" value="0.05" />
+              <Property name="SeparateStrength" value="2" />
               <Property name="Spacing" value="40" />
               <Property name="Follow" value="1.5" />
-              <Property name="Range" value="1" />
+              <Property name="Range" value="4" />
               <Property name="MaxBankingAmount" value="0.3" />
               <Property name="TurnRequiredForMaxBanking" value="0.3" />
               <Property name="MaxPitchAmount" value="0.5" />

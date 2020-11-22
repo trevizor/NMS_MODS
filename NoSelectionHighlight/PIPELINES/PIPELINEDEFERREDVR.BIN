@@ -86,7 +86,10 @@
 
     <Stage id="CloudsBlur">
     </Stage>
-  
+
+    <Stage id="AttributesNG" enabled="false">
+    </Stage>
+
     <Stage id="Attributes">
 
       <StartPrevFrameAsync />
@@ -120,6 +123,9 @@
       <DrawGeometry type="Mesh"         class="Opaque"            context="LIT_DEFER"             order="STATECHANGES" />      
       <DrawGeometry type="Mesh"         class="Highlight"         context="LIT_DEFER"             order="STATECHANGES" />
       <DrawGeometry type="Mesh"         class="Cutout"            context="LIT_DEFER"             order="STATECHANGES" />
+
+      <SetContext zwrite="true" colourWrite="true" cullMode="back" blendMode="replace" depthTest="less" stencilMode="maskWrite" />
+      <DrawGeometry type="Mesh"         class="ScreenSpaceReflections"          context="LIT_DEFER"             order="STATECHANGES" />
 
       <SetContext zwrite="true" colourWrite="true" cullMode="back" blendMode="replace" depthTest="less" stencilMode="maskWrite"  stencilRef="65"/>
       <DrawGeometry type="Mesh"         class="OpaqueBeforeUI"    context="LIT_DEFER"             order="STATECHANGES" />

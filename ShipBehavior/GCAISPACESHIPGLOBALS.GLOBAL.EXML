@@ -69,29 +69,6 @@
     <Property name="AvoidTime" value="0" />
     <Property name="Hovering" value="False" />
   </Property>
-  <Property name="PlanetLanding" value="GcSpaceshipTravelData.xml">
-    <Property name="Id" value="" />
-    <Property name="MinSpeed" value="15" />
-    <Property name="MaxSpeed" value="20" />
-    <Property name="BoostSpeed" value="1000" />
-    <Property name="Force" value="200" />
-    <Property name="MinSpeedForce" value="5" />
-    <Property name="TurnMin" value="2" />
-    <Property name="TurnMax" value="2" />
-    <Property name="DirectionBrake" value="10" />
-    <Property name="PlanetMinSpeed" value="15" />
-    <Property name="PlanetMaxSpeed" value="20" />
-    <Property name="PlanetBoostSpeed" value="200" />
-    <Property name="PlanetForce" value="40" />
-    <Property name="PlanetTurnMin" value="0.5" />
-    <Property name="PlanetTurnMax" value="3" />
-    <Property name="PlanetDirectionBrake" value="1.2" />
-    <Property name="Falloff" value="0.8" />
-    <Property name="Roll" value="0" />
-    <Property name="MinHeight" value="30" />
-    <Property name="AvoidTime" value="3" />
-    <Property name="Hovering" value="False" />
-  </Property>
   <Property name="PoliceTravel" value="GcSpaceshipTravelData.xml">
     <Property name="Id" value="" />
     <Property name="MinSpeed" value="60" />
@@ -866,7 +843,8 @@
       <Property name="TakeOffDelay" value="1" />
       <Property name="HoverTime" value="0.8" />
       <Property name="HoverHeight" value="60" />
-      <Property name="WarpOutTime" value="3" />
+      <Property name="WarpOutTime" value="9999" />
+      <Property name="Wingman" value="False" />
       <Property name="SpecificModel" value="MODELS/COMMON/SPACECRAFT/S-CLASS/BIOPARTS/BIOSHIP_PROC.SCENE.MBIN" />
       <Property name="Seed" value="GcSeed.xml">
         <Property name="Seed" value="-9143994965287652304" />
@@ -899,7 +877,8 @@
       <Property name="TakeOffDelay" value="1" />
       <Property name="HoverTime" value="0.8" />
       <Property name="HoverHeight" value="60" />
-      <Property name="WarpOutTime" value="3" />
+      <Property name="WarpOutTime" value="99999" />
+      <Property name="Wingman" value="False" />
       <Property name="SpecificModel" value="" />
       <Property name="Seed" value="GcSeed.xml">
         <Property name="Seed" value="0" />
@@ -932,7 +911,7 @@
       <Property name="TakeOffDelay" value="1" />
       <Property name="HoverTime" value="0.8" />
       <Property name="HoverHeight" value="60" />
-      <Property name="WarpOutTime" value="3" />
+      <Property name="WarpOutTime" value="99999" />
       <Property name="SpecificModel" value="" />
       <Property name="Seed" value="GcSeed.xml">
         <Property name="Seed" value="0" />
@@ -965,7 +944,8 @@
       <Property name="TakeOffDelay" value="1" />
       <Property name="HoverTime" value="0.8" />
       <Property name="HoverHeight" value="60" />
-      <Property name="WarpOutTime" value="3" />
+      <Property name="WarpOutTime" value="99999" />
+      <Property name="Wingman" value="False" />
       <Property name="SpecificModel" value="" />
       <Property name="Seed" value="GcSeed.xml">
         <Property name="Seed" value="0" />

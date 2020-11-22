@@ -8,11 +8,7 @@
         <Property value="TkResourceDescriptorData.xml">
           <Property name="Id" value="_PLAYERCHARACTER_MESH" />
           <Property name="Name" value="_PlayerCharacter_Mesh" />
-          <Property name="ReferencePaths">
-            <Property value="NMSString0x80.xml">
-              <Property name="Value" value="MODELS/EFFECTS/NEXUS/PIPESTEAM.SCENE.MBIN" />
-            </Property>
-          </Property>
+          <Property name="ReferencePaths" />
           <Property name="Chance" value="0" />
           <Property name="Children">
             <Property value="TkModelDescriptorList.xml">
@@ -20,6 +16,13 @@
                 <Property value="TkResourceDescriptorList.xml">
                   <Property name="TypeId" value="_HEAD_" />
                   <Property name="Descriptors">
+                      <Property value="TkResourceDescriptorData.xml"> 
+                      <Property name="Id" value="_HEAD_FORSPOOK" /> 
+                      <Property name="Name" value="_Head_ForSpook" /> 
+                      <Property name="ReferencePaths" />  
+                      <Property name="Chance" value="0" />  
+                      <Property name="Children" />  
+                    </Property>
                     <Property value="TkResourceDescriptorData.xml">
                       <Property name="Id" value="_HEAD_GEKSHARK" />
                       <Property name="Name" value="_Head_GekShark" />
