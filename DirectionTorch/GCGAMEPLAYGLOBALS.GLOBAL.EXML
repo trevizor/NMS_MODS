@@ -373,15 +373,15 @@
     <Property name="Curve" value="EaseInQuart" />
   </Property>
   <Property name="TerrainResourceScanTime" value="30" />
-  <Property name="TerrainResourceScanRange" value="1200" />
+  <Property name="TerrainResourceScanRange" value="2400" />
   <Property name="TerrainResourceCompassRange" value="120" />
   <Property name="BinocsDisplayUnknownCreatures" value="False" />
   <Property name="BinocularScanTargetMinHeight" value="5" />
   <Property name="BinocularScanTargetHeightRange" value="0" />
   <Property name="BinocTimeBeforeScan" value="0.5" />
-  <Property name="BinocMinScanTime" value="3.9" />
-  <Property name="BinocScanTime" value="3.9" />
-  <Property name="BinocCreatureScanTime" value="3.2" />
+  <Property name="BinocMinScanTime" value="0.5" />
+  <Property name="BinocScanTime" value="0.5" />
+  <Property name="BinocCreatureScanTime" value="0.5" />
   <Property name="BinocularScanTargetHeightCurve" value="TkCurveType.xml">
     <Property name="Curve" value="EaseOutSine" />
   </Property>
@@ -1511,7 +1511,7 @@
       <Property name="A" value="1" />
     </Property>
   </Property>
-  <Property name="HUDLabelTime" value="0.5" />
+  <Property name="HUDLabelTime" value="0.25" />
   <Property name="HUDLabelAngle" value="45" />
   <Property name="HUDLabelAngleOffset" value="200" />
   <Property name="HUDLabelOffsetX" value="-5" />
@@ -1520,9 +1520,9 @@
   <Property name="HUDLabelScale" value="0.5" />
   <Property name="MaxSpawnTime" value="5" />
   <Property name="ResourceParticleFile" value="MODELS/COMMON/PROJECTILES/RESOURCESHARD.SCENE.MBIN" />
-  <Property name="ResourceParticleSpeed" value="2" />
-  <Property name="ResourceParticleSpread" value="10" />
-  <Property name="ResourceParticleMaxNum" value="8" />
+  <Property name="ResourceParticleSpeed" value="3" />
+  <Property name="ResourceParticleSpread" value="8" />
+  <Property name="ResourceParticleMaxNum" value="12" />
   <Property name="ResourceParticleMinNum" value="1" />
   <Property name="MapHeight" value="700" />
   <Property name="MapOffset" value="1400" />
@@ -1537,7 +1537,7 @@
   <Property name="HUDScaleFarTarget" value="50" />
   <Property name="HUDReticuleMoveBack" value="0.01" />
   <Property name="HUDReticuleMoveAim" value="0.08" />
-  <Property name="MouseSensitivity" value="0.50" />
+  <Property name="MouseSensitivity" value="0.25" />
   <Property name="MouseSensitivityShip" value="30" />
   <Property name="MouseSensitivityVehicle" value="20" />
   <Property name="PainTime" value="1.5" />
@@ -1599,9 +1599,9 @@
     <Property name="B" value="0.204" />
     <Property name="A" value="0.95" />
   </Property>
-  <Property name="PlayerAmbientSpotLightIntensity" value="0.5" />
+  <Property name="PlayerAmbientSpotLightIntensity" value="2" />
   <Property name="PlayerAmbientSpotLightColour" value="Colour.xml">
-    <Property name="R" value="0.11" />
+    <Property name="R" value="0.115" />
     <Property name="G" value="0.113" />
     <Property name="B" value="0.094" />
     <Property name="A" value="1" />

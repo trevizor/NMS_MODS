@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (2.43.0)-->
+<!--File created using MBINCompiler version (3.12.0)-->
 <Data template="GcAISpaceshipGlobals">
   <Property name="MinimumCircleTimeBeforeLanding" value="5" />
   <Property name="MinimumTimeBetweenOutpostLandings" value="3" />
@@ -174,19 +174,42 @@
   <Property name="OutpostLanding" value="GcSpaceshipTravelData.xml">
     <Property name="Id" value="" />
     <Property name="MinSpeed" value="80" />
-    <Property name="MaxSpeed" value="150" />
+    <Property name="MaxSpeed" value="80" />
     <Property name="BoostSpeed" value="1000" />
     <Property name="Force" value="300" />
     <Property name="MinSpeedForce" value="5" />
-    <Property name="TurnMin" value="11" />
+    <Property name="TurnMin" value="1" />
     <Property name="TurnMax" value="1" />
     <Property name="DirectionBrake" value="10" />
     <Property name="PlanetMinSpeed" value="30" />
     <Property name="PlanetMaxSpeed" value="80" />
     <Property name="PlanetBoostSpeed" value="200" />
     <Property name="PlanetForce" value="40" />
-    <Property name="PlanetTurnMin" value="0.15" />
-    <Property name="PlanetTurnMax" value="2" />
+    <Property name="PlanetTurnMin" value="0.5" />
+    <Property name="PlanetTurnMax" value="3" />
+    <Property name="PlanetDirectionBrake" value="1.2" />
+    <Property name="Falloff" value="0.8" />
+    <Property name="Roll" value="2" />
+    <Property name="MinHeight" value="15" />
+    <Property name="AvoidTime" value="0" />
+    <Property name="Hovering" value="False" />
+  </Property>
+  <Property name="PlanetLanding" value="GcSpaceshipTravelData.xml">
+    <Property name="Id" value="" />
+    <Property name="MinSpeed" value="15" />
+    <Property name="MaxSpeed" value="20" />
+    <Property name="BoostSpeed" value="1000" />
+    <Property name="Force" value="200" />
+    <Property name="MinSpeedForce" value="5" />
+    <Property name="TurnMin" value="2" />
+    <Property name="TurnMax" value="2" />
+    <Property name="DirectionBrake" value="10" />
+    <Property name="PlanetMinSpeed" value="15" />
+    <Property name="PlanetMaxSpeed" value="20" />
+    <Property name="PlanetBoostSpeed" value="200" />
+    <Property name="PlanetForce" value="40" />
+    <Property name="PlanetTurnMin" value="0.5" />
+    <Property name="PlanetTurnMax" value="3" />
     <Property name="PlanetDirectionBrake" value="1.2" />
     <Property name="Falloff" value="0.8" />
     <Property name="Roll" value="2" />
@@ -912,6 +935,7 @@
       <Property name="HoverTime" value="0.8" />
       <Property name="HoverHeight" value="60" />
       <Property name="WarpOutTime" value="99999" />
+      <Property name="Wingman" value="False" />
       <Property name="SpecificModel" value="" />
       <Property name="Seed" value="GcSeed.xml">
         <Property name="Seed" value="0" />

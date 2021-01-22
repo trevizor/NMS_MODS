@@ -33,11 +33,11 @@
     <Property name="Inverted" value="False" />
   </Property>
   <Property name="VignetteAdjust" value="GcPhotoModeAdjustData.xml">
-    <Property name="AdjustMin" value="0.1" />
+    <Property name="AdjustMin" value="0" />
     <Property name="AdjustMinCurve" value="TkCurveType.xml">
       <Property name="Curve" value="Linear" />
     </Property>
-    <Property name="AdjustMax" value="2" />
+    <Property name="AdjustMax" value="1" />
     <Property name="AdjustMaxRange" value="2" />
     <Property name="AdjustMaxCurve" value="TkCurveType.xml">
       <Property name="Curve" value="Linear" />
@@ -64,7 +64,7 @@
   </Property>
   <Property name="PhotoModeSunSpeed" value="5" />
   <Property name="UpdateWeatherWhenSunLocked" value="False" />
-  <Property name="WeatherFilterSpaceTransitionChangeTime" value="1" />
+  <Property name="WeatherFilterSpaceTransitionChangeTime" value="4" />
   <Property name="FreshStartTimeOfDay" value="0.3" />
   <Property name="ForceStormSetting" value="False" />
   <Property name="ForceStormStrength" value="0" />
@@ -218,7 +218,7 @@
       <Property name="HorizonFadeSpeed" value="1" />
       <Property name="DayHorizonTightness" value="0.1" />
       <Property name="SunSize" value="0.25" />
-      <Property name="SunStrength" value="0.225806" />
+      <Property name="SunStrength" value="0" />
       <Property name="SunSurroundSize" value="60" />
       <Property name="SunSurroundStrength" value="6" />
       <Property name="UpperSkyFadeSpeed" value="0.8" />
@@ -598,7 +598,7 @@
       <Property name="HorizonFadeSpeed" value="1" />
       <Property name="DayHorizonTightness" value="0" />
       <Property name="SunSize" value="0.25" />
-      <Property name="SunStrength" value="0.225806" />
+      <Property name="SunStrength" value="0" />
       <Property name="SunSurroundSize" value="60" />
       <Property name="SunSurroundStrength" value="6" />
       <Property name="UpperSkyFadeSpeed" value="0.5" />
@@ -1077,7 +1077,7 @@
       <Property name="B" value="0.993" />
       <Property name="A" value="1" />
     </Property>
-    <Property name="SunStrength" value="0.6" />
+    <Property name="SunStrength" value="0" />
     <Property name="SunSize" value="0.005" />
     <Property name="StarVisibility" value="0.82" />
     <Property name="CenterPower" value="2.5" />
@@ -1123,7 +1123,7 @@
       <Property name="B" value="1" />
       <Property name="A" value="1" />
     </Property>
-    <Property name="SunStrength" value="0.6" />
+    <Property name="SunStrength" value="0" />
     <Property name="SunSize" value="0.005" />
     <Property name="StarVisibility" value="0.82" />
     <Property name="CenterPower" value="2.5" />
@@ -1647,7 +1647,7 @@
   </Property>
   <Property name="BinaryStarChance" value="0.2" />
   <Property name="TernaryStarChance" value="0.05" />
-  <Property name="WeatherBloomGain" value="1.1" />
+  <Property name="WeatherBloomGain" value="0.6" />
   <Property name="WeatherBloomGainSpeed" value="0.875" />
   <Property name="WeatherBloomThreshold" value="0.0975" />
   <Property name="WeatherBloomThresholdSpeed" value="1.675" />

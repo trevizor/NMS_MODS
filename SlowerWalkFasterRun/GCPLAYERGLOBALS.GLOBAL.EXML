@@ -310,7 +310,7 @@
   <Property name="GroundWalkForceMultiplier" value="13" />
   <Property name="GroundWalkBrake" value="3" />
   <Property name="GroundWalkBrakeWhileMoving" value="2" />
-  <Property name="GroundWalkSpeed" value="4" />
+  <Property name="GroundWalkSpeed" value="3" />
   <Property name="GroundWalkSpeedTeleportHmd" value="3.8" />
   <Property name="GroundRunSpeed" value="9" />
   <Property name="GroundWalkSpeedLowG" value="1.7" />
@@ -415,7 +415,7 @@
   <Property name="HandSwimForce" value="50" />
   <Property name="HandSwimMaxForce" value="100" />
   <Property name="HandSwimEnabled" value="False" />
-  <Property name="HmdTurnThreshold" value="0.1" />
+  <Property name="HmdTurnThreshold" value="0.01" />
   <Property name="HmdTurnAngle" value="45" />
   <Property name="HmdTurnAnglePad" value="45" />
   <Property name="TeleportInstantTravelDistance" value="10" />
@@ -490,7 +490,7 @@
   <Property name="UnderwaterJetpackEscapeForce" value="20" />
   <Property name="UnderwaterBrake" value="1" />
   <Property name="UnderwaterFloat" value="0" />
-  <Property name="UnderwaterFloatForce" value="15" />
+  <Property name="UnderwaterFloatForce" value="2" />
   <Property name="UnderwaterFloatRange" value="2" />
   <Property name="UnderwaterFloatFreq" value="0.5" />
   <Property name="RespawnOnPadRadius" value="25" />
@@ -1449,10 +1449,10 @@
   <Property name="LookRayRadius" value="1" />
   <Property name="PickRange" value="15" />
   <Property name="DamageRateWhenUnderNoGravity" value="10" />
-  <Property name="TakeDamageImpulse" value="15" />
+  <Property name="TakeDamageImpulse" value="30" />
   <Property name="HardLandTime" value="0.5" />
-  <Property name="HardLandMin" value="5" />
-  <Property name="HardLandMax" value="25" />
+  <Property name="HardLandMin" value="10" />
+  <Property name="HardLandMax" value="30" />
   <Property name="MeleeRange" value="8" />
   <Property name="MeleeTime" value="0.8" />
   <Property name="MeleeForcePush" value="100" />
@@ -1496,14 +1496,14 @@
   <Property name="FullClipReloadSpeedMultiplier" value="2" />
   <Property name="ReloadTapButtonSpeedIncrease" value="1" />
   <Property name="FootDustEffect" value="FOOTFROZEN" />
-  <Property name="FootDustScale" value="0.8" />
+  <Property name="FootDustScale" value="1" />
   <Property name="ClingBrakeMultiplier" value="1" />
   <Property name="ClingAngleThreshold" value="50" />
   <Property name="ClingSpeedThreshold" value="0.8" />
   <Property name="ClimbableStickinessAngle" value="30" />
   <Property name="MinUpAmount" value="0.4" />
   <Property name="FootOffset" value="0.2" />
-  <Property name="MaxFallSpeed" value="260" />
+  <Property name="MaxFallSpeed" value="460" />
   <Property name="PushForceDecay" value="40" />
   <Property name="LeanFwdMaxAngle" value="120" />
   <Property name="LeanBackMaxAngle" value="40" />

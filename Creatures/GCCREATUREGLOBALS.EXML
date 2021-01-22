@@ -497,26 +497,26 @@
   <Property name="UncapSpawningforVideo" value="False" />
   <Property name="AllowSpawningOnscreen" value="False" />
   <Property name="ResourceSpawnTime" value="1" />
-  <Property name="TurnInPlaceIdleTime" value="0.3" />
+  <Property name="TurnInPlaceIdleTime" value="15" />
   <Property name="TurnInPlaceMaxAngle" value="60" />
-  <Property name="TurnInPlaceMinTime" value="0.05" />
+  <Property name="TurnInPlaceMinTime" value="5" />
   <Property name="TurnInPlaceMaxSpeed" value="5" />
   <Property name="SceneTerrainSpawnMinDistance" value="0" />
   <Property name="CreatureMinAlignSpeed" value="0.05" />
-  <Property name="PatrolMinDist" value="5" />
-  <Property name="PatrolMaxDist" value="80" />
+  <Property name="PatrolMinDist" value="40" />
+  <Property name="PatrolMaxDist" value="180" />
   <Property name="PatrolHeightOffset" value="1" />
   <Property name="PatrolGradientFactor" value="1" />
   <Property name="CreatureWaryTime" value="0.2" />
   <Property name="CreatureMinRunTime" value="8" />
   <Property name="CreatureHearingRange" value="10" />
   <Property name="CreatureSightRange" value="100" />
-  <Property name="CreatureMoveIdle" value="0.1" />
-  <Property name="CreatureTurnMin" value="4" />
-  <Property name="CreatureTurnMax" value="2" />
-  <Property name="CreatureBrakeForce" value="10" />
+  <Property name="CreatureMoveIdle" value="2" />
+  <Property name="CreatureTurnMin" value="8" />
+  <Property name="CreatureTurnMax" value="4" />
+  <Property name="CreatureBrakeForce" value="2" />
   <Property name="CreatureMinAnimMoveSpeed" value="0.1" />
-  <Property name="CreatureLookBeforeGoingTime" value="1.5" />
+  <Property name="CreatureLookBeforeGoingTime" value="4" />
   <Property name="CreatureLookBeforeFleeingTime" value="0.5" />
   <Property name="CreatureLookBeforeFleeingIfShotTime" value="0.35" />
   <Property name="CreatureLookScaryThingTime" value="2.5" />
@@ -585,15 +585,15 @@
   <Property name="ExtraFollowFreq2" value="3" />
   <Property name="SandWormChangeDirectionTime" value="1" />
   <Property name="SandWormSteerAdjustTime" value="2" />
-  <Property name="SandWormMaxSteer" value="0.3" />
-  <Property name="SandWormMaxHeightAdjust" value="1" />
-  <Property name="SandWormJumpHeight" value="120" />
-  <Property name="SandWormJumpTime" value="3" />
-  <Property name="SandWormSubmergeDepth" value="100" />
+  <Property name="SandWormMaxSteer" value="0.2" />
+  <Property name="SandWormMaxHeightAdjust" value="30" />
+  <Property name="SandWormJumpHeight" value="20" />
+  <Property name="SandWormJumpTime" value="5" />
+  <Property name="SandWormSubmergeDepth" value="20" />
   <Property name="SandWormSubmergeTime" value="3" />
   <Property name="SandWormSurfaceTime" value="1" />
-  <Property name="SandWormMaxJumps" value="5" />
-  <Property name="SandWormDespawnDist" value="1500" />
+  <Property name="SandWormMaxJumps" value="10" />
+  <Property name="SandWormDespawnDist" value="2500" />
   <Property name="SandWormSpawnTimer" value="300" />
   <Property name="SandWormSpawnChanceMin" value="0.01" />
   <Property name="SandWormSpawnChanceMax" value="0.2" />
@@ -867,7 +867,7 @@
   <Property name="FreighterJellySwimSpeed" value="0.6" />
   <Property name="DefaultSwimSpeed" value="1" />
   <Property name="FastSwimSpeed" value="2.5" />
-  <Property name="DefaultWalkMoveSpeed" value="1" />
+  <Property name="DefaultWalkMoveSpeed" value="0.8" />
   <Property name="DefaultTrotMoveSpeed" value="2.5" />
   <Property name="DefaultRunMoveSpeed" value="5" />
   <Property name="PredatorWalkMoveSpeed" value="1" />
@@ -892,7 +892,7 @@
   <Property name="AttackPlayerDistance" value="1.5" />
   <Property name="SpawnCameraAngleCos" value="-0.8" />
   <Property name="SpawnMinDistPercentage" value="0.25" />
-  <Property name="SpawnOnscreenDist" value="10" />
+  <Property name="SpawnOnscreenDist" value="30" />
   <Property name="FadeScaleMultiplier" value="45" />
   <Property name="FadeScalePower" value="1" />
   <Property name="FadeDistance" value="10" />
