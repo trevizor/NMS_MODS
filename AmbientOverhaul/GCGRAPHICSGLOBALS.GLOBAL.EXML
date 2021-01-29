@@ -1,45 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (3.2.0)-->
 <Data template="GcGraphicsGlobals">
-  <Property name="LUTDistanceFlightMultiplier" value="2" />
-  <Property name="SunLightIntensity" value="5" />
-  <Property name="SunLightBlendTime" value="1" />
+  <Property name="LUTDistanceFlightMultiplier" value="0" />
+  <Property name="SunLightIntensity" value="3" />
+  <Property name="SunLightBlendTime" value="5" />
   <Property name="HBAOBias" value="0.1" />
   <Property name="HBAORadius" value="2" />
   <Property name="HBAOIntensity" value="5" />
   <Property name="LightShaftProperties" value="GcLightShaftProperties.xml">
-    <Property name="LightShaftScattering" value="0.1" />
+    <Property name="LightShaftScattering" value="0.05" />
     <Property name="LightShaftStrength" value="1" />
     <Property name="LightShaftBottom" value="0" />
     <Property name="LightShaftTop" value="0.25" />
     <Property name="LightShaftColourBottom" value="Colour.xml">
-      <Property name="R" value="0.14" />
-      <Property name="G" value="0.14" />
-      <Property name="B" value="0.14" />
+      <Property name="R" value="0.3" />
+      <Property name="G" value="0.3" />
+      <Property name="B" value="0.3" />
       <Property name="A" value="1" />
     </Property>
     <Property name="LightShaftColourTop" value="Colour.xml">
-      <Property name="R" value="0.08" />
-      <Property name="G" value="0.08" />
-      <Property name="B" value="0.08" />
+      <Property name="R" value="0.3" />
+      <Property name="G" value="0.3" />
+      <Property name="B" value="0.3" />
       <Property name="A" value="1" />
     </Property>
   </Property>
   <Property name="StormLightShaftProperties" value="GcLightShaftProperties.xml">
-    <Property name="LightShaftScattering" value="0.01" />
-    <Property name="LightShaftStrength" value="0.25" />
+    <Property name="LightShaftScattering" value="0.05" />
+    <Property name="LightShaftStrength" value="1" />
     <Property name="LightShaftBottom" value="0" />
     <Property name="LightShaftTop" value="0.25" />
     <Property name="LightShaftColourBottom" value="Colour.xml">
-      <Property name="R" value="0.2" />
-      <Property name="G" value="0.2" />
-      <Property name="B" value="0.2" />
+      <Property name="R" value="0.5" />
+      <Property name="G" value="0.5" />
+      <Property name="B" value="0.5" />
       <Property name="A" value="1" />
     </Property>
     <Property name="LightShaftColourTop" value="Colour.xml">
-      <Property name="R" value="0.08" />
-      <Property name="G" value="0.08" />
-      <Property name="B" value="0.08" />
+      <Property name="R" value="0.5" />
+      <Property name="G" value="0.5" />
+      <Property name="B" value="0.5" />
       <Property name="A" value="1" />
     </Property>
   </Property>
@@ -470,21 +470,21 @@
   <Property name="GrassSaturationMax" value="0.7" />
   <Property name="GrassValueMin" value="0.7" />
   <Property name="GrassValueMax" value="0.6" />
-  <Property name="SkySaturationMin" value="0.1" />
+  <Property name="SkySaturationMin" value="0.5" />
   <Property name="SkySaturationMax" value="1" />
   <Property name="SkyValueMin" value="0.52" />
   <Property name="SkyValueMax" value="0.52" />
-  <Property name="SpaceScale" value="36000" /> <!-- 18000 -->
+  <Property name="SpaceScale" value="18000" /> <!-- 18000 -->
   <Property name="SpaceMieFactor" value="0.3" />
   <Property name="SpaceSunFactor" value="20" />
   <Property name="MaxSpaceFogStrength" value="0.9" />
   <Property name="ReflectionStrength" value="0.0500" />
-  <Property name="AlphaCutoutMin" value="0.35" />
+  <Property name="AlphaCutoutMin" value="0.45" />
   <Property name="AlphaCutoutMax" value="0.8" />
   <Property name="WaterHueShift" value="0.1" />
   <Property name="WaterSaturation" value="0.8" />
   <Property name="WaterValue" value="0.4" />
-  <Property name="MaxParticleRenderRange" value="800" />
+  <Property name="MaxParticleRenderRange" value="200" />
   <Property name="MaxParticleRenderRangeSpace" value="10000" />
   <Property name="MotionBlurShutterSpeed" value="30" />
   <Property name="MotionBlurShutterAngle" value="180" />

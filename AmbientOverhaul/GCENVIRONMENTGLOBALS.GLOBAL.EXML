@@ -35,8 +35,8 @@
         <Property value="999" />
       </Property>
       <Property name="RegionLODRadius">
-        <Property value="5" />
-        <Property value="8" />
+        <Property value="3" />
+        <Property value="7" />
         <Property value="13" />
         <Property value="9" />
         <Property value="7" />
@@ -76,7 +76,7 @@
         <Property value="999" />
       </Property>
       <Property name="RegionLODRadius">
-        <Property value="7" />
+        <Property value="5" />
         <Property value="10" />
         <Property value="16" />
         <Property value="12" />
@@ -117,7 +117,7 @@
         <Property value="999" />
       </Property>
       <Property name="RegionLODRadius">
-        <Property value="7" />
+        <Property value="5" />
         <Property value="10" />
         <Property value="16" />
         <Property value="12" />
@@ -281,35 +281,35 @@
   <Property name="SpaceStationStateBoundingBoxScaler" value="0.75" />
   <Property name="AtmosphereSpaceRadius" value="10800" />
   <Property name="SpawnLowerAtmosphereRadiusMultiplier" value="0.75" />
-  <Property name="TerrainFadeTime" value="0.75" />
-  <Property name="TerrainFadeTimeInShip" value="0.75" />
+  <Property name="TerrainFadeTime" value="2" />
+  <Property name="TerrainFadeTimeInShip" value="2" />
   <Property name="CreatureFadeTime" value="1.5" />
-  <Property name="FloraFadeTimeMin" value="0.5" />
-  <Property name="FloraFadeTimeMax" value="2" />
+  <Property name="FloraFadeTimeMin" value="0.6" />
+  <Property name="FloraFadeTimeMax" value="2.25" />
   <Property name="PlanetUnwrapMin" value="0" />
   <Property name="PlanetUnwrapMax" value="0" />
-  <Property name="TerrainFlattenMin" value="50" />
+  <Property name="TerrainFlattenMin" value="150" />
   <Property name="TerrainFlattenMax" value="800" />
   <Property name="HeightFogHeightMin" value="100" />
   <Property name="WaterFogHeightMax" value="102" />
-  <Property name="WaterAlphaHeightMin" value="20" />
-  <Property name="WaterAlphaHeightMax" value="400" />
+  <Property name="WaterAlphaHeightMin" value="40" />
+  <Property name="WaterAlphaHeightMax" value="84" />
   <Property name="DoFHeightMin" value="251" />
   <Property name="DoFHeightMax" value="300" />
   <Property name="SunClampHeightMin" value="300" />
   <Property name="SunClampHeightMax" value="390" />
-  <Property name="HeavyAirFadeDistance" value="400" />
+  <Property name="HeavyAirFadeDistance" value="200" />
   <Property name="HeavyAirFadeInTime" value="1.5" />
   <Property name="HeavyAirFadeOutTime" value="1.5" />
   <Property name="PlanetFlipDistance" value="2000" />
-  <Property name="PlanetEffectEndDistance" value="12000" />
+  <Property name="PlanetEffectEndDistance" value="10000" />
   <Property name="AsteroidFadeHeightMin" value="700" />
   <Property name="AsteroidFadeHeightMax" value="1300" />
   <Property name="AsteroidScale" value="0.25" />
   <Property name="SmallAsteroidScale" value="0.15" />
   <Property name="AsteroidMinRotate" value="0" />
   <Property name="AsteroidMaxRotate" value="0.07" />
-  <Property name="MinWaterReflections" value="0.05" />
+  <Property name="MinWaterReflections" value="0.1" />
   <Property name="SpacePlanetFogStrength">
     <Property value="5" />
     <Property value="5" />
@@ -322,7 +322,7 @@
     <Property value="2000" />
     <Property value="400" />
   </Property>
-  <Property name="SkyAtmospherePower" value="2" />
+  <Property name="SkyAtmospherePower" value="4" />
   <Property name="SkyAtmosphereBlendLength">
     <Property value="60000" />
     <Property value="2800" />
@@ -356,7 +356,7 @@
     <Property value="TkShearWindData.xml">
       <Property name="Name" value="WIND" />
       <Property name="OverallWindStrength" value="1" />
-      <Property name="LdsWindStrength" value="0.6" />
+      <Property name="LdsWindStrength" value="0.2" />
       <Property name="LdsWindSpeed" value="1.5" />
       <Property name="ShearWindSpeed" value="1" />
       <Property name="WindShearVertpushStrength" value="0.5" />
@@ -395,7 +395,7 @@
     <Property value="TkShearWindData.xml">
       <Property name="Name" value="STRONGWIND" />
       <Property name="OverallWindStrength" value="1" />
-      <Property name="LdsWindStrength" value="1.2" />
+      <Property name="LdsWindStrength" value="0.3" />
       <Property name="LdsWindSpeed" value="2.5" />
       <Property name="ShearWindSpeed" value="1" />
       <Property name="WindShearVertpushStrength" value="0.5" />
@@ -434,7 +434,7 @@
     <Property value="TkShearWindData.xml">
       <Property name="Name" value="UNDERWATER" />
       <Property name="OverallWindStrength" value="1" />
-      <Property name="LdsWindStrength" value="0.3" />
+      <Property name="LdsWindStrength" value="0.7" />
       <Property name="LdsWindSpeed" value="1.5" />
       <Property name="ShearWindSpeed" value="1" />
       <Property name="WindShearVertpushStrength" value="0.1" />
@@ -483,9 +483,9 @@
     <Property name="CloudHeightMax" value="900" />
     <Property name="HeavyAirHeightMin" value="700" />
     <Property name="HeavyAirHeightMax" value="750" />
-    <Property name="PlanetObjectSwitch" value="800" />
-    <Property name="PlanetLodSwitch0" value="400" />
-    <Property name="PlanetLodSwitch0Elevation" value="800" />
+    <Property name="PlanetObjectSwitch" value="700" />
+    <Property name="PlanetLodSwitch0" value="300" />
+    <Property name="PlanetLodSwitch0Elevation" value="700" />
     <Property name="PlanetLodSwitch1" value="2000" />
     <Property name="PlanetLodSwitch2" value="10000" />
     <Property name="PlanetLodSwitch3" value="20000" />

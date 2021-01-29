@@ -65,7 +65,7 @@
           <Property name="Weight" value="0.4" />
         </Property>
         <Property value="GcBiomeFileListOption.xml">
-          <Property name="SubType" value="GcBiomeSubType.xml"><Property name="BiomeSubType" value="HugeToxic" /></Property>
+          <Property name="SubType" value="GcBiomeSubType.xml"><Property name="BiomeSubType" value="Standard" /></Property>
           <Property name="FileName" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/LUSHVOLCANOBIOME.MXML" />
           <Property name="Weight" value="0.4" />
         </Property>
@@ -1649,15 +1649,170 @@
       </Property>
       <Property name="ProbabilityOfBeingActive" value="1" />
       <Property name="MinFilesToChoose" value="1" />
-      <Property name="MaxFilesToChoose" value="1" />
+      <Property name="MaxFilesToChoose" value="2" />
       <Property name="ExternalObjectFiles">
-        <Property value="GcExternalObjectListOptions.xml">
+        <Property value="GcExternalObjectListOptions.xml"> <!-- EXTRA_BIOME -->
           <Property name="Name" value="EXTRA_BIOME" />
           <Property name="ResourceHint" value="" />
           <Property name="ResourceHintIcon" value="" />
-          <Property name="Probability" value="0.4" />
+          <Property name="Probability" value="1" />
           <Property name="TileType" value="GcTerrainTileType.xml">
             <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="False" /> <!-- False -->
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHOBJECTSMID.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHROCKYOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHROCKYWEIRDOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHROOMAOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHROOMBOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/RADIOACTIVEALIENOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/RADIOBIGPROPSOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/RADIOSPIKECRYSTALSOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/RADIOSPIKEPOTATOOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/SCORCHBIGPROPSOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/SCORCHCORALOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/SCORCHEDALIENOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/SCORCHEDOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/SCORCHEDSHIELDTREEOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/SWAMPOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/TOXICBIGPROPSOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/TOXICOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/BARRENCORALOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/BARRENHIVESOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/BARRENROCKYOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/BARRENROCKYWEIRDOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/FROZENALIENOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/FROZENPILLAROBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/HOUDINIPROPSOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/HUGELUSHOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/HUGERINGOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/HUGEUWPLANTOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LAVAOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHBIGPROPSOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHHQOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHHQTENTACLEOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/LUSHOBJECTSMID.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/LUSHROCKYOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/LUSHROCKYWEIRDOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/LUSHROOMAOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/LUSHROOMBOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/RADIOACTIVEALIENOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/RADIOBIGPROPSOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/RADIOSPIKECRYSTALSOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/RADIOSPIKEPOTATOOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/SCORCHBIGPROPSOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/SCORCHCORALOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/SCORCHEDALIENOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/SCORCHEDOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/SCORCHEDSHIELDTREEOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/SWAMPOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/TOXICBIGPROPSOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/TOXICOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/BARRENCORALOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/BARRENHIVESOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/BARRENROCKYOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/BARRENROCKYWEIRDOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/FROZENALIENOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/FROZENPILLAROBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/HOUDINIPROPSOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/HUGELUSHOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/HUGERINGOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/HUGEUWPLANTOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/LAVAOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/LUSHBIGPROPSOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/LUSHHQOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/LUSHHQTENTACLEOBJECTSFULL.MXML" /> </Property>
+            <!-- clones to increase probability -->
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/LUSHBIGPROPSOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/LUSHHQOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/LUSHOBJECTSMID.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/LUSHROCKYWEIRDOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/LUSHBIGPROPSOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/LUSHHQOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/LUSHOBJECTSMID.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/LUSHROCKYWEIRDOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/LUSHBIGPROPSOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/LUSHHQOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/LUSHOBJECTSMID.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EOL/LUSHROCKYWEIRDOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHBIGPROPSOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHHQOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHOBJECTSMID.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHROCKYWEIRDOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHBIGPROPSOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHHQOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHOBJECTSMID.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHROCKYWEIRDOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHBIGPROPSOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHHQOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHOBJECTSMID.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHROCKYWEIRDOBJECTS.MXML" /> </Property>
+          </Property>
+        </Property>
+        <Property value="GcExternalObjectListOptions.xml"> <!-- EXTRA_BEACH -->
+          <Property name="Name" value="EXTRA_BEACH" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Underwater" />
+          </Property>
+          <Property name="AllowLimiting" value="False" /> <!-- False -->
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/SCORCHEDOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/SCORCHEDSHIELDTREEOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/SWAMPOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/HUGERINGOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/HUGEUWPLANTOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LAVAOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHBIGPROPSOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHHQOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHHQTENTACLEOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/RADIOACTIVEALIENOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/RADIOBIGPROPSOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/RADIOSPIKECRYSTALSOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/RADIOSPIKEPOTATOOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/SCORCHBIGPROPSOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/TOXICBIGPROPSOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/TOXICOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHOBJECTSMID.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHROCKYOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHROCKYWEIRDOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHROOMAOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHROOMBOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/BARRENCORALOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/BARRENHIVESOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/BARRENROCKYOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/BARRENROCKYWEIRDOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/HOUDINIPROPSOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/HUGELUSHOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/SCORCHCORALOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/SCORCHEDALIENOBJECTS.MXML" /> </Property>
+            <!-- clones to increase probability -->
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHBIGPROPSOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHHQOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHOBJECTSMID.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHROCKYWEIRDOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHBIGPROPSOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHHQOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHOBJECTSMID.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHROCKYWEIRDOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHBIGPROPSOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHHQOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHOBJECTSMID.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHROCKYWEIRDOBJECTS.MXML" /> </Property>
+          </Property>
+        </Property>
+        <Property value="GcExternalObjectListOptions.xml"> <!-- EXTRA_MOUNTAIN -->
+          <Property name="Name" value="EXTRA_MOUNTAIN" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Mountain" />
           </Property>
           <Property name="AllowLimiting" value="False" /> <!-- False -->
           <Property name="ChooseUsingLifeLevel" value="False" />
@@ -1666,15 +1821,12 @@
             <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/BARRENHIVESOBJECTS.MXML" /> </Property>
             <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/BARRENROCKYOBJECTS.MXML" /> </Property>
             <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/BARRENROCKYWEIRDOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/BONESPIREOBJECTSDEAD.MXML" /> </Property>
             <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/FROZENALIENOBJECTS.MXML" /> </Property>
             <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/FROZENPILLAROBJECTS.MXML" /> </Property>
             <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/HOUDINIPROPSOBJECTS.MXML" /> </Property>
             <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/HUGELUSHOBJECTSFULL.MXML" /> </Property>
             <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/HUGERINGOBJECTSFULL.MXML" /> </Property>
             <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/HUGEUWPLANTOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/HYDROGARDENOBJECTSDEAD.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/IRRISHELLSOBJECTSDEAD.MXML" /> </Property>
             <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LAVAOBJECTSFULL.MXML" /> </Property>
             <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHBIGPROPSOBJECTSFULL.MXML" /> </Property>
             <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHHQOBJECTSFULL.MXML" /> </Property>
@@ -1693,259 +1845,53 @@
             <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/SCORCHEDALIENOBJECTS.MXML" /> </Property>
             <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/SCORCHEDOBJECTSFULL.MXML" /> </Property>
             <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/SCORCHEDSHIELDTREEOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/SHARDSOBJECTSDEAD.MXML" /> </Property>
             <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/SWAMPOBJECTSFULL.MXML" /> </Property>
             <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/TOXICBIGPROPSOBJECTSFULL.MXML" /> </Property>
             <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/TOXICOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/WIRECELLSOBJECTSDEAD.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/SHARDSOBJECTSDEAD.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/BARRENCORALOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/BARRENHIVESOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/BARRENROCKYOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/BARRENROCKYWEIRDOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/BONESPIREOBJECTSDEAD.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/FROZENALIENOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/FROZENPILLAROBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/HOUDINIPROPSOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/HUGELUSHOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/HUGERINGOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/HUGEUWPLANTOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/HYDROGARDENOBJECTSDEAD.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/IRRISHELLSOBJECTSDEAD.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/LAVAOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/LUSHBIGPROPSOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/LUSHHQOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/LUSHHQTENTACLEOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/LUSHINFESTEDOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/LUSHOBJECTSMID.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/LUSHROCKYOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/LUSHROCKYWEIRDOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/LUSHROOMAOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/LUSHROOMBOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/RADIOACTIVEALIENOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/RADIOBIGPROPSOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/RADIOSPIKECRYSTALSOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/RADIOSPIKEPOTATOOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/SCORCHBIGPROPSOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/SCORCHCORALOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/SCORCHEDALIENOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/SCORCHEDOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/SCORCHEDSHIELDTREEOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/SWAMPOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/TOXICBIGPROPSOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/TOXICINFESTEDOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/TOXICOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/WIRECELLSOBJECTSDEAD.MXML" /> </Property>
           </Property>
         </Property>
-      </Property>
-    </Property>
-    <Property value="GcExternalObjectFileList.xml">
-      <Property name="Id" value="EXTRA_CAVE" />
-      <Property name="OnlyOnExtremeWeather" value="False" />
-      <Property name="OnlyOnExtremeSentinels" value="False" />
-      <Property name="OnlyOnDeepWater" value="False" />
-      <Property name="NotOnExtremePlanets" value="False" />
-      <Property name="NotOnStartPlanets" value="False" />
-      <Property name="NotOnWeirdPlanets" value="False" />
-      <Property name="NotOnDeadPlanets" value="True" />
-      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
-        <Property name="Biome" value="All" />
-      </Property>
-      <Property name="ProbabilityOfBeingActive" value="1" />
-      <Property name="MinFilesToChoose" value="1" />
-      <Property name="MaxFilesToChoose" value="1" />
-      <Property name="ExternalObjectFiles">
-        <Property value="GcExternalObjectListOptions.xml">
-          <Property name="Name" value="EXTRA_BIOME" />
-          <Property name="ResourceHint" value="" />
-          <Property name="ResourceHintIcon" value="" />
-          <Property name="Probability" value="0.2" />
-          <Property name="TileType" value="GcTerrainTileType.xml">
-            <Property name="TileType" value="Cave" />
-          </Property>
-          <Property name="AllowLimiting" value="False" /> <!-- False -->
-          <Property name="ChooseUsingLifeLevel" value="False" />
-          <Property name="Options">
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/HUGELUSHOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/BARRENCORALOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/BARRENHIVESOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/BARRENINFESTEDOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/BARRENROCKYOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/BARRENROCKYWEIRDOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/BONESPIREOBJECTSDEAD.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/FROZENALIENOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/FROZENPILLAROBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/HOUDINIPROPSOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/HUGERINGOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/HUGEUWPLANTOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/HYDROGARDENOBJECTSDEAD.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/IRRISHELLSOBJECTSDEAD.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/LAVAOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/LUSHBIGPROPSOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/LUSHHQOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/LUSHHQTENTACLEOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/LUSHINFESTEDOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/LUSHOBJECTSMID.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/LUSHROCKYOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/LUSHROCKYWEIRDOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/LUSHROOMAOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/LUSHROOMBOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/RADIOACTIVEALIENOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/RADIOBIGPROPSOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/RADIOSPIKECRYSTALSOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/RADIOSPIKEPOTATOOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/SCORCHBIGPROPSOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/SCORCHCORALOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/SCORCHEDALIENOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/SCORCHEDOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/SCORCHEDSHIELDTREEOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/SHARDSOBJECTSDEAD.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/SWAMPOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/TOXICBIGPROPSOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/TOXICINFESTEDOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/TOXICOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/CAVE/WIRECELLSOBJECTSDEAD.MXML" /> </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-
-    <Property value="GcExternalObjectFileList.xml">
-      <Property name="Id" value="EXTRA_MOUNTAIN" />
-      <Property name="OnlyOnExtremeWeather" value="False" />
-      <Property name="OnlyOnExtremeSentinels" value="False" />
-      <Property name="OnlyOnDeepWater" value="False" />
-      <Property name="NotOnExtremePlanets" value="False" />
-      <Property name="NotOnStartPlanets" value="False" />
-      <Property name="NotOnWeirdPlanets" value="False" />
-      <Property name="NotOnDeadPlanets" value="True" />
-      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
-        <Property name="Biome" value="All" />
-      </Property>
-      <Property name="ProbabilityOfBeingActive" value="1" />
-      <Property name="MinFilesToChoose" value="1" />
-      <Property name="MaxFilesToChoose" value="1" />
-      <Property name="ExternalObjectFiles">
-        <Property value="GcExternalObjectListOptions.xml">
-          <Property name="Name" value="EXTRA_MOUNTAIN" />
-          <Property name="ResourceHint" value="" />
-          <Property name="ResourceHintIcon" value="" />
-          <Property name="Probability" value="0.6" />
-          <Property name="TileType" value="GcTerrainTileType.xml">
-            <Property name="TileType" value="Mountain" />
-          </Property>
-          <Property name="AllowLimiting" value="False" /> <!-- False -->
-          <Property name="ChooseUsingLifeLevel" value="False" />
-          <Property name="Options">
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/BARRENCORALOBJECTS.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/BARRENHIVESOBJECTS.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/BARRENROCKYOBJECTS.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/BARRENROCKYWEIRDOBJECTS.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/BONESPIREOBJECTSDEAD.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/FROZENALIENOBJECTS.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/FROZENPILLAROBJECTS.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/HOUDINIPROPSOBJECTS.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/HUGELUSHOBJECTSFULL.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/HUGERINGOBJECTSFULL.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/HUGEUWPLANTOBJECTS.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/HYDROGARDENOBJECTSDEAD.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/IRRISHELLSOBJECTSDEAD.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LAVAOBJECTSFULL.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHBIGPROPSOBJECTSFULL.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHHQOBJECTSFULL.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHHQTENTACLEOBJECTSFULL.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHOBJECTSMID.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHROCKYOBJECTS.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHROCKYWEIRDOBJECTS.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHROOMAOBJECTS.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/LUSHROOMBOBJECTS.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/RADIOACTIVEALIENOBJECTS.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/RADIOBIGPROPSOBJECTS.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/RADIOSPIKECRYSTALSOBJECTS.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/RADIOSPIKEPOTATOOBJECTS.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/SCORCHBIGPROPSOBJECTSFULL.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/SCORCHCORALOBJECTS.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/SCORCHEDALIENOBJECTS.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/SCORCHEDOBJECTSFULL.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/SCORCHEDSHIELDTREEOBJECTS.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/SHARDSOBJECTSDEAD.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/SWAMPOBJECTSFULL.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/TOXICBIGPROPSOBJECTSFULL.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/TOXICOBJECTSFULL.MXML" /> </Property>
-        <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/EO/WIRECELLSOBJECTSDEAD.MXML" /> </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-
-    <Property value="GcExternalObjectFileList.xml">
-      <Property name="Id" value="EXTRA_UNDERWATER" />
-      <Property name="OnlyOnExtremeWeather" value="False" />
-      <Property name="OnlyOnExtremeSentinels" value="False" />
-      <Property name="OnlyOnDeepWater" value="False" />
-      <Property name="NotOnExtremePlanets" value="False" />
-      <Property name="NotOnStartPlanets" value="False" />
-      <Property name="NotOnWeirdPlanets" value="False" />
-      <Property name="NotOnDeadPlanets" value="True" />
-      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
-        <Property name="Biome" value="All" />
-      </Property>
-      <Property name="ProbabilityOfBeingActive" value="1" />
-      <Property name="MinFilesToChoose" value="1" />
-      <Property name="MaxFilesToChoose" value="1" />
-      <Property name="ExternalObjectFiles">
-        <Property value="GcExternalObjectListOptions.xml">
+        <Property value="GcExternalObjectListOptions.xml"> <!-- EXTRA_UNDERWATER -->
           <Property name="Name" value="EXTRA_UNDERWATER" />
           <Property name="ResourceHint" value="" />
           <Property name="ResourceHintIcon" value="" />
-          <Property name="Probability" value="0.3" />
+          <Property name="Probability" value="1" />
           <Property name="TileType" value="GcTerrainTileType.xml">
             <Property name="TileType" value="Underwater" />
           </Property>
           <Property name="AllowLimiting" value="False" /> <!-- False -->
           <Property name="ChooseUsingLifeLevel" value="False" />
           <Property name="Options">
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/BARRENCORALOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/BARRENHIVESOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/BARRENROCKYOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/BARRENROCKYWEIRDOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/BONESPIREOBJECTSDEAD.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/FRACTCUBEOBJECTSDEADULTRA.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/FROZENALIENOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/FROZENPILLAROBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/HEXAGONOBJECTSDEADULTRA.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/HOUDINIPROPSOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/HUGELUSHOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/HUGERINGOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/HUGEUWPLANTOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/HYDROGARDENOBJECTSDEAD.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/IRRISHELLSOBJECTSDEAD.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/LAVAOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/LUSHBIGPROPSOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/LUSHHQOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/LUSHHQTENTACLEOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/LUSHOBJECTSMID.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/LUSHROCKYOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/LUSHROCKYWEIRDOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/LUSHROOMAOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/LUSHROOMBOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/MSTRUCTOBJECTSDEADULTRA.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/RADIOACTIVEALIENOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/RADIOBIGPROPSOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/RADIOSPIKECRYSTALSOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/RADIOSPIKEPOTATOOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/SCORCHBIGPROPSOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/SCORCHCORALOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/SCORCHEDALIENOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/SCORCHEDOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/SCORCHEDSHIELDTREEOBJECTS.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/SCORCHEDSHIELDTREEOBJECTSULTRA.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/SHARDSOBJECTSDEAD.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/SWAMPOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/TOXICBIGPROPSOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/TOXICOBJECTSFULL.MXML" /> </Property>
-            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WATER/WIRECELLSOBJECTSDEAD.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/LUSHOBJECTSMID.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/LUSHROCKYOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/LUSHROCKYWEIRDOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/LUSHROOMAOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/LUSHROOMBOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/RADIOACTIVEALIENOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/RADIOBIGPROPSOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/RADIOSPIKECRYSTALSOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/RADIOSPIKEPOTATOOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/SCORCHBIGPROPSOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/SCORCHCORALOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/SCORCHEDALIENOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/SCORCHEDOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/SCORCHEDSHIELDTREEOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/SWAMPOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/TOXICBIGPROPSOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/TOXICOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/BARRENCORALOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/BARRENHIVESOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/BARRENROCKYOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/BARRENROCKYWEIRDOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/FROZENALIENOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/FROZENPILLAROBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/HOUDINIPROPSOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/HUGELUSHOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/HUGERINGOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/HUGEUWPLANTOBJECTS.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/LAVAOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/LUSHBIGPROPSOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/LUSHHQOBJECTSFULL.MXML" /> </Property>
+            <Property value="NMSString0x80.xml"> <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/WT/LUSHHQTENTACLEOBJECTSFULL.MXML" /> </Property>
           </Property>
         </Property>
       </Property>
