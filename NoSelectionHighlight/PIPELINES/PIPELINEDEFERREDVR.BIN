@@ -1148,7 +1148,7 @@
       <SetContext zwrite="true" blendMode="replace" colourWrite="true" stencilMode="disabled" depthTest="always" />
       <DrawQuadMT material="materials/PostProcess.material.mbin" context="DOWNSAMPLE_DEPTH" />
       <UnbindBuffers />
-      <EndTarget flushCB="true" flushDB="true" />
+      <EndTarget flushCB="true" flushDB="false" />
 
       <BeginTarget target="PARTICLES" depthTarget="PARTICLES_DEPTH" />
       <ColourMask channels="RGBA"/>
@@ -1161,6 +1161,7 @@
 
       <DoForwardLightLoop  type="EMITTER"  class="Translucent" context="TRANSLUCENT_SOFT" order="BACK_TO_FRONT" singlePassStereo="false" />
       <DoForwardLightLoop  type="HEAVYAIR" class="Translucent" context="HEAVYAIR_SOFT" order="BACK_TO_FRONT" />
+      <DoForwardLightLoop  type="EMITTER"  class="Additive" context="TRANSLUCENT_ADDITIVE" order="BACK_TO_FRONT" singlePassStereo="false" />
       <UnbindBuffers />
 
       <EndTarget flushCB="true" flushDB="false" />

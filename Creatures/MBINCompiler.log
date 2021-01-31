@@ -1,0 +1,22 @@
+[VERSION]: MBINCompiler v3.12.0.4
+[ARGS]: "."
+
+If you encounter any errors, please submit a bug report and include this log file.
+Please check that there isn't already a similar issue open before creating a new one.
+https://github.com/monkeyman192/MBINCompiler/issues
+
+[WARN]: Unable to automatically determine the --input-format type.
+[INFO]: --input-format=EXML --output-format=MBIN
+
+[ERROR]: [AggregateException]: Um ou mais erros.
+[ExmlException]: An EXML exception has occurred!
+[ArgumentException]: O objeto de tipo 'libMBIN.NMS.Vector4f' não pode ser convertido no tipo 'libMBIN.NMS.Vector3f'.
+
+   em System.RuntimeType.TryChangeType(Object value, Binder binder, CultureInfo culture, Boolean needsSpecialCast)
+   em System.Reflection.RtFieldInfo.InternalSetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, CultureInfo culture, StackCrawlMark& stackMark)
+   em System.Reflection.RtFieldInfo.SetValue(Object obj, Object value, BindingFlags invokeAttr, Binder binder, CultureInfo culture)
+   em libMBIN.NMSTemplate.DeserializeEXml(EXmlBase xmlData)
+   em libMBIN.EXmlFile.ReadTemplateFromXmlReader(XmlReader reader, String& templateName)
+   em libMBIN.EXmlFile.ReadTemplateFromStream(Stream input, String& templateName)
+   em MBINCompiler.Commands.Convert.ConvertEXML(String inputPath, FileStream fIn, MemoryStream msOut, String fileOut)
+
