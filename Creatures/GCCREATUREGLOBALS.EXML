@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (3.5.0)-->
 <Data template="GcCreatureGlobals">
+  <Property name="PetCarePuzzleOverrideID" value="?PET_CARE" />
+  <Property name="CreatureInteractionRangeBoostHuge" value="1.5" />
+  <Property name="CreatureInteractionRangeBoostLarge" value="1.2" />
+  <Property name="CreatureInteractionRangeBoostMedium" value="1.1" />
+  <Property name="CreatureInteractionRangeBoostSmall" value="1" />
+  <Property name="CreatureInteractionRangeBoostRun" value="2" />
+  <Property name="CreatureInteractionRangeBoostSprint" value="3.5" />
+  <Property name="CreatureInteractWithoutRaycasts" value="True" />
+  <Property name="CreatureInteractBaseRange" value="5" />
+  <Property name="PetInteractBaseRange" value="8" />
   <Property name="Temperments">
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="GENERIC" />
@@ -31,6 +41,9 @@
     </Property>
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="UI_TEMPERMENT_ROBOT" />
+    </Property>
+    <Property value="NMSString0x20.xml">
+      <Property name="Value" value="TEMPERAMENT_PET" />
     </Property>
   </Property>
   <Property name="TempermentDescriptions">
@@ -63,6 +76,9 @@
     </Property>
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="UI_CREA_DESC_ROBOT%i" />
+    </Property>
+    <Property value="NMSString0x20.xml">
+      <Property name="Value" value="UI_CREA_DESC_PET%i" />
     </Property>
   </Property>
   <Property name="Diets">
@@ -454,11 +470,61 @@
       <Property name="Value" value="UI_CREA_DESC_BIOME_DUST_" />
     </Property>
   </Property>
+  <Property name="PetBiomeClimates">
+    <Property value="NMSString0x20.xml">
+      <Property name="Value" value="UI_PET_CLIMATE_LUSH" />
+    </Property>
+    <Property value="NMSString0x20.xml">
+      <Property name="Value" value="UI_PET_CLIMATE_TOXIC" />
+    </Property>
+    <Property value="NMSString0x20.xml">
+      <Property name="Value" value="UI_PET_CLIMATE_HOT" />
+    </Property>
+    <Property value="NMSString0x20.xml">
+      <Property name="Value" value="UI_PET_CLIMATE_RADIO" />
+    </Property>
+    <Property value="NMSString0x20.xml">
+      <Property name="Value" value="UI_PET_CLIMATE_FROZEN" />
+    </Property>
+    <Property value="NMSString0x20.xml">
+      <Property name="Value" value="UI_PET_CLIMATE_DUST" />
+    </Property>
+    <Property value="NMSString0x20.xml">
+      <Property name="Value" value="UI_PET_CLIMATE_DEAD" />
+    </Property>
+    <Property value="NMSString0x20.xml">
+      <Property name="Value" value="UI_PET_CLIMATE_WEIRD" />
+    </Property>
+    <Property value="NMSString0x20.xml">
+      <Property name="Value" value="UI_PET_CLIMATE_WEIRD" />
+    </Property>
+    <Property value="NMSString0x20.xml">
+      <Property name="Value" value="UI_PET_CLIMATE_WEIRD" />
+    </Property>
+    <Property value="NMSString0x20.xml">
+      <Property name="Value" value="UI_PET_CLIMATE_WEIRD" />
+    </Property>
+    <Property value="NMSString0x20.xml">
+      <Property name="Value" value="UI_PET_CLIMATE_WEIRD" />
+    </Property>
+    <Property value="NMSString0x20.xml">
+      <Property name="Value" value="UI_PET_CLIMATE_SWAMP" />
+    </Property>
+    <Property value="NMSString0x20.xml">
+      <Property name="Value" value="UI_PET_CLIMATE_LAVA" />
+    </Property>
+    <Property value="NMSString0x20.xml">
+      <Property name="Value" value="UI_PET_CLIMATE_WEIRD" />
+    </Property>
+    <Property value="NMSString0x20.xml">
+      <Property name="Value" value="UI_PET_CLIMATE_WEIRD" />
+    </Property>
+  </Property>
   <Property name="OverrideIKParams" value="True" />
-  <Property name="BodyMassWeight" value="0.4" />
+  <Property name="BodyMassWeight" value="2" />
   <Property name="Omega" value="0.5" />
   <Property name="OmegaDropOff" value="0.8" />
-  <Property name="MovementDamp" value="0.2" />
+  <Property name="MovementDamp" value="0.4" />
   <Property name="IsHurtingCreaturesACrime" value="False" />
   <Property name="EnableFlyingSnakeTails" value="False" />
   <Property name="EnableNewStuff" value="True" />
@@ -498,9 +564,10 @@
   <Property name="AllowSpawningOnscreen" value="False" />
   <Property name="ResourceSpawnTime" value="1" />
   <Property name="TurnInPlaceIdleTime" value="15" />
-  <Property name="TurnInPlaceMaxAngle" value="60" />
+  <Property name="TurnInPlaceMaxAngle" value="30" />
   <Property name="TurnInPlaceMinTime" value="5" />
   <Property name="TurnInPlaceMaxSpeed" value="5" />
+  <Property name="TurnInPlaceMaxSpeedIndoor" value="0.1" />
   <Property name="SceneTerrainSpawnMinDistance" value="0" />
   <Property name="CreatureMinAlignSpeed" value="0.05" />
   <Property name="PatrolMinDist" value="40" />
@@ -521,6 +588,12 @@
   <Property name="CreatureLookBeforeFleeingIfShotTime" value="0.35" />
   <Property name="CreatureLookScaryThingTime" value="2.5" />
   <Property name="CreatureLookPlayerForceLookTime" value="2.5" />
+  <Property name="LookMaxYawMoving" value="90" />
+  <Property name="LookMaxYawStatic" value="140" />
+  <Property name="LookPitchAtMaxYaw" value="0.2" />
+  <Property name="LookMaxPitchWhenMoving" value="0.25" />
+  <Property name="LookRollAtMaxYaw" value="0.8" />
+  <Property name="LookRollWhenMoving" value="0.6" />
   <Property name="FootPlantError" value="0.9" />
   <Property name="RecoverHealthTime" value="10" />
   <Property name="PainShake" value="GcCameraShakeData.xml">
@@ -618,7 +691,7 @@
   <Property name="InfluenceDeflect" value="0.8" />
   <Property name="TargetSearchTimeout" value="0.5" />
   <Property name="AttractMinDistance" value="50" />
-  <Property name="SwarmMoveYFactor" value="0.3" />
+  <Property name="SwarmMoveYFactor" value="0.2" />
   <Property name="DroneExplodeRadius" value="10" />
   <Property name="WeaponRepelRange" value="18" />
   <Property name="WeaponRepelAmount" value="2" />
@@ -626,8 +699,8 @@
   <Property name="VelocityAlignSpeed" value="8" />
   <Property name="HeightLookAhead" value="2" />
   <Property name="MaxHeightTime" value="3" />
-  <Property name="PlayerBirdDistance" value="25" />
-  <Property name="FishSpeedMin" value="0.5" />
+  <Property name="PlayerBirdDistance" value="1" />
+  <Property name="FishSpeedMin" value="0.2" />
   <Property name="FishSpeedMax" value="5" />
   <Property name="FishSwimMaxAcceleration" value="0.3" />
   <Property name="AlertDistance" value="5" />
@@ -643,8 +716,8 @@
   <Property name="SpawnDistanceModifierForUnderwater" value="0.1" />
   <Property name="FootDustGroundTintStrength" value="0.3" />
   <Property name="StickToGroundSpeed" value="1" />
-  <Property name="StickToGroundCastBegin" value="-2" />
-  <Property name="StickToGroundCastEnd" value="2" />
+  <Property name="StickToGroundCastBegin" value="2" />
+  <Property name="StickToGroundCastEnd" value="-2" />
   <Property name="FlyingSnakeData" value="GcFlyingSnakeData.xml">
     <Property name="CircleSpeed" value="8" />
     <Property name="ApproachBaitSpeed" value="30" />
@@ -714,6 +787,7 @@
     </Property>
   </Property>
   <Property name="ShowScale" value="False" />
+  <Property name="PetFootShakeModifier" value="0.5" />
   <Property name="CreatureMedMinSize" value="1.2" />
   <Property name="CreatureLargeMinSize" value="2.5" />
   <Property name="CreatureHugeMinSize" value="4.5" />
@@ -919,9 +993,79 @@
   <Property name="FishDeathEffect" value="DEATHBLOODBIG" />
   <Property name="FootParticleTime" value="0.3" />
   <Property name="PiedPiper" value="False" />
+  <Property name="PetInteractTurnToFaceMinAngle" value="15" />
   <Property name="FollowPlayerDistance" value="8" />
   <Property name="FollowRunPlayerDistance" value="15" />
   <Property name="FollowRange" value="5" />
+    <Property name="PetPlayerSpeedSmoothTime" value="0.5" />
+  <Property name="PetStickySideBiasAngle" value="-15" />
+  <Property name="PetWalkAtHeelChanceDevoted" value="0.9" />
+  <Property name="PetWalkAtHeelChanceIndependent" value="0.1" />
+  <Property name="PetWalkAtHeelDistMin" value="0" />
+  <Property name="PetWalkAtHeelDistMax" value="4" />
+  <Property name="PetRunAtHeelDistMin" value="11" />
+  <Property name="PetRunAtHeelDistMax" value="20" />
+  <Property name="PetHeelDistSwitchTimeMin" value="4" />
+  <Property name="PetHeelDistSwitchTimeMax" value="7" />
+  <Property name="PetRunAtHeelLateralShiftMin" value="0.7" />
+  <Property name="PetRunAtHeelLateralShiftMax" value="2.000001" />
+  <Property name="PetHeelLateralShiftTimeMin" value="3" />
+  <Property name="PetHeelLateralShiftTimeMax" value="6" />
+  <Property name="PetWalkAtHeelLateralShift" value="1.6" />
+  <Property name="PetHeelPosSpringTime" value="3" />
+  <Property name="PetScan" value="GcScanData.xml">
+    <Property name="ScanType" value="Tool" />
+    <Property name="PulseRange" value="50" />
+    <Property name="PulseTime" value="2" />
+    <Property name="PlayAudioOnMarkers" value="False" />
+    <Property name="ChargeTime" value="4" />
+  </Property>
+  <Property name="PetRadialCentre" value="0" />
+  <Property name="PetRadialRadius" value="36.625" />
+  <Property name="PetRadialWidth" value="7.5" />
+  <Property name="PetRadialPulseMul" value="1.15" />
+  <Property name="PetRadialPulseTime" value="0.66" />
+  <Property name="PetHeartMaxSize" value="100" />
+  <Property name="PetHeartChangePerLayer" value="0.2" />
+  <Property name="PetHeartResponseLoopTime" value="2" />
+  <Property name="PetHeartResponseTotalTime" value="2" />
+  <Property name="PetLastActionReportTime" value="4" />
+  <Property name="PetMoodSmoothTime" value="1" />
+  <Property name="PetFollowRunPlayerDistance" value="4" />
+  <Property name="PetFollowRange" value="2" />
+  <Property name="PetRadialBadColour" value="Colour.xml">
+    <Property name="R" value="1" />
+    <Property name="G" value="0.141" />
+    <Property name="B" value="0.141" />
+    <Property name="A" value="0.8" />
+  </Property>
+  <Property name="PetRadialNeutralColour" value="Colour.xml">
+    <Property name="R" value="1" />
+    <Property name="G" value="0.737" />
+    <Property name="B" value="0.145" />
+    <Property name="A" value="1" />
+  </Property>
+  <Property name="PetRadialGoodColour" value="Colour.xml">
+    <Property name="R" value="0.014" />
+    <Property name="G" value="0.777" />
+    <Property name="B" value="0.029" />
+    <Property name="A" value="1" />
+  </Property>
+  <Property name="PetRadialBoostColour" value="Colour.xml">
+    <Property name="R" value="1" />
+    <Property name="G" value="1" />
+    <Property name="B" value="1" />
+    <Property name="A" value="1" />
+  </Property>
+  <Property name="PetChatCooldown" value="20" />
+  <Property name="PetChatUseTraitTemplateChance" value="0.1" />
+  <Property name="PetEffectSpawnOffsetSmall" value="0.2" />
+  <Property name="PetEffectSpawnOffsetMed" value="0.3" />
+  <Property name="PetEffectSpawnOffsetLarge" value="0.5" />
+  <Property name="PetEffectSpawnOffsetHuge" value="1" />
+  <Property name="PetTickleChatChance" value="0.33" />
+  <Property name="PetTreatChatChance" value="1" />
+  <Property name="UseCreatureAdoptOSD" value="True" />
   <Property name="SearchItemDistance" value="45" />
   <Property name="SearchItemFrequency" value="20" />
   <Property name="SearchItemGiveUpDistance" value="70" />
@@ -939,15 +1083,108 @@
   <Property name="AttractedMinAvoidCreaturesDist" value="3" />
   <Property name="AttractedMaxAvoidCreaturesStrength" value="0.120661" />
   <Property name="AttractedMaxAvoidCreaturesDist" value="7" />
+  <Property name="PetsShowTraitClassesAsWords" value="True" />
+  <Property name="PetSlotsUnlockedByDefault" value="2" />
+  <Property name="PetGrowthTime" value="120960" />
+  <Property name="PetIncubationTime" value="8640" />
+  <Property name="PetTrustChangeInterval" value="86400" />
+  <Property name="PetTrustOnAdoption" value="0.6" />
+  <Property name="PetTrustOnHatch" value="0.7" />
+  <Property name="PetTrustIncreaseStep" value="0.05" />
+  <Property name="PetTrustDecreaseStep" value="0.02" />
+  <Property name="PetTrustIncreaseThreshold" value="0.05" />
+  <Property name="PetTrustDecreaseThreshold" value="0.95" />
+  <Property name="PetMinTrust" value="0.2" />
+  <Property name="PetEggLayingDuration" value="0.7" />
+  <Property name="PetEggLayingInterval" value="8640" />
+  <Property name="PetEggFirstEggDelay" value="8640" />
+  <Property name="PetEggModificationTime" value="5" />
+  <Property name="PetEggModificationItemLimit" value="999" />
+  <Property name="PetEggMaxChangeProduct" value="SACVENOM" />
+  <Property name="PetEggSubstanceModifier" value="2.5" />
+  <Property name="PetEggScaleRangeModifier" value="0.5" />
+  <Property name="PetEggScaleRangeMax" value="0.5" />
+  <Property name="PetEggTraitRangeModifier" value="0.1" />
+  <Property name="PetEggTraitRangeMax" value="0.2" />
+  <Property name="PetEggMinDistStep" value="1" />
+  <Property name="PetEggMaxDistStep" value="5" />
+  <Property name="PetEggOverdosageModifier" value="0.1" />
+  <Property name="PetEggMaxOverdosage" value="0.5" />
+  <Property name="PetEggMaxTopDescriptorChangeChance" value="0.5" />
+  <Property name="PetEggAccessoryChanceModifier" value="4" />
+  <Property name="PetEggMaxAccessoriesChangeChance" value="1" />
+  <Property name="PetEggColourChanceModifier" value="4" />
+  <Property name="PetEggMaxColourChangeChance" value="1" />
+  <Property name="PetEggHatchScaleChange" value="0.1" />
+  <Property name="PetEggHatchTraitChange" value="0.1" />
+  <Property name="PetEggHatchColourChangeChance" value="0.3" />
+  <Property name="PetForceBehaviour" value="GcBiomeType.xml">
+    <Property name="Biome" value="Lush" />
+  </Property>
+  <Property name="PetMaxSizeOffPlanet" value="1" />
+  <Property name="PetTeleportDistOffPlanet" value="30" />
+  <Property name="PetTeleportDistOnPlanet" value="150" />
+  <Property name="PetAnimSpeedBoostSmallerThan" value="1.2" />
+  <Property name="PetAnimSpeedBoostStrength" value="1" />
+  <Property name="PetAnimSpeedMax" value="1.5" />
+  <Property name="PetAnimSpeedMin" value="0.2" />
+  <Property name="PetNavRadForMinTurn" value="0.5" />
+  <Property name="PetNavRadForMaxTurn" value="3" />
+  <Property name="PetMinTurnRad" value="0.2" />
+  <Property name="PetMaxTurnRad" value="1" />
+  <Property name="PetMoodCurvePower" value="0.7" />
+  <Property name="PetOffPlanetEffect" value="GcScanEffectData.xml">
+    <Property name="Id" value="" />
+    <Property name="ScanEffectType" value="Creature" />
+    <Property name="Colour" value="Colour.xml">
+      <Property name="R" value="1" />
+      <Property name="G" value="1" />
+      <Property name="B" value="1" />
+      <Property name="A" value="1" />
+    </Property>
+    <Property name="BasecolourIntensity" value="0.1" />
+    <Property name="ScanlinesSeparation" value="0.5" />
+    <Property name="FresnelIntensity" value="-2" />
+    <Property name="GlowIntensity" value="0" />
+    <Property name="WaveOffset" value="0" />
+    <Property name="WaveActive" value="True" />
+    <Property name="FixedUpAxis" value="False" />
+    <Property name="Transparent" value="False" />
+    <Property name="ModelFade" value="False" />
+    <Property name="FadeInTime" value="1.2" />
+    <Property name="FadeOutTime" value="1" />
+  </Property>
+  <Property name="PetEggResourceFile" value="MODELS/PLANETS/BIOMES/COMMON/INTERACTIVE/PET_EGG.SCENE.MBIN" />
+  <Property name="PetEggHatchResourceFile" value="MODELS/PLANETS/BIOMES/COMMON/INTERACTIVE/PETEGGDESTRUCTIBLE.SCENE.MBIN" />
+  <Property name="PetEggHatchScale" value="2.5" />
+  <Property name="PetEggHatchOffset" value="0.2" />
+  <Property name="PetEggMaxLonely" value="0.1" />
+  <Property name="PetEggMaxHungry" value="0.1" />
+  <Property name="PetEggMinGrowthToLay" value="0.25" />
+  <Property name="PetForceSummonFromEgg" value="False" />
+  <Property name="PetEggsplosionEffect" value="EGGSHELLDEBRIS" />
+  <Property name="RidingPositionTest" value="False" />
+  <Property name="PetAnimTest" value="False" />
+  <Property name="PetThrowArcRange" value="70" />
+  <Property name="PetThrowArcColour" value="Colour.xml">
+    <Property name="R" value="1" />
+    <Property name="G" value="0.964" />
+    <Property name="B" value="0.102" />
+    <Property name="A" value="1" />
+  </Property>
+  <Property name="PetOrderMinRange" value="25" />
+  <Property name="PetOrderMaxRange" value="60" />
+  <Property name="PetAccessoryMoodDisplayThreshold" value="0.5" />
+  <Property name="PetAccessoryStateInterval" value="10" />
   <Property name="AnimChangeCoolDown" value="0.25" />
   <Property name="GroupRunProbability" value="0.8" />
   <Property name="GroupBabyRunProbability" value="0.8" />
-  <Property name="GroupRunStormProbability" value="0.95" />
-  <Property name="GroupLookAtProbability" value="0.1" />
-  <Property name="GroupLookAtDurationMin" value="1" />
-  <Property name="GroupLookAtDurationMax" value="2" />
-  <Property name="GroupRunDurationMin" value="7" />
-  <Property name="GroupRunDurationMax" value="10" />
+  <Property name="GroupRunStormProbability" value="100" />
+  <Property name="GroupLookAtProbability" value="0.4" />
+  <Property name="GroupLookAtDurationMin" value="4" />
+  <Property name="GroupLookAtDurationMax" value="10" />
+  <Property name="GroupRunDurationMin" value="15" />
+  <Property name="GroupRunDurationMax" value="20" />
   <Property name="GroupFemaleProportion" value="0.6" />
   <Property name="GroupBabyProportion" value="0.3" />
   <Property name="GroupBabyScale" value="0.5" />
@@ -968,7 +1205,7 @@
   <Property name="DrawGrassPushRadius" value="False" />
   <Property name="CreatureIndoorSpeedMultiplier" value="0.7" />
   <Property name="CreatureSpeedMultiplier" value="1.2" />
-  <Property name="PredatorSpeedMultiplier" value="1.1" />
+  <Property name="PredatorSpeedMultiplier" value="1.3" />
   <Property name="DefaultKillingSubstance" value="CREATURE1" />
   <Property name="AlienShipQuestKillingSubstance" value="SOULFRAG" />
   <Property name="AlienShipQuestCreatureWeapon" value="SOUL_LASER" />
@@ -1297,19 +1534,19 @@
     <Property value="GcCreatureHarvestSubstanceList.xml">
       <Property name="CreatureType" value="MOLE" />
       <Property name="Item" value="FOOD_V_MOLE" />
-      <Property name="Desc" value="UI_LABEL_MOLE_FOOD" />
+      <Property name="Desc" value="UI_LABEL_HARVEST_MOLE" />
       <Property name="MinBlobs" value="10" />
     </Property>
     <Property value="GcCreatureHarvestSubstanceList.xml">
       <Property name="CreatureType" value="ROBOTANTELOPE" />
       <Property name="Item" value="FOOD_V_ROBOT" />
-      <Property name="Desc" value="UI_LABEL_ROBOT_FOOD" />
+      <Property name="Desc" value="UI_LABEL_HARVEST_ROBOT" />
       <Property name="MinBlobs" value="10" />
     </Property>
     <Property value="GcCreatureHarvestSubstanceList.xml">
       <Property name="CreatureType" value="BONECAT" />
       <Property name="Item" value="FOOD_V_BONE" />
-      <Property name="Desc" value="UI_LABEL_BONE_FOOD" />
+      <Property name="Desc" value="UI_LABEL_HARVEST_BONE" />
       <Property name="MinBlobs" value="10" />
     </Property>
   </Property>
@@ -1321,6 +1558,8 @@
   <Property name="HarvestCooldownMax" value="60" />
   <Property name="BasicFeedingProduct" value="BAIT_BASIC" />
   <Property name="RobotFeedingProduct" value="POWERCELL" />
+  <Property name="AllBaitIsBasic" value="True" />
+  <Property name="CanAlwaysLayEgg" value="False" />
   <Property name="HerbivoreFeedingProducts">
     <Property value="GcCreatureFoodList.xml">
       <Property name="FoodProduct" value="BAIT_VEG_1" />

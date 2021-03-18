@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.12.0)-->
+<!--File created using MBINCompiler version (3.21.0)-->
 <Data template="GcRewardTable">
   <Property name="GenericTable">
     <Property value="GcGenericRewardTableEntry.xml">
@@ -48,6 +48,20 @@
       </Property>
     </Property>
 
+    <Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="R_PETEGGLOOT" />
+      <Property name="Common" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="GiveAll" />
+        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="Reward" value="GcRewardPetEgg.xml" />
+            <Property name="LabelID" value="" />
+          </Property>
+        </Property>
+      </Property>
+    </Property>
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="WEAP_TOKEN" />
       <Property name="Common" value="GcRewardTableItemList.xml">
@@ -4228,6 +4242,276 @@
     </Property>
   </Property>
   <Property name="DestructionTable">
+    <Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="DE_PET_ROCK" />
+      <Property name="Common" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="SelectAlways" />
+        <Property name="OverrideZeroSeed" value="True" />
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="10" />
+            <Property name="Reward" value="GcRewardSpecificSubstance.xml">
+              <Property name="Default" value="GcDefaultMissionProduct.xml">
+                <Property name="Product" value="GcProductTableEnum.xml">
+                  <Property name="Product" value="None" />
+                </Property>
+              </Property>
+              <Property name="Id" value="OXYGEN" />
+              <Property name="AmountMin" value="10" />
+              <Property name="AmountMax" value="50" />
+              <Property name="HardModeMultiplier" value="1" />
+              <Property name="DisableMultiplier" value="False" />
+              <Property name="RewardAsBlobs" value="True" />
+              <Property name="UseFuelMultiplier" value="False" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="10" />
+            <Property name="Reward" value="GcRewardSpecificSubstance.xml">
+              <Property name="Default" value="GcDefaultMissionProduct.xml">
+                <Property name="Product" value="GcProductTableEnum.xml">
+                  <Property name="Product" value="None" />
+                </Property>
+              </Property>
+              <Property name="Id" value="LAUNCHSUB" />
+              <Property name="AmountMin" value="35" />
+              <Property name="AmountMax" value="75" />
+              <Property name="HardModeMultiplier" value="1" />
+              <Property name="DisableMultiplier" value="False" />
+              <Property name="RewardAsBlobs" value="True" />
+              <Property name="UseFuelMultiplier" value="False" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="10" />
+            <Property name="Reward" value="GcRewardSpecificSubstance.xml">
+              <Property name="Default" value="GcDefaultMissionProduct.xml">
+                <Property name="Product" value="GcProductTableEnum.xml">
+                  <Property name="Product" value="None" />
+                </Property>
+              </Property>
+              <Property name="Id" value="CATALYST1" />
+              <Property name="AmountMin" value="10" />
+              <Property name="AmountMax" value="50" />
+              <Property name="HardModeMultiplier" value="1" />
+              <Property name="DisableMultiplier" value="False" />
+              <Property name="RewardAsBlobs" value="True" />
+              <Property name="UseFuelMultiplier" value="False" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="5" />
+            <Property name="Reward" value="GcRewardSpecificSubstance.xml">
+              <Property name="Default" value="GcDefaultMissionProduct.xml">
+                <Property name="Product" value="GcProductTableEnum.xml">
+                  <Property name="Product" value="None" />
+                </Property>
+              </Property>
+              <Property name="Id" value="LAND1" />
+              <Property name="AmountMin" value="50" />
+              <Property name="AmountMax" value="100" />
+              <Property name="HardModeMultiplier" value="1" />
+              <Property name="DisableMultiplier" value="False" />
+              <Property name="RewardAsBlobs" value="True" />
+              <Property name="UseFuelMultiplier" value="False" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="5" />
+            <Property name="Reward" value="GcRewardSpecificSubstance.xml">
+              <Property name="Default" value="GcDefaultMissionProduct.xml">
+                <Property name="Product" value="GcProductTableEnum.xml">
+                  <Property name="Product" value="None" />
+                </Property>
+              </Property>
+              <Property name="Id" value="LAND2" />
+              <Property name="AmountMin" value="50" />
+              <Property name="AmountMax" value="100" />
+              <Property name="HardModeMultiplier" value="1" />
+              <Property name="DisableMultiplier" value="False" />
+              <Property name="RewardAsBlobs" value="True" />
+              <Property name="UseFuelMultiplier" value="False" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="5" />
+            <Property name="Reward" value="GcRewardSpecificSubstance.xml">
+              <Property name="Default" value="GcDefaultMissionProduct.xml">
+                <Property name="Product" value="GcProductTableEnum.xml">
+                  <Property name="Product" value="None" />
+                </Property>
+              </Property>
+              <Property name="Id" value="FUEL1" />
+              <Property name="AmountMin" value="50" />
+              <Property name="AmountMax" value="100" />
+              <Property name="HardModeMultiplier" value="1" />
+              <Property name="DisableMultiplier" value="False" />
+              <Property name="RewardAsBlobs" value="True" />
+              <Property name="UseFuelMultiplier" value="False" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="10" />
+            <Property name="Reward" value="GcRewardProceduralProductFromBiome.xml" />
+            <Property name="LabelID" value="" />
+          </Property>
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="10" />
+            <Property name="Reward" value="GcRewardProceduralProduct.xml">
+              <Property name="Type" value="GcProceduralProductCategory.xml">
+                <Property name="ProceduralProductCategory" value="DismantleBio" />
+              </Property>
+              <Property name="OSDMessage" value="" />
+              <Property name="SubIfPlayerAlreadyHasOne" value="False" />
+              <Property name="OverrideRarity" value="False" />
+              <Property name="Rarity" value="GcRarity.xml">
+                <Property name="Rarity" value="Common" />
+              </Property>
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="2" />
+            <Property name="Reward" value="GcRewardProceduralProduct.xml">
+              <Property name="Type" value="GcProceduralProductCategory.xml">
+                <Property name="ProceduralProductCategory" value="DismantleTech" />
+              </Property>
+              <Property name="OSDMessage" value="" />
+              <Property name="SubIfPlayerAlreadyHasOne" value="False" />
+              <Property name="OverrideRarity" value="False" />
+              <Property name="Rarity" value="GcRarity.xml">
+                <Property name="Rarity" value="Common" />
+              </Property>
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="5" />
+            <Property name="Reward" value="GcRewardSpecificProduct.xml">
+              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                <Property name="DefaultProductType" value="None" />
+              </Property>
+              <Property name="Id" value="GEODE_LAND" />
+              <Property name="AmountMin" value="1" />
+              <Property name="AmountMax" value="1" />
+              <Property name="ForceSpecialMessage" value="False" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="5" />
+            <Property name="Reward" value="GcRewardSpecificProduct.xml">
+              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                <Property name="DefaultProductType" value="None" />
+              </Property>
+              <Property name="Id" value="GEODE_CAVE" />
+              <Property name="AmountMin" value="1" />
+              <Property name="AmountMax" value="1" />
+              <Property name="ForceSpecialMessage" value="False" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="5" />
+            <Property name="Reward" value="GcRewardSpecificProduct.xml">
+              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                <Property name="DefaultProductType" value="None" />
+              </Property>
+              <Property name="Id" value="GEODE_RARE" />
+              <Property name="AmountMin" value="1" />
+              <Property name="AmountMax" value="1" />
+              <Property name="ForceSpecialMessage" value="False" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="2" />
+            <Property name="Reward" value="GcRewardSpecificProduct.xml">
+              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                <Property name="DefaultProductType" value="None" />
+              </Property>
+              <Property name="Id" value="GRAVBALL" />
+              <Property name="AmountMin" value="1" />
+              <Property name="AmountMax" value="1" />
+              <Property name="ForceSpecialMessage" value="False" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="2" />
+            <Property name="Reward" value="GcRewardSpecificProduct.xml">
+              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                <Property name="DefaultProductType" value="None" />
+              </Property>
+              <Property name="Id" value="SACVENOM" />
+              <Property name="AmountMin" value="1" />
+              <Property name="AmountMax" value="1" />
+              <Property name="ForceSpecialMessage" value="False" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="2" />
+            <Property name="Reward" value="GcRewardSpecificProduct.xml">
+              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                <Property name="DefaultProductType" value="None" />
+              </Property>
+              <Property name="Id" value="ALBUMENPEARL" />
+              <Property name="AmountMin" value="1" />
+              <Property name="AmountMax" value="1" />
+              <Property name="ForceSpecialMessage" value="False" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="10" />
+            <Property name="Reward" value="GcRewardSpecificProduct.xml">
+              <Property name="Default" value="GcDefaultMissionProductEnum.xml">
+                <Property name="DefaultProductType" value="None" />
+              </Property>
+              <Property name="Id" value="BP_SALVAGE" />
+              <Property name="AmountMin" value="1" />
+              <Property name="AmountMax" value="1" />
+              <Property name="ForceSpecialMessage" value="False" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="15" />
+            <Property name="Reward" value="GcRewardPlanetSubstance.xml">
+              <Property name="AmountMin" value="50" />
+              <Property name="AmountMax" value="100" />
+              <Property name="HardModeMultiplier" value="1" />
+              <Property name="DisableMultiplier" value="False" />
+              <Property name="RewardAsBlobs" value="True" />
+              <Property name="UseFuelMultiplier" value="False" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="15" />
+            <Property name="Reward" value="GcRewardProceduralProduct.xml">
+              <Property name="Type" value="GcProceduralProductCategory.xml">
+                <Property name="ProceduralProductCategory" value="Bones" />
+              </Property>
+              <Property name="OSDMessage" value="" />
+              <Property name="SubIfPlayerAlreadyHasOne" value="False" />
+              <Property name="OverrideRarity" value="False" />
+              <Property name="Rarity" value="GcRarity.xml">
+                <Property name="Rarity" value="Common" />
+              </Property>
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+        </Property>
+      </Property>
+    </Property>
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="DE_RARE_GEODE" />
       <Property name="Common" value="GcRewardTableItemList.xml">
@@ -9668,6 +9952,166 @@
   </Property>
   <Property name="InteractionTable">
     <Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="R_PET_LAY_EGG" />
+      <Property name="Common" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="GiveAll" />
+        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="Reward" value="GcRewardPetAction.xml">
+              <Property name="PetAction" value="GcCreaturePetRewardActions.xml">
+                <Property name="PetAction" value="LayEgg" />
+              </Property>
+              <Property name="PlayerEmoteID" value="" />
+              <Property name="EffectID" value="" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="R_PET_ADOPT" />
+      <Property name="Common" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="GiveAll" />
+        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="Reward" value="GcRewardPetAction.xml">
+              <Property name="PetAction" value="GcCreaturePetRewardActions.xml">
+                <Property name="PetAction" value="Adopt" />
+              </Property>
+              <Property name="PlayerEmoteID" value="EMOTE_CALL_PET" />
+              <Property name="EffectID" value="" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="R_PET_MILK" />
+      <Property name="Common" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="GiveAll" />
+        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="Reward" value="GcRewardPetAction.xml">
+              <Property name="PetAction" value="GcCreaturePetRewardActions.xml">
+                <Property name="PetAction" value="Milk" />
+              </Property>
+              <Property name="PlayerEmoteID" value="" />
+              <Property name="EffectID" value="" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="R_PET_TREAT" />
+      <Property name="Common" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="GiveAll" />
+        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="Reward" value="GcRewardPetAction.xml">
+              <Property name="PetAction" value="GcCreaturePetRewardActions.xml">
+                <Property name="PetAction" value="Treat" />
+              </Property>
+              <Property name="PlayerEmoteID" value="EMOTE_FEED" />
+              <Property name="EffectID" value="PET_TREAT" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="R_PET_TICKLE" />
+      <Property name="Common" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="GiveAll" />
+        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="Reward" value="GcRewardPetAction.xml">
+              <Property name="PetAction" value="GcCreaturePetRewardActions.xml">
+                <Property name="PetAction" value="Tickle" />
+              </Property>
+              <Property name="PlayerEmoteID" value="EMOTE_STROKE" />
+              <Property name="EffectID" value="PET_TICKLE" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="R_PET_CUSTOMISE" />
+      <Property name="Common" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="GiveAll" />
+        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="Reward" value="GcRewardPetAction.xml">
+              <Property name="PetAction" value="GcCreaturePetRewardActions.xml">
+                <Property name="PetAction" value="Customise" />
+              </Property>
+              <Property name="PlayerEmoteID" value="" />
+              <Property name="EffectID" value="" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="R_PET_RIDE" />
+      <Property name="Common" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="GiveAll" />
+        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="Reward" value="GcRewardPetAction.xml">
+              <Property name="PetAction" value="GcCreaturePetRewardActions.xml">
+                <Property name="PetAction" value="Ride" />
+              </Property>
+              <Property name="PlayerEmoteID" value="" />
+              <Property name="EffectID" value="" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="R_PET_ABANDON" />
+      <Property name="Common" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="GiveAll" />
+        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="Reward" value="GcRewardPetAction.xml">
+              <Property name="PetAction" value="GcCreaturePetRewardActions.xml">
+                <Property name="PetAction" value="Abandon" />
+              </Property>
+              <Property name="PlayerEmoteID" value="EMOTE_NEGATIVE" />
+              <Property name="EffectID" value="" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_BIG_LAND3" />
       <Property name="Common" value="GcRewardTableItemList.xml">
         <Property name="RewardChoice" value="GiveAll" />
@@ -10675,10 +11119,10 @@
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="Reward" value="GcRewardProduct.xml">
-              <Property name="Category" value="GcRealitySubstanceCategory.xml">
+              <Property name="ItemCategory" value="GcRealitySubstanceCategory.xml">
                 <Property name="SubstanceCategory" value="Earth" />
               </Property>
-              <Property name="Rarity" value="GcRarity.xml">
+              <Property name="ItemRarity" value="GcRarity.xml">
                 <Property name="Rarity" value="Uncommon" />
               </Property>
               <Property name="ItemLevel" value="1" />
@@ -10686,11 +11130,12 @@
                 <Property name="Component" value="True" />
                 <Property name="Consumable" value="True" />
                 <Property name="Tradeable" value="True" />
-                <Property name="Curiousity" value="True" />
+                <Property name="Curiosity" value="True" />
                 <Property name="BuildingPart" value="True" />
                 <Property name="Procedural" value="True" />
                 <Property name="Emote" value="True" />
                 <Property name="CustomisationPart" value="True" />
+                <Property name="CreatureEgg" value="True" />
               </Property>
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="5" />
@@ -15323,10 +15768,10 @@
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="Reward" value="GcRewardProduct.xml">
-              <Property name="Category" value="GcRealitySubstanceCategory.xml">
+              <Property name="ItemCategory" value="GcRealitySubstanceCategory.xml">
                 <Property name="SubstanceCategory" value="Earth" />
               </Property>
-              <Property name="Rarity" value="GcRarity.xml">
+              <Property name="ItemRarity" value="GcRarity.xml">
                 <Property name="Rarity" value="Common" />
               </Property>
               <Property name="ItemLevel" value="1" />
@@ -15334,11 +15779,12 @@
                 <Property name="Component" value="True" />
                 <Property name="Consumable" value="True" />
                 <Property name="Tradeable" value="True" />
-                <Property name="Curiousity" value="True" />
+                <Property name="Curiosity" value="True" />
                 <Property name="BuildingPart" value="True" />
                 <Property name="Procedural" value="True" />
                 <Property name="Emote" value="True" />
                 <Property name="CustomisationPart" value="True" />
+                <Property name="CreatureEgg" value="True" />
               </Property>
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
@@ -15357,10 +15803,10 @@
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="Reward" value="GcRewardProduct.xml">
-              <Property name="Category" value="GcRealitySubstanceCategory.xml">
+              <Property name="ItemCategory" value="GcRealitySubstanceCategory.xml">
                 <Property name="SubstanceCategory" value="Earth" />
               </Property>
-              <Property name="Rarity" value="GcRarity.xml">
+              <Property name="ItemRarity" value="GcRarity.xml">
                 <Property name="Rarity" value="Common" />
               </Property>
               <Property name="ItemLevel" value="1" />
@@ -15368,11 +15814,12 @@
                 <Property name="Component" value="True" />
                 <Property name="Consumable" value="True" />
                 <Property name="Tradeable" value="True" />
-                <Property name="Curiousity" value="True" />
+                <Property name="Curiosity" value="True" />
                 <Property name="BuildingPart" value="True" />
                 <Property name="Procedural" value="True" />
                 <Property name="Emote" value="True" />
                 <Property name="CustomisationPart" value="True" />
+                <Property name="CreatureEgg" value="True" />
               </Property>
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
@@ -15391,10 +15838,10 @@
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="Reward" value="GcRewardProduct.xml">
-              <Property name="Category" value="GcRealitySubstanceCategory.xml">
+              <Property name="ItemCategory" value="GcRealitySubstanceCategory.xml">
                 <Property name="SubstanceCategory" value="Earth" />
               </Property>
-              <Property name="Rarity" value="GcRarity.xml">
+              <Property name="ItemRarity" value="GcRarity.xml">
                 <Property name="Rarity" value="Common" />
               </Property>
               <Property name="ItemLevel" value="1" />
@@ -15402,11 +15849,12 @@
                 <Property name="Component" value="False" />
                 <Property name="Consumable" value="False" />
                 <Property name="Tradeable" value="True" />
-                <Property name="Curiousity" value="True" />
+                <Property name="Curiosity" value="True" />
                 <Property name="BuildingPart" value="True" />
                 <Property name="Procedural" value="True" />
                 <Property name="Emote" value="True" />
                 <Property name="CustomisationPart" value="True" />
+                <Property name="CreatureEgg" value="True" />
               </Property>
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
@@ -15425,10 +15873,10 @@
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="Reward" value="GcRewardProductRecipe.xml">
-              <Property name="Category" value="GcRealitySubstanceCategory.xml">
+              <Property name="ItemCategory" value="GcRealitySubstanceCategory.xml">
                 <Property name="SubstanceCategory" value="Earth" />
               </Property>
-              <Property name="Rarity" value="GcRarity.xml">
+              <Property name="ItemRarity" value="GcRarity.xml">
                 <Property name="Rarity" value="Common" />
               </Property>
               <Property name="IgnoreRarity" value="True" />
@@ -15437,11 +15885,12 @@
                 <Property name="Component" value="True" />
                 <Property name="Consumable" value="False" />
                 <Property name="Tradeable" value="False" />
-                <Property name="Curiousity" value="False" />
+                <Property name="Curiosity" value="False" />
                 <Property name="BuildingPart" value="True" />
                 <Property name="Procedural" value="True" />
                 <Property name="Emote" value="True" />
                 <Property name="CustomisationPart" value="True" />
+                <Property name="CreatureEgg" value="True" />
               </Property>
             </Property>
             <Property name="LabelID" value="" />
@@ -15458,10 +15907,10 @@
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="Reward" value="GcRewardProductRecipe.xml">
-              <Property name="Category" value="GcRealitySubstanceCategory.xml">
+              <Property name="ItemCategory" value="GcRealitySubstanceCategory.xml">
                 <Property name="SubstanceCategory" value="Earth" />
               </Property>
-              <Property name="Rarity" value="GcRarity.xml">
+              <Property name="ItemRarity" value="GcRarity.xml">
                 <Property name="Rarity" value="Common" />
               </Property>
               <Property name="IgnoreRarity" value="True" />
@@ -15470,11 +15919,12 @@
                 <Property name="Component" value="False" />
                 <Property name="Consumable" value="False" />
                 <Property name="Tradeable" value="False" />
-                <Property name="Curiousity" value="False" />
+                <Property name="Curiosity" value="False" />
                 <Property name="BuildingPart" value="True" />
                 <Property name="Procedural" value="True" />
                 <Property name="Emote" value="True" />
                 <Property name="CustomisationPart" value="True" />
+                <Property name="CreatureEgg" value="True" />
               </Property>
             </Property>
             <Property name="LabelID" value="" />
@@ -15491,10 +15941,10 @@
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="Reward" value="GcRewardProductRecipe.xml">
-              <Property name="Category" value="GcRealitySubstanceCategory.xml">
+              <Property name="ItemCategory" value="GcRealitySubstanceCategory.xml">
                 <Property name="SubstanceCategory" value="Earth" />
               </Property>
-              <Property name="Rarity" value="GcRarity.xml">
+              <Property name="ItemRarity" value="GcRarity.xml">
                 <Property name="Rarity" value="Common" />
               </Property>
               <Property name="IgnoreRarity" value="True" />
@@ -15503,11 +15953,12 @@
                 <Property name="Component" value="False" />
                 <Property name="Consumable" value="True" />
                 <Property name="Tradeable" value="False" />
-                <Property name="Curiousity" value="False" />
+                <Property name="Curiosity" value="False" />
                 <Property name="BuildingPart" value="True" />
                 <Property name="Procedural" value="True" />
                 <Property name="Emote" value="True" />
                 <Property name="CustomisationPart" value="True" />
+                <Property name="CreatureEgg" value="True" />
               </Property>
             </Property>
             <Property name="LabelID" value="" />
@@ -15756,10 +16207,10 @@
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="Reward" value="GcRewardProduct.xml">
-              <Property name="Category" value="GcRealitySubstanceCategory.xml">
+              <Property name="ItemCategory" value="GcRealitySubstanceCategory.xml">
                 <Property name="SubstanceCategory" value="Earth" />
               </Property>
-              <Property name="Rarity" value="GcRarity.xml">
+              <Property name="ItemRarity" value="GcRarity.xml">
                 <Property name="Rarity" value="Common" />
               </Property>
               <Property name="ItemLevel" value="1" />
@@ -15767,11 +16218,12 @@
                 <Property name="Component" value="True" />
                 <Property name="Consumable" value="True" />
                 <Property name="Tradeable" value="True" />
-                <Property name="Curiousity" value="True" />
+                <Property name="Curiosity" value="True" />
                 <Property name="BuildingPart" value="True" />
                 <Property name="Procedural" value="True" />
                 <Property name="Emote" value="True" />
                 <Property name="CustomisationPart" value="True" />
+                <Property name="CreatureEgg" value="True" />
               </Property>
               <Property name="AmountMin" value="5" />
               <Property name="AmountMax" value="5" />
@@ -15790,10 +16242,10 @@
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="Reward" value="GcRewardProduct.xml">
-              <Property name="Category" value="GcRealitySubstanceCategory.xml">
+              <Property name="ItemCategory" value="GcRealitySubstanceCategory.xml">
                 <Property name="SubstanceCategory" value="Earth" />
               </Property>
-              <Property name="Rarity" value="GcRarity.xml">
+              <Property name="ItemRarity" value="GcRarity.xml">
                 <Property name="Rarity" value="Common" />
               </Property>
               <Property name="ItemLevel" value="1" />
@@ -15801,11 +16253,12 @@
                 <Property name="Component" value="True" />
                 <Property name="Consumable" value="True" />
                 <Property name="Tradeable" value="True" />
-                <Property name="Curiousity" value="True" />
+                <Property name="Curiosity" value="True" />
                 <Property name="BuildingPart" value="True" />
                 <Property name="Procedural" value="True" />
                 <Property name="Emote" value="True" />
                 <Property name="CustomisationPart" value="True" />
+                <Property name="CreatureEgg" value="True" />
               </Property>
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
@@ -15824,10 +16277,10 @@
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="Reward" value="GcRewardProduct.xml">
-              <Property name="Category" value="GcRealitySubstanceCategory.xml">
+              <Property name="ItemCategory" value="GcRealitySubstanceCategory.xml">
                 <Property name="SubstanceCategory" value="Earth" />
               </Property>
-              <Property name="Rarity" value="GcRarity.xml">
+              <Property name="ItemRarity" value="GcRarity.xml">
                 <Property name="Rarity" value="Common" />
               </Property>
               <Property name="ItemLevel" value="1" />
@@ -15835,11 +16288,12 @@
                 <Property name="Component" value="True" />
                 <Property name="Consumable" value="True" />
                 <Property name="Tradeable" value="True" />
-                <Property name="Curiousity" value="True" />
+                <Property name="Curiosity" value="True" />
                 <Property name="BuildingPart" value="True" />
                 <Property name="Procedural" value="True" />
                 <Property name="Emote" value="True" />
                 <Property name="CustomisationPart" value="True" />
+                <Property name="CreatureEgg" value="True" />
               </Property>
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
@@ -15858,10 +16312,10 @@
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="Reward" value="GcRewardProduct.xml">
-              <Property name="Category" value="GcRealitySubstanceCategory.xml">
+              <Property name="ItemCategory" value="GcRealitySubstanceCategory.xml">
                 <Property name="SubstanceCategory" value="Earth" />
               </Property>
-              <Property name="Rarity" value="GcRarity.xml">
+              <Property name="ItemRarity" value="GcRarity.xml">
                 <Property name="Rarity" value="Rare" />
               </Property>
               <Property name="ItemLevel" value="1" />
@@ -15869,11 +16323,12 @@
                 <Property name="Component" value="True" />
                 <Property name="Consumable" value="True" />
                 <Property name="Tradeable" value="True" />
-                <Property name="Curiousity" value="True" />
+                <Property name="Curiosity" value="True" />
                 <Property name="BuildingPart" value="True" />
                 <Property name="Procedural" value="True" />
                 <Property name="Emote" value="True" />
                 <Property name="CustomisationPart" value="True" />
+                <Property name="CreatureEgg" value="True" />
               </Property>
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
@@ -15892,10 +16347,10 @@
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="Reward" value="GcRewardProduct.xml">
-              <Property name="Category" value="GcRealitySubstanceCategory.xml">
+              <Property name="ItemCategory" value="GcRealitySubstanceCategory.xml">
                 <Property name="SubstanceCategory" value="Earth" />
               </Property>
-              <Property name="Rarity" value="GcRarity.xml">
+              <Property name="ItemRarity" value="GcRarity.xml">
                 <Property name="Rarity" value="Common" />
               </Property>
               <Property name="ItemLevel" value="1" />
@@ -15903,11 +16358,12 @@
                 <Property name="Component" value="True" />
                 <Property name="Consumable" value="True" />
                 <Property name="Tradeable" value="True" />
-                <Property name="Curiousity" value="True" />
+                <Property name="Curiosity" value="True" />
                 <Property name="BuildingPart" value="True" />
                 <Property name="Procedural" value="True" />
                 <Property name="Emote" value="True" />
                 <Property name="CustomisationPart" value="True" />
+                <Property name="CreatureEgg" value="True" />
               </Property>
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
@@ -15926,10 +16382,10 @@
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="Reward" value="GcRewardProduct.xml">
-              <Property name="Category" value="GcRealitySubstanceCategory.xml">
+              <Property name="ItemCategory" value="GcRealitySubstanceCategory.xml">
                 <Property name="SubstanceCategory" value="Earth" />
               </Property>
-              <Property name="Rarity" value="GcRarity.xml">
+              <Property name="ItemRarity" value="GcRarity.xml">
                 <Property name="Rarity" value="Common" />
               </Property>
               <Property name="ItemLevel" value="1" />
@@ -15937,11 +16393,12 @@
                 <Property name="Component" value="True" />
                 <Property name="Consumable" value="True" />
                 <Property name="Tradeable" value="True" />
-                <Property name="Curiousity" value="True" />
+                <Property name="Curiosity" value="True" />
                 <Property name="BuildingPart" value="True" />
                 <Property name="Procedural" value="True" />
                 <Property name="Emote" value="True" />
                 <Property name="CustomisationPart" value="True" />
+                <Property name="CreatureEgg" value="True" />
               </Property>
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="2" />
@@ -15960,10 +16417,10 @@
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="Reward" value="GcRewardProduct.xml">
-              <Property name="Category" value="GcRealitySubstanceCategory.xml">
+              <Property name="ItemCategory" value="GcRealitySubstanceCategory.xml">
                 <Property name="SubstanceCategory" value="Earth" />
               </Property>
-              <Property name="Rarity" value="GcRarity.xml">
+              <Property name="ItemRarity" value="GcRarity.xml">
                 <Property name="Rarity" value="Common" />
               </Property>
               <Property name="ItemLevel" value="1" />
@@ -15971,11 +16428,12 @@
                 <Property name="Component" value="True" />
                 <Property name="Consumable" value="True" />
                 <Property name="Tradeable" value="True" />
-                <Property name="Curiousity" value="True" />
+                <Property name="Curiosity" value="True" />
                 <Property name="BuildingPart" value="True" />
                 <Property name="Procedural" value="True" />
                 <Property name="Emote" value="True" />
                 <Property name="CustomisationPart" value="True" />
+                <Property name="CreatureEgg" value="True" />
               </Property>
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="2" />
@@ -15994,10 +16452,10 @@
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="Reward" value="GcRewardProduct.xml">
-              <Property name="Category" value="GcRealitySubstanceCategory.xml">
+              <Property name="ItemCategory" value="GcRealitySubstanceCategory.xml">
                 <Property name="SubstanceCategory" value="Earth" />
               </Property>
-              <Property name="Rarity" value="GcRarity.xml">
+              <Property name="ItemRarity" value="GcRarity.xml">
                 <Property name="Rarity" value="Rare" />
               </Property>
               <Property name="ItemLevel" value="1" />
@@ -16005,11 +16463,12 @@
                 <Property name="Component" value="True" />
                 <Property name="Consumable" value="True" />
                 <Property name="Tradeable" value="True" />
-                <Property name="Curiousity" value="True" />
+                <Property name="Curiosity" value="True" />
                 <Property name="BuildingPart" value="True" />
                 <Property name="Procedural" value="True" />
                 <Property name="Emote" value="True" />
                 <Property name="CustomisationPart" value="True" />
+                <Property name="CreatureEgg" value="True" />
               </Property>
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="2" />
@@ -16028,10 +16487,10 @@
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="Reward" value="GcRewardProduct.xml">
-              <Property name="Category" value="GcRealitySubstanceCategory.xml">
+              <Property name="ItemCategory" value="GcRealitySubstanceCategory.xml">
                 <Property name="SubstanceCategory" value="Earth" />
               </Property>
-              <Property name="Rarity" value="GcRarity.xml">
+              <Property name="ItemRarity" value="GcRarity.xml">
                 <Property name="Rarity" value="Common" />
               </Property>
               <Property name="ItemLevel" value="1" />
@@ -16039,11 +16498,12 @@
                 <Property name="Component" value="True" />
                 <Property name="Consumable" value="True" />
                 <Property name="Tradeable" value="True" />
-                <Property name="Curiousity" value="True" />
+                <Property name="Curiosity" value="True" />
                 <Property name="BuildingPart" value="True" />
                 <Property name="Procedural" value="True" />
                 <Property name="Emote" value="True" />
                 <Property name="CustomisationPart" value="True" />
+                <Property name="CreatureEgg" value="True" />
               </Property>
               <Property name="AmountMin" value="100" />
               <Property name="AmountMax" value="100" />
@@ -16062,10 +16522,10 @@
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="Reward" value="GcRewardProduct.xml">
-              <Property name="Category" value="GcRealitySubstanceCategory.xml">
+              <Property name="ItemCategory" value="GcRealitySubstanceCategory.xml">
                 <Property name="SubstanceCategory" value="Earth" />
               </Property>
-              <Property name="Rarity" value="GcRarity.xml">
+              <Property name="ItemRarity" value="GcRarity.xml">
                 <Property name="Rarity" value="Common" />
               </Property>
               <Property name="ItemLevel" value="1" />
@@ -16073,11 +16533,12 @@
                 <Property name="Component" value="True" />
                 <Property name="Consumable" value="True" />
                 <Property name="Tradeable" value="True" />
-                <Property name="Curiousity" value="True" />
+                <Property name="Curiosity" value="True" />
                 <Property name="BuildingPart" value="True" />
                 <Property name="Procedural" value="True" />
                 <Property name="Emote" value="True" />
                 <Property name="CustomisationPart" value="True" />
+                <Property name="CreatureEgg" value="True" />
               </Property>
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="3" />
@@ -16096,10 +16557,10 @@
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="Reward" value="GcRewardProduct.xml">
-              <Property name="Category" value="GcRealitySubstanceCategory.xml">
+              <Property name="ItemCategory" value="GcRealitySubstanceCategory.xml">
                 <Property name="SubstanceCategory" value="Earth" />
               </Property>
-              <Property name="Rarity" value="GcRarity.xml">
+              <Property name="ItemRarity" value="GcRarity.xml">
                 <Property name="Rarity" value="Common" />
               </Property>
               <Property name="ItemLevel" value="1" />
@@ -16107,11 +16568,12 @@
                 <Property name="Component" value="True" />
                 <Property name="Consumable" value="True" />
                 <Property name="Tradeable" value="True" />
-                <Property name="Curiousity" value="True" />
+                <Property name="Curiosity" value="True" />
                 <Property name="BuildingPart" value="True" />
                 <Property name="Procedural" value="True" />
                 <Property name="Emote" value="True" />
                 <Property name="CustomisationPart" value="True" />
+                <Property name="CreatureEgg" value="True" />
               </Property>
               <Property name="AmountMin" value="100" />
               <Property name="AmountMax" value="100" />
@@ -16130,10 +16592,10 @@
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="Reward" value="GcRewardProduct.xml">
-              <Property name="Category" value="GcRealitySubstanceCategory.xml">
+              <Property name="ItemCategory" value="GcRealitySubstanceCategory.xml">
                 <Property name="SubstanceCategory" value="Earth" />
               </Property>
-              <Property name="Rarity" value="GcRarity.xml">
+              <Property name="ItemRarity" value="GcRarity.xml">
                 <Property name="Rarity" value="Rare" />
               </Property>
               <Property name="ItemLevel" value="1" />
@@ -16141,11 +16603,12 @@
                 <Property name="Component" value="True" />
                 <Property name="Consumable" value="True" />
                 <Property name="Tradeable" value="True" />
-                <Property name="Curiousity" value="True" />
+                <Property name="Curiosity" value="True" />
                 <Property name="BuildingPart" value="True" />
                 <Property name="Procedural" value="True" />
                 <Property name="Emote" value="True" />
                 <Property name="CustomisationPart" value="True" />
+                <Property name="CreatureEgg" value="True" />
               </Property>
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="3" />
@@ -23282,10 +23745,10 @@
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="Reward" value="GcRewardProductRecipe.xml">
-              <Property name="Category" value="GcRealitySubstanceCategory.xml">
+              <Property name="ItemCategory" value="GcRealitySubstanceCategory.xml">
                 <Property name="SubstanceCategory" value="Earth" />
               </Property>
-              <Property name="Rarity" value="GcRarity.xml">
+              <Property name="ItemRarity" value="GcRarity.xml">
                 <Property name="Rarity" value="Common" />
               </Property>
               <Property name="IgnoreRarity" value="True" />
@@ -23294,11 +23757,12 @@
                 <Property name="Component" value="True" />
                 <Property name="Consumable" value="True" />
                 <Property name="Tradeable" value="False" />
-                <Property name="Curiousity" value="False" />
+                <Property name="Curiosity" value="False" />
                 <Property name="BuildingPart" value="True" />
                 <Property name="Procedural" value="True" />
                 <Property name="Emote" value="True" />
                 <Property name="CustomisationPart" value="True" />
+                <Property name="CreatureEgg" value="True" />
               </Property>
             </Property>
             <Property name="LabelID" value="" />
@@ -23315,10 +23779,10 @@
           <Property value="GcRewardTableItem.xml">
             <Property name="PercentageChance" value="100" />
             <Property name="Reward" value="GcRewardProduct.xml">
-              <Property name="Category" value="GcRealitySubstanceCategory.xml">
+              <Property name="ItemCategory" value="GcRealitySubstanceCategory.xml">
                 <Property name="SubstanceCategory" value="Earth" />
               </Property>
-              <Property name="Rarity" value="GcRarity.xml">
+              <Property name="ItemRarity" value="GcRarity.xml">
                 <Property name="Rarity" value="Common" />
               </Property>
               <Property name="ItemLevel" value="1" />
@@ -23326,11 +23790,12 @@
                 <Property name="Component" value="True" />
                 <Property name="Consumable" value="False" />
                 <Property name="Tradeable" value="False" />
-                <Property name="Curiousity" value="False" />
+                <Property name="Curiosity" value="False" />
                 <Property name="BuildingPart" value="True" />
                 <Property name="Procedural" value="True" />
                 <Property name="Emote" value="True" />
                 <Property name="CustomisationPart" value="True" />
+                <Property name="CreatureEgg" value="True" />
               </Property>
               <Property name="AmountMin" value="1" />
               <Property name="AmountMax" value="1" />
@@ -23342,6 +23807,102 @@
     </Property>
   </Property>
   <Property name="SpecialRewardTable">
+    <Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="R_EGG_HATCH1" />
+      <Property name="Common" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="GiveAll" />
+        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="Reward" value="GcRewardPetEggHatch.xml">
+              <Property name="EggIndex" value="1" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="R_EGG_HATCH2" />
+      <Property name="Common" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="GiveAll" />
+        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="Reward" value="GcRewardPetEggHatch.xml">
+              <Property name="EggIndex" value="2" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="R_EGG_HATCH3" />
+      <Property name="Common" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="GiveAll" />
+        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="Reward" value="GcRewardPetEggHatch.xml">
+              <Property name="EggIndex" value="3" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="R_EGG_HATCH4" />
+      <Property name="Common" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="GiveAll" />
+        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="Reward" value="GcRewardPetEggHatch.xml">
+              <Property name="EggIndex" value="4" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="R_EGG_HATCH5" />
+      <Property name="Common" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="GiveAll" />
+        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="Reward" value="GcRewardPetEggHatch.xml">
+              <Property name="EggIndex" value="5" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcGenericRewardTableEntry.xml">
+      <Property name="Id" value="R_EGG_HATCH6" />
+      <Property name="Common" value="GcRewardTableItemList.xml">
+        <Property name="RewardChoice" value="GiveAll" />
+        <Property name="OverrideZeroSeed" value="False" />
+        <Property name="List">
+          <Property value="GcRewardTableItem.xml">
+            <Property name="PercentageChance" value="100" />
+            <Property name="Reward" value="GcRewardPetEggHatch.xml">
+              <Property name="EggIndex" value="6" />
+            </Property>
+            <Property name="LabelID" value="" />
+          </Property>
+        </Property>
+      </Property>
+    </Property>
     <Property value="GcGenericRewardTableEntry.xml">
       <Property name="Id" value="R_SCRAP_GOODS" />
       <Property name="Common" value="GcRewardTableItemList.xml">

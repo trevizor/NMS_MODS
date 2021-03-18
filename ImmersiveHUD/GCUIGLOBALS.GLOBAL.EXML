@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (3.12.0)-->
 <Data template="GcUIGlobals">
+  <Property name="EggModifiyAnimMaxSize" value="96" />  
+  <Property name="EggModifiyAnimLoopTime" value="1" />
   <Property name="ExplorationLogMissionID" value="EXPLORE_LOG" />
   <Property name="ForceOpenHazardProtInventoryThreshold" value="16" />
   <Property name="PlanetDataExtraRadius" value="1.125" />
@@ -44,6 +46,12 @@
   <Property name="InWorldInteractLabelNearRange" value="2" />
   <Property name="InWorldInteractLabelFarDistance" value="10" />
   <Property name="InWorldInteractLabelFarRange" value="20" />
+  <Property name="PetSlotUnlockBounceTime" value="0.5" /> 
+  <Property name="PetHUDMarkerExtraFollowInfoDistance" value="15" />  
+  <Property name="PetHUDMarkerHideDistance" value="30" /> 
+  <Property name="PetHUDMarkerHideDistanceShort" value="10" />  
+  <Property name="PetHUDMarkerOffset" value="1" />  
+  <Property name="PetMoodMarkerOffset" value="0.4" />
   <Property name="BinocularEdgeFade" value="Vector2f.xml">
     <Property name="x" value="0.9" />
     <Property name="y" value="0.8" />
@@ -246,17 +254,17 @@
       <Property name="Roll" value="0" />
       <Property name="Pitch" value="0" />
       <Property name="Rotate" value="150" />
-      <Property name="LightPitch" value="45" />
-      <Property name="LightRotate" value="65" />
+      <Property name="LightPitch" value="-5" />
+      <Property name="LightRotate" value="-45" />
       <Property name="Wander" value="TkCameraWanderData.xml">
         <Property name="CamWander" value="False" />
         <Property name="CamWanderPhase" value="0.003" />
         <Property name="CamWanderAmplitude" value="0.5" />
       </Property>
     </Property>
-    <Property name="Fov" value="70" />
+    <Property name="Fov" value="54" />
     <Property name="AspectRatio" value="1" />
-    <Property name="ThumbnailMode" value="HUD" />
+    <Property name="ThumbnailMode" value="GUI" />
     <Property name="FocusType" value="DiscoveryView" />
     <Property name="FocusLocator" value="" />
     <Property name="FocusOffset" value="Vector3f.xml">
@@ -552,6 +560,7 @@
   <Property name="MarkerHorizonShipApproachOffset" value="2000" />
   <Property name="TransferPopupCursorOffsetFactor" value="0.2" />
   <Property name="ScannableIconMergeAngle" value="9" />
+  <Property name="CreatureIconMergeAngle" value="2" />
   <Property name="MissionObjectiveBaseHeight" value="50" />
   <Property name="MarkerTagAppearDelay" value="0.2" />
   <Property name="CompassCentre" value="Vector2f.xml">
@@ -1257,9 +1266,17 @@
   <Property name="OnFootDamageDirectionIndicatorRadius" value="450" />
   <Property name="OnFootDamageDirectionIndicatorFadeRange" value="40" />
   <Property name="DamageDirectionIndicatorOnScreenRadiusMultiplier" value="2" />
-  <Property name="DialogPageCursorOffset" value="Vector2f.xml">
-    <Property name="x" value="550" />
-    <Property name="y" value="285" />
+  <Property name="DialogPageCursorOffset" value="Vector2f.xml"> 
+    <Property name="x" value="550" /> 
+    <Property name="y" value="285" /> 
+  </Property> 
+  <Property name="IntermediateInteractionPageCursorOffset" value="Vector2f.xml">  
+    <Property name="x" value="650" /> 
+    <Property name="y" value="50" />  
+  </Property> 
+  <Property name="CursorlessDialogPageCursorOffset" value="Vector2f.xml"> 
+    <Property name="x" value="650" /> 
+    <Property name="y" value="150" /> 
   </Property>
   <Property name="MissionSpecificMissionPercent" value="50" />
   <Property name="MissionLoopCount" value="15" />
@@ -1442,6 +1459,8 @@
   <Property name="PhotoModeTimeofDayChange" value="0.5" />
   <Property name="FrigateIconOffset" value="25" />
   <Property name="CreatureIconOffset" value="1" />
+  
+  <Property name="CreatureIconOffsetPhysics" value="0.5" />
   <Property name="DelayBeforeHidingHangarAfterGalaxyMap" value="1" />
   <Property name="DelayBeforeShowingHangarIntoGalaxyMap" value="0" />
   <Property name="FreighterSummonTurn" value="-150" />
@@ -1630,6 +1649,9 @@
   <Property name="SpaceMarkersBattleOffset" value="3000" />
   <Property name="LargeSpaceIconSize" value="80" />
   <Property name="SmallSpaceIconSize" value="48" />
+  
+  <Property name="PetHoverIconSize" value="64" /> 
+  <Property name="PetIconSize" value="52" />
   <Property name="TrackTypeIconOffset" value="Vector2f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="-100" />
@@ -2361,62 +2383,62 @@
   <Property name="AlwaysOnHazardMultiplierCold" value="1" />
   <Property name="HazardPulseRate" value="400" />
   <Property name="HazardTextures">
-    <Property name="None" value="NMSString0x80.xml">
+    <Property value="NMSString0x80.xml">
       <Property name="Value" value="" />
     </Property>
-    <Property name="NoOxygen" value="NMSString0x80.xml">
+    <Property value="NMSString0x80.xml">
       <Property name="Value" value="" />
     </Property>
-    <Property name="ExtremeHeat" value="NMSString0x80.xml">
+    <Property value="NMSString0x80.xml">
       <Property name="Value" value="TEXTURES/EFFECTS/FULLSCREEN/HAZARDS/HOT.DDS" />
     </Property>
-    <Property name="ExtremeCold" value="NMSString0x80.xml">
+    <Property value="NMSString0x80.xml">
       <Property name="Value" value="TEXTURES/EFFECTS/FULLSCREEN/HAZARDS/COLD.DDS" />
     </Property>
-    <Property name="ToxicGas" value="NMSString0x80.xml">
+    <Property value="NMSString0x80.xml">
       <Property name="Value" value="TEXTURES/EFFECTS/FULLSCREEN/HAZARDS/TOXIC.DDS" />
     </Property>
-    <Property name="Radiation" value="NMSString0x80.xml">
+    <Property value="NMSString0x80.xml">
       <Property name="Value" value="TEXTURES/EFFECTS/FULLSCREEN/HAZARDS/RADIATION.DDS" />
     </Property>
   </Property>
   <Property name="HazardNormalMaps">
-    <Property name="None" value="NMSString0x80.xml">
+    <Property value="NMSString0x80.xml">
       <Property name="Value" value="" />
     </Property>
-    <Property name="NoOxygen" value="NMSString0x80.xml">
+    <Property value="NMSString0x80.xml">
       <Property name="Value" value="" />
     </Property>
-    <Property name="ExtremeHeat" value="NMSString0x80.xml">
+    <Property value="NMSString0x80.xml">
       <Property name="Value" value="TEXTURES/EFFECTS/FULLSCREEN/HAZARDS/HOT.NORMAL.DDS" />
     </Property>
-    <Property name="ExtremeCold" value="NMSString0x80.xml">
+    <Property value="NMSString0x80.xml">
       <Property name="Value" value="TEXTURES/EFFECTS/FULLSCREEN/HAZARDS/COLD.NORMAL.DDS" />
     </Property>
-    <Property name="ToxicGas" value="NMSString0x80.xml">
+    <Property value="NMSString0x80.xml">
       <Property name="Value" value="TEXTURES/EFFECTS/FULLSCREEN/HAZARDS/TOXIC.NORMAL.DDS" />
     </Property>
-    <Property name="Radiation" value="NMSString0x80.xml">
+    <Property value="NMSString0x80.xml">
       <Property name="Value" value="TEXTURES/EFFECTS/FULLSCREEN/HAZARDS/HOT.NORMAL.DDS" />
     </Property>
   </Property>
   <Property name="HazardHeightmaps">
-    <Property name="None" value="NMSString0x80.xml">
+    <Property value="NMSString0x80.xml">
       <Property name="Value" value="" />
     </Property>
-    <Property name="NoOxygen" value="NMSString0x80.xml">
+    <Property value="NMSString0x80.xml">
       <Property name="Value" value="" />
     </Property>
-    <Property name="ExtremeHeat" value="NMSString0x80.xml">
+    <Property value="NMSString0x80.xml">
       <Property name="Value" value="TEXTURES/EFFECTS/FULLSCREEN/HAZARDS/HOT.REFRACTION.DDS" />
     </Property>
-    <Property name="ExtremeCold" value="NMSString0x80.xml">
+    <Property value="NMSString0x80.xml">
       <Property name="Value" value="TEXTURES/EFFECTS/FULLSCREEN/HAZARDS/COLD.REFRACTION.DDS" />
     </Property>
-    <Property name="ToxicGas" value="NMSString0x80.xml">
+    <Property value="NMSString0x80.xml">
       <Property name="Value" value="TEXTURES/EFFECTS/FULLSCREEN/HAZARDS/TOXIC.REFRACTION.DDS" />
     </Property>
-    <Property name="Radiation" value="NMSString0x80.xml">
+    <Property value="NMSString0x80.xml">
       <Property name="Value" value="TEXTURES/EFFECTS/FULLSCREEN/HAZARDS/HOT.REFRACTION.DDS" />
     </Property>
   </Property>
@@ -3524,6 +3546,120 @@
         <Property name="UsePlayerCameraInHmd" value="True" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="True" />
         <Property name="LookForFocusInMasterModel" value="False" />
+      </Property>
+              <Property name="PetThumbnail" value="TkModelRendererData.xml">  
+        <Property name="Camera" value="TkModelRendererCameraData.xml">  
+          <Property name="Distance" value="0.15" /> 
+          <Property name="Offset" value="Vector3f.xml"> 
+            <Property name="x" value="-0.15" /> 
+            <Property name="y" value="0.3" /> 
+            <Property name="z" value="1" /> 
+          </Property> 
+          <Property name="Roll" value="5" />  
+          <Property name="Pitch" value="5" /> 
+          <Property name="Rotate" value="135" />  
+          <Property name="LightPitch" value="-6" /> 
+          <Property name="LightRotate" value="-33" /> 
+          <Property name="Wander" value="TkCameraWanderData.xml"> 
+            <Property name="CamWander" value="False" /> 
+            <Property name="CamWanderPhase" value="0.003" />  
+            <Property name="CamWanderAmplitude" value="0.5" />  
+          </Property> 
+        </Property> 
+        <Property name="Fov" value="70" />  
+        <Property name="AspectRatio" value="1" /> 
+        <Property name="ThumbnailMode" value="GUI" /> 
+        <Property name="FocusType" value="DiscoveryView" /> 
+        <Property name="FocusLocator" value="" /> 
+        <Property name="FocusOffset" value="Vector3f.xml">  
+          <Property name="x" value="0" /> 
+          <Property name="y" value="0" /> 
+          <Property name="z" value="0" /> 
+        </Property> 
+        <Property name="FocusInterpTime" value="0" /> 
+        <Property name="BlendInTime" value="0.8" /> 
+        <Property name="BlendInOffset" value="0" /> 
+        <Property name="Anim" value="" /> 
+        <Property name="HeightOffset" value="0.005" />  
+        <Property name="UsePlayerCameraInHmd" value="True" /> 
+        <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="True" />  
+        <Property name="LookForFocusInMasterModel" value="False" /> 
+      </Property> 
+      <Property name="PetThumbnailUI" value="TkModelRendererData.xml">  
+        <Property name="Camera" value="TkModelRendererCameraData.xml">  
+          <Property name="Distance" value="0.15" /> 
+          <Property name="Offset" value="Vector3f.xml"> 
+            <Property name="x" value="-0.25" /> 
+            <Property name="y" value="0.4" /> 
+            <Property name="z" value="1" /> 
+          </Property> 
+          <Property name="Roll" value="5" />  
+          <Property name="Pitch" value="0" /> 
+          <Property name="Rotate" value="125" />  
+          <Property name="LightPitch" value="-20" />  
+          <Property name="LightRotate" value="25" />  
+          <Property name="Wander" value="TkCameraWanderData.xml"> 
+            <Property name="CamWander" value="False" /> 
+            <Property name="CamWanderPhase" value="0.003" />  
+            <Property name="CamWanderAmplitude" value="0.5" />  
+          </Property> 
+        </Property> 
+        <Property name="Fov" value="70" />  
+        <Property name="AspectRatio" value="1" /> 
+        <Property name="ThumbnailMode" value="None" />  
+        <Property name="FocusType" value="DiscoveryView" /> 
+        <Property name="FocusLocator" value="" /> 
+        <Property name="FocusOffset" value="Vector3f.xml">  
+          <Property name="x" value="0" /> 
+          <Property name="y" value="0" /> 
+          <Property name="z" value="0" /> 
+        </Property> 
+        <Property name="FocusInterpTime" value="0" /> 
+        <Property name="BlendInTime" value="0.8" /> 
+        <Property name="BlendInOffset" value="0" /> 
+        <Property name="Anim" value="" /> 
+        <Property name="HeightOffset" value="0.005" />  
+        <Property name="UsePlayerCameraInHmd" value="True" /> 
+        <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="True" />  
+        <Property name="LookForFocusInMasterModel" value="False" /> 
+      </Property> 
+      <Property name="PetLarge" value="TkModelRendererData.xml">  
+        <Property name="Camera" value="TkModelRendererCameraData.xml">  
+          <Property name="Distance" value="0" />  
+          <Property name="Offset" value="Vector3f.xml"> 
+            <Property name="x" value="-0.1" />  
+            <Property name="y" value="0.4" /> 
+            <Property name="z" value="1.9" /> 
+          </Property> 
+          <Property name="Roll" value="0" />  
+          <Property name="Pitch" value="10" />  
+          <Property name="Rotate" value="135" />  
+          <Property name="LightPitch" value="45" /> 
+          <Property name="LightRotate" value="45" />  
+          <Property name="Wander" value="TkCameraWanderData.xml"> 
+            <Property name="CamWander" value="False" /> 
+            <Property name="CamWanderPhase" value="0.003" />  
+            <Property name="CamWanderAmplitude" value="0.5" />  
+          </Property> 
+        </Property> 
+        <Property name="Fov" value="45" />  
+        <Property name="AspectRatio" value="1.7777" />  
+        <Property name="ThumbnailMode" value="None" />  
+        <Property name="FocusType" value="DiscoveryView" /> 
+        <Property name="FocusLocator" value="" /> 
+        <Property name="FocusOffset" value="Vector3f.xml">  
+          <Property name="x" value="0" /> 
+          <Property name="y" value="0" /> 
+          <Property name="z" value="0" /> 
+        </Property> 
+        <Property name="FocusInterpTime" value="0" /> 
+        <Property name="BlendInTime" value="0.8" /> 
+        <Property name="BlendInOffset" value="0" /> 
+        <Property name="Anim" value="IDLE" /> 
+        <Property name="HeightOffset" value="0.005" />  
+        <Property name="UsePlayerCameraInHmd" value="True" /> 
+        <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="True" />  
+        <Property name="LookForFocusInMasterModel" value="False" /> 
       </Property>
     </Property>
   </Property>

@@ -49,8 +49,8 @@
     <Property name="y" value="1.25" />
   </Property>
   <Property name="HandControllerDeadZone" value="Vector2f.xml">
-    <Property name="x" value="0.05" />
-    <Property name="y" value="0.05" />
+    <Property name="x" value="0.1" />
+    <Property name="y" value="0.1" />
   </Property>
   <Property name="HandControllerExtents" value="Vector2f.xml">
     <Property name="x" value="0.9" />
@@ -304,7 +304,7 @@
     <Property name="z" value="8" />
   </Property>
   <Property name="WeaponDamagePotentialReferenceRange" value="1500" />
-  <Property name="DirectionBrakeVerticalMultiplier" value="5" />
+  <Property name="DirectionBrakeVerticalMultiplier" value="2" />
   <Property name="LateralDriftRollAmount" value="0.05" />
   <Property name="LateralDriftRange" value="60" />
   <Property name="PadTurnSpeed" value="1" />
@@ -323,7 +323,7 @@
   <Property name="HoverLandManeuvreTimeMax" value="1.2" />
   <Property name="HoverLandManeuvreTimeHmdMin" value="1.2" />
   <Property name="HoverLandManeuvreTimeHmdMax" value="2" />
-  <Property name="HoverLandManeuvreBrake" value="5" />
+  <Property name="HoverLandManeuvreBrake" value="2" />
   <Property name="LandingOnGroundTip" value="0" />
   <Property name="LandingCheckBuildings" value="False" />
   <Property name="LandingCheckBuildingRadiusFactor" value="0.75" />
@@ -355,7 +355,7 @@
   <Property name="GroundHeightPostCollisionMultiplier" value="2" />
   <Property name="GroundHeightPostCollisionMultiplierTime" value="3" />
   <Property name="GroundHeightDownSpeedMultiplier" value="5" />
-  <Property name="GroundHeightBrakeMultiplier" value="1.2" />
+  <Property name="GroundHeightBrakeMultiplier" value="1" />
   <Property name="PitchCorrectDownSpeedMinSpeed" value="0" />
   <Property name="PitchCorrectDownSpeedRange" value="30" />
   <Property name="PitchCorrectDownSpeedSoftAngle" value="-1" />
@@ -388,8 +388,8 @@
     <Property name="SpaceEngine" value="GcPlayerSpaceshipEngineData.xml">
       <Property name="ThrustForce" value="40" />
       <Property name="MaxSpeed" value="180" />
-      <Property name="MinSpeed" value="-180" />
-      <Property name="Falloff" value="0.7" />
+      <Property name="MinSpeed" value="-1" />
+      <Property name="Falloff" value="0.1" />
       <Property name="MinSpeedForce" value="5" />
       <Property name="BoostThrustForce" value="500" />
       <Property name="BoostMaxSpeed" value="1500" />
@@ -397,8 +397,8 @@
       <Property name="BoostingTurnDamp" value="0.1" />
       <Property name="DirectionBrakeMin" value="1" />
       <Property name="DirectionBrake" value="1.5" />
-      <Property name="ReverseBrake" value="0.5" />
-      <Property name="OverspeedBrake" value="0.1" />
+      <Property name="ReverseBrake" value="0.8" />
+      <Property name="OverspeedBrake" value="0" />
       <Property name="LowSpeedTurnDamper" value="0.8" />
       <Property name="TurnBrakeMin" value="0" />
       <Property name="TurnBrakeMax" value="2" />
@@ -412,8 +412,8 @@
     <Property name="PlanetEngine" value="GcPlayerSpaceshipEngineData.xml">
       <Property name="ThrustForce" value="20" />
       <Property name="MaxSpeed" value="125" />
-      <Property name="MinSpeed" value="-125" />
-      <Property name="Falloff" value="0.5" />
+      <Property name="MinSpeed" value="-1" />
+      <Property name="Falloff" value="0.1" />
       <Property name="MinSpeedForce" value="31" />
       <Property name="BoostThrustForce" value="100" />
       <Property name="BoostMaxSpeed" value="194" />
@@ -421,8 +421,8 @@
       <Property name="BoostingTurnDamp" value="0.1" />
       <Property name="DirectionBrakeMin" value="1" />
       <Property name="DirectionBrake" value="1.5" />
-      <Property name="ReverseBrake" value="1" />
-      <Property name="OverspeedBrake" value="0.1" />
+      <Property name="ReverseBrake" value="0.8" />
+      <Property name="OverspeedBrake" value="0" />
       <Property name="LowSpeedTurnDamper" value="0.8" />
       <Property name="TurnBrakeMin" value="0" />
       <Property name="TurnBrakeMax" value="3" />
@@ -436,8 +436,8 @@
     <Property name="CombatEngine" value="GcPlayerSpaceshipEngineData.xml">
       <Property name="ThrustForce" value="40" />
       <Property name="MaxSpeed" value="80" />
-      <Property name="MinSpeed" value="-80" />
-      <Property name="Falloff" value="0.7" />
+      <Property name="MinSpeed" value="-1 />
+      <Property name="Falloff" value="0.1" />
       <Property name="MinSpeedForce" value="30" />
       <Property name="BoostThrustForce" value="500" />
       <Property name="BoostMaxSpeed" value="1500" />
@@ -445,8 +445,8 @@
       <Property name="BoostingTurnDamp" value="0.1" />
       <Property name="DirectionBrakeMin" value="1" />
       <Property name="DirectionBrake" value="2" />
-      <Property name="ReverseBrake" value="0.5" />
-      <Property name="OverspeedBrake" value="0.1" />
+      <Property name="ReverseBrake" value="0.8" />
+      <Property name="OverspeedBrake" value="0" />
       <Property name="LowSpeedTurnDamper" value="0.8" />
       <Property name="TurnBrakeMin" value="0" />
       <Property name="TurnBrakeMax" value="4" />
@@ -485,8 +485,8 @@
     <Property name="SpaceEngine" value="GcPlayerSpaceshipEngineData.xml">
       <Property name="ThrustForce" value="80" />
       <Property name="MaxSpeed" value="180" />
-      <Property name="MinSpeed" value="-180" />
-      <Property name="Falloff" value="0.7" />
+      <Property name="MinSpeed" value="-1" />
+      <Property name="Falloff" value="0.1" />
       <Property name="MinSpeedForce" value="5" />
       <Property name="BoostThrustForce" value="500" />
       <Property name="BoostMaxSpeed" value="1625" />
@@ -494,8 +494,8 @@
       <Property name="BoostingTurnDamp" value="0.1" />
       <Property name="DirectionBrakeMin" value="0.8" />
       <Property name="DirectionBrake" value="1.2" />
-      <Property name="ReverseBrake" value="0.5" />
-      <Property name="OverspeedBrake" value="0.1" />
+      <Property name="ReverseBrake" value="0.8" />
+      <Property name="OverspeedBrake" value="0" />
       <Property name="LowSpeedTurnDamper" value="0.8" />
       <Property name="TurnBrakeMin" value="0" />
       <Property name="TurnBrakeMax" value="3" />
@@ -509,8 +509,8 @@
     <Property name="PlanetEngine" value="GcPlayerSpaceshipEngineData.xml">
       <Property name="ThrustForce" value="40" />
       <Property name="MaxSpeed" value="125" />
-      <Property name="MinSpeed" value="-125" />
-      <Property name="Falloff" value="0.5" />
+      <Property name="MinSpeed" value="-1" />
+      <Property name="Falloff" value="0.1" />
       <Property name="MinSpeedForce" value="31" />
       <Property name="BoostThrustForce" value="200" />
       <Property name="BoostMaxSpeed" value="188" />
@@ -518,8 +518,8 @@
       <Property name="BoostingTurnDamp" value="0.1" />
       <Property name="DirectionBrakeMin" value="0.75" />
       <Property name="DirectionBrake" value="1.15" />
-      <Property name="ReverseBrake" value="1" />
-      <Property name="OverspeedBrake" value="0.1" />
+      <Property name="ReverseBrake" value="0.8" />
+      <Property name="OverspeedBrake" value="0" />
       <Property name="LowSpeedTurnDamper" value="0.8" />
       <Property name="TurnBrakeMin" value="0" />
       <Property name="TurnBrakeMax" value="4" />
@@ -533,8 +533,8 @@
     <Property name="CombatEngine" value="GcPlayerSpaceshipEngineData.xml">
       <Property name="ThrustForce" value="80" />
       <Property name="MaxSpeed" value="80" />
-      <Property name="MinSpeed" value="-80" />
-      <Property name="Falloff" value="0.7" />
+      <Property name="MinSpeed" value="-1 />
+      <Property name="Falloff" value="0.1" />
       <Property name="MinSpeedForce" value="30" />
       <Property name="BoostThrustForce" value="500" />
       <Property name="BoostMaxSpeed" value="1625" />
@@ -542,8 +542,8 @@
       <Property name="BoostingTurnDamp" value="0.1" />
       <Property name="DirectionBrakeMin" value="1" />
       <Property name="DirectionBrake" value="1.5" />
-      <Property name="ReverseBrake" value="0.5" />
-      <Property name="OverspeedBrake" value="0.1" />
+      <Property name="ReverseBrake" value="0.8" />
+      <Property name="OverspeedBrake" value="0" />
       <Property name="LowSpeedTurnDamper" value="0.8" />
       <Property name="TurnBrakeMin" value="0" />
       <Property name="TurnBrakeMax" value="4" />
@@ -582,8 +582,8 @@
     <Property name="SpaceEngine" value="GcPlayerSpaceshipEngineData.xml">
       <Property name="ThrustForce" value="40" />
       <Property name="MaxSpeed" value="180" />
-      <Property name="MinSpeed" value="-180" />
-      <Property name="Falloff" value="0.7" />
+      <Property name="MinSpeed" value="-1" />
+      <Property name="Falloff" value="0.1" />
       <Property name="MinSpeedForce" value="5" />
       <Property name="BoostThrustForce" value="500" />
       <Property name="BoostMaxSpeed" value="1375" />
@@ -591,8 +591,8 @@
       <Property name="BoostingTurnDamp" value="0.1" />
       <Property name="DirectionBrakeMin" value="1" />
       <Property name="DirectionBrake" value="1.5" />
-      <Property name="ReverseBrake" value="0.5" />
-      <Property name="OverspeedBrake" value="0.1" />
+      <Property name="ReverseBrake" value="0.8" />
+      <Property name="OverspeedBrake" value="0" />
       <Property name="LowSpeedTurnDamper" value="0.8" />
       <Property name="TurnBrakeMin" value="0" />
       <Property name="TurnBrakeMax" value="3" />
@@ -606,8 +606,8 @@
     <Property name="PlanetEngine" value="GcPlayerSpaceshipEngineData.xml">
       <Property name="ThrustForce" value="20" />
       <Property name="MaxSpeed" value="130" />
-      <Property name="MinSpeed" value="-130" />
-      <Property name="Falloff" value="0.5" />
+      <Property name="MinSpeed" value="-1" />
+      <Property name="Falloff" value="0.1" />
       <Property name="MinSpeedForce" value="31" />
       <Property name="BoostThrustForce" value="20" />
       <Property name="BoostMaxSpeed" value="231" />
@@ -615,8 +615,8 @@
       <Property name="BoostingTurnDamp" value="0.1" />
       <Property name="DirectionBrakeMin" value="0.35" />
       <Property name="DirectionBrake" value="0.8" />
-      <Property name="ReverseBrake" value="1" />
-      <Property name="OverspeedBrake" value="0.1" />
+      <Property name="ReverseBrake" value="0.8" />
+      <Property name="OverspeedBrake" value="0" />
       <Property name="LowSpeedTurnDamper" value="0.8" />
       <Property name="TurnBrakeMin" value="0" />
       <Property name="TurnBrakeMax" value="2" />
@@ -630,8 +630,8 @@
     <Property name="CombatEngine" value="GcPlayerSpaceshipEngineData.xml">
       <Property name="ThrustForce" value="40" />
       <Property name="MaxSpeed" value="80" />
-      <Property name="MinSpeed" value="-80" />
-      <Property name="Falloff" value="0.7" />
+      <Property name="MinSpeed" value="-1 />
+      <Property name="Falloff" value="0.1" />
       <Property name="MinSpeedForce" value="30" />
       <Property name="BoostThrustForce" value="500" />
       <Property name="BoostMaxSpeed" value="1375" />
@@ -639,8 +639,8 @@
       <Property name="BoostingTurnDamp" value="0.1" />
       <Property name="DirectionBrakeMin" value="1" />
       <Property name="DirectionBrake" value="2" />
-      <Property name="ReverseBrake" value="0.5" />
-      <Property name="OverspeedBrake" value="0.1" />
+      <Property name="ReverseBrake" value="0.8" />
+      <Property name="OverspeedBrake" value="0" />
       <Property name="LowSpeedTurnDamper" value="0.8" />
       <Property name="TurnBrakeMin" value="0" />
       <Property name="TurnBrakeMax" value="4" />
