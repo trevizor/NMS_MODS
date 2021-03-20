@@ -2919,6 +2919,7 @@
         <Property name="WaterFadeInDistance" value="100" />
       </Property>
     </Property> 
+    <!-- Done! -->
     <Property name="GrandCanyon" value="TkVoxelGeneratorSettingsElement.xml">
       <Property name="Min" value="TkVoxelGeneratorData.xml">
         <Property name="BaseSeed" value="GcSeed.xml">
@@ -5835,7 +5836,8 @@
         <Property name="WaterFadeInDistance" value="100" />
       </Property>
     </Property>
-    <Property name="MountainRavines" value="TkVoxelGeneratorSettingsElement.xml">  <!-- TODO -->
+    <!-- DOING -->
+    <Property name="MountainRavines" value="TkVoxelGeneratorSettingsElement.xml">
       <Property name="Min" value="TkVoxelGeneratorData.xml">
         <Property name="BaseSeed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
@@ -5918,7 +5920,7 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="0" />
+            <Property name="Height" value="64" />
             <Property name="Width" value="350" />
             <Property name="RegionRatio" value="0.75" />
             <Property name="RegionScale" value="2" />
@@ -5960,7 +5962,7 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
-            <Property name="Height" value="0" />
+            <Property name="Height" value="128" />
             <Property name="Width" value="500" />
             <Property name="RegionRatio" value="0.2" />
             <Property name="RegionScale" value="2" />
@@ -20696,8 +20698,8 @@
               <Property name="SlopeErosion" value="0" />
               <Property name="Lacunarity" value="2" />
               <Property name="Gain" value="0.5" />
-              <Property name="RemapFromMin" value="0.25" />
-              <Property name="RemapFromMax" value="0.7" />
+              <Property name="RemapFromMin" value="0" />
+              <Property name="RemapFromMax" value="0" />
               <Property name="RemapToMin" value="0" />
               <Property name="RemapToMax" value="1" />
               <Property name="DebugNoiseType" value="Uber" />
@@ -20708,13 +20710,13 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="0" />
+            <Property name="Height" value="900" />
             <Property name="Width" value="2500" />
-            <Property name="RegionRatio" value="1" />
+            <Property name="RegionRatio" value="0.25" />
             <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
-            <Property name="HeightOffset" value="0" />
+            <Property name="HeightOffset" value="-300" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
@@ -22153,8 +22155,8 @@
               <Property name="SlopeErosion" value="0" />
               <Property name="Lacunarity" value="2" />
               <Property name="Gain" value="0.5" />
-              <Property name="RemapFromMin" value="0.25" />
-              <Property name="RemapFromMax" value="0.7" />
+              <Property name="RemapFromMin" value="0" />
+              <Property name="RemapFromMax" value="0" />
               <Property name="RemapToMin" value="0" />
               <Property name="RemapToMax" value="1" />
               <Property name="DebugNoiseType" value="Uber" />
@@ -22165,13 +22167,13 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="0" />
+            <Property name="Height" value="900" />
             <Property name="Width" value="2500" />
-            <Property name="RegionRatio" value="1" />
+            <Property name="RegionRatio" value="0.25" />
             <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" />
-            <Property name="HeightOffset" value="0" />
+            <Property name="HeightOffset" value="-300" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
