@@ -1,0 +1,22 @@
+[VERSION]: MBINCompiler v3.21.0.2
+[ARGS]: "D:\NMS-Modding-Station\MODS\AmbientOverhaul\METADATA\SIMULATION\SOLARSYSTEM\WEATHER\SKYSETTINGS\DAYSKYCOLOURS.EXML"
+
+If you encounter any errors, please submit a bug report and include this log file.
+Please check that there isn't already a similar issue open before creating a new one.
+https://github.com/monkeyman192/MBINCompiler/issues
+
+[INFO]: Auto-Detected --input-format=EXML
+[INFO]: --input-format=EXML --output-format=MBIN
+
+[ERROR]: [AggregateException]: Um ou mais erros.
+[ExmlException]: An EXML exception has occurred!
+[ArraySizeException]: PerBiomeSettings: XML array size 13 doesn't match expected array size 16
+You might have added/removed an item from an array field
+(arrays can't be shortened or extended as they're a fixed size set by the game)
+
+   em libMBIN.NMSTemplate.DeserializeEXmlValue(NMSTemplate template, Type fieldType, FieldInfo field, EXmlProperty xmlProperty, Type templateType, NMSAttribute settings)
+   em libMBIN.NMSTemplate.DeserializeEXml(EXmlBase xmlData)
+   em libMBIN.EXmlFile.ReadTemplateFromXmlReader(XmlReader reader, String& templateName)
+   em libMBIN.EXmlFile.ReadTemplateFromStream(Stream input, String& templateName)
+   em MBINCompiler.Commands.Convert.ConvertEXML(String inputPath, FileStream fIn, MemoryStream msOut, String fileOut)
+
