@@ -17504,7 +17504,7 @@
         <Property name="WaterFadeInDistance" value="100" />
       </Property>
     </Property>
-    <Property name="Caverns" value="TkVoxelGeneratorSettingsElement.xml"> <!-- TODO -->
+    <Property name="Caverns" value="TkVoxelGeneratorSettingsElement.xml"> <!-- DONE -->
       <Property name="Min" value="TkVoxelGeneratorData.xml">
         <Property name="BaseSeed" value="GcSeed.xml">
           <Property name="Seed" value="3351820575014674432" />
@@ -17774,7 +17774,7 @@
           </Property>
           <Property name="Elevation" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
-              <Property name="Octaves" value="2" />
+              <Property name="Octaves" value="4" />
               <Property name="SlopeGain" value="0.5" />
               <Property name="SlopeBias" value="0.5" />
               <Property name="SharpToRoundFeatures" value="0" /> <!-- Elevation -->
@@ -17797,15 +17797,15 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="300" />
+            <Property name="Height" value="400" />
             <Property name="Width" value="6000" />
-            <Property name="RegionRatio" value="0.5" /> <!-- Elevation -->
+            <Property name="RegionRatio" value="0.3" /> <!-- Elevation -->
             <Property name="RegionScale" value="1" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" /> <!-- Elevation -->
-            <Property name="HeightOffset" value="0" />
+            <Property name="HeightOffset" value="-200" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
-              <Property name="OffsetType" value="Base" />
+              <Property name="OffsetType" value="Zero" />
             </Property>
             <Property name="WaterFade" value="None" />
             <Property name="PlateauStratas" value="0" />
@@ -17861,7 +17861,7 @@
           <Property name="Small" value="TkNoiseGridData.xml">
             <Property name="Active" value="True" />
             <Property name="MaximumLOD" value="1" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="True" />
             <Property name="SwapZY" value="False" />
             <Property name="Hemisphere" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
@@ -17869,17 +17869,17 @@
             </Property>
             <Property name="NoiseGridType" value="Sphere" />
             <Property name="Filename" value="" />
-            <Property name="MinWidth" value="15" />
-            <Property name="MaxWidth" value="15" />
+            <Property name="MinWidth" value="10" />
+            <Property name="MaxWidth" value="25" />
             <Property name="MinHeight" value="8" />
-            <Property name="MaxHeight" value="8" />
-            <Property name="MinHeightOffset" value="-6" />
+            <Property name="MaxHeight" value="24" />
+            <Property name="MinHeightOffset" value="-12" />
             <Property name="MaxHeightOffset" value="-4" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="RegionRatio" value="0.01" />
+            <Property name="RegionRatio" value="0.005" />
             <Property name="RegionScale" value="1" />
             <Property name="TurbulenceNoiseLayer" value="TkNoiseUberLayerData.xml">
               <Property name="NoiseData" value="TkNoiseUberData.xml">
@@ -17956,7 +17956,7 @@
             <Property name="TileBlendMeters" value="0" />
           </Property>
           <Property name="Large" value="TkNoiseGridData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="True" />
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="SwapZY" value="False" />
@@ -17964,19 +17964,19 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="NoiseGridType" value="Sphere" />
+            <Property name="NoiseGridType" value="Cylinder" />
             <Property name="Filename" value="" />
-            <Property name="MinWidth" value="100" />
-            <Property name="MaxWidth" value="100" />
-            <Property name="MinHeight" value="10" />
-            <Property name="MaxHeight" value="10" />
-            <Property name="MinHeightOffset" value="10" />
-            <Property name="MaxHeightOffset" value="10" />
+            <Property name="MinWidth" value="5" />
+            <Property name="MaxWidth" value="15" />
+            <Property name="MinHeight" value="25" />
+            <Property name="MaxHeight" value="60" />
+            <Property name="MinHeightOffset" value="-25" />
+            <Property name="MaxHeightOffset" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="RegionRatio" value="1" />
+            <Property name="RegionRatio" value="0.001" />
             <Property name="RegionScale" value="5" />
             <Property name="TurbulenceNoiseLayer" value="TkNoiseUberLayerData.xml">
               <Property name="NoiseData" value="TkNoiseUberData.xml">
@@ -18061,7 +18061,7 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Substance_1" />
             </Property>
-            <Property name="NoiseGridType" value="Sphere" />
+            <Property name="NoiseGridType" value="Puck" />
             <Property name="Filename" value="" />
             <Property name="MinWidth" value="10" />
             <Property name="MaxWidth" value="30" />
@@ -18069,7 +18069,7 @@
             <Property name="MaxHeight" value="10" />
             <Property name="MinHeightOffset" value="0" />
             <Property name="MaxHeightOffset" value="0" />
-            <Property name="HeightOffset" value="-8" />
+            <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="All" />
             </Property>
@@ -19231,7 +19231,7 @@
           </Property>
           <Property name="Elevation" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
-              <Property name="Octaves" value="2" />
+              <Property name="Octaves" value="4" />
               <Property name="SlopeGain" value="0.5" />
               <Property name="SlopeBias" value="0.5" />
               <Property name="SharpToRoundFeatures" value="0" /> <!-- Elevation -->
@@ -19254,15 +19254,15 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="300" />
+            <Property name="Height" value="400" />
             <Property name="Width" value="6000" />
-            <Property name="RegionRatio" value="0.5" /> <!-- Elevation -->
+            <Property name="RegionRatio" value="0.3" /> <!-- Elevation -->
             <Property name="RegionScale" value="1" />
             <Property name="RegionGain" value="1" />
             <Property name="SmoothRadius" value="0" /> <!-- Elevation -->
-            <Property name="HeightOffset" value="0" />
+            <Property name="HeightOffset" value="-200" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
-              <Property name="OffsetType" value="Base" />
+              <Property name="OffsetType" value="Zero" />
             </Property>
             <Property name="WaterFade" value="None" />
             <Property name="PlateauStratas" value="0" />
@@ -19318,7 +19318,7 @@
           <Property name="Small" value="TkNoiseGridData.xml">
             <Property name="Active" value="True" />
             <Property name="MaximumLOD" value="1" />
-            <Property name="Subtract" value="False" />
+            <Property name="Subtract" value="True" />
             <Property name="SwapZY" value="False" />
             <Property name="Hemisphere" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
@@ -19326,17 +19326,17 @@
             </Property>
             <Property name="NoiseGridType" value="Sphere" />
             <Property name="Filename" value="" />
-            <Property name="MinWidth" value="15" />
-            <Property name="MaxWidth" value="15" />
+            <Property name="MinWidth" value="10" />
+            <Property name="MaxWidth" value="25" />
             <Property name="MinHeight" value="8" />
-            <Property name="MaxHeight" value="8" />
-            <Property name="MinHeightOffset" value="-6" />
+            <Property name="MaxHeight" value="24" />
+            <Property name="MinHeightOffset" value="-12" />
             <Property name="MaxHeightOffset" value="-4" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="RegionRatio" value="0.01" />
+            <Property name="RegionRatio" value="0.005" />
             <Property name="RegionScale" value="1" />
             <Property name="TurbulenceNoiseLayer" value="TkNoiseUberLayerData.xml">
               <Property name="NoiseData" value="TkNoiseUberData.xml">
@@ -19413,7 +19413,7 @@
             <Property name="TileBlendMeters" value="0" />
           </Property>
           <Property name="Large" value="TkNoiseGridData.xml">
-            <Property name="Active" value="False" />
+            <Property name="Active" value="True" />
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="SwapZY" value="False" />
@@ -19421,19 +19421,19 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="NoiseGridType" value="Sphere" />
+            <Property name="NoiseGridType" value="Cylinder" />
             <Property name="Filename" value="" />
-            <Property name="MinWidth" value="100" />
-            <Property name="MaxWidth" value="100" />
-            <Property name="MinHeight" value="10" />
-            <Property name="MaxHeight" value="10" />
-            <Property name="MinHeightOffset" value="10" />
-            <Property name="MaxHeightOffset" value="10" />
+            <Property name="MinWidth" value="5" />
+            <Property name="MaxWidth" value="15" />
+            <Property name="MinHeight" value="25" />
+            <Property name="MaxHeight" value="60" />
+            <Property name="MinHeightOffset" value="-25" />
+            <Property name="MaxHeightOffset" value="0" />
             <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Base" />
             </Property>
-            <Property name="RegionRatio" value="1" />
+            <Property name="RegionRatio" value="0.001" />
             <Property name="RegionScale" value="5" />
             <Property name="TurbulenceNoiseLayer" value="TkNoiseUberLayerData.xml">
               <Property name="NoiseData" value="TkNoiseUberData.xml">
@@ -19518,7 +19518,7 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Substance_1" />
             </Property>
-            <Property name="NoiseGridType" value="Sphere" />
+            <Property name="NoiseGridType" value="Puck" />
             <Property name="Filename" value="" />
             <Property name="MinWidth" value="10" />
             <Property name="MaxWidth" value="30" />
@@ -19526,7 +19526,7 @@
             <Property name="MaxHeight" value="10" />
             <Property name="MinHeightOffset" value="0" />
             <Property name="MaxHeightOffset" value="0" />
-            <Property name="HeightOffset" value="-8" />
+            <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="All" />
             </Property>
@@ -23336,6 +23336,7 @@
         <Property name="WaterFadeInDistance" value="100" />
       </Property>
     </Property>
+    <!-- TODO! Nao sei o que fazer com esse -->
     <Property name="LilyPad" value="TkVoxelGeneratorSettingsElement.xml">
       <Property name="Min" value="TkVoxelGeneratorData.xml">
         <Property name="BaseSeed" value="GcSeed.xml">
@@ -23699,7 +23700,7 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Mountain" />
             </Property>
-            <Property name="NoiseGridType" value="Cube" />
+            <Property name="NoiseGridType" value="Torus" />
             <Property name="Filename" value="" />
             <Property name="MinWidth" value="128" />
             <Property name="MaxWidth" value="128" />
@@ -23707,7 +23708,7 @@
             <Property name="MaxHeight" value="128" />
             <Property name="MinHeightOffset" value="0" />
             <Property name="MaxHeightOffset" value="0" />
-            <Property name="HeightOffset" value="-64" />
+            <Property name="HeightOffset" value="-12" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
               <Property name="OffsetType" value="Zero" />
             </Property>
@@ -23794,9 +23795,9 @@
             <Property name="SwapZY" value="False" />
             <Property name="Hemisphere" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Mountain" />
+              <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="NoiseGridType" value="Cube" />
+            <Property name="NoiseGridType" value="Torus" />
             <Property name="Filename" value="" />
             <Property name="MinWidth" value="128" />
             <Property name="MaxWidth" value="128" />
@@ -23893,7 +23894,7 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Substance_1" />
             </Property>
-            <Property name="NoiseGridType" value="Sphere" />
+            <Property name="NoiseGridType" value="Capsule" />
             <Property name="Filename" value="" />
             <Property name="MinWidth" value="10" />
             <Property name="MaxWidth" value="30" />
@@ -23990,7 +23991,7 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Substance_2" />
             </Property>
-            <Property name="NoiseGridType" value="Sphere" />
+            <Property name="NoiseGridType" value="Capsule" />
             <Property name="Filename" value="" />
             <Property name="MinWidth" value="10" />
             <Property name="MaxWidth" value="30" />
@@ -24087,7 +24088,7 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Substance_2" />
             </Property>
-            <Property name="NoiseGridType" value="Sphere" />
+            <Property name="NoiseGridType" value="Capsule" />
             <Property name="Filename" value="" />
             <Property name="MinWidth" value="10" />
             <Property name="MaxWidth" value="30" />
@@ -26270,19 +26271,19 @@
         <Property name="NoiseLayers">
           <Property name="Base" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
-              <Property name="Octaves" value="8" />
-              <Property name="SlopeGain" value="0.5" />
+              <Property name="Octaves" value="1" />
+              <Property name="SlopeGain" value="0.4" />
               <Property name="SlopeBias" value="0.5" />
-              <Property name="SharpToRoundFeatures" value="-1" /> <!-- Base -->
+              <Property name="SharpToRoundFeatures" value="1" /> <!-- Base -->
               <Property name="AmplifyFeatures" value="0" />
-              <Property name="PerturbFeatures" value="0.2" />
+              <Property name="PerturbFeatures" value="00" />
               <Property name="AltitudeErosion" value="0.25" />
               <Property name="RidgeErosion" value="1" />
               <Property name="SlopeErosion" value="0" />
               <Property name="Lacunarity" value="2" />
               <Property name="Gain" value="0.5" />
-              <Property name="RemapFromMin" value="0.15" />
-              <Property name="RemapFromMax" value="0.6" />
+              <Property name="RemapFromMin" value="0" />
+              <Property name="RemapFromMax" value="1" />
               <Property name="RemapToMin" value="0" />
               <Property name="RemapToMax" value="1" />
               <Property name="DebugNoiseType" value="Uber" />
@@ -26291,9 +26292,9 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="Sand" />
             </Property>
-            <Property name="Height" value="32" />
+            <Property name="Height" value="16" />
             <Property name="Width" value="750" />
             <Property name="RegionRatio" value="1" /> <!-- Base -->
             <Property name="RegionScale" value="5" />
@@ -26324,9 +26325,9 @@
               <Property name="Lacunarity" value="2" />
               <Property name="Gain" value="0.5" />
               <Property name="RemapFromMin" value="0" />
-              <Property name="RemapFromMax" value="1" />
-              <Property name="RemapToMin" value="0" />
-              <Property name="RemapToMax" value="1" />
+              <Property name="RemapFromMax" value="0.8" />
+              <Property name="RemapToMin" value="0.5" />
+              <Property name="RemapToMax" value="0.51" />
               <Property name="DebugNoiseType" value="Uber" />
             </Property>
             <Property name="Active" value="True" />
@@ -26335,8 +26336,8 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="64" />
-            <Property name="Width" value="750" />
+            <Property name="Height" value="32" />
+            <Property name="Width" value="1250" />
             <Property name="RegionRatio" value="0.5" /> <!-- Hill -->
             <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
@@ -26396,7 +26397,7 @@
           </Property>
           <Property name="Rock" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
-              <Property name="Octaves" value="3" />
+              <Property name="Octaves" value="1" />
               <Property name="SlopeGain" value="0.5" />
               <Property name="SlopeBias" value="0.5" />
               <Property name="SharpToRoundFeatures" value="1" /> <!-- Rock -->
@@ -26417,7 +26418,7 @@
             <Property name="MaximumLOD" value="1" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Rock" />
+              <Property name="NoiseVoxelType" value="Sand" />
             </Property>
             <Property name="Height" value="8" />
             <Property name="Width" value="75" />
@@ -26523,18 +26524,18 @@
           <Property name="Elevation" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
               <Property name="Octaves" value="5" />
-              <Property name="SlopeGain" value="0.5" />
+              <Property name="SlopeGain" value="0.45" />
               <Property name="SlopeBias" value="0.5" />
-              <Property name="SharpToRoundFeatures" value="-1" /> <!-- Elevation -->
-              <Property name="AmplifyFeatures" value="0" />
+              <Property name="SharpToRoundFeatures" value="1" />
+              <Property name="AmplifyFeatures" value="0.2" />
               <Property name="PerturbFeatures" value="0" />
-              <Property name="AltitudeErosion" value="0.25" />
+              <Property name="AltitudeErosion" value="0.5" />
               <Property name="RidgeErosion" value="1" />
               <Property name="SlopeErosion" value="0" />
               <Property name="Lacunarity" value="2" />
               <Property name="Gain" value="0.5" />
-              <Property name="RemapFromMin" value="0.1" />
-              <Property name="RemapFromMax" value="0.7" />
+              <Property name="RemapFromMin" value="0" />
+              <Property name="RemapFromMax" value="1" />
               <Property name="RemapToMin" value="0" />
               <Property name="RemapToMax" value="1" />
               <Property name="DebugNoiseType" value="Uber" />
@@ -26545,22 +26546,22 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="400" />
-            <Property name="Width" value="12000" />
-            <Property name="RegionRatio" value="0.5" /> <!-- Elevation -->
+            <Property name="Height" value="700" />
+            <Property name="Width" value="2500" />
+            <Property name="RegionRatio" value="0.015" />
             <Property name="RegionScale" value="1" />
-            <Property name="RegionGain" value="1" />
-            <Property name="SmoothRadius" value="0" /> <!-- Elevation -->
-            <Property name="HeightOffset" value="0" />
+            <Property name="RegionGain" value="0.8" />
+            <Property name="SmoothRadius" value="0" />
+            <Property name="HeightOffset" value="-400" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
-              <Property name="OffsetType" value="Base" />
+              <Property name="OffsetType" value="Zero" />
             </Property>
             <Property name="WaterFade" value="None" />
             <Property name="PlateauStratas" value="0" />
             <Property name="PlateauSharpness" value="3" />
             <Property name="PlateauRegionSize" value="100" />
             <Property name="SeedOffset" value="0" />
-            <Property name="TileBlendMeters" value="8" />
+            <Property name="TileBlendMeters" value="16" />
           </Property>
           <Property name="Continent" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
@@ -27487,21 +27488,21 @@
             <Property name="Subtract" value="True" />
             <Property name="Trench" value="True" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Mountain" />
+              <Property name="NoiseVoxelType" value="Base" />
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="128" />
-            <Property name="Height" value="64" />
+            <Property name="Height" value="32" />
             <Property name="Octaves" value="1" />
             <Property name="RegionSize" value="4000" />
             <Property name="Ratio" value="1" />
             <Property name="HeightVarianceAmplitude" value="10" />
             <Property name="HeightVarianceFrequency" value="0" />
-            <Property name="HeightOffset" value="64" />
+            <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
-              <Property name="OffsetType" value="Zero" />
+              <Property name="OffsetType" value="All" />
             </Property>
-            <Property name="SmoothRadius" value="8" />
+            <Property name="SmoothRadius" value="16" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="16" />
           </Property>
@@ -27727,19 +27728,19 @@
         <Property name="NoiseLayers">
           <Property name="Base" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
-              <Property name="Octaves" value="8" />
-              <Property name="SlopeGain" value="0.5" />
+              <Property name="Octaves" value="1" />
+              <Property name="SlopeGain" value="0.4" />
               <Property name="SlopeBias" value="0.5" />
-              <Property name="SharpToRoundFeatures" value="-1" /> <!-- Base -->
+              <Property name="SharpToRoundFeatures" value="1" /> <!-- Base -->
               <Property name="AmplifyFeatures" value="0" />
-              <Property name="PerturbFeatures" value="0.2" />
+              <Property name="PerturbFeatures" value="00" />
               <Property name="AltitudeErosion" value="0.25" />
               <Property name="RidgeErosion" value="1" />
               <Property name="SlopeErosion" value="1" />
               <Property name="Lacunarity" value="2" />
               <Property name="Gain" value="0.5" />
-              <Property name="RemapFromMin" value="0.15" />
-              <Property name="RemapFromMax" value="0.6" />
+              <Property name="RemapFromMin" value="0" />
+              <Property name="RemapFromMax" value="1" />
               <Property name="RemapToMin" value="0" />
               <Property name="RemapToMax" value="1" />
               <Property name="DebugNoiseType" value="Uber" />
@@ -27748,9 +27749,9 @@
             <Property name="MaximumLOD" value="3" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Base" />
+              <Property name="NoiseVoxelType" value="Sand" />
             </Property>
-            <Property name="Height" value="32" />
+            <Property name="Height" value="16" />
             <Property name="Width" value="750" />
             <Property name="RegionRatio" value="1" /> <!-- Base -->
             <Property name="RegionScale" value="5" />
@@ -27781,9 +27782,9 @@
               <Property name="Lacunarity" value="2" />
               <Property name="Gain" value="0.5" />
               <Property name="RemapFromMin" value="0" />
-              <Property name="RemapFromMax" value="1" />
-              <Property name="RemapToMin" value="0" />
-              <Property name="RemapToMax" value="1" />
+              <Property name="RemapFromMax" value="0.8" />
+              <Property name="RemapToMin" value="0.5" />
+              <Property name="RemapToMax" value="0.51" />
               <Property name="DebugNoiseType" value="Uber" />
             </Property>
             <Property name="Active" value="True" />
@@ -27792,8 +27793,8 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="64" />
-            <Property name="Width" value="750" />
+            <Property name="Height" value="32" />
+            <Property name="Width" value="1250" />
             <Property name="RegionRatio" value="0.5" /> <!-- Hill -->
             <Property name="RegionScale" value="2" />
             <Property name="RegionGain" value="1" />
@@ -27853,7 +27854,7 @@
           </Property>
           <Property name="Rock" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
-              <Property name="Octaves" value="3" />
+              <Property name="Octaves" value="1" />
               <Property name="SlopeGain" value="0.5" />
               <Property name="SlopeBias" value="0.5" />
               <Property name="SharpToRoundFeatures" value="1" /> <!-- Rock -->
@@ -27874,7 +27875,7 @@
             <Property name="MaximumLOD" value="1" />
             <Property name="Subtract" value="False" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Rock" />
+              <Property name="NoiseVoxelType" value="Sand" />
             </Property>
             <Property name="Height" value="8" />
             <Property name="Width" value="75" />
@@ -27980,18 +27981,18 @@
           <Property name="Elevation" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
               <Property name="Octaves" value="5" />
-              <Property name="SlopeGain" value="0.5" />
+              <Property name="SlopeGain" value="0.45" />
               <Property name="SlopeBias" value="0.5" />
-              <Property name="SharpToRoundFeatures" value="-1" /> <!-- Elevation -->
-              <Property name="AmplifyFeatures" value="0" />
+              <Property name="SharpToRoundFeatures" value="1" />
+              <Property name="AmplifyFeatures" value="0.2" />
               <Property name="PerturbFeatures" value="0" />
-              <Property name="AltitudeErosion" value="0.25" />
+              <Property name="AltitudeErosion" value="0.5" />
               <Property name="RidgeErosion" value="1" />
               <Property name="SlopeErosion" value="0" />
               <Property name="Lacunarity" value="2" />
               <Property name="Gain" value="0.5" />
-              <Property name="RemapFromMin" value="0.1" />
-              <Property name="RemapFromMax" value="0.7" />
+              <Property name="RemapFromMin" value="0" />
+              <Property name="RemapFromMax" value="1" />
               <Property name="RemapToMin" value="0" />
               <Property name="RemapToMax" value="1" />
               <Property name="DebugNoiseType" value="Uber" />
@@ -28002,22 +28003,22 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="Height" value="400" />
-            <Property name="Width" value="12000" />
-            <Property name="RegionRatio" value="0.5" /> <!-- Elevation -->
+            <Property name="Height" value="700" />
+            <Property name="Width" value="2500" />
+            <Property name="RegionRatio" value="0.015" />
             <Property name="RegionScale" value="1" />
-            <Property name="RegionGain" value="1" />
-            <Property name="SmoothRadius" value="0" /> <!-- Elevation -->
-            <Property name="HeightOffset" value="0" />
+            <Property name="RegionGain" value="0.8" />
+            <Property name="SmoothRadius" value="0" />
+            <Property name="HeightOffset" value="-400" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
-              <Property name="OffsetType" value="Base" />
+              <Property name="OffsetType" value="Zero" />
             </Property>
             <Property name="WaterFade" value="None" />
             <Property name="PlateauStratas" value="0" />
             <Property name="PlateauSharpness" value="3" />
             <Property name="PlateauRegionSize" value="100" />
             <Property name="SeedOffset" value="0" />
-            <Property name="TileBlendMeters" value="8" />
+            <Property name="TileBlendMeters" value="16" />
           </Property>
           <Property name="Continent" value="TkNoiseUberLayerData.xml">
             <Property name="NoiseData" value="TkNoiseUberData.xml">
@@ -28944,21 +28945,21 @@
             <Property name="Subtract" value="True" />
             <Property name="Trench" value="True" />
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
-              <Property name="NoiseVoxelType" value="Mountain" />
+              <Property name="NoiseVoxelType" value="Base" />
             </Property>
             <Property name="FeatureType" value="Tube" />
             <Property name="Width" value="128" />
-            <Property name="Height" value="64" />
+            <Property name="Height" value="32" />
             <Property name="Octaves" value="1" />
             <Property name="RegionSize" value="4000" />
             <Property name="Ratio" value="1" />
             <Property name="HeightVarianceAmplitude" value="10" />
             <Property name="HeightVarianceFrequency" value="0" />
-            <Property name="HeightOffset" value="64" />
+            <Property name="HeightOffset" value="0" />
             <Property name="OffsetType" value="TkNoiseOffsetEnum.xml">
-              <Property name="OffsetType" value="Zero" />
+              <Property name="OffsetType" value="All" />
             </Property>
-            <Property name="SmoothRadius" value="8" />
+            <Property name="SmoothRadius" value="16" />
             <Property name="SeedOffset" value="0" />
             <Property name="TileBlendMeters" value="16" />
           </Property>
