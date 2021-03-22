@@ -15,8 +15,44 @@
 <script src="colors.js" ></script>
 <script>
 	var body = document.getElementById("mainContainer")
+	var proccess = function () {
+		let value = document.getElementById("pallete-input").value
+		value = value + "ENDSENTENCE";
+		value = value.replace(/(\r\n|\n|\r)/gm,"")
+		value = value.replace(/<Property name="SkyUpperColour" value="Colour.xml">/g,"{") //TODO: add other colors headers here
+		value = value.replace(/<Property name="SkyColour" value="Colour.xml">/g,"{") 
+		value = value.replace(/<Property name="SkySolarColour" value="Colour.xml">/g,"{") 
+		value = value.replace(/<Property name="HorizonColour" value="Colour.xml">/g,"{") 
+		value = value.replace(/<Property name="SunColour" value="Colour.xml">/g,"{") 
+		value = value.replace(/<Property name="FogColour" value="Colour.xml">/g,"{") 
+		value = value.replace(/<Property name="HeightFogColour" value="Colour.xml">/g,"{") 
+		value = value.replace(/<Property name="LightColour" value="Colour.xml">/g,"{") 
+		value = value.replace(/<Property name="CloudColour1" value="Colour.xml">/g,"{") 
+		value = value.replace(/<Property name="CloudColour2" value="Colour.xml">/g,"{") 
+		value = value.replace(/<Property value="Colour.xml">/g,"{") 
+		value = value.replace(/<Property name="WaterFogColourNear" value="Colour.xml">/g,"{") 
+		value = value.replace(/<Property name="WaterFogColourFar" value="Colour.xml">/g,"{") 
+		value = value.replace(/<Property name="WaterColourBase" value="Colour.xml">/g,"{") 
+		value = value.replace(/<Property name="WaterColourAdd" value="Colour.xml">/g,"{") 
+		value = value.replace(/<Property name="FoamColour" value="Colour.xml">/g,"{") 
 
+
+
+		value = value.replace(/<Property name=/g,"")
+		value = value.replace(/value=/g,":")
+		value = value.replace(/\/>/g,",")
+		value = value.replace(/<\/Property>/g,"},")
+		value = value.replace(/ /g,"")
+		value = value.replace(/,}/g,"}")
+		value = value.replace(/,ENDSENTENCE/g,"")
+		value = "[" + value + "]";
+		console.log(value)
+		colors = JSON.parse(value);
+		console.log(colors)
+		main();
+	}
 	var main = function () {
+		mainContainer.innerHTML = "";
 		colors.forEach( (element, index, array) => {
 			element.r = element.R;
 			element.g = element.G;
@@ -38,7 +74,14 @@
 	}
 </script>
 <body onload="main()">
+	<div> 
+	Insert Color Pallete
+		<textarea id="pallete-input">
+		</textarea>
+		<button onclick="proccess()">Proccess </button>
+	</div>
 	<div id="mainContainer">
+		
 	</div>
 </body>
 </html>
