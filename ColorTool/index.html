@@ -8,36 +8,34 @@
   	height: 100%;4
   }
   .color-display {
-  	width:  100px;
+  	width:  100%;
   	height: 50px;
   }
 </style>
 <script src="colors.js" ></script>
 <script>
 	var body = document.getElementById("mainContainer")
+	var count = {}
 	var proccess = function () {
 		let value = document.getElementById("pallete-input").value
 		value = value + "ENDSENTENCE";
 		value = value.replace(/(\r\n|\n|\r)/gm,"")
-		value = value.replace(/<Property name="SkyUpperColour" value="Colour.xml">/g,"{") //TODO: add other colors headers here
-		value = value.replace(/<Property name="SkyColour" value="Colour.xml">/g,"{") 
-		value = value.replace(/<Property name="SkySolarColour" value="Colour.xml">/g,"{") 
-		value = value.replace(/<Property name="HorizonColour" value="Colour.xml">/g,"{") 
-		value = value.replace(/<Property name="SunColour" value="Colour.xml">/g,"{") 
-		value = value.replace(/<Property name="FogColour" value="Colour.xml">/g,"{") 
-		value = value.replace(/<Property name="HeightFogColour" value="Colour.xml">/g,"{") 
-		value = value.replace(/<Property name="LightColour" value="Colour.xml">/g,"{") 
-		value = value.replace(/<Property name="CloudColour1" value="Colour.xml">/g,"{") 
-		value = value.replace(/<Property name="CloudColour2" value="Colour.xml">/g,"{") 
-		value = value.replace(/<Property value="Colour.xml">/g,"{") 
-		value = value.replace(/<Property name="WaterFogColourNear" value="Colour.xml">/g,"{") 
-		value = value.replace(/<Property name="WaterFogColourFar" value="Colour.xml">/g,"{") 
-		value = value.replace(/<Property name="WaterColourBase" value="Colour.xml">/g,"{") 
-		value = value.replace(/<Property name="WaterColourAdd" value="Colour.xml">/g,"{") 
-		value = value.replace(/<Property name="FoamColour" value="Colour.xml">/g,"{") 
-
-
-
+		value = value.replace(/<Property value="Colour.xml">/g,"{\"header\":\"Colour\",") 
+		value = value.replace(/<Property name="SkyUpperColour" value="Colour.xml">/g,"{\"header\":\"SkyUpperColour\",") 
+		value = value.replace(/<Property name="SkyColour" value="Colour.xml">/g,"{\"header\":\"SkyColour\",") 
+		value = value.replace(/<Property name="SkySolarColour" value="Colour.xml">/g,"{\"header\":\"SkySolarColour\",") 
+		value = value.replace(/<Property name="HorizonColour" value="Colour.xml">/g,"{\"header\":\"HorizonColour\",") 
+		value = value.replace(/<Property name="SunColour" value="Colour.xml">/g,"{\"header\":\"SunColour\",") 
+		value = value.replace(/<Property name="FogColour" value="Colour.xml">/g,"{\"header\":\"FogColour\",") 
+		value = value.replace(/<Property name="HeightFogColour" value="Colour.xml">/g,"{\"header\":\"HeightFogColour\",") 
+		value = value.replace(/<Property name="LightColour" value="Colour.xml">/g,"{\"header\":\"LightColour\",") 
+		value = value.replace(/<Property name="CloudColour1" value="Colour.xml">/g,"{\"header\":\"CloudColour1\",") 
+		value = value.replace(/<Property name="CloudColour2" value="Colour.xml">/g,"{\"header\":\"CloudColour2\",") 
+		value = value.replace(/<Property name="WaterFogColourNear" value="Colour.xml">/g,"{\"header\":\"WaterFogColourNear\",") 
+		value = value.replace(/<Property name="WaterFogColourFar" value="Colour.xml">/g,"{\"header\":\"WaterFogColourFar\",") 
+		value = value.replace(/<Property name="WaterColourBase" value="Colour.xml">/g,"{\"header\":\"WaterColourBase\",") 
+		value = value.replace(/<Property name="WaterColourAdd" value="Colour.xml">/g,"{\"header\":\"WaterColourAdd\",") 
+		value = value.replace(/<Property name="FoamColour" value="Colour.xml">/g,"{\"header\":\"FoamColour\",") 
 		value = value.replace(/<Property name=/g,"")
 		value = value.replace(/value=/g,":")
 		value = value.replace(/\/>/g,",")
@@ -53,6 +51,7 @@
 	}
 	var main = function () {
 		mainContainer.innerHTML = "";
+		count = {}
 		colors.forEach( (element, index, array) => {
 			element.r = element.R;
 			element.g = element.G;
@@ -64,21 +63,22 @@
 			+element.g*255+","
 			+element.b*255+","
 			+element.a+");";
-			node.class = "color-display";
-			node.innerHTML = index + " ( " +element.r +
-								", " +element.g +
-								", " +element.b +
-								", " +element.a + ")";
+			node.setAttribute("class", "color-display");
+			if(!count[element.header]) count[element.header] = 0;
+			count[element.header]++;
+			node.innerHTML =  "[ "+ count[element.header] + " ]"+ element.header  + " ( R: " +element.r +
+								", G: " +element.g +
+								", B: " +element.b +
+								", A: " +element.a + ")";
 			mainContainer.appendChild(node)
 		});
 	}
 </script>
 <body onload="main()">
 	<div> 
-	Insert Color Pallete
-		<textarea id="pallete-input">
-		</textarea>
-		<button onclick="proccess()">Proccess </button>
+		Insert Color Pallete Data
+		<textarea id="pallete-input"></textarea>
+		<button onclick="proccess()">Proccess!</button>
 	</div>
 	<div id="mainContainer">
 		
