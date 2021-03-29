@@ -2,11 +2,11 @@
 <!--File created using MBINCompiler version (3.21.0)-->
 <Data template="GcDebugOptions">
   <Property name="ForceScanEventsToGoPrime" value="False" />
-  <Property name="SkipAbandonedFreighterUnlocking" value="False" />
+  <Property name="SkipAbandonedFreighterUnlocking" value="True" />
   <Property name="AllowSavingOnAbandonedFreighters" value="False" />
   <Property name="DisableAbandonedFreighterRoomsOptimisation" value="False" />
   <Property name="OverrideAbandonedFreighterSeed" value="0" />
-  <Property name="ThirdPersonIsDefaultCamera" value="True" />
+  <Property name="ThirdPersonIsDefaultCamera" value="False" />
   <Property name="SkipIntro" value="True" />
   <Property name="SkipLogos" value="True" />
   <Property name="BootDirectlyIntoSaveSlot" value="-1" />
@@ -321,9 +321,9 @@
   </Property>
   <Property name="ForceBiome" value="True" />
   <Property name="ForceBiomeTo" value="GcBiomeType.xml">
-    <Property name="Biome" value="Barren" />
+    <Property name="Biome" value="Lush" />
   </Property>
-  <Property name="ForceScreenFilter" value="True" />
+  <Property name="ForceScreenFilter" value="False" />
   <Property name="ForceScreenFilterTo" value="GcScreenFilters.xml">
     <Property name="ScreenFilters" value="Default" />
   </Property>
@@ -352,7 +352,7 @@
   </Property>
   <Property name="ForceTerrainType" value="True" />
   <Property name="ForceTerrainTypeTo" value="TkVoxelGeneratorSettingsTypes.xml">
-    <Property name="TerrainSettings" value="GrandCanyon" />
+    <Property name="TerrainSettings" value="Craters" />
   </Property>
   <Property name="ForcePrimeTerrain" value="False" />
   <Property name="ForceBinaryStar" value="False" />
