@@ -21,10 +21,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -145,16 +145,16 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureSwarmData.xml">
           <Property name="MinCount" value="1" />
           <Property name="MaxCount" value="1" />
-          <Property name="SwarmMovementSpeed" value="1" />
+          <Property name="SwarmMovementSpeed" value="0.25" />
           <Property name="SwarmMovementRadius" value="1" />
           <Property name="SwarmMovementType" value="None" />
           <Property name="Params">
@@ -180,7 +180,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -190,7 +190,7 @@
               <Property name="LandIdleTimeMax" value="5" />
               <Property name="LandWalkTimeMin" value="2" />
               <Property name="LandWalkTimeMax" value="4" />
-              <Property name="MaxSpeed" value="5" />
+              <Property name="MaxSpeed" value="2" />
               <Property name="AlignTime" value="0.5" />
               <Property name="BankingTime" value="0.5" />
               <Property name="SpringSmoothTime" value="0.5" />
@@ -228,8 +228,8 @@
             </Property>
           </Property>
           <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="MoveSpeedScale" value="0.1" />
+          <Property name="TurnRadiusScale" value="2" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="3" />
@@ -239,7 +239,7 @@
           <Property name="MinFlockMembers" value="7" />
           <Property name="MaxFlockMembers" value="12" />
           <Property name="FlockFollow" value="1" />
-          <Property name="FlockHysteresis" value="0.5" />
+          <Property name="FlockHysteresis" value="0.2" />
           <Property name="FlockCohere" value="3" />
           <Property name="FlockSeperate" value="7" />
           <Property name="FlockSeperateMinDist" value="2" />
@@ -248,12 +248,12 @@
           <Property name="FlockAvoidTerrain" value="15" />
           <Property name="FlockAvoidTerrainMinDist" value="3" />
           <Property name="FlockAvoidTerrainMaxDist" value="10" />
-          <Property name="FlockAvoidPredators" value="10" />
-          <Property name="FlockAvoidPredatorsMinDist" value="20" />
-          <Property name="FlockAvoidPredatorsMaxDist" value="40" />
-          <Property name="FlockAvoidPredatorsSpeedBoost" value="0.3" />
-          <Property name="MoveInFacingStrength" value="0.9" />
-          <Property name="FlockMoveSpeed" value="0.7" />
+          <Property name="FlockAvoidPredators" value="20" />
+          <Property name="FlockAvoidPredatorsMinDist" value="10" />
+          <Property name="FlockAvoidPredatorsMaxDist" value="60" />
+          <Property name="FlockAvoidPredatorsSpeedBoost" value="1" />
+          <Property name="MoveInFacingStrength" value="1" />
+          <Property name="FlockMoveSpeed" value="0.1" />
           <Property name="FlockMoveDirectionTime" value="0.1" />
           <Property name="FlockTurnAngle" value="7" />
           <Property name="MaxBank" value="30" />
@@ -282,10 +282,10 @@
         <Property name="CreatureRarity" value="Rare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -415,10 +415,10 @@
         <Property name="CreatureRarity" value="Rare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -508,10 +508,10 @@
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -592,10 +592,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -629,10 +629,10 @@
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -753,10 +753,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -886,10 +886,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -1031,10 +1031,10 @@
         <Property name="CreatureRarity" value="Rare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -1167,10 +1167,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -1312,10 +1312,10 @@
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcBirdData.xml">
@@ -1490,10 +1490,10 @@
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureSwarmData.xml">
@@ -1639,10 +1639,10 @@
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureSwarmData.xml">
@@ -1788,10 +1788,10 @@
         <Property name="CreatureRarity" value="Rare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -1958,10 +1958,10 @@
         <Property name="CreatureRarity" value="Rare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -2135,10 +2135,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -2380,10 +2380,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -2593,10 +2593,10 @@
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -3608,10 +3608,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -3933,10 +3933,10 @@
         <Property name="CreatureRarity" value="SuperRare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Never" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -4041,10 +4041,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -5007,10 +5007,10 @@
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -5331,7 +5331,7 @@
         <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Never" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -5700,10 +5700,10 @@
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -5943,10 +5943,10 @@
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -6432,10 +6432,10 @@
         <Property name="CreatureRarity" value="Rare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Never" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -7011,10 +7011,10 @@
         <Property name="CreatureRarity" value="Rare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Never" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureVocalData.xml">
@@ -7586,10 +7586,10 @@
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -7973,10 +7973,10 @@
         <Property name="CreatureRarity" value="Rare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -8151,10 +8151,10 @@
         <Property name="CreatureRarity" value="SuperRare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -8340,10 +8340,10 @@
         <Property name="CreatureRarity" value="Rare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -8999,10 +8999,10 @@
         <Property name="CreatureRarity" value="SuperRare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureVocalData.xml">
@@ -9473,10 +9473,10 @@
         <Property name="CreatureRarity" value="SuperRare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -9684,10 +9684,10 @@
         <Property name="CreatureRarity" value="SuperRare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -9861,10 +9861,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureVocalData.xml">
@@ -10010,10 +10010,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureVocalData.xml">
@@ -10122,10 +10122,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureVocalData.xml">
@@ -10448,10 +10448,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcBirdData.xml">
@@ -10584,10 +10584,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -10675,10 +10675,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -10813,10 +10813,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -10891,10 +10891,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -10982,10 +10982,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -11115,10 +11115,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -11248,10 +11248,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -11397,10 +11397,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -11530,10 +11530,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -11605,10 +11605,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">

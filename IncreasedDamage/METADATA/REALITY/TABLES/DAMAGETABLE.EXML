@@ -1455,13 +1455,32 @@
       </Property>
       <Property name="HitMessage" value="" />
       <Property name="CriticalHitMessage" value="NOTIFY_CRITIAL_HIT" />
-      <Property name="Damage" value="35" />
+      <Property name="Damage" value="90" />
       <Property name="HardModeMultiplier" value="1.5" />
       <Property name="PushForce" value="40" />
       <Property name="CameraTurn" value="50" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="True" />
+      <Property name="ForceDamageInInteraction" value="False" />
+      <Property name="PlayerDamageType" value="Normal" />
+    </Property>
+    <Property value="GcPlayerDamageData.xml">
+      <Property name="Id" value="MINIDRONE_DMG" />
+      <Property name="DeathMessage" value="DEATH_GUN" />
+      <Property name="DeathStat" value="DEATH_ROBOT" />
+      <Property name="HitIcon" value="TkTextureResource.xml">
+        <Property name="Filename" value="" />
+      </Property>
+      <Property name="HitMessage" value="" />
+      <Property name="CriticalHitMessage" value="NOTIFY_CRITIAL_HIT" />
+      <Property name="Damage" value="20" />
+      <Property name="HardModeMultiplier" value="1" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
+      <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
+      <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
+      <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
     </Property>

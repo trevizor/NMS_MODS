@@ -16,11 +16,15 @@
 <script>
 	var body = document.getElementById("mainContainer")
 	var count = {}
+
 	var proccess = function () {
 		let value = document.getElementById("pallete-input").value
 		value = value + "ENDSENTENCE";
 		value = value.replace(/(\r\n|\n|\r)/gm,"")
-		
+		value = value.replace(/<\/Property><Property value="GcPlanetWeatherColourData.xml">/g,"") 
+		value = value.replace(/<\/Property><Property value="GcPlanetWaterColourData.xml">/g,"") 
+		value = value.replace(/<Property value="GcPlanetWeatherColourData.xml">/g,"") 
+		value = value.replace(/<Property value="GcPlanetWaterColourData.xml">/g,"") 
 		value = value.replace(/<Property value="Colour.xml">/g,"{\"header\":\"Colour\",") 
 		value = value.replace(/<Property name="SkyUpperColour" value="Colour.xml">/g,"{\"header\":\"SkyUpperColour\",") 
 		value = value.replace(/<Property name="SkyColour" value="Colour.xml">/g,"{\"header\":\"SkyColour\",") 
@@ -37,12 +41,18 @@
 		value = value.replace(/<Property name="WaterColourBase" value="Colour.xml">/g,"{\"header\":\"WaterColourBase\",") 
 		value = value.replace(/<Property name="WaterColourAdd" value="Colour.xml">/g,"{\"header\":\"WaterColourAdd\",") 
 		value = value.replace(/<Property name="FoamColour" value="Colour.xml">/g,"{\"header\":\"FoamColour\",") 
+		value = value.replace(/<Property name="SkyGradientSpeed" value="Vector4f.xml">/g,"{\"header\":\"GradientSpeed\",") 
+		value = value.replace(/name="x"/g,'name="r"')
+		value = value.replace(/name="y"/g,'name="g"')
+		value = value.replace(/name="z"/g,'name="b"')
+		value = value.replace(/name="t"/g,'name="a"')
 		value = value.replace(/<Property name=/g,"")
 		value = value.replace(/value=/g,":")
 		value = value.replace(/\/>/g,",")
 		value = value.replace(/<\/Property>/g,"},")
 		value = value.replace(/ /g,"")
 		value = value.replace(/,}/g,"}")
+		value = value.replace(/}}/g,"}")
 		value = value.replace(/,ENDSENTENCE/g,"")
 		value = "[" + value + "]";
 		console.log(value)
@@ -50,6 +60,23 @@
 		console.log(colors)
 		main();
 	}
+
+	var replace = function () {
+		let value = document.getElementById("pallete-input").value
+		let minValue = document.getElementById("min-value-input").value
+		let randomValue = document.getElementById("random-value-input").value
+		while(value.indexOf("RANDOM") != -1){
+			value = value.replace("RANDOM", Math.random()*parseFloat(randomValue) + parseFloat(minValue))
+		}
+		mainContainer.innerHTML = value;
+		var copyText = document.getElementById("pallete-input");
+		copyText.value = value;
+		copyText.select();
+		copyText.setSelectionRange(0, 99999); /* For mobile devices */
+		document.execCommand("copy");
+		console.log(value)
+	}
+
 	var main = function () {
 		mainContainer.innerHTML = "";
 		count = {}
@@ -74,12 +101,18 @@
 			mainContainer.appendChild(node)
 		});
 	}
+
 </script>
 <body >
 	<div> 
+
 		Insert Color Pallete Data
+
 		<textarea id="pallete-input"></textarea>
-		<button onclick="proccess()">Proccess!</button>
+		<button onclick="proccess()">Proccess!</button><br>
+		<input id="min-value-input" value="0.2">MIN</input>
+		<input id="random-value-input" value="0.2">RANDOM</input>
+		<button onclick="replace()">REPLACE RANDOM!</button>
 	</div>
 	<div id="mainContainer">
 		

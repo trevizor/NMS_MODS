@@ -789,12 +789,111 @@
     <Property value="GcExplosionData.xml">
       <Property name="Id" value="ADRONEEXPLODE" />
       <Property name="Model" value="TkModelResource.xml">
-        <Property name="Filename" value="MODELS/EFFECTS/EXPLOSION/ABANDRONEEXPLODE.SCENE.MBIN" />
+        <Property name="Filename" value="MODELS/EFFECTS/EXPLOSION/DRONEEXPLODE.SCENE.MBIN" />
       </Property>
       <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="DRONE_DIE" />
       </Property>
-      <Property name="Debris" />
+      <Property name="Debris">
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/DRONE/ENGINE_SMOKE.SCENE.MBIN" />
+          </Property>
+          <Property name="Number" value="3" />
+          <Property name="Radius" value="1.5" />
+          <Property name="Scale" value="0.7" />
+          <Property name="Speed" value="6" />
+          <Property name="AngularSpeed" value="0" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/DRONE/ENGINE_GIB.SCENE.MBIN" />
+          </Property>
+          <Property name="Number" value="1" />
+          <Property name="Radius" value="1" />
+          <Property name="Scale" value="0.7" />
+          <Property name="Speed" value="8" />
+          <Property name="AngularSpeed" value="0.4" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/DRONE/EYE_GIB.SCENE.MBIN" />
+          </Property>
+          <Property name="Number" value="2" />
+          <Property name="Radius" value="2" />
+          <Property name="Scale" value="0.5" />
+          <Property name="Speed" value="5" />
+          <Property name="AngularSpeed" value="0.2" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/DRONE/PANELL_GIB.SCENE.MBIN" />
+          </Property>
+          <Property name="Number" value="5" />
+          <Property name="Radius" value="2" />
+          <Property name="Scale" value="0.8" />
+          <Property name="Speed" value="7" />
+          <Property name="AngularSpeed" value="0.4" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/DRONE/PANELL_GIB.SCENE.MBIN" />
+          </Property>
+          <Property name="Number" value="3" />
+          <Property name="Radius" value="1" />
+          <Property name="Scale" value="0.4" />
+          <Property name="Speed" value="10" />
+          <Property name="AngularSpeed" value="0.4" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/DRONE/PANELR_GIB.SCENE.MBIN" />
+          </Property>
+          <Property name="Number" value="4" />
+          <Property name="Radius" value="2" />
+          <Property name="Scale" value="1" />
+          <Property name="Speed" value="5" />
+          <Property name="AngularSpeed" value="0.8" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/DRONE/CHASSIS_GIB.SCENE.MBIN" />
+          </Property>
+          <Property name="Number" value="1" />
+          <Property name="Radius" value="1" />
+          <Property name="Scale" value="1" />
+          <Property name="Speed" value="10" />
+          <Property name="AngularSpeed" value="0.6" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+      </Property>
       <Property name="Life" value="3" />
       <Property name="Scale" value="1" />
       <Property name="DistanceScale" value="0" />
