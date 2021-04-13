@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.21.0)-->
+<!--File created using MBINCompiler version (3.34.0)-->
 <Data template="GcCreatureDataTable">
   <Property name="Table">
     <Property value="GcCreatureData.xml">
@@ -21,10 +21,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -145,10 +145,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureSwarmData.xml">
@@ -180,7 +180,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
+              <Property name="WalkSpeed" value="5" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -190,7 +190,7 @@
               <Property name="LandIdleTimeMax" value="5" />
               <Property name="LandWalkTimeMin" value="2" />
               <Property name="LandWalkTimeMax" value="4" />
-              <Property name="MaxSpeed" value="2" />
+              <Property name="MaxSpeed" value="5" />
               <Property name="AlignTime" value="0.5" />
               <Property name="BankingTime" value="0.5" />
               <Property name="SpringSmoothTime" value="0.5" />
@@ -239,7 +239,7 @@
           <Property name="MinFlockMembers" value="7" />
           <Property name="MaxFlockMembers" value="12" />
           <Property name="FlockFollow" value="1" />
-          <Property name="FlockHysteresis" value="0.2" />
+          <Property name="FlockHysteresis" value="0.5" />
           <Property name="FlockCohere" value="3" />
           <Property name="FlockSeperate" value="7" />
           <Property name="FlockSeperateMinDist" value="2" />
@@ -248,12 +248,12 @@
           <Property name="FlockAvoidTerrain" value="15" />
           <Property name="FlockAvoidTerrainMinDist" value="3" />
           <Property name="FlockAvoidTerrainMaxDist" value="10" />
-          <Property name="FlockAvoidPredators" value="20" />
-          <Property name="FlockAvoidPredatorsMinDist" value="10" />
-          <Property name="FlockAvoidPredatorsMaxDist" value="60" />
-          <Property name="FlockAvoidPredatorsSpeedBoost" value="1" />
-          <Property name="MoveInFacingStrength" value="1" />
-          <Property name="FlockMoveSpeed" value="0.1" />
+          <Property name="FlockAvoidPredators" value="10" />
+          <Property name="FlockAvoidPredatorsMinDist" value="20" />
+          <Property name="FlockAvoidPredatorsMaxDist" value="40" />
+          <Property name="FlockAvoidPredatorsSpeedBoost" value="0.3" />
+          <Property name="MoveInFacingStrength" value="0.9" />
+          <Property name="FlockMoveSpeed" value="0.7" />
           <Property name="FlockMoveDirectionTime" value="0.1" />
           <Property name="FlockTurnAngle" value="7" />
           <Property name="MaxBank" value="30" />
@@ -282,10 +282,10 @@
         <Property name="CreatureRarity" value="Rare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -415,10 +415,10 @@
         <Property name="CreatureRarity" value="Rare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -508,10 +508,10 @@
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -592,10 +592,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -629,10 +629,10 @@
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -753,10 +753,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -886,10 +886,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -946,7 +946,7 @@
           <Property name="MoveRange" value="300" />
           <Property name="MoveSpeedScale" value="0.8" />
           <Property name="TurnRadiusScale" value="3" />
-          <Property name="HeightMin" value="5" />
+          <Property name="HeightMin" value="30" />
           <Property name="HeightMax" value="40" />
           <Property name="HeightTime" value="2" />
           <Property name="Herd" value="False" />
@@ -1026,15 +1026,15 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="3.5" />
-      <Property name="MaxScale" value="12" />
+      <Property name="MaxScale" value="4" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Rare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -1082,7 +1082,7 @@
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
           <Property name="TurnRadiusScale" value="3" />
-          <Property name="HeightMin" value="15" />
+          <Property name="HeightMin" value="45" />
           <Property name="HeightMax" value="100" />
           <Property name="HeightTime" value="2" />
           <Property name="Herd" value="False" />
@@ -1162,15 +1162,15 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="1" />
-      <Property name="MaxScale" value="8.5" />
+      <Property name="MaxScale" value="4.5" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -1227,7 +1227,7 @@
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
           <Property name="TurnRadiusScale" value="3" />
-          <Property name="HeightMin" value="15" />
+          <Property name="HeightMin" value="55" />
           <Property name="HeightMax" value="100" />
           <Property name="HeightTime" value="2" />
           <Property name="Herd" value="False" />
@@ -1312,10 +1312,10 @@
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcBirdData.xml">
@@ -1349,7 +1349,7 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="LEFT" />
               <Property name="AnimRight" value="RIGHT" />
-              <Property name="AnimSpeed" value="0.25" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.3" />
               <Property name="MaxSpeedScale" value="1.3" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
@@ -1362,7 +1362,7 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="LEFT" />
               <Property name="AnimRight" value="RIGHT" />
-              <Property name="AnimSpeed" value="0.25" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.3" />
               <Property name="MaxSpeedScale" value="1.3" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
@@ -1490,10 +1490,10 @@
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureSwarmData.xml">
@@ -1639,10 +1639,10 @@
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureSwarmData.xml">
@@ -1788,10 +1788,10 @@
         <Property name="CreatureRarity" value="Rare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -1937,6 +1937,36 @@
             </Property>
           </Property>
         </Property>
+        <Property value="GcCreatureRidingData.xml">
+          <Property name="JointName" value="BodyJNT" />
+          <Property name="AdditionalScaleJoint" value="" />
+          <Property name="Offset" value="Vector3f.xml">
+            <Property name="x" value="0" />
+            <Property name="y" value="0.05" />
+            <Property name="z" value="-0.2" />
+          </Property>
+          <Property name="RotationOffset" value="Vector3f.xml">
+            <Property name="x" value="2" />
+            <Property name="y" value="0" />
+            <Property name="z" value="0" />
+          </Property>
+          <Property name="VROffset" value="Vector3f.xml">
+            <Property name="x" value="0" />
+            <Property name="y" value="0" />
+            <Property name="z" value="0.7" />
+          </Property>
+          <Property name="HeadCounterRotation" value="0" />
+          <Property name="UprightStrength" value="0" />
+          <Property name="LegSpread" value="True" />
+          <Property name="ScaleForNeutralLegSpread" value="2.25" />
+          <Property name="ScaleForMinLegSpread" value="1" />
+          <Property name="ScaleForMaxLegSpread" value="5" />
+          <Property name="RequiresMatchingPartModifier" value="False" />
+          <Property name="PartModifiers" />
+          <Property name="IdleRidingAnim" value="RIDE_ANT_IDLE" />
+          <Property name="DefaultRidingAnim" value="RIDE_ANT_WALK" />
+          <Property name="RidingAnims" />
+        </Property>
       </Property>
     </Property>
     <Property value="GcCreatureData.xml">
@@ -1958,10 +1988,10 @@
         <Property name="CreatureRarity" value="Rare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -2107,6 +2137,97 @@
             </Property>
           </Property>
         </Property>
+        <Property value="GcCreatureRidingData.xml">
+          <Property name="JointName" value="ThoraxJNT" />
+          <Property name="AdditionalScaleJoint" value="" />
+          <Property name="Offset" value="Vector3f.xml">
+            <Property name="x" value="0" />
+            <Property name="y" value="0.93" />
+            <Property name="z" value="-0.575" />
+          </Property>
+          <Property name="RotationOffset" value="Vector3f.xml">
+            <Property name="x" value="-14" />
+            <Property name="y" value="0" />
+            <Property name="z" value="0" />
+          </Property>
+          <Property name="VROffset" value="Vector3f.xml">
+            <Property name="x" value="0" />
+            <Property name="y" value="0" />
+            <Property name="z" value="0" />
+          </Property>
+          <Property name="HeadCounterRotation" value="0" />
+          <Property name="UprightStrength" value="0" />
+          <Property name="LegSpread" value="False" />
+          <Property name="ScaleForNeutralLegSpread" value="1" />
+          <Property name="ScaleForMinLegSpread" value="0.5" />
+          <Property name="ScaleForMaxLegSpread" value="2" />
+          <Property name="RequiresMatchingPartModifier" value="False" />
+          <Property name="PartModifiers">
+            <Property value="GcCreatureRidingPartModifier.xml">
+              <Property name="Partname" value="_HEAD_ROUND" />
+              <Property name="JointName" value="" />
+              <Property name="MinScale" value="0" />
+              <Property name="MaxScale" value="100" />
+              <Property name="AdditionalScaleJoint" value="" />
+              <Property name="BreakIfNotSelected" value="False" />
+              <Property name="RelativeOffset" value="True" />
+              <Property name="Offset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="-0.275" />
+                <Property name="z" value="0.700001" />
+              </Property>
+              <Property name="RotationOffset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="VROffset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="HeadCounterRotation" value="0" />
+              <Property name="LegSpreadOffset" value="0" />
+              <Property name="OverrideAnims" value="False" />
+              <Property name="IdleRidingAnim" value="" />
+              <Property name="DefaultRidingAnim" value="" />
+              <Property name="RidingAnims" />
+            </Property>
+            <Property value="GcCreatureRidingPartModifier.xml">
+              <Property name="Partname" value="_HEAD_RHINO" />
+              <Property name="JointName" value="" />
+              <Property name="MinScale" value="0" />
+              <Property name="MaxScale" value="100" />
+              <Property name="AdditionalScaleJoint" value="" />
+              <Property name="BreakIfNotSelected" value="False" />
+              <Property name="RelativeOffset" value="True" />
+              <Property name="Offset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="-0.2" />
+                <Property name="z" value="0.65" />
+              </Property>
+              <Property name="RotationOffset" value="Vector3f.xml">
+                <Property name="x" value="8" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="VROffset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0.6" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="HeadCounterRotation" value="0" />
+              <Property name="LegSpreadOffset" value="0" />
+              <Property name="OverrideAnims" value="False" />
+              <Property name="IdleRidingAnim" value="" />
+              <Property name="DefaultRidingAnim" value="" />
+              <Property name="RidingAnims" />
+            </Property>
+          </Property>
+          <Property name="IdleRidingAnim" value="RIDE_ANT_IDLE" />
+          <Property name="DefaultRidingAnim" value="RIDE_ANT_WALK" />
+          <Property name="RidingAnims" />
+        </Property>
       </Property>
     </Property>
     <Property value="GcCreatureData.xml">
@@ -2135,10 +2256,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -2380,10 +2501,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -2593,10 +2714,10 @@
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -2816,16 +2937,16 @@
               <Property name="JointName" value="NeckJNT" />
               <Property name="MinScale" value="0" />
               <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="Back3JNT" />
+              <Property name="AdditionalScaleJoint" value="" />
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="False" />
               <Property name="Offset" value="Vector3f.xml">
                 <Property name="x" value="0" />
-                <Property name="y" value="0.75" />
+                <Property name="y" value="0.7" />
                 <Property name="z" value="0.125" />
               </Property>
               <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
+                <Property name="x" value="17" />
                 <Property name="y" value="0" />
                 <Property name="z" value="0" />
               </Property>
@@ -3608,10 +3729,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -3933,10 +4054,10 @@
         <Property name="CreatureRarity" value="SuperRare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Never" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -4041,10 +4162,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -4178,11 +4299,11 @@
           <Property name="AdditionalScaleJoint" value="" />
           <Property name="Offset" value="Vector3f.xml">
             <Property name="x" value="0" />
-            <Property name="y" value="0.45" />
-            <Property name="z" value="-0.65" />
+            <Property name="y" value="0.225" />
+            <Property name="z" value="-0.725" />
           </Property>
           <Property name="RotationOffset" value="Vector3f.xml">
-            <Property name="x" value="-2" />
+            <Property name="x" value="-34" />
             <Property name="y" value="0" />
             <Property name="z" value="0" />
           </Property>
@@ -4494,12 +4615,12 @@
           </Property>
         </Property>
         <Property value="GcCreatureRidingData.xml">
-          <Property name="JointName" value="HeadJNT" />
+          <Property name="JointName" value="Neck1JNT" />
           <Property name="AdditionalScaleJoint" value="" />
           <Property name="Offset" value="Vector3f.xml">
             <Property name="x" value="0" />
-            <Property name="y" value="0.65" />
-            <Property name="z" value="-0.375" />
+            <Property name="y" value="0.3" />
+            <Property name="z" value="0.05" />
           </Property>
           <Property name="RotationOffset" value="Vector3f.xml">
             <Property name="x" value="0" />
@@ -4520,8 +4641,8 @@
           <Property name="RequiresMatchingPartModifier" value="False" />
           <Property name="PartModifiers">
             <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_BODY_CATHINDXR" />
-              <Property name="JointName" value="Neck1JNT" />
+              <Property name="Partname" value="_BODY_CATHINDXRARE" />
+              <Property name="JointName" value="Back3JNT" />
               <Property name="MinScale" value="0" />
               <Property name="MaxScale" value="100" />
               <Property name="AdditionalScaleJoint" value="" />
@@ -4529,11 +4650,11 @@
               <Property name="RelativeOffset" value="False" />
               <Property name="Offset" value="Vector3f.xml">
                 <Property name="x" value="0" />
-                <Property name="y" value="0.225" />
-                <Property name="z" value="0.15" />
+                <Property name="y" value="0.425" />
+                <Property name="z" value="-0.3" />
               </Property>
               <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="-15" />
+                <Property name="x" value="-56" />
                 <Property name="y" value="0" />
                 <Property name="z" value="0" />
               </Property>
@@ -4543,7 +4664,7 @@
                 <Property name="z" value="0" />
               </Property>
               <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0.15" />
+              <Property name="LegSpreadOffset" value="-0.25" />
               <Property name="OverrideAnims" value="True" />
               <Property name="IdleRidingAnim" value="RIDE_GRNT_IDLE" />
               <Property name="DefaultRidingAnim" value="RIDE_GRNT_WALK" />
@@ -4642,6 +4763,20 @@
                 </Property>
                 <Property value="GcCreaturePetAccessorySlot.xml">
                   <Property name="AttachLocator" value="PETACC_lizardL" />
+                  <Property name="AccessoryGroup" value="LEFT" />
+                </Property>
+              </Property>
+              <Property name="HideParts" />
+            </Property>
+            <Property value="GcCreaturePetAccessory.xml">
+              <Property name="RequiredDescriptor" value="_SHAPE_XRARE" />
+              <Property name="Slots">
+                <Property value="GcCreaturePetAccessorySlot.xml">
+                  <Property name="AttachLocator" value="PETACC_boneCatR" />
+                  <Property name="AccessoryGroup" value="RIGHT" />
+                </Property>
+                <Property value="GcCreaturePetAccessorySlot.xml">
+                  <Property name="AttachLocator" value="PETACC_boneCatL" />
                   <Property name="AccessoryGroup" value="LEFT" />
                 </Property>
               </Property>
@@ -4803,12 +4938,12 @@
           </Property>
         </Property>
         <Property value="GcCreatureRidingData.xml">
-          <Property name="JointName" value="Neck1JNT" />
+          <Property name="JointName" value="RootJNT" />
           <Property name="AdditionalScaleJoint" value="" />
           <Property name="Offset" value="Vector3f.xml">
             <Property name="x" value="0" />
-            <Property name="y" value="0.28" />
-            <Property name="z" value="0.075" />
+            <Property name="y" value="1.125" />
+            <Property name="z" value="0" />
           </Property>
           <Property name="RotationOffset" value="Vector3f.xml">
             <Property name="x" value="0" />
@@ -4821,7 +4956,7 @@
             <Property name="z" value="0.4" />
           </Property>
           <Property name="HeadCounterRotation" value="0" />
-          <Property name="UprightStrength" value="1" />
+          <Property name="UprightStrength" value="0" />
           <Property name="LegSpread" value="True" />
           <Property name="ScaleForNeutralLegSpread" value="1" />
           <Property name="ScaleForMinLegSpread" value="0.5" />
@@ -4911,12 +5046,12 @@
               <Property name="BreakIfNotSelected" value="False" />
               <Property name="RelativeOffset" value="True" />
               <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="-0.075" />
-                <Property name="y" value="1.05" />
-                <Property name="z" value="-1.05" />
+                <Property name="x" value="0" />
+                <Property name="y" value="0.625" />
+                <Property name="z" value="-0.125" />
               </Property>
               <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="5" />
+                <Property name="x" value="-10" />
                 <Property name="y" value="0" />
                 <Property name="z" value="0" />
               </Property>
@@ -4926,7 +5061,7 @@
                 <Property name="z" value="0" />
               </Property>
               <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0.25" />
+              <Property name="LegSpreadOffset" value="0.4" />
               <Property name="OverrideAnims" value="False" />
               <Property name="IdleRidingAnim" value="RIDE_RDNT_IDLE" />
               <Property name="DefaultRidingAnim" value="RIDE_RDNT_WALK" />
@@ -4936,6 +5071,36 @@
                   <Property name="RidingAnim" value="RIDE_RDNT_WALK" />
                 </Property>
               </Property>
+            </Property>
+            <Property value="GcCreatureRidingPartModifier.xml">
+              <Property name="Partname" value="_BODY_ROUNDA" />
+              <Property name="JointName" value="RootJNT" />
+              <Property name="MinScale" value="0" />
+              <Property name="MaxScale" value="100" />
+              <Property name="AdditionalScaleJoint" value="" />
+              <Property name="BreakIfNotSelected" value="False" />
+              <Property name="RelativeOffset" value="True" />
+              <Property name="Offset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="-0.325" />
+                <Property name="z" value="-1.4" />
+              </Property>
+              <Property name="RotationOffset" value="Vector3f.xml">
+                <Property name="x" value="-25" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="VROffset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="HeadCounterRotation" value="0" />
+              <Property name="LegSpreadOffset" value="0.3" />
+              <Property name="OverrideAnims" value="False" />
+              <Property name="IdleRidingAnim" value="" />
+              <Property name="DefaultRidingAnim" value="" />
+              <Property name="RidingAnims" />
             </Property>
           </Property>
           <Property name="IdleRidingAnim" value="RIDE_ANT_IDLE" />
@@ -5007,10 +5172,10 @@
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -5145,7 +5310,7 @@
           <Property name="Offset" value="Vector3f.xml">
             <Property name="x" value="0" />
             <Property name="y" value="0.145" />
-            <Property name="z" value="-0.145" />
+            <Property name="z" value="-0.095" />
           </Property>
           <Property name="RotationOffset" value="Vector3f.xml">
             <Property name="x" value="-6" />
@@ -5331,7 +5496,7 @@
         <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Never" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -5700,10 +5865,10 @@
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -5943,10 +6108,10 @@
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -6332,11 +6497,11 @@
         </Property>
         <Property value="GcCreatureRidingData.xml">
           <Property name="JointName" value="Back3JNT" />
-          <Property name="AdditionalScaleJoint" value="" />
+          <Property name="AdditionalScaleJoint" value="Neck1JNT" />
           <Property name="Offset" value="Vector3f.xml">
             <Property name="x" value="0" />
-            <Property name="y" value="0.2" />
-            <Property name="z" value="0.15" />
+            <Property name="y" value="0.375" />
+            <Property name="z" value="-0.3" />
           </Property>
           <Property name="RotationOffset" value="Vector3f.xml">
             <Property name="x" value="0" />
@@ -6432,10 +6597,10 @@
         <Property name="CreatureRarity" value="Rare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Never" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -7011,10 +7176,10 @@
         <Property name="CreatureRarity" value="Rare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Never" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureVocalData.xml">
@@ -7586,10 +7751,10 @@
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -7973,10 +8138,10 @@
         <Property name="CreatureRarity" value="Rare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -8080,7 +8245,158 @@
           <Property name="ScaleForMinLegSpread" value="0.5" />
           <Property name="ScaleForMaxLegSpread" value="2" />
           <Property name="RequiresMatchingPartModifier" value="False" />
-          <Property name="PartModifiers" />
+          <Property name="PartModifiers">
+            <Property value="GcCreatureRidingPartModifier.xml">
+              <Property name="Partname" value="_HEAD_MUFFIN" />
+              <Property name="JointName" value="" />
+              <Property name="MinScale" value="0" />
+              <Property name="MaxScale" value="100" />
+              <Property name="AdditionalScaleJoint" value="" />
+              <Property name="BreakIfNotSelected" value="False" />
+              <Property name="RelativeOffset" value="True" />
+              <Property name="Offset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0.55" />
+                <Property name="z" value="-0.125" />
+              </Property>
+              <Property name="RotationOffset" value="Vector3f.xml">
+                <Property name="x" value="19" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="VROffset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="HeadCounterRotation" value="0.2" />
+              <Property name="LegSpreadOffset" value="0" />
+              <Property name="OverrideAnims" value="False" />
+              <Property name="IdleRidingAnim" value="" />
+              <Property name="DefaultRidingAnim" value="" />
+              <Property name="RidingAnims" />
+            </Property>
+            <Property value="GcCreatureRidingPartModifier.xml">
+              <Property name="Partname" value="_ACCR_BULBHAT" />
+              <Property name="JointName" value="" />
+              <Property name="MinScale" value="0" />
+              <Property name="MaxScale" value="100" />
+              <Property name="AdditionalScaleJoint" value="" />
+              <Property name="BreakIfNotSelected" value="False" />
+              <Property name="RelativeOffset" value="False" />
+              <Property name="Offset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0.575" />
+                <Property name="z" value="-0.4" />
+              </Property>
+              <Property name="RotationOffset" value="Vector3f.xml">
+                <Property name="x" value="49" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="VROffset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="HeadCounterRotation" value="0.2" />
+              <Property name="LegSpreadOffset" value="0" />
+              <Property name="OverrideAnims" value="False" />
+              <Property name="IdleRidingAnim" value="" />
+              <Property name="DefaultRidingAnim" value="" />
+              <Property name="RidingAnims" />
+            </Property>
+            <Property value="GcCreatureRidingPartModifier.xml">
+              <Property name="Partname" value="_BODY_1XRARE" />
+              <Property name="JointName" value="" />
+              <Property name="MinScale" value="0" />
+              <Property name="MaxScale" value="100" />
+              <Property name="AdditionalScaleJoint" value="" />
+              <Property name="BreakIfNotSelected" value="False" />
+              <Property name="RelativeOffset" value="True" />
+              <Property name="Offset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0.05" />
+                <Property name="z" value="-0.025" />
+              </Property>
+              <Property name="RotationOffset" value="Vector3f.xml">
+                <Property name="x" value="-6" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="VROffset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="HeadCounterRotation" value="0" />
+              <Property name="LegSpreadOffset" value="0" />
+              <Property name="OverrideAnims" value="False" />
+              <Property name="IdleRidingAnim" value="" />
+              <Property name="DefaultRidingAnim" value="" />
+              <Property name="RidingAnims" />
+            </Property>
+            <Property value="GcCreatureRidingPartModifier.xml">
+              <Property name="Partname" value="_ACC2_BULBHAT" />
+              <Property name="JointName" value="" />
+              <Property name="MinScale" value="0" />
+              <Property name="MaxScale" value="100" />
+              <Property name="AdditionalScaleJoint" value="" />
+              <Property name="BreakIfNotSelected" value="False" />
+              <Property name="RelativeOffset" value="False" />
+              <Property name="Offset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0.745" />
+                <Property name="z" value="0.475" />
+              </Property>
+              <Property name="RotationOffset" value="Vector3f.xml">
+                <Property name="x" value="84" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="VROffset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="HeadCounterRotation" value="0.2" />
+              <Property name="LegSpreadOffset" value="0" />
+              <Property name="OverrideAnims" value="False" />
+              <Property name="IdleRidingAnim" value="" />
+              <Property name="DefaultRidingAnim" value="" />
+              <Property name="RidingAnims" />
+            </Property>
+            <Property value="GcCreatureRidingPartModifier.xml">
+              <Property name="Partname" value="_CAPB_12" />
+              <Property name="JointName" value="" />
+              <Property name="MinScale" value="0" />
+              <Property name="MaxScale" value="100" />
+              <Property name="AdditionalScaleJoint" value="" />
+              <Property name="BreakIfNotSelected" value="False" />
+              <Property name="RelativeOffset" value="False" />
+              <Property name="Offset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0.85" />
+                <Property name="z" value="-0.175" />
+              </Property>
+              <Property name="RotationOffset" value="Vector3f.xml">
+                <Property name="x" value="53" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="VROffset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="HeadCounterRotation" value="0.2" />
+              <Property name="LegSpreadOffset" value="0" />
+              <Property name="OverrideAnims" value="False" />
+              <Property name="IdleRidingAnim" value="" />
+              <Property name="DefaultRidingAnim" value="" />
+              <Property name="RidingAnims" />
+            </Property>
+          </Property>
           <Property name="IdleRidingAnim" value="RIDE_RDNT_IDLE" />
           <Property name="DefaultRidingAnim" value="RIDE_RDNT_WALK" />
           <Property name="RidingAnims" />
@@ -8151,10 +8467,10 @@
         <Property name="CreatureRarity" value="SuperRare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -8167,8 +8483,8 @@
               <Property name="MinSpeedScale" value="0.5" />
               <Property name="MaxSpeedScale" value="0.9" />
               <Property name="MaxPredatorSpeedScale" value="1" />
-              <Property name="MinPetSpeedScale" value="1" />
-              <Property name="MaxPetSpeedScale" value="1" />
+              <Property name="MinPetSpeedScale" value="0.3" />
+              <Property name="MaxPetSpeedScale" value="1.5" />
               <Property name="AnimMoveSpeed" value="0" />
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
@@ -8181,7 +8497,7 @@
               <Property name="MaxSpeedScale" value="0.9" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
-              <Property name="MaxPetSpeedScale" value="1" />
+              <Property name="MaxPetSpeedScale" value="1.8" />
               <Property name="AnimMoveSpeed" value="0" />
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
@@ -8340,10 +8656,10 @@
         <Property name="CreatureRarity" value="Rare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -8965,6 +9281,277 @@
             </Property>
           </Property>
         </Property>
+        <Property value="GcCreatureRidingData.xml">
+          <Property name="JointName" value="ZeroJNT" />
+          <Property name="AdditionalScaleJoint" value="" />
+          <Property name="Offset" value="Vector3f.xml">
+            <Property name="x" value="0" />
+            <Property name="y" value="0.175" />
+            <Property name="z" value="-0.05" />
+          </Property>
+          <Property name="RotationOffset" value="Vector3f.xml">
+            <Property name="x" value="-16" />
+            <Property name="y" value="0" />
+            <Property name="z" value="0" />
+          </Property>
+          <Property name="VROffset" value="Vector3f.xml">
+            <Property name="x" value="0" />
+            <Property name="y" value="0" />
+            <Property name="z" value="0" />
+          </Property>
+          <Property name="HeadCounterRotation" value="0" />
+          <Property name="UprightStrength" value="0" />
+          <Property name="LegSpread" value="True" />
+          <Property name="ScaleForNeutralLegSpread" value="1" />
+          <Property name="ScaleForMinLegSpread" value="0.5" />
+          <Property name="ScaleForMaxLegSpread" value="2" />
+          <Property name="RequiresMatchingPartModifier" value="True" />
+          <Property name="PartModifiers">
+            <Property value="GcCreatureRidingPartModifier.xml">
+              <Property name="Partname" value="_FLOAT_EYEFISH" />
+              <Property name="JointName" value="" />
+              <Property name="MinScale" value="0" />
+              <Property name="MaxScale" value="100" />
+              <Property name="AdditionalScaleJoint" value="" />
+              <Property name="BreakIfNotSelected" value="False" />
+              <Property name="RelativeOffset" value="False" />
+              <Property name="Offset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0.125" />
+                <Property name="z" value="0.75" />
+              </Property>
+              <Property name="RotationOffset" value="Vector3f.xml">
+                <Property name="x" value="15" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="VROffset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="HeadCounterRotation" value="0" />
+              <Property name="LegSpreadOffset" value="-0.3" />
+              <Property name="OverrideAnims" value="False" />
+              <Property name="IdleRidingAnim" value="" />
+              <Property name="DefaultRidingAnim" value="" />
+              <Property name="RidingAnims" />
+            </Property>
+            <Property value="GcCreatureRidingPartModifier.xml">
+              <Property name="Partname" value="_FLOAT_RIDGEEEL" />
+              <Property name="JointName" value="" />
+              <Property name="MinScale" value="0" />
+              <Property name="MaxScale" value="100" />
+              <Property name="AdditionalScaleJoint" value="" />
+              <Property name="BreakIfNotSelected" value="False" />
+              <Property name="RelativeOffset" value="False" />
+              <Property name="Offset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0.25" />
+              </Property>
+              <Property name="RotationOffset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="VROffset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="HeadCounterRotation" value="0" />
+              <Property name="LegSpreadOffset" value="0" />
+              <Property name="OverrideAnims" value="True" />
+              <Property name="IdleRidingAnim" value="RIDE_RDNT_IDLE" />
+              <Property name="DefaultRidingAnim" value="RIDE_RDNT_WALK" />
+              <Property name="RidingAnims" />
+            </Property>
+            <Property value="GcCreatureRidingPartModifier.xml">
+              <Property name="Partname" value="_FLOAT_FLATCREATURE" />
+              <Property name="JointName" value="" />
+              <Property name="MinScale" value="0" />
+              <Property name="MaxScale" value="100" />
+              <Property name="AdditionalScaleJoint" value="" />
+              <Property name="BreakIfNotSelected" value="False" />
+              <Property name="RelativeOffset" value="False" />
+              <Property name="Offset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0.025" />
+                <Property name="z" value="0.45" />
+              </Property>
+              <Property name="RotationOffset" value="Vector3f.xml">
+                <Property name="x" value="-76" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="VROffset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="HeadCounterRotation" value="0" />
+              <Property name="LegSpreadOffset" value="-0.2" />
+              <Property name="OverrideAnims" value="True" />
+              <Property name="IdleRidingAnim" value="RIDE_GRNT_IDLE" />
+              <Property name="DefaultRidingAnim" value="RIDE_GRNT_WALK" />
+              <Property name="RidingAnims" />
+            </Property>
+            <Property value="GcCreatureRidingPartModifier.xml">
+              <Property name="Partname" value="_FLOAT_ROSEFISH" />
+              <Property name="JointName" value="" />
+              <Property name="MinScale" value="0" />
+              <Property name="MaxScale" value="100" />
+              <Property name="AdditionalScaleJoint" value="" />
+              <Property name="BreakIfNotSelected" value="False" />
+              <Property name="RelativeOffset" value="False" />
+              <Property name="Offset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0.325" />
+                <Property name="z" value="-0.35" />
+              </Property>
+              <Property name="RotationOffset" value="Vector3f.xml">
+                <Property name="x" value="-2" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="VROffset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="HeadCounterRotation" value="0.2" />
+              <Property name="LegSpreadOffset" value="0" />
+              <Property name="OverrideAnims" value="True" />
+              <Property name="IdleRidingAnim" value="RIDE_RDNT_IDLE" />
+              <Property name="DefaultRidingAnim" value="RIDE_RDNT_WALK" />
+              <Property name="RidingAnims" />
+            </Property>
+            <Property value="GcCreatureRidingPartModifier.xml">
+              <Property name="Partname" value="_FLOAT_METALORB" />
+              <Property name="JointName" value="" />
+              <Property name="MinScale" value="0" />
+              <Property name="MaxScale" value="100" />
+              <Property name="AdditionalScaleJoint" value="" />
+              <Property name="BreakIfNotSelected" value="False" />
+              <Property name="RelativeOffset" value="False" />
+              <Property name="Offset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="3.925" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="RotationOffset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="VROffset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="HeadCounterRotation" value="0" />
+              <Property name="LegSpreadOffset" value="0.6" />
+              <Property name="OverrideAnims" value="False" />
+              <Property name="IdleRidingAnim" value="" />
+              <Property name="DefaultRidingAnim" value="" />
+              <Property name="RidingAnims" />
+            </Property>
+            <Property value="GcCreatureRidingPartModifier.xml">
+              <Property name="Partname" value="_FLOAT_RADIALWAVE" />
+              <Property name="JointName" value="" />
+              <Property name="MinScale" value="0" />
+              <Property name="MaxScale" value="100" />
+              <Property name="AdditionalScaleJoint" value="" />
+              <Property name="BreakIfNotSelected" value="False" />
+              <Property name="RelativeOffset" value="False" />
+              <Property name="Offset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="1.45" />
+                <Property name="z" value="-0.525" />
+              </Property>
+              <Property name="RotationOffset" value="Vector3f.xml">
+                <Property name="x" value="36" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="VROffset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="HeadCounterRotation" value="0.3" />
+              <Property name="LegSpreadOffset" value="0" />
+              <Property name="OverrideAnims" value="False" />
+              <Property name="IdleRidingAnim" value="" />
+              <Property name="DefaultRidingAnim" value="" />
+              <Property name="RidingAnims" />
+            </Property>
+            <Property value="GcCreatureRidingPartModifier.xml">
+              <Property name="Partname" value="_FLOAT_TRAILORB" />
+              <Property name="JointName" value="" />
+              <Property name="MinScale" value="0" />
+              <Property name="MaxScale" value="100" />
+              <Property name="AdditionalScaleJoint" value="" />
+              <Property name="BreakIfNotSelected" value="False" />
+              <Property name="RelativeOffset" value="False" />
+              <Property name="Offset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="6.225004" />
+                <Property name="z" value="-0.4" />
+              </Property>
+              <Property name="RotationOffset" value="Vector3f.xml">
+                <Property name="x" value="8" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="VROffset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="HeadCounterRotation" value="0" />
+              <Property name="LegSpreadOffset" value="0.05" />
+              <Property name="OverrideAnims" value="False" />
+              <Property name="IdleRidingAnim" value="" />
+              <Property name="DefaultRidingAnim" value="" />
+              <Property name="RidingAnims" />
+            </Property>
+            <Property value="GcCreatureRidingPartModifier.xml">
+              <Property name="Partname" value="_FLOAT_ELEPHLOATER" />
+              <Property name="JointName" value="" />
+              <Property name="MinScale" value="0" />
+              <Property name="MaxScale" value="100" />
+              <Property name="AdditionalScaleJoint" value="" />
+              <Property name="BreakIfNotSelected" value="False" />
+              <Property name="RelativeOffset" value="False" />
+              <Property name="Offset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0.225" />
+                <Property name="z" value="0.675" />
+              </Property>
+              <Property name="RotationOffset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="VROffset" value="Vector3f.xml">
+                <Property name="x" value="0" />
+                <Property name="y" value="0" />
+                <Property name="z" value="0" />
+              </Property>
+              <Property name="HeadCounterRotation" value="0" />
+              <Property name="LegSpreadOffset" value="0" />
+              <Property name="OverrideAnims" value="False" />
+              <Property name="IdleRidingAnim" value="" />
+              <Property name="DefaultRidingAnim" value="" />
+              <Property name="RidingAnims" />
+            </Property>
+          </Property>
+          <Property name="IdleRidingAnim" value="RIDE_RDNT_IDLE" />
+          <Property name="DefaultRidingAnim" value="RIDE_RDNT_WALK" />
+          <Property name="RidingAnims" />
+        </Property>
       </Property>
     </Property>
     <Property value="GcCreatureData.xml">
@@ -8999,10 +9586,10 @@
         <Property name="CreatureRarity" value="SuperRare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureVocalData.xml">
@@ -9473,10 +10060,10 @@
         <Property name="CreatureRarity" value="SuperRare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -9684,10 +10271,10 @@
         <Property name="CreatureRarity" value="SuperRare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -9861,10 +10448,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureVocalData.xml">
@@ -9916,8 +10503,8 @@
               <Property name="MinSpeedScale" value="0.5" />
               <Property name="MaxSpeedScale" value="0.9" />
               <Property name="MaxPredatorSpeedScale" value="1" />
-              <Property name="MinPetSpeedScale" value="1" />
-              <Property name="MaxPetSpeedScale" value="1" />
+              <Property name="MinPetSpeedScale" value="0.2" />
+              <Property name="MaxPetSpeedScale" value="1.3" />
               <Property name="AnimMoveSpeed" value="0" />
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
@@ -9929,8 +10516,8 @@
               <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="0.9" />
               <Property name="MaxPredatorSpeedScale" value="1" />
-              <Property name="MinPetSpeedScale" value="1" />
-              <Property name="MaxPetSpeedScale" value="1" />
+              <Property name="MinPetSpeedScale" value="0.7" />
+              <Property name="MaxPetSpeedScale" value="1.3" />
               <Property name="AnimMoveSpeed" value="0" />
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
@@ -10010,10 +10597,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureVocalData.xml">
@@ -10065,8 +10652,8 @@
               <Property name="MinSpeedScale" value="0.5" />
               <Property name="MaxSpeedScale" value="0.9" />
               <Property name="MaxPredatorSpeedScale" value="1" />
-              <Property name="MinPetSpeedScale" value="1" />
-              <Property name="MaxPetSpeedScale" value="1" />
+              <Property name="MinPetSpeedScale" value="0.2" />
+              <Property name="MaxPetSpeedScale" value="1.3" />
               <Property name="AnimMoveSpeed" value="0" />
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
@@ -10078,8 +10665,8 @@
               <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="0.9" />
               <Property name="MaxPredatorSpeedScale" value="1" />
-              <Property name="MinPetSpeedScale" value="1" />
-              <Property name="MaxPetSpeedScale" value="1" />
+              <Property name="MinPetSpeedScale" value="0.7" />
+              <Property name="MaxPetSpeedScale" value="1.3" />
               <Property name="AnimMoveSpeed" value="0" />
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
@@ -10122,10 +10709,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureVocalData.xml">
@@ -10448,10 +11035,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcBirdData.xml">
@@ -10584,10 +11171,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -10675,10 +11262,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -10813,10 +11400,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -10891,10 +11478,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -10982,10 +11569,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -11115,10 +11702,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -11248,10 +11835,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -11397,10 +11984,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -11530,10 +12117,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
@@ -11605,10 +12192,10 @@
         <Property name="CreatureRarity" value="Common" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Low" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">

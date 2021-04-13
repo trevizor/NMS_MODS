@@ -26,6 +26,11 @@
 		value = value.replace(/<Property value="GcPlanetWeatherColourData.xml">/g,"") 
 		value = value.replace(/<Property value="GcPlanetWaterColourData.xml">/g,"") 
 		value = value.replace(/<Property value="Colour.xml">/g,"{\"header\":\"Colour\",") 
+		value = value.replace(/<Property name="ColourMiddle" value="Colour.xml">/g,"{\"header\":\"Colour\",") 
+
+		value = value.replace(/<Property name="ColourStart" value="Colour.xml">/g,"{\"header\":\"Colour\",") 
+		value = value.replace(/<Property name="ColourEnd" value="Colour.xml">/g,"{\"header\":\"Colour\",") 
+
 		value = value.replace(/<Property name="SkyUpperColour" value="Colour.xml">/g,"{\"header\":\"SkyUpperColour\",") 
 		value = value.replace(/<Property name="SkyColour" value="Colour.xml">/g,"{\"header\":\"SkyColour\",") 
 		value = value.replace(/<Property name="SkySolarColour" value="Colour.xml">/g,"{\"header\":\"SkySolarColour\",") 

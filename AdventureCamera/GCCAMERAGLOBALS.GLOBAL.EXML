@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-
+<!--File created using MBINCompiler version (3.35.0)-->
 <Data template="GcCameraGlobals">
   <Property name="FreighterCustomisationStandardCamera" value="TkModelRendererData.xml">
     <Property name="Camera" value="TkModelRendererCameraData.xml">
@@ -44,7 +44,7 @@
     <Property name="MinSpeed" value="0" />
     <Property name="SpeedRange" value="200" />
     <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="0" /> 
+    <Property name="OffsetY" value="0" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
@@ -109,7 +109,7 @@
     <Property name="MinSpeed" value="0" />
     <Property name="SpeedRange" value="200" />
     <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="0" /> 
+    <Property name="OffsetY" value="0" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="1" />
@@ -178,7 +178,7 @@
   <Property name="PauseThirdPersonCamInPause" value="False" />
   <Property name="DebugPlanetJumpNearHeight" value="50" />
   <Property name="DebugPlanetJumpFarHeight" value="1500" />
-  <Property name="TogglePerspectiveBlendTime" value="0" />
+  <Property name="TogglePerspectiveBlendTime" value="0.3" />
   <Property name="UnderwaterCameraSurfaceOffset" value="-1" />
   <Property name="ThirdPersonAfterIntroCamBlendTime" value="1.9" />
   <Property name="ThirdPersonSkipIntroCamBlendTime" value="0.8" />
@@ -197,8 +197,8 @@
   <Property name="ShipThirdPersonBlendOffset" value="1" />
   <Property name="ShipThirdPersonBlendOutTime" value="1.5" />
   <Property name="ShipThirdPersonBlendOutOffset" value="0" />
-  <Property name="ShipFirstPersonBlendTime" value="1.4" />
-  <Property name="ShipFirstPersonBlendOffset" value="1" />
+  <Property name="ShipFirstPersonBlendTime" value="2" />
+  <Property name="ShipFirstPersonBlendOffset" value="0" />
   <Property name="ShipThirdPersonEnterBlendTime" value="2" />
   <Property name="ShipThirdPersonEnterBlendOffset" value="0.5" />
   <Property name="FlybyMinRange" value="20" />
@@ -212,6 +212,9 @@
   <Property name="MaxFirstPersonCameraPitch" value="89" />
   <Property name="MaxCreatureRidingYaw" value="90" />
   <Property name="ThirdPersonRotationBackAdjustAngleMin" value="10" />
+  <Property name="ThirdPersonClosePitch" value="0" />
+  <Property name="ThirdPersonCloseDistance" value="0.5" />
+  <Property name="ThirdPersonCloseDistanceX" value="0.5" />
   <Property name="ThirdPersonRotationBackAdjustAngleMax" value="35" />
   <Property name="ThirdPersonUphillAdjustSpringTimeMin" value="1.2" />
   <Property name="ThirdPersonUphillAdjustSpringTimeMax" value="2.5" />
@@ -233,13 +236,13 @@
     <Property name="Name" value="CHARUNARMED" />
     <Property name="MinSpeed" value="4" />
     <Property name="SpeedRange" value="20" />
-    <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="0.4" /> 
+    <Property name="OffsetX" value="0.8" />
+    <Property name="OffsetY" value="-0.6" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="9.2" />
-    <Property name="BackMaxDistance" value="13.2" />
+    <Property name="BackMinDistance" value="4.2" />
+    <Property name="BackMaxDistance" value="5.2" />
     <Property name="BackSlopeAdjust" value="-1.8" />
     <Property name="BackSlopeRotationAdjust" value="-1.8" />
     <Property name="UpMinDistance" value="0" />
@@ -298,13 +301,13 @@
     <Property name="Name" value="CHARRUN" />
     <Property name="MinSpeed" value="4" />
     <Property name="SpeedRange" value="8.8" />
-    <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="0.85" /> 
+    <Property name="OffsetX" value="0.6" />
+    <Property name="OffsetY" value="-0.85" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="8.5" />
-    <Property name="BackMaxDistance" value="15" />
+    <Property name="BackMinDistance" value="3.5" />
+    <Property name="BackMaxDistance" value="7" />
     <Property name="BackSlopeAdjust" value="-1.8" />
     <Property name="BackSlopeRotationAdjust" value="-1.8" />
     <Property name="UpMinDistance" value="0" />
@@ -359,12 +362,12 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="CharacterCombatCam" value="GcCameraFollowSettings.xml"> 
+  <Property name="CharacterCombatCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="CHARCOMBAT" />
     <Property name="MinSpeed" value="10" />
     <Property name="SpeedRange" value="20" />
     <Property name="OffsetX" value="0.65" />
-    <Property name="OffsetY" value="-0.6" /> 
+    <Property name="OffsetY" value="-0.6" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
@@ -429,7 +432,7 @@
     <Property name="MinSpeed" value="10" />
     <Property name="SpeedRange" value="1" />
     <Property name="OffsetX" value="0.4" />
-    <Property name="OffsetY" value="-0.8" /> 
+    <Property name="OffsetY" value="-0.8" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
@@ -489,12 +492,12 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="CharacterAbandCombatCam" value="GcCameraFollowSettings.xml"> 
+  <Property name="CharacterAbandCombatCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="FREIGHTCOMBAT" />
     <Property name="MinSpeed" value="1" />
     <Property name="SpeedRange" value="20" />
     <Property name="OffsetX" value="0.65" />
-    <Property name="OffsetY" value="-0.75" /> 
+    <Property name="OffsetY" value="-0.75" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
@@ -559,7 +562,7 @@
     <Property name="MinSpeed" value="1" />
     <Property name="SpeedRange" value="20" />
     <Property name="OffsetX" value="0.65" />
-    <Property name="OffsetY" value="-0.75" /> 
+    <Property name="OffsetY" value="-0.75" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
@@ -623,13 +626,13 @@
     <Property name="Name" value="CHARNEXUS" />
     <Property name="MinSpeed" value="6" />
     <Property name="SpeedRange" value="5" />
-    <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="0.8" /> 
+    <Property name="OffsetX" value="0.4" />
+    <Property name="OffsetY" value="-0.8" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="8.5" />
-    <Property name="BackMaxDistance" value="12.2" />
+    <Property name="BackMinDistance" value="3.5" />
+    <Property name="BackMaxDistance" value="4.2" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -688,13 +691,13 @@
     <Property name="Name" value="CHARJETPACK" />
     <Property name="MinSpeed" value="5" />
     <Property name="SpeedRange" value="10" />
-    <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="1" /> 
+    <Property name="OffsetX" value="0.8" />
+    <Property name="OffsetY" value="-0.6" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="9.2" />
-    <Property name="BackMaxDistance" value="15.2" />
+    <Property name="BackMinDistance" value="4.2" />
+    <Property name="BackMaxDistance" value="7.2" />
     <Property name="BackSlopeAdjust" value="-1.8" />
     <Property name="BackSlopeRotationAdjust" value="-1.8" />
     <Property name="UpMinDistance" value="0" />
@@ -753,13 +756,13 @@
     <Property name="Name" value="CHARMELBOOST" />
     <Property name="MinSpeed" value="4" />
     <Property name="SpeedRange" value="8.8" />
-    <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="1.05" /> 
+    <Property name="OffsetX" value="0.6" />
+    <Property name="OffsetY" value="-0.85" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="7.5" />
-    <Property name="BackMaxDistance" value="18" />
+    <Property name="BackMinDistance" value="2.5" />
+    <Property name="BackMaxDistance" value="10" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -818,13 +821,13 @@
     <Property name="Name" value="ROCKETBOOTS" />
     <Property name="MinSpeed" value="5" />
     <Property name="SpeedRange" value="10" />
-    <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="0.7" /> 
+    <Property name="OffsetX" value="0.6" />
+    <Property name="OffsetY" value="-0.5" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="8.5" />
-    <Property name="BackMaxDistance" value="15" />
+    <Property name="BackMinDistance" value="3.5" />
+    <Property name="BackMaxDistance" value="7" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -883,13 +886,13 @@
     <Property name="Name" value="ROCKETBOOTSCHRG" />
     <Property name="MinSpeed" value="4" />
     <Property name="SpeedRange" value="20" />
-    <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="1" /> 
+    <Property name="OffsetX" value="0.8" />
+    <Property name="OffsetY" value="-0.8" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="7.5" />
-    <Property name="BackMaxDistance" value="11.5" />
+    <Property name="BackMinDistance" value="2.5" />
+    <Property name="BackMaxDistance" value="3.5" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -948,13 +951,13 @@
     <Property name="Name" value="CHARFALL" />
     <Property name="MinSpeed" value="5" />
     <Property name="SpeedRange" value="20" />
-    <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="0.8" /> 
+    <Property name="OffsetX" value="0.8" />
+    <Property name="OffsetY" value="-0.6" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="9.2" />
-    <Property name="BackMaxDistance" value="28" />
+    <Property name="BackMinDistance" value="4.2" />
+    <Property name="BackMaxDistance" value="20" />
     <Property name="BackSlopeAdjust" value="-1.8" />
     <Property name="BackSlopeRotationAdjust" value="-1.8" />
     <Property name="UpMinDistance" value="0" />
@@ -1009,12 +1012,12 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="CharacterAirborneCombatCam" value="GcCameraFollowSettings.xml"> 
+  <Property name="CharacterAirborneCombatCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="CHARJETCOMBAT" />
     <Property name="MinSpeed" value="5" />
     <Property name="SpeedRange" value="10" />
     <Property name="OffsetX" value="0.6" />
-    <Property name="OffsetY" value="-0.5" /> 
+    <Property name="OffsetY" value="-0.5" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
@@ -1078,13 +1081,13 @@
     <Property name="Name" value="CHARSPACE" />
     <Property name="MinSpeed" value="5" />
     <Property name="SpeedRange" value="10" />
-    <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="0.7" /> 
+    <Property name="OffsetX" value="0.6" />
+    <Property name="OffsetY" value="-0.5" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="8.5" />
-    <Property name="BackMaxDistance" value="15" />
+    <Property name="BackMinDistance" value="3.5" />
+    <Property name="BackMaxDistance" value="7" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -1143,13 +1146,13 @@
     <Property name="Name" value="CHARSLOPE" />
     <Property name="MinSpeed" value="4" />
     <Property name="SpeedRange" value="20" />
-    <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="1.4" /> 
+    <Property name="OffsetX" value="0.4" />
+    <Property name="OffsetY" value="-1.2" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="8" />
-    <Property name="BackMaxDistance" value="14" />
+    <Property name="BackMinDistance" value="3" />
+    <Property name="BackMaxDistance" value="6" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -1208,13 +1211,13 @@
     <Property name="Name" value="CHARWATER" />
     <Property name="MinSpeed" value="4" />
     <Property name="SpeedRange" value="3" />
-    <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="0" /> 
+    <Property name="OffsetX" value="0.55" />
+    <Property name="OffsetY" value="-0.6" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="8.35" />
-    <Property name="BackMaxDistance" value="13.5" />
+    <Property name="BackMinDistance" value="3.35" />
+    <Property name="BackMaxDistance" value="5.5" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -1269,12 +1272,12 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="CharacterUnderwaterCombatCam" value="GcCameraFollowSettings.xml"> 
+  <Property name="CharacterUnderwaterCombatCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="WETCOMBAT" />
     <Property name="MinSpeed" value="4" />
     <Property name="SpeedRange" value="8" />
     <Property name="OffsetX" value="0.7" />
-    <Property name="OffsetY" value="-0.6" /> 
+    <Property name="OffsetY" value="-0.6" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
@@ -1338,13 +1341,13 @@
     <Property name="Name" value="WETJETPACK" />
     <Property name="MinSpeed" value="5" />
     <Property name="SpeedRange" value="8" />
-    <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="0" /> 
+    <Property name="OffsetX" value="0.6" />
+    <Property name="OffsetY" value="-0.5" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="8.6" />
-    <Property name="BackMaxDistance" value="18" />
+    <Property name="BackMinDistance" value="3.6" />
+    <Property name="BackMaxDistance" value="10" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -1404,12 +1407,12 @@
     <Property name="MinSpeed" value="4" />
     <Property name="SpeedRange" value="3" />
     <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="0.2" /> 
+    <Property name="OffsetY" value="0" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="13.5" />
-    <Property name="BackMaxDistance" value="16.5" />
+    <Property name="BackMinDistance" value="8.5" />
+    <Property name="BackMaxDistance" value="8.5" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -1468,13 +1471,13 @@
     <Property name="Name" value="CHARSIT" />
     <Property name="MinSpeed" value="4" />
     <Property name="SpeedRange" value="1" />
-    <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="-0.2" /> 
+    <Property name="OffsetX" value="0.4" />
+    <Property name="OffsetY" value="-1.2" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="9" />
-    <Property name="BackMaxDistance" value="12.9" />
+    <Property name="BackMinDistance" value="4" />
+    <Property name="BackMaxDistance" value="4.9" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -1534,12 +1537,12 @@
     <Property name="MinSpeed" value="1" />
     <Property name="SpeedRange" value="3" />
     <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="0.4" /> 
+    <Property name="OffsetY" value="0" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="15" />
-    <Property name="BackMaxDistance" value="23" />
+    <Property name="BackMinDistance" value="10" />
+    <Property name="BackMaxDistance" value="15" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -1599,12 +1602,12 @@
     <Property name="MinSpeed" value="1" />
     <Property name="SpeedRange" value="3" />
     <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="0.4" /> 
+    <Property name="OffsetY" value="0" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="15" />
-    <Property name="BackMaxDistance" value="23" />
+    <Property name="BackMinDistance" value="10" />
+    <Property name="BackMaxDistance" value="15" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -1664,12 +1667,12 @@
     <Property name="MinSpeed" value="1" />
     <Property name="SpeedRange" value="3" />
     <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="0.4" /> 
+    <Property name="OffsetY" value="0" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="23" />
-    <Property name="BackMaxDistance" value="33" />
+    <Property name="BackMinDistance" value="18" />
+    <Property name="BackMaxDistance" value="25" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -1729,12 +1732,12 @@
     <Property name="MinSpeed" value="1" />
     <Property name="SpeedRange" value="3" />
     <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="0.4" /> 
+    <Property name="OffsetY" value="0" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
-    <Property name="BackMinDistance" value="43" />
-    <Property name="BackMaxDistance" value="58" />
+    <Property name="BackMinDistance" value="38" />
+    <Property name="BackMaxDistance" value="50" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -1795,7 +1798,7 @@
     <Property name="MinSpeed" value="5" />
     <Property name="SpeedRange" value="25" />
     <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="3.5" /> 
+    <Property name="OffsetY" value="3.5" />
     <Property name="OffsetYAlt" value="5" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
@@ -1860,7 +1863,7 @@
     <Property name="MinSpeed" value="12" />
     <Property name="SpeedRange" value="15" />
     <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="0.5" /> 
+    <Property name="OffsetY" value="0.5" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
@@ -1925,7 +1928,7 @@
     <Property name="MinSpeed" value="14" />
     <Property name="SpeedRange" value="20" />
     <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="0" /> 
+    <Property name="OffsetY" value="0" />
     <Property name="OffsetYAlt" value="-2" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
@@ -1990,7 +1993,7 @@
     <Property name="MinSpeed" value="5" />
     <Property name="SpeedRange" value="30" />
     <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="1.5" /> 
+    <Property name="OffsetY" value="1.5" />
     <Property name="OffsetYAlt" value="2" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
@@ -2055,7 +2058,7 @@
     <Property name="MinSpeed" value="5" />
     <Property name="SpeedRange" value="30" />
     <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="0.2" /> 
+    <Property name="OffsetY" value="0.2" />
     <Property name="OffsetYAlt" value="2" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
@@ -2120,7 +2123,7 @@
     <Property name="MinSpeed" value="8" />
     <Property name="SpeedRange" value="14" />
     <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="2.1" /> 
+    <Property name="OffsetY" value="2.1" />
     <Property name="OffsetYAlt" value="5" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="3.3" />
@@ -2185,7 +2188,7 @@
     <Property name="MinSpeed" value="1" />
     <Property name="SpeedRange" value="3" />
     <Property name="OffsetX" value="1.8" />
-    <Property name="OffsetY" value="-1" /> 
+    <Property name="OffsetY" value="-1" />
     <Property name="OffsetYAlt" value="2" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
@@ -2250,7 +2253,7 @@
     <Property name="MinSpeed" value="4" />
     <Property name="SpeedRange" value="20" />
     <Property name="OffsetX" value="1.5" />
-    <Property name="OffsetY" value="1" /> 
+    <Property name="OffsetY" value="1" />
     <Property name="OffsetYAlt" value="1" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="1" />
@@ -2315,7 +2318,7 @@
     <Property name="MinSpeed" value="1" />
     <Property name="SpeedRange" value="14" />
     <Property name="OffsetX" value="1" />
-    <Property name="OffsetY" value="-0.85" /> 
+    <Property name="OffsetY" value="-0.85" />
     <Property name="OffsetYAlt" value="1" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
@@ -2375,26 +2378,26 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="1" />
   </Property>
-  <Property name="SpaceshipFollowCam" value="GcCameraFollowSettings.xml"> <!-- starshipcam -->
+  <Property name="SpaceshipFollowCam" value="GcCameraFollowSettings.xml"> <!-- SHIP CAM -->
     <Property name="Name" value="SPACESHIP" />
     <Property name="MinSpeed" value="10" />
-    <Property name="SpeedRange" value="50" />
+    <Property name="SpeedRange" value="2000" />
     <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="6" /> 
+    <Property name="OffsetY" value="3" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
-    <Property name="OffsetZFlat" value="3" />
-    <Property name="BackMinDistance" value="40" />
-    <Property name="BackMaxDistance" value="60" />
+    <Property name="OffsetZFlat" value="4" />
+    <Property name="BackMinDistance" value="14" />
+    <Property name="BackMaxDistance" value="19" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
-    <Property name="UpMinDistance" value="2" />
-    <Property name="UpMaxDistance" value="30" />
+    <Property name="UpMinDistance" value="6" />
+    <Property name="UpMaxDistance" value="10" />
     <Property name="UpSlopeAdjust" value="0" />
     <Property name="LeftMinDistance" value="0" />
     <Property name="LeftMaxDistance" value="0" />
     <Property name="PanNear" value="-2" />
-    <Property name="PanFar" value="-8" />
+    <Property name="PanFar" value="-4" />
     <Property name="UpGamma" value="1.5" />
     <Property name="HorizRotationAngleMaxPerFrame" value="0" />
     <Property name="VertRotationSpeed" value="1" />
@@ -2420,8 +2423,8 @@
     <Property name="MinClose" value="0.1" />
     <Property name="MaxClose" value="1" />
     <Property name="CloseSpring" value="6" />
-    <Property name="LookStickLimitAngle" value="80" />
-    <Property name="EnableCollisionDetection" value="True" />
+    <Property name="LookStickLimitAngle" value="45" />
+    <Property name="EnableCollisionDetection" value="False" />
     <Property name="NumLRProbes" value="10" />
     <Property name="LRProbesRange" value="30" />
     <Property name="LRProbesRadius" value="0.2" />
@@ -2440,26 +2443,26 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="DropshipFollowCam" value="GcCameraFollowSettings.xml"> <!-- starshipcam -->
+  <Property name="DropshipFollowCam" value="GcCameraFollowSettings.xml"> <!-- SHIP CAM -->
     <Property name="Name" value="DROPSHIP" />
     <Property name="MinSpeed" value="10" />
-    <Property name="SpeedRange" value="50" />
+    <Property name="SpeedRange" value="2000" />
     <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="6" /> 
+    <Property name="OffsetY" value="3" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="4" />
-    <Property name="BackMinDistance" value="40" />
-    <Property name="BackMaxDistance" value="60" />
+    <Property name="BackMinDistance" value="14" />
+    <Property name="BackMaxDistance" value="19" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
-    <Property name="UpMinDistance" value="2" />
-    <Property name="UpMaxDistance" value="30" />
+    <Property name="UpMinDistance" value="6" />
+    <Property name="UpMaxDistance" value="10" />
     <Property name="UpSlopeAdjust" value="0" />
     <Property name="LeftMinDistance" value="0" />
     <Property name="LeftMaxDistance" value="0" />
     <Property name="PanNear" value="5" />
-    <Property name="PanFar" value="-8" />
+    <Property name="PanFar" value="6" />
     <Property name="UpGamma" value="1.5" />
     <Property name="HorizRotationAngleMaxPerFrame" value="0" />
     <Property name="VertRotationSpeed" value="1" />
@@ -2469,7 +2472,7 @@
     <Property name="VertRotationOffsetMinAngle" value="-30" />
     <Property name="VertRotationOffsetMaxAngle" value="30" />
     <Property name="VertStartLookingDown" value="False" />
-    <Property name="DistSpeed" value="0.4" />
+    <Property name="DistSpeed" value="0.1" />
     <Property name="DistSpeedOutsideMainRange" value="1.5" />
     <Property name="DistStiffness" value="2" />
     <Property name="SpringSpeed" value="0" />
@@ -2485,8 +2488,8 @@
     <Property name="MinClose" value="0.1" />
     <Property name="MaxClose" value="1" />
     <Property name="CloseSpring" value="6" />
-    <Property name="LookStickLimitAngle" value="80" />
-    <Property name="EnableCollisionDetection" value="True" />
+    <Property name="LookStickLimitAngle" value="40" />
+    <Property name="EnableCollisionDetection" value="False" />
     <Property name="NumLRProbes" value="10" />
     <Property name="LRProbesRange" value="30" />
     <Property name="LRProbesRadius" value="0.2" />
@@ -2505,26 +2508,26 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="ShuttleFollowCam" value="GcCameraFollowSettings.xml"> <!-- starshipcam -->
+  <Property name="ShuttleFollowCam" value="GcCameraFollowSettings.xml"> <!-- SHIP CAM -->
     <Property name="Name" value="SHUTTLE" />
     <Property name="MinSpeed" value="10" />
-    <Property name="SpeedRange" value="50" />
+    <Property name="SpeedRange" value="2000" />
     <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="6" /> 
+    <Property name="OffsetY" value="3" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="3" />
-    <Property name="BackMinDistance" value="42" />
-    <Property name="BackMaxDistance" value="65" />
+    <Property name="BackMinDistance" value="14" />
+    <Property name="BackMaxDistance" value="19" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
-    <Property name="UpMinDistance" value="2" />
+    <Property name="UpMinDistance" value="6" />
     <Property name="UpMaxDistance" value="10" />
     <Property name="UpSlopeAdjust" value="0" />
     <Property name="LeftMinDistance" value="0" />
     <Property name="LeftMaxDistance" value="0" />
     <Property name="PanNear" value="-2" />
-    <Property name="PanFar" value="-8" />
+    <Property name="PanFar" value="-6" />
     <Property name="UpGamma" value="1.5" />
     <Property name="HorizRotationAngleMaxPerFrame" value="0" />
     <Property name="VertRotationSpeed" value="1" />
@@ -2534,7 +2537,7 @@
     <Property name="VertRotationOffsetMinAngle" value="-30" />
     <Property name="VertRotationOffsetMaxAngle" value="30" />
     <Property name="VertStartLookingDown" value="False" />
-    <Property name="DistSpeed" value="0.4" />
+    <Property name="DistSpeed" value="0.1" />
     <Property name="DistSpeedOutsideMainRange" value="1.5" />
     <Property name="DistStiffness" value="2" />
     <Property name="SpringSpeed" value="0" />
@@ -2550,8 +2553,8 @@
     <Property name="MinClose" value="0.1" />
     <Property name="MaxClose" value="1" />
     <Property name="CloseSpring" value="6" />
-    <Property name="LookStickLimitAngle" value="80" />
-    <Property name="EnableCollisionDetection" value="True" />
+    <Property name="LookStickLimitAngle" value="40" />
+    <Property name="EnableCollisionDetection" value="False" />
     <Property name="NumLRProbes" value="10" />
     <Property name="LRProbesRange" value="30" />
     <Property name="LRProbesRadius" value="0.2" />
@@ -2570,26 +2573,26 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="RoyalShipFollowCam" value="GcCameraFollowSettings.xml"> <!-- starshipcam -->
+  <Property name="RoyalShipFollowCam" value="GcCameraFollowSettings.xml"> <!-- SHIP CAM -->
     <Property name="Name" value="ROYAL" />
     <Property name="MinSpeed" value="10" />
-    <Property name="SpeedRange" value="50" />
+    <Property name="SpeedRange" value="3000" />
     <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="6" /> 
+    <Property name="OffsetY" value="3" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="8" />
-    <Property name="BackMinDistance" value="40" />
-    <Property name="BackMaxDistance" value="60" />
+    <Property name="BackMinDistance" value="14" />
+    <Property name="BackMaxDistance" value="19" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
-    <Property name="UpMinDistance" value="2" />
-    <Property name="UpMaxDistance" value="30" />
+    <Property name="UpMinDistance" value="6" />
+    <Property name="UpMaxDistance" value="10" />
     <Property name="UpSlopeAdjust" value="0" />
     <Property name="LeftMinDistance" value="0" />
     <Property name="LeftMaxDistance" value="0" />
     <Property name="PanNear" value="3" />
-    <Property name="PanFar" value="-8" />
+    <Property name="PanFar" value="4" />
     <Property name="UpGamma" value="1.5" />
     <Property name="HorizRotationAngleMaxPerFrame" value="0" />
     <Property name="VertRotationSpeed" value="1" />
@@ -2599,7 +2602,7 @@
     <Property name="VertRotationOffsetMinAngle" value="-90" />
     <Property name="VertRotationOffsetMaxAngle" value="90" />
     <Property name="VertStartLookingDown" value="False" />
-    <Property name="DistSpeed" value="0.4" />
+    <Property name="DistSpeed" value="0.1" />
     <Property name="DistSpeedOutsideMainRange" value="1.5" />
     <Property name="DistStiffness" value="2" />
     <Property name="SpringSpeed" value="0" />
@@ -2615,8 +2618,8 @@
     <Property name="MinClose" value="0.1" />
     <Property name="MaxClose" value="2" />
     <Property name="CloseSpring" value="6" />
-    <Property name="LookStickLimitAngle" value="80" />
-    <Property name="EnableCollisionDetection" value="True" />
+    <Property name="LookStickLimitAngle" value="40" />
+    <Property name="EnableCollisionDetection" value="False" />
     <Property name="NumLRProbes" value="10" />
     <Property name="LRProbesRange" value="30" />
     <Property name="LRProbesRadius" value="0.2" />
@@ -2635,26 +2638,26 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="ScienceShipFollowCam" value="GcCameraFollowSettings.xml"> <!-- starshipcam -->
+  <Property name="ScienceShipFollowCam" value="GcCameraFollowSettings.xml"> <!-- SHIP CAM -->
     <Property name="Name" value="SCIENCE" />
     <Property name="MinSpeed" value="10" />
-    <Property name="SpeedRange" value="50" />
+    <Property name="SpeedRange" value="3000" />
     <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="6" /> 
+    <Property name="OffsetY" value="3" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="6.5" />
-    <Property name="BackMinDistance" value="40" />
-    <Property name="BackMaxDistance" value="60" />
+    <Property name="BackMinDistance" value="14" />
+    <Property name="BackMaxDistance" value="19" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
-    <Property name="UpMinDistance" value="2" />
-    <Property name="UpMaxDistance" value="30" />
+    <Property name="UpMinDistance" value="6" />
+    <Property name="UpMaxDistance" value="10" />
     <Property name="UpSlopeAdjust" value="0" />
     <Property name="LeftMinDistance" value="0" />
     <Property name="LeftMaxDistance" value="0" />
     <Property name="PanNear" value="-1" />
-    <Property name="PanFar" value="-8" />
+    <Property name="PanFar" value="-6" />
     <Property name="UpGamma" value="1.5" />
     <Property name="HorizRotationAngleMaxPerFrame" value="0" />
     <Property name="VertRotationSpeed" value="1" />
@@ -2664,7 +2667,7 @@
     <Property name="VertRotationOffsetMinAngle" value="-90" />
     <Property name="VertRotationOffsetMaxAngle" value="90" />
     <Property name="VertStartLookingDown" value="False" />
-    <Property name="DistSpeed" value="0.4" />
+    <Property name="DistSpeed" value="0.1" />
     <Property name="DistSpeedOutsideMainRange" value="1.5" />
     <Property name="DistStiffness" value="2" />
     <Property name="SpringSpeed" value="0" />
@@ -2680,8 +2683,8 @@
     <Property name="MinClose" value="0.1" />
     <Property name="MaxClose" value="2" />
     <Property name="CloseSpring" value="6" />
-    <Property name="LookStickLimitAngle" value="80" />
-    <Property name="EnableCollisionDetection" value="True" />
+    <Property name="LookStickLimitAngle" value="40" />
+    <Property name="EnableCollisionDetection" value="False" />
     <Property name="NumLRProbes" value="10" />
     <Property name="LRProbesRange" value="30" />
     <Property name="LRProbesRadius" value="0.2" />
@@ -2700,26 +2703,26 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="AlienShipFollowCam" value="GcCameraFollowSettings.xml"> <!-- starshipcam -->
+  <Property name="AlienShipFollowCam" value="GcCameraFollowSettings.xml"> <!-- SHIP CAM -->
     <Property name="Name" value="ALIENSHIP" />
     <Property name="MinSpeed" value="10" />
-    <Property name="SpeedRange" value="50" />
+    <Property name="SpeedRange" value="2000" />
     <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="6" /> 
+    <Property name="OffsetY" value="3" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="6" />
-    <Property name="BackMinDistance" value="40" />
-    <Property name="BackMaxDistance" value="60" />
+    <Property name="BackMinDistance" value="14" />
+    <Property name="BackMaxDistance" value="19" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
-    <Property name="UpMinDistance" value="2" />
-    <Property name="UpMaxDistance" value="30" />
+    <Property name="UpMinDistance" value="6" />
+    <Property name="UpMaxDistance" value="10" />
     <Property name="UpSlopeAdjust" value="0" />
     <Property name="LeftMinDistance" value="0" />
     <Property name="LeftMaxDistance" value="0" />
     <Property name="PanNear" value="5" />
-    <Property name="PanFar" value="-8" />
+    <Property name="PanFar" value="6" />
     <Property name="UpGamma" value="1.5" />
     <Property name="HorizRotationAngleMaxPerFrame" value="0" />
     <Property name="VertRotationSpeed" value="1" />
@@ -2729,7 +2732,7 @@
     <Property name="VertRotationOffsetMinAngle" value="-30" />
     <Property name="VertRotationOffsetMaxAngle" value="30" />
     <Property name="VertStartLookingDown" value="False" />
-    <Property name="DistSpeed" value="0.4" />
+    <Property name="DistSpeed" value="0.1" />
     <Property name="DistSpeedOutsideMainRange" value="1.5" />
     <Property name="DistStiffness" value="2" />
     <Property name="SpringSpeed" value="0" />
@@ -2745,8 +2748,8 @@
     <Property name="MinClose" value="0.1" />
     <Property name="MaxClose" value="1" />
     <Property name="CloseSpring" value="6" />
-    <Property name="LookStickLimitAngle" value="80" />
-    <Property name="EnableCollisionDetection" value="True" />
+    <Property name="LookStickLimitAngle" value="40" />
+    <Property name="EnableCollisionDetection" value="False" />
     <Property name="NumLRProbes" value="10" />
     <Property name="LRProbesRange" value="30" />
     <Property name="LRProbesRadius" value="0.2" />
@@ -2992,7 +2995,7 @@
   <Property name="ShipCamRollAmountMax" value="-0.03" />
   <Property name="ShipCamRollSpeedScaler" value="300" />
   <Property name="ShipCamAimFOV" value="40" />
-  <Property name="MouseSensitivity" value="0.25" />
+  <Property name="MouseSensitivity" value="1" />
   <Property name="ModelViewRotateSpeed" value="2" />
   <Property name="ModelViewMouseRotateSpeed" value="1.6" />
   <Property name="ModelViewMouseRotateSnapStrength" value="0.94" />
@@ -3691,7 +3694,7 @@
       <Property name="TimeStart" value="0" />
       <Property name="TotalTime" value="0.5" />
       <Property name="DecayRate" value="1" />
-      <Property name="StrengthSale" value="1" />
+      <Property name="StrengthSale" value="2.2" />
       <Property name="ThirdPersonDamp" value="0.5" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
@@ -5531,7 +5534,7 @@
     <Property value="Vector3f.xml">
       <Property name="x" value="0" />
       <Property name="y" value="1.4" />
-      <Property name="z" value="-0.3" />
+      <Property name="z" value="-0.25" />
     </Property>
     <Property value="Vector3f.xml">
       <Property name="x" value="0" />
@@ -5574,14 +5577,15 @@
     <Property name="y" value="2.45" />
     <Property name="z" value="0.5" />
   </Property>
-  <Property name="FirstPersonFoV" value="100" />
-  <Property name="ThirdPersonFoV" value="100" />
+  <Property name="CloseFactorSpring" value="0.3" />
+  <Property name="FirstPersonFoV" value="75" />
+  <Property name="ThirdPersonFoV" value="70" />
   <Property name="CombatFoV" value="65" />
-  <Property name="FirstPersonZoom1FoV" value="60" />
+  <Property name="FirstPersonZoom1FoV" value="40" />
   <Property name="FirstPersonZoom2FoV" value="15" />
   <Property name="ShipFoVMin" value="75" />
   <Property name="ShipFoVMin2" value="75" />
-  <Property name="ShipFoVMax" value="100" />
+  <Property name="ShipFoVMax" value="90" />
   <Property name="ShipWarpFoV" value="70" />
   <Property name="ShipFoVMin3rdPerson" value="95" />
   <Property name="ShipFoVMax3rdPerson" value="115" />
@@ -5592,6 +5596,28 @@
   <Property name="FoVSpring" value="0.2" />
   <Property name="FoVSpringSights" value="0.05" />
   <Property name="FoVAdjust" value="1" />
+  <Property name="CreatureInteractionInterpolateDuringHold" value="True" />
+  <Property name="CreatureSizeMin" value="0.5" />
+  <Property name="CreatureSizeMax" value="25" />
+  <Property name="CreatureInteractionMinDist" value="4" />
+  <Property name="CreatureInteractionPushCameraDownForCreatureBiggerThan" value="2" />
+  <Property name="CreatureInteractionPushCameraDownAmount" value="12" />
+  <Property name="CreatureInteractionDistMulMin" value="0.8" />
+  <Property name="CreatureInteractionDistMulMax" value="1.5" />
+  <Property name="CreatureInteractionYawMin" value="10" />
+  <Property name="CreatureInteractionYawMax" value="30" />
+  <Property name="CreatureInteractionPitchSplit" value="-1" />
+  <Property name="CreatureInteractionPitchMin" value="-35" />
+  <Property name="CreatureInteractionPitchMax" value="34" />
+  <Property name="CreatureInteractionMaxDownhillPitchAroundPlayer" value="5" />
+  <Property name="CreatureInteractionDownhillPitchTransfer" value="0.6" />
+  <Property name="CreatureInteractionMaxUphillPitchAroundPlayer" value="15" />
+  <Property name="CreatureInteractionUphillPitchTransfer" value="0.7" />
+  <Property name="CreatureInteractionFoVSplitSize" value="1" />
+  <Property name="CreatureInteractionFoVMin" value="1" />
+  <Property name="CreatureInteractionFoVMax" value="1" />
+  <Property name="CreatureInteractionCamSpring" value="1.5" />
+  <Property name="CreatureInteractionHeadHeightSpring" value="1" />
   <Property name="FollowDrawCamProbes" value="False" />
   <Property name="AmbientCameraAnimations" value="GcCameraAnimationData.xml">
     <Property name="CameraAnimation" value="TkModelResource.xml">
@@ -5680,61 +5706,243 @@
     <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
     <Property name="LookForFocusInMasterModel" value="False" />
   </Property>
+  <Property name="CameraCreatureCustomiseDefault" value="TkModelRendererData.xml">
+    <Property name="Camera" value="TkModelRendererCameraData.xml">
+      <Property name="Distance" value="2.8" />
+      <Property name="Offset" value="Vector3f.xml">
+        <Property name="x" value="0.65" />
+        <Property name="y" value="-0.15" />
+        <Property name="z" value="0" />
+      </Property>
+      <Property name="Roll" value="0" />
+      <Property name="Pitch" value="10" />
+      <Property name="Rotate" value="180" />
+      <Property name="LightPitch" value="45" />
+      <Property name="LightRotate" value="45" />
+      <Property name="Wander" value="TkCameraWanderData.xml">
+        <Property name="CamWander" value="False" />
+        <Property name="CamWanderPhase" value="0.003" />
+        <Property name="CamWanderAmplitude" value="0.5" />
+      </Property>
+    </Property>
+    <Property name="Fov" value="30" />
+    <Property name="AspectRatio" value="1.7777" />
+    <Property name="ThumbnailMode" value="None" />
+    <Property name="FocusType" value="ResourceBounds" />
+    <Property name="FocusLocator" value="" />
+    <Property name="FocusOffset" value="Vector3f.xml">
+      <Property name="x" value="0" />
+      <Property name="y" value="0" />
+      <Property name="z" value="0" />
+    </Property>
+    <Property name="FocusInterpTime" value="0" />
+    <Property name="BlendInTime" value="0.8" />
+    <Property name="BlendInOffset" value="0" />
+    <Property name="Anim" value="" />
+    <Property name="HeightOffset" value="0.005" />
+    <Property name="UsePlayerCameraInHmd" value="True" />
+    <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
+    <Property name="LookForFocusInMasterModel" value="False" />
+  </Property>
+  <Property name="CameraCreatureCustomiseLeft" value="TkModelRendererData.xml">
+    <Property name="Camera" value="TkModelRendererCameraData.xml">
+      <Property name="Distance" value="1.9" />
+      <Property name="Offset" value="Vector3f.xml">
+        <Property name="x" value="0.4" />
+        <Property name="y" value="-0.12" />
+        <Property name="z" value="0" />
+      </Property>
+      <Property name="Roll" value="0" />
+      <Property name="Pitch" value="15" />
+      <Property name="Rotate" value="130" />
+      <Property name="LightPitch" value="45" />
+      <Property name="LightRotate" value="45" />
+      <Property name="Wander" value="TkCameraWanderData.xml">
+        <Property name="CamWander" value="False" />
+        <Property name="CamWanderPhase" value="0.003" />
+        <Property name="CamWanderAmplitude" value="0.5" />
+      </Property>
+    </Property>
+    <Property name="Fov" value="30" />
+    <Property name="AspectRatio" value="1.7777" />
+    <Property name="ThumbnailMode" value="None" />
+    <Property name="FocusType" value="ResourceBounds" />
+    <Property name="FocusLocator" value="" />
+    <Property name="FocusOffset" value="Vector3f.xml">
+      <Property name="x" value="0" />
+      <Property name="y" value="0" />
+      <Property name="z" value="0" />
+    </Property>
+    <Property name="FocusInterpTime" value="0" />
+    <Property name="BlendInTime" value="0.8" />
+    <Property name="BlendInOffset" value="0" />
+    <Property name="Anim" value="" />
+    <Property name="HeightOffset" value="0.005" />
+    <Property name="UsePlayerCameraInHmd" value="True" />
+    <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
+    <Property name="LookForFocusInMasterModel" value="False" />
+  </Property>
+  <Property name="CameraCreatureCustomiseRight" value="TkModelRendererData.xml">
+    <Property name="Camera" value="TkModelRendererCameraData.xml">
+      <Property name="Distance" value="1.9" />
+      <Property name="Offset" value="Vector3f.xml">
+        <Property name="x" value="0.46" />
+        <Property name="y" value="-0.12" />
+        <Property name="z" value="0" />
+      </Property>
+      <Property name="Roll" value="0" />
+      <Property name="Pitch" value="15" />
+      <Property name="Rotate" value="-104" />
+      <Property name="LightPitch" value="45" />
+      <Property name="LightRotate" value="45" />
+      <Property name="Wander" value="TkCameraWanderData.xml">
+        <Property name="CamWander" value="False" />
+        <Property name="CamWanderPhase" value="0.003" />
+        <Property name="CamWanderAmplitude" value="0.5" />
+      </Property>
+    </Property>
+    <Property name="Fov" value="30" />
+    <Property name="AspectRatio" value="1.7777" />
+    <Property name="ThumbnailMode" value="None" />
+    <Property name="FocusType" value="ResourceBounds" />
+    <Property name="FocusLocator" value="" />
+    <Property name="FocusOffset" value="Vector3f.xml">
+      <Property name="x" value="0" />
+      <Property name="y" value="0" />
+      <Property name="z" value="0" />
+    </Property>
+    <Property name="FocusInterpTime" value="0" />
+    <Property name="BlendInTime" value="0.8" />
+    <Property name="BlendInOffset" value="0" />
+    <Property name="Anim" value="" />
+    <Property name="HeightOffset" value="0.005" />
+    <Property name="UsePlayerCameraInHmd" value="True" />
+    <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
+    <Property name="LookForFocusInMasterModel" value="False" />
+  </Property>
+  <Property name="CameraCreatureCustomiseFront" value="TkModelRendererData.xml">
+    <Property name="Camera" value="TkModelRendererCameraData.xml">
+      <Property name="Distance" value="1.5" />
+      <Property name="Offset" value="Vector3f.xml">
+        <Property name="x" value="0.43" />
+        <Property name="y" value="-0.18" />
+        <Property name="z" value="0" />
+      </Property>
+      <Property name="Roll" value="0" />
+      <Property name="Pitch" value="2.960007" />
+      <Property name="Rotate" value="183.040161" />
+      <Property name="LightPitch" value="45" />
+      <Property name="LightRotate" value="45" />
+      <Property name="Wander" value="TkCameraWanderData.xml">
+        <Property name="CamWander" value="False" />
+        <Property name="CamWanderPhase" value="0.003" />
+        <Property name="CamWanderAmplitude" value="0.5" />
+      </Property>
+    </Property>
+    <Property name="Fov" value="30" />
+    <Property name="AspectRatio" value="1.7777" />
+    <Property name="ThumbnailMode" value="None" />
+    <Property name="FocusType" value="ResourceBounds" />
+    <Property name="FocusLocator" value="" />
+    <Property name="FocusOffset" value="Vector3f.xml">
+      <Property name="x" value="0" />
+      <Property name="y" value="0" />
+      <Property name="z" value="0" />
+    </Property>
+    <Property name="FocusInterpTime" value="0" />
+    <Property name="BlendInTime" value="0.8" />
+    <Property name="BlendInOffset" value="0" />
+    <Property name="Anim" value="" />
+    <Property name="HeightOffset" value="0.005" />
+    <Property name="UsePlayerCameraInHmd" value="True" />
+    <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
+    <Property name="LookForFocusInMasterModel" value="False" />
+  </Property>
+  <Property name="CameraCreatureCustomiseBack" value="TkModelRendererData.xml">
+    <Property name="Camera" value="TkModelRendererCameraData.xml">
+      <Property name="Distance" value="1.5" />
+      <Property name="Offset" value="Vector3f.xml">
+        <Property name="x" value="0.63" />
+        <Property name="y" value="-0.18" />
+        <Property name="z" value="0" />
+      </Property>
+      <Property name="Roll" value="0" />
+      <Property name="Pitch" value="21.9600067" />
+      <Property name="Rotate" value="42.04016" />
+      <Property name="LightPitch" value="45" />
+      <Property name="LightRotate" value="45" />
+      <Property name="Wander" value="TkCameraWanderData.xml">
+        <Property name="CamWander" value="False" />
+        <Property name="CamWanderPhase" value="0.003" />
+        <Property name="CamWanderAmplitude" value="0.5" />
+      </Property>
+    </Property>
+    <Property name="Fov" value="30" />
+    <Property name="AspectRatio" value="1.7777" />
+    <Property name="ThumbnailMode" value="None" />
+    <Property name="FocusType" value="ResourceBounds" />
+    <Property name="FocusLocator" value="" />
+    <Property name="FocusOffset" value="Vector3f.xml">
+      <Property name="x" value="0" />
+      <Property name="y" value="0" />
+      <Property name="z" value="0" />
+    </Property>
+    <Property name="FocusInterpTime" value="0" />
+    <Property name="BlendInTime" value="0.8" />
+    <Property name="BlendInOffset" value="0" />
+    <Property name="Anim" value="" />
+    <Property name="HeightOffset" value="0.005" />
+    <Property name="UsePlayerCameraInHmd" value="True" />
+    <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
+    <Property name="LookForFocusInMasterModel" value="False" />
+  </Property>
   <Property name="SavedCameraPositions">
     <Property value="TkPhysRelVectorData.xml">
-      <Property name="Local" value="Vector4f.xml">
+      <Property name="Local" value="Vector3f.xml">
         <Property name="x" value="32.92964" />
         <Property name="y" value="128.3922" />
         <Property name="z" value="963.1735" />
-        <Property name="t" value="0" />
       </Property>
-      <Property name="Offset" value="Vector4f.xml">
+      <Property name="Offset" value="Vector3f.xml">
         <Property name="x" value="985088" />
         <Property name="y" value="-36864" />
         <Property name="z" value="-817152" />
-        <Property name="t" value="0" />
       </Property>
     </Property>
     <Property value="TkPhysRelVectorData.xml">
-      <Property name="Local" value="Vector4f.xml">
+      <Property name="Local" value="Vector3f.xml">
         <Property name="x" value="32.92964" />
         <Property name="y" value="128.3922" />
         <Property name="z" value="963.1735" />
-        <Property name="t" value="0" />
       </Property>
-      <Property name="Offset" value="Vector4f.xml">
+      <Property name="Offset" value="Vector3f.xml">
         <Property name="x" value="985088" />
         <Property name="y" value="-36864" />
         <Property name="z" value="-817152" />
-        <Property name="t" value="0" />
       </Property>
     </Property>
     <Property value="TkPhysRelVectorData.xml">
-      <Property name="Local" value="Vector4f.xml">
+      <Property name="Local" value="Vector3f.xml">
         <Property name="x" value="0" />
         <Property name="y" value="0" />
         <Property name="z" value="0" />
-        <Property name="t" value="0" />
       </Property>
-      <Property name="Offset" value="Vector4f.xml">
+      <Property name="Offset" value="Vector3f.xml">
         <Property name="x" value="0" />
         <Property name="y" value="0" />
         <Property name="z" value="0" />
-        <Property name="t" value="0" />
       </Property>
     </Property>
     <Property value="TkPhysRelVectorData.xml">
-      <Property name="Local" value="Vector4f.xml">
+      <Property name="Local" value="Vector3f.xml">
         <Property name="x" value="0" />
         <Property name="y" value="0" />
         <Property name="z" value="0" />
-        <Property name="t" value="0" />
       </Property>
-      <Property name="Offset" value="Vector4f.xml">
+      <Property name="Offset" value="Vector3f.xml">
         <Property name="x" value="0" />
         <Property name="y" value="0" />
         <Property name="z" value="0" />
-        <Property name="t" value="0" />
       </Property>
     </Property>
   </Property>

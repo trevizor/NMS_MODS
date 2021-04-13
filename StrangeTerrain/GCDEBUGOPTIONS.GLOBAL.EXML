@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.21.0)-->
+<!--File created using MBINCompiler version (3.35.0)-->
 <Data template="GcDebugOptions">
   <Property name="ForceScanEventsToGoPrime" value="False" />
-  <Property name="SkipAbandonedFreighterUnlocking" value="True" />
+  <Property name="SkipAbandonedFreighterUnlocking" value="False" />
   <Property name="AllowSavingOnAbandonedFreighters" value="False" />
   <Property name="DisableAbandonedFreighterRoomsOptimisation" value="False" />
   <Property name="OverrideAbandonedFreighterSeed" value="0" />
@@ -14,11 +14,11 @@
   <Property name="NewSaveGameMode" value="GcGameMode.xml">
     <Property name="PresetGameMode" value="Unspecified" />
   </Property>
-  <Property name="SkipPlanetDiscoverOnBoot" value="True" />
+  <Property name="SkipPlanetDiscoverOnBoot" value="False" />
   <Property name="VideoCaptureMode" value="False" />
   <Property name="GodMode" value="False" />
   <Property name="TakeNoDamage" value="False" />
-  <Property name="AlwaysHaveFocus" value="True" />
+  <Property name="AlwaysHaveFocus" value="False" />
   <Property name="DisableVibration" value="False" />
   <Property name="DebugGalaxyMapInQuickMenu" value="False" />
   <Property name="MapWarpCheckIgnoreFuel" value="False" />
@@ -26,7 +26,7 @@
   <Property name="EverythingIsFree" value="False" />
   <Property name="EverythingIsKnown" value="False" />
   <Property name="EverythingIsStar" value="False" />
-  <Property name="InfiniteStamina" value="True" />
+  <Property name="InfiniteStamina" value="False" />
   <Property name="DisableHazards" value="False" />
   <Property name="IgnoreMissionRank" value="False" />
   <Property name="CanLeaveDialogs" value="False" />
@@ -34,7 +34,7 @@
   <Property name="UseScreenEffects" value="True" />
   <Property name="UseGunImpactEffect" value="True" />
   <Property name="RenderCreatureDetails" value="False" />
-  <Property name="SkipTutorial" value="False" />
+  <Property name="SkipTutorial" value="True" />
   <Property name="IgnoreFreighterSpawnWarpRequirement" value="False" />
   <Property name="MaximumFreighterSpawns" value="False" />
   <Property name="DisableSaveSlotSorting" value="False" />
@@ -50,6 +50,23 @@
   <Property name="AlwaysAllowShipOperations" value="False" />
   <Property name="AlwaysAllowVehicleOperations" value="False" />
   <Property name="AlwaysAllowFreighterInventoryAccess" value="False" />
+  <Property name="SeasonalDataOverrideFile" value="" />
+  <Property name="UnlockAllSeasonRewards" value="False" />
+  <Property name="UnlockAllTwitchRewards" value="False" />
+  <Property name="DebugTwitchRewards">
+    <Property value="NMSString0x100.xml">
+      <Property name="Value" value="" />
+    </Property>
+    <Property value="NMSString0x100.xml">
+      <Property name="Value" value="" />
+    </Property>
+    <Property value="NMSString0x100.xml">
+      <Property name="Value" value="" />
+    </Property>
+    <Property value="NMSString0x100.xml">
+      <Property name="Value" value="" />
+    </Property>
+  </Property>
   <Property name="UseDebugScreenSettings" value="False" />
   <Property name="ScreenWidth" value="1920" />
   <Property name="ScreenHeight" value="1080" />
@@ -104,7 +121,10 @@
   <Property name="SpecialsShop" value="False" />
   <Property name="MultiplePlayerFreightersInASystem" value="False" />
   <Property name="ForceNexusInQuickMenu" value="False" />
-  <Property name="MissionSurveyEnabled" value="False" />
+  <Property name="MissionSurveyEnabled" value="True" />
+  <Property name="SeasonalModeEnabled" value="True" />
+  <Property name="AllSeasonMilestonesShowComplete" value="False" />
+  <Property name="HazardsSpawnGifts" value="False" />
   <Property name="MouseLookEnabled" value="True" />
   <Property name="StartPaused" value="False" />
   <Property name="DisableDebugControls" value="False" />
@@ -319,13 +339,13 @@
   <Property name="ForceStarTypeTo" value="GcGalaxyStarTypes.xml">
     <Property name="GalaxyStarType" value="Red" />
   </Property>
-  <Property name="ForceBiome" value="True" />
+  <Property name="ForceBiome" value="False" />
   <Property name="ForceBiomeTo" value="GcBiomeType.xml">
-    <Property name="Biome" value="Lush" />
+    <Property name="Biome" value="Barren" />
   </Property>
   <Property name="ForceScreenFilter" value="False" />
   <Property name="ForceScreenFilterTo" value="GcScreenFilters.xml">
-    <Property name="ScreenFilters" value="Default" />
+    <Property name="ScreenFilter" value="Solarise" />
   </Property>
   <Property name="ForceBiomeSubTypeTo" value="GcBiomeSubType.xml">
     <Property name="BiomeSubType" value="None" />
@@ -334,7 +354,7 @@
   <Property name="ForceBuildingRaceTo" value="GcAlienRace.xml">
     <Property name="AlienRace" value="Traders" />
   </Property>
-  <Property name="ForceLifeLevel" value="False" />
+  <Property name="ForceLifeLevel" value="Full" />
   <Property name="ForceLifeLevelTo" value="GcPlanetLife.xml">
     <Property name="LifeSetting" value="Full" />
   </Property>
@@ -352,7 +372,7 @@
   </Property>
   <Property name="ForceTerrainType" value="True" />
   <Property name="ForceTerrainTypeTo" value="TkVoxelGeneratorSettingsTypes.xml">
-    <Property name="TerrainSettings" value="HugeArches" />
+    <Property name="TerrainSettings" value="Craters" />
   </Property>
   <Property name="ForcePrimeTerrain" value="False" />
   <Property name="ForceBinaryStar" value="False" />
@@ -360,9 +380,9 @@
   <Property name="ForceAnomalyTo" value="GcGalaxyStarAnomaly.xml">
     <Property name="GalaxyStarAnomaly" value="None" />
   </Property>
-  <Property name="ForcePlanetsToHaveWater" value="False" />
+  <Property name="ForcePlanetsToHaveWater" value="True" />
   <Property name="ForceWaterObjectFileIndex" value="-1" />
-  <Property name="ForceSkyColourIndex" value="-1" />
+  <Property name="ForceSkyColourIndex" value="0" />
   <Property name="ForceWaterColourIndex" value="-1" />
   <Property name="ForceGrassColourIndex" value="-1" />
   <Property name="ModifyPlanetsInInitialSystems" value="True" />
@@ -387,6 +407,7 @@
   <Property name="MaxFrameRate" value="150" />
   <Property name="DisableBaseBuilding" value="False" />
   <Property name="DisableBaseBuildingLimits" value="False" />
+  <Property name="AllowGlobalPartSnapping" value="False" />
   <Property name="BaseDownloadTimeout" value="40" />
   <Property name="DisableBasePowerRequirements" value="False" />
   <Property name="EnableBaseMovingOption" value="False" />
@@ -395,10 +416,10 @@
   <Property name="BaseAdmin" value="False" />
   <Property name="BaseServerPlatform" value="pc" />
   <Property name="BasePayloadMultiplier" value="3" />
-  <Property name="CrossPlatformFeaturedBases" value="False" />
+  <Property name="CrossPlatformFeaturedBases" value="True" />
   <Property name="ShowMissionIdInTitle" value="False" />
   <Property name="ToolkitGlobals" value="TkGlobals.xml">
-    <Property name="AssertsLevels" value="Enabled" />
+    <Property name="AssertsLevel" value="Enabled" />
     <Property name="DefaultSelectIgnoreAsserts" value="False" />
     <Property name="EnabledChannels" value="Default, Note, Error, Warning, Info, Alt, AltWarn, AltError" />
     <Property name="IncludeLogFilter" value="" />

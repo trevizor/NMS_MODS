@@ -758,6 +758,7 @@
   <Property name="MaximumHorizontalOffsetVR" value="0.65" />
   <Property name="CrouchHeightToDisableLegBlendingVR" value="-0.1" />
   <Property name="UseEnergy" value="True" />
+  <Property name="UseHazardProtection" value="True" />
   <Property name="InventoryDamage" value="True" />
   <Property name="NeverPreyedOn" value="False" />
   <Property name="PermanantFire" value="False" />
@@ -990,6 +991,8 @@
     <Property name="FrontShield" value="1" />
     <Property name="TerrainEdit" value="1" />
     <Property name="SunLaser" value="1" />
+    <Property name="Spawner" value="1" />
+    <Property name="SpawnerAlt" value="1" />
     <Property name="SoulLaser" value="1" />
     <Property name="Flamethrower" value="1" />
   </Property>
@@ -1025,6 +1028,12 @@
       <Property name="Value" value="" />
     </Property>
     <Property name="SunLaser" value="NMSString0x10.xml">
+      <Property name="Value" value="" />
+    </Property>
+    <Property name="Spawner" value="NMSString0x10.xml">
+      <Property name="Value" value="" />
+    </Property>
+    <Property name="SpawnerAlt" value="NMSString0x10.xml">
       <Property name="Value" value="" />
     </Property>
     <Property name="SoulLaser" value="NMSString0x10.xml">
@@ -1068,6 +1077,12 @@
     <Property name="SunLaser" value="NMSString0x10.xml">
       <Property name="Value" value="" />
     </Property>
+    <Property name="Spawner" value="NMSString0x10.xml">
+      <Property name="Value" value="" />
+    </Property>
+    <Property name="SpawnerAlt" value="NMSString0x10.xml">
+      <Property name="Value" value="" />
+    </Property>
     <Property name="SoulLaser" value="NMSString0x10.xml">
       <Property name="Value" value="" />
     </Property>
@@ -1087,6 +1102,8 @@
     <Property name="FrontShield" value="0" />
     <Property name="TerrainEdit" value="0" />
     <Property name="SunLaser" value="0" />
+    <Property name="Spawner" value="0" />
+    <Property name="SpawnerAlt" value="0" />
     <Property name="SoulLaser" value="0" />
     <Property name="Flamethrower" value="0" />
   </Property>
@@ -1501,7 +1518,7 @@
   <Property name="FullClipReloadSpeedMultiplier" value="2" />
   <Property name="ReloadTapButtonSpeedIncrease" value="1" />
   <Property name="FootDustEffect" value="FOOTFROZEN" />
-  <Property name="FootDustScale" value="1" />
+  <Property name="FootDustScale" value="0.5" />
   <Property name="ClingBrakeMultiplier" value="1" />
   <Property name="ClingAngleThreshold" value="50" />
   <Property name="ClingSpeedThreshold" value="0.8" />

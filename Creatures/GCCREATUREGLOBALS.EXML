@@ -8,6 +8,7 @@
   <Property name="CreatureInteractionRangeBoostSmall" value="1" />
   <Property name="CreatureInteractionRangeBoostRun" value="2" />
   <Property name="CreatureInteractionRangeBoostSprint" value="3.5" />
+  <Property name="CreatureInteractionRangeReducePredator" value="0.3" />
   <Property name="CreatureInteractWithoutRaycasts" value="True" />
   <Property name="CreatureInteractBaseRange" value="5" />
   <Property name="PetInteractBaseRange" value="8" />
@@ -592,7 +593,7 @@
   <Property name="LookMaxYawStatic" value="140" />
   <Property name="LookPitchAtMaxYaw" value="0.2" />
   <Property name="LookMaxPitchWhenMoving" value="0.25" />
-  <Property name="LookRollAtMaxYaw" value="0.8" />
+  <Property name="LookRollAtMaxYaw" value="0.2" />
   <Property name="LookRollWhenMoving" value="0.6" />
   <Property name="FootPlantError" value="0.9" />
   <Property name="RecoverHealthTime" value="10" />
@@ -700,7 +701,7 @@
   <Property name="HeightLookAhead" value="2" />
   <Property name="MaxHeightTime" value="3" />
   <Property name="PlayerBirdDistance" value="1" />
-  <Property name="FishSpeedMin" value="0.2" />
+  <Property name="FishSpeedMin" value="0.1" />
   <Property name="FishSpeedMax" value="5" />
   <Property name="FishSwimMaxAcceleration" value="0.3" />
   <Property name="AlertDistance" value="5" />
@@ -914,11 +915,11 @@
   <Property name="MaxRagdollsBeforeDespawnOffscreen" value="12" />
   <Property name="MaxRagdollsBeforeDespawnOnscreen" value="18" />
   <Property name="RidingTurnRadiusMultiplier" value="1" />
-  <Property name="TurnRadiusMultiplier" value="8" />
-  <Property name="PredatorTurnRadiusMultiplier" value="1" />
-  <Property name="MaxTurnRadius" value="40" />
-  <Property name="TurnSlowAreaCos" value="0.75" />
-  <Property name="BadTurnPercent" value="0.2" />
+  <Property name="TurnRadiusMultiplier" value="4" />
+  <Property name="PredatorTurnRadiusMultiplier" value="0.5" />
+  <Property name="MaxTurnRadius" value="200" />
+  <Property name="TurnSlowAreaCos" value="0.5" />
+  <Property name="BadTurnPercent" value="0.1" />
   <Property name="BadTurnWeight" value="0" />
   <Property name="MinScaleForNavMap" value="1" />
   <Property name="ImpassabilityBrakeTime" value="0.2" />
@@ -1118,8 +1119,8 @@
   <Property name="PetEggHatchScaleChange" value="0.1" />
   <Property name="PetEggHatchTraitChange" value="0.1" />
   <Property name="PetEggHatchColourChangeChance" value="0.3" />
-  <Property name="PetForceBehaviour" value="GcBiomeType.xml">
-    <Property name="Biome" value="Lush" />
+  <Property name="PetForceBehaviour" value="GcPetBehaviours.xml">
+    <Property name="PetBehaviour" value="None" />
   </Property>
   <Property name="PetMaxSizeOffPlanet" value="1" />
   <Property name="PetTeleportDistOffPlanet" value="30" />
@@ -1165,6 +1166,8 @@
   <Property name="PetEggsplosionEffect" value="EGGSHELLDEBRIS" />
   <Property name="RidingPositionTest" value="False" />
   <Property name="PetAnimTest" value="False" />
+  <Property name="UsePetTeleportEffect" value="True" />
+  <Property name="PetTeleportEffectTime" value="1" />
   <Property name="PetThrowArcRange" value="70" />
   <Property name="PetThrowArcColour" value="Colour.xml">
     <Property name="R" value="1" />
@@ -1176,6 +1179,15 @@
   <Property name="PetOrderMaxRange" value="60" />
   <Property name="PetAccessoryMoodDisplayThreshold" value="0.5" />
   <Property name="PetAccessoryStateInterval" value="10" />
+  <Property name="PetInteractionLightHeight" value="0.4" />
+  <Property name="PetInteractionLightIntensityMin" value="0" />
+  <Property name="PetInteractionLightIntensityMax" value="0" />
+  <Property name="PetInteractionLightColour" value="Colour.xml">
+    <Property name="R" value="1" />
+    <Property name="G" value="0.923" />
+    <Property name="B" value="0.574" />
+    <Property name="A" value="1" />
+  </Property>
   <Property name="AnimChangeCoolDown" value="0.25" />
   <Property name="GroupRunProbability" value="0.8" />
   <Property name="GroupBabyRunProbability" value="0.8" />
@@ -1335,7 +1347,7 @@
     </Property>
     <Property value="GcCreatureSubstanceList.xml">
       <Property name="CreatureType" value="LARGEBUTTERFLY" />
-      <Property name="Item" value="FOOD_M_BEETLE" />
+      <Property name="Item" value="FOOD_M_FLYER" />
     </Property>
     <Property value="GcCreatureSubstanceList.xml">
       <Property name="CreatureType" value="DRILL" />
@@ -1359,11 +1371,7 @@
     </Property>
     <Property value="GcCreatureSubstanceList.xml">
       <Property name="CreatureType" value="PROTOFLYER" />
-      <Property name="Item" value="FOOD_M_BALL" />
-    </Property>
-    <Property value="GcCreatureSubstanceList.xml">
-      <Property name="CreatureType" value="MOLE" />
-      <Property name="Item" value="FOOD_M_MEAT" />
+      <Property name="Item" value="FOOD_M_BEETLE" />
     </Property>
     <Property value="GcCreatureSubstanceList.xml">
       <Property name="CreatureType" value="ROBOTANTELOPE" />
@@ -1372,6 +1380,18 @@
     <Property value="GcCreatureSubstanceList.xml">
       <Property name="CreatureType" value="BONECAT" />
       <Property name="Item" value="FOOD_M_BONE" />
+    </Property>
+    <Property value="GcCreatureSubstanceList.xml">
+      <Property name="CreatureType" value="WEIRDCRYSTAL" />
+      <Property name="Item" value="FOOD_M_DRILL" />
+    </Property>
+    <Property value="GcCreatureSubstanceList.xml">
+      <Property name="CreatureType" value="WEIRDFLOAT" />
+      <Property name="Item" value="FOOD_M_BALL" />
+    </Property>
+    <Property value="GcCreatureSubstanceList.xml">
+      <Property name="CreatureType" value="WEIRDROLL" />
+      <Property name="Item" value="FOOD_M_BALL" />
     </Property>
   </Property>
   <Property name="HarvestingProducts">
@@ -1547,6 +1567,42 @@
       <Property name="CreatureType" value="BONECAT" />
       <Property name="Item" value="FOOD_V_BONE" />
       <Property name="Desc" value="UI_LABEL_HARVEST_BONE" />
+      <Property name="MinBlobs" value="10" />
+    </Property>
+    <Property value="GcCreatureHarvestSubstanceList.xml">
+      <Property name="CreatureType" value="PROTOFLYER" />
+      <Property name="Item" value="FOOD_V_FLYER" />
+      <Property name="Desc" value="UI_LABEL_HARVEST_GRUNT" />
+      <Property name="MinBlobs" value="10" />
+    </Property>
+    <Property value="GcCreatureHarvestSubstanceList.xml">
+      <Property name="CreatureType" value="PROTOROLLER" />
+      <Property name="Item" value="FOOD_V_BONE" />
+      <Property name="Desc" value="UI_LABEL_HARVEST_BONE" />
+      <Property name="MinBlobs" value="10" />
+    </Property>
+    <Property value="GcCreatureHarvestSubstanceList.xml">
+      <Property name="CreatureType" value="WEIRDROLL" />
+      <Property name="Item" value="FOOD_M_FIEND" />
+      <Property name="Desc" value="UI_LABEL_HARVEST_SPIDER" />
+      <Property name="MinBlobs" value="10" />
+    </Property>
+    <Property value="GcCreatureHarvestSubstanceList.xml">
+      <Property name="CreatureType" value="WEIRDFLOAT" />
+      <Property name="Item" value="FOOD_P_GLITCH" />
+      <Property name="Desc" value="UI_LABEL_HARVEST_CAT" />
+      <Property name="MinBlobs" value="10" />
+    </Property>
+    <Property value="GcCreatureHarvestSubstanceList.xml">
+      <Property name="CreatureType" value="LARGEBUTTERFLY" />
+      <Property name="Item" value="FOOD_V_FLYER" />
+      <Property name="Desc" value="UI_LABEL_HARVEST_GRUNT" />
+      <Property name="MinBlobs" value="10" />
+    </Property>
+    <Property value="GcCreatureHarvestSubstanceList.xml">
+      <Property name="CreatureType" value="FLYINGBEETLE" />
+      <Property name="Item" value="FOOD_V_FLYER" />
+      <Property name="Desc" value="UI_LABEL_HARVEST_GRUNT" />
       <Property name="MinBlobs" value="10" />
     </Property>
   </Property>

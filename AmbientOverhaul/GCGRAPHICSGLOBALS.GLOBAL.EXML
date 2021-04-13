@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.2.0)-->
+<!--File created using MBINCompiler version (3.35.0)-->
 <Data template="GcGraphicsGlobals">
   <Property name="LUTDistanceFlightMultiplier" value="2" />
   <Property name="SunLightIntensity" value="4" />
@@ -26,7 +26,7 @@
     </Property>
   </Property>
   <Property name="StormLightShaftProperties" value="GcLightShaftProperties.xml">
-    <Property name="LightShaftScattering" value="0.05" />
+    <Property name="LightShaftScattering" value="0.15" />
     <Property name="LightShaftStrength" value="1" />
     <Property name="LightShaftBottom" value="0" />
     <Property name="LightShaftTop" value="0.25" />
@@ -365,8 +365,10 @@
   <Property name="DOFFarPlaneInteraction" value="0.2" />
   <Property name="DOFFarFadeDistanceInteraction" value="2" />
   <Property name="DOFEnableBokeh" value="False" />
-  <Property name="VignetteStart" value="0.45" />
-  <Property name="VignetteEnd" value="0.85" />
+  <Property name="DOFEnableNewBokehShader" value="False" />
+  <Property name="DOFEnablePhysCamera" value="False" />
+  <Property name="VignetteStart" value="0.15" />
+  <Property name="VignetteEnd" value="0.45" />
   <Property name="VignetteStartTurnVR" value="0.15" />
   <Property name="VignetteEndTurnVR" value="0.45" />
   <Property name="VignetteStartMoveVR" value="0.15" />
@@ -475,17 +477,17 @@
   <Property name="SkySaturationMax" value="1" />
   <Property name="SkyValueMin" value="0.52" />
   <Property name="SkyValueMax" value="0.52" />
-  <Property name="SpaceScale" value="18000" /> <!-- 18000 -->
+  <Property name="SpaceScale" value="18000" />
   <Property name="SpaceMieFactor" value="0.3" />
   <Property name="SpaceSunFactor" value="20" />
   <Property name="MaxSpaceFogStrength" value="0.9" />
-  <Property name="ReflectionStrength" value="0.0500" />
+  <Property name="ReflectionStrength" value="0.05" />
   <Property name="AlphaCutoutMin" value="0.45" />
   <Property name="AlphaCutoutMax" value="0.8" />
   <Property name="WaterHueShift" value="0.1" />
   <Property name="WaterSaturation" value="0.8" />
   <Property name="WaterValue" value="0.4" />
-  <Property name="MaxParticleRenderRange" value="200" />
+  <Property name="MaxParticleRenderRange" value="300" />
   <Property name="MaxParticleRenderRangeSpace" value="10000" />
   <Property name="MotionBlurShutterSpeed" value="30" />
   <Property name="MotionBlurShutterAngle" value="180" />
@@ -628,8 +630,8 @@
   <Property name="SpaceIBLBlendDistance" value="200000" />
   <Property name="NoFocusMaxFPS" value="30" />
   <Property name="EnableCrossPipeSharing" value="True" />
-  <Property name="EnableSSR" value="False" />
-  <Property name="SharpenFilterAmount" value="0" />
+  <Property name="Enable42" value="True" />
+  <Property name="SharpenFilterAmount" value="0.4" />
   <Property name="SharpenFilterDepthFactorStart" value="2.5" />
   <Property name="SharpenFilterDepthFactorEnd" value="30" />
   <Property name="GraphicsDetailPresetsPC">
@@ -658,6 +660,8 @@
       <Property name="BaseQuality" value="TkGraphicsDetailTypes.xml">
         <Property name="GraphicDetail" value="Medium" />
       </Property>
+      <Property name="UIQuality" value="Normal" />
+      <Property name="DLSSQuality" value="Balanced" />
       <Property name="AmbientOcclusion" value="GTAO_Low" />
       <Property name="AnisotropyLevel" value="_1" />
       <Property name="AntiAliasing" value="None" />
@@ -687,6 +691,8 @@
       <Property name="BaseQuality" value="TkGraphicsDetailTypes.xml">
         <Property name="GraphicDetail" value="Medium" />
       </Property>
+      <Property name="UIQuality" value="Normal" />
+      <Property name="DLSSQuality" value="Balanced" />
       <Property name="AmbientOcclusion" value="GTAO_Medium" />
       <Property name="AnisotropyLevel" value="_2" />
       <Property name="AntiAliasing" value="TAA" />
@@ -716,6 +722,8 @@
       <Property name="BaseQuality" value="TkGraphicsDetailTypes.xml">
         <Property name="GraphicDetail" value="High" />
       </Property>
+      <Property name="UIQuality" value="Normal" />
+      <Property name="DLSSQuality" value="Balanced" />
       <Property name="AmbientOcclusion" value="GTAO_High" />
       <Property name="AnisotropyLevel" value="_4" />
       <Property name="AntiAliasing" value="TAA" />
@@ -745,6 +753,8 @@
       <Property name="BaseQuality" value="TkGraphicsDetailTypes.xml">
         <Property name="GraphicDetail" value="Ultra" />
       </Property>
+      <Property name="UIQuality" value="Normal" />
+      <Property name="DLSSQuality" value="Balanced" />
       <Property name="AmbientOcclusion" value="GTAO_Ultra" />
       <Property name="AnisotropyLevel" value="_8" />
       <Property name="AntiAliasing" value="TAA" />
@@ -775,6 +785,8 @@
     <Property name="BaseQuality" value="TkGraphicsDetailTypes.xml">
       <Property name="GraphicDetail" value="Medium" />
     </Property>
+    <Property name="UIQuality" value="Normal" />
+    <Property name="DLSSQuality" value="Balanced" />
     <Property name="AmbientOcclusion" value="GTAO_Low" />
     <Property name="AnisotropyLevel" value="_2" />
     <Property name="AntiAliasing" value="TAA_LOW" />
@@ -804,6 +816,8 @@
     <Property name="BaseQuality" value="TkGraphicsDetailTypes.xml">
       <Property name="GraphicDetail" value="Low" />
     </Property>
+    <Property name="UIQuality" value="Normal" />
+    <Property name="DLSSQuality" value="Balanced" />
     <Property name="AmbientOcclusion" value="GTAO_Low" />
     <Property name="AnisotropyLevel" value="_2" />
     <Property name="AntiAliasing" value="TAA" />
@@ -833,6 +847,8 @@
     <Property name="BaseQuality" value="TkGraphicsDetailTypes.xml">
       <Property name="GraphicDetail" value="Medium" />
     </Property>
+    <Property name="UIQuality" value="Normal" />
+    <Property name="DLSSQuality" value="Balanced" />
     <Property name="AmbientOcclusion" value="GTAO_Medium" />
     <Property name="AnisotropyLevel" value="_4" />
     <Property name="AntiAliasing" value="TAA" />
@@ -862,6 +878,8 @@
     <Property name="BaseQuality" value="TkGraphicsDetailTypes.xml">
       <Property name="GraphicDetail" value="Medium" />
     </Property>
+    <Property name="UIQuality" value="Normal" />
+    <Property name="DLSSQuality" value="Balanced" />
     <Property name="AmbientOcclusion" value="GTAO_Medium" />
     <Property name="AnisotropyLevel" value="_2" />
     <Property name="AntiAliasing" value="TAA" />
@@ -891,6 +909,8 @@
     <Property name="BaseQuality" value="TkGraphicsDetailTypes.xml">
       <Property name="GraphicDetail" value="Medium" />
     </Property>
+    <Property name="UIQuality" value="Normal" />
+    <Property name="DLSSQuality" value="Balanced" />
     <Property name="AmbientOcclusion" value="GTAO_Low" />
     <Property name="AnisotropyLevel" value="_2" />
     <Property name="AntiAliasing" value="TAA" />
@@ -920,6 +940,8 @@
     <Property name="BaseQuality" value="TkGraphicsDetailTypes.xml">
       <Property name="GraphicDetail" value="High" />
     </Property>
+    <Property name="UIQuality" value="Normal" />
+    <Property name="DLSSQuality" value="Balanced" />
     <Property name="AmbientOcclusion" value="GTAO_Medium" />
     <Property name="AnisotropyLevel" value="_4" />
     <Property name="AntiAliasing" value="TAA" />
@@ -949,6 +971,8 @@
     <Property name="BaseQuality" value="TkGraphicsDetailTypes.xml">
       <Property name="GraphicDetail" value="Ultra" />
     </Property>
+    <Property name="UIQuality" value="_4K" />
+    <Property name="DLSSQuality" value="Balanced" />
     <Property name="AmbientOcclusion" value="GTAO_Medium" />
     <Property name="AnisotropyLevel" value="_4" />
     <Property name="AntiAliasing" value="TAA" />

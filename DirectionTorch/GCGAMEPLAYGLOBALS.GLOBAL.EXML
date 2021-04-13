@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (2.61.0)-->
 <Data template="GcGameplayGlobals">
+  <Property name="FreeSuitSlotID" value="C_SUIT_SLOT" />
+  <Property name="InitialLocationProtectionRadiusMultiplier" value="4" />
+  <Property name="PartyPlanetSearchDistance" value="200" />
+  <Property name="MaxActiveWeatherHazardGifts" value="16" />
+  <Property name="WeatherHazardGiftMaxDistance" value="100" />
+  <Property name="WeatherHazardGiftLifeTime" value="60" />
   <Property name="TechnologyOverrideForSmuggler" value="GcTechnologyCategory.xml">
     <Property name="TechnologyCategory" value="Maintenance" />
   </Property>
@@ -11,16 +17,16 @@
   <Property name="StormBonusMiningHeatMod" value="3" />
   <Property name="StormBonusMiningAmountMod" value="2.55" />
   <Property name="StormBonusJetpackWeather" value="GcPlayerHazardType.xml">
-    <Property name="ActionUseHazardType" value="ExtremeHeat" />
+    <Property name="Hazard" value="ExtremeHeat" />
   </Property>
   <Property name="StormBonusSprintWeather" value="GcPlayerHazardType.xml">
-    <Property name="ActionUseHazardType" value="ToxicGas" />
+    <Property name="Hazard" value="ToxicGas" />
   </Property>
   <Property name="StormBonusMiningHeatWeather" value="GcPlayerHazardType.xml">
-    <Property name="ActionUseHazardType" value="ExtremeCold" />
+    <Property name="Hazard" value="ExtremeCold" />
   </Property>
   <Property name="StormBonusMiningAmountWeather" value="GcPlayerHazardType.xml">
-    <Property name="ActionUseHazardType" value="Radiation" />
+    <Property name="Hazard" value="Radiation" />
   </Property>
   <Property name="AlienPodThreshold2" value="0.55" />
   <Property name="AlienPodThreshold1" value="0.25" />
@@ -229,19 +235,25 @@
   <Property name="AngleFromBaseComputerWhenTeleporting" value="225" />
   <Property name="DistanceFromBaseComputerWhenTeleporting" value="2.5" />
   <Property name="AutoTranslateWordChance" value="0.33" />
-  <Property name="MissionSurveryDistanceToHideDistanceLabel" value="100" />
+  <Property name="MissionSurveySuggestSurveyForNearScannables" value="True" />
+  <Property name="MissionSurveyMaxGuidanceDistance" value="1500" />
   <Property name="MissionSurveyMarkerAutoHideTime" value="30" />
-  <Property name="MissionSurveyScanRangeMultiplier" value="0.8" />
+  <Property name="MissionSurveyScanRangeMultiplier" value="0.5" />
   <Property name="MissionSurveyMaxScanAngle" value="60" />
-  <Property name="MissionSurveyBeginScanPercentageScannable" value="0.1" />
+  <Property name="MissionSurveyMaxScanAngleScannableComp" value="15" />
+  <Property name="MissionSurveyBeginScanPercentageScannable" value="0.4" />
   <Property name="MissionSurveyBeginScanPercentageEvent" value="0.03" />
-  <Property name="MissionSurveyScanSpeed" value="0.5" />
-  <Property name="MissionSurveyAutoScanDistance" value="80" />
+  <Property name="MissionSurveyScanSpeed" value="0.2" />
+  <Property name="MissionSurveyScanSpeedScannableComp" value="0.66" />
+  <Property name="MissionSurveyRevealWithoutScanDistance" value="45" />
+  <Property name="MissionSurveyAutoScanDistance" value="50" />
+  <Property name="MissionSurveyAutoScanFlattenRadiusMul" value="2" />
   <Property name="MissionSurveySonarMinPulseSpeed" value="0.1" />
   <Property name="MissionSurveySonarMaxPulseSpeed" value="2" />
   <Property name="MissionSurveySonarPulseSpeedBandCount" value="6" />
   <Property name="MissionSurveyMaxAngleOffset" value="60" />
   <Property name="MissionSurveyMaxSignalConeAngle" value="60" />
+  <Property name="MissionSurveyInShipArrivedDistance" value="200" />
   <Property name="SurveyBeginScanPercentage" value="0.01" />
   <Property name="SurveyScanMinSpeed" value="0.75" />
   <Property name="SurveyScanMaxSpeed" value="0.75" />
@@ -366,14 +378,15 @@
     <Property name="B" value="0" />
     <Property name="A" value="1" />
   </Property>
-  <Property name="AtmosphereEntryTime" value="1.5" />
+  <Property name="AtmosphereEntryTime" value="1" />
   <Property name="AtmosphereEntryFadeTimeFactor" value="0.25" />
-  <Property name="AtmosphereEntryOffset" value="200" />
+  <Property name="AtmosphereEntryOffset" value="150" />
   <Property name="AtmosphereEntryCurve" value="TkCurveType.xml">
-    <Property name="Curve" value="EaseInQuart" />
+    <Property name="Curve" value="EaseInSine" />
   </Property>
+  <Property name="AtmosphereEntryErrorTime" value="0.75" />
   <Property name="TerrainResourceScanTime" value="30" />
-  <Property name="TerrainResourceScanRange" value="2400" />
+  <Property name="TerrainResourceScanRange" value="1200" />
   <Property name="TerrainResourceCompassRange" value="120" />
   <Property name="BinocsDisplayUnknownCreatures" value="False" />
   <Property name="BinocularScanTargetMinHeight" value="5" />
@@ -790,12 +803,12 @@
   <Property name="RareProductEffectiveness" value="50" />
   <Property name="AsteroidResourceReducer" value="20" />
   <Property name="VoxelAsteroidResourceChance" value="0.25" />
-  <Property name="ResourceReducer" value="10" />
+  <Property name="ResourceReducer" value="5" />
   <Property name="ResourceMinAmount" value="1" />
-  <Property name="ResourceMaxAmount" value="2" />
-  <Property name="ResourceCommonReducer" value="10" />
+  <Property name="ResourceMaxAmount" value="6" />
+  <Property name="ResourceCommonReducer" value="5" />
   <Property name="ResourceCommonMinAmount" value="1" />
-  <Property name="ResourceCommonMaxAmount" value="8" />
+  <Property name="ResourceCommonMaxAmount" value="12" />
   <Property name="ResourceDirtReducer" value="40" />
   <Property name="ResourceDirtMinAmount" value="1" />
   <Property name="ResourceDirtMaxAmount" value="8" />
@@ -1710,5 +1723,12 @@
     <Property value="310" />
     <Property value="430" />
     <Property value="430" />
+  </Property>
+  <Property name="SpawnerWeaponRange" value="100" />
+  <Property name="WeaponSpawnObject" value="TkTextureResource.xml">
+    <Property name="Filename" value="" />
+  </Property>
+  <Property name="WeaponSpawnAltObject" value="TkTextureResource.xml">
+    <Property name="Filename" value="" />
   </Property>
 </Data>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.12.0)-->
+<!--File created using MBINCompiler version (3.35.0)-->
 <Data template="GcSpaceshipGlobals">
   <Property name="AllowSideScreenPointing" value="False" />
   <Property name="AddShipToCollectionOnEnter" value="False" />
@@ -167,6 +167,7 @@
   <Property name="WarpNexusDistance" value="-9000" />
   <Property name="NetworkDockSearchRadius" value="10" />
   <Property name="DirectionDockingIndicatorRange" value="500" />
+  <Property name="DirectionDockingIndicatorClearAngleRange" value="45" />
   <Property name="DirectionDockingIndicatorAngleRange" value="28" />
   <Property name="DirectionDockingIndicatorMinHeight" value="15" />
   <Property name="DirectionDockingIndicatorMaxHeight" value="25" />
@@ -1021,6 +1022,7 @@
   <Property name="MiniWarpExitSpeedStation" value="500" />
   <Property name="MiniWarpExitTime" value="0.5" />
   <Property name="MiniWarpHUDArrowAttractAngle" value="2" />
+  <Property name="MiniWarpSpaceStationUnAttractMultiplier" value="2.5" />
   <Property name="MiniWarpCurve" value="TkCurveType.xml">
     <Property name="Curve" value="SmoothInOut" />
   </Property>
@@ -1205,11 +1207,11 @@
   <Property name="DronePatrolRadius" value="2000" />
   <Property name="DroneMoveArrivedRange" value="150" />
   <Property name="DronePatrolTime" value="4" />
-  <Property name="ShipEnterRange" value="7" />
+  <Property name="ShipEnterRange" value="4" />
   <Property name="ShipEnterAngle" value="20" />
-  <Property name="ShipEnterTransitionTime" value="0" />
-  <Property name="ShipEnterSpeed" value="15" />
-  <Property name="ShipEnterMinTime" value="0.5" />
+  <Property name="ShipEnterTransitionTime" value="0.1" />
+  <Property name="ShipEnterSpeed" value="3" />
+  <Property name="ShipEnterMinTime" value="1" />
   <Property name="ShipModels">
     <Property value="NMSString0x80.xml">
       <Property name="Value" value="MODELS/COMMON/SPACECRAFT/DROPSHIPS/DROPSHIP_PROC.DAE" />

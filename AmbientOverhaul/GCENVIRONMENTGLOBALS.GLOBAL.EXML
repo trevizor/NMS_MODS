@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (2.43.0)-->
+<!--File created using MBINCompiler version (3.35.0)-->
 <Data template="GcEnvironmentGlobals">
   <Property name="LODSettings">
     <Property value="TkLODSettingsData.xml">
@@ -195,7 +195,7 @@
     <Property name="ForwardScatteringG" value="0.9" />
     <Property name="BackwardScatteringG" value="0.2" />
     <Property name="DarkOutlineScalar" value="0.8" />
-    <Property name="AnimationScale" value="8" />
+    <Property name="AnimationScale" value="14" />
     <Property name="WindOffset" value="Vector2f.xml">
       <Property name="x" value="0.5" />
       <Property name="y" value="0.5" />
@@ -269,7 +269,7 @@
   <Property name="ShipToxicity" value="0" />
   <Property name="MatchPlantPalettes" value="False" />
   <Property name="DuplicateColourThreshold" value="1" />
-  <Property name="SwitchType" value="Enabled" />
+  <Property name="PushForceAirFactor" value="Enabled" />
   <Property name="GrassNormalUpright" value="1" />
   <Property name="GrassNormalOffset" value="1" />
   <Property name="GrassNormalSpherify" value="1" />
@@ -290,7 +290,7 @@
   <Property name="PlanetUnwrapMax" value="2" />
   <Property name="TerrainFlattenMin" value="150" />
   <Property name="TerrainFlattenMax" value="800" />
-  <Property name="HeightFogHeightMin" value="0" />
+  <Property name="HeightFogHeightMin" value="3" />
   <Property name="WaterFogHeightMax" value="102" />
   <Property name="WaterAlphaHeightMin" value="0" />
   <Property name="WaterAlphaHeightMax" value="84" />
@@ -312,9 +312,9 @@
   <Property name="MinWaterReflections" value="0.1" />
   <Property name="SpacePlanetFogStrength">
     <Property value="7" />
-    <Property value="7" />
-    <Property value="7" />
-    <Property value="7" />
+    <Property value="8" />
+    <Property value="9" />
+    <Property value="10" />
   </Property>
   <Property name="SkyBlendLength">
     <Property value="2000" />
@@ -347,7 +347,7 @@
   <Property name="LightDirectionBlend" value="5000" />
   <Property name="LightColourHeight" value="5000" />
   <Property name="LightColourBlend" value="5000" />
-  <Property name="ObjectSpawnFirstRadius" value="8" />
+  <Property name="ObjectSpawnFirstRadius" value="3" />
   <Property name="ObjectSpawnFirstDotCheck" value="0.99" />
   <Property name="ObjectSpawnDetailRadius" value="0.5" />
   <Property name="InteractionRadius" value="0.15" />
@@ -505,7 +505,7 @@
     <Property name="SkyPositionHeight" value="3000" />
     <Property name="SkyPositionBlendLength" value="1000" />
     <Property name="SolarSystemLUTHeight" value="1000" />
-    <Property name="SolarSystemLUTBlendLength" value="3000" />
+    <Property name="SolarSystemLUTBlendLength" value="700" />
     <Property name="AtmosphereStartHeight" value="600" />
     <Property name="AtmosphereEndHeight" value="1276" />
     <Property name="StratosphereHeight" value="4000" />
@@ -539,7 +539,7 @@
     <Property name="SkyPositionHeight" value="3000" />
     <Property name="SkyPositionBlendLength" value="2000" />
     <Property name="SolarSystemLUTHeight" value="2000" />
-    <Property name="SolarSystemLUTBlendLength" value="3000" />
+    <Property name="SolarSystemLUTBlendLength" value="700" />
     <Property name="AtmosphereStartHeight" value="1800" />
     <Property name="AtmosphereEndHeight" value="2476" />
     <Property name="StratosphereHeight" value="5200" />
