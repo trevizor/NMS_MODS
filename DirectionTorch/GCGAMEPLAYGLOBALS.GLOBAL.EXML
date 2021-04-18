@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (2.61.0)-->
+<!--File created using MBINCompiler version (3.37.0)-->
 <Data template="GcGameplayGlobals">
+  <Property name="ShipScanPlanetRechargeMultiplier" value="0.25" />
+  <Property name="ShipScanSpaceRechargeMultiplier" value="0.25" />
   <Property name="FreeSuitSlotID" value="C_SUIT_SLOT" />
   <Property name="InitialLocationProtectionRadiusMultiplier" value="4" />
   <Property name="PartyPlanetSearchDistance" value="200" />
@@ -10,7 +12,7 @@
   <Property name="TechnologyOverrideForSmuggler" value="GcTechnologyCategory.xml">
     <Property name="TechnologyCategory" value="Maintenance" />
   </Property>
-  <Property name="MaxMeteorSurfaceAngle" value="70" />
+  <Property name="MaxMeteorSurfaceAngle" value="50" />
   <Property name="StormGravityChangeTime" value="5" />
   <Property name="StormBonusJetpackMod" value="0.25" />
   <Property name="StormBonusSprintMod" value="0.25" />
@@ -31,10 +33,10 @@
   <Property name="AlienPodThreshold2" value="0.55" />
   <Property name="AlienPodThreshold1" value="0.25" />
   <Property name="BulletTraceLineColour" value="Colour.xml">
-    <Property name="R" value="0.768" />
-    <Property name="G" value="0.768" />
-    <Property name="B" value="0.868" />
-    <Property name="A" value="0.02" />
+    <Property name="R" value="0.175" />
+    <Property name="G" value="0.568" />
+    <Property name="B" value="0.993" />
+    <Property name="A" value="0.05" />
   </Property>
   <Property name="BulletTraceLineWidth" value="0" />
   <Property name="TracerBeamStart" value="0.2" />
@@ -339,9 +341,10 @@
       <Property name="Value" value="F_HACCESS3" />
     </Property>
   </Property>
-  <Property name="HmdInteractionRangeMinRange" value="2" />
-  <Property name="HmdInteractionRangeMinDistance" value="5" />
-  <Property name="HmdInteractionRangeMultiplier" value="1.3" />
+  <Property name="SeasonalMessageModuleAttractDistanceMul" value="0.4" />
+  <Property name="HmdInteractionRangeMinRange" value="1" />
+  <Property name="HmdInteractionRangeMinDistance" value="2" />
+  <Property name="HmdInteractionRangeMultiplier" value="1" />
   <Property name="InstallTechWithInteraction" value="True" />
   <Property name="FreighterRequiresRGBHyperdriveUpgrades" value="True" />
   <Property name="DisableAnomalyAmbientSpawn" value="False" />
@@ -577,7 +580,7 @@
   <Property name="DestroyEffectHeight" value="2.2" />
   <Property name="DestroyEffectMaxScale" value="1.5" />
   <Property name="EventTargetSpeed" value="10" />
-  <Property name="SpecialMiningAmount" value="30" />
+  <Property name="SpecialMiningAmount" value="40" />
   <Property name="SpecialMiningTime" value="5" />
   <Property name="HardModeTechDamageMidNum" value="5" />
   <Property name="HardModeTechDamageMidPercent" value="50" />
@@ -1528,7 +1531,7 @@
     </Property>
   </Property>
   <Property name="HUDLabelTime" value="0.25" />
-  <Property name="HUDLabelAngle" value="45" />
+  <Property name="HUDLabelAngle" value="2" /> <!-- was 45 -->
   <Property name="HUDLabelAngleOffset" value="200" />
   <Property name="HUDLabelOffsetX" value="-5" />
   <Property name="HUDLabelOffsetY" value="1.5" />
@@ -1569,7 +1572,7 @@
   <Property name="GunOffsetX" value="0" />
   <Property name="GunOffsetY" value="0" />
   <Property name="GunOffsetZ" value="0" />
-  <Property name="GunDownAngle" value="0" /> <!-- was 20 -->
+  <Property name="GunDownAngle" value="0" />
   <Property name="GunUpAngle" value="10" />
   <Property name="BarrelOffset" value="0.01" />
   <Property name="HitOffset" value="0.3" />
@@ -1602,8 +1605,8 @@
   <Property name="InteractionTorchFoV" value="120" />
   <Property name="InteractionTorchStrength" value="0" />
   <Property name="TorchOffsetX" value="0" />
-  <Property name="TorchOffsetY" value="-0.20" />
-  <Property name="TorchOffsetZ" value="-0.4" /> <!-- positive moves backwards -->
+  <Property name="TorchOffsetY" value="-0.2" />
+  <Property name="TorchOffsetZ" value="-0.4" />
   <Property name="TorchHandOffsetX" value="0" />
   <Property name="TorchHandOffsetY" value="0" />
   <Property name="TorchHandOffsetZ" value="0" />
@@ -1652,7 +1655,7 @@
   <Property name="LegacyBaseBuildingTable" value="METADATA/REALITY/TABLES/LEGACYBASEBUILDINGTABLE.MXML" />
   <Property name="BaseBuildingTable" value="METADATA/REALITY/TABLES/BASEBUILDINGTABLE.MXML" />
   <Property name="NPCWorkerInteractionCooldown" value="60" />
-  <Property name="LightStrength" value="1" />
+  <Property name="LightStrength" value="0.25" />
   <Property name="AirLockDoorRange" value="3" />
   <Property name="DisableBasePowerHUDOverlay" value="False" />
   <Property name="KeepAttackingMaxWantedLevel" value="False" />

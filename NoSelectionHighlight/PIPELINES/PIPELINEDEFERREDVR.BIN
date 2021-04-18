@@ -3,9 +3,10 @@
   <Setup>
     <ScaleInfo resScalingDefault="true" />
     
-    <RenderTarget id="SHADOWBUF"   depthBuf="true"  numColBufs="0"  format="RGBA8" depthFormat="DEPTH16" scale="1.0" width="5376" height="1792" maxSamples="0" shadow="true" hasMips="false" numUniformBuffers="3" crossPipeShareId="SHADOW_SHARED" />
+    <RenderTarget id="SHADOWBUF"   depthBuf="true"  numColBufs="0"  format="RGBA8" depthFormat="DEPTH16" scale="0.25" width="5376" height="1792" maxSamples="0" shadow="true" hasMips="true" numUniformBuffers="3" crossPipeShareId="SHADOW_SHARED" />
 
-    <RenderTarget id="GBUFFER"     depthBuf="false" numColBufs="4"  format0="RGBA8" format1="RG8" format2="RGB10A2" format3="RGBA8" scale="1.0" maxSamples="0" pointSampleColBuf1="true" pointSampleColBuf2="true" pointSampleColBuf3="true"  esramPageColBuf2="215" crossPipeShareId="GBUFFER_SHARED" numUniformBuffers="3" numSlices="2" />
+    <RenderTarget id="GBUFFER"     platforms="PC|PROSPERO|SCARLETT" depthBuf="false" numColBufs="4"  format0="RGBA8" format1="RG16" format2="RGB10A2" format3="RGBA8" scale="1.0" maxSamples="0" pointSampleColBuf1="true" pointSampleColBuf2="true" pointSampleColBuf3="true"  esramPageColBuf2="215" crossPipeShareId="GBUFFER_SHARED" numUniformBuffers="3" numSlices="2" />
+    <RenderTarget id="GBUFFER"     platforms="ORBIS|XBOX"           depthBuf="false" numColBufs="4"  format0="RGBA8" format1="RG8" format2="RGB10A2" format3="RGBA8" scale="1.0" maxSamples="0" pointSampleColBuf1="true" pointSampleColBuf2="true" pointSampleColBuf3="true"  esramPageColBuf2="215" crossPipeShareId="GBUFFER_SHARED" numUniformBuffers="3" numSlices="2" />
 
     <RenderTarget id="TAA_FRONT"    depthBuf="false" numColBufs="3"  format0="R11FG11FB10F" format1="R11FG11FB10F" format2="RGBA8" bilinear="true" scale="1.0" maxSamples="0"  shareTarget0="HDRBUF_1"  shareBuffer0="0" shareTarget1="LENSFINAL_OR_UI_COMBINE_BUF"  shareBuffer1="0" shareBuffer2="-1"  allowDcc="false" numUniformBuffers="3" numSlices="2" />
 
@@ -20,6 +21,9 @@
     <RenderTarget id="HDRBUF_1"    depthBuf="false" numColBufs="1"  format="R11FG11FB10F" bilinear="true" scale="1.0" maxSamples="0"   esramPageColBuf0="397" allowDcc="false" numUniformBuffers="3" numSlices="2" />
 
     <RenderTarget id="LUT_MASK"                        depthBuf="false"  numColBufs="1"  format="RED8" bilinear="true" scale="1.0"  numUniformBuffers="3" numSlices="2" />
+    <RenderTarget id="CLOUDS_HIGH"    depthBuf="false"  numColBufs="2" format0="RGBA8"  format1="RED32F" bilinear="true" width="442" height="496"  allowDcc="false" numUniformBuffers="3" numSlices="2"  crossPipeShareId="CLOUDS_SHARED"   />
+    <RenderTarget id="CLOUD_BLURBUF1" depthBuf="false" numColBufs="1" format="RGBA8" bilinear="true" width="442" height="496" allowDcc="false" numUniformBuffers="3" numSlices="2" crossPipeShareId="CLOUDSB1_SHARED" />
+    <RenderTarget id="CLOUD_BLURBUF2" depthBuf="false" numColBufs="1" format="RGBA8" bilinear="true" width="442" height="496" allowDcc="false" numUniformBuffers="3" numSlices="2" crossPipeShareId="CLOUDSB2_SHARED" />
 
     <RenderTarget id="GTAO_FRAME_0"                     depthBuf="false"  numColBufs="1"  format="RED8" pointSampleColBuf0="true" scale="0.5" scale3="1.0" scaleGroup="AmbientOcclusion"  allowDcc="false" numUniformBuffers="3" numSlices="2" />
     <RenderTarget id="GTAO_FRAME_1"                     depthBuf="false"  numColBufs="1"  format="RED8" pointSampleColBuf0="true" scale="0.5" scale3="1.0" scaleGroup="AmbientOcclusion"  allowDcc="false" numUniformBuffers="3" numSlices="2" />
@@ -28,28 +32,28 @@
 
     <RenderTarget id="HBAOBUF"                         depthBuf="false"  numColBufs="1"  format="RED8" bilinear="true" scale="1.0"  allowDcc="false" numUniformBuffers="3" numSlices="2" />
     
-    <RenderTarget id="LIGHTSHAFT"                      depthBuf="false"  numColBufs="1"  format="RED16F" scale="0.5" maxSamples="0" pointSampleColBuf0="true" shareTarget0="VOLUME" shareBuffer0="1"  numUniformBuffers="3" numSlices="2" />
+    <RenderTarget id="LIGHTSHAFT"                      depthBuf="false"  numColBufs="1"  format="RED16F" scale="0.25" maxSamples="0" pointSampleColBuf0="true" shareTarget0="VOLUME" shareBuffer0="1"  numUniformBuffers="3" numSlices="2" />
     <RenderTarget id="BLUR1_REDONLY"                   depthBuf="false"  numColBufs="1"  format="RED16F" scale="0.5" maxSamples="0" pointSampleColBuf0="true"  allowDcc="false" numUniformBuffers="3" numSlices="2" />
 
     <RenderTarget id="VOLUME"      depthBuf="false" numColBufs="2"  format0="RGBA16F" format1="RED16F" scale="0.5" maxSamples="0" pointSampleColBuf0="true" pointSampleColBuf1="true"   numUniformBuffers="3" numSlices="2" />
     <RenderTarget id="BLUR1"       depthBuf="false"  numColBufs="1"  format="RGBA16F" scale="0.5" maxSamples="0" pointSampleColBuf0="true"  esramPageColBuf0="215" numUniformBuffers="3" numSlices="2" />
 
-    <RenderTarget id="DEPTHUI"       depthBuf="true" numColBufs="0"  format="RGBA8" scale="1.0" maxSamples="0" stencilBuf="true"   esramPageDepthBuf="0" numUniformBuffers="3" numSlices="2" />
+    <RenderTarget id="DEPTHUI"     postDlss="true"   depthBuf="true" numColBufs="0"  format="RGBA8" scale="1.0" maxSamples="0" stencilBuf="true"   esramPageDepthBuf="0" numUniformBuffers="3" numSlices="2" />
     <RenderTarget id="DEPTH"       depthBuf="true"   depthBufUsesBB="true" numColBufs="0"  format="RGBA8" scale="1.0" maxSamples="0" stencilBuf="true"   esramPageDepthBuf="0" crossPipeShareId="DEPTH_SHARED" numUniformBuffers="3" numSlices="2" />
     <RenderTarget id="DEPTH_DOWN"  depthBuf="false"  numColBufs="1"  format="RED32F"   scale="0.5" maxSamples="0" pointSampleColBuf0="true"  allowDcc="false"   esramPageColBuf0="488" crossPipeShareId="DEPTHD_SHARED" numUniformBuffers="3" numSlices="2"  />
     <RenderTarget id="DEPTH_PART"  depthBuf="false"  numColBufs="1"  format="RED32F"   scale="0.5" maxSamples="0" pointSampleColBuf0="true"  numUniformBuffers="3" numSlices="2"  />
     <RenderTarget id="DEPTH_LINEAR"  depthBuf="false"  numColBufs="1"  format="RED32F"   scale="1.0" maxSamples="0" pointSampleColBuf0="true"  esramPageColBuf0="124"  crossPipeShareId="DEPTH_LINEAR_SHARED" numUniformBuffers="3" numSlices="2" />
 
-    <RenderTarget id="CLOUDSHADOWS"   depthBuf="false" numColBufs="1" format="RED8" bilinear="true" scale="0.5" allowDcc="false" numUniformBuffers="3" numSlices="2" />
+    <RenderTarget id="CLOUDSHADOWS"   depthBuf="false" numColBufs="1" format="RED8" bilinear="true" scale="0.25" allowDcc="false" numUniformBuffers="3" numSlices="2" />
 
-    <RenderTarget id="CLOUDS_HIGH"    depthBuf="false"  numColBufs="2" format0="RGBA8"  format1="RED32F" bilinear="true" width="442" height="496"  allowDcc="false" numUniformBuffers="3" numSlices="2"  crossPipeShareId="CLOUDS_SHARED"   />
-    <RenderTarget id="CLOUD_BLURBUF1" depthBuf="false" numColBufs="1" format="RGBA8" bilinear="true" width="442" height="496" allowDcc="false" numUniformBuffers="3" numSlices="2" crossPipeShareId="CLOUDSB1_SHARED" />
-    <RenderTarget id="CLOUD_BLURBUF2" depthBuf="false" numColBufs="1" format="RGBA8" bilinear="true" width="442" height="496" allowDcc="false" numUniformBuffers="3" numSlices="2" crossPipeShareId="CLOUDSB2_SHARED" />
 
-    <RenderTarget id="WATER"          depthBuf="false" numColBufs="1" format="RGBA16F" bilinear="true" scale="0.5"   esramPageColBuf0="215" shareTarget0="PARTICLES" numUniformBuffers="3" numSlices="2" />
+    <RenderTarget id="WATER"          depthBuf="false" numColBufs="1" format="RGBA16F" bilinear="true" scale="1.0"   esramPageColBuf0="215" shareTarget0="PARTICLES" numUniformBuffers="3" numSlices="2" />
     <RenderTarget id="PARTICLES"      depthBuf="false" numColBufs="1" format="RGBA16F" bilinear="true" scale="0.5"   esramPageColBuf0="124" numUniformBuffers="3" numSlices="2" />
     <RenderTarget id="PARTICLES_DEPTH" depthBuf="true" numColBufs="0" format="RGBA8" scale="0.5" maxSamples="0" pointSampleColBuf0="true"   numUniformBuffers="3" numSlices="2" />
-    
+
+    <RenderTarget id="LIGHTS_DUMMY_TARGET"      depthBuf="false" numColBufs="1" format="RED8" bilinear="false" scale="0.0625" numUniformBuffers="3" numSlices="2" />
+    <RenderTarget id="LIGHTS_TILEBUF"      depthBuf="false" numColBufs="1" format="RED32I" bilinear="false" scaleX="0.5" scaleY="1.0" allowDcc="false" esramPageColBuf0="124" numUniformBuffers="3" numSlices="2" />
+
     <RenderTarget id="BLOOM_BLURBUF_2A"   depthBuf="false" numColBufs="1" format="R11FG11FB10F" bilinear="true" scale="0.5"       allowDcc="false" numUniformBuffers="3" numSlices="2"/>
     <RenderTarget id="BLOOM_BLURBUF_2B"   depthBuf="false" numColBufs="1" format="R11FG11FB10F" bilinear="true" scale="0.5"       allowDcc="false" numUniformBuffers="3" numSlices="2"/>
     <RenderTarget id="BLOOM_BLURBUF_4A"   depthBuf="false" numColBufs="1" format="R11FG11FB10F" bilinear="true" scale="0.25"      allowDcc="false" numUniformBuffers="3" numSlices="2"/>
@@ -64,10 +68,16 @@
     <RenderTarget id="BLOOM_EXPBUF_A"     depthBuf="false" numColBufs="1" format="RED8"         bilinear="true" scale="1.0"       allowDcc="false" width="4" height="4" numUniformBuffers="3" numSlices="2" />
     <RenderTarget id="BLOOM_EXPBUF_B"     depthBuf="false" numColBufs="1" format="RED8"         bilinear="true" scale="1.0"       allowDcc="false" width="4" height="4" numUniformBuffers="3" numSlices="2" />
     
-    <RenderTarget id="MOTION_MAXBUF_H" depthBuf="false" numColBufs="1" format="RGBA8" bilinear="true" scaleX="0.125" scaleY="1.0"   crossPipeShareId="MOTION_HORZ" numUniformBuffers="3" numSlices="2" />
-    <RenderTarget id="MOTION_MAXBUF" depthBuf="false" numColBufs="1" format="RGBA8" bilinear="true" scale="0.125"   numUniformBuffers="3" numSlices="2" />
-    
-    <RenderTarget id="MOTIONRESOLVE"    depthBuf="false" numColBufs="1" format="R11FG11FB10F" scale="1.0" maxSamples="0"  esramPageColBuf0="215" numUniformBuffers="3" numSlices="2" />
+    <RenderTarget id="MOTION_MAXBUF_H" platforms="PC|PROSPERO|SCARLETT" depthBuf="false" numColBufs="1" format="RGBA16" bilinear="true" scaleX="0.125" scaleY="1.0"  numUniformBuffers="3" numSlices="2" />
+    <RenderTarget id="MOTION_MAXBUF"   platforms="PC|PROSPERO|SCARLETT" depthBuf="false" numColBufs="1" format="RGBA16" bilinear="true" scale="0.125"   numUniformBuffers="3" numSlices="2" />    
+    <RenderTarget id="MOTIONRESOLVE"   platforms="PC|PROSPERO|SCARLETT" depthBuf="false" numColBufs="1" format="RGBA16" scale="1.0" maxSamples="0" numUniformBuffers="3" numSlices="2" />
+    <RenderTarget id="MOTIONSCREEN"    platforms="PC"                   depthBuf="false" numColBufs="1" format="RG16F"  scale="1.0" maxSamples="0" numUniformBuffers="3" numSlices="2"   />
+
+    <RenderTarget id="MOTION_MAXBUF_H" platforms="ORBIS|XBOX"           depthBuf="false" numColBufs="1" format="RGBA8" bilinear="true" scaleX="0.125" scaleY="1.0"   crossPipeShareId="MOTION_HORZ" numUniformBuffers="3" numSlices="2" />
+    <RenderTarget id="MOTION_MAXBUF"   platforms="ORBIS|XBOX"           depthBuf="false" numColBufs="1" format="RGBA8" bilinear="true" scale="0.125"   numUniformBuffers="3" numSlices="2" />
+
+    <RenderTarget id="MOTIONRESOLVE"   platforms="ORBIS|XBOX"           depthBuf="false" numColBufs="1" format="R11FG11FB10F" scale="1.0" maxSamples="0"  esramPageColBuf0="215" numUniformBuffers="3" numSlices="2" />
+
 
     <RenderTarget id="BACK_LENSFINAL_OR_UI_COMBINE_BUF"     depthBuf="false" numColBufs="1" format="R11FG11FB10F"  bilinear="true" scale="1.0"  allowDcc="false" numUniformBuffers="3" numSlices="2" />
 
@@ -590,7 +600,45 @@
       <EndTarget flushCB="false" flushDB="false" />
     </Stage>
 
+
     <Stage id="SpotlightsTiled" enabled="false">
+
+      <BeginTarget target="LIGHTS_TILEBUF" />
+      <ColourMask channels="RGBA"/>
+      <ClearTarget depthBuf="false" colBuf0="true" col_R="0.0" col_G="0.0" col_B="0.0" />
+      <EndTarget flushCB="true" flushDB="false" flushForCompute="true" />
+
+      <BeginTarget target="LIGHTS_DUMMY_TARGET" />
+
+      <BindBuffer sampler="gOutTexture0" sourceRT="LIGHTS_TILEBUF" bufIndex="0" bindAsRwImage="true" />
+      <SetContext zwrite="false" colourWrite="true" cullMode="front" blendMode="replace"    stencilMode="disabled" depthTest="always" />
+      <DoDeferredLightLoop context="SPOT_INNER_LIST" inner="true"/>
+
+      <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="replace"    stencilMode="disabled" depthTest="always" />
+      <DoDeferredLightLoop context="SPOT_OUTER_LIST" inner="false"/>
+
+      <UnbindBuffers />
+      <EndTarget flushCB="true" flushDB="false" flushForCompute="true"  />
+
+      <BeginTarget target="HDRBUF_0" depthTarget="DEPTH" />
+
+      <ColourMask channels="RGB"  colBuf1="false"  colBuf2="false" />
+      <BindBuffer sampler="gBufferMap"   sourceRT="GBUFFER"    bufIndex="0"  />
+      <BindBuffer sampler="gBuffer1Map"  sourceRT="DEPTH_LINEAR"    bufIndex="0"  />
+      <BindBuffer sampler="gBuffer2Map"  sourceRT="GBUFFER"    bufIndex="2"  />
+      <BindBuffer sampler="gBuffer3Map"  sourceRT="GBUFFER"    bufIndex="3"  />
+      <BindBuffer sampler="gBuffer4Map"  sourceRT="HBAOBUF"    bufIndex="0" addressMode="clamp" />
+      <BindBuffer sampler="gBuffer5Map"  sourceRT="SUNOUT_0"   bufIndex="1"  />
+      <BindBuffer sampler="gOutTexture0" sourceRT="LIGHTS_TILEBUF" bufIndex="0" bindAsRwImage="true" />
+
+      <BindBuffer sampler="gShadowMap"   sourceRT="SHADOWBUF"  bufIndex="32" />
+      <BindBuffer sampler="gCloudShadowMap"  sourceRT="CLOUDSHADOWS"    bufIndex="0" addressMode="wrap" />
+
+      <SetContext zwrite="false" colourWrite="true" cullMode="none" blendMode="add"    stencilMode="disabled" depthTest="always" />
+      <DoDeferredLightLoopMulti context="SPOT_MULTI" inner="true"/>
+
+      <UnbindBuffers />
+      <EndTarget flushCB="false" flushDB="false" />
     </Stage>
 
 
@@ -906,7 +954,7 @@
       <!--<ClearTarget colBuf0="false" depthBuf="false" stencilBuf="true" />-->
       <ColourMask channels="RGB" colBuf1="true" />
       <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="blend" depthTest="lessEqual" stencilMode="maskWrite"  stencilRef="36"  stencilMask="36"/>
-      <!-- <DoForwardLightLoop type="Mesh"     class="Highlight"            context="LIT_FORWARD_WITH_MASK" order="BACK_TO_FRONT" /> -->
+      <!--DoForwardLightLoop type="Mesh"     class="Highlight"            context="LIT_FORWARD_WITH_MASK" order="BACK_TO_FRONT" /-->
       <SetContext stencilMode="disabled" />
 
       <SetContext zwrite="false" colourWrite="true" cullMode="none" blendMode="blend" depthTest="lessEqual" stencilMode="maskWrite"  stencilRef="36"  stencilMask="36"/>
@@ -1148,7 +1196,7 @@
       <SetContext zwrite="true" blendMode="replace" colourWrite="true" stencilMode="disabled" depthTest="always" />
       <DrawQuadMT material="materials/PostProcess.material.mbin" context="DOWNSAMPLE_DEPTH" />
       <UnbindBuffers />
-      <EndTarget flushCB="true" flushDB="false" />
+      <EndTarget flushCB="true" flushDB="true" />
 
       <BeginTarget target="PARTICLES" depthTarget="PARTICLES_DEPTH" />
       <ColourMask channels="RGBA"/>
@@ -1178,7 +1226,7 @@
       <BindBuffer sampler="gDepthBuffer" sourceRT="DEPTH_PART" bufIndex="0" />
       <ColourMask channels="RGB" />
       <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="add" depthTest="less" stencilMode="maskRead" stencilMask="128" stencilRef="0"  />
-      <DoForwardLightLoop  type="EMITTER"  class="Additive" context="TRANSLUCENT_ADDITIVE" order="BACK_TO_FRONT" />
+      <DoForwardLightLoop  type="EMITTER"  class="Additive" context="TRANSLUCENT_ADDITIVE" order="BACK_TO_FRONT" singlePassStereo="false" />
       <DoForwardLightLoop  type="HEAVYAIR" class="Additive" context="HEAVYAIR_SOFT" order="BACK_TO_FRONT" />
 
       <UnbindBuffers />
@@ -1208,6 +1256,9 @@
     </Stage> 
 
     <Stage id="DepthOfFieldBokeh">
+    </Stage>
+
+    <Stage id="DepthOfFieldBokehNew">
     </Stage>
 
     <Stage id="DepthOfFieldBlur_ToneMap" enabled="false" >
@@ -1422,7 +1473,17 @@
     
     <Stage id="CombineHDRNoAA_Async"  enabled="false">
     </Stage>
-             
+
+    <Stage id="DLSS_MOTION" enabled="false">
+      <BeginTarget target="MOTIONSCREEN" />
+      <DiscardTargetContents colBuf0="true" />
+      <ColourMask channels="RG"/>
+      <BindBuffer sampler="gBufferMap"  sourceRT="MOTIONRESOLVE" bufIndex="0" />
+      <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="replace" depthTest="always" alphaToCoverage="false" stencilMode="disabled" />
+      <DrawQuadMT material="materials/PostProcess.material.mbin" context="MOTION_UV2SCREEN" />
+      <EndTarget flushCB="true" flushDB="false" />
+    </Stage>
+  
     <Stage id="Combine">
       <ColourMask channels="RGBA"/>
       <BeginTarget target="MOTIONRESOLVE" depthTarget="DEPTH" readOnlyDepth="true" />
@@ -1439,7 +1500,7 @@
       <UnbindBuffers />
       <EndTarget flushCB="true" flushDB="false" />
     </Stage>
-    
+
     <Stage id="DepthClear" enabled="true" >
       <BeginTarget target="" depthTarget="DEPTHUI" />
       <ColourMask channels="RGBA" />
@@ -1501,6 +1562,10 @@
       <EndTarget flushCB="true" flushDB="false" />
     </Stage>
 
+    <Stage id="DLSS_APPLY" enabled="false">
+      <ApplyDLSS inputRT="MOTIONRESOLVE" outputRT="" depthRT="DEPTH" motionRT="MOTIONSCREEN" />
+    </Stage>
+
     <Stage id="BeforeUI"  enabled="true">
       <BeginTarget target="" depthTarget="DEPTHUI" />
       <ColourMask channels="RGBA"/>
@@ -1512,7 +1577,7 @@
       <DrawGeometry type="Mesh"         class="OpaqueBeforeUI"    context="DEPTHONLY_FRWRD"             order="STATECHANGES" />
       <DrawGeometry type="Mesh"         class="DepthMaskUI"       context="DEPTHONLY_FRWRD"             order="STATECHANGES" />
       <EndTarget flushCB="false" flushDB="false" />
-    </Stage> 
+    </Stage>     
     
     <Stage id="UI"  enabled="true">
       <BeginTarget target="" depthTarget="DEPTHUI" readOnlyDepth="true" />
@@ -1525,7 +1590,7 @@
     </Stage>
 
     <Stage id="NonSimulationUI"  enabled="false">
-      <BeginTarget target="" depthTarget="DEPTH" readOnlyDepth="true" />
+      <BeginTarget target="" depthTarget="DEPTHUI" readOnlyDepth="true" />
       <ColourMask channels="RGBA"/>
       <SetContext zwrite="false" colourWrite="true" cullMode="none"   blendMode="replace"   depthTest="always" alphaToCoverage="false" stencilMode="maskRead"      stencilRef="0"  stencilMask="128" />
       <DrawGeometry type="Mesh"         class="UISurface"         context="ICON_FORWARD_NS"            order="BACK_TO_FRONT" />
@@ -1580,8 +1645,65 @@
       <UnbindBuffers />
       <EndTarget flushCB="true" flushDB="false" />
     </Stage>
-    
-   <Stage id="TAA_NONE_RESET" enabled="false">
+
+    <Stage id="DebugQuad" enabled="false">
+      <ColourMask channels="RGBA"/>
+      <BeginTarget target=""/>
+      <ClearTarget depthBuf="false" colBuf0="false" col_R="0.0" col_G="0.0" col_B="0.0" col_A="1.0" />
+
+      <!--a, b, c, d == 0.0             -> full    screen buffer       -->
+      <!--a, b, c, d == 1.0             -> default main   quad   split -->
+      <!--a          == 2.0             -> top     left   inner  split -->
+      <!--b          == 2.0             -> top     right  inner  split -->
+      <!--c          == 2.0             -> bottom  left   inner  split -->
+      <!--d          == 2.0             -> bottom  right  inner  split -->
+      <SetUniform material="materials/DebugQuadSplit.material.mbin" uniform="gDebugSplitVec4" a="1.0" b="1.0" c="1.0" d="1.0"/>
+
+      <!--a                             -> zoom index                                   -->
+      <!--a          == [0.0,   3.0]    -> zoom respective main buffer                  -->
+      <!--a          == [0.000, 0.303]  -> zoom respective inner split buffer           -->
+      <!--a          == 42.0            -> zoom all buffers                             -->
+      <!--b                             -> zoom scale                                   -->
+      <!--b          == [0.0, n)        -> zoom buffer with index 'a' by a factor of 'b'-->
+      <!--c, d                          -> zoom offset                                  -->
+      <!--c, d       == [0.0, 1.0]      -> offset uvs of buffer 'a' by vec2(c,d)        -->
+      <SetUniform material="materials/DebugQuadSplit.material.mbin" uniform="gDebugZoomVec4"  a="0.0" b="1.0" c="0.0" d="0.0"/>
+
+      <SetContext zwrite="false" colourWrite="true" cullMode="none"  blendMode="replace" depthTest="always" stencilMode="disabled" />
+
+      <!--MAIN SPLIT -->
+      <BindBuffer sampler="gBuffer0Map"   sourceRT="MOTIONSCREEN"                bufIndex="0" sRGBRead="0" />
+      <BindBuffer sampler="gBuffer1Map"   sourceRT="MOTIONRESOLVE"                bufIndex="0" sRGBRead="0" />
+      <BindBuffer sampler="gBuffer2Map"   sourceRT="GBUFFER"                bufIndex="1" sRGBRead="0" />
+      <BindBuffer sampler="gBuffer3Map"   sourceRT="GBUFFER"                bufIndex="0" sRGBRead="0" />
+
+      <!--A SPLIT - TOP LEFT -->
+      <BindBuffer sampler="gBuffer000Map" sourceRT="HBAOBUF"                bufIndex="0" sRGBRead="0" />
+      <BindBuffer sampler="gBuffer001Map" sourceRT="HBAOBUF"                bufIndex="0" sRGBRead="0" />
+      <BindBuffer sampler="gBuffer002Map" sourceRT="HBAOBUF"                bufIndex="0" sRGBRead="0" />
+      <BindBuffer sampler="gBuffer003Map" sourceRT="HBAOBUF"                bufIndex="0" sRGBRead="0" />
+      <!--B SPLIT - TOP RIGHT -->
+      <BindBuffer sampler="gBuffer100Map" sourceRT="HBAOBUF"                bufIndex="0" sRGBRead="0" />
+      <BindBuffer sampler="gBuffer101Map" sourceRT="HBAOBUF"                bufIndex="0" sRGBRead="0" />
+      <BindBuffer sampler="gBuffer102Map" sourceRT="HBAOBUF"                bufIndex="0" sRGBRead="0" />
+      <BindBuffer sampler="gBuffer103Map" sourceRT="HBAOBUF"                bufIndex="0" sRGBRead="0" />
+      <!--C SPLIT - BOTTOM LEFT -->
+      <BindBuffer sampler="gBuffer200Map" sourceRT="HBAOBUF"                bufIndex="0" sRGBRead="0" />
+      <BindBuffer sampler="gBuffer201Map" sourceRT="HBAOBUF"                bufIndex="0" sRGBRead="0" />
+      <BindBuffer sampler="gBuffer202Map" sourceRT="HBAOBUF"                bufIndex="0" sRGBRead="0" />
+      <BindBuffer sampler="gBuffer203Map" sourceRT="HBAOBUF"                bufIndex="0" sRGBRead="0" />
+      <!--D SPLIT - BOTTOM RIGHT -->
+      <BindBuffer sampler="gBuffer300Map" sourceRT="HBAOBUF"                bufIndex="0" sRGBRead="0" />
+      <BindBuffer sampler="gBuffer301Map" sourceRT="HBAOBUF"                bufIndex="0" sRGBRead="0" />
+      <BindBuffer sampler="gBuffer302Map" sourceRT="HBAOBUF"                bufIndex="0" sRGBRead="0" />
+      <BindBuffer sampler="gBuffer303Map" sourceRT="HBAOBUF"                bufIndex="0" sRGBRead="0" />
+
+      <DrawQuadMT material="materials/DebugQuadSplit.material.mbin" context="QUAD_SPLIT" />
+      <UnbindBuffers />
+      <EndTarget flushCB="true" flushDB="false" />
+    </Stage>
+
+    <Stage id="TAA_NONE_RESET" enabled="false">
       <SwapTargets targetA="HDRBUF_0" targetB="HDRBUF_1" />
     </Stage> 
 

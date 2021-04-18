@@ -653,24 +653,24 @@
     <Property name="FOVStrength" value="0" />
     <Property name="FOVFrequency" value="0" />
   </Property>
-  <Property name="PatrolSwitchMinTime" value="0.5" />
+  <Property name="PatrolSwitchMinTime" value="3.5" />
   <Property name="ExtraFollowStrength" value="1" />
   <Property name="ExtraFollowFreq1" value="0.5" />
   <Property name="ExtraFollowFreq2" value="3" />
-  <Property name="SandWormChangeDirectionTime" value="1" />
-  <Property name="SandWormSteerAdjustTime" value="2" />
-  <Property name="SandWormMaxSteer" value="0.2" />
-  <Property name="SandWormMaxHeightAdjust" value="30" />
-  <Property name="SandWormJumpHeight" value="20" />
-  <Property name="SandWormJumpTime" value="5" />
-  <Property name="SandWormSubmergeDepth" value="20" />
-  <Property name="SandWormSubmergeTime" value="3" />
-  <Property name="SandWormSurfaceTime" value="1" />
-  <Property name="SandWormMaxJumps" value="10" />
-  <Property name="SandWormDespawnDist" value="2500" />
+  <Property name="SandWormChangeDirectionTime" value="1.25" />
+  <Property name="SandWormSteerAdjustTime" value="0.25" />
+  <Property name="SandWormMaxSteer" value="1" />
+  <Property name="SandWormMaxHeightAdjust" value="3" />
+  <Property name="SandWormJumpHeight" value="0.15" />
+  <Property name="SandWormJumpTime" value="0.5" />
+  <Property name="SandWormSubmergeDepth" value="1" />
+  <Property name="SandWormSubmergeTime" value="4" />
+  <Property name="SandWormSurfaceTime" value="6" />
+  <Property name="SandWormMaxJumps" value="15" />
+  <Property name="SandWormDespawnDist" value="3500" />
   <Property name="SandWormSpawnTimer" value="300" />
-  <Property name="SandWormSpawnChanceMin" value="0.01" />
-  <Property name="SandWormSpawnChanceMax" value="0.2" />
+  <Property name="SandWormSpawnChanceMin" value="1" /> <!-- <Property name="SandWormSpawnChanceMin" value="0.01" /> -->
+  <Property name="SandWormSpawnChanceMax" value="1" /> <!-- <Property name="SandWormSpawnChanceMax" value="0.2" /> -->
   <Property name="ShieldFadeTime" value="1" />
   <Property name="SharkAlongPathSpeed" value="1" />
   <Property name="SwarmBrakingForce" value="2" />
@@ -713,8 +713,8 @@
   <Property name="MaxForce" value="500" />
   <Property name="MaxTorque" value="50" />
   <Property name="MinWaterSpawnDepth" value="0.1" />
-  <Property name="WaterSpawnOffset" value="1" />
-  <Property name="SpawnDistanceModifierForUnderwater" value="0.1" />
+  <Property name="WaterSpawnOffset" value="2" />
+  <Property name="SpawnDistanceModifierForUnderwater" value="0.3" />
   <Property name="FootDustGroundTintStrength" value="0.3" />
   <Property name="StickToGroundSpeed" value="1" />
   <Property name="StickToGroundCastBegin" value="2" />
@@ -788,7 +788,7 @@
     </Property>
   </Property>
   <Property name="ShowScale" value="False" />
-  <Property name="PetFootShakeModifier" value="0.5" />
+  <Property name="PetFootShakeModifier" value="0.1" />
   <Property name="CreatureMedMinSize" value="1.2" />
   <Property name="CreatureLargeMinSize" value="2.5" />
   <Property name="CreatureHugeMinSize" value="4.5" />
@@ -798,10 +798,10 @@
   <Property name="CreatureBlobRidingMedMinSize" value="3" />
   <Property name="CreatureBlobRidingLargeMinSize" value="5" />
   <Property name="CreatureBlobRidingHugeMinSize" value="8" />
-  <Property name="CreatureSmallHealth" value="200" />
-  <Property name="CreatureMedHealth" value="1400" />
-  <Property name="CreatureLargeHealth" value="2800" />
-  <Property name="CreatureHugeHealth" value="3600" />
+  <Property name="CreatureSmallHealth" value="400" />
+  <Property name="CreatureMedHealth" value="2800" />
+  <Property name="CreatureLargeHealth" value="6000" />
+  <Property name="CreatureHugeHealth" value="9000" />
   <Property name="CreatureLargeWalkShake" value="LARGECREATUREWA" />
   <Property name="CreatureLargeWalkMaxShakeDist" value="2" />
   <Property name="CreatureLargeRunShake" value="LARGECREATUREWA" />
@@ -810,12 +810,12 @@
   <Property name="CreatureHugeWalkMaxShakeDist" value="5" />
   <Property name="CreatureHugeRunShake" value="LARGECREATUREWA" />
   <Property name="CreatureHugeRunMaxShakeDist" value="10" />
-  <Property name="SmallCreaturePerceptionDistance" value="30" />
-  <Property name="largeCreaturePerceptionDistance" value="60" />
-  <Property name="SmallCreatureFleePlayerDistance" value="10" />
-  <Property name="LargeCreatureFleePlayerDistance" value="10" />
-  <Property name="SmallCreatureAvoidPlayerDistance" value="5" />
-  <Property name="LargeCreatureAvoidPlayerDistance" value="5" />
+  <Property name="SmallCreaturePerceptionDistance" value="5" />
+  <Property name="largeCreaturePerceptionDistance" value="10" />
+  <Property name="SmallCreatureFleePlayerDistance" value="5" />
+  <Property name="LargeCreatureFleePlayerDistance" value="3" />
+  <Property name="SmallCreatureAvoidPlayerDistance" value="2" />
+  <Property name="LargeCreatureAvoidPlayerDistance" value="2" />
   <Property name="PredatorPerceptionDistance" value="160" />
   <Property name="PredatorFishPerceptionDistance" value="60" />
   <Property name="PassiveFleePlayerDistance" value="10" />
@@ -825,7 +825,7 @@
   <Property name="PredatorMedHealth" value="2800" />
   <Property name="PredatorLargeHealth" value="6000" />
   <Property name="PredatorHugeHealth" value="8000" />
-  <Property name="PlayerPredatorHealthModifier" value="1.3" />
+  <Property name="PlayerPredatorHealthModifier" value="1.4" />
   <Property name="PredatorApproachTime" value="6" />
   <Property name="PredatorNoticePauseTime" value="2" />
   <Property name="PredatorStealthDist" value="11" />
@@ -843,7 +843,7 @@
   <Property name="PredatorRunAwayHealthPercent" value="40" />
   <Property name="PredatorEnergyRecoverRate" value="0.1" />
   <Property name="PredatorEnergyUseChasing" value="-0.1" />
-  <Property name="AggressiveSharks" value="False" />
+  <Property name="AggressiveSharks" value="True" />
   <Property name="DelayAfterRespawnBeforeAttackable" value="10" />
   <Property name="IndoorTurnTime" value="1" />
   <Property name="IndoorObstacleAvoidStrength" value="5" />
@@ -853,7 +853,7 @@
   <Property name="FreighterSpawnDist" value="30" />
   <Property name="FreighterDespawnDist" value="50" />
   <Property name="ScuttlersCanAttack" value="True" />
-  <Property name="ScuttlerHealth" value="600" />
+  <Property name="ScuttlerHealth" value="800" />
   <Property name="ScuttlerInitialNoAttackTime" value="3.5" />
   <Property name="ScuttlerMoveTimeMin" value="0.8" />
   <Property name="ScuttlerMoveTimeMax" value="3" />
@@ -882,7 +882,7 @@
   <Property name="DelayBetweenPounceAttacks" value="2" />
   <Property name="DelayBetweenSpitAttacks" value="1" />
   <Property name="FiendMaxVerticalForPounce" value="0.3" />
-  <Property name="FiendZigZagSpeed" value="0" />
+  <Property name="FiendZigZagSpeed" value="2" />
   <Property name="FiendZigZagStrength" value="0" />
   <Property name="FiendEggsToUnlockSpit" value="0" />
   <Property name="MaxFiendsToSpawn" value="6" />
@@ -891,12 +891,12 @@
   <Property name="FiendAggroIncreaseDamageEgg" value="1" />
   <Property name="FiendAggroIncreaseDestroyEgg" value="1" />
   <Property name="FiendAggroDecreasePerSpawn" value="0.1" />
-  <Property name="FiendCritAreaSize" value="0.15" />
+  <Property name="FiendCritAreaSize" value="0.25" />
   <Property name="FiendDistToConsiderTargetSwtich" value="10" />
   <Property name="FiendDistReduceForBeingShot" value="70" />
   <Property name="FiendBeingShotMemoryTime" value="10" />
   <Property name="MaxFishFiends" value="10" />
-  <Property name="FishFiendSmallHealth" value="400" />
+  <Property name="FishFiendSmallHealth" value="700" />
   <Property name="FishFiendBigHealth" value="9000" />
   <Property name="FishFiendSmallBoostStrength" value="10" />
   <Property name="FishFiendSmallBoostTime" value="0.5" />
@@ -915,8 +915,8 @@
   <Property name="MaxRagdollsBeforeDespawnOffscreen" value="12" />
   <Property name="MaxRagdollsBeforeDespawnOnscreen" value="18" />
   <Property name="RidingTurnRadiusMultiplier" value="1" />
-  <Property name="TurnRadiusMultiplier" value="4" />
-  <Property name="PredatorTurnRadiusMultiplier" value="0.5" />
+  <Property name="TurnRadiusMultiplier" value="5" />
+  <Property name="PredatorTurnRadiusMultiplier" value="0.25" />
   <Property name="MaxTurnRadius" value="200" />
   <Property name="TurnSlowAreaCos" value="0.5" />
   <Property name="BadTurnPercent" value="0.1" />
@@ -938,14 +938,14 @@
   <Property name="BaseAndTerrainModImpassableStrength" value="1" />
   <Property name="FollowLeaderAlignWeight" value="1" />
   <Property name="FollowLeaderCohereWeight" value="0.1" />
-  <Property name="SoftenAvoidanceRadiusMod" value="2" />
+  <Property name="SoftenAvoidanceRadiusMod" value="3" />
   <Property name="FreighterJellySwimSpeed" value="0.6" />
-  <Property name="DefaultSwimSpeed" value="1" />
+  <Property name="DefaultSwimSpeed" value="0.6" />
   <Property name="FastSwimSpeed" value="2.5" />
   <Property name="DefaultWalkMoveSpeed" value="0.8" />
   <Property name="DefaultTrotMoveSpeed" value="2.5" />
   <Property name="DefaultRunMoveSpeed" value="5" />
-  <Property name="PredatorWalkMoveSpeed" value="1" />
+  <Property name="PredatorWalkMoveSpeed" value="0.6" />
   <Property name="PredatorTrotMoveSpeed" value="3" />
   <Property name="PredatorRunMoveSpeed" value="6" />
   <Property name="HeightDiffPenalty" value="3" />
@@ -955,7 +955,7 @@
   <Property name="PathOverestimate" value="6" />
   <Property name="FishWaterSurfaceAnticipate" value="3" />
   <Property name="FishWaterSurfaceAvoidStrength" value="6" />
-  <Property name="FishDesiredDepth" value="1" />
+  <Property name="FishDesiredDepth" value="-3" />
   <Property name="FishMinHeightAboveSeaBed" value="1.5" />
   <Property name="FishSeaBedAvoidStrength" value="1.5" />
   <Property name="FishObstacleAvoidStrength" value="2" />

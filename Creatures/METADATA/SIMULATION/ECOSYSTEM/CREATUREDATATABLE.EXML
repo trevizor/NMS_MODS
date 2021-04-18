@@ -70,17 +70,17 @@
             </Property>
           </Property>
           <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="MoveSpeedScale" value="0.4" />
+          <Property name="TurnRadiusScale" value="16" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="3" />
           <Property name="Herd" value="False" />
         </Property>
         <Property value="GcCreatureSwarmData.xml">
-          <Property name="MinCount" value="3" />
+          <Property name="MinCount" value="2" />
           <Property name="MaxCount" value="7" />
-          <Property name="SwarmMovementSpeed" value="1" />
+          <Property name="SwarmMovementSpeed" value="0.6" />
           <Property name="SwarmMovementRadius" value="40" />
           <Property name="SwarmMovementType" value="Random" />
           <Property name="Params">
@@ -117,7 +117,7 @@
               <Property name="LandWalkTimeMin" value="2" />
               <Property name="LandWalkTimeMax" value="4" />
               <Property name="MaxSpeed" value="6" />
-              <Property name="AlignTime" value="0.5" />
+              <Property name="AlignTime" value="3" />
               <Property name="BankingTime" value="0.2" />
               <Property name="SpringSmoothTime" value="0.3" />
               <Property name="ApplyScaleToSpeed" value="False" />
@@ -154,7 +154,7 @@
         <Property value="GcCreatureSwarmData.xml">
           <Property name="MinCount" value="1" />
           <Property name="MaxCount" value="1" />
-          <Property name="SwarmMovementSpeed" value="0.25" />
+          <Property name="SwarmMovementSpeed" value="0.05" />
           <Property name="SwarmMovementRadius" value="1" />
           <Property name="SwarmMovementType" value="None" />
           <Property name="Params">
@@ -168,7 +168,7 @@
               <Property name="Range" value="30" />
               <Property name="MaxBankingAmount" value="0.3" />
               <Property name="TurnRequiredForMaxBanking" value="1" />
-              <Property name="MaxPitchAmount" value="0.3" />
+              <Property name="MaxPitchAmount" value="0.15" />
               <Property name="UpwardMovementForMaxPitch" value="1" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
@@ -190,7 +190,7 @@
               <Property name="LandIdleTimeMax" value="5" />
               <Property name="LandWalkTimeMin" value="2" />
               <Property name="LandWalkTimeMax" value="4" />
-              <Property name="MaxSpeed" value="5" />
+              <Property name="MaxSpeed" value="1" />
               <Property name="AlignTime" value="0.5" />
               <Property name="BankingTime" value="0.5" />
               <Property name="SpringSmoothTime" value="0.5" />
@@ -228,7 +228,7 @@
             </Property>
           </Property>
           <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.1" />
+          <Property name="MoveSpeedScale" value="0.05" />
           <Property name="TurnRadiusScale" value="2" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -253,9 +253,9 @@
           <Property name="FlockAvoidPredatorsMaxDist" value="40" />
           <Property name="FlockAvoidPredatorsSpeedBoost" value="0.3" />
           <Property name="MoveInFacingStrength" value="0.9" />
-          <Property name="FlockMoveSpeed" value="0.7" />
+          <Property name="FlockMoveSpeed" value="0.2" />
           <Property name="FlockMoveDirectionTime" value="0.1" />
-          <Property name="FlockTurnAngle" value="7" />
+          <Property name="FlockTurnAngle" value="2" />
           <Property name="MaxBank" value="30" />
           <Property name="BankTime" value="0.1" />
           <Property name="MinFlapSpeed" value="2.5" />
@@ -341,7 +341,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="3" />
@@ -434,7 +434,7 @@
           <Property name="Anims" />
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="3" />
@@ -518,7 +518,7 @@
           <Property name="Anims" />
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -602,7 +602,7 @@
           <Property name="Anims" />
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="2" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -624,12 +624,12 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Water" />
       <Property name="MinScale" value="1" />
-      <Property name="MaxScale" value="2" />
+      <Property name="MaxScale" value="3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
         <Property name="CreatureRoleFrequencyModifier" value="Normal" />
@@ -678,18 +678,18 @@
             </Property>
           </Property>
           <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="MoveSpeedScale" value="0.6" />
+          <Property name="TurnRadiusScale" value="8" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
-          <Property name="HeightTime" value="3" />
+          <Property name="HeightTime" value="15" />
           <Property name="Herd" value="False" />
         </Property>
         <Property value="GcCreatureSwarmData.xml">
-          <Property name="MinCount" value="3" />
+          <Property name="MinCount" value="1" />
           <Property name="MaxCount" value="7" />
           <Property name="SwarmMovementSpeed" value="1" />
-          <Property name="SwarmMovementRadius" value="40" />
+          <Property name="SwarmMovementRadius" value="80" />
           <Property name="SwarmMovementType" value="Random" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -702,7 +702,7 @@
               <Property name="Range" value="30" />
               <Property name="MaxBankingAmount" value="0" />
               <Property name="TurnRequiredForMaxBanking" value="0.3" />
-              <Property name="MaxPitchAmount" value="0.4" />
+              <Property name="MaxPitchAmount" value="0.1" />
               <Property name="UpwardMovementForMaxPitch" value="0.2" />
               <Property name="FaceMoveDirStrength" value="0.9" />
               <Property name="TiltMoveDirStrength" value="0" />
@@ -714,7 +714,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -724,8 +724,8 @@
               <Property name="LandIdleTimeMax" value="5" />
               <Property name="LandWalkTimeMin" value="2" />
               <Property name="LandWalkTimeMax" value="4" />
-              <Property name="MaxSpeed" value="2" />
-              <Property name="AlignTime" value="0.7" />
+              <Property name="MaxSpeed" value="1" />
+              <Property name="AlignTime" value="4" />
               <Property name="BankingTime" value="0.2" />
               <Property name="SpringSmoothTime" value="0.7" />
               <Property name="ApplyScaleToSpeed" value="True" />
@@ -812,7 +812,7 @@
           </Property>
           <Property name="MoveRange" value="300" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="25" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="3" />
@@ -835,7 +835,7 @@
               <Property name="Range" value="30" />
               <Property name="MaxBankingAmount" value="0" />
               <Property name="TurnRequiredForMaxBanking" value="0.3" />
-              <Property name="MaxPitchAmount" value="0.3" />
+              <Property name="MaxPitchAmount" value="0.15" />
               <Property name="UpwardMovementForMaxPitch" value="0.4" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
@@ -945,7 +945,7 @@
           </Property>
           <Property name="MoveRange" value="300" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="30" />
           <Property name="HeightMax" value="40" />
           <Property name="HeightTime" value="2" />
@@ -1025,8 +1025,8 @@
       <Property name="CanBeFemale" value="True" />
       <Property name="Tags" />
       <Property name="MoveArea" value="Air" />
-      <Property name="MinScale" value="3.5" />
-      <Property name="MaxScale" value="4" />
+      <Property name="MinScale" value="8" />
+      <Property name="MaxScale" value="25" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Rare" />
       </Property>
@@ -1081,7 +1081,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="15" />
           <Property name="HeightMin" value="45" />
           <Property name="HeightMax" value="100" />
           <Property name="HeightTime" value="2" />
@@ -1091,7 +1091,7 @@
           <Property name="MinCount" value="2" />
           <Property name="MaxCount" value="3" />
           <Property name="SwarmMovementSpeed" value="10" />
-          <Property name="SwarmMovementRadius" value="100" />
+          <Property name="SwarmMovementRadius" value="200" />
           <Property name="SwarmMovementType" value="Circle" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -1104,7 +1104,7 @@
               <Property name="Range" value="1" />
               <Property name="MaxBankingAmount" value="0.3" />
               <Property name="TurnRequiredForMaxBanking" value="0.3" />
-              <Property name="MaxPitchAmount" value="0.5" />
+              <Property name="MaxPitchAmount" value="0.15" />
               <Property name="UpwardMovementForMaxPitch" value="0.3" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
@@ -1117,7 +1117,7 @@
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
               <Property name="WalkSpeed" value="5" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -1126,8 +1126,8 @@
               <Property name="LandIdleTimeMax" value="5" />
               <Property name="LandWalkTimeMin" value="2" />
               <Property name="LandWalkTimeMax" value="4" />
-              <Property name="MaxSpeed" value="10" />
-              <Property name="AlignTime" value="0.5" />
+              <Property name="MaxSpeed" value="6" />
+              <Property name="AlignTime" value="1.5" />
               <Property name="BankingTime" value="0.2" />
               <Property name="SpringSmoothTime" value="2" />
               <Property name="ApplyScaleToSpeed" value="False" />
@@ -1226,7 +1226,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="55" />
           <Property name="HeightMax" value="100" />
           <Property name="HeightTime" value="2" />
@@ -1249,7 +1249,7 @@
               <Property name="Range" value="1" />
               <Property name="MaxBankingAmount" value="0.5" />
               <Property name="TurnRequiredForMaxBanking" value="0.2" />
-              <Property name="MaxPitchAmount" value="0.3" />
+              <Property name="MaxPitchAmount" value="0.15" />
               <Property name="UpwardMovementForMaxPitch" value="0.3" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
@@ -1513,7 +1513,7 @@
               <Property name="Range" value="30" />
               <Property name="MaxBankingAmount" value="0.3" />
               <Property name="TurnRequiredForMaxBanking" value="1" />
-              <Property name="MaxPitchAmount" value="0.3" />
+              <Property name="MaxPitchAmount" value="0.15" />
               <Property name="UpwardMovementForMaxPitch" value="1" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
@@ -1586,7 +1586,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0.1" />
           <Property name="HeightMax" value="5" />
           <Property name="HeightTime" value="5" />
@@ -1662,7 +1662,7 @@
               <Property name="Range" value="30" />
               <Property name="MaxBankingAmount" value="0.3" />
               <Property name="TurnRequiredForMaxBanking" value="1" />
-              <Property name="MaxPitchAmount" value="0.3" />
+              <Property name="MaxPitchAmount" value="0.15" />
               <Property name="UpwardMovementForMaxPitch" value="1" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
@@ -1735,7 +1735,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0.1" />
           <Property name="HeightMax" value="5" />
           <Property name="HeightTime" value="5" />
@@ -1859,7 +1859,7 @@
           </Property>
           <Property name="MoveRange" value="20" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0.1" />
           <Property name="HeightMax" value="5" />
           <Property name="HeightTime" value="1" />
@@ -2059,7 +2059,7 @@
           </Property>
           <Property name="MoveRange" value="20" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0.1" />
           <Property name="HeightMax" value="5" />
           <Property name="HeightTime" value="1" />
@@ -2332,7 +2332,7 @@
           </Property>
           <Property name="MoveRange" value="20" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="5" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="1" />
@@ -2577,7 +2577,7 @@
           </Property>
           <Property name="MoveRange" value="20" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="5" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="1" />
@@ -2790,7 +2790,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="1" />
@@ -3805,7 +3805,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="5" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -4078,7 +4078,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -4238,7 +4238,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -4558,7 +4558,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -4881,7 +4881,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -5248,7 +5248,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="1" />
@@ -5569,7 +5569,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="1" />
@@ -5941,7 +5941,7 @@
           </Property>
           <Property name="MoveRange" value="20" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="1" />
@@ -6184,7 +6184,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -6439,7 +6439,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -6673,7 +6673,7 @@
           </Property>
           <Property name="MoveRange" value="20" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="5" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="1" />
@@ -7291,7 +7291,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -7827,7 +7827,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -8214,7 +8214,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -8504,7 +8504,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -8734,7 +8734,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0.1" />
           <Property name="HeightMax" value="2" />
           <Property name="HeightTime" value="1" />
@@ -8761,7 +8761,7 @@
               <Property name="Range" value="4" />
               <Property name="MaxBankingAmount" value="0.3" />
               <Property name="TurnRequiredForMaxBanking" value="1" />
-              <Property name="MaxPitchAmount" value="0.3" />
+              <Property name="MaxPitchAmount" value="0.15" />
               <Property name="UpwardMovementForMaxPitch" value="1" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
@@ -8845,7 +8845,7 @@
               <Property name="Range" value="4" />
               <Property name="MaxBankingAmount" value="0.5" />
               <Property name="TurnRequiredForMaxBanking" value="0.1" />
-              <Property name="MaxPitchAmount" value="0.3" />
+              <Property name="MaxPitchAmount" value="0.15" />
               <Property name="UpwardMovementForMaxPitch" value="1" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
@@ -8929,7 +8929,7 @@
               <Property name="Range" value="4" />
               <Property name="MaxBankingAmount" value="0" />
               <Property name="TurnRequiredForMaxBanking" value="1" />
-              <Property name="MaxPitchAmount" value="0.3" />
+              <Property name="MaxPitchAmount" value="0.15" />
               <Property name="UpwardMovementForMaxPitch" value="1" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
@@ -8971,7 +8971,7 @@
               <Property name="Range" value="4" />
               <Property name="MaxBankingAmount" value="0.3" />
               <Property name="TurnRequiredForMaxBanking" value="1" />
-              <Property name="MaxPitchAmount" value="0.3" />
+              <Property name="MaxPitchAmount" value="0.15" />
               <Property name="UpwardMovementForMaxPitch" value="1" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
@@ -9013,7 +9013,7 @@
               <Property name="Range" value="4" />
               <Property name="MaxBankingAmount" value="0.3" />
               <Property name="TurnRequiredForMaxBanking" value="1" />
-              <Property name="MaxPitchAmount" value="0.3" />
+              <Property name="MaxPitchAmount" value="0.15" />
               <Property name="UpwardMovementForMaxPitch" value="1" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
@@ -9051,7 +9051,7 @@
               <Property name="Range" value="4" />
               <Property name="MaxBankingAmount" value="0" />
               <Property name="TurnRequiredForMaxBanking" value="1" />
-              <Property name="MaxPitchAmount" value="0.3" />
+              <Property name="MaxPitchAmount" value="0.15" />
               <Property name="UpwardMovementForMaxPitch" value="1" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
@@ -9662,7 +9662,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -10131,7 +10131,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0.1" />
           <Property name="HeightMax" value="0.1" />
           <Property name="HeightTime" value="1" />
@@ -10342,7 +10342,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0.1" />
           <Property name="HeightMax" value="0.1" />
           <Property name="HeightTime" value="1" />
@@ -10524,7 +10524,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -10673,7 +10673,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -10785,7 +10785,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -11097,7 +11097,7 @@
           </Property>
           <Property name="MoveRange" value="60" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="2.5" />
           <Property name="HeightMax" value="3.5" />
           <Property name="HeightTime" value="1" />
@@ -11208,7 +11208,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -11299,7 +11299,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -11424,7 +11424,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -11515,7 +11515,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -11628,7 +11628,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="10" />
           <Property name="HeightTime" value="3" />
@@ -11761,7 +11761,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="10" />
           <Property name="HeightTime" value="3" />
@@ -11894,7 +11894,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="10" />
           <Property name="HeightTime" value="3" />
@@ -12043,7 +12043,7 @@
           </Property>
           <Property name="MoveRange" value="300" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="25" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="3" />
@@ -12154,7 +12154,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="5" />
@@ -12186,8 +12186,8 @@
       <Property name="CanBeFemale" value="False" />
       <Property name="Tags" />
       <Property name="MoveArea" value="Air" />
-      <Property name="MinScale" value="50" />
-      <Property name="MaxScale" value="50" />
+      <Property name="MinScale" value="30" />
+      <Property name="MaxScale" value="150" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
@@ -12242,7 +12242,7 @@
           </Property>
           <Property name="MoveRange" value="200" />
           <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="3" />
+          <Property name="TurnRadiusScale" value="35" />
           <Property name="HeightMin" value="45" />
           <Property name="HeightMax" value="100" />
           <Property name="HeightTime" value="2" />
@@ -12251,8 +12251,8 @@
         <Property value="GcCreatureSwarmData.xml">
           <Property name="MinCount" value="1" />
           <Property name="MaxCount" value="1" />
-          <Property name="SwarmMovementSpeed" value="90" />
-          <Property name="SwarmMovementRadius" value="100" />
+          <Property name="SwarmMovementSpeed" value="60" />
+          <Property name="SwarmMovementRadius" value="300" />
           <Property name="SwarmMovementType" value="FollowPlayer" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -12266,7 +12266,7 @@
               <Property name="MaxBankingAmount" value="0.3" />
               <Property name="TurnRequiredForMaxBanking" value="0.3" />
               <Property name="MaxPitchAmount" value="0.5" />
-              <Property name="UpwardMovementForMaxPitch" value="0.3" />
+              <Property name="UpwardMovementForMaxPitch" value="0.2" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
               <Property name="CanLand" value="False" />
@@ -12287,7 +12287,7 @@
               <Property name="LandIdleTimeMax" value="5" />
               <Property name="LandWalkTimeMin" value="2" />
               <Property name="LandWalkTimeMax" value="4" />
-              <Property name="MaxSpeed" value="80" />
+              <Property name="MaxSpeed" value="50" />
               <Property name="AlignTime" value="0.4" />
               <Property name="BankingTime" value="0.4" />
               <Property name="SpringSmoothTime" value="0.4" />
