@@ -257,10 +257,10 @@
     <Property name="FadeOutTime" value="0.3" />
   </Property>
   <Property name="_3rdPersonUpOffsetRollChangeSpeed" value="10" />
-  <Property name="_3rdPersonRollAngle" value="0" />
-  <Property name="_3rdPersonRollAngleDropship" value="0" />
-  <Property name="_3rdPersonRollAngleScience" value="0" />
-  <Property name="_3rdPersonRollAngleAlien" value="0" />
+  <Property name="_3rdPersonRollAngle" value="75" />
+  <Property name="_3rdPersonRollAngleDropship" value="45" />
+  <Property name="_3rdPersonRollAngleScience" value="62" />
+  <Property name="_3rdPersonRollAngleAlien" value="30" />
   <Property name="_3rdPersonPitchAngle" value="12" />
   <Property name="_3rdPersonYawAngle" value="10" />
   <Property name="_3rdPersonYawAngleLateralExtra" value="0.075" />
@@ -268,10 +268,10 @@
   <Property name="_3rdPersonAngleMinSpeed" value="0.05" />
   <Property name="_3rdPersonAngleSpeedRangePitch" value="3" />
   <Property name="_3rdPersonAngleSpeedRangeYaw" value="3" />
-  <Property name="_3rdPersonLowHeightMin" value="0" />
-  <Property name="_3rdPersonLowHeightMax" value="5" />
-  <Property name="_3rdPersonLowHeightOffsetVertRotationY" value="-1" />
-  <Property name="_3rdPersonLowHeightOffsetY" value="-0.5" />
+  <Property name="_3rdPersonLowHeightMin" value="10" />
+  <Property name="_3rdPersonLowHeightMax" value="50" />
+  <Property name="_3rdPersonLowHeightOffsetVertRotationY" value="-2" />
+  <Property name="_3rdPersonLowHeightOffsetY" value="-2" />
   <Property name="_3rdPersonLowHeightSpringTime" value="1.5" />
   <Property name="_3rdPersonAvoidanceAdjustPitchFactor" value="0.08" />
   <Property name="_3rdPersonHeightForceAdjustPitchFactor" value="0.15" />
@@ -280,6 +280,17 @@
   <Property name="_3rdPersonFlashIntensity" value="0.9" />
   <Property name="_3rdPersonFlashDuration" value="0.9" />
   <Property name="_3rdPersonTransitionTime" value="0.2" />
+  <Property name="_3rdPersonWarpXWander" value="6" />
+  <Property name="_3rdPersonWarpYWander" value="1.5" />
+  <Property name="_3rdPersonWarpZWander" value="5.5" />
+  <Property name="_3rdPersonWarpWanderStartTime" value="6.5" />
+  <Property name="_3rdPersonWarpWanderSpring" value="2" />
+  <Property name="_3rdPersonWarpWanderTimeX" value="38" />
+  <Property name="_3rdPersonWarpWanderTimeY" value="17" />
+  <Property name="_3rdPersonWarpWanderTimeZ" value="30" />
+  <Property name="_3rdPersonWarpWanderCurve" value="TkCurveType.xml">
+    <Property name="Curve" value="EaseOutSine" />
+  </Property>
   <Property name="AvoidancePower" value="0.5" />
   <Property name="AvoidanceDistancePower" value="4" />
   <Property name="CollisionDeflectForce" value="60" />
@@ -1024,7 +1035,7 @@
   <Property name="MiniWarpHUDArrowAttractAngle" value="1" />
   <Property name="MiniWarpHUDArrowAttractAngleStation" value="5" />
   <Property name="MiniWarpHUDArrowAttractAngleOtherPlayerStuff" value="1" />  
-  <Property name="MiniWarpHUDArrowAttractAngleSaveBeacon" value="1" />  
+  <Property name="MiniWarpHUDArrowAttractAngleSaveBeacon" value="1" />
   <Property name="MiniWarpHUDArrowAttractAngleDense" value="4" /> 
   <Property name="MiniWarpHUDArrowNumMarkersToBeDense" value="6" />
   <Property name="MiniWarpCurve" value="TkCurveType.xml">

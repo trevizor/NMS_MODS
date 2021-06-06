@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (2.61.0)-->
+<!--File created using MBINCompiler version (3.51.0)-->
 <Data template="TkHeavyAirData">
-  <Property name="Material" value="MODELS/EFFECTS/COMMON/MATERIALS/UNDERWATERLIGHTSHAFT.MATERIAL.MBIN" />
-  <Property name="NumberOfParticles" value="400" />
-  <Property name="Radius" value="60" />
-  <Property name="RadiusY" value="8" />
-  <Property name="MinParticleLifetime" value="20" />
-  <Property name="MaxParticleLifetime" value="40" />
-  <Property name="FadeTime" value="6" />
+  <Property name="Material" value="MODELS/EFFECTS/COMMON/MATERIALS/HEATWAVE.MATERIAL.MBIN" />
+  <Property name="NumberOfParticles" value="1200" />
+  <Property name="Radius" value="90" />
+  <Property name="RadiusY" value="20" />
+  <Property name="MinParticleLifetime" value="30" />
+  <Property name="MaxParticleLifetime" value="60" />
+  <Property name="FadeTime" value="10" />
   <Property name="SpeedFadeInTime" value="0" />
   <Property name="MinVisibleSpeed" value="0" />
   <Property name="SpeedFadeOutTime" value="0" />
-  <Property name="MaxVisibleSpeed" value="1500" />
+  <Property name="MaxVisibleSpeed" value="300" />
   <Property name="SpawnRotationRange" value="0" />
   <Property name="MajorDirection" value="Vector4f.xml">
     <Property name="x" value="0" />
-    <Property name="y" value="0" />
+    <Property name="y" value="-0.01" />
     <Property name="z" value="0" />
     <Property name="t" value="0" />
   </Property>
   <Property name="ScaleRange" value="Vector4f.xml">
-    <Property name="x" value="8" />
-    <Property name="y" value="8" />
-    <Property name="z" value="8" />
+    <Property name="x" value="15" />
+    <Property name="y" value="15" />
+    <Property name="z" value="15" />
     <Property name="t" value="0" />
   </Property>
   <Property name="RotationSpeedRange" value="Vector4f.xml">
@@ -38,28 +38,28 @@
     <Property name="t" value="0" />
   </Property>
   <Property name="AmplitudeMin" value="Vector4f.xml">
-    <Property name="x" value="-0.002" />
-    <Property name="y" value="-0.001" />
+    <Property name="x" value="-0.01" />
+    <Property name="y" value="0" />
     <Property name="z" value="0" />
     <Property name="t" value="0" />
   </Property>
   <Property name="AmplitudeMax" value="Vector4f.xml">
-    <Property name="x" value="0.002" />
-    <Property name="y" value="0.001" />
+    <Property name="x" value="0.01" />
+    <Property name="y" value="0" />
     <Property name="z" value="0" />
     <Property name="t" value="0" />
   </Property>
   <Property name="Colour1" value="Colour.xml">
-    <Property name="R" value="1" />
-    <Property name="G" value="1" />
-    <Property name="B" value="0.85" />
-    <Property name="A" value="0.9" />
+    <Property name="R" value="0" />
+    <Property name="G" value="0" />
+    <Property name="B" value="0" />
+    <Property name="A" value="0.4" />
   </Property>
   <Property name="Colour2" value="Colour.xml">
-    <Property name="R" value="1" />
-    <Property name="G" value="1" />
-    <Property name="B" value="0.8" />
+    <Property name="R" value="0" />
+    <Property name="G" value="0" />
+    <Property name="B" value="0" />
     <Property name="A" value="0.9" />
   </Property>
-  <Property name="EmitterShape" value="UpperHalfSphere" />
+  <Property name="EmitterShape" value="Sphere" />
 </Data>

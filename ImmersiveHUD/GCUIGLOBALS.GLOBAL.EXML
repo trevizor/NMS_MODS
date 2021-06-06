@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.12.0)-->
+<!--File created using MBINCompiler version (3.37.0)-->
 <Data template="GcUIGlobals">
-  <Property name="EggModifiyAnimMaxSize" value="96" />  
+  <Property name="EggModifiyAnimMaxSize" value="96" />
   <Property name="EggModifiyAnimLoopTime" value="1" />
   <Property name="SeasonFinalStageIndex" value="5" />
   <Property name="SeasonalRingTable">
@@ -168,6 +168,8 @@
   <Property name="MilestoneStingDisplayTime" value="6" />
   <Property name="StageStingDisplayTime" value="6" />
   <Property name="EndOfSeasonAlertDelay" value="4" />
+  <Property name="ShowDaysIfLessThan" value="11" />
+  <Property name="ShowWeeksIfLessThan" value="7" />
   <Property name="ExplorationLogMissionID" value="EXPLORE_LOG" />
   <Property name="ForceOpenHazardProtInventoryThreshold" value="16" />
   <Property name="PlanetDataExtraRadius" value="1.125" />
@@ -185,32 +187,32 @@
   <Property name="QuickMenuCentrePos" value="375" />
   <Property name="QuickMenuSideOffset" value="70" />
   <Property name="QuickMenuCentreSideOffset" value="100" />
-  <Property name="InWorldInteractLabelScale" value="0.5" />
-  <Property name="InWorldScreenScaleDistance" value="1" />
+  <Property name="InWorldInteractLabelScale" value="0" />
+  <Property name="InWorldScreenScaleDistance" value="0" />
   <Property name="InWorldInteractLabelAlignment" value="Vector2f.xml">
-    <Property name="x" value="0.22" />
-    <Property name="y" value="0.55" />
+    <Property name="x" value="0" />
+    <Property name="y" value="0" />
   </Property>
   <Property name="InWorldInteractLabelCentreOffset" value="Vector3f.xml">
-    <Property name="x" value="0.2" />
-    <Property name="y" value="0.1" />
+    <Property name="x" value="0" />
+    <Property name="y" value="0" />
     <Property name="z" value="0" />
   </Property>
   <Property name="InWorldInteractLabelTopOffset" value="Vector3f.xml">
-    <Property name="x" value="0.2" />
-    <Property name="y" value="0.1" />
+    <Property name="x" value="0" />
+    <Property name="y" value="0" />
     <Property name="z" value="0" />
   </Property>
   <Property name="InWorldInteractLabelLineOffset" value="Vector3f.xml">
-    <Property name="x" value="-1.55" />
-    <Property name="y" value="-0.15" />
+    <Property name="x" value="0" />
+    <Property name="y" value="0" />
     <Property name="z" value="0" />
   </Property>
   <Property name="InWorldInteractLabelMinHeadOffset" value="0" />
-  <Property name="InWorldInteractLabelNearDistance" value="1" />
-  <Property name="InWorldInteractLabelNearRange" value="1" />
-  <Property name="InWorldInteractLabelFarDistance" value="1" />
-  <Property name="InWorldInteractLabelFarRange" value="1" />
+  <Property name="InWorldInteractLabelNearDistance" value="0" />
+  <Property name="InWorldInteractLabelNearRange" value="0" />
+  <Property name="InWorldInteractLabelFarDistance" value="0" />
+  <Property name="InWorldInteractLabelFarRange" value="0" />
   <Property name="ShipHUDMarkerHideDistance" value="20" />
   <Property name="ShipHUDMarkerOffset" value="3" />
   <Property name="PetSlotUnlockBounceTime" value="0.5" />
@@ -278,8 +280,8 @@
     <Property name="x" value="0" />
     <Property name="y" value="0" />
   </Property>
-  <Property name="InWorldInteractLabelWidth" value="700" />
-  <Property name="InWorldInteractLabelHeight" value="300" />
+  <Property name="InWorldInteractLabelWidth" value="0" />
+  <Property name="InWorldInteractLabelHeight" value="0" />
   <Property name="VRDistanceWarningUIFile" value="UI//HUD//HUDVRWARNING.MBIN" />
   <Property name="ShowVRDistanceWarning" value="False" />
   <Property name="FaceLockedScreenOffset" value="Vector3f.xml">
@@ -287,8 +289,8 @@
     <Property name="y" value="0" />
     <Property name="z" value="-1" />
   </Property>
-  <Property name="VRFaceLockedScreenWidth" value="1200" />
-  <Property name="VRFaceLockedScreenHeight" value="620" />
+  <Property name="VRFaceLockedScreenWidth" value="2200" />
+  <Property name="VRFaceLockedScreenHeight" value="920" />
   <Property name="OnlyShowEjectHandlesInVR" value="True" />
   <Property name="CompassScreenWidth" value="1000" />
   <Property name="CompassScreenHeight" value="120" />
@@ -1627,7 +1629,6 @@
   <Property name="PhotoModeTimeofDayChange" value="0.5" />
   <Property name="FrigateIconOffset" value="25" />
   <Property name="CreatureIconOffset" value="1" />
-  
   <Property name="CreatureIconOffsetPhysics" value="0.5" />
   <Property name="DelayBeforeHidingHangarAfterGalaxyMap" value="1" />
   <Property name="DelayBeforeShowingHangarIntoGalaxyMap" value="0" />
@@ -1821,7 +1822,7 @@
   <Property name="SpaceMarkersBattleOffset" value="3000" />
   <Property name="LargeSpaceIconSize" value="80" />
   <Property name="SmallSpaceIconSize" value="48" />
-  <Property name="PetHoverIconSize" value="64" /> 
+  <Property name="PetHoverIconSize" value="64" />
   <Property name="PetIconSize" value="52" />
   <Property name="TrackTypeIconOffset" value="Vector2f.xml">
     <Property name="x" value="0" />
@@ -2192,11 +2193,12 @@
   <Property name="ShowJetpackNotificationForNonTerrain" value="False" />
   <Property name="StatsMessageDelayTime" value="60" />
   <Property name="SeasonMessageDelayTime" value="0.5" />
+  <Property name="HideExtremePlanetNotifications" value="True" />
   <Property name="NotificationsResourceExtractHintCount" value="1500" />
   <Property name="NotificationStaminaHintDistanceWalked" value="10000" />
   <Property name="NotificationMinVisibleTime" value="3" />
   <Property name="NotificationHazardSafeThreshold" value="0.2" />
-  <Property name="NotificationHazardTimer" value="6" />
+  <Property name="NotificationHazardTimer" value="3" />
   <Property name="NotificationInteractHintStartTime" value="1800" />
   <Property name="NotificationBuildHintStartTime" value="31" />
   <Property name="NotificationJetpackTime" value="1.3" />
@@ -2544,6 +2546,7 @@
   <Property name="ShieldSpringTime" value="0.6" />
   <Property name="ShieldPulseTime" value="0.25" />
   <Property name="ShieldHazardPulseRate" value="0.1" />
+  <Property name="ShieldHUDAlwaysOn" value="False" />
   <Property name="ShieldHazardPulseThreshold" value="0.2" />
   <Property name="AlwaysOnHazardThreshold" value="0.7" />
   <Property name="AlwaysOnHazardStrengthTox" value="0.1" />
@@ -2962,7 +2965,7 @@
       </Property>
       <Property name="ToolboxThumbnail" value="TkModelRendererData.xml">
         <Property name="Camera" value="TkModelRendererCameraData.xml">
-          <Property name="Distance" value="1.5" />
+          <Property name="Distance" value="1.3" />
           <Property name="Offset" value="Vector3f.xml">
             <Property name="x" value="0" />
             <Property name="y" value="0" />
@@ -2970,7 +2973,7 @@
           </Property>
           <Property name="Roll" value="0" />
           <Property name="Pitch" value="0" />
-          <Property name="Rotate" value="0" />
+          <Property name="Rotate" value="60" />
           <Property name="LightPitch" value="45" />
           <Property name="LightRotate" value="45" />
           <Property name="Wander" value="TkCameraWanderData.xml">
@@ -3861,7 +3864,7 @@
     <Property name="A" value="0.9" />
   </Property>
   <Property name="CursorHoverSlowFactor" value="0.85" />
-  <Property name="FrontendBGAlpha" value="0.4" />
+  <Property name="FrontendBGAlpha" value="0.2" />
   <Property name="FrontendConfirmTimeMouseMultiplier" value="0.25" />
   <Property name="FrontendConfirmTimeFast" value="0.15" />
   <Property name="FrontendConfirmTime" value="0.2" />
@@ -4086,6 +4089,9 @@
     <Property name="B" value="0" />
     <Property name="A" value="0" />
   </Property>
+  <Property name="RadialMenuInnerRadius" value="0.6" />
+  <Property name="RadialMenuInnerRadiusCursor" value="0.1" />
+  <Property name="RadialMenuWedgeOffset" value="1" />
   <Property name="HatchPulseSpeed" value="2500" />
   <Property name="HatchPulseWidth" value="500" />
   <Property name="HatchPulsePauseTime" value="3" />
@@ -4100,7 +4106,7 @@
   <Property name="FrontendDoFFarPlaneMax" value="750" />
   <Property name="FrontendDoFFarPlaneFadeMin" value="0" />
   <Property name="FrontendDoFFarPlaneFadeMax" value="750" />
-  <Property name="FrontendDoFBlurMultiplier" value="0.5" />
+  <Property name="FrontendDoFBlurMultiplier" value="1.0" />
   <Property name="FrontendDoFEnableBokeh" value="True" />
   <Property name="FrontendDoFCurve" value="TkCurveType.xml">
     <Property name="Curve" value="SmoothFastInSlowOut" />
@@ -4155,6 +4161,8 @@
   <Property name="SpaceMapShowPlanetLines" value="True" />
   <Property name="SpaceMapShowStation" value="True" />
   <Property name="SpaceMapShowStationLines" value="True" />
+  <Property name="SpaceMapShowAnomaly" value="True" />
+  <Property name="SpaceMapShowAnomalyLines" value="True" />
   <Property name="SpaceMapShowNexus" value="True" />
   <Property name="SpaceMapShowNexusLines" value="True" />
   <Property name="SpaceMapShowShips" value="True" />
@@ -4176,6 +4184,7 @@
   <Property name="SpaceMapObjectScale" value="0.8" />
   <Property name="SpaceMapFreighterScale" value="0.7" />
   <Property name="SpaceMapStationScale" value="1" />
+  <Property name="SpaceMapAnomalyScale" value="1" />
   <Property name="SpaceMapPlanetScale" value="2.5" />
   <Property name="SpaceMapPlanetLineOffset" value="0.81" />
   <Property name="SpaceMapMoonScale" value="1.5" />
@@ -4297,6 +4306,38 @@
       <Property name="A" value="0.8" />
     </Property>
     <Property name="TintModel" value="False" />
+    <Property name="Radius" value="0.6" />
+    <Property name="DistanceMin" value="0" />
+    <Property name="DistanceRange" value="5000" />
+    <Property name="ScaleRange" value="5000" />
+    <Property name="ScaleMagnitude" value="1000" />
+    <Property name="ScaleMin" value="0.2" />
+    <Property name="Orient" value="False" />
+  </Property>
+  <Property name="SpaceMapAtlasData" value="GcSpaceMapObjectData.xml">
+    <Property name="Colour" value="Colour.xml">
+      <Property name="R" value="0.823" />
+      <Property name="G" value="0.088" />
+      <Property name="B" value="0.041" />
+      <Property name="A" value="1" />
+    </Property>
+    <Property name="TintModel" value="True" />
+    <Property name="Radius" value="0.6" />
+    <Property name="DistanceMin" value="0" />
+    <Property name="DistanceRange" value="5000" />
+    <Property name="ScaleRange" value="5000" />
+    <Property name="ScaleMagnitude" value="1000" />
+    <Property name="ScaleMin" value="0.2" />
+    <Property name="Orient" value="False" />
+  </Property>
+  <Property name="SpaceMapBlackHoleData" value="GcSpaceMapObjectData.xml">
+    <Property name="Colour" value="Colour.xml">
+      <Property name="R" value="0.005" />
+      <Property name="G" value="0.093" />
+      <Property name="B" value="0.008" />
+      <Property name="A" value="1" />
+    </Property>
+    <Property name="TintModel" value="True" />
     <Property name="Radius" value="0.6" />
     <Property name="DistanceMin" value="0" />
     <Property name="DistanceRange" value="5000" />
@@ -4429,8 +4470,10 @@
   <Property name="HUDMarkerAnimCurve" value="TkCurveType.xml">
     <Property name="Curve" value="Linear" />
   </Property>
-  <Property name="HUDMarkerPrimaryIndicatorSize" value="64" />
+  <Property name="HUDMarkerPrimaryIndicatorSize" value="32" />
+  <Property name="HUDPetMarkerAngleTest" value="20" />
   <Property name="HUDMarkerHoverAngleTestGround" value="3.5" />
+  <Property name="HUDPetCentreScreenAngle" value="15" />
   <Property name="HUDNetworkMarkerHoverAngleTestGround" value="1" />
   <Property name="HUDMarkerWideHoverAngleTest" value="20" />
   <Property name="HUDMarkerHoverAngleTestShip" value="10" />
@@ -4656,7 +4699,7 @@
     <Property name="Scales" value="True" />
     <Property name="Time" value="0.2" />
     <Property name="ScaleAtMin" value="2" />
-    <Property name="SclaeAtMax" value="1" />
+    <Property name="ScaleAtMax" value="1" />
     <Property name="AnimCurve" value="TkCurveType.xml">
       <Property name="Curve" value="Linear" />
     </Property>
@@ -4673,7 +4716,7 @@
     <Property name="Scales" value="True" />
     <Property name="Time" value="0.4" />
     <Property name="ScaleAtMin" value="2" />
-    <Property name="SclaeAtMax" value="1" />
+    <Property name="ScaleAtMax" value="1" />
     <Property name="AnimCurve" value="TkCurveType.xml">
       <Property name="Curve" value="EaseOutBounce" />
     </Property>
@@ -4690,7 +4733,7 @@
     <Property name="Scales" value="True" />
     <Property name="Time" value="0.25" />
     <Property name="ScaleAtMin" value="1" />
-    <Property name="SclaeAtMax" value="1.5" />
+    <Property name="ScaleAtMax" value="1.5" />
     <Property name="AnimCurve" value="TkCurveType.xml">
       <Property name="Curve" value="BellSquared" />
     </Property>
@@ -4707,7 +4750,7 @@
     <Property name="Scales" value="True" />
     <Property name="Time" value="0.25" />
     <Property name="ScaleAtMin" value="1" />
-    <Property name="SclaeAtMax" value="1.5" />
+    <Property name="ScaleAtMax" value="1.5" />
     <Property name="AnimCurve" value="TkCurveType.xml">
       <Property name="Curve" value="BellSquared" />
     </Property>
@@ -4724,7 +4767,7 @@
     <Property name="Scales" value="True" />
     <Property name="Time" value="0.15" />
     <Property name="ScaleAtMin" value="2" />
-    <Property name="SclaeAtMax" value="1" />
+    <Property name="ScaleAtMax" value="1" />
     <Property name="AnimCurve" value="TkCurveType.xml">
       <Property name="Curve" value="Linear" />
     </Property>
@@ -4741,7 +4784,7 @@
     <Property name="Scales" value="True" />
     <Property name="Time" value="1" />
     <Property name="ScaleAtMin" value="1" />
-    <Property name="SclaeAtMax" value="1.3" />
+    <Property name="ScaleAtMax" value="1.3" />
     <Property name="AnimCurve" value="TkCurveType.xml">
       <Property name="Curve" value="BellSquared" />
     </Property>
@@ -4758,7 +4801,7 @@
     <Property name="Scales" value="False" />
     <Property name="Time" value="1" />
     <Property name="ScaleAtMin" value="1" />
-    <Property name="SclaeAtMax" value="1.3" />
+    <Property name="ScaleAtMax" value="1.3" />
     <Property name="AnimCurve" value="TkCurveType.xml">
       <Property name="Curve" value="BellSquared" />
     </Property>

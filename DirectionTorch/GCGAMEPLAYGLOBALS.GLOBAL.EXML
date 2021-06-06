@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (3.37.0)-->
 <Data template="GcGameplayGlobals">
+  <Property name="NexusRecipeCostType" value="NANITES" />
+  <Property name="NexusRecipeCostNaniteMultiplier" value="250" />
   <Property name="ShipScanPlanetRechargeMultiplier" value="0.25" />
   <Property name="ShipScanSpaceRechargeMultiplier" value="0.25" />
   <Property name="FreeSuitSlotID" value="C_SUIT_SLOT" />
@@ -588,6 +590,7 @@
   <Property name="EarlyPiratesToBeKilled" value="10" />
   <Property name="PirateInterestOverride" value="0" />
   <Property name="PirateInterestDistance" value="8000" />
+  <Property name="PirateInterestDistanceMPMission" value="80000" />
   <Property name="PirateInterestLevels">
     <Property value="100000" />
     <Property value="500000" />
@@ -1597,16 +1600,21 @@
   <Property name="SpeedReadoutMultiplier" value="1" />
   <Property name="SpaceSpeedReadoutMultiplier" value="1" />
   <Property name="TorchCookieIndex" value="0" />
-  <Property name="TorchFoV" value="45" />
-  <Property name="TorchStrength" value="47" />
-  <Property name="TorchDimCookieIndex" value="0" />
-  <Property name="TorchDimFoV" value="40" />
-  <Property name="TorchDimStrength" value="47" />
+  <Property name="TorchFoV" value="90" />
+  <Property name="TorchStrength" value="3.5" />
+  <Property name="TorchDimCookieIndex" value="-1" />
+  <Property name="TorchDimFoV" value="65" />
+  <Property name="TorchDimStrength" value="1.5" />
   <Property name="InteractionTorchFoV" value="120" />
-  <Property name="InteractionTorchStrength" value="0" />
+  <Property name="InteractionTorchStrength" value="2" />
+  <Property name="UndergroundTorchFoV" value="70" />
+  <Property name="UndergroundTorchStrength" value="2.5" />
   <Property name="TorchOffsetX" value="0" />
-  <Property name="TorchOffsetY" value="-0.2" />
-  <Property name="TorchOffsetZ" value="-0.4" />
+  <Property name="TorchOffsetY" value="-0.5" />
+  <Property name="TorchOffsetZ" value="-0.75" />
+  <Property name="TorchOffsetZMin" value="0.05" />
+  <Property name="TorchOffsetZSpeedRange" value="7" />
+  <Property name="TorchOffsetZMinSpeed" value="1" />
   <Property name="TorchHandOffsetX" value="0" />
   <Property name="TorchHandOffsetY" value="0" />
   <Property name="TorchHandOffsetZ" value="0" />
@@ -1615,12 +1623,12 @@
   <Property name="TorchFollowCameraPitch" value="1" />
   <Property name="TorchFollowCameraTime" value="0" />
   <Property name="TorchColour" value="Colour.xml">
-    <Property name="R" value="0.225" />
-    <Property name="G" value="0.221" />
-    <Property name="B" value="0.204" />
-    <Property name="A" value="0.95" />
+    <Property name="R" value="0.95" />
+    <Property name="G" value="0.993" />
+    <Property name="B" value="0.944" />
+    <Property name="A" value="1" />
   </Property>
-  <Property name="PlayerAmbientSpotLightIntensity" value="2" />
+  <Property name="PlayerAmbientSpotLightIntensity" value="0" />
   <Property name="PlayerAmbientSpotLightColour" value="Colour.xml">
     <Property name="R" value="0.115" />
     <Property name="G" value="0.113" />

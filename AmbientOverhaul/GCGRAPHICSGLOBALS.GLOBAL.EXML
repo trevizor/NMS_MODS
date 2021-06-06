@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (3.35.0)-->
 <Data template="GcGraphicsGlobals">
-  <Property name="LUTDistanceFlightMultiplier" value="2" />
+  <Property name="LUTDistanceFlightMultiplier" value="10" />
   <Property name="SunLightIntensity" value="4" />
   <Property name="SunLightBlendTime" value="10" />
   <Property name="HBAOBias" value="0.1" />
-  <Property name="HBAORadius" value="2" />
-  <Property name="HBAOIntensity" value="3" />
+  <Property name="HBAORadius" value="4" />
+  <Property name="HBAOIntensity" value="1" />
   <Property name="LightShaftProperties" value="GcLightShaftProperties.xml">
     <Property name="LightShaftScattering" value="0.05" />
     <Property name="LightShaftStrength" value="1" />
@@ -26,24 +26,24 @@
     </Property>
   </Property>
   <Property name="StormLightShaftProperties" value="GcLightShaftProperties.xml">
-    <Property name="LightShaftScattering" value="0.15" />
-    <Property name="LightShaftStrength" value="1" />
+    <Property name="LightShaftScattering" value="0.05" />
+    <Property name="LightShaftStrength" value="0.8" />
     <Property name="LightShaftBottom" value="0" />
     <Property name="LightShaftTop" value="0.25" />
     <Property name="LightShaftColourBottom" value="Colour.xml">
-      <Property name="R" value="0.35" />
-      <Property name="G" value="0.35" />
-      <Property name="B" value="0.35" />
+      <Property name="R" value="0.14" />
+      <Property name="G" value="0.14" />
+      <Property name="B" value="0.14" />
       <Property name="A" value="1" />
     </Property>
     <Property name="LightShaftColourTop" value="Colour.xml">
-      <Property name="R" value="0.35" />
-      <Property name="G" value="0.35" />
-      <Property name="B" value="0.35" />
+      <Property name="R" value="0.2" />
+      <Property name="G" value="0.2" />
+      <Property name="B" value="0.2" />
       <Property name="A" value="1" />
     </Property>
   </Property>
-  <Property name="SunRayDensity" value="1" />
+  <Property name="SunRayDensity" value="0.8" />
   <Property name="SunRayDecay" value="1" />
   <Property name="SunRayExposure" value="0.1" />
   <Property name="SunRayWeight" value="0.1" />
@@ -268,10 +268,11 @@
   <Property name="DirectionLightRadius" value="500" />
   <Property name="DirectionLightFOV" value="212" />
   <Property name="DirectionLightShadowBias" value="0.007" />
-  <Property name="ShadowLength" value="400" />
+  <Property name="ShadowLength" value="800" />
   <Property name="ShadowLengthShip" value="1200" />
   <Property name="ShadowLengthSpace" value="20000" />
   <Property name="ShadowLengthStation" value="1300" />
+  <Property name="ShadowLengthFreighter" value="2500" />
   <Property name="ShadowLengthFreighterAbandoned" value="2500" />
   <Property name="ShadowLengthCameraView" value="1300" />
   <Property name="ShadowSplit" value="Vector4f.xml">
@@ -305,9 +306,9 @@
     <Property name="t" value="0" />
   </Property>
   <Property name="ShadowBias" value="Vector4f.xml">
-    <Property name="x" value="0.004" />
-    <Property name="y" value="0.0007" />
-    <Property name="z" value="0.0002" />
+    <Property name="x" value="0.1" />
+    <Property name="y" value="0.1" />
+    <Property name="z" value="0.1" />
     <Property name="t" value="0" />
   </Property>
   <Property name="ShadowQuantized" value="True" />
@@ -365,30 +366,30 @@
   <Property name="DOFFarPlaneInteraction" value="0.2" />
   <Property name="DOFFarFadeDistanceInteraction" value="2" />
   <Property name="DOFEnableBokeh" value="False" />
-  <Property name="DOFEnableNewBokehShader" value="False" />
-  <Property name="DOFEnablePhysCamera" value="False" />
-  <Property name="VignetteStart" value="1" />
-  <Property name="VignetteEnd" value="1" />
-  <Property name="VignetteStartTurnVR" value="1" />
-  <Property name="VignetteEndTurnVR" value="1" />
-  <Property name="VignetteStartMoveVR" value="1" />
-  <Property name="VignetteEndMoveVR" value="1" />
-  <Property name="VignetteVRTurnInterpTime" value="1" />
-  <Property name="VignetteVRMoveInterpTime" value="1" />
-  <Property name="VignetteStartMoveVRShip" value="1" />
-  <Property name="VignetteEndMoveVRShip" value="1" />
-  <Property name="VignetteVRMoveInterpTimeShip" value="1" />
-  <Property name="VignetteStartTurnVRShip" value="1" />
-  <Property name="VignetteEndTurnVRShip" value="1" />
-  <Property name="VignetteVRTurnInterpTimeShip" value="1" />
-  <Property name="VignetteStartTurnRidingVR" value="1" />
-  <Property name="VignetteEndTurnRidingVR" value="1" />
-  <Property name="VignetteVRTurnRidingInterpTime" value="1" />
-  <Property name="VignetteStartRidingVR" value="1" />
-  <Property name="VignetteEndRidingVR" value="1" />
-  <Property name="VignetteVRRidingInterpTime" value="1" />
-  <Property name="LowHealthVignetteStart" value="0.75" />
-  <Property name="LowHealthVignetteEnd" value="1" />
+  <Property name="DOFEnableNewBokehShader" value="True" />
+  <Property name="DOFEnablePhysCamera" value="True" />
+  <Property name="VignetteStart" value="0.45" />
+  <Property name="VignetteEnd" value="0.85" />
+  <Property name="VignetteStartTurnVR" value="0.15" />
+  <Property name="VignetteEndTurnVR" value="0.45" />
+  <Property name="VignetteStartMoveVR" value="0.15" />
+  <Property name="VignetteEndMoveVR" value="0.5" />
+  <Property name="VignetteVRTurnInterpTime" value="0.25" />
+  <Property name="VignetteVRMoveInterpTime" value="0.4" />
+  <Property name="VignetteStartMoveVRShip" value="0.15" />
+  <Property name="VignetteEndMoveVRShip" value="0.65" />
+  <Property name="VignetteVRMoveInterpTimeShip" value="0.7" />
+  <Property name="VignetteStartTurnVRShip" value="0.15" />
+  <Property name="VignetteEndTurnVRShip" value="0.45" />
+  <Property name="VignetteVRTurnInterpTimeShip" value="0.25" />
+  <Property name="VignetteStartTurnRidingVR" value="0.1" />
+  <Property name="VignetteEndTurnRidingVR" value="0.3" />
+  <Property name="VignetteVRTurnRidingInterpTime" value="0.15" />
+  <Property name="VignetteStartRidingVR" value="0.25" />
+  <Property name="VignetteEndRidingVR" value="0.55" />
+  <Property name="VignetteVRRidingInterpTime" value="0.25" />
+  <Property name="LowHealthVignetteStart" value="0" />
+  <Property name="LowHealthVignetteEnd" value="0.5" />
   <Property name="LowHealthDesaturationIntensity" value="0.25" />
   <Property name="LowHealthOverlayIntensity" value="0.85" />
   <Property name="LowHealthFadeInTime" value="5" />
@@ -497,8 +498,8 @@
   <Property name="FrustumJitterAmount" value="0.6" />
   <Property name="UseTaaResolve" value="False" />
   <Property name="ApplyTaaTest" value="False" />
-  <Property name="ShowTaaBuf" value="False" />
-  <Property name="TonemapInLuminance" value="False" />
+  <Property name="ShowTaaBuf" value="True" />
+  <Property name="TonemapInLuminance" value="True" />
   <Property name="ShowTaaVarianceBuf" value="False" />
   <Property name="ShowTaaNVarianceBuf" value="False" />
   <Property name="ShowTaaCVarianceBuf" value="False" />
@@ -630,7 +631,8 @@
   <Property name="SpaceIBLBlendDistance" value="200000" />
   <Property name="NoFocusMaxFPS" value="30" />
   <Property name="EnableCrossPipeSharing" value="True" />
-  <Property name="Enable42" value="True" />
+  <Property name="EnableSSR" value="True" />
+  <Property name="ShowReflectionProbes" value="False" />
   <Property name="SharpenFilterAmount" value="0.4" />
   <Property name="SharpenFilterDepthFactorStart" value="2.5" />
   <Property name="SharpenFilterDepthFactorEnd" value="30" />
@@ -646,6 +648,9 @@
         <Property name="GraphicDetail" value="Low" />
       </Property>
       <Property name="PostProcessingEffects" value="TkGraphicsDetailTypes.xml">
+        <Property name="GraphicDetail" value="Low" />
+      </Property>
+      <Property name="ReflectionsQuality" value="TkGraphicsDetailTypes.xml">
         <Property name="GraphicDetail" value="Low" />
       </Property>
       <Property name="VolumetricsQuality" value="TkGraphicsDetailTypes.xml">
@@ -679,6 +684,9 @@
       <Property name="PostProcessingEffects" value="TkGraphicsDetailTypes.xml">
         <Property name="GraphicDetail" value="Medium" />
       </Property>
+      <Property name="ReflectionsQuality" value="TkGraphicsDetailTypes.xml">
+        <Property name="GraphicDetail" value="Medium" />
+      </Property>
       <Property name="VolumetricsQuality" value="TkGraphicsDetailTypes.xml">
         <Property name="GraphicDetail" value="Medium" />
       </Property>
@@ -710,6 +718,9 @@
       <Property name="PostProcessingEffects" value="TkGraphicsDetailTypes.xml">
         <Property name="GraphicDetail" value="High" />
       </Property>
+      <Property name="ReflectionsQuality" value="TkGraphicsDetailTypes.xml">
+        <Property name="GraphicDetail" value="High" />
+      </Property>
       <Property name="VolumetricsQuality" value="TkGraphicsDetailTypes.xml">
         <Property name="GraphicDetail" value="High" />
       </Property>
@@ -739,6 +750,9 @@
         <Property name="GraphicDetail" value="Ultra" />
       </Property>
       <Property name="PostProcessingEffects" value="TkGraphicsDetailTypes.xml">
+        <Property name="GraphicDetail" value="Ultra" />
+      </Property>
+      <Property name="ReflectionsQuality" value="TkGraphicsDetailTypes.xml">
         <Property name="GraphicDetail" value="Ultra" />
       </Property>
       <Property name="VolumetricsQuality" value="TkGraphicsDetailTypes.xml">
@@ -773,6 +787,9 @@
     <Property name="PostProcessingEffects" value="TkGraphicsDetailTypes.xml">
       <Property name="GraphicDetail" value="Medium" />
     </Property>
+    <Property name="ReflectionsQuality" value="TkGraphicsDetailTypes.xml">
+      <Property name="GraphicDetail" value="Low" />
+    </Property>
     <Property name="VolumetricsQuality" value="TkGraphicsDetailTypes.xml">
       <Property name="GraphicDetail" value="Medium" />
     </Property>
@@ -802,6 +819,9 @@
       <Property name="GraphicDetail" value="Low" />
     </Property>
     <Property name="PostProcessingEffects" value="TkGraphicsDetailTypes.xml">
+      <Property name="GraphicDetail" value="Low" />
+    </Property>
+    <Property name="ReflectionsQuality" value="TkGraphicsDetailTypes.xml">
       <Property name="GraphicDetail" value="Low" />
     </Property>
     <Property name="VolumetricsQuality" value="TkGraphicsDetailTypes.xml">
@@ -835,6 +855,9 @@
     <Property name="PostProcessingEffects" value="TkGraphicsDetailTypes.xml">
       <Property name="GraphicDetail" value="Medium" />
     </Property>
+    <Property name="ReflectionsQuality" value="TkGraphicsDetailTypes.xml">
+      <Property name="GraphicDetail" value="Low" />
+    </Property>
     <Property name="VolumetricsQuality" value="TkGraphicsDetailTypes.xml">
       <Property name="GraphicDetail" value="Medium" />
     </Property>
@@ -865,6 +888,9 @@
     </Property>
     <Property name="PostProcessingEffects" value="TkGraphicsDetailTypes.xml">
       <Property name="GraphicDetail" value="Medium" />
+    </Property>
+    <Property name="ReflectionsQuality" value="TkGraphicsDetailTypes.xml">
+      <Property name="GraphicDetail" value="Low" />
     </Property>
     <Property name="VolumetricsQuality" value="TkGraphicsDetailTypes.xml">
       <Property name="GraphicDetail" value="Medium" />
@@ -897,6 +923,9 @@
     <Property name="PostProcessingEffects" value="TkGraphicsDetailTypes.xml">
       <Property name="GraphicDetail" value="Medium" />
     </Property>
+    <Property name="ReflectionsQuality" value="TkGraphicsDetailTypes.xml">
+      <Property name="GraphicDetail" value="Low" />
+    </Property>
     <Property name="VolumetricsQuality" value="TkGraphicsDetailTypes.xml">
       <Property name="GraphicDetail" value="Medium" />
     </Property>
@@ -927,6 +956,9 @@
     </Property>
     <Property name="PostProcessingEffects" value="TkGraphicsDetailTypes.xml">
       <Property name="GraphicDetail" value="Medium" />
+    </Property>
+    <Property name="ReflectionsQuality" value="TkGraphicsDetailTypes.xml">
+      <Property name="GraphicDetail" value="High" />
     </Property>
     <Property name="VolumetricsQuality" value="TkGraphicsDetailTypes.xml">
       <Property name="GraphicDetail" value="High" />
@@ -959,6 +991,9 @@
     <Property name="PostProcessingEffects" value="TkGraphicsDetailTypes.xml">
       <Property name="GraphicDetail" value="Medium" />
     </Property>
+    <Property name="ReflectionsQuality" value="TkGraphicsDetailTypes.xml">
+      <Property name="GraphicDetail" value="Ultra" />
+    </Property>
     <Property name="VolumetricsQuality" value="TkGraphicsDetailTypes.xml">
       <Property name="GraphicDetail" value="High" />
     </Property>
@@ -977,4 +1012,12 @@
     <Property name="AnisotropyLevel" value="_4" />
     <Property name="AntiAliasing" value="TAA" />
   </Property>
+  <Property name="PhotoModeBloomGainMin" value="0.0001" />
+  <Property name="PhotoModeBloomThresholdMin" value="0.5" />
+  <Property name="PhotoModeDefaultBloomValue" value="0.3" />
+  <Property name="PhotoModeMediumValue" value="0.6" />
+  <Property name="PhotoModeBloomGainMedium" value="4" />
+  <Property name="PhotoModeBloomThresholdMedium" value="0.25" />
+  <Property name="PhotoModeBloomGainMax" value="10" />
+  <Property name="PhotoModeBloomThresholdMax" value="0.03" />
 </Data>

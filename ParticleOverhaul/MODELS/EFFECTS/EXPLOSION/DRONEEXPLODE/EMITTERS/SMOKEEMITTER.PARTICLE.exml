@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (2.61.1)-->
+<!--File created using MBINCompiler version (3.50.0)-->
 <Data template="TkParticleData">
   <Property name="StartEnabled" value="True" />
   <Property name="Oneshot" value="False" />
@@ -17,23 +17,28 @@
   </Property>
   <Property name="EmitterSpreadAngle" value="360" />
   <Property name="EmitterSpreadAngleMin" value="0" />
-   <Property name="EmitterDirection" value="Vector3f.xml">
+  <Property name="EmitterDirection" value="Vector3f.xml">
     <Property name="x" value="1" />
     <Property name="y" value="1" />
     <Property name="z" value="1" />
-     
   </Property>
   <Property name="EmitterGravity" value="0.4" />
   <Property name="EmitterDamping" value="1" />
   <Property name="Variation" value="1.2" />
   <Property name="StartOffset" value="0.3" />
+  <Property name="SpawnOffsetType" value="Sphere" />
+  <Property name="SpawnOffsetParams" value="Vector3f.xml">
+    <Property name="x" value="0" />
+    <Property name="y" value="0" />
+    <Property name="z" value="0" />
+  </Property>
   <Property name="SizeStart" value="0.04" />
   <Property name="SizeMiddle" value="0.6" />
   <Property name="SizeEnd" value="0.9" />
   <Property name="Rotation" value="10" />
   <Property name="VelocityInheritance" value="0" />
   <Property name="Bounce" value="0" />
-    <Property name="RotateAroundEmitter" value="0" />
+  <Property name="RotateAroundEmitter" value="0" />
   <Property name="RotateAroundEmitterAxis" value="Vector3f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="0" />
@@ -62,6 +67,6 @@
     <Property name="A" value="0" />
   </Property>
   <Property name="UserColour" value="" />
-  <Property name="MaxRenderDistance" value="0" />
-  <Property name="MaxSpawnDistance" value="0" />
+  <Property name="MaxRenderDistance" value="900000" />
+  <Property name="MaxSpawnDistance" value="9000000" />
 </Data>

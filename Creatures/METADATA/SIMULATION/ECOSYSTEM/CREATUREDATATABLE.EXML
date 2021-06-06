@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.34.0)-->
+<!--File created using MBINCompiler version (3.50.0)-->
 <Data template="GcCreatureDataTable">
   <Property name="Table">
     <Property value="GcCreatureData.xml">
@@ -17,6 +17,9 @@
       <Property name="MoveArea" value="Water" />
       <Property name="MinScale" value="0.6" />
       <Property name="MaxScale" value="1.2" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
@@ -69,19 +72,19 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.4" />
-          <Property name="TurnRadiusScale" value="16" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="3" />
           <Property name="Herd" value="False" />
         </Property>
         <Property value="GcCreatureSwarmData.xml">
-          <Property name="MinCount" value="2" />
+          <Property name="MinCount" value="3" />
           <Property name="MaxCount" value="7" />
-          <Property name="SwarmMovementSpeed" value="0.6" />
-          <Property name="SwarmMovementRadius" value="40" />
+          <Property name="SwarmMovementSpeed" value="0.1" />
+          <Property name="SwarmMovementRadius" value="400" />
           <Property name="SwarmMovementType" value="Random" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -98,7 +101,7 @@
               <Property name="UpwardMovementForMaxPitch" value="0.2" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -106,7 +109,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -117,7 +120,7 @@
               <Property name="LandWalkTimeMin" value="2" />
               <Property name="LandWalkTimeMax" value="4" />
               <Property name="MaxSpeed" value="6" />
-              <Property name="AlignTime" value="3" />
+              <Property name="AlignTime" value="0.5" />
               <Property name="BankingTime" value="0.2" />
               <Property name="SpringSmoothTime" value="0.3" />
               <Property name="ApplyScaleToSpeed" value="False" />
@@ -141,6 +144,9 @@
       <Property name="MoveArea" value="Water" />
       <Property name="MinScale" value="0.1" />
       <Property name="MaxScale" value="0.4" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
@@ -154,8 +160,8 @@
         <Property value="GcCreatureSwarmData.xml">
           <Property name="MinCount" value="1" />
           <Property name="MaxCount" value="1" />
-          <Property name="SwarmMovementSpeed" value="0.05" />
-          <Property name="SwarmMovementRadius" value="1" />
+          <Property name="SwarmMovementSpeed" value="0.1" />
+          <Property name="SwarmMovementRadius" value="10" />
           <Property name="SwarmMovementType" value="None" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -168,11 +174,11 @@
               <Property name="Range" value="30" />
               <Property name="MaxBankingAmount" value="0.3" />
               <Property name="TurnRequiredForMaxBanking" value="1" />
-              <Property name="MaxPitchAmount" value="0.15" />
+              <Property name="MaxPitchAmount" value="0.3" />
               <Property name="UpwardMovementForMaxPitch" value="1" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -180,7 +186,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -190,7 +196,7 @@
               <Property name="LandIdleTimeMax" value="5" />
               <Property name="LandWalkTimeMin" value="2" />
               <Property name="LandWalkTimeMax" value="4" />
-              <Property name="MaxSpeed" value="1" />
+              <Property name="MaxSpeed" value="5" />
               <Property name="AlignTime" value="0.5" />
               <Property name="BankingTime" value="0.5" />
               <Property name="SpringSmoothTime" value="0.5" />
@@ -204,9 +210,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -218,8 +224,8 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
-              <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MinSpeedScale" value="0.5" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -227,9 +233,9 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.05" />
-          <Property name="TurnRadiusScale" value="2" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="3" />
@@ -253,9 +259,9 @@
           <Property name="FlockAvoidPredatorsMaxDist" value="40" />
           <Property name="FlockAvoidPredatorsSpeedBoost" value="0.3" />
           <Property name="MoveInFacingStrength" value="0.9" />
-          <Property name="FlockMoveSpeed" value="0.2" />
+          <Property name="FlockMoveSpeed" value="0.7" />
           <Property name="FlockMoveDirectionTime" value="0.1" />
-          <Property name="FlockTurnAngle" value="2" />
+          <Property name="FlockTurnAngle" value="7" />
           <Property name="MaxBank" value="30" />
           <Property name="BankTime" value="0.1" />
           <Property name="MinFlapSpeed" value="2.5" />
@@ -278,6 +284,9 @@
       <Property name="MoveArea" value="Water" />
       <Property name="MinScale" value="1.2" />
       <Property name="MaxScale" value="1.4" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Rare" />
       </Property>
@@ -339,8 +348,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -350,8 +359,8 @@
         <Property value="GcCreatureSwarmData.xml">
           <Property name="MinCount" value="1" />
           <Property name="MaxCount" value="4" />
-          <Property name="SwarmMovementSpeed" value="1" />
-          <Property name="SwarmMovementRadius" value="70" />
+          <Property name="SwarmMovementSpeed" value="0.1" />
+          <Property name="SwarmMovementRadius" value="700" />
           <Property name="SwarmMovementType" value="Random" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -368,7 +377,7 @@
               <Property name="UpwardMovementForMaxPitch" value="0.3" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -376,7 +385,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -411,6 +420,9 @@
       <Property name="MoveArea" value="Water" />
       <Property name="MinScale" value="0.8" />
       <Property name="MaxScale" value="1.2" />
+      <Property name="FurLengthModifierAtMinScale" value="0.8" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.2" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Rare" />
       </Property>
@@ -432,8 +444,8 @@
         </Property>
         <Property value="GcCreatureMovementData.xml">
           <Property name="Anims" />
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -443,8 +455,8 @@
         <Property value="GcCreatureSwarmData.xml">
           <Property name="MinCount" value="3" />
           <Property name="MaxCount" value="6" />
-          <Property name="SwarmMovementSpeed" value="1" />
-          <Property name="SwarmMovementRadius" value="50" />
+          <Property name="SwarmMovementSpeed" value="0.1" />
+          <Property name="SwarmMovementRadius" value="500" />
           <Property name="SwarmMovementType" value="Random" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -461,7 +473,7 @@
               <Property name="UpwardMovementForMaxPitch" value="0" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -469,7 +481,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -504,6 +516,9 @@
       <Property name="MoveArea" value="Water" />
       <Property name="MinScale" value="1" />
       <Property name="MaxScale" value="1" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
@@ -516,8 +531,8 @@
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
           <Property name="Anims" />
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -527,8 +542,8 @@
         <Property value="GcCreatureSwarmData.xml">
           <Property name="MinCount" value="3" />
           <Property name="MaxCount" value="8" />
-          <Property name="SwarmMovementSpeed" value="1" />
-          <Property name="SwarmMovementRadius" value="40" />
+          <Property name="SwarmMovementSpeed" value="0.1" />
+          <Property name="SwarmMovementRadius" value="400" />
           <Property name="SwarmMovementType" value="Random" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -545,7 +560,7 @@
               <Property name="UpwardMovementForMaxPitch" value="0.3" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -553,7 +568,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -588,6 +603,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.75" />
       <Property name="MaxScale" value="2" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
@@ -600,8 +618,8 @@
       <Property name="Data">
         <Property value="GcCreatureMovementData.xml">
           <Property name="Anims" />
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="2" />
           <Property name="HeightMax" value="256" />
@@ -624,12 +642,15 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Water" />
       <Property name="MinScale" value="1" />
-      <Property name="MaxScale" value="3" />
+      <Property name="MaxScale" value="2" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="High" />
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
         <Property name="CreatureRoleFrequencyModifier" value="Normal" />
@@ -677,19 +698,19 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.6" />
-          <Property name="TurnRadiusScale" value="8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
-          <Property name="HeightTime" value="15" />
+          <Property name="HeightTime" value="3" />
           <Property name="Herd" value="False" />
         </Property>
         <Property value="GcCreatureSwarmData.xml">
-          <Property name="MinCount" value="1" />
+          <Property name="MinCount" value="3" />
           <Property name="MaxCount" value="7" />
-          <Property name="SwarmMovementSpeed" value="1" />
-          <Property name="SwarmMovementRadius" value="80" />
+          <Property name="SwarmMovementSpeed" value="0.1" />
+          <Property name="SwarmMovementRadius" value="400" />
           <Property name="SwarmMovementType" value="Random" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -702,11 +723,11 @@
               <Property name="Range" value="30" />
               <Property name="MaxBankingAmount" value="0" />
               <Property name="TurnRequiredForMaxBanking" value="0.3" />
-              <Property name="MaxPitchAmount" value="0.1" />
+              <Property name="MaxPitchAmount" value="0.4" />
               <Property name="UpwardMovementForMaxPitch" value="0.2" />
               <Property name="FaceMoveDirStrength" value="0.9" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -724,8 +745,8 @@
               <Property name="LandIdleTimeMax" value="5" />
               <Property name="LandWalkTimeMin" value="2" />
               <Property name="LandWalkTimeMax" value="4" />
-              <Property name="MaxSpeed" value="1" />
-              <Property name="AlignTime" value="4" />
+              <Property name="MaxSpeed" value="2" />
+              <Property name="AlignTime" value="0.7" />
               <Property name="BankingTime" value="0.2" />
               <Property name="SpringSmoothTime" value="0.7" />
               <Property name="ApplyScaleToSpeed" value="True" />
@@ -749,6 +770,9 @@
       <Property name="MoveArea" value="Water" />
       <Property name="MinScale" value="2" />
       <Property name="MaxScale" value="3" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
@@ -810,8 +834,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="300" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="200" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="25" />
           <Property name="HeightMax" value="256" />
@@ -821,8 +845,8 @@
         <Property value="GcCreatureSwarmData.xml">
           <Property name="MinCount" value="1" />
           <Property name="MaxCount" value="3" />
-          <Property name="SwarmMovementSpeed" value="1.5" />
-          <Property name="SwarmMovementRadius" value="70" />
+          <Property name="SwarmMovementSpeed" value="0.2" />
+          <Property name="SwarmMovementRadius" value="700" />
           <Property name="SwarmMovementType" value="Random" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -835,11 +859,11 @@
               <Property name="Range" value="30" />
               <Property name="MaxBankingAmount" value="0" />
               <Property name="TurnRequiredForMaxBanking" value="0.3" />
-              <Property name="MaxPitchAmount" value="0.15" />
+              <Property name="MaxPitchAmount" value="0.3" />
               <Property name="UpwardMovementForMaxPitch" value="0.4" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -847,7 +871,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -882,6 +906,9 @@
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="0.8" />
       <Property name="MaxScale" value="2" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
@@ -943,8 +970,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="300" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="200" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="30" />
           <Property name="HeightMax" value="40" />
@@ -954,8 +981,8 @@
         <Property value="GcCreatureSwarmData.xml">
           <Property name="MinCount" value="2" />
           <Property name="MaxCount" value="4" />
-          <Property name="SwarmMovementSpeed" value="15" />
-          <Property name="SwarmMovementRadius" value="120" />
+          <Property name="SwarmMovementSpeed" value="2" />
+          <Property name="SwarmMovementRadius" value="1200" />
           <Property name="SwarmMovementType" value="Circle" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -972,7 +999,7 @@
               <Property name="UpwardMovementForMaxPitch" value="0.6" />
               <Property name="FaceMoveDirStrength" value="0.8" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -980,7 +1007,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -1025,8 +1052,11 @@
       <Property name="CanBeFemale" value="True" />
       <Property name="Tags" />
       <Property name="MoveArea" value="Air" />
-      <Property name="MinScale" value="8" />
-      <Property name="MaxScale" value="25" />
+      <Property name="MinScale" value="3.5" />
+      <Property name="MaxScale" value="4" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Rare" />
       </Property>
@@ -1079,9 +1109,9 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="15" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="45" />
           <Property name="HeightMax" value="100" />
           <Property name="HeightTime" value="2" />
@@ -1090,8 +1120,8 @@
         <Property value="GcCreatureSwarmData.xml">
           <Property name="MinCount" value="2" />
           <Property name="MaxCount" value="3" />
-          <Property name="SwarmMovementSpeed" value="10" />
-          <Property name="SwarmMovementRadius" value="200" />
+          <Property name="SwarmMovementSpeed" value="1" />
+          <Property name="SwarmMovementRadius" value="1000" />
           <Property name="SwarmMovementType" value="Circle" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -1104,11 +1134,11 @@
               <Property name="Range" value="1" />
               <Property name="MaxBankingAmount" value="0.3" />
               <Property name="TurnRequiredForMaxBanking" value="0.3" />
-              <Property name="MaxPitchAmount" value="0.15" />
+              <Property name="MaxPitchAmount" value="0.5" />
               <Property name="UpwardMovementForMaxPitch" value="0.3" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -1116,8 +1146,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
-              <Property name="WalkTurnTime" value="2" />
+              <Property name="WalkSpeed" value="2" />
+              <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -1126,8 +1156,8 @@
               <Property name="LandIdleTimeMax" value="5" />
               <Property name="LandWalkTimeMin" value="2" />
               <Property name="LandWalkTimeMax" value="4" />
-              <Property name="MaxSpeed" value="6" />
-              <Property name="AlignTime" value="1.5" />
+              <Property name="MaxSpeed" value="10" />
+              <Property name="AlignTime" value="0.5" />
               <Property name="BankingTime" value="0.2" />
               <Property name="SpringSmoothTime" value="2" />
               <Property name="ApplyScaleToSpeed" value="False" />
@@ -1163,6 +1193,9 @@
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="1" />
       <Property name="MaxScale" value="4.5" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
@@ -1224,8 +1257,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="55" />
           <Property name="HeightMax" value="100" />
@@ -1235,8 +1268,8 @@
         <Property value="GcCreatureSwarmData.xml">
           <Property name="MinCount" value="2" />
           <Property name="MaxCount" value="3" />
-          <Property name="SwarmMovementSpeed" value="6" />
-          <Property name="SwarmMovementRadius" value="200" />
+          <Property name="SwarmMovementSpeed" value="1.2" />
+          <Property name="SwarmMovementRadius" value="2000" />
           <Property name="SwarmMovementType" value="Circle" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -1249,11 +1282,11 @@
               <Property name="Range" value="1" />
               <Property name="MaxBankingAmount" value="0.5" />
               <Property name="TurnRequiredForMaxBanking" value="0.2" />
-              <Property name="MaxPitchAmount" value="0.15" />
+              <Property name="MaxPitchAmount" value="0.3" />
               <Property name="UpwardMovementForMaxPitch" value="0.3" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -1261,7 +1294,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -1308,6 +1341,9 @@
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="0.25" />
       <Property name="MaxScale" value="0.4" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
@@ -1372,9 +1408,9 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="30" />
-          <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="6" />
+          <Property name="MoveRange" value="20" />
+          <Property name="MoveSpeedScale" value="0.7" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0.1" />
           <Property name="HeightMax" value="0.4" />
           <Property name="HeightTime" value="1" />
@@ -1383,8 +1419,8 @@
         <Property value="GcCreatureSwarmData.xml">
           <Property name="MinCount" value="3" />
           <Property name="MaxCount" value="6" />
-          <Property name="SwarmMovementSpeed" value="0.3" />
-          <Property name="SwarmMovementRadius" value="15" />
+          <Property name="SwarmMovementSpeed" value="0.5" />
+          <Property name="SwarmMovementRadius" value="100" />
           <Property name="SwarmMovementType" value="Random" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -1405,7 +1441,7 @@
               <Property name="UpwardMovementForMaxPitch" value="0.3" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -1413,7 +1449,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -1443,7 +1479,7 @@
               <Property name="UpwardMovementForMaxPitch" value="0.3" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -1451,7 +1487,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -1486,6 +1522,9 @@
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="0.5" />
       <Property name="MaxScale" value="0.9" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
@@ -1499,8 +1538,8 @@
         <Property value="GcCreatureSwarmData.xml">
           <Property name="MinCount" value="1" />
           <Property name="MaxCount" value="1" />
-          <Property name="SwarmMovementSpeed" value="1" />
-          <Property name="SwarmMovementRadius" value="1" />
+          <Property name="SwarmMovementSpeed" value="0.1" />
+          <Property name="SwarmMovementRadius" value="10" />
           <Property name="SwarmMovementType" value="None" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -1513,11 +1552,11 @@
               <Property name="Range" value="30" />
               <Property name="MaxBankingAmount" value="0.3" />
               <Property name="TurnRequiredForMaxBanking" value="1" />
-              <Property name="MaxPitchAmount" value="0.15" />
+              <Property name="MaxPitchAmount" value="0.3" />
               <Property name="UpwardMovementForMaxPitch" value="1" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -1525,7 +1564,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -1561,9 +1600,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -1575,8 +1614,8 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
-              <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MinSpeedScale" value="0.5" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -1584,8 +1623,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="1.5" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0.1" />
           <Property name="HeightMax" value="5" />
@@ -1635,6 +1674,9 @@
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="0.25" />
       <Property name="MaxScale" value="0.4" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
@@ -1648,8 +1690,8 @@
         <Property value="GcCreatureSwarmData.xml">
           <Property name="MinCount" value="1" />
           <Property name="MaxCount" value="1" />
-          <Property name="SwarmMovementSpeed" value="1" />
-          <Property name="SwarmMovementRadius" value="1" />
+          <Property name="SwarmMovementSpeed" value="0.1" />
+          <Property name="SwarmMovementRadius" value="10" />
           <Property name="SwarmMovementType" value="None" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -1662,11 +1704,11 @@
               <Property name="Range" value="30" />
               <Property name="MaxBankingAmount" value="0.3" />
               <Property name="TurnRequiredForMaxBanking" value="1" />
-              <Property name="MaxPitchAmount" value="0.15" />
+              <Property name="MaxPitchAmount" value="0.3" />
               <Property name="UpwardMovementForMaxPitch" value="1" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -1674,7 +1716,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -1710,9 +1752,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -1724,8 +1766,8 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
-              <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MinSpeedScale" value="0.5" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -1733,8 +1775,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="1.5" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0.1" />
           <Property name="HeightMax" value="5" />
@@ -1784,6 +1826,9 @@
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="2" />
       <Property name="MaxScale" value="3" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Rare" />
       </Property>
@@ -1858,7 +1903,7 @@
             </Property>
           </Property>
           <Property name="MoveRange" value="20" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0.1" />
           <Property name="HeightMax" value="5" />
@@ -1869,7 +1914,7 @@
           <Property name="MinCount" value="2" />
           <Property name="MaxCount" value="6" />
           <Property name="SwarmMovementSpeed" value="0.5" />
-          <Property name="SwarmMovementRadius" value="10" />
+          <Property name="SwarmMovementRadius" value="100" />
           <Property name="SwarmMovementType" value="Random" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -1894,7 +1939,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.7" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -1984,6 +2029,9 @@
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="0.4" />
       <Property name="MaxScale" value="7" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Rare" />
       </Property>
@@ -2058,7 +2106,7 @@
             </Property>
           </Property>
           <Property name="MoveRange" value="20" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0.1" />
           <Property name="HeightMax" value="5" />
@@ -2069,7 +2117,7 @@
           <Property name="MinCount" value="2" />
           <Property name="MaxCount" value="4" />
           <Property name="SwarmMovementSpeed" value="0.5" />
-          <Property name="SwarmMovementRadius" value="10" />
+          <Property name="SwarmMovementRadius" value="100" />
           <Property name="SwarmMovementType" value="Random" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -2252,6 +2300,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.4" />
       <Property name="MaxScale" value="3" />
+      <Property name="FurLengthModifierAtMinScale" value="0.4" />
+      <Property name="FurLengthModifierAtMaxScale" value="2.6" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
@@ -2268,9 +2319,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -2282,8 +2333,8 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
-              <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MinSpeedScale" value="0.5" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1.6" />
@@ -2296,7 +2347,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -2309,7 +2360,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="0.2" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -2322,7 +2373,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -2331,7 +2382,7 @@
             </Property>
           </Property>
           <Property name="MoveRange" value="20" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="5" />
           <Property name="HeightMax" value="256" />
@@ -2497,6 +2548,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.4" />
       <Property name="MaxScale" value="3" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
@@ -2513,9 +2567,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -2527,8 +2581,8 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
-              <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MinSpeedScale" value="0.5" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1.6" />
@@ -2541,7 +2595,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -2554,7 +2608,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="0.2" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -2567,7 +2621,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -2576,7 +2630,7 @@
             </Property>
           </Property>
           <Property name="MoveRange" value="20" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="5" />
           <Property name="HeightMax" value="256" />
@@ -2710,6 +2764,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.4" />
       <Property name="MaxScale" value="12" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
@@ -2726,9 +2783,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -2740,8 +2797,8 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
-              <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MinSpeedScale" value="0.5" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1.6" />
@@ -2754,7 +2811,7 @@
               <Property name="AnimRight" value="RIGHT" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -2767,7 +2824,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="0.2" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -2780,7 +2837,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -2788,8 +2845,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -3725,6 +3782,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="1.4" />
       <Property name="MaxScale" value="2.5" />
+      <Property name="FurLengthModifierAtMinScale" value="1.4" />
+      <Property name="FurLengthModifierAtMaxScale" value="2.2" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
@@ -3741,9 +3801,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -3755,8 +3815,8 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
-              <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MinSpeedScale" value="0.5" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1.6" />
@@ -3769,7 +3829,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -3782,7 +3842,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="0.2" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -3795,7 +3855,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -3803,8 +3863,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="5" />
           <Property name="HeightMax" value="256" />
@@ -4050,6 +4110,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.4" />
       <Property name="MaxScale" value="3" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="SuperRare" />
       </Property>
@@ -4066,7 +4129,7 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
               <Property name="MaxSpeedScale" value="2" />
               <Property name="MaxPredatorSpeedScale" value="1.1" />
@@ -4076,8 +4139,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -4158,6 +4221,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.4" />
       <Property name="MaxScale" value="3" />
+      <Property name="FurLengthModifierAtMinScale" value="0.4" />
+      <Property name="FurLengthModifierAtMaxScale" value="2.6" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
@@ -4174,9 +4240,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -4188,8 +4254,8 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
-              <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MinSpeedScale" value="0.5" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1.6" />
@@ -4202,7 +4268,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -4215,7 +4281,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="0.2" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -4228,7 +4294,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -4236,8 +4302,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -4478,6 +4544,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.4" />
       <Property name="MaxScale" value="4" />
+      <Property name="FurLengthModifierAtMinScale" value="0.4" />
+      <Property name="FurLengthModifierAtMaxScale" value="3" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
@@ -4496,7 +4565,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="0.2" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -4507,9 +4576,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -4522,7 +4591,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -4534,8 +4603,8 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
-              <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MinSpeedScale" value="0.5" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1.6" />
@@ -4548,7 +4617,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -4556,8 +4625,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -4801,6 +4870,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.4" />
       <Property name="MaxScale" value="4" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Rare" />
       </Property>
@@ -4819,7 +4891,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="0.2" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -4830,9 +4902,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -4845,7 +4917,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -4857,8 +4929,8 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
-              <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MinSpeedScale" value="0.5" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1.6" />
@@ -4871,7 +4943,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -4879,8 +4951,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -5168,6 +5240,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.4" />
       <Property name="MaxScale" value="12" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
@@ -5186,7 +5261,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="0.2" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -5197,9 +5272,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -5212,7 +5287,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -5225,7 +5300,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -5237,8 +5312,8 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
-              <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MinSpeedScale" value="0.5" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1.6" />
@@ -5246,8 +5321,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -5489,6 +5564,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.6" />
       <Property name="MaxScale" value="5" />
+      <Property name="FurLengthModifierAtMinScale" value="0.6" />
+      <Property name="FurLengthModifierAtMaxScale" value="4" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
@@ -5507,7 +5585,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="0.2" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -5518,9 +5596,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -5533,7 +5611,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -5546,7 +5624,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -5558,8 +5636,8 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
-              <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MinSpeedScale" value="0.5" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1.6" />
@@ -5567,8 +5645,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -5861,6 +5939,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.4" />
       <Property name="MaxScale" value="3.6" />
+      <Property name="FurLengthModifierAtMinScale" value="0.4" />
+      <Property name="FurLengthModifierAtMaxScale" value="3" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
@@ -5877,9 +5958,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -5891,8 +5972,8 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
-              <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MinSpeedScale" value="0.5" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1.6" />
@@ -5905,7 +5986,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -5918,7 +5999,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="0.2" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -5931,7 +6012,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -5940,7 +6021,7 @@
             </Property>
           </Property>
           <Property name="MoveRange" value="20" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -6104,6 +6185,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.4" />
       <Property name="MaxScale" value="3" />
+      <Property name="FurLengthModifierAtMinScale" value="0.4" />
+      <Property name="FurLengthModifierAtMaxScale" value="2.6" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
@@ -6120,9 +6204,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -6134,8 +6218,8 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
-              <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MinSpeedScale" value="0.5" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1.6" />
@@ -6148,7 +6232,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -6161,7 +6245,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="0.2" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -6174,7 +6258,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -6182,8 +6266,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -6359,6 +6443,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.4" />
       <Property name="MaxScale" value="4" />
+      <Property name="FurLengthModifierAtMinScale" value="0.4" />
+      <Property name="FurLengthModifierAtMaxScale" value="3" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
@@ -6377,7 +6464,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="0.2" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -6388,9 +6475,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -6403,7 +6490,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -6415,8 +6502,8 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
-              <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MinSpeedScale" value="0.5" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1.6" />
@@ -6429,7 +6516,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -6437,8 +6524,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -6593,6 +6680,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.6" />
       <Property name="MaxScale" value="12" />
+      <Property name="FurLengthModifierAtMinScale" value="0.6" />
+      <Property name="FurLengthModifierAtMaxScale" value="10" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Rare" />
       </Property>
@@ -6609,9 +6699,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -6623,8 +6713,8 @@
               <Property name="AnimLeft" value="LEFT" />
               <Property name="AnimRight" value="RIGHT" />
               <Property name="AnimSpeed" value="1" />
-              <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MinSpeedScale" value="0.5" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1.6" />
@@ -6637,7 +6727,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -6650,7 +6740,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -6663,7 +6753,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="0.2" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -6672,7 +6762,7 @@
             </Property>
           </Property>
           <Property name="MoveRange" value="20" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="5" />
           <Property name="HeightMax" value="256" />
@@ -7172,6 +7262,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.2" />
       <Property name="MaxScale" value="12" />
+      <Property name="FurLengthModifierAtMinScale" value="0.2" />
+      <Property name="FurLengthModifierAtMaxScale" value="10" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Rare" />
       </Property>
@@ -7227,9 +7320,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -7242,7 +7335,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -7254,8 +7347,8 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
-              <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MinSpeedScale" value="0.5" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1.6" />
@@ -7268,7 +7361,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="0.2" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -7281,7 +7374,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -7289,8 +7382,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -7747,6 +7840,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.4" />
       <Property name="MaxScale" value="12" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Uncommon" />
       </Property>
@@ -7763,9 +7859,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -7778,7 +7874,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -7790,8 +7886,8 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
-              <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MinSpeedScale" value="0.5" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1.6" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -7804,7 +7900,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -7817,7 +7913,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="0.2" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -7825,8 +7921,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -8134,6 +8230,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="0.4" />
       <Property name="MaxScale" value="12" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Rare" />
       </Property>
@@ -8150,9 +8249,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -8165,7 +8264,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -8177,8 +8276,8 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
-              <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MinSpeedScale" value="0.5" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1.6" />
@@ -8191,7 +8290,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -8204,7 +8303,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="0.2" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -8212,8 +8311,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -8463,6 +8562,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="1" />
       <Property name="MaxScale" value="5" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="SuperRare" />
       </Property>
@@ -8479,9 +8581,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="0.3" />
               <Property name="MaxPetSpeedScale" value="1.5" />
@@ -8493,8 +8595,8 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
-              <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MinSpeedScale" value="0.5" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1.8" />
@@ -8502,8 +8604,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="1.5" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -8652,6 +8754,9 @@
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="1" />
       <Property name="MaxScale" value="3" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Rare" />
       </Property>
@@ -8732,8 +8837,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0.1" />
           <Property name="HeightMax" value="2" />
@@ -8744,7 +8849,7 @@
           <Property name="MinCount" value="2" />
           <Property name="MaxCount" value="5" />
           <Property name="SwarmMovementSpeed" value="0.5" />
-          <Property name="SwarmMovementRadius" value="10" />
+          <Property name="SwarmMovementRadius" value="100" />
           <Property name="SwarmMovementType" value="Random" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -8761,11 +8866,11 @@
               <Property name="Range" value="4" />
               <Property name="MaxBankingAmount" value="0.3" />
               <Property name="TurnRequiredForMaxBanking" value="1" />
-              <Property name="MaxPitchAmount" value="0.15" />
+              <Property name="MaxPitchAmount" value="0.3" />
               <Property name="UpwardMovementForMaxPitch" value="1" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -8773,7 +8878,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -8807,7 +8912,7 @@
               <Property name="UpwardMovementForMaxPitch" value="0.5" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -8815,7 +8920,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -8845,11 +8950,11 @@
               <Property name="Range" value="4" />
               <Property name="MaxBankingAmount" value="0.5" />
               <Property name="TurnRequiredForMaxBanking" value="0.1" />
-              <Property name="MaxPitchAmount" value="0.15" />
+              <Property name="MaxPitchAmount" value="0.3" />
               <Property name="UpwardMovementForMaxPitch" value="1" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -8857,7 +8962,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -8891,7 +8996,7 @@
               <Property name="UpwardMovementForMaxPitch" value="0.5" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -8899,7 +9004,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -8929,11 +9034,11 @@
               <Property name="Range" value="4" />
               <Property name="MaxBankingAmount" value="0" />
               <Property name="TurnRequiredForMaxBanking" value="1" />
-              <Property name="MaxPitchAmount" value="0.15" />
+              <Property name="MaxPitchAmount" value="0.3" />
               <Property name="UpwardMovementForMaxPitch" value="1" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -8941,7 +9046,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -8971,11 +9076,11 @@
               <Property name="Range" value="4" />
               <Property name="MaxBankingAmount" value="0.3" />
               <Property name="TurnRequiredForMaxBanking" value="1" />
-              <Property name="MaxPitchAmount" value="0.15" />
+              <Property name="MaxPitchAmount" value="0.3" />
               <Property name="UpwardMovementForMaxPitch" value="1" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -8983,7 +9088,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -9013,11 +9118,11 @@
               <Property name="Range" value="4" />
               <Property name="MaxBankingAmount" value="0.3" />
               <Property name="TurnRequiredForMaxBanking" value="1" />
-              <Property name="MaxPitchAmount" value="0.15" />
+              <Property name="MaxPitchAmount" value="0.3" />
               <Property name="UpwardMovementForMaxPitch" value="1" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -9025,7 +9130,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -9051,11 +9156,11 @@
               <Property name="Range" value="4" />
               <Property name="MaxBankingAmount" value="0" />
               <Property name="TurnRequiredForMaxBanking" value="1" />
-              <Property name="MaxPitchAmount" value="0.15" />
+              <Property name="MaxPitchAmount" value="0.3" />
               <Property name="UpwardMovementForMaxPitch" value="1" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -9063,7 +9168,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -9582,6 +9687,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="1" />
       <Property name="MaxScale" value="5" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="3.5" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="SuperRare" />
       </Property>
@@ -9639,7 +9747,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -9651,8 +9759,8 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MinSpeedScale" value="0.5" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -9660,8 +9768,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="1.3" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -10056,6 +10164,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="1" />
       <Property name="MaxScale" value="3" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="SuperRare" />
       </Property>
@@ -10129,8 +10240,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="10" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0.1" />
           <Property name="HeightMax" value="0.1" />
@@ -10141,7 +10252,7 @@
           <Property name="MinCount" value="1" />
           <Property name="MaxCount" value="2" />
           <Property name="SwarmMovementSpeed" value="0.5" />
-          <Property name="SwarmMovementRadius" value="10" />
+          <Property name="SwarmMovementRadius" value="100" />
           <Property name="SwarmMovementType" value="Random" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -10158,7 +10269,7 @@
               <Property name="UpwardMovementForMaxPitch" value="1" />
               <Property name="FaceMoveDirStrength" value="0.9" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -10166,7 +10277,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -10267,6 +10378,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="1" />
       <Property name="MaxScale" value="3" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="SuperRare" />
       </Property>
@@ -10340,8 +10454,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="10" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0.1" />
           <Property name="HeightMax" value="0.1" />
@@ -10352,7 +10466,7 @@
           <Property name="MinCount" value="2" />
           <Property name="MaxCount" value="4" />
           <Property name="SwarmMovementSpeed" value="0.5" />
-          <Property name="SwarmMovementRadius" value="10" />
+          <Property name="SwarmMovementRadius" value="100" />
           <Property name="SwarmMovementType" value="Random" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -10369,7 +10483,7 @@
               <Property name="UpwardMovementForMaxPitch" value="0.5" />
               <Property name="FaceMoveDirStrength" value="0.8" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -10377,7 +10491,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -10444,6 +10558,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="5" />
       <Property name="MaxScale" value="5" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
@@ -10499,9 +10616,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="0.2" />
               <Property name="MaxPetSpeedScale" value="1.3" />
@@ -10513,8 +10630,8 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
-              <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MinSpeedScale" value="0.5" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="0.7" />
               <Property name="MaxPetSpeedScale" value="1.3" />
@@ -10522,8 +10639,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="1.5" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -10593,6 +10710,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="3" />
       <Property name="MaxScale" value="3" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
@@ -10648,9 +10768,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="0.2" />
               <Property name="MaxPetSpeedScale" value="1.3" />
@@ -10662,8 +10782,8 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
-              <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MinSpeedScale" value="0.5" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="0.7" />
               <Property name="MaxPetSpeedScale" value="1.3" />
@@ -10671,8 +10791,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="1.5" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -10705,6 +10825,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="3" />
       <Property name="MaxScale" value="3" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
@@ -10760,9 +10883,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -10774,8 +10897,8 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
-              <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MinSpeedScale" value="0.5" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -10783,8 +10906,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="1.3" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -11031,6 +11154,9 @@
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="0.6" />
       <Property name="MaxScale" value="0.8" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
@@ -11042,8 +11168,8 @@
       </Property>
       <Property name="Data">
         <Property value="GcBirdData.xml">
-          <Property name="FlapSpeedMin" value="5" />
-          <Property name="FlapSpeedMax" value="1" />
+          <Property name="FlapSpeedMin" value="1" />
+          <Property name="FlapSpeedMax" value="2" />
           <Property name="FlapSpeed" value="20" />
           <Property name="FlapAccel" value="5" />
           <Property name="FlapTurn" value="0.5" />
@@ -11096,7 +11222,7 @@
             </Property>
           </Property>
           <Property name="MoveRange" value="60" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="2.5" />
           <Property name="HeightMax" value="3.5" />
@@ -11107,7 +11233,7 @@
           <Property name="MinCount" value="4" />
           <Property name="MaxCount" value="8" />
           <Property name="SwarmMovementSpeed" value="0.5" />
-          <Property name="SwarmMovementRadius" value="10" />
+          <Property name="SwarmMovementRadius" value="100" />
           <Property name="SwarmMovementType" value="Random" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -11124,7 +11250,7 @@
               <Property name="UpwardMovementForMaxPitch" value="0.3" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -11132,7 +11258,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -11167,6 +11293,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="1" />
       <Property name="MaxScale" value="1" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
@@ -11183,9 +11312,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -11198,7 +11327,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -11206,8 +11335,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -11229,8 +11358,14 @@
           <Property name="NearDist" value="6" />
           <Property name="FarDist" value="10" />
           <Property name="ModifyDistanceForHeight" value="3" />
+          <Property name="SpitAnim" value="SPIT" />
+          <Property name="SpitAnimFrame" value="22" />
           <Property name="SpitJoint" value="NewJawJNT" />
-          <Property name="SplitProjectile" value="FIENDSPIT" />
+          <Property name="SpitProjectile" value="FIENDSPIT" />
+          <Property name="AllowSpit" value="True" />
+          <Property name="DelayBetweenSpitAttacks" value="1" />
+          <Property name="AllowPounce" value="True" />
+          <Property name="DelayBetweenPounceAttacks" value="2" />
           <Property name="AttackLight" value="AttackLight" />
           <Property name="IdleLightIntensity" value="0.4" />
           <Property name="AttackLightIntensity" value="1.2" />
@@ -11258,6 +11393,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="1" />
       <Property name="MaxScale" value="1" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
@@ -11274,9 +11412,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -11289,7 +11427,7 @@
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
               <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -11297,8 +11435,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -11320,8 +11458,14 @@
           <Property name="NearDist" value="3" />
           <Property name="FarDist" value="7" />
           <Property name="ModifyDistanceForHeight" value="3" />
+          <Property name="SpitAnim" value="SPIT" />
+          <Property name="SpitAnimFrame" value="22" />
           <Property name="SpitJoint" value="NewJawJNT" />
-          <Property name="SplitProjectile" value="SCUTTLERSPIT" />
+          <Property name="SpitProjectile" value="SCUTTLERSPIT" />
+          <Property name="AllowSpit" value="True" />
+          <Property name="DelayBetweenSpitAttacks" value="1" />
+          <Property name="AllowPounce" value="True" />
+          <Property name="DelayBetweenPounceAttacks" value="2" />
           <Property name="AttackLight" value="AttackLight" />
           <Property name="IdleLightIntensity" value="0.4" />
           <Property name="AttackLightIntensity" value="1" />
@@ -11335,8 +11479,8 @@
         <Property value="GcCreatureSwarmData.xml">
           <Property name="MinCount" value="1" />
           <Property name="MaxCount" value="1" />
-          <Property name="SwarmMovementSpeed" value="1" />
-          <Property name="SwarmMovementRadius" value="1" />
+          <Property name="SwarmMovementSpeed" value="0.1" />
+          <Property name="SwarmMovementRadius" value="10" />
           <Property name="SwarmMovementType" value="Random" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -11353,7 +11497,7 @@
               <Property name="UpwardMovementForMaxPitch" value="0.3" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -11361,7 +11505,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -11396,6 +11540,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="1" />
       <Property name="MaxScale" value="1" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
@@ -11412,9 +11559,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -11422,8 +11569,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -11445,8 +11592,14 @@
           <Property name="NearDist" value="3" />
           <Property name="FarDist" value="7" />
           <Property name="ModifyDistanceForHeight" value="3" />
+          <Property name="SpitAnim" value="SPIT" />
+          <Property name="SpitAnimFrame" value="22" />
           <Property name="SpitJoint" value="J_Head" />
-          <Property name="SplitProjectile" value="FIENDSPIT" />
+          <Property name="SpitProjectile" value="FIENDSPIT" />
+          <Property name="AllowSpit" value="True" />
+          <Property name="DelayBetweenSpitAttacks" value="1" />
+          <Property name="AllowPounce" value="True" />
+          <Property name="DelayBetweenPounceAttacks" value="2" />
           <Property name="AttackLight" value="AttackLight" />
           <Property name="IdleLightIntensity" value="0.4" />
           <Property name="AttackLightIntensity" value="1.2" />
@@ -11474,6 +11627,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="1" />
       <Property name="MaxScale" value="1" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
@@ -11490,9 +11646,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -11504,8 +11660,8 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
-              <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MinSpeedScale" value="0.5" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -11513,8 +11669,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -11536,8 +11692,14 @@
           <Property name="NearDist" value="3" />
           <Property name="FarDist" value="7" />
           <Property name="ModifyDistanceForHeight" value="3" />
+          <Property name="SpitAnim" value="SPIT" />
+          <Property name="SpitAnimFrame" value="22" />
           <Property name="SpitJoint" value="NewJawJNT" />
-          <Property name="SplitProjectile" value="FIENDSPIT" />
+          <Property name="SpitProjectile" value="FIENDSPIT" />
+          <Property name="AllowSpit" value="True" />
+          <Property name="DelayBetweenSpitAttacks" value="1" />
+          <Property name="AllowPounce" value="True" />
+          <Property name="DelayBetweenPounceAttacks" value="2" />
           <Property name="AttackLight" value="AttackLight" />
           <Property name="IdleLightIntensity" value="0.4" />
           <Property name="AttackLightIntensity" value="1.2" />
@@ -11565,6 +11727,9 @@
       <Property name="MoveArea" value="Water" />
       <Property name="MinScale" value="0.5" />
       <Property name="MaxScale" value="1.5" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
@@ -11626,8 +11791,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="10" />
@@ -11637,8 +11802,8 @@
         <Property value="GcCreatureSwarmData.xml">
           <Property name="MinCount" value="8" />
           <Property name="MaxCount" value="25" />
-          <Property name="SwarmMovementSpeed" value="1" />
-          <Property name="SwarmMovementRadius" value="40" />
+          <Property name="SwarmMovementSpeed" value="0.1" />
+          <Property name="SwarmMovementRadius" value="400" />
           <Property name="SwarmMovementType" value="FollowPlayer" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -11655,7 +11820,7 @@
               <Property name="UpwardMovementForMaxPitch" value="0.2" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -11663,7 +11828,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -11698,6 +11863,9 @@
       <Property name="MoveArea" value="Water" />
       <Property name="MinScale" value="0.5" />
       <Property name="MaxScale" value="1.5" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
@@ -11759,8 +11927,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="10" />
@@ -11770,8 +11938,8 @@
         <Property value="GcCreatureSwarmData.xml">
           <Property name="MinCount" value="8" />
           <Property name="MaxCount" value="25" />
-          <Property name="SwarmMovementSpeed" value="1" />
-          <Property name="SwarmMovementRadius" value="1" />
+          <Property name="SwarmMovementSpeed" value="0.1" />
+          <Property name="SwarmMovementRadius" value="10" />
           <Property name="SwarmMovementType" value="FollowPlayerLimited" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -11788,7 +11956,7 @@
               <Property name="UpwardMovementForMaxPitch" value="0.5" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="5.5" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -11796,7 +11964,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -11831,6 +11999,167 @@
       <Property name="MoveArea" value="Water" />
       <Property name="MinScale" value="0.5" />
       <Property name="MaxScale" value="1.5" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
+      <Property name="Rarity" value="GcCreatureRarity.xml">
+        <Property name="CreatureRarity" value="Common" />
+      </Property>
+      <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+      </Property>
+      <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
+        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+      </Property>
+      <Property name="Data">
+        <Property value="GcCreatureHealthData.xml">
+          <Property name="HurtAnim" value="" />
+          <Property name="DeathAnim" value="" />
+          <Property name="DeathEffect" value="" />
+          <Property name="HurtAudio" value="" />
+          <Property name="DeathAudio" value="" />
+          <Property name="DespawnOnDeath" value="False" />
+          <Property name="DespawnOnDeathDescriptors" />
+        </Property>
+        <Property value="GcCreatureMovementData.xml">
+          <Property name="Anims">
+            <Property value="GcCreatureMoveAnimData.xml">
+              <Property name="Anim" value="WALK" />
+              <Property name="AnimLeft" value="LEFT" />
+              <Property name="AnimRight" value="RIGHT" />
+              <Property name="AnimSpeed" value="0.5" />
+              <Property name="MinSpeedScale" value="0.3" />
+              <Property name="MaxSpeedScale" value="1.3" />
+              <Property name="MaxPredatorSpeedScale" value="1.8" />
+              <Property name="MinPetSpeedScale" value="1" />
+              <Property name="MaxPetSpeedScale" value="1" />
+              <Property name="AnimMoveSpeed" value="0" />
+              <Property name="AnimMoveSpeedCached" value="False" />
+            </Property>
+            <Property value="GcCreatureMoveAnimData.xml">
+              <Property name="Anim" value="WALK" />
+              <Property name="AnimLeft" value="LEFT" />
+              <Property name="AnimRight" value="RIGHT" />
+              <Property name="AnimSpeed" value="0.5" />
+              <Property name="MinSpeedScale" value="0.3" />
+              <Property name="MaxSpeedScale" value="1.3" />
+              <Property name="MaxPredatorSpeedScale" value="1.8" />
+              <Property name="MinPetSpeedScale" value="1" />
+              <Property name="MaxPetSpeedScale" value="1" />
+              <Property name="AnimMoveSpeed" value="0" />
+              <Property name="AnimMoveSpeedCached" value="False" />
+            </Property>
+            <Property value="GcCreatureMoveAnimData.xml">
+              <Property name="Anim" value="WALK" />
+              <Property name="AnimLeft" value="LEFT" />
+              <Property name="AnimRight" value="RIGHT" />
+              <Property name="AnimSpeed" value="0.5" />
+              <Property name="MinSpeedScale" value="0.3" />
+              <Property name="MaxSpeedScale" value="1.3" />
+              <Property name="MaxPredatorSpeedScale" value="1.8" />
+              <Property name="MinPetSpeedScale" value="1" />
+              <Property name="MaxPetSpeedScale" value="1" />
+              <Property name="AnimMoveSpeed" value="0" />
+              <Property name="AnimMoveSpeedCached" value="False" />
+            </Property>
+          </Property>
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
+          <Property name="TurnRadiusScale" value="5" />
+          <Property name="HeightMin" value="0" />
+          <Property name="HeightMax" value="10" />
+          <Property name="HeightTime" value="3" />
+          <Property name="Herd" value="False" />
+        </Property>
+        <Property value="GcCreatureSwarmData.xml">
+          <Property name="MinCount" value="8" />
+          <Property name="MaxCount" value="25" />
+          <Property name="SwarmMovementSpeed" value="0.1" />
+          <Property name="SwarmMovementRadius" value="50" />
+          <Property name="SwarmMovementType" value="Random" />
+          <Property name="Params">
+            <Property value="GcCreatureSwarmDataParams.xml">
+              <Property name="ValidDescriptors" />
+              <Property name="Coherence" value="1" />
+              <Property name="Alignment" value="0" />
+              <Property name="SeparateStrength" value="2" />
+              <Property name="Spacing" value="16" />
+              <Property name="Follow" value="0.8" />
+              <Property name="Range" value="30" />
+              <Property name="MaxBankingAmount" value="0" />
+              <Property name="TurnRequiredForMaxBanking" value="1" />
+              <Property name="MaxPitchAmount" value="0.2" />
+              <Property name="UpwardMovementForMaxPitch" value="1" />
+              <Property name="FaceMoveDirStrength" value="0.9" />
+              <Property name="TiltMoveDirStrength" value="0" />
+              <Property name="CanLand" value="True" />
+              <Property name="LandAdjustDist" value="1" />
+              <Property name="LandClampBegin" value="0.75" />
+              <Property name="LandSlowDown" value="0.3" />
+              <Property name="TakeOffTime" value="1" />
+              <Property name="TakeOffStartSpeed" value="0.3" />
+              <Property name="TakeOffUpwardBoost" value="0.5" />
+              <Property name="CanWalk" value="False" />
+              <Property name="WalkSpeed" value="2" />
+              <Property name="WalkTurnTime" value="1" />
+              <Property name="FlyTimeMin" value="5" />
+              <Property name="FlyTimeMax" value="10" />
+              <Property name="LandTimeMin" value="20" />
+              <Property name="LandTimeMax" value="25" />
+              <Property name="LandIdleTimeMin" value="1" />
+              <Property name="LandIdleTimeMax" value="5" />
+              <Property name="LandWalkTimeMin" value="2" />
+              <Property name="LandWalkTimeMax" value="4" />
+              <Property name="MaxSpeed" value="2" />
+              <Property name="AlignTime" value="0.7" />
+              <Property name="BankingTime" value="0.7" />
+              <Property name="SpringSmoothTime" value="1" />
+              <Property name="ApplyScaleToSpeed" value="False" />
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcCreatureFiendAttackData.xml">
+          <Property name="NearDist" value="6" />
+          <Property name="FarDist" value="10" />
+          <Property name="ModifyDistanceForHeight" value="3" />
+          <Property name="SpitAnim" value="SPIT" />
+          <Property name="SpitAnimFrame" value="22" />
+          <Property name="SpitJoint" value="EyeJNT" />
+          <Property name="SpitProjectile" value="MINIROBOTGUN" />
+          <Property name="AllowSpit" value="True" />
+          <Property name="DelayBetweenSpitAttacks" value="1" />
+          <Property name="AllowPounce" value="True" />
+          <Property name="DelayBetweenPounceAttacks" value="2" />
+          <Property name="AttackLight" value="AttackLight" />
+          <Property name="IdleLightIntensity" value="0.4" />
+          <Property name="AttackLightIntensity" value="1.2" />
+          <Property name="MinFlurryHits" value="4" />
+          <Property name="MaxFlurryHits" value="4" />
+          <Property name="RoarChanceOnHit" value="0" />
+          <Property name="RoarChanceOnMiss" value="0" />
+          <Property name="StartDamageTime" value="0.3" />
+          <Property name="TurnToFaceTime" value="0.3" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcCreatureData.xml">
+      <Property name="Id" value="FIENDFISHBIG" />
+      <Property name="OnlySpawnWhenIdIsForced" value="False" />
+      <Property name="ForceType" value="GcCreatureTypes.xml">
+        <Property name="CreatureType" value="FiendFishBig" />
+      </Property>
+      <Property name="RealType" value="GcCreatureTypes.xml">
+        <Property name="CreatureType" value="None" />
+      </Property>
+      <Property name="EcoSystemCreature" value="False" />
+      <Property name="CanBeFemale" value="False" />
+      <Property name="Tags" />
+      <Property name="MoveArea" value="Water" />
+      <Property name="MinScale" value="0.8" />
+      <Property name="MaxScale" value="8" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
@@ -11893,156 +12222,7 @@
             </Property>
           </Property>
           <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="5" />
-          <Property name="HeightMin" value="0" />
-          <Property name="HeightMax" value="10" />
-          <Property name="HeightTime" value="3" />
-          <Property name="Herd" value="False" />
-        </Property>
-        <Property value="GcCreatureSwarmData.xml">
-          <Property name="MinCount" value="8" />
-          <Property name="MaxCount" value="25" />
-          <Property name="SwarmMovementSpeed" value="1" />
-          <Property name="SwarmMovementRadius" value="5" />
-          <Property name="SwarmMovementType" value="Random" />
-          <Property name="Params">
-            <Property value="GcCreatureSwarmDataParams.xml">
-              <Property name="ValidDescriptors" />
-              <Property name="Coherence" value="1" />
-              <Property name="Alignment" value="0" />
-              <Property name="SeparateStrength" value="2" />
-              <Property name="Spacing" value="16" />
-              <Property name="Follow" value="0.8" />
-              <Property name="Range" value="30" />
-              <Property name="MaxBankingAmount" value="0" />
-              <Property name="TurnRequiredForMaxBanking" value="1" />
-              <Property name="MaxPitchAmount" value="0.2" />
-              <Property name="UpwardMovementForMaxPitch" value="1" />
-              <Property name="FaceMoveDirStrength" value="0.9" />
-              <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
-              <Property name="LandAdjustDist" value="1" />
-              <Property name="LandClampBegin" value="0.75" />
-              <Property name="LandSlowDown" value="0.3" />
-              <Property name="TakeOffTime" value="1" />
-              <Property name="TakeOffStartSpeed" value="0.3" />
-              <Property name="TakeOffUpwardBoost" value="0.5" />
-              <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
-              <Property name="WalkTurnTime" value="1" />
-              <Property name="FlyTimeMin" value="5" />
-              <Property name="FlyTimeMax" value="10" />
-              <Property name="LandTimeMin" value="20" />
-              <Property name="LandTimeMax" value="25" />
-              <Property name="LandIdleTimeMin" value="1" />
-              <Property name="LandIdleTimeMax" value="5" />
-              <Property name="LandWalkTimeMin" value="2" />
-              <Property name="LandWalkTimeMax" value="4" />
-              <Property name="MaxSpeed" value="2" />
-              <Property name="AlignTime" value="0.7" />
-              <Property name="BankingTime" value="0.7" />
-              <Property name="SpringSmoothTime" value="1" />
-              <Property name="ApplyScaleToSpeed" value="False" />
-            </Property>
-          </Property>
-        </Property>
-        <Property value="GcCreatureFiendAttackData.xml">
-          <Property name="NearDist" value="6" />
-          <Property name="FarDist" value="10" />
-          <Property name="ModifyDistanceForHeight" value="3" />
-          <Property name="SpitJoint" value="EyeJNT" />
-          <Property name="SplitProjectile" value="MINIROBOTGUN" />
-          <Property name="AttackLight" value="AttackLight" />
-          <Property name="IdleLightIntensity" value="0.4" />
-          <Property name="AttackLightIntensity" value="1.2" />
-          <Property name="MinFlurryHits" value="4" />
-          <Property name="MaxFlurryHits" value="4" />
-          <Property name="RoarChanceOnHit" value="0" />
-          <Property name="RoarChanceOnMiss" value="0" />
-          <Property name="StartDamageTime" value="0.3" />
-          <Property name="TurnToFaceTime" value="0.3" />
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcCreatureData.xml">
-      <Property name="Id" value="FIENDFISHBIG" />
-      <Property name="OnlySpawnWhenIdIsForced" value="False" />
-      <Property name="ForceType" value="GcCreatureTypes.xml">
-        <Property name="CreatureType" value="FiendFishBig" />
-      </Property>
-      <Property name="RealType" value="GcCreatureTypes.xml">
-        <Property name="CreatureType" value="None" />
-      </Property>
-      <Property name="EcoSystemCreature" value="False" />
-      <Property name="CanBeFemale" value="False" />
-      <Property name="Tags" />
-      <Property name="MoveArea" value="Water" />
-      <Property name="MinScale" value="0.8" />
-      <Property name="MaxScale" value="8" />
-      <Property name="Rarity" value="GcCreatureRarity.xml">
-        <Property name="CreatureRarity" value="Common" />
-      </Property>
-      <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
-      </Property>
-      <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
-      </Property>
-      <Property name="Data">
-        <Property value="GcCreatureHealthData.xml">
-          <Property name="HurtAnim" value="" />
-          <Property name="DeathAnim" value="" />
-          <Property name="DeathEffect" value="" />
-          <Property name="HurtAudio" value="" />
-          <Property name="DeathAudio" value="" />
-          <Property name="DespawnOnDeath" value="False" />
-          <Property name="DespawnOnDeathDescriptors" />
-        </Property>
-        <Property value="GcCreatureMovementData.xml">
-          <Property name="Anims">
-            <Property value="GcCreatureMoveAnimData.xml">
-              <Property name="Anim" value="WALK" />
-              <Property name="AnimLeft" value="LEFT" />
-              <Property name="AnimRight" value="RIGHT" />
-              <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="0.3" />
-              <Property name="MaxSpeedScale" value="1.3" />
-              <Property name="MaxPredatorSpeedScale" value="1.8" />
-              <Property name="MinPetSpeedScale" value="1" />
-              <Property name="MaxPetSpeedScale" value="1" />
-              <Property name="AnimMoveSpeed" value="0" />
-              <Property name="AnimMoveSpeedCached" value="False" />
-            </Property>
-            <Property value="GcCreatureMoveAnimData.xml">
-              <Property name="Anim" value="WALK" />
-              <Property name="AnimLeft" value="LEFT" />
-              <Property name="AnimRight" value="RIGHT" />
-              <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="0.3" />
-              <Property name="MaxSpeedScale" value="1.3" />
-              <Property name="MaxPredatorSpeedScale" value="1.8" />
-              <Property name="MinPetSpeedScale" value="1" />
-              <Property name="MaxPetSpeedScale" value="1" />
-              <Property name="AnimMoveSpeed" value="0" />
-              <Property name="AnimMoveSpeedCached" value="False" />
-            </Property>
-            <Property value="GcCreatureMoveAnimData.xml">
-              <Property name="Anim" value="WALK" />
-              <Property name="AnimLeft" value="LEFT" />
-              <Property name="AnimRight" value="RIGHT" />
-              <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="0.3" />
-              <Property name="MaxSpeedScale" value="1.3" />
-              <Property name="MaxPredatorSpeedScale" value="1.8" />
-              <Property name="MinPetSpeedScale" value="1" />
-              <Property name="MaxPetSpeedScale" value="1" />
-              <Property name="AnimMoveSpeed" value="0" />
-              <Property name="AnimMoveSpeedCached" value="False" />
-            </Property>
-          </Property>
-          <Property name="MoveRange" value="300" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="25" />
           <Property name="HeightMax" value="256" />
@@ -12052,8 +12232,8 @@
         <Property value="GcCreatureSwarmData.xml">
           <Property name="MinCount" value="1" />
           <Property name="MaxCount" value="3" />
-          <Property name="SwarmMovementSpeed" value="1.5" />
-          <Property name="SwarmMovementRadius" value="70" />
+          <Property name="SwarmMovementSpeed" value="0.2" />
+          <Property name="SwarmMovementRadius" value="700" />
           <Property name="SwarmMovementType" value="Random" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -12070,7 +12250,7 @@
               <Property name="UpwardMovementForMaxPitch" value="0.4" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -12078,7 +12258,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -12113,6 +12293,9 @@
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="1" />
       <Property name="MaxScale" value="1" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
@@ -12129,9 +12312,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="1" />
+              <Property name="AnimSpeed" value="0.5" />
               <Property name="MinSpeedScale" value="0.5" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -12143,8 +12326,8 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="1" />
-              <Property name="MinSpeedScale" value="0.7" />
-              <Property name="MaxSpeedScale" value="0.9" />
+              <Property name="MinSpeedScale" value="0.5" />
+              <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -12152,8 +12335,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -12186,8 +12369,11 @@
       <Property name="CanBeFemale" value="False" />
       <Property name="Tags" />
       <Property name="MoveArea" value="Air" />
-      <Property name="MinScale" value="30" />
-      <Property name="MaxScale" value="150" />
+      <Property name="MinScale" value="50" />
+      <Property name="MaxScale" value="50" />
+      <Property name="FurLengthModifierAtMinScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
@@ -12240,9 +12426,9 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.8" />
-          <Property name="TurnRadiusScale" value="35" />
+          <Property name="MoveRange" value="175" />
+          <Property name="MoveSpeedScale" value="0.7" />
+          <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="45" />
           <Property name="HeightMax" value="100" />
           <Property name="HeightTime" value="2" />
@@ -12251,8 +12437,8 @@
         <Property value="GcCreatureSwarmData.xml">
           <Property name="MinCount" value="1" />
           <Property name="MaxCount" value="1" />
-          <Property name="SwarmMovementSpeed" value="60" />
-          <Property name="SwarmMovementRadius" value="300" />
+          <Property name="SwarmMovementSpeed" value="20" />
+          <Property name="SwarmMovementRadius" value="1000" />
           <Property name="SwarmMovementType" value="FollowPlayer" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -12266,10 +12452,10 @@
               <Property name="MaxBankingAmount" value="0.3" />
               <Property name="TurnRequiredForMaxBanking" value="0.3" />
               <Property name="MaxPitchAmount" value="0.5" />
-              <Property name="UpwardMovementForMaxPitch" value="0.2" />
+              <Property name="UpwardMovementForMaxPitch" value="0.3" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="False" />
+              <Property name="CanLand" value="True" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -12277,7 +12463,7 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="5" />
+              <Property name="WalkSpeed" value="2" />
               <Property name="WalkTurnTime" value="1" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
@@ -12287,7 +12473,7 @@
               <Property name="LandIdleTimeMax" value="5" />
               <Property name="LandWalkTimeMin" value="2" />
               <Property name="LandWalkTimeMax" value="4" />
-              <Property name="MaxSpeed" value="50" />
+              <Property name="MaxSpeed" value="80" />
               <Property name="AlignTime" value="0.4" />
               <Property name="BankingTime" value="0.4" />
               <Property name="SpringSmoothTime" value="0.4" />
