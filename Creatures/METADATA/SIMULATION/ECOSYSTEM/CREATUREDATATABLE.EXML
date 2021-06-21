@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.50.0)-->
+<!--File created using MBINCompiler version (3.52.0)-->
 <Data template="GcCreatureDataTable">
   <Property name="Table">
     <Property value="GcCreatureData.xml">
@@ -18,7 +18,7 @@
       <Property name="MinScale" value="0.6" />
       <Property name="MaxScale" value="1.2" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
@@ -109,8 +109,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -145,7 +145,7 @@
       <Property name="MinScale" value="0.1" />
       <Property name="MaxScale" value="0.4" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
@@ -160,7 +160,7 @@
         <Property value="GcCreatureSwarmData.xml">
           <Property name="MinCount" value="1" />
           <Property name="MaxCount" value="1" />
-          <Property name="SwarmMovementSpeed" value="0.1" />
+          <Property name="SwarmMovementSpeed" value="0.02" />
           <Property name="SwarmMovementRadius" value="10" />
           <Property name="SwarmMovementType" value="None" />
           <Property name="Params">
@@ -186,8 +186,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -251,7 +251,7 @@
           <Property name="FlockSeperateMinDist" value="2" />
           <Property name="FlockSeperateMaxDist" value="6" />
           <Property name="FlockAlign" value="0.1" />
-          <Property name="FlockAvoidTerrain" value="15" />
+          <Property name="FlockAvoidTerrain" value="40" />
           <Property name="FlockAvoidTerrainMinDist" value="3" />
           <Property name="FlockAvoidTerrainMaxDist" value="10" />
           <Property name="FlockAvoidPredators" value="10" />
@@ -262,7 +262,7 @@
           <Property name="FlockMoveSpeed" value="0.7" />
           <Property name="FlockMoveDirectionTime" value="0.1" />
           <Property name="FlockTurnAngle" value="7" />
-          <Property name="MaxBank" value="30" />
+          <Property name="MaxBank" value="10" />
           <Property name="BankTime" value="0.1" />
           <Property name="MinFlapSpeed" value="2.5" />
           <Property name="MaxFlapSpeed" value="6" />
@@ -285,7 +285,7 @@
       <Property name="MinScale" value="1.2" />
       <Property name="MaxScale" value="1.4" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Rare" />
@@ -385,8 +385,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -481,8 +481,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -517,7 +517,7 @@
       <Property name="MinScale" value="1" />
       <Property name="MaxScale" value="1" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Uncommon" />
@@ -568,8 +568,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -604,7 +604,7 @@
       <Property name="MinScale" value="0.75" />
       <Property name="MaxScale" value="2" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
@@ -644,7 +644,7 @@
       <Property name="MinScale" value="1" />
       <Property name="MaxScale" value="2" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Uncommon" />
@@ -735,8 +735,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -771,7 +771,7 @@
       <Property name="MinScale" value="2" />
       <Property name="MaxScale" value="3" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
@@ -871,8 +871,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -907,7 +907,7 @@
       <Property name="MinScale" value="0.8" />
       <Property name="MaxScale" value="2" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
@@ -1007,8 +1007,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -1053,9 +1053,9 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="3.5" />
-      <Property name="MaxScale" value="4" />
+      <Property name="MaxScale" value="20" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Rare" />
@@ -1073,7 +1073,7 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="LEFT" />
               <Property name="AnimRight" value="RIGHT" />
-              <Property name="AnimSpeed" value="0.5" />
+              <Property name="AnimSpeed" value="0.25" />
               <Property name="MinSpeedScale" value="0.3" />
               <Property name="MaxSpeedScale" value="1.3" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
@@ -1086,7 +1086,7 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="LEFT" />
               <Property name="AnimRight" value="RIGHT" />
-              <Property name="AnimSpeed" value="0.5" />
+              <Property name="AnimSpeed" value="0.25" />
               <Property name="MinSpeedScale" value="0.3" />
               <Property name="MaxSpeedScale" value="1.3" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
@@ -1099,7 +1099,7 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="LEFT" />
               <Property name="AnimRight" value="RIGHT" />
-              <Property name="AnimSpeed" value="0.5" />
+              <Property name="AnimSpeed" value="0.25" />
               <Property name="MinSpeedScale" value="0.3" />
               <Property name="MaxSpeedScale" value="1.3" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
@@ -1109,18 +1109,18 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="175" />
-          <Property name="MoveSpeedScale" value="0.7" />
+          <Property name="MoveRange" value="575" />
+          <Property name="MoveSpeedScale" value="0.25" />
           <Property name="TurnRadiusScale" value="5" />
-          <Property name="HeightMin" value="45" />
+          <Property name="HeightMin" value="30" />
           <Property name="HeightMax" value="100" />
-          <Property name="HeightTime" value="2" />
+          <Property name="HeightTime" value="10" />
           <Property name="Herd" value="False" />
         </Property>
         <Property value="GcCreatureSwarmData.xml">
           <Property name="MinCount" value="2" />
           <Property name="MaxCount" value="3" />
-          <Property name="SwarmMovementSpeed" value="1" />
+          <Property name="SwarmMovementSpeed" value="0.5" />
           <Property name="SwarmMovementRadius" value="1000" />
           <Property name="SwarmMovementType" value="Circle" />
           <Property name="Params">
@@ -1146,8 +1146,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -1192,9 +1192,9 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="1" />
-      <Property name="MaxScale" value="4.5" />
+      <Property name="MaxScale" value="8" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
@@ -1294,8 +1294,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -1342,7 +1342,7 @@
       <Property name="MinScale" value="0.25" />
       <Property name="MaxScale" value="0.4" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Uncommon" />
@@ -1449,8 +1449,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -1487,8 +1487,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -1523,7 +1523,7 @@
       <Property name="MinScale" value="0.5" />
       <Property name="MaxScale" value="0.9" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Uncommon" />
@@ -1564,8 +1564,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -1641,7 +1641,7 @@
           <Property name="FlockSeperateMinDist" value="1.3" />
           <Property name="FlockSeperateMaxDist" value="12" />
           <Property name="FlockAlign" value="0.2" />
-          <Property name="FlockAvoidTerrain" value="15" />
+          <Property name="FlockAvoidTerrain" value="40" />
           <Property name="FlockAvoidTerrainMinDist" value="8" />
           <Property name="FlockAvoidTerrainMaxDist" value="15" />
           <Property name="FlockAvoidPredators" value="0" />
@@ -1652,7 +1652,7 @@
           <Property name="FlockMoveSpeed" value="0.7" />
           <Property name="FlockMoveDirectionTime" value="0.1" />
           <Property name="FlockTurnAngle" value="8" />
-          <Property name="MaxBank" value="180" />
+          <Property name="MaxBank" value="10" />
           <Property name="BankTime" value="0.1" />
           <Property name="MinFlapSpeed" value="3" />
           <Property name="MaxFlapSpeed" value="6" />
@@ -1675,7 +1675,7 @@
       <Property name="MinScale" value="0.25" />
       <Property name="MaxScale" value="0.4" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Uncommon" />
@@ -1716,8 +1716,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -1793,7 +1793,7 @@
           <Property name="FlockSeperateMinDist" value="0.3" />
           <Property name="FlockSeperateMaxDist" value="6" />
           <Property name="FlockAlign" value="0.2" />
-          <Property name="FlockAvoidTerrain" value="10" />
+          <Property name="FlockAvoidTerrain" value="40" />
           <Property name="FlockAvoidTerrainMinDist" value="1" />
           <Property name="FlockAvoidTerrainMaxDist" value="4" />
           <Property name="FlockAvoidPredators" value="0" />
@@ -1804,7 +1804,7 @@
           <Property name="FlockMoveSpeed" value="0.1" />
           <Property name="FlockMoveDirectionTime" value="0.2" />
           <Property name="FlockTurnAngle" value="5" />
-          <Property name="MaxBank" value="90" />
+          <Property name="MaxBank" value="10" />
           <Property name="BankTime" value="0.1" />
           <Property name="MinFlapSpeed" value="1.3" />
           <Property name="MaxFlapSpeed" value="2" />
@@ -1827,7 +1827,7 @@
       <Property name="MinScale" value="2" />
       <Property name="MaxScale" value="3" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Rare" />
@@ -1939,8 +1939,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.7" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -2030,7 +2030,7 @@
       <Property name="MinScale" value="0.4" />
       <Property name="MaxScale" value="7" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Rare" />
@@ -2143,7 +2143,7 @@
               <Property name="TakeOffUpwardBoost" value="0.7" />
               <Property name="CanWalk" value="True" />
               <Property name="WalkSpeed" value="0.3" />
-              <Property name="WalkTurnTime" value="0.3" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="0" />
               <Property name="FlyTimeMax" value="8" />
               <Property name="LandTimeMin" value="10" />
@@ -2549,7 +2549,7 @@
       <Property name="MinScale" value="0.4" />
       <Property name="MaxScale" value="3" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
@@ -2765,7 +2765,7 @@
       <Property name="MinScale" value="0.4" />
       <Property name="MaxScale" value="12" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Uncommon" />
@@ -4111,7 +4111,7 @@
       <Property name="MinScale" value="0.4" />
       <Property name="MaxScale" value="3" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="SuperRare" />
@@ -4871,7 +4871,7 @@
       <Property name="MinScale" value="0.4" />
       <Property name="MaxScale" value="4" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Rare" />
@@ -5241,7 +5241,7 @@
       <Property name="MinScale" value="0.4" />
       <Property name="MaxScale" value="12" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Uncommon" />
@@ -7841,7 +7841,7 @@
       <Property name="MinScale" value="0.4" />
       <Property name="MaxScale" value="12" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Uncommon" />
@@ -8231,7 +8231,7 @@
       <Property name="MinScale" value="0.4" />
       <Property name="MaxScale" value="12" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Rare" />
@@ -8563,7 +8563,7 @@
       <Property name="MinScale" value="1" />
       <Property name="MaxScale" value="5" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="SuperRare" />
@@ -8755,7 +8755,7 @@
       <Property name="MinScale" value="1" />
       <Property name="MaxScale" value="3" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Rare" />
@@ -8878,8 +8878,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -8920,8 +8920,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -8962,8 +8962,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -9004,8 +9004,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -9046,8 +9046,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -9088,8 +9088,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -9130,8 +9130,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -9168,8 +9168,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -9777,7 +9777,7 @@
           <Property name="Herd" value="False" />
         </Property>
         <Property value="GcCreatureCrystalMovementData.xml">
-          <Property name="BiomeParams">
+          <Property name="Params">
             <Property value="GcCreatureCrystalMovementDataParams.xml">
               <Property name="ValidBiomes" />
               <Property name="ValidDescriptors">
@@ -10165,7 +10165,7 @@
       <Property name="MinScale" value="1" />
       <Property name="MaxScale" value="3" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="SuperRare" />
@@ -10277,8 +10277,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -10379,7 +10379,7 @@
       <Property name="MinScale" value="1" />
       <Property name="MaxScale" value="3" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="SuperRare" />
@@ -10491,8 +10491,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -10559,7 +10559,7 @@
       <Property name="MinScale" value="5" />
       <Property name="MaxScale" value="5" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
@@ -10711,7 +10711,7 @@
       <Property name="MinScale" value="3" />
       <Property name="MaxScale" value="3" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
@@ -10826,7 +10826,7 @@
       <Property name="MinScale" value="3" />
       <Property name="MaxScale" value="3" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
@@ -10915,7 +10915,7 @@
           <Property name="Herd" value="False" />
         </Property>
         <Property value="GcCreatureCrystalMovementData.xml">
-          <Property name="BiomeParams">
+          <Property name="Params">
             <Property value="GcCreatureCrystalMovementDataParams.xml">
               <Property name="ValidBiomes">
                 <Property value="GcBiomeSubType.xml">
@@ -11155,7 +11155,7 @@
       <Property name="MinScale" value="0.6" />
       <Property name="MaxScale" value="0.8" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
@@ -11258,8 +11258,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -11294,7 +11294,7 @@
       <Property name="MinScale" value="1" />
       <Property name="MaxScale" value="1" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
@@ -11394,7 +11394,7 @@
       <Property name="MinScale" value="1" />
       <Property name="MaxScale" value="1" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
@@ -11505,8 +11505,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -11541,7 +11541,7 @@
       <Property name="MinScale" value="1" />
       <Property name="MaxScale" value="1" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
@@ -11628,7 +11628,7 @@
       <Property name="MinScale" value="1" />
       <Property name="MaxScale" value="1" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
@@ -11728,7 +11728,7 @@
       <Property name="MinScale" value="0.5" />
       <Property name="MaxScale" value="1.5" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
@@ -11828,8 +11828,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -11864,7 +11864,7 @@
       <Property name="MinScale" value="0.5" />
       <Property name="MaxScale" value="1.5" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
@@ -11964,8 +11964,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -12000,7 +12000,7 @@
       <Property name="MinScale" value="0.5" />
       <Property name="MaxScale" value="1.5" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
@@ -12100,8 +12100,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -12158,7 +12158,7 @@
       <Property name="MinScale" value="0.8" />
       <Property name="MaxScale" value="8" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
@@ -12258,8 +12258,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />
@@ -12294,7 +12294,7 @@
       <Property name="MinScale" value="1" />
       <Property name="MaxScale" value="1" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
@@ -12372,7 +12372,7 @@
       <Property name="MinScale" value="50" />
       <Property name="MaxScale" value="50" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
@@ -12463,8 +12463,8 @@
               <Property name="TakeOffStartSpeed" value="0.3" />
               <Property name="TakeOffUpwardBoost" value="0.5" />
               <Property name="CanWalk" value="False" />
-              <Property name="WalkSpeed" value="2" />
-              <Property name="WalkTurnTime" value="1" />
+              <Property name="WalkSpeed" value="1" />
+              <Property name="WalkTurnTime" value="2" />
               <Property name="FlyTimeMin" value="5" />
               <Property name="FlyTimeMax" value="10" />
               <Property name="LandTimeMin" value="20" />

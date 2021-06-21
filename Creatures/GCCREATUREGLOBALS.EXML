@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.5.0)-->
+<!--File created using MBINCompiler version (3.52.0)-->
 <Data template="GcCreatureGlobals">
   <Property name="PetCarePuzzleOverrideID" value="?PET_CARE" />
   <Property name="CreatureInteractionRangeBoostHuge" value="1.5" />
@@ -526,8 +526,8 @@
   <Property name="Omega" value="0.5" />
   <Property name="OmegaDropOff" value="0.8" />
   <Property name="MovementDamp" value="0.4" />
-  <Property name="IsHurtingCreaturesACrime" value="False" />
-  <Property name="EnableFlyingSnakeTails" value="False" />
+  <Property name="IsHurtingCreaturesACrime" value="True" />
+  <Property name="EnableFlyingSnakeTails" value="True" />
   <Property name="EnableNewStuff" value="True" />
   <Property name="InstantCreatureRide" value="False" />
   <Property name="EnableVRCreatureRide" value="True" />
@@ -613,41 +613,35 @@
     </Property>
     <Property name="MechanicalData" value="GcCameraShakeMechanicalData.xml">
       <Property name="Active" value="False" />
-      <Property name="ShakeStrength" value="Vector4f.xml">
+      <Property name="ShakeStrength" value="Vector3f.xml">
         <Property name="x" value="0" />
         <Property name="y" value="0" />
         <Property name="z" value="0" />
-        <Property name="t" value="0" />
       </Property>
-      <Property name="ShakeFrequency" value="Vector4f.xml">
+      <Property name="ShakeFrequency" value="Vector3f.xml">
         <Property name="x" value="0" />
         <Property name="y" value="0" />
         <Property name="z" value="0" />
-        <Property name="t" value="0" />
       </Property>
-      <Property name="ExtraShakeFrequency" value="Vector4f.xml">
+      <Property name="ExtraShakeFrequency" value="Vector3f.xml">
         <Property name="x" value="0" />
         <Property name="y" value="0" />
         <Property name="z" value="0" />
-        <Property name="t" value="0" />
       </Property>
-      <Property name="VibrateStrength" value="Vector4f.xml">
+      <Property name="VibrateStrength" value="Vector3f.xml">
         <Property name="x" value="0" />
         <Property name="y" value="0" />
         <Property name="z" value="0" />
-        <Property name="t" value="0" />
       </Property>
-      <Property name="VibrateFrequency" value="Vector4f.xml">
+      <Property name="VibrateFrequency" value="Vector3f.xml">
         <Property name="x" value="0" />
         <Property name="y" value="0" />
         <Property name="z" value="0" />
-        <Property name="t" value="0" />
       </Property>
-      <Property name="ExtraVibrateFrequency" value="Vector4f.xml">
+      <Property name="ExtraVibrateFrequency" value="Vector3f.xml">
         <Property name="x" value="0" />
         <Property name="y" value="0" />
         <Property name="z" value="0" />
-        <Property name="t" value="0" />
       </Property>
     </Property>
     <Property name="FOVStrength" value="0" />
@@ -669,8 +663,8 @@
   <Property name="SandWormMaxJumps" value="15" />
   <Property name="SandWormDespawnDist" value="3500" />
   <Property name="SandWormSpawnTimer" value="300" />
-  <Property name="SandWormSpawnChanceMin" value="0.01" /> <!-- <Property name="SandWormSpawnChanceMin" value="0.01" /> -->
-  <Property name="SandWormSpawnChanceMax" value="0.3" /> <!-- <Property name="SandWormSpawnChanceMax" value="0.2" /> -->
+  <Property name="SandWormSpawnChanceMin" value="0.01" />
+  <Property name="SandWormSpawnChanceMax" value="0.3" />
   <Property name="ShieldFadeTime" value="1" />
   <Property name="SharkAlongPathSpeed" value="1" />
   <Property name="SwarmBrakingForce" value="2" />
@@ -996,7 +990,7 @@
   <Property name="FollowPlayerDistance" value="8" />
   <Property name="FollowRunPlayerDistance" value="15" />
   <Property name="FollowRange" value="5" />
-    <Property name="PetPlayerSpeedSmoothTime" value="0.5" />
+  <Property name="PetPlayerSpeedSmoothTime" value="0.5" />
   <Property name="PetStickySideBiasAngle" value="-15" />
   <Property name="PetWalkAtHeelChanceDevoted" value="0.9" />
   <Property name="PetWalkAtHeelChanceIndependent" value="0.1" />

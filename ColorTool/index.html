@@ -47,6 +47,7 @@
 		value = value.replace(/<Property name="WaterColourAdd" value="Colour.xml">/g,"{\"header\":\"WaterColourAdd\",") 
 		value = value.replace(/<Property name="FoamColour" value="Colour.xml">/g,"{\"header\":\"FoamColour\",") 
 		value = value.replace(/<Property name="SkyGradientSpeed" value="Vector4f.xml">/g,"{\"header\":\"GradientSpeed\",") 
+		value = value.replace(/<Property name="SkyGradientSpeed" value="Vector3f.xml">/g,"{\"header\":\"GradientSpeed\",") 
 		value = value.replace(/name="x"/g,'name="r"')
 		value = value.replace(/name="y"/g,'name="g"')
 		value = value.replace(/name="z"/g,'name="b"')

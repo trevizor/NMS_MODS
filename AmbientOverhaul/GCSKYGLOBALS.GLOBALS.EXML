@@ -316,6 +316,7 @@
       <Property name="DepthOfFieldDistance" value="700" />
       <Property name="DepthOfFieldFade" value="1000" />
       <Property name="IsRaining" value="False" />
+      <Property name="RainWetness" value="0.8" />
     </Property>
     <Property name="PlanetExtremeFog" value="GcFogProperties.xml">
       <Property name="FogStrength" value="0.18" />
@@ -407,6 +408,7 @@
       <Property name="DepthOfFieldDistance" value="700" />
       <Property name="DepthOfFieldFade" value="1000" />
       <Property name="IsRaining" value="False" />
+      <Property name="RainWetness" value="2" />
     </Property>
     <Property name="PlanetStormFog" value="GcFogProperties.xml">
       <Property name="FogStrength" value="0.18" />
@@ -498,6 +500,7 @@
       <Property name="DepthOfFieldDistance" value="400" />
       <Property name="DepthOfFieldFade" value="500" />
       <Property name="IsRaining" value="False" />
+      <Property name="RainWetness" value="2" />
     </Property>
     <Property name="PlanetFlightFog" value="GcFogProperties.xml">
       <Property name="FogStrength" value="0.04" />
@@ -589,6 +592,7 @@
       <Property name="DepthOfFieldDistance" value="700" />
       <Property name="DepthOfFieldFade" value="1000" />
       <Property name="IsRaining" value="False" />
+      <Property name="RainWetness" value="0.9" />
     </Property>
   </Property>
   <Property name="PlanetPrimeProperties" value="GcPlanetSkyProperties.xml">
@@ -696,6 +700,7 @@
       <Property name="DepthOfFieldDistance" value="700" />
       <Property name="DepthOfFieldFade" value="1000" />
       <Property name="IsRaining" value="False" />
+      <Property name="RainWetness" value="0" />
     </Property>
     <Property name="PlanetExtremeFog" value="GcFogProperties.xml">
       <Property name="FogStrength" value="0.18" />
@@ -787,6 +792,7 @@
       <Property name="DepthOfFieldDistance" value="700" />
       <Property name="DepthOfFieldFade" value="1000" />
       <Property name="IsRaining" value="False" />
+      <Property name="RainWetness" value="0" />
     </Property>
     <Property name="PlanetStormFog" value="GcFogProperties.xml">
       <Property name="FogStrength" value="0.18" />
@@ -878,6 +884,7 @@
       <Property name="DepthOfFieldDistance" value="400" />
       <Property name="DepthOfFieldFade" value="500" />
       <Property name="IsRaining" value="False" />
+      <Property name="RainWetness" value="0" />
     </Property>
     <Property name="PlanetFlightFog" value="GcFogProperties.xml">
       <Property name="FogStrength" value="0.04" />
@@ -969,6 +976,7 @@
       <Property name="DepthOfFieldDistance" value="700" />
       <Property name="DepthOfFieldFade" value="1000" />
       <Property name="IsRaining" value="False" />
+      <Property name="RainWetness" value="0" />
     </Property>
   </Property>
   <Property name="AbandonedFreighterFog" value="GcFogProperties.xml">
@@ -1061,6 +1069,7 @@
     <Property name="DepthOfFieldDistance" value="700" />
     <Property name="DepthOfFieldFade" value="1000" />
     <Property name="IsRaining" value="False" />
+      <Property name="RainWetness" value="0" />
   </Property>
   <Property name="SpaceSkyMin" value="GcSpaceSkyProperties.xml">
     <Property name="ColourIndex" value="GcPlanetWeatherColourIndex.xml">
@@ -1543,11 +1552,10 @@
       <Property name="B" value="0.207" />
       <Property name="A" value="1" />
     </Property>
-    <Property name="SkyGradientSpeed" value="Vector4f.xml">
+    <Property name="SkyGradientSpeed" value="Vector3f.xml">
       <Property name="x" value="1" />
       <Property name="y" value="1" />
       <Property name="z" value="1" />
-      <Property name="t" value="0" />
     </Property>
     <Property name="LightColour" value="Colour.xml">
       <Property name="R" value="0.275" />
@@ -1657,7 +1665,7 @@
   <Property name="WeatherBloomCurve" value="TkCurveType.xml">
     <Property name="Curve" value="Squared" />
   </Property>
-  <Property name="MaxRainWetness" value="0.764" />
-  <Property name="RainWetnessFadeInTime" value="1.405" />
-  <Property name="RainWetnessFadeOutTime" value="1.168" />
+  <Property name="MaxRainWetness" value="1" />  
+  <Property name="RainWetnessFadeInTime" value="15" />  
+  <Property name="RainWetnessFadeOutTime" value="30" />
 </Data>
