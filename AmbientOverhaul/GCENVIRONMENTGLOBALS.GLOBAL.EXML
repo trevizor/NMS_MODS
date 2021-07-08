@@ -8,7 +8,7 @@
         <Property value="0" />
         <Property value="0.5" />
         <Property value="1" />
-        <Property value="2" />
+        <Property value="1" />
       </Property>
       <Property name="ImposterOverrideRange">
         <Property value="1" />
@@ -127,11 +127,11 @@
     </Property>
     <Property value="TkLODSettingsData.xml">
       <Property name="LODAdjust">
-        <Property value="1" />
-        <Property value="1" />
-        <Property value="1" />
-        <Property value="1" />
-        <Property value="1" />
+        <Property value="2" />
+        <Property value="2.5" />
+        <Property value="3" />
+        <Property value="3.5" />
+        <Property value="4" />
       </Property>
       <Property name="ImposterOverrideRange">
         <Property value="999" />
@@ -172,8 +172,8 @@
     <Property name="y" value="22" />
   </Property>
   <Property name="CloudProperties" value="GcCloudProperties.xml">
-    <Property name="HorizonCoverageStart" value="-0.2" />
-    <Property name="HorizonCoverageEnd" value="0.2" />
+    <Property name="HorizonCoverageStart" value="0.3" />
+    <Property name="HorizonCoverageEnd" value="0.4" />
     <Property name="CloudBaseColour" value="Colour.xml">
       <Property name="R" value="0.026" />
       <Property name="G" value="0.151" />
@@ -191,10 +191,10 @@
     <Property name="SunRayLength" value="50" />
     <Property name="ConeRadius" value="5" />
     <Property name="Density" value="1" />
-    <Property name="AmbientDensity" value="0.3" />
+    <Property name="AmbientDensity" value="0.1" />
     <Property name="ForwardScatteringG" value="0.9" />
-    <Property name="BackwardScatteringG" value="0.2" />
-    <Property name="DarkOutlineScalar" value="0.8" />
+    <Property name="BackwardScatteringG" value="0.3" />
+    <Property name="DarkOutlineScalar" value="1" />
     <Property name="AnimationScale" value="14" />
     <Property name="WindOffset" value="Vector2f.xml">
       <Property name="x" value="0.5" />
@@ -204,10 +204,10 @@
       <Property name="x" value="-0.5" />
       <Property name="y" value="0.5" />
     </Property>
-    <Property name="BaseScale" value="3.5" />
+    <Property name="BaseScale" value="1" />
     <Property name="SampleScalar" value="5" />
     <Property name="SampleThreshold" value="0.25" />
-    <Property name="CloudBottomFade" value="0.1" />
+    <Property name="CloudBottomFade" value="1" />
     <Property name="CloudHeightGradient1" value="Vector4f.xml">
       <Property name="x" value="0.1" />
       <Property name="y" value="0.15" />
@@ -226,16 +226,16 @@
       <Property name="z" value="0.3" />
       <Property name="t" value="1" />
     </Property>
-    <Property name="DetailScale" value="30" />
-    <Property name="ErosionEdgeSize" value="0.6" />
-    <Property name="CloudDistortion" value="85" />
-    <Property name="CloudDistortionScale" value="3.5" />
-    <Property name="MaxIterations" value="64" />
+    <Property name="DetailScale" value="9" />
+    <Property name="ErosionEdgeSize" value="0.5" />
+    <Property name="CloudDistortion" value="30" />
+    <Property name="CloudDistortionScale" value="2.0" />
+    <Property name="MaxIterations" value="256" />
     <Property name="RayMinimumY" value="0" />
     <Property name="LODDistance" value="0" />
     <Property name="HorizonFadeStartAlpha" value="-0.1" />
-    <Property name="HorizonFadeScalar" value="0.6" />
-    <Property name="HorizonDistance" value="18165" />
+    <Property name="HorizonFadeScalar" value="0.2" />
+    <Property name="HorizonDistance" value="23165" />
   </Property>
   <Property name="SenseProbingValueSmoothingTime" value="0.25" />
   <Property name="SenseProbingValueSmoothingTimeSlow" value="1" />
