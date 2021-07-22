@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.35.0)-->
+<!--File created using MBINCompiler version (3.51.0)-->
 <Data template="GcCameraGlobals">
   <Property name="FreighterCustomisationStandardCamera" value="TkModelRendererData.xml">
     <Property name="Camera" value="TkModelRendererCameraData.xml">
-      <Property name="Distance" value="1.5" />
+      <Property name="Distance" value="2" />
       <Property name="Offset" value="Vector3f.xml">
         <Property name="x" value="0" />
-        <Property name="y" value="-0.2" />
+        <Property name="y" value="0" />
         <Property name="z" value="0" />
       </Property>
       <Property name="Roll" value="0" />
-      <Property name="Pitch" value="20" />
-      <Property name="Rotate" value="5" />
+      <Property name="Pitch" value="10" />
+      <Property name="Rotate" value="-10" />
       <Property name="LightPitch" value="45" />
       <Property name="LightRotate" value="45" />
       <Property name="Wander" value="TkCameraWanderData.xml">
@@ -38,6 +38,73 @@
     <Property name="UsePlayerCameraInHmd" value="True" />
     <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
     <Property name="LookForFocusInMasterModel" value="False" />
+  </Property>
+  <Property name="Cameras">
+    <Property value="GcCameraFollowSettings.xml">
+      <Property name="Name" value="TEST" />
+      <Property name="MinSpeed" value="4" />
+      <Property name="SpeedRange" value="20" />
+      <Property name="OffsetX" value="0" />
+      <Property name="OffsetY" value="0" />
+      <Property name="OffsetYAlt" value="0" />
+      <Property name="OffsetYSlopeExtra" value="0.5" />
+      <Property name="OffsetZFlat" value="0" />
+      <Property name="BackMinDistance" value="20" />
+      <Property name="BackMaxDistance" value="20" />
+      <Property name="BackSlopeAdjust" value="0" />
+      <Property name="BackSlopeRotationAdjust" value="0" />
+      <Property name="UpMinDistance" value="0" />
+      <Property name="UpMaxDistance" value="0" />
+      <Property name="UpSlopeAdjust" value="0" />
+      <Property name="LeftMinDistance" value="0" />
+      <Property name="LeftMaxDistance" value="0" />
+      <Property name="PanNear" value="-1" />
+      <Property name="PanFar" value="3" />
+      <Property name="UpGamma" value="1.5" />
+      <Property name="HorizRotationAngleMaxPerFrame" value="20" />
+      <Property name="VertRotationSpeed" value="15" />
+      <Property name="VertRotationMin" value="85" />
+      <Property name="VertRotationMax" value="85" />
+      <Property name="VertRotationOffset" value="1" />
+      <Property name="VertRotationOffsetMinAngle" value="-150" />
+      <Property name="VertRotationOffsetMaxAngle" value="180" />
+      <Property name="VertStartLookingDown" value="False" />
+      <Property name="DistSpeed" value="5" />
+      <Property name="DistSpeedOutsideMainRange" value="5" />
+      <Property name="DistStiffness" value="0.2" />
+      <Property name="SpringSpeed" value="0.18" />
+      <Property name="LockToObjectOnIdle" value="False" />
+      <Property name="CenterStartTime" value="2.2" />
+      <Property name="CenterBlendTime" value="0.8" />
+      <Property name="CenterMaxSpring" value="0.66" />
+      <Property name="CenterMaxSpeed" value="0.1" />
+      <Property name="VelocityAnticipate" value="0.17" />
+      <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
+      <Property name="VertMaxSpring" value="0.5" />
+      <Property name="CenterStartSpeed" value="1" />
+      <Property name="MinClose" value="0.4" />
+      <Property name="MaxClose" value="0.6" />
+      <Property name="CloseSpring" value="3" />
+      <Property name="LookStickLimitAngle" value="0" />
+      <Property name="EnableCollisionDetection" value="True" />
+      <Property name="NumLRProbes" value="10" />
+      <Property name="LRProbesRange" value="13" />
+      <Property name="LRProbesRadius" value="0.3" />
+      <Property name="NumUDProbes" value="5" />
+      <Property name="UDProbesRange" value="1.5" />
+      <Property name="ProbeCenterX" value="0" />
+      <Property name="ProbeCenterY" value="-0.65" />
+      <Property name="PushForwardDropoffLR" value="1.6" />
+      <Property name="PushForwardDropoffUD" value="0.2" />
+      <Property name="AvoidCollisionLRSpeed" value="0.005" />
+      <Property name="AvoidCollisionUDSpeed" value="0.005" />
+      <Property name="AvoidCollisionPushSpeed" value="0.01" />
+      <Property name="AvoidCollisionUDUseStickDelay" value="True" />
+      <Property name="AvoidCollisionLRUseStickDelay" value="True" />
+      <Property name="UseSpeedBasedSpring" value="True" />
+      <Property name="UseCustomBlendTime" value="False" />
+      <Property name="CustomBlendTime" value="0.5" />
+    </Property>
   </Property>
   <Property name="VehicleCamHmd" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="VEHICLE_HMD" />
@@ -179,6 +246,7 @@
   <Property name="DebugPlanetJumpNearHeight" value="50" />
   <Property name="DebugPlanetJumpFarHeight" value="1500" />
   <Property name="TogglePerspectiveBlendTime" value="0.3" />
+  <Property name="LockFollowSpring" value="False" />
   <Property name="UnderwaterCameraSurfaceOffset" value="-1" />
   <Property name="ThirdPersonAfterIntroCamBlendTime" value="1.9" />
   <Property name="ThirdPersonSkipIntroCamBlendTime" value="0.8" />
@@ -197,8 +265,8 @@
   <Property name="ShipThirdPersonBlendOffset" value="1" />
   <Property name="ShipThirdPersonBlendOutTime" value="1.5" />
   <Property name="ShipThirdPersonBlendOutOffset" value="0" />
-  <Property name="ShipFirstPersonBlendTime" value="2" />
-  <Property name="ShipFirstPersonBlendOffset" value="0" />
+  <Property name="ShipFirstPersonBlendTime" value="1.4" />
+  <Property name="ShipFirstPersonBlendOffset" value="1" />
   <Property name="ShipThirdPersonEnterBlendTime" value="2" />
   <Property name="ShipThirdPersonEnterBlendOffset" value="0.5" />
   <Property name="FlybyMinRange" value="20" />
@@ -208,7 +276,7 @@
   <Property name="FlybyInVehicleDamper" value="0.5" />
   <Property name="BinocularFlashTime" value="0.24" />
   <Property name="BinocularFlashStrength" value="0.9" />
-  <Property name="MinFirstPersonCameraPitch" value="89" />
+  <Property name="MinFirstPersonCameraPitch" value="89" />  
   <Property name="MaxFirstPersonCameraPitch" value="89" />
   <Property name="MaxCreatureRidingYaw" value="90" />
   <Property name="ThirdPersonRotationBackAdjustAngleMin" value="10" />
@@ -2378,20 +2446,20 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="1" />
   </Property>
-  <Property name="SpaceshipFollowCam" value="GcCameraFollowSettings.xml"> <!-- SHIP CAM -->
+  <Property name="SpaceshipFollowCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="SPACESHIP" />
     <Property name="MinSpeed" value="10" />
-    <Property name="SpeedRange" value="2000" />
+    <Property name="SpeedRange" value="200" />
     <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="3" />
+    <Property name="OffsetY" value="-0.8" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
-    <Property name="OffsetZFlat" value="4" />
-    <Property name="BackMinDistance" value="14" />
-    <Property name="BackMaxDistance" value="19" />
+    <Property name="OffsetZFlat" value="3" />
+    <Property name="BackMinDistance" value="20" />
+    <Property name="BackMaxDistance" value="50" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
-    <Property name="UpMinDistance" value="6" />
+    <Property name="UpMinDistance" value="2" />
     <Property name="UpMaxDistance" value="10" />
     <Property name="UpSlopeAdjust" value="0" />
     <Property name="LeftMinDistance" value="0" />
@@ -2443,20 +2511,20 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="DropshipFollowCam" value="GcCameraFollowSettings.xml"> <!-- SHIP CAM -->
+  <Property name="DropshipFollowCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="DROPSHIP" />
     <Property name="MinSpeed" value="10" />
-    <Property name="SpeedRange" value="2000" />
+    <Property name="SpeedRange" value="200" />
     <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="3" />
+    <Property name="OffsetY" value="-1.5" />
     <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="4" />
-    <Property name="BackMinDistance" value="14" />
-    <Property name="BackMaxDistance" value="19" />
+    <Property name="BackMinDistance" value="18" />
+    <Property name="BackMaxDistance" value="40" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
-    <Property name="UpMinDistance" value="6" />
+    <Property name="UpMinDistance" value="2" />
     <Property name="UpMaxDistance" value="10" />
     <Property name="UpSlopeAdjust" value="0" />
     <Property name="LeftMinDistance" value="0" />
@@ -2472,7 +2540,7 @@
     <Property name="VertRotationOffsetMinAngle" value="-30" />
     <Property name="VertRotationOffsetMaxAngle" value="30" />
     <Property name="VertStartLookingDown" value="False" />
-    <Property name="DistSpeed" value="0.1" />
+    <Property name="DistSpeed" value="0.4" />
     <Property name="DistSpeedOutsideMainRange" value="1.5" />
     <Property name="DistStiffness" value="2" />
     <Property name="SpringSpeed" value="0" />
@@ -2488,7 +2556,7 @@
     <Property name="MinClose" value="0.1" />
     <Property name="MaxClose" value="1" />
     <Property name="CloseSpring" value="6" />
-    <Property name="LookStickLimitAngle" value="40" />
+    <Property name="LookStickLimitAngle" value="45" />
     <Property name="EnableCollisionDetection" value="False" />
     <Property name="NumLRProbes" value="10" />
     <Property name="LRProbesRange" value="30" />
@@ -2508,20 +2576,20 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="ShuttleFollowCam" value="GcCameraFollowSettings.xml"> <!-- SHIP CAM -->
+  <Property name="ShuttleFollowCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="SHUTTLE" />
     <Property name="MinSpeed" value="10" />
-    <Property name="SpeedRange" value="2000" />
+    <Property name="SpeedRange" value="200" />
     <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="3" />
-    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetY" value="2.2" />
+    <Property name="OffsetYAlt" value="-3" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="3" />
-    <Property name="BackMinDistance" value="14" />
-    <Property name="BackMaxDistance" value="19" />
+    <Property name="BackMinDistance" value="22" />
+    <Property name="BackMaxDistance" value="45" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
-    <Property name="UpMinDistance" value="6" />
+    <Property name="UpMinDistance" value="2" />
     <Property name="UpMaxDistance" value="10" />
     <Property name="UpSlopeAdjust" value="0" />
     <Property name="LeftMinDistance" value="0" />
@@ -2537,7 +2605,7 @@
     <Property name="VertRotationOffsetMinAngle" value="-30" />
     <Property name="VertRotationOffsetMaxAngle" value="30" />
     <Property name="VertStartLookingDown" value="False" />
-    <Property name="DistSpeed" value="0.1" />
+    <Property name="DistSpeed" value="0.4" />
     <Property name="DistSpeedOutsideMainRange" value="1.5" />
     <Property name="DistStiffness" value="2" />
     <Property name="SpringSpeed" value="0" />
@@ -2553,7 +2621,7 @@
     <Property name="MinClose" value="0.1" />
     <Property name="MaxClose" value="1" />
     <Property name="CloseSpring" value="6" />
-    <Property name="LookStickLimitAngle" value="40" />
+    <Property name="LookStickLimitAngle" value="45" />
     <Property name="EnableCollisionDetection" value="False" />
     <Property name="NumLRProbes" value="10" />
     <Property name="LRProbesRange" value="30" />
@@ -2573,20 +2641,20 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="RoyalShipFollowCam" value="GcCameraFollowSettings.xml"> <!-- SHIP CAM -->
+  <Property name="RoyalShipFollowCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="ROYAL" />
     <Property name="MinSpeed" value="10" />
-    <Property name="SpeedRange" value="3000" />
+    <Property name="SpeedRange" value="300" />
     <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="3" />
-    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetY" value="1.2" />
+    <Property name="OffsetYAlt" value="-1.5" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="8" />
-    <Property name="BackMinDistance" value="14" />
-    <Property name="BackMaxDistance" value="19" />
+    <Property name="BackMinDistance" value="10" />
+    <Property name="BackMaxDistance" value="40" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
-    <Property name="UpMinDistance" value="6" />
+    <Property name="UpMinDistance" value="2" />
     <Property name="UpMaxDistance" value="10" />
     <Property name="UpSlopeAdjust" value="0" />
     <Property name="LeftMinDistance" value="0" />
@@ -2602,7 +2670,7 @@
     <Property name="VertRotationOffsetMinAngle" value="-90" />
     <Property name="VertRotationOffsetMaxAngle" value="90" />
     <Property name="VertStartLookingDown" value="False" />
-    <Property name="DistSpeed" value="0.1" />
+    <Property name="DistSpeed" value="0.4" />
     <Property name="DistSpeedOutsideMainRange" value="1.5" />
     <Property name="DistStiffness" value="2" />
     <Property name="SpringSpeed" value="0" />
@@ -2618,7 +2686,7 @@
     <Property name="MinClose" value="0.1" />
     <Property name="MaxClose" value="2" />
     <Property name="CloseSpring" value="6" />
-    <Property name="LookStickLimitAngle" value="40" />
+    <Property name="LookStickLimitAngle" value="45" />
     <Property name="EnableCollisionDetection" value="False" />
     <Property name="NumLRProbes" value="10" />
     <Property name="LRProbesRange" value="30" />
@@ -2638,20 +2706,20 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="ScienceShipFollowCam" value="GcCameraFollowSettings.xml"> <!-- SHIP CAM -->
+  <Property name="ScienceShipFollowCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="SCIENCE" />
     <Property name="MinSpeed" value="10" />
-    <Property name="SpeedRange" value="3000" />
+    <Property name="SpeedRange" value="300" />
     <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="3" />
-    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetY" value="1" />
+    <Property name="OffsetYAlt" value="-1" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="6.5" />
-    <Property name="BackMinDistance" value="14" />
-    <Property name="BackMaxDistance" value="19" />
+    <Property name="BackMinDistance" value="15" />
+    <Property name="BackMaxDistance" value="35" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
-    <Property name="UpMinDistance" value="6" />
+    <Property name="UpMinDistance" value="2" />
     <Property name="UpMaxDistance" value="10" />
     <Property name="UpSlopeAdjust" value="0" />
     <Property name="LeftMinDistance" value="0" />
@@ -2667,7 +2735,7 @@
     <Property name="VertRotationOffsetMinAngle" value="-90" />
     <Property name="VertRotationOffsetMaxAngle" value="90" />
     <Property name="VertStartLookingDown" value="False" />
-    <Property name="DistSpeed" value="0.1" />
+    <Property name="DistSpeed" value="0.4" />
     <Property name="DistSpeedOutsideMainRange" value="1.5" />
     <Property name="DistStiffness" value="2" />
     <Property name="SpringSpeed" value="0" />
@@ -2683,7 +2751,7 @@
     <Property name="MinClose" value="0.1" />
     <Property name="MaxClose" value="2" />
     <Property name="CloseSpring" value="6" />
-    <Property name="LookStickLimitAngle" value="40" />
+    <Property name="LookStickLimitAngle" value="45" />
     <Property name="EnableCollisionDetection" value="False" />
     <Property name="NumLRProbes" value="10" />
     <Property name="LRProbesRange" value="30" />
@@ -2703,20 +2771,20 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="AlienShipFollowCam" value="GcCameraFollowSettings.xml"> <!-- SHIP CAM -->
+  <Property name="AlienShipFollowCam" value="GcCameraFollowSettings.xml">
     <Property name="Name" value="ALIENSHIP" />
     <Property name="MinSpeed" value="10" />
-    <Property name="SpeedRange" value="2000" />
+    <Property name="SpeedRange" value="200" />
     <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="3" />
-    <Property name="OffsetYAlt" value="0" />
+    <Property name="OffsetY" value="1" />
+    <Property name="OffsetYAlt" value="-3" />
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="6" />
-    <Property name="BackMinDistance" value="14" />
-    <Property name="BackMaxDistance" value="19" />
+    <Property name="BackMinDistance" value="12" />
+    <Property name="BackMaxDistance" value="30" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
-    <Property name="UpMinDistance" value="6" />
+    <Property name="UpMinDistance" value="2" />
     <Property name="UpMaxDistance" value="10" />
     <Property name="UpSlopeAdjust" value="0" />
     <Property name="LeftMinDistance" value="0" />
@@ -2732,7 +2800,7 @@
     <Property name="VertRotationOffsetMinAngle" value="-30" />
     <Property name="VertRotationOffsetMaxAngle" value="30" />
     <Property name="VertStartLookingDown" value="False" />
-    <Property name="DistSpeed" value="0.1" />
+    <Property name="DistSpeed" value="0.4" />
     <Property name="DistSpeedOutsideMainRange" value="1.5" />
     <Property name="DistStiffness" value="2" />
     <Property name="SpringSpeed" value="0" />
@@ -2748,7 +2816,7 @@
     <Property name="MinClose" value="0.1" />
     <Property name="MaxClose" value="1" />
     <Property name="CloseSpring" value="6" />
-    <Property name="LookStickLimitAngle" value="40" />
+    <Property name="LookStickLimitAngle" value="45" />
     <Property name="EnableCollisionDetection" value="False" />
     <Property name="NumLRProbes" value="10" />
     <Property name="LRProbesRange" value="30" />
@@ -5146,62 +5214,6 @@
       <Property name="FOVFrequency" value="0" />
     </Property>
     <Property value="GcCameraShakeData.xml">
-      <Property name="Name" value="MEDIUMRUMBLE" />
-      <Property name="TimeStart" value="0" />
-      <Property name="TotalTime" value="4" />
-      <Property name="DecayRate" value="5" />
-      <Property name="StrengthSale" value="5" />
-      <Property name="ThirdPersonDamp" value="1" />
-      <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
-        <Property name="Active" value="True" />
-        <Property name="ShakeStrength" value="0.15" />
-        <Property name="ShakeFrequency" value="3" />
-        <Property name="VibrateStrength" value="0.15" />
-        <Property name="VibrateFrequency" value="3" />
-      </Property>
-      <Property name="MechanicalData" value="GcCameraShakeMechanicalData.xml">
-        <Property name="Active" value="False" />
-        <Property name="ShakeStrength" value="Vector4f.xml">
-          <Property name="x" value="0.01" />
-          <Property name="y" value="0" />
-          <Property name="z" value="0.01" />
-          <Property name="t" value="0" />
-        </Property>
-        <Property name="ShakeFrequency" value="Vector4f.xml">
-          <Property name="x" value="7" />
-          <Property name="y" value="1.7" />
-          <Property name="z" value="7" />
-          <Property name="t" value="0" />
-        </Property>
-        <Property name="ExtraShakeFrequency" value="Vector4f.xml">
-          <Property name="x" value="1" />
-          <Property name="y" value="0" />
-          <Property name="z" value="11" />
-          <Property name="t" value="0" />
-        </Property>
-        <Property name="VibrateStrength" value="Vector4f.xml">
-          <Property name="x" value="0.01" />
-          <Property name="y" value="0.2" />
-          <Property name="z" value="0" />
-          <Property name="t" value="0" />
-        </Property>
-        <Property name="VibrateFrequency" value="Vector4f.xml">
-          <Property name="x" value="7" />
-          <Property name="y" value="8" />
-          <Property name="z" value="0" />
-          <Property name="t" value="0" />
-        </Property>
-        <Property name="ExtraVibrateFrequency" value="Vector4f.xml">
-          <Property name="x" value="19" />
-          <Property name="y" value="3" />
-          <Property name="z" value="0" />
-          <Property name="t" value="0" />
-        </Property>
-      </Property>
-      <Property name="FOVStrength" value="0" />
-      <Property name="FOVFrequency" value="0" />
-    </Property>
-    <Property value="GcCameraShakeData.xml">
       <Property name="Name" value="MECHTITANFALL" />
       <Property name="TimeStart" value="0" />
       <Property name="TotalTime" value="1.5" />
@@ -5480,6 +5492,118 @@
       </Property>
       <Property name="FOVStrength" value="2" />
       <Property name="FOVFrequency" value="2" />
+    </Property>
+    <Property value="GcCameraShakeData.xml">
+      <Property name="Name" value="WARP_FRG_ATMOS" />
+      <Property name="TimeStart" value="0" />
+      <Property name="TotalTime" value="0.8" />
+      <Property name="DecayRate" value="2" />
+      <Property name="StrengthSale" value="0.6" />
+      <Property name="ThirdPersonDamp" value="1" />
+      <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
+        <Property name="Active" value="True" />
+        <Property name="ShakeStrength" value="0.01" />
+        <Property name="ShakeFrequency" value="7" />
+        <Property name="VibrateStrength" value="0.01" />
+        <Property name="VibrateFrequency" value="7" />
+      </Property>
+      <Property name="MechanicalData" value="GcCameraShakeMechanicalData.xml">
+        <Property name="Active" value="False" />
+        <Property name="ShakeStrength" value="Vector4f.xml">
+          <Property name="x" value="0.01" />
+          <Property name="y" value="0" />
+          <Property name="z" value="0.01" />
+          <Property name="t" value="0" />
+        </Property>
+        <Property name="ShakeFrequency" value="Vector4f.xml">
+          <Property name="x" value="7" />
+          <Property name="y" value="1.7" />
+          <Property name="z" value="7" />
+          <Property name="t" value="0" />
+        </Property>
+        <Property name="ExtraShakeFrequency" value="Vector4f.xml">
+          <Property name="x" value="1" />
+          <Property name="y" value="0" />
+          <Property name="z" value="11" />
+          <Property name="t" value="0" />
+        </Property>
+        <Property name="VibrateStrength" value="Vector4f.xml">
+          <Property name="x" value="0.01" />
+          <Property name="y" value="0.2" />
+          <Property name="z" value="0" />
+          <Property name="t" value="0" />
+        </Property>
+        <Property name="VibrateFrequency" value="Vector4f.xml">
+          <Property name="x" value="7" />
+          <Property name="y" value="8" />
+          <Property name="z" value="0" />
+          <Property name="t" value="0" />
+        </Property>
+        <Property name="ExtraVibrateFrequency" value="Vector4f.xml">
+          <Property name="x" value="19" />
+          <Property name="y" value="3" />
+          <Property name="z" value="0" />
+          <Property name="t" value="0" />
+        </Property>
+      </Property>
+      <Property name="FOVStrength" value="0" />
+      <Property name="FOVFrequency" value="0" />
+    </Property>
+    <Property value="GcCameraShakeData.xml">
+      <Property name="Name" value="FRG_FLYBY_PREP" />
+      <Property name="TimeStart" value="0" />
+      <Property name="TotalTime" value="9" />
+      <Property name="DecayRate" value="-1" />
+      <Property name="StrengthSale" value="6" />
+      <Property name="ThirdPersonDamp" value="0.5" />
+      <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
+        <Property name="Active" value="True" />
+        <Property name="ShakeStrength" value="0.02" />
+        <Property name="ShakeFrequency" value="7" />
+        <Property name="VibrateStrength" value="0.02" />
+        <Property name="VibrateFrequency" value="7" />
+      </Property>
+      <Property name="MechanicalData" value="GcCameraShakeMechanicalData.xml">
+        <Property name="Active" value="False" />
+        <Property name="ShakeStrength" value="Vector4f.xml">
+          <Property name="x" value="0.01" />
+          <Property name="y" value="0" />
+          <Property name="z" value="0.01" />
+          <Property name="t" value="0" />
+        </Property>
+        <Property name="ShakeFrequency" value="Vector4f.xml">
+          <Property name="x" value="7" />
+          <Property name="y" value="1.7" />
+          <Property name="z" value="7" />
+          <Property name="t" value="0" />
+        </Property>
+        <Property name="ExtraShakeFrequency" value="Vector4f.xml">
+          <Property name="x" value="1" />
+          <Property name="y" value="0" />
+          <Property name="z" value="11" />
+          <Property name="t" value="0" />
+        </Property>
+        <Property name="VibrateStrength" value="Vector4f.xml">
+          <Property name="x" value="0.01" />
+          <Property name="y" value="0.2" />
+          <Property name="z" value="0" />
+          <Property name="t" value="0" />
+        </Property>
+        <Property name="VibrateFrequency" value="Vector4f.xml">
+          <Property name="x" value="7" />
+          <Property name="y" value="8" />
+          <Property name="z" value="0" />
+          <Property name="t" value="0" />
+        </Property>
+        <Property name="ExtraVibrateFrequency" value="Vector4f.xml">
+          <Property name="x" value="19" />
+          <Property name="y" value="3" />
+          <Property name="z" value="0" />
+          <Property name="t" value="0" />
+        </Property>
+      </Property>
+      <Property name="FOVStrength" value="0" />
+      <Property name="FOVFrequency" value="0" />
     </Property>
   </Property>
   <Property name="BobAmountAbandFreighter" value="0.1" />
