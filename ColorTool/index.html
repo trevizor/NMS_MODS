@@ -25,6 +25,8 @@
 		value = value.replace(/<\/Property><Property value="GcPlanetWaterColourData.xml">/g,"") 
 		value = value.replace(/<Property value="GcPlanetWeatherColourData.xml">/g,"") 
 		value = value.replace(/<Property value="GcPlanetWaterColourData.xml">/g,"") 
+		value = value.replace(/<Property value="GcSolarSystemSkyColourData.xml">/g,"") 
+		
 		value = value.replace(/<Property value="Colour.xml">/g,"{\"header\":\"Colour\",") 
 		value = value.replace(/<Property name="ColourMiddle" value="Colour.xml">/g,"{\"header\":\"Colour\",") 
 
@@ -37,6 +39,7 @@
 		value = value.replace(/<Property name="HorizonColour" value="Colour.xml">/g,"{\"header\":\"HorizonColour\",") 
 		value = value.replace(/<Property name="SunColour" value="Colour.xml">/g,"{\"header\":\"SunColour\",") 
 		value = value.replace(/<Property name="FogColour" value="Colour.xml">/g,"{\"header\":\"FogColour\",") 
+		value = value.replace(/<Property name="FogColour2" value="Colour.xml">/g,"{\"header\":\"FogColour2\",") 
 		value = value.replace(/<Property name="HeightFogColour" value="Colour.xml">/g,"{\"header\":\"HeightFogColour\",") 
 		value = value.replace(/<Property name="LightColour" value="Colour.xml">/g,"{\"header\":\"LightColour\",") 
 		value = value.replace(/<Property name="CloudColour1" value="Colour.xml">/g,"{\"header\":\"CloudColour1\",") 
@@ -48,6 +51,22 @@
 		value = value.replace(/<Property name="FoamColour" value="Colour.xml">/g,"{\"header\":\"FoamColour\",") 
 		value = value.replace(/<Property name="SkyGradientSpeed" value="Vector4f.xml">/g,"{\"header\":\"GradientSpeed\",") 
 		value = value.replace(/<Property name="SkyGradientSpeed" value="Vector3f.xml">/g,"{\"header\":\"GradientSpeed\",") 
+		value = value.replace(/<Property name="TopColour" value="Colour.xml">/g,"{\"header\":\"TopColour\",") 
+		value = value.replace(/<Property name="MidColour" value="Colour.xml">/g,"{\"header\":\"MidColour\",") 
+		value = value.replace(/<Property name="BottomColour" value="Colour.xml">/g,"{\"header\":\"BottomColour\",") 
+		value = value.replace(/<Property name="TopColourPlanet" value="Colour.xml">/g,"{\"header\":\"TopColourPlanet\",") 
+		value = value.replace(/<Property name="MidColourPlanet" value="Colour.xml">/g,"{\"header\":\"MidColourPlanet\",") 
+		value = value.replace(/<Property name="BottomColourPlanet" value="Colour.xml">/g,"{\"header\":\"BottomColourPlanet\",") 
+		value = value.replace(/<Property name="CloudColour" value="Colour.xml">/g,"{\"header\":\"CloudColour\",") 
+		value = value.replace(/<Property name="LightColour" value="Colour.xml">/g,"{\"header\":\"LightColour\",") 
+		value = value.replace(/<Property name="NebulaColour1" value="Colour.xml">/g,"{\"header\":\"NebulaColour1\",") 
+		value = value.replace(/<Property name="NebulaColour2" value="Colour.xml">/g,"{\"header\":\"NebulaColour2\",") 
+		value = value.replace(/<Property name="NebulaColour3" value="Colour.xml">/g,"{\"header\":\"NebulaColour3\",") 
+		value = value.replace(/<Property name="FogColour" value="Colour.xml">/g,"{\"header\":\"FogColour\",") 
+		value = value.replace(/<Property name="FogColour2" value="Colour.xml">/g,"{\"header\":\"FogColour2\",") 
+
+
+
 		value = value.replace(/name="x"/g,'name="r"')
 		value = value.replace(/name="y"/g,'name="g"')
 		value = value.replace(/name="z"/g,'name="b"')

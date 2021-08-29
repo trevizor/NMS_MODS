@@ -946,11 +946,11 @@
   <Property name="SteeringUpdateRate" value="0.25" />
   <Property name="PathOverestimate" value="6" />
   <Property name="FishWaterSurfaceAnticipate" value="3" />
-  <Property name="FishWaterSurfaceAvoidStrength" value="6" />
-  <Property name="FishDesiredDepth" value="-3" />
-  <Property name="FishMinHeightAboveSeaBed" value="1.5" />
-  <Property name="FishSeaBedAvoidStrength" value="1.5" />
-  <Property name="FishObstacleAvoidStrength" value="2" />
+  <Property name="FishWaterSurfaceAvoidStrength" value="16" />
+  <Property name="FishDesiredDepth" value="-10" />
+  <Property name="FishMinHeightAboveSeaBed" value="1" />
+  <Property name="FishSeaBedAvoidStrength" value="1" />
+  <Property name="FishObstacleAvoidStrength" value="10" />
   <Property name="FishPlayerAttractionFrontDist" value="40" />
   <Property name="FishPlayerAttractionAhead" value="8" />
   <Property name="FishPlayerAttractionMinDist" value="5" />
@@ -958,11 +958,11 @@
   <Property name="FishPlayerAttractionStrength" value="1" />
   <Property name="AttackPlayerDistance" value="1.5" />
   <Property name="SpawnCameraAngleCos" value="-0.8" />
-  <Property name="SpawnMinDistPercentage" value="0.25" />
+  <Property name="SpawnMinDistPercentage" value="0.55" />
   <Property name="SpawnOnscreenDist" value="30" />
   <Property name="FadeScaleMultiplier" value="45" />
   <Property name="FadeScalePower" value="1" />
-  <Property name="FadeDistance" value="10" />
+  <Property name="FadeDistance" value="40" />
   <Property name="SpawnDistAtMinSize" value="40" />
   <Property name="SpawnDistAtMaxSize" value="350" />
   <Property name="DespawnDistFactor" value="1.5" />
@@ -975,10 +975,10 @@
   <Property name="DebugDrawTrails" value="False" />
   <Property name="TrailHalfLife" value="80" />
   <Property name="EnableTrailIk" value="True" />
-  <Property name="DetailAnimBlendInTime" value="0.2" />
-  <Property name="DetailAnimBlendOutTime" value="0.2" />
-  <Property name="DetailAnimMinPauseTime" value="0.4" />
-  <Property name="DetailAnimMaxPauseTime" value="1.2" />
+  <Property name="DetailAnimBlendInTime" value="1.0" />
+  <Property name="DetailAnimBlendOutTime" value="1.0" />
+  <Property name="DetailAnimMinPauseTime" value="1.0" />
+  <Property name="DetailAnimMaxPauseTime" value="4.0" />
   <Property name="DetailAnimPlayWhileWalking" value="True" />
   <Property name="CreatureDeathEffectSmall" value="DEATHBLOODSMALL" />
   <Property name="CreatureDeathEffectMedium" value="DEATHBLOODMED" />
