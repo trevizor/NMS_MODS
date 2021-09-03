@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.35.0)-->
+<!--File created using MBINCompiler version (3.60.0)-->
 <Data template="GcGraphicsGlobals">
   <Property name="LUTDistanceFlightMultiplier" value="15" />
   <Property name="SunLightIntensity" value="1.8" />
@@ -8,7 +8,7 @@
   <Property name="HBAORadius" value="5" />
   <Property name="HBAOIntensity" value="1.5" />
   <Property name="LightShaftProperties" value="GcLightShaftProperties.xml">
-    <Property name="LightShaftScattering" value="0.000002" />
+    <Property name="LightShaftScattering" value="2E-06" />
     <Property name="LightShaftStrength" value="0.4" />
     <Property name="LightShaftBottom" value="0.002" />
     <Property name="LightShaftTop" value="0.1" />
@@ -26,7 +26,7 @@
     </Property>
   </Property>
   <Property name="StormLightShaftProperties" value="GcLightShaftProperties.xml">
-    <Property name="LightShaftScattering" value="0.000004" />
+    <Property name="LightShaftScattering" value="4E-06" />
     <Property name="LightShaftStrength" value="0.4" />
     <Property name="LightShaftBottom" value="0.002" />
     <Property name="LightShaftTop" value="0.1" />
@@ -78,7 +78,7 @@
   <Property name="Old_TopRimColourMixer" value="0.5" />
   <Property name="Old_TopRimPower" value="0" />
   <Property name="Old_TopRimIntensity" value="0" />
-  <Property name="ModelRendererLightIntensity" value="4" />
+  <Property name="ModelRendererLightIntensity" value="3" />
   <Property name="PetModelRendererLightIntensity" value="6.5" />
   <Property name="ScanFresnel" value="1.2" />
   <Property name="ScanClamp" value="0.1" />
@@ -476,9 +476,9 @@
   <Property name="GrassValueMax" value="0.4" />
   <Property name="SkySaturationMin" value="0.8" />
   <Property name="SkySaturationMax" value="1" />
-  <Property name="SkyValueMin" value="0.12" />
-  <Property name="SkyValueMax" value="0.52" />
-  <Property name="SpaceScale" value="32000" />
+  <Property name="SkyValueMin" value="0.32" />
+  <Property name="SkyValueMax" value="0.42" />
+  <Property name="SpaceScale" value="64000" />
   <Property name="SpaceMieFactor" value="0.3" />
   <Property name="SpaceSunFactor" value="20" />
   <Property name="MaxSpaceFogStrength" value="0.9" />
@@ -496,6 +496,7 @@
   <Property name="TaaHighFreqConstant" value="100" />
   <Property name="TaaAccumDelay" value="0.9" />
   <Property name="FrustumJitterAmount" value="0.6" />
+  <Property name="FrustumJitterAmountDLSS" value="0" />
   <Property name="UseTaaResolve" value="False" />
   <Property name="ApplyTaaTest" value="False" />
   <Property name="ShowTaaBuf" value="True" />
@@ -1011,6 +1012,13 @@
     <Property name="AmbientOcclusion" value="GTAO_Medium" />
     <Property name="AnisotropyLevel" value="_4" />
     <Property name="AntiAliasing" value="TAA" />
+  </Property>
+  <Property name="EnableVariableUpdate" value="False" />
+  <Property name="VariableUpdatePeriodModifers">
+    <Property value="0" />
+    <Property value="0" />
+    <Property value="0" />
+    <Property value="0" />
   </Property>
   <Property name="PhotoModeBloomGainMin" value="0.0001" />
   <Property name="PhotoModeBloomThresholdMin" value="0.5" />

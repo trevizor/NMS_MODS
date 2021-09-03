@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (3.52.0)-->
 <Data template="GcCreatureGlobals">
+  <Property name="AllCreaturesDiscoveredBonusMul" value="5" />
+  <Property name="AllCreaturesDiscoveredColour" value="Colour.xml">
+    <Property name="R" value="0.987" />
+    <Property name="G" value="0.645" />
+    <Property name="B" value="0.087" />
+    <Property name="A" value="1" />
+  </Property>
   <Property name="PetCarePuzzleOverrideID" value="?PET_CARE" />
   <Property name="CreatureInteractionRangeBoostHuge" value="1.5" />
   <Property name="CreatureInteractionRangeBoostLarge" value="1.2" />
@@ -602,7 +609,7 @@
     <Property name="TimeStart" value="0" />
     <Property name="TotalTime" value="0.5" />
     <Property name="DecayRate" value="1" />
-    <Property name="StrengthSale" value="1" />
+    <Property name="StrengthScale" value="1" />
     <Property name="ThirdPersonDamp" value="1" />
     <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
       <Property name="Active" value="True" />
@@ -713,6 +720,7 @@
   <Property name="StickToGroundSpeed" value="1" />
   <Property name="StickToGroundCastBegin" value="2" />
   <Property name="StickToGroundCastEnd" value="-2" />
+  <Property name="AnimationStickToGroundSpeed" value="0.5" /> 
   <Property name="FlyingSnakeData" value="GcFlyingSnakeData.xml">
     <Property name="CircleSpeed" value="8" />
     <Property name="ApproachBaitSpeed" value="30" />
@@ -792,10 +800,10 @@
   <Property name="CreatureBlobRidingMedMinSize" value="3" />
   <Property name="CreatureBlobRidingLargeMinSize" value="5" />
   <Property name="CreatureBlobRidingHugeMinSize" value="8" />
-  <Property name="CreatureSmallHealth" value="400" />
-  <Property name="CreatureMedHealth" value="2800" />
-  <Property name="CreatureLargeHealth" value="6000" />
-  <Property name="CreatureHugeHealth" value="9000" />
+  <Property name="CreatureSmallHealth" value="800" />
+  <Property name="CreatureMedHealth" value="3800" />
+  <Property name="CreatureLargeHealth" value="8000" />
+  <Property name="CreatureHugeHealth" value="13000" />
   <Property name="CreatureLargeWalkShake" value="LARGECREATUREWA" />
   <Property name="CreatureLargeWalkMaxShakeDist" value="2" />
   <Property name="CreatureLargeRunShake" value="LARGECREATUREWA" />
@@ -906,12 +914,10 @@
   <Property name="RagdollMotorFadeEnd" value="2" />
   <Property name="MaxRagdollsBeforeDespawnOffscreen" value="12" />
   <Property name="MaxRagdollsBeforeDespawnOnscreen" value="18" />
-  <Property name="RidingTurnRadiusMultiplier" value="1" />
-  <Property name="TurnRadiusMultiplier" value="5" />
-  <Property name="PredatorTurnRadiusMultiplier" value="0.25" />
-  <Property name="MaxTurnRadius" value="200" />
-  <Property name="TurnSlowAreaCos" value="0.5" />
-  <Property name="BadTurnPercent" value="0.1" />
+  <Property name="TurnRadiusMultiplier" value="5" />  
+  <Property name="MaxTurnRadius" value="50" /> 
+  <Property name="TurnSlowAreaCos" value="0.75" />  
+  <Property name="BadTurnPercent" value="0.3" />
   <Property name="BadTurnWeight" value="0" />
   <Property name="MinScaleForNavMap" value="1" />
   <Property name="ImpassabilityBrakeTime" value="0.2" />
@@ -1078,8 +1084,8 @@
   <Property name="AttractedMaxAvoidCreaturesDist" value="7" />
   <Property name="PetsShowTraitClassesAsWords" value="True" />
   <Property name="PetSlotsUnlockedByDefault" value="2" />
-  <Property name="PetGrowthTime" value="120960" />
-  <Property name="PetIncubationTime" value="8640" />
+  <Property name="PetGrowthTime" value="1209600" />
+  <Property name="PetIncubationTime" value="86400" />
   <Property name="PetTrustChangeInterval" value="86400" />
   <Property name="PetTrustOnAdoption" value="0.6" />
   <Property name="PetTrustOnHatch" value="0.7" />
@@ -1180,19 +1186,19 @@
     <Property name="B" value="0.574" />
     <Property name="A" value="1" />
   </Property>
-  <Property name="AnimChangeCoolDown" value="0.25" />
-  <Property name="GroupRunProbability" value="0.8" />
-  <Property name="GroupBabyRunProbability" value="0.8" />
+  <Property name="AnimChangeCoolDown" value="0.5" />
+  <Property name="GroupRunProbability" value="0.2" />
+  <Property name="GroupBabyRunProbability" value="0.4" />
   <Property name="GroupRunStormProbability" value="100" />
   <Property name="GroupLookAtProbability" value="0.4" />
   <Property name="GroupLookAtDurationMin" value="4" />
   <Property name="GroupLookAtDurationMax" value="10" />
-  <Property name="GroupRunDurationMin" value="15" />
+  <Property name="GroupRunDurationMin" value="3" />
   <Property name="GroupRunDurationMax" value="20" />
   <Property name="GroupFemaleProportion" value="0.6" />
   <Property name="GroupBabyProportion" value="0.3" />
   <Property name="GroupBabyScale" value="0.5" />
-  <Property name="GroupBabyHealthMultiplier" value="0.8" />
+  <Property name="GroupBabyHealthMultiplier" value="0.4" />
   <Property name="MaxBirdsProportion" value="0.15" />
   <Property name="HerdGroupSizeMultiplier" value="4" />
   <Property name="DrawRoutineFollowDebug" value="False" />

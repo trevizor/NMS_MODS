@@ -237,9 +237,18 @@
     <Property name="HorizonFadeScalar" value="0.2" />
     <Property name="HorizonDistance" value="23165" />
   </Property>
-  <Property name="SenseProbingValueSmoothingTime" value="0.25" />
+  <Property name="SenseProbingValueSmoothingTimeMed" value="0.25" />
   <Property name="SenseProbingValueSmoothingTimeSlow" value="1" />
-  <Property name="MaxElevation" value="400" />
+  <Property name="IndoorsLightingWeightAround" value="0.8" /> 
+  <Property name="IndoorsLightingWeightOverhead" value="1.7" /> 
+  <Property name="IndoorsLightingWeightTowardsSun" value="0.2" /> 
+  <Property name="IndoorsLightingWeightGround" value="0.3" /> 
+  <Property name="IndoorsLightingTransitionTime" value="3.2" /> 
+  <Property name="IndoorsLightingThreshold" value="0.8" />  
+  <Property name="IndoorsLightingPlanetMax" value="0.42" /> 
+  <Property name="IndoorsLightingAbandonedFreighterMax" value="1" />  
+  <Property name="IndoorsLightingNexusMax" value="1" />
+  <Property name="MaxElevation" value="500" />
   <Property name="SphereLodTextureScale" value="2048" />
   <Property name="ForceAddUnderwaterProps" value="False" />
   <Property name="ForceAddCaveProps" value="False" />
@@ -269,7 +278,7 @@
   <Property name="ShipToxicity" value="0" />
   <Property name="MatchPlantPalettes" value="False" />
   <Property name="DuplicateColourThreshold" value="1" />
-  <Property name="PushForceAirFactor" value="Enabled" />
+  <Property name="SwitchType" value="Enabled" />
   <Property name="GrassNormalUpright" value="1" />
   <Property name="GrassNormalOffset" value="1" />
   <Property name="GrassNormalSpherify" value="1" />
