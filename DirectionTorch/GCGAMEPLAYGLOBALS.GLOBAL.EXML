@@ -8,6 +8,7 @@
   <Property name="FreeSuitSlotID" value="C_SUIT_SLOT" />
   <Property name="InitialLocationProtectionRadiusMultiplier" value="4" />
   <Property name="PartyPlanetSearchDistance" value="200" />
+  <Property name="UnderwaterLightningDamageDistanceMultiplier" value="5" /> 
   <Property name="MaxActiveWeatherHazardGifts" value="16" />
   <Property name="WeatherHazardGiftMaxDistance" value="100" />
   <Property name="WeatherHazardGiftLifeTime" value="60" />
@@ -808,6 +809,7 @@
   <Property name="CommonProductEffectiveness" value="20" />
   <Property name="RareProductEffectiveness" value="50" />
   <Property name="AsteroidResourceReducer" value="20" />
+  <Property name="TunnelStatReducer" value="10" />  
   <Property name="VoxelAsteroidResourceChance" value="0.25" />
   <Property name="ResourceReducer" value="5" />
   <Property name="ResourceMinAmount" value="1" />
@@ -1108,16 +1110,37 @@
     <Property name="FadeInTime" value="0" />
     <Property name="FadeOutTime" value="0" />
   </Property>
+  <Property name="BlankScanEffect" value="GcScanEffectData.xml">
+    <Property name="Id" value="BLANK" />
+    <Property name="ScanEffectType" value="Ground" />
+    <Property name="Colour" value="Colour.xml">
+      <Property name="R" value="1" />
+      <Property name="G" value="1" />
+      <Property name="B" value="1" />
+      <Property name="A" value="0" />
+    </Property>
+    <Property name="BasecolourIntensity" value="0" />
+    <Property name="ScanlinesSeparation" value="0" />
+    <Property name="FresnelIntensity" value="0" />
+    <Property name="GlowIntensity" value="0" />
+    <Property name="WaveOffset" value="0" />
+    <Property name="WaveActive" value="False" />
+    <Property name="FixedUpAxis" value="False" />
+    <Property name="Transparent" value="False" />
+    <Property name="ModelFade" value="False" />
+    <Property name="FadeInTime" value="0.2" />
+    <Property name="FadeOutTime" value="0.2" />
+  </Property>
   <Property name="BaseBuildingValidScanEffect" value="GcScanEffectData.xml">
-    <Property name="Id" value="" />
+    <Property name="Id" value="VALID" />
     <Property name="ScanEffectType" value="Objects" />
     <Property name="Colour" value="Colour.xml">
       <Property name="R" value="0.398" />
       <Property name="G" value="1" />
       <Property name="B" value="0.331" />
-      <Property name="A" value="0.6" />
+      <Property name="A" value="0.8" />
     </Property>
-    <Property name="BasecolourIntensity" value="0.7" />
+    <Property name="BasecolourIntensity" value="0.8" />
     <Property name="ScanlinesSeparation" value="0.3" />
     <Property name="FresnelIntensity" value="-5" />
     <Property name="GlowIntensity" value="0" />
@@ -1130,7 +1153,7 @@
     <Property name="FadeOutTime" value="0.2" />
   </Property>
   <Property name="BaseBuildingPreviewSelectionScanEffect" value="GcScanEffectData.xml">
-    <Property name="Id" value="" />
+    <Property name="Id" value="PREVEIEWSELECT" />
     <Property name="ScanEffectType" value="Objects" />
     <Property name="Colour" value="Colour.xml">
       <Property name="R" value="0.292" />
@@ -1151,7 +1174,7 @@
     <Property name="FadeOutTime" value="0.2" />
   </Property>
   <Property name="BaseBuildingSelectionScanEffect" value="GcScanEffectData.xml">
-    <Property name="Id" value="" />
+    <Property name="Id" value="SELECT" />
     <Property name="ScanEffectType" value="Objects" />
     <Property name="Colour" value="Colour.xml">
       <Property name="R" value="0.783" />
@@ -1172,7 +1195,7 @@
     <Property name="FadeOutTime" value="0" />
   </Property>
   <Property name="BaseBuildingDeleteScanEffect" value="GcScanEffectData.xml">
-    <Property name="Id" value="" />
+    <Property name="Id" value="DELETE" />
     <Property name="ScanEffectType" value="Objects" />
     <Property name="Colour" value="Colour.xml">
       <Property name="R" value="0.917" />
@@ -1193,18 +1216,18 @@
     <Property name="FadeOutTime" value="0" />
   </Property>
   <Property name="BaseBuildingGhostScanEffect" value="GcScanEffectData.xml">
-    <Property name="Id" value="" />
+    <Property name="Id" value="GHOST" />
     <Property name="ScanEffectType" value="Objects" />
     <Property name="Colour" value="Colour.xml">
       <Property name="R" value="0.116" />
       <Property name="G" value="0.19" />
       <Property name="B" value="0.733" />
-      <Property name="A" value="0.5" />
+      <Property name="A" value="0.2" />
     </Property>
-    <Property name="BasecolourIntensity" value="0.25" />
-    <Property name="ScanlinesSeparation" value="0.5" />
-    <Property name="FresnelIntensity" value="-50" />
-    <Property name="GlowIntensity" value="0" />
+    <Property name="BasecolourIntensity" value="0.1" />
+    <Property name="ScanlinesSeparation" value="1" />
+    <Property name="FresnelIntensity" value="0.75" />
+    <Property name="GlowIntensity" value="0.5" />
     <Property name="WaveOffset" value="0" />
     <Property name="WaveActive" value="True" />
     <Property name="FixedUpAxis" value="False" />
@@ -1214,7 +1237,7 @@
     <Property name="FadeOutTime" value="0" />
   </Property>
   <Property name="BaseBuildingSpawnStaticEffect" value="GcScanEffectData.xml">
-    <Property name="Id" value="" />
+    <Property name="Id" value="SPAWN" />
     <Property name="ScanEffectType" value="Objects" />
     <Property name="Colour" value="Colour.xml">
       <Property name="R" value="0.028" />
@@ -1234,60 +1257,81 @@
     <Property name="FadeInTime" value="0" />
     <Property name="FadeOutTime" value="0" />
   </Property>
-  <Property name="BaseBuildingErrorInsideScanEffect" value="GcScanEffectData.xml">
-    <Property name="Id" value="" />
+  <Property name="BaseBuildingVisionScanEffect" value="GcScanEffectData.xml">
+    <Property name="Id" value="VISION" />
     <Property name="ScanEffectType" value="Objects" />
     <Property name="Colour" value="Colour.xml">
-      <Property name="R" value="0.85" />
-      <Property name="G" value="0.85" />
-      <Property name="B" value="0.85" />
-      <Property name="A" value="0.4" />
+      <Property name="R" value="0.06" />
+      <Property name="G" value="0.7" />
+      <Property name="B" value="0.2" />
+      <Property name="A" value="1" />
     </Property>
-    <Property name="BasecolourIntensity" value="0.6" />
-    <Property name="ScanlinesSeparation" value="0.2" />
-    <Property name="FresnelIntensity" value="1" />
+    <Property name="BasecolourIntensity" value="0.3" />
+    <Property name="ScanlinesSeparation" value="10" />
+    <Property name="FresnelIntensity" value="5" />
     <Property name="GlowIntensity" value="0" />
     <Property name="WaveOffset" value="0" />
     <Property name="WaveActive" value="False" />
     <Property name="FixedUpAxis" value="False" />
-    <Property name="Transparent" value="False" />
+    <Property name="Transparent" value="True" />
     <Property name="ModelFade" value="False" />
     <Property name="FadeInTime" value="0" />
     <Property name="FadeOutTime" value="0" />
   </Property>
-  <Property name="BaseBuildingErrorCollisionScanEffect" value="GcScanEffectData.xml">
-    <Property name="Id" value="" />
+  <Property name="BaseBuildingErrorInsideScanEffect" value="GcScanEffectData.xml">
+    <Property name="Id" value="ERRORINSIDE" />
     <Property name="ScanEffectType" value="Objects" />
     <Property name="Colour" value="Colour.xml">
       <Property name="R" value="0.85" />
       <Property name="G" value="0.157" />
       <Property name="B" value="0.157" />
-      <Property name="A" value="0.9" />
+      <Property name="A" value="0.66" />
     </Property>
-    <Property name="BasecolourIntensity" value="0.9" />
-    <Property name="ScanlinesSeparation" value="0.2" />
-    <Property name="FresnelIntensity" value="-5" />
+    <Property name="BasecolourIntensity" value="0.66" />
+    <Property name="ScanlinesSeparation" value="0.1" />
+    <Property name="FresnelIntensity" value="-10" />
     <Property name="GlowIntensity" value="0" />
     <Property name="WaveOffset" value="0" />
     <Property name="WaveActive" value="True" />
     <Property name="FixedUpAxis" value="False" />
-    <Property name="Transparent" value="False" />
+    <Property name="Transparent" value="True" />
+    <Property name="ModelFade" value="False" />
+    <Property name="FadeInTime" value="0" />
+    <Property name="FadeOutTime" value="0" />
+  </Property>
+  <Property name="BaseBuildingErrorCollisionScanEffect" value="GcScanEffectData.xml">
+    <Property name="Id" value="ERRORCOLLISION" />
+    <Property name="ScanEffectType" value="Objects" />
+    <Property name="Colour" value="Colour.xml">
+      <Property name="R" value="0.85" />
+      <Property name="G" value="0.157" />
+      <Property name="B" value="0.157" />
+      <Property name="A" value="0.66" />
+    </Property>
+    <Property name="BasecolourIntensity" value="0.66" />
+    <Property name="ScanlinesSeparation" value="0.1" />
+    <Property name="FresnelIntensity" value="-10" />
+    <Property name="GlowIntensity" value="0" />
+    <Property name="WaveOffset" value="0" />
+    <Property name="WaveActive" value="True" />
+    <Property name="FixedUpAxis" value="False" />
+    <Property name="Transparent" value="True" />
     <Property name="ModelFade" value="False" />
     <Property name="FadeInTime" value="0" />
     <Property name="FadeOutTime" value="0" />
   </Property>
   <Property name="BaseBuildingErrorImpossibleScanEffect" value="GcScanEffectData.xml">
-    <Property name="Id" value="" />
+    <Property name="Id" value="ERRORIMPOSSIBLE" />
     <Property name="ScanEffectType" value="Objects" />
     <Property name="Colour" value="Colour.xml">
-      <Property name="R" value="0.643" />
-      <Property name="G" value="0.038" />
-      <Property name="B" value="0.71" />
-      <Property name="A" value="0.6" />
+      <Property name="R" value="0.85" />
+      <Property name="G" value="0.157" />
+      <Property name="B" value="0.157" />
+      <Property name="A" value="0.66" />
     </Property>
-    <Property name="BasecolourIntensity" value="0.8" />
-    <Property name="ScanlinesSeparation" value="0.2" />
-    <Property name="FresnelIntensity" value="-5" />
+    <Property name="BasecolourIntensity" value="0.66" />
+    <Property name="ScanlinesSeparation" value="0.1" />
+    <Property name="FresnelIntensity" value="-10" />
     <Property name="GlowIntensity" value="0" />
     <Property name="WaveOffset" value="0" />
     <Property name="WaveActive" value="True" />
@@ -1298,38 +1342,38 @@
     <Property name="FadeOutTime" value="0" />
   </Property>
   <Property name="BaseBuildingErrorUnaffordableScanEffect" value="GcScanEffectData.xml">
-    <Property name="Id" value="" />
+    <Property name="Id" value="UNAFFORDABLE" />
     <Property name="ScanEffectType" value="Objects" />
     <Property name="Colour" value="Colour.xml">
-      <Property name="R" value="0.002" />
-      <Property name="G" value="0.125" />
-      <Property name="B" value="0.683" />
-      <Property name="A" value="0.5" />
+      <Property name="R" value="0.85" />
+      <Property name="G" value="0.157" />
+      <Property name="B" value="0.157" />
+      <Property name="A" value="0.66" />
     </Property>
-    <Property name="BasecolourIntensity" value="0.8" />
-    <Property name="ScanlinesSeparation" value="0.2" />
-    <Property name="FresnelIntensity" value="-5" />
+    <Property name="BasecolourIntensity" value="0.66" />
+    <Property name="ScanlinesSeparation" value="0.1" />
+    <Property name="FresnelIntensity" value="-10" />
     <Property name="GlowIntensity" value="0" />
     <Property name="WaveOffset" value="0" />
     <Property name="WaveActive" value="True" />
     <Property name="FixedUpAxis" value="False" />
-    <Property name="Transparent" value="False" />
+    <Property name="Transparent" value="True" />
     <Property name="ModelFade" value="False" />
     <Property name="FadeInTime" value="0" />
     <Property name="FadeOutTime" value="0" />
   </Property>
   <Property name="BaseBuildingErrorAboveWaterScanEffect" value="GcScanEffectData.xml">
-    <Property name="Id" value="" />
+    <Property name="Id" value="ERRORABOVEWATER" />
     <Property name="ScanEffectType" value="Objects" />
     <Property name="Colour" value="Colour.xml">
-      <Property name="R" value="0.009" />
-      <Property name="G" value="0.009" />
-      <Property name="B" value="0.823" />
-      <Property name="A" value="1" />
+      <Property name="R" value="0.85" />
+      <Property name="G" value="0.157" />
+      <Property name="B" value="0.157" />
+      <Property name="A" value="0.66" />
     </Property>
-    <Property name="BasecolourIntensity" value="0.6" />
-    <Property name="ScanlinesSeparation" value="0.2" />
-    <Property name="FresnelIntensity" value="-5" />
+    <Property name="BasecolourIntensity" value="0.66" />
+    <Property name="ScanlinesSeparation" value="0.1" />
+    <Property name="FresnelIntensity" value="-10" />
     <Property name="GlowIntensity" value="0" />
     <Property name="WaveOffset" value="0" />
     <Property name="WaveActive" value="True" />
@@ -1340,17 +1384,17 @@
     <Property name="FadeOutTime" value="0" />
   </Property>
   <Property name="BaseBuildingErrorBelowWaterScanEffect" value="GcScanEffectData.xml">
-    <Property name="Id" value="" />
+    <Property name="Id" value="ERRORBELOWWATER" />
     <Property name="ScanEffectType" value="Objects" />
     <Property name="Colour" value="Colour.xml">
-      <Property name="R" value="0.74" />
-      <Property name="G" value="0.375" />
-      <Property name="B" value="0.01" />
-      <Property name="A" value="1" />
+      <Property name="R" value="0.85" />
+      <Property name="G" value="0.157" />
+      <Property name="B" value="0.157" />
+      <Property name="A" value="0.66" />
     </Property>
-    <Property name="BasecolourIntensity" value="0.6" />
-    <Property name="ScanlinesSeparation" value="0.2" />
-    <Property name="FresnelIntensity" value="-5" />
+    <Property name="BasecolourIntensity" value="0.66" />
+    <Property name="ScanlinesSeparation" value="0.1" />
+    <Property name="FresnelIntensity" value="-10" />
     <Property name="GlowIntensity" value="0" />
     <Property name="WaveOffset" value="0" />
     <Property name="WaveActive" value="True" />
@@ -1361,7 +1405,7 @@
     <Property name="FadeOutTime" value="0" />
   </Property>
   <Property name="BaseBuildingRemotePlayerValidScanEffect" value="GcScanEffectData.xml">
-    <Property name="Id" value="" />
+    <Property name="Id" value="REMOTEPLAYER" />
     <Property name="ScanEffectType" value="Objects" />
     <Property name="Colour" value="Colour.xml">
       <Property name="R" value="0.398" />
@@ -1382,7 +1426,7 @@
     <Property name="FadeOutTime" value="0.2" />
   </Property>
   <Property name="BaseBuildingRemotePlayerSelectionScanEffect" value="GcScanEffectData.xml">
-    <Property name="Id" value="" />
+    <Property name="Id" value="REMOTESELECT" />
     <Property name="ScanEffectType" value="Creature" />
     <Property name="Colour" value="Colour.xml">
       <Property name="R" value="0.195" />
@@ -1551,15 +1595,15 @@
   <Property name="MapTargetOffset" value="15" />
   <Property name="MapFOV" value="16" />
   <Property name="MapRadius" value="220" />
-  <Property name="HUDScaleAdd" value="1.2" />
+  <Property name="HUDScaleAdd" value="1.0" />
   <Property name="HUDScaleRadius" value="1" />
-  <Property name="HUDScaleMin" value="20" />
+  <Property name="HUDScaleMin" value="10" />
   <Property name="HUDScaleMinAim" value="20" />
-  <Property name="HUDScaleMax" value="300" />
-  <Property name="HUDScaleFarTarget" value="50" />
+  <Property name="HUDScaleMax" value="200" />
+  <Property name="HUDScaleFarTarget" value="20" />
   <Property name="HUDReticuleMoveBack" value="0.01" />
   <Property name="HUDReticuleMoveAim" value="0.08" />
-  <Property name="MouseSensitivity" value="0.25" />
+  <Property name="MouseSensitivity" value="0.2" />
   <Property name="MouseSensitivityShip" value="30" />
   <Property name="MouseSensitivityVehicle" value="20" />
   <Property name="PainTime" value="1.5" />
@@ -1595,20 +1639,22 @@
     <Property name="DamageMin" value="1" />
     <Property name="DamageMax" value="1" />
   </Property>
-  <Property name="DefaultAnim" value="RUN" />
+  <Property name="DefaultAnim" value="WALK" />
   <Property name="DebugDrawTriggerBoxes" value="False" />
   <Property name="SpeedReadoutMultiplier" value="1" />
   <Property name="SpaceSpeedReadoutMultiplier" value="1" />
   <Property name="TorchCookieIndex" value="0" />
-  <Property name="TorchFoV" value="90" />
-  <Property name="TorchStrength" value="3.5" />
+  <Property name="TorchFoV" value="80" />
+  <Property name="TorchStrength" value="6.5" />
   <Property name="TorchDimCookieIndex" value="-1" />
-  <Property name="TorchDimFoV" value="65" />
-  <Property name="TorchDimStrength" value="1.5" />
-  <Property name="InteractionTorchFoV" value="120" />
+  <Property name="TorchDimFoV" value="80" />
+  <Property name="TorchDimStrength" value="6.5" />
+  <Property name="InteractionTorchFoV" value="80" />
   <Property name="InteractionTorchStrength" value="2" />
-  <Property name="UndergroundTorchFoV" value="70" />
-  <Property name="UndergroundTorchStrength" value="2.5" />
+  <Property name="UndergroundTorchFoV" value="80" />
+  <Property name="UndergroundTorchFoVFar" value="80" />
+  <Property name="UndergroundTorchStrength" value="0" />
+  <Property name="UndergroundTorchStrengthFar" value="0" />
   <Property name="TorchOffsetX" value="0" />
   <Property name="TorchOffsetY" value="-0.5" />
   <Property name="TorchOffsetZ" value="-0.75" />
@@ -1621,11 +1667,11 @@
   <Property name="TorchDisabledInTheDay" value="False" />
   <Property name="TorchRotation" value="0" />
   <Property name="TorchFollowCameraPitch" value="1" />
-  <Property name="TorchFollowCameraTime" value="0" />
+  <Property name="TorchFollowCameraTime" value="0.01" />
   <Property name="TorchColour" value="Colour.xml">
-    <Property name="R" value="0.95" />
-    <Property name="G" value="0.993" />
-    <Property name="B" value="0.944" />
+    <Property name="R" value="0.55" />
+    <Property name="G" value="0.593" />
+    <Property name="B" value="0.544" />
     <Property name="A" value="1" />
   </Property>
   <Property name="PlayerAmbientSpotLightIntensity" value="0" />
