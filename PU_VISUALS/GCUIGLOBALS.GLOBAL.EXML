@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.63.0)-->
+<!--File created using MBINCompiler version (3.64.0)-->
 <Data template="GcUIGlobals">
   <Property name="UseZoomedOutBuildCamRadius" value="3" />
   <Property name="ParagraphScrollSpeed" value="10" />
@@ -984,11 +984,13 @@
   <Property name="BaseBuildingMaxFreeRotateSpeed" value="3.5" />
   <Property name="BaseBuildingTimeToMaxRotationSpeed" value="1" />
   <Property name="BaseBuildingRotationResetRate" value="4" />
-  <Property name="BaseBuildingFreeRotateSpeedPadMultiplier" value="1.111111" />
+  <Property name="BaseBuildingFreeRotateSpeedPadMultiplier" value="4" />
   <Property name="BaseBuildingFreeRotateDelayBeforeReset" value="0.55" />
+  <Property name="BaseBuildingSmoothMenuWhileSnapped" value="True" />
   <Property name="BaseBuildingUIHorizontalSafeArea" value="0.1" />
   <Property name="BaseBuildingUIVerticalSafeArea" value="0.1" />
-  <Property name="BaseBuildingUIVerticalOffset" value="0.15" />
+  <Property name="BaseBuildingUIVerticalOffset" value="2" />
+  <Property name="BaseBuildingUIVerticalOffsetEdit" value="0.4" />
   <Property name="BaseBuildingUIVerticalOffsetFromBB" value="1" />
   <Property name="BaseBuildingUIErrorFadeTime" value="0.5" />
   <Property name="BaseBuildingUIAdjustTime" value="0.0625" />
@@ -2757,30 +2759,30 @@
   <Property name="HoldTimerResetTime" value="0.5" />
   <Property name="ModelRendererBGPass" value="True" />
   <Property name="ModelRendererPass1" value="True" />
-  <Property name="ModelRendererPass2" value="True" /> 
-  <Property name="HazardScreenEffectPulseRate" value="0.01" />  
-  <Property name="KeepHazardBarActiveTime" value="6" /> 
-  <Property name="KeepSecondHazardBarActiveTime" value="0.5" /> 
-  <Property name="HazardBarPulseTime" value="1" />  
-  <Property name="HazardScreenEffectPulseTime" value="2" /> 
-  <Property name="HazardScreenEffectStrength" value="0.05" /> 
-  <Property name="HazardWarningPulseTime" value="4" />  
-  <Property name="HazardWarningPulseStrength" value="0.8" />  
-  <Property name="HazardPainPulseStrength" value="2" /> 
-  <Property name="ShieldSpringTime" value="0.6" />  
-  <Property name="ShieldPulseTime" value="0.25" />  
-  <Property name="ShieldHazardPulseRate" value="0.1" /> 
-  <Property name="ShieldHUDAlwaysOn" value="False" /> 
-  <Property name="ShieldHazardPulseThreshold" value="0.2" />  
-  <Property name="AlwaysOnHazardThreshold" value="0.7" /> 
-  <Property name="AlwaysOnHazardStrengthTox" value="0.1" /> 
-  <Property name="AlwaysOnHazardStrengthHeat" value="0.1" />  
-  <Property name="AlwaysOnHazardStrengthRad" value="0.1" /> 
-  <Property name="AlwaysOnHazardStrengthCold" value="0.1" />  
-  <Property name="AlwaysOnHazardMultiplierTox" value="1" /> 
-  <Property name="AlwaysOnHazardMultiplierHeat" value="1" />  
-  <Property name="AlwaysOnHazardMultiplierRad" value="1" /> 
-  <Property name="AlwaysOnHazardMultiplierCold" value="1" />  
+  <Property name="ModelRendererPass2" value="True" />
+  <Property name="HazardScreenEffectPulseRate" value="0.01" />
+  <Property name="KeepHazardBarActiveTime" value="6" />
+  <Property name="KeepSecondHazardBarActiveTime" value="0.5" />
+  <Property name="HazardBarPulseTime" value="1" />
+  <Property name="HazardScreenEffectPulseTime" value="2" />
+  <Property name="HazardScreenEffectStrength" value="0.05" />
+  <Property name="HazardWarningPulseTime" value="4" />
+  <Property name="HazardWarningPulseStrength" value="0.8" />
+  <Property name="HazardPainPulseStrength" value="2" />
+  <Property name="ShieldSpringTime" value="0.6" />
+  <Property name="ShieldPulseTime" value="0.25" />
+  <Property name="ShieldHazardPulseRate" value="0.1" />
+  <Property name="ShieldHUDAlwaysOn" value="False" />
+  <Property name="ShieldHazardPulseThreshold" value="0.2" />
+  <Property name="AlwaysOnHazardThreshold" value="0.7" />
+  <Property name="AlwaysOnHazardStrengthTox" value="0.1" />
+  <Property name="AlwaysOnHazardStrengthHeat" value="0.1" />
+  <Property name="AlwaysOnHazardStrengthRad" value="0.1" />
+  <Property name="AlwaysOnHazardStrengthCold" value="0.1" />
+  <Property name="AlwaysOnHazardMultiplierTox" value="1" />
+  <Property name="AlwaysOnHazardMultiplierHeat" value="1" />
+  <Property name="AlwaysOnHazardMultiplierRad" value="1" />
+  <Property name="AlwaysOnHazardMultiplierCold" value="1" />
   <Property name="HazardPulseRate" value="400" />
   <Property name="HazardTextures">
     <Property value="NMSString0x80.xml">
@@ -4087,12 +4089,12 @@
     <Property name="B" value="0" />
     <Property name="A" value="0.9" />
   </Property>
-  <Property name="CursorHoverSlowFactor" value="0.15" />
+  <Property name="CursorHoverSlowFactor" value="0.95" />
   <Property name="FrontendBGAlpha" value="0.1" />
   <Property name="FrontendConfirmTimeMouseMultiplier" value="0.25" />
-  <Property name="FrontendConfirmTimeFast" value="0.15" />
+  <Property name="FrontendConfirmTimeFast" value="0.2" />
   <Property name="FrontendConfirmTime" value="0.25" />
-  <Property name="FrontendConfirmTimeSlow" value="1.0" />
+  <Property name="FrontendConfirmTimeSlow" value="0.5" />
   <Property name="FrontendConfirmCurve" value="TkCurveType.xml">
     <Property name="Curve" value="Squared" />
   </Property>

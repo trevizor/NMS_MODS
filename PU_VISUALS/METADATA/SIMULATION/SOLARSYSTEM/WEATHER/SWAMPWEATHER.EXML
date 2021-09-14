@@ -97,7 +97,7 @@
   </Property>
   <Property name="FlightFog" value="GcFogProperties.xml">
     <Property name="FogStrength" value="0.1" />
-    <Property name="FogMax" value="1" />
+    <Property name="FogMax" value="0.8" />
     <Property name="FogColourStrength" value="15" />
     <Property name="FogColourMax" value="1" />
     <Property name="HeightFogStrength" value="0.4" />
@@ -565,10 +565,10 @@
   </Property>
   <Property name="Storms">
     <Property value="GcStormProperties.xml">
-      <Property name="Weighting" value="0" />
+      <Property name="Weighting" value="1" />
       <Property name="Fog" value="GcFogProperties.xml">
         <Property name="FogStrength" value="2" />
-        <Property name="FogMax" value="1" />
+        <Property name="FogMax" value="0.8" />
         <Property name="FogColourStrength" value="0.8" />
         <Property name="FogColourMax" value="1" />
         <Property name="HeightFogStrength" value="0" />
@@ -668,7 +668,7 @@
             <Property name="A" value="1" />
           </Property>
           <Property name="OffsetSaturation" value="0.1" />
-          <Property name="OffsetValue" value="-0.75" />
+          <Property name="OffsetValue" value="-0.5" />
           <Property name="MultiplySaturation" value="1" />
           <Property name="MultiplyValue" value="1" />
         </Property>
@@ -681,7 +681,7 @@
             <Property name="A" value="1" />
           </Property>
           <Property name="OffsetSaturation" value="0.1" />
-          <Property name="OffsetValue" value="0.02" />
+          <Property name="OffsetValue" value="-0.3" />
           <Property name="MultiplySaturation" value="1" />
           <Property name="MultiplyValue" value="1" />
         </Property>
@@ -719,8 +719,8 @@
             <Property name="B" value="1" />
             <Property name="A" value="1" />
           </Property>
-          <Property name="OffsetSaturation" value="0.1" />
-          <Property name="OffsetValue" value="0.02" />
+          <Property name="OffsetSaturation" value="0.15" />
+          <Property name="OffsetValue" value="-0.2" />
           <Property name="MultiplySaturation" value="1" />
           <Property name="MultiplyValue" value="1" />
         </Property>
@@ -732,8 +732,8 @@
             <Property name="B" value="1" />
             <Property name="A" value="1" />
           </Property>
-          <Property name="OffsetSaturation" value="0.1" />
-          <Property name="OffsetValue" value="0.02" />
+          <Property name="OffsetSaturation" value="-0.2" />
+          <Property name="OffsetValue" value="-0.2" />
           <Property name="MultiplySaturation" value="1" />
           <Property name="MultiplyValue" value="1" />
         </Property>
@@ -746,7 +746,7 @@
             <Property name="A" value="1" />
           </Property>
           <Property name="OffsetSaturation" value="0.1" />
-          <Property name="OffsetValue" value="0.02" />
+          <Property name="OffsetValue" value="-0.4" />
           <Property name="MultiplySaturation" value="1" />
           <Property name="MultiplyValue" value="1" />
         </Property>
@@ -759,7 +759,7 @@
             <Property name="A" value="1" />
           </Property>
           <Property name="OffsetSaturation" value="0.1" />
-          <Property name="OffsetValue" value="0.02" />
+          <Property name="OffsetValue" value="-0.1" />
           <Property name="MultiplySaturation" value="1" />
           <Property name="MultiplyValue" value="1" />
         </Property>
@@ -772,7 +772,7 @@
             <Property name="A" value="1" />
           </Property>
           <Property name="OffsetSaturation" value="0.1" />
-          <Property name="OffsetValue" value="0.02" />
+          <Property name="OffsetValue" value="-0.3" />
           <Property name="MultiplySaturation" value="1" />
           <Property name="MultiplyValue" value="1" />
         </Property>
