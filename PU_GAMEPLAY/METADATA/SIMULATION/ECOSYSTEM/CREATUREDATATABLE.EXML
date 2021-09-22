@@ -12865,7 +12865,7 @@
         <Property name="CreatureType" value="None" />
       </Property>
       <Property name="EcoSystemCreature" value="True" />
-      <Property name="CanBeFemale" value="True" />
+      <Property name="CanBeFemale" value="False" />
       <Property name="Tags">
         <Property value="GcCreatureTagAndRarity.xml">
           <Property name="Tag" value="HERD" />
@@ -12879,7 +12879,7 @@
       <Property name="MaxScale" value="20" />
       <Property name="FurLengthModifierAtMinScale" value="0.4" />
       <Property name="FurLengthModifierAtMaxScale" value="2.6" />
-      <Property name="FurChance" value="0.3" />
+      <Property name="FurChance" value="0.8" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Rare" />
       </Property>
@@ -12958,13 +12958,13 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="20" />
-          <Property name="MoveSpeedScale" value="0.1" />
+          <Property name="MoveRange" value="4000" />
+          <Property name="MoveSpeedScale" value="1.0" />
           <Property name="TurnRadiusScale" value="50" />
           <Property name="HeightMin" value="5" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="1" />
-          <Property name="Herd" value="True" />
+          <Property name="Herd" value="False" />
         </Property>
         <Property value="GcCreatureVocalData.xml">
           <Property name="ScaleBias" value="1" />
@@ -13016,96 +13016,11 @@
             </Property>
           </Property>
         </Property>
-        <Property value="GcCreatureRidingData.xml">
-          <Property name="JointName" value="Back3JNT" />
-          <Property name="AdditionalScaleJoint" value="" />
-          <Property name="Offset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0.275" />
-            <Property name="z" value="-0.15" />
-          </Property>
-          <Property name="RotationOffset" value="Vector3f.xml">
-            <Property name="x" value="11" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="VROffset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="-0.3" />
-          </Property>
-          <Property name="HeadCounterRotation" value="0" />
-          <Property name="UprightStrength" value="1" />
-          <Property name="LegSpread" value="True" />
-          <Property name="ScaleForNeutralLegSpread" value="2" />
-          <Property name="ScaleForMinLegSpread" value="0.25" />
-          <Property name="ScaleForMaxLegSpread" value="4.5" />
-          <Property name="RequiresMatchingPartModifier" value="False" />
-          <Property name="PartModifiers" />
-          <Property name="IdleRidingAnim" value="RIDE_ANT_IDLE" />
-          <Property name="DefaultRidingAnim" value="RIDE_ANT_WALK" />
-          <Property name="RidingAnims">
-            <Property value="GcCreatureRidingAnimation.xml">
-              <Property name="MovementAnim" value="TROT" />
-              <Property name="RidingAnim" value="RIDE_ANT_TROT" />
-            </Property>
-            <Property value="GcCreatureRidingAnimation.xml">
-              <Property name="MovementAnim" value="RUN" />
-              <Property name="RidingAnim" value="RIDE_ANT_RUN" />
-            </Property>
-          </Property>
-        </Property>
-        <Property value="GcCreaturePetData.xml">
-          <Property name="AccessorySlots">
-            <Property value="GcCreaturePetAccessory.xml">
-              <Property name="RequiredDescriptor" value="_BODY_DEER" />
-              <Property name="Slots">
-                <Property value="GcCreaturePetAccessorySlot.xml">
-                  <Property name="AttachLocator" value="PETACC_deerL" />
-                  <Property name="AccessoryGroup" value="LEFT" />
-                </Property>
-                <Property value="GcCreaturePetAccessorySlot.xml">
-                  <Property name="AttachLocator" value="PETACC_deerR" />
-                  <Property name="AccessoryGroup" value="RIGHT" />
-                </Property>
-              </Property>
-              <Property name="HideParts" />
-            </Property>
-            <Property value="GcCreaturePetAccessory.xml">
-              <Property name="RequiredDescriptor" value="_BODY_SKINNY" />
-              <Property name="Slots">
-                <Property value="GcCreaturePetAccessorySlot.xml">
-                  <Property name="AttachLocator" value="PETACC_skinnyL" />
-                  <Property name="AccessoryGroup" value="LEFT" />
-                </Property>
-                <Property value="GcCreaturePetAccessorySlot.xml">
-                  <Property name="AttachLocator" value="PETACC_skinnyR" />
-                  <Property name="AccessoryGroup" value="RIGHT" />
-                </Property>
-              </Property>
-              <Property name="HideParts" />
-            </Property>
-            <Property value="GcCreaturePetAccessory.xml">
-              <Property name="RequiredDescriptor" value="_BODY_FAT" />
-              <Property name="Slots">
-                <Property value="GcCreaturePetAccessorySlot.xml">
-                  <Property name="AttachLocator" value="PETACC_fatL" />
-                  <Property name="AccessoryGroup" value="LEFT" />
-                </Property>
-                <Property value="GcCreaturePetAccessorySlot.xml">
-                  <Property name="AttachLocator" value="PETACC_fatR" />
-                  <Property name="AccessoryGroup" value="RIGHT" />
-                </Property>
-              </Property>
-              <Property name="HideParts" />
-            </Property>
-          </Property>
-        </Property>
       </Property>
     </Property>
     <Property value="GcCreatureData.xml">
       <Property name="Id" value="HUGEROBOTANTELOPE" />
-      <Property name="OnlySpawnWhenIdIsForced" value="True" />
+      <Property name="OnlySpawnWhenIdIsForced" value="False" />
       <Property name="ForceType" value="GcCreatureTypes.xml">
         <Property name="CreatureType" value="None" />
       </Property>
@@ -13113,7 +13028,7 @@
         <Property name="CreatureType" value="None" />
       </Property>
       <Property name="EcoSystemCreature" value="True" />
-      <Property name="CanBeFemale" value="True" />
+      <Property name="CanBeFemale" value="False" />
       <Property name="Tags">
         <Property value="GcCreatureTagAndRarity.xml">
           <Property name="Tag" value="HERD" />
@@ -13206,13 +13121,13 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="20" />
-          <Property name="MoveSpeedScale" value="0.1" />
+          <Property name="MoveRange" value="4000" />
+          <Property name="MoveSpeedScale" value="1.0" />
           <Property name="TurnRadiusScale" value="50" />
           <Property name="HeightMin" value="5" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="1" />
-          <Property name="Herd" value="True" />
+          <Property name="Herd" value="False" />
         </Property>
         <Property value="GcCreatureVocalData.xml">
           <Property name="ScaleBias" value="1" />
@@ -13261,59 +13176,6 @@
               <Property name="MinCreatureSize" value="0.5" />
               <Property name="MaxCreatureSize" value="100" />
               <Property name="MoveSpeed" value="Run" />
-            </Property>
-          </Property>
-        </Property>
-        <Property value="GcCreatureRidingData.xml">
-          <Property name="JointName" value="Back3JNT" />
-          <Property name="AdditionalScaleJoint" value="" />
-          <Property name="Offset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0.225" />
-            <Property name="z" value="-0.2" />
-          </Property>
-          <Property name="RotationOffset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="VROffset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="-0.3" />
-          </Property>
-          <Property name="HeadCounterRotation" value="0" />
-          <Property name="UprightStrength" value="1" />
-          <Property name="LegSpread" value="True" />
-          <Property name="ScaleForNeutralLegSpread" value="2" />
-          <Property name="ScaleForMinLegSpread" value="0.25" />
-          <Property name="ScaleForMaxLegSpread" value="4.5" />
-          <Property name="RequiresMatchingPartModifier" value="False" />
-          <Property name="PartModifiers" />
-          <Property name="IdleRidingAnim" value="RIDE_ANT_IDLE" />
-          <Property name="DefaultRidingAnim" value="RIDE_ANT_WALK" />
-          <Property name="RidingAnims">
-            <Property value="GcCreatureRidingAnimation.xml">
-              <Property name="MovementAnim" value="TROT" />
-              <Property name="RidingAnim" value="RIDE_ANT_TROT" />
-            </Property>
-            <Property value="GcCreatureRidingAnimation.xml">
-              <Property name="MovementAnim" value="RUN" />
-              <Property name="RidingAnim" value="RIDE_ANT_RUN" />
-            </Property>
-          </Property>
-        </Property>
-        <Property value="GcCreaturePetData.xml">
-          <Property name="AccessorySlots">
-            <Property value="GcCreaturePetAccessory.xml">
-              <Property name="RequiredDescriptor" value="_BODY_1" />
-              <Property name="Slots">
-                <Property value="GcCreaturePetAccessorySlot.xml">
-                  <Property name="AttachLocator" value="PETACC_bodyF" />
-                  <Property name="AccessoryGroup" value="FRONT" />
-                </Property>
-              </Property>
-              <Property name="HideParts" />
             </Property>
           </Property>
         </Property>
@@ -13329,7 +13191,7 @@
         <Property name="CreatureType" value="None" />
       </Property>
       <Property name="EcoSystemCreature" value="True" />
-      <Property name="CanBeFemale" value="True" />
+      <Property name="CanBeFemale" value="False" />
       <Property name="Tags">
         <Property value="GcCreatureTagAndRarity.xml">
           <Property name="Tag" value="HERD" />
@@ -13342,7 +13204,7 @@
       <Property name="MinScale" value="12" />
       <Property name="MaxScale" value="25" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
-      <Property name="FurLengthModifierAtMaxScale" value="1.4" />
+      <Property name="FurLengthModifierAtMaxScale" value="1.8" />
       <Property name="FurChance" value="0.3" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Rare" />
@@ -13422,8 +13284,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="175" />
-          <Property name="MoveSpeedScale" value="0.1" />
+          <Property name="MoveRange" value="4000" />
+          <Property name="MoveSpeedScale" value="1.0" />
           <Property name="TurnRadiusScale" value="50" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -13480,861 +13342,6 @@
             </Property>
           </Property>
         </Property>
-        <Property value="GcCreatureRidingData.xml">
-          <Property name="JointName" value="NeckJNT" />
-          <Property name="AdditionalScaleJoint" value="" />
-          <Property name="Offset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0.775" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="RotationOffset" value="Vector3f.xml">
-            <Property name="x" value="30" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="VROffset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="HeadCounterRotation" value="0" />
-          <Property name="UprightStrength" value="0.5" />
-          <Property name="LegSpread" value="True" />
-          <Property name="ScaleForNeutralLegSpread" value="0.35" />
-          <Property name="ScaleForMinLegSpread" value="0" />
-          <Property name="ScaleForMaxLegSpread" value="1" />
-          <Property name="RequiresMatchingPartModifier" value="False" />
-          <Property name="PartModifiers">
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_HEAD_ALIEN" />
-              <Property name="JointName" value="NeckJNT" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="Back3JNT" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="False" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.75" />
-                <Property name="z" value="0.05" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_HEAD_HIPPO" />
-              <Property name="JointName" value="NeckJNT" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="Back3JNT" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="False" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.725" />
-                <Property name="z" value="0.1" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="8" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_HEAD_RHINO" />
-              <Property name="JointName" value="NeckJNT" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="False" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.7" />
-                <Property name="z" value="0.125" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="17" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_HEAD_STEG" />
-              <Property name="JointName" value="NeckJNT" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="Back3JNT" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="False" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.75" />
-                <Property name="z" value="0.025" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="24" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_HEAD_TAPIR" />
-              <Property name="JointName" value="NeckJNT" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="False" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.65" />
-                <Property name="z" value="-0.125" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.2" />
-                <Property name="z" value="0.5" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_HEAD_TRI" />
-              <Property name="JointName" value="NeckJNT" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="Back3JNT" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="False" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.7" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.4" />
-                <Property name="z" value="0.3" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_HEAD_TURTLE" />
-              <Property name="JointName" value="NeckJNT" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="False" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.8" />
-                <Property name="z" value="0.05" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_ALHEAD_2X" />
-              <Property name="JointName" value="" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="True" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.1" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_HEAD_DIPLO" />
-              <Property name="JointName" value="Back3JNT" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="False" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.4" />
-                <Property name="z" value="-0.875" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="22" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_HEAD_DIPLO" />
-              <Property name="JointName" value="HeadJNT" />
-              <Property name="MinScale" value="8" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="True" />
-              <Property name="RelativeOffset" value="False" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.23" />
-                <Property name="z" value="-0.325" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="-3" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="1" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="-0.25" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_HDACC_9" />
-              <Property name="JointName" value="" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="False" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.525" />
-                <Property name="z" value="-0.55" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="14" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="1" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0.6" />
-              <Property name="LegSpreadOffset" value="0" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_HAC_1Z" />
-              <Property name="JointName" value="HeadJNT" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="False" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.5" />
-                <Property name="z" value="-0.17" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="1" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_HDACC_1" />
-              <Property name="JointName" value="TopHeadJNT" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="False" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.075" />
-                <Property name="z" value="-0.145" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="1" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0.15" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_HDACC_3" />
-              <Property name="JointName" value="HeadJNT" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="False" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.475" />
-                <Property name="z" value="-0.92" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="9" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="1" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0.7" />
-              <Property name="LegSpreadOffset" value="0" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_HDACC_4" />
-              <Property name="JointName" value="TopHeadJNT" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="False" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.15" />
-                <Property name="z" value="-0.07" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="13" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="1" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="1" />
-              <Property name="LegSpreadOffset" value="0" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_HDACC_5" />
-              <Property name="JointName" value="TopHeadJNT" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="False" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="-0.05" />
-                <Property name="z" value="-0.15" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="6" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="1" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_HDACC_6" />
-              <Property name="JointName" value="HeadJNT" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="False" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.375" />
-                <Property name="z" value="-0.595" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="4" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="1" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_HDACC_NULL" />
-              <Property name="JointName" value="TopHeadJNT" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="False" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="-0.05" />
-                <Property name="z" value="-0.15" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="5" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="1" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0.9" />
-              <Property name="LegSpreadOffset" value="-0.05" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_ADIPACC_5Z" />
-              <Property name="JointName" value="HeadJNT" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="False" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.275" />
-                <Property name="z" value="-0.42" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="8" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="1" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0.1" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_ADIPACC_1" />
-              <Property name="JointName" value="HeadJNT" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="TopHeadJNT" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="False" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.6" />
-                <Property name="z" value="-0.695" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0.1" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_ADIPACC_2" />
-              <Property name="JointName" value="HeadJNT" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="False" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="-0.025" />
-                <Property name="y" value="0.9" />
-                <Property name="z" value="-0.445" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="-5" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="1" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="-1" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_ADIPACC_4Z" />
-              <Property name="JointName" value="HeadJNT" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="False" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.25" />
-                <Property name="z" value="-0.345" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="8" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="1" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_ADIPACC_6" />
-              <Property name="JointName" value="" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="True" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0.025" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="17" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="1" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0.3" />
-              <Property name="LegSpreadOffset" value="0" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_ADIPACC_NULLZ" />
-              <Property name="JointName" value="" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="True" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="-0.1" />
-                <Property name="z" value="-0.375" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="1" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_ADIPACC_XX" />
-              <Property name="JointName" value="" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="True" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-          </Property>
-          <Property name="IdleRidingAnim" value="RIDE_RDNT_IDLE" />
-          <Property name="DefaultRidingAnim" value="RIDE_RDNT_WALK" />
-          <Property name="RidingAnims" />
-        </Property>
-        <Property value="GcCreaturePetData.xml">
-          <Property name="AccessorySlots">
-            <Property value="GcCreaturePetAccessory.xml">
-              <Property name="RequiredDescriptor" value="_BODY_DIPLO" />
-              <Property name="Slots">
-                <Property value="GcCreaturePetAccessorySlot.xml">
-                  <Property name="AttachLocator" value="PETACC_diploL" />
-                  <Property name="AccessoryGroup" value="LEFT" />
-                </Property>
-                <Property value="GcCreaturePetAccessorySlot.xml">
-                  <Property name="AttachLocator" value="PETACC_diploR" />
-                  <Property name="AccessoryGroup" value="RIGHT" />
-                </Property>
-              </Property>
-              <Property name="HideParts" />
-            </Property>
-            <Property value="GcCreaturePetAccessory.xml">
-              <Property name="RequiredDescriptor" value="_BODY_TAPIR" />
-              <Property name="Slots">
-                <Property value="GcCreaturePetAccessorySlot.xml">
-                  <Property name="AttachLocator" value="PETACC_tapirL" />
-                  <Property name="AccessoryGroup" value="LEFT" />
-                </Property>
-                <Property value="GcCreaturePetAccessorySlot.xml">
-                  <Property name="AttachLocator" value="PETACC_tapirR" />
-                  <Property name="AccessoryGroup" value="RIGHT" />
-                </Property>
-              </Property>
-              <Property name="HideParts" />
-            </Property>
-            <Property value="GcCreaturePetAccessory.xml">
-              <Property name="RequiredDescriptor" value="_BODY_TURTLE" />
-              <Property name="Slots">
-                <Property value="GcCreaturePetAccessorySlot.xml">
-                  <Property name="AttachLocator" value="PETACC_turtleL" />
-                  <Property name="AccessoryGroup" value="LEFT" />
-                </Property>
-                <Property value="GcCreaturePetAccessorySlot.xml">
-                  <Property name="AttachLocator" value="PETACC_turtleR" />
-                  <Property name="AccessoryGroup" value="RIGHT" />
-                </Property>
-              </Property>
-              <Property name="HideParts" />
-            </Property>
-            <Property value="GcCreaturePetAccessory.xml">
-              <Property name="RequiredDescriptor" value="_BODY_RHINO" />
-              <Property name="Slots">
-                <Property value="GcCreaturePetAccessorySlot.xml">
-                  <Property name="AttachLocator" value="PETACC_rhinoL" />
-                  <Property name="AccessoryGroup" value="LEFT" />
-                </Property>
-                <Property value="GcCreaturePetAccessorySlot.xml">
-                  <Property name="AttachLocator" value="PETACC_rhinoR" />
-                  <Property name="AccessoryGroup" value="RIGHT" />
-                </Property>
-              </Property>
-              <Property name="HideParts" />
-            </Property>
-            <Property value="GcCreaturePetAccessory.xml">
-              <Property name="RequiredDescriptor" value="_BODY_TRI" />
-              <Property name="Slots">
-                <Property value="GcCreaturePetAccessorySlot.xml">
-                  <Property name="AttachLocator" value="PETACC_triceratopsL" />
-                  <Property name="AccessoryGroup" value="LEFT" />
-                </Property>
-                <Property value="GcCreaturePetAccessorySlot.xml">
-                  <Property name="AttachLocator" value="PETACC_triceratopsR" />
-                  <Property name="AccessoryGroup" value="RIGHT" />
-                </Property>
-              </Property>
-              <Property name="HideParts" />
-            </Property>
-          </Property>
-        </Property>
       </Property>
     </Property>
     <Property value="GcCreatureData.xml">
@@ -14347,7 +13354,7 @@
         <Property name="CreatureType" value="None" />
       </Property>
       <Property name="EcoSystemCreature" value="True" />
-      <Property name="CanBeFemale" value="True" />
+      <Property name="CanBeFemale" value="False" />
       <Property name="Tags" />
       <Property name="MoveArea" value="Water" />
       <Property name="MinScale" value="10" />
@@ -14407,8 +13414,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="175" />
-          <Property name="MoveSpeedScale" value="0.1" />
+          <Property name="MoveRange" value="4000" />
+          <Property name="MoveSpeedScale" value="1.0" />
           <Property name="TurnRadiusScale" value="50" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
@@ -14416,10 +13423,10 @@
           <Property name="Herd" value="False" />
         </Property>
         <Property value="GcCreatureSwarmData.xml">
-          <Property name="MinCount" value="3" />
-          <Property name="MaxCount" value="7" />
-          <Property name="SwarmMovementSpeed" value="0.1" />
-          <Property name="SwarmMovementRadius" value="400" />
+          <Property name="MinCount" value="1" />
+          <Property name="MaxCount" value="1" />
+          <Property name="SwarmMovementSpeed" value="0.4" />
+          <Property name="SwarmMovementRadius" value="40000" />
           <Property name="SwarmMovementType" value="Random" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -14429,7 +13436,7 @@
               <Property name="SeparateStrength" value="0.5" />
               <Property name="Spacing" value="2" />
               <Property name="Follow" value="1" />
-              <Property name="Range" value="30" />
+              <Property name="Range" value="1800" />
               <Property name="MaxBankingAmount" value="0" />
               <Property name="TurnRequiredForMaxBanking" value="0.3" />
               <Property name="MaxPitchAmount" value="0.4" />
@@ -14474,7 +13481,7 @@
         <Property name="CreatureType" value="None" />
       </Property>
       <Property name="EcoSystemCreature" value="True" />
-      <Property name="CanBeFemale" value="True" />
+      <Property name="CanBeFemale" value="False" />
       <Property name="Tags" />
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="10" />
@@ -14543,36 +13550,36 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="375" />
-          <Property name="MoveSpeedScale" value="0.1" />
+          <Property name="MoveRange" value="4000" />
+          <Property name="MoveSpeedScale" value="1.0" />
           <Property name="TurnRadiusScale" value="50" />
-          <Property name="HeightMin" value="55" />
-          <Property name="HeightMax" value="100" />
+          <Property name="HeightMin" value="80" />
+          <Property name="HeightMax" value="200" />
           <Property name="HeightTime" value="2" />
           <Property name="Herd" value="False" />
         </Property>
         <Property value="GcCreatureSwarmData.xml">
-          <Property name="MinCount" value="2" />
-          <Property name="MaxCount" value="3" />
-          <Property name="SwarmMovementSpeed" value="1.2" />
-          <Property name="SwarmMovementRadius" value="2000" />
-          <Property name="SwarmMovementType" value="Circle" />
+          <Property name="MinCount" value="1" />
+          <Property name="MaxCount" value="1" />
+          <Property name="SwarmMovementSpeed" value="10" />
+          <Property name="SwarmMovementRadius" value="20000" />
+          <Property name="SwarmMovementType" value="Random" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
               <Property name="Coherence" value="0.1" />
               <Property name="Alignment" value="0.05" />
               <Property name="SeparateStrength" value="3" />
-              <Property name="Spacing" value="40" />
+              <Property name="Spacing" value="400" />
               <Property name="Follow" value="1.5" />
-              <Property name="Range" value="3" />
+              <Property name="Range" value="4000" />
               <Property name="MaxBankingAmount" value="0.5" />
               <Property name="TurnRequiredForMaxBanking" value="0.2" />
               <Property name="MaxPitchAmount" value="0.3" />
               <Property name="UpwardMovementForMaxPitch" value="0.3" />
               <Property name="FaceMoveDirStrength" value="0.7" />
               <Property name="TiltMoveDirStrength" value="0" />
-              <Property name="CanLand" value="True" />
+              <Property name="CanLand" value="False" />
               <Property name="LandAdjustDist" value="1" />
               <Property name="LandClampBegin" value="0.75" />
               <Property name="LandSlowDown" value="0.3" />
@@ -14622,7 +13629,7 @@
         <Property name="CreatureType" value="None" />
       </Property>
       <Property name="EcoSystemCreature" value="True" />
-      <Property name="CanBeFemale" value="True" />
+      <Property name="CanBeFemale" value="False" />
       <Property name="Tags" />
       <Property name="MoveArea" value="Water" />
       <Property name="MinScale" value="10" />
@@ -14634,10 +13641,10 @@
         <Property name="CreatureRarity" value="Rare" />
       </Property>
       <Property name="PredatorProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="High" />
       </Property>
       <Property name="HerbivoreProbabilityModifier" value="GcCreatureRoleFrequencyModifier.xml">
-        <Property name="CreatureRoleFrequencyModifier" value="Normal" />
+        <Property name="CreatureRoleFrequencyModifier" value="Low" />
       </Property>
       <Property name="Data">
         <Property value="GcCreatureHealthData.xml">
@@ -14691,10 +13698,10 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="200" />
-          <Property name="MoveSpeedScale" value="0.1" />
+          <Property name="MoveRange" value="4000" />
+          <Property name="MoveSpeedScale" value="1.0" />
           <Property name="TurnRadiusScale" value="50" />
-          <Property name="HeightMin" value="25" />
+          <Property name="HeightMin" value="-225" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="3" />
           <Property name="Herd" value="False" />
@@ -14703,7 +13710,7 @@
           <Property name="MinCount" value="1" />
           <Property name="MaxCount" value="1" />
           <Property name="SwarmMovementSpeed" value="0.2" />
-          <Property name="SwarmMovementRadius" value="700" />
+          <Property name="SwarmMovementRadius" value="70000" />
           <Property name="SwarmMovementType" value="Random" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -14713,7 +13720,7 @@
               <Property name="SeparateStrength" value="1" />
               <Property name="Spacing" value="12" />
               <Property name="Follow" value="1.5" />
-              <Property name="Range" value="30" />
+              <Property name="Range" value="3000" />
               <Property name="MaxBankingAmount" value="0" />
               <Property name="TurnRequiredForMaxBanking" value="0.3" />
               <Property name="MaxPitchAmount" value="0.3" />
@@ -14758,7 +13765,7 @@
         <Property name="CreatureType" value="None" />
       </Property>
       <Property name="EcoSystemCreature" value="True" />
-      <Property name="CanBeFemale" value="True" />
+      <Property name="CanBeFemale" value="False" />
       <Property name="Tags">
         <Property value="GcCreatureTagAndRarity.xml">
           <Property name="Tag" value="CAVE" />
@@ -14851,11 +13858,11 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="175" />
-          <Property name="MoveSpeedScale" value="0.1" />
+          <Property name="MoveRange" value="4000" />
+          <Property name="MoveSpeedScale" value="1.0" />
           <Property name="TurnRadiusScale" value="50" />
           <Property name="HeightMin" value="0" />
-          <Property name="HeightMax" value="256" />
+          <Property name="HeightMax" value="99999" />
           <Property name="HeightTime" value="5" />
           <Property name="Herd" value="False" />
         </Property>
@@ -14867,279 +13874,6 @@
               <Property name="MinCreatureSize" value="0.5" />
               <Property name="MaxCreatureSize" value="100" />
               <Property name="MoveSpeed" value="Run" />
-            </Property>
-          </Property>
-        </Property>
-        <Property value="GcCreatureRidingData.xml">
-          <Property name="JointName" value="RootJNT" />
-          <Property name="AdditionalScaleJoint" value="" />
-          <Property name="Offset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0.125" />
-            <Property name="z" value="-0.45" />
-          </Property>
-          <Property name="RotationOffset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="VROffset" value="Vector3f.xml">
-            <Property name="x" value="0" />
-            <Property name="y" value="0" />
-            <Property name="z" value="0" />
-          </Property>
-          <Property name="HeadCounterRotation" value="0" />
-          <Property name="UprightStrength" value="0.25" />
-          <Property name="LegSpread" value="True" />
-          <Property name="ScaleForNeutralLegSpread" value="1.5" />
-          <Property name="ScaleForMinLegSpread" value="0.5" />
-          <Property name="ScaleForMaxLegSpread" value="4" />
-          <Property name="RequiresMatchingPartModifier" value="False" />
-          <Property name="PartModifiers">
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_ACCR_MANTISTAI" />
-              <Property name="JointName" value="" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="False" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.17" />
-                <Property name="z" value="0.48" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_ACC1_BULBTOP" />
-              <Property name="JointName" value="" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="True" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.325" />
-                <Property name="z" value="-0.125" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_HEAD_MUFFIN" />
-              <Property name="JointName" value="" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="True" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.505" />
-                <Property name="z" value="-0.245" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="13" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_BODY_1XRARE" />
-              <Property name="JointName" value="" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="True" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.025" />
-                <Property name="z" value="-0.1" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_NECK_MANTIS" />
-              <Property name="JointName" value="" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="True" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.05" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="8" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.5" />
-                <Property name="z" value="-0.5" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_CAPB_11" />
-              <Property name="JointName" value="" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="False" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="1.105" />
-                <Property name="z" value="-0.4" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="20" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0.1" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-            <Property value="GcCreatureRidingPartModifier.xml">
-              <Property name="Partname" value="_ACCR_BULBTOP" />
-              <Property name="JointName" value="" />
-              <Property name="MinScale" value="0" />
-              <Property name="MaxScale" value="100" />
-              <Property name="AdditionalScaleJoint" value="" />
-              <Property name="BreakIfNotSelected" value="False" />
-              <Property name="RelativeOffset" value="True" />
-              <Property name="Offset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0.35" />
-                <Property name="z" value="-0.1" />
-              </Property>
-              <Property name="RotationOffset" value="Vector3f.xml">
-                <Property name="x" value="17" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="VROffset" value="Vector3f.xml">
-                <Property name="x" value="0" />
-                <Property name="y" value="0" />
-                <Property name="z" value="0" />
-              </Property>
-              <Property name="HeadCounterRotation" value="0" />
-              <Property name="LegSpreadOffset" value="0" />
-              <Property name="OverrideAnims" value="False" />
-              <Property name="IdleRidingAnim" value="" />
-              <Property name="DefaultRidingAnim" value="" />
-              <Property name="RidingAnims" />
-            </Property>
-          </Property>
-          <Property name="IdleRidingAnim" value="RIDE_RDNT_IDLE" />
-          <Property name="DefaultRidingAnim" value="RIDE_RDNT_WALK" />
-          <Property name="RidingAnims" />
-        </Property>
-        <Property value="GcCreaturePetData.xml">
-          <Property name="AccessorySlots">
-            <Property value="GcCreaturePetAccessory.xml">
-              <Property name="RequiredDescriptor" value="_BODY_1XRARE" />
-              <Property name="Slots">
-                <Property value="GcCreaturePetAccessorySlot.xml">
-                  <Property name="AttachLocator" value="PETACC_beetleL" />
-                  <Property name="AccessoryGroup" value="LEFT" />
-                </Property>
-                <Property value="GcCreaturePetAccessorySlot.xml">
-                  <Property name="AttachLocator" value="PETACC_beetleR" />
-                  <Property name="AccessoryGroup" value="RIGHT" />
-                </Property>
-              </Property>
-              <Property name="HideParts" />
-            </Property>
-            <Property value="GcCreaturePetAccessory.xml">
-              <Property name="RequiredDescriptor" value="_BODY_2" />
-              <Property name="Slots">
-                <Property value="GcCreaturePetAccessorySlot.xml">
-                  <Property name="AttachLocator" value="PETACC_spiderL" />
-                  <Property name="AccessoryGroup" value="LEFT" />
-                </Property>
-                <Property value="GcCreaturePetAccessorySlot.xml">
-                  <Property name="AttachLocator" value="PETACC_spiderR" />
-                  <Property name="AccessoryGroup" value="RIGHT" />
-                </Property>
-              </Property>
-              <Property name="HideParts" />
             </Property>
           </Property>
         </Property>

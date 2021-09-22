@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.62.0)-->
+<!--File created using MBINCompiler version (3.64.0)-->
 <Data template="GcSettlementGlobals">
   <Property name="BuildingUpgradeTimeInSeconds" value="720" />
   <Property name="BuildingFreeUpgradeTimeInSeconds" value="10" />
@@ -2227,14 +2227,14 @@
           </Property>
         </Property>
         <Property name="GroundStorey" value="GcSettlementBuildingCostData.xml">
-          <Property name="Products">
+          <Property name="Products" />
+          <Property name="Substances">
             <Property value="NMSString0x10.xml">
-              <Property name="Value" value="ALLOY1" />
+              <Property name="Value" value="STELLAR2" />
             </Property>
           </Property>
-          <Property name="Substances" />
-          <Property name="AmountMin" value="3" />
-          <Property name="AmountMax" value="3" />
+          <Property name="AmountMin" value="120" />
+          <Property name="AmountMax" value="120" />
           <Property name="Currency" value="GcCurrency.xml">
             <Property name="Currency" value="Units" />
           </Property>
@@ -2242,12 +2242,12 @@
         <Property name="RegularStorey" value="GcSettlementBuildingCostData.xml">
           <Property name="Products">
             <Property value="NMSString0x10.xml">
-              <Property name="Value" value="ALLOY1" />
+              <Property name="Value" value="CASING" />
             </Property>
           </Property>
           <Property name="Substances" />
-          <Property name="AmountMin" value="3" />
-          <Property name="AmountMax" value="3" />
+          <Property name="AmountMin" value="5" />
+          <Property name="AmountMax" value="5" />
           <Property name="Currency" value="GcCurrency.xml">
             <Property name="Currency" value="Units" />
           </Property>
@@ -2255,12 +2255,12 @@
         <Property name="Roof" value="GcSettlementBuildingCostData.xml">
           <Property name="Products">
             <Property value="NMSString0x10.xml">
-              <Property name="Value" value="ALLOY1" />
+              <Property name="Value" value="CASING" />
             </Property>
           </Property>
           <Property name="Substances" />
-          <Property name="AmountMin" value="3" />
-          <Property name="AmountMax" value="3" />
+          <Property name="AmountMin" value="5" />
+          <Property name="AmountMax" value="5" />
           <Property name="Currency" value="GcCurrency.xml">
             <Property name="Currency" value="Units" />
           </Property>
@@ -2391,11 +2391,11 @@
           <Property name="Products" />
           <Property name="Substances">
             <Property value="NMSString0x10.xml">
-              <Property name="Value" value="LAND3" />
+              <Property name="Value" value="LAUNCHSUB" />
             </Property>
           </Property>
-          <Property name="AmountMin" value="280" />
-          <Property name="AmountMax" value="280" />
+          <Property name="AmountMin" value="120" />
+          <Property name="AmountMax" value="120" />
           <Property name="Currency" value="GcCurrency.xml">
             <Property name="Currency" value="Units" />
           </Property>
@@ -2404,11 +2404,11 @@
           <Property name="Products" />
           <Property name="Substances">
             <Property value="NMSString0x10.xml">
-              <Property name="Value" value="LAND3" />
+              <Property name="Value" value="LAUNCHSUB" />
             </Property>
           </Property>
-          <Property name="AmountMin" value="280" />
-          <Property name="AmountMax" value="280" />
+          <Property name="AmountMin" value="115" />
+          <Property name="AmountMax" value="115" />
           <Property name="Currency" value="GcCurrency.xml">
             <Property name="Currency" value="Units" />
           </Property>
@@ -2417,11 +2417,11 @@
           <Property name="Products" />
           <Property name="Substances">
             <Property value="NMSString0x10.xml">
-              <Property name="Value" value="LAND3" />
+              <Property name="Value" value="ASTEROID1" />
             </Property>
           </Property>
-          <Property name="AmountMin" value="280" />
-          <Property name="AmountMax" value="280" />
+          <Property name="AmountMin" value="135" />
+          <Property name="AmountMax" value="135" />
           <Property name="Currency" value="GcCurrency.xml">
             <Property name="Currency" value="Units" />
           </Property>
@@ -4738,7 +4738,7 @@
   <Property name="ProductUnitsPerCycleRateModifier" value="50" />
   <Property name="SubstanceUnitsPerCycleRateModifier" value="500" />
   <Property name="InitialDebtCycles" value="1" />
-  <Property name="DailyDebtPaymentModifier" value="100000" />
+  <Property name="DailyDebtPaymentModifier" value="2000000" />
   <Property name="AlertUnitsPerCycleRateModifier" value="2" />
   <Property name="StatProductivityContributionModifiers">
     <Property name="Population" value="100" />
