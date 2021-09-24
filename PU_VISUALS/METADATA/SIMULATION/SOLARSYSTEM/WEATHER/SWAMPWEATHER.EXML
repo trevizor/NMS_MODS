@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.53.0)-->
+<!--File created using MBINCompiler version (3.68.0)-->
 <Data template="GcWeatherProperties">
   <Property name="Name" value="SWAMP" />
   <Property name="UseWeatherFog" value="True" />
@@ -7,7 +7,7 @@
     <Property name="FogStrength" value="0.7" />
     <Property name="FogMax" value="1.2" />
     <Property name="FogColourStrength" value="10" />
-    <Property name="FogColourMax" value="0.9" />
+    <Property name="FogColourMax" value="1" />
     <Property name="HeightFogStrength" value="0.3" />
     <Property name="HeightFogFadeOutStrength" value="0.001" />
     <Property name="HeightFogOffset" value="0.1" />
@@ -182,7 +182,7 @@
     <Property name="CloudRatio" value="0.55" />
     <Property name="FullscreenEffect" value="0" />
     <Property name="DepthOfField" value="0" />
-    <Property name="DepthOfFieldDistance" value="1E+07" />
+    <Property name="DepthOfFieldDistance" value="10000000" />
     <Property name="DepthOfFieldFade" value="2000" />
     <Property name="IsRaining" value="True" />
     <Property name="RainWetness" value="0" />
@@ -433,7 +433,7 @@
         <Property name="A" value="1" />
       </Property>
       <Property name="OffsetSaturation" value="0.4" />
-      <Property name="OffsetValue" value="0.4" />
+      <Property name="OffsetValue" value="0.1" />
       <Property name="MultiplySaturation" value="1" />
       <Property name="MultiplyValue" value="1" />
     </Property>
@@ -447,8 +447,8 @@
       </Property>
       <Property name="OffsetSaturation" value="0.1" />
       <Property name="OffsetValue" value="0.02" />
-      <Property name="MultiplySaturation" value="1.2" />
-      <Property name="MultiplyValue" value="1.2" />
+      <Property name="MultiplySaturation" value="1" />
+      <Property name="MultiplyValue" value="1" />
     </Property>
     <Property name="LightColour" value="GcColourModifier.xml">
       <Property name="ForceColour" value="False" />
@@ -668,7 +668,7 @@
             <Property name="A" value="1" />
           </Property>
           <Property name="OffsetSaturation" value="0.1" />
-          <Property name="OffsetValue" value="-0.5" />
+          <Property name="OffsetValue" value="-0.3" />
           <Property name="MultiplySaturation" value="1" />
           <Property name="MultiplyValue" value="1" />
         </Property>
@@ -681,7 +681,7 @@
             <Property name="A" value="1" />
           </Property>
           <Property name="OffsetSaturation" value="0.1" />
-          <Property name="OffsetValue" value="-0.3" />
+          <Property name="OffsetValue" value="-0.15" />
           <Property name="MultiplySaturation" value="1" />
           <Property name="MultiplyValue" value="1" />
         </Property>
@@ -707,7 +707,7 @@
             <Property name="A" value="1" />
           </Property>
           <Property name="OffsetSaturation" value="0.1" />
-          <Property name="OffsetValue" value="-0.5" />
+          <Property name="OffsetValue" value="-0.3" />
           <Property name="MultiplySaturation" value="1" />
           <Property name="MultiplyValue" value="1" />
         </Property>
@@ -720,7 +720,7 @@
             <Property name="A" value="1" />
           </Property>
           <Property name="OffsetSaturation" value="0.15" />
-          <Property name="OffsetValue" value="-0.2" />
+          <Property name="OffsetValue" value="-0.15" />
           <Property name="MultiplySaturation" value="1" />
           <Property name="MultiplyValue" value="1" />
         </Property>
@@ -733,7 +733,7 @@
             <Property name="A" value="1" />
           </Property>
           <Property name="OffsetSaturation" value="-0.2" />
-          <Property name="OffsetValue" value="-0.2" />
+          <Property name="OffsetValue" value="-0.15" />
           <Property name="MultiplySaturation" value="1" />
           <Property name="MultiplyValue" value="1" />
         </Property>
@@ -746,7 +746,7 @@
             <Property name="A" value="1" />
           </Property>
           <Property name="OffsetSaturation" value="0.1" />
-          <Property name="OffsetValue" value="-0.6" />
+          <Property name="OffsetValue" value="-0.3" />
           <Property name="MultiplySaturation" value="1" />
           <Property name="MultiplyValue" value="1" />
         </Property>
@@ -772,7 +772,7 @@
             <Property name="A" value="1" />
           </Property>
           <Property name="OffsetSaturation" value="0.1" />
-          <Property name="OffsetValue" value="-0.3" />
+          <Property name="OffsetValue" value="-0.15" />
           <Property name="MultiplySaturation" value="1" />
           <Property name="MultiplyValue" value="1" />
         </Property>
@@ -817,7 +817,7 @@
             <Property name="MultiplyValue" value="1" />
           </Property>
           <Property value="GcColourModifier.xml">
-            <Property name="ForceColour" value="True" />
+            <Property name="ForceColour" value="False" />
             <Property name="ForceColourTo" value="Colour.xml">
               <Property name="R" value="0.255" />
               <Property name="G" value="0.255" />
@@ -830,7 +830,7 @@
             <Property name="MultiplyValue" value="1" />
           </Property>
           <Property value="GcColourModifier.xml">
-            <Property name="ForceColour" value="True" />
+            <Property name="ForceColour" value="False" />
             <Property name="ForceColourTo" value="Colour.xml">
               <Property name="R" value="0.246" />
               <Property name="G" value="0.279" />
@@ -972,7 +972,7 @@
       <Property name="ScreenFilter" value="DefaultStorm" />
     </Property>
   </Property>
-  <Property name="UseWeatherSky" value="True" />
+  <Property name="UseWeatherSky" value="False" />
   <Property name="Sky" value="GcSkyProperties.xml">
     <Property name="AtmosphereThickness" value="0.3191" />
     <Property name="HorizonMultiplier" value="0.5" />

@@ -54,9 +54,9 @@
     <Property name="z" value="0" />
   </Property>
   <Property name="SafeSkyMinIndex" value="0" />
-  <Property name="SafeSkyMaxIndex" value="306" />
+  <Property name="SafeSkyMaxIndex" value="331" />
   <Property name="FrozenSkyMinIndex" value="0" />
-  <Property name="FrozenSkyMaxIndex" value="306" />
+  <Property name="FrozenSkyMaxIndex" value="331" />
   <Property name="SunClampAngle" value="87" />
   <Property name="PhotoModeVignette" value="Vector2f.xml">
     <Property name="x" value="0.9" />
@@ -97,10 +97,10 @@
   <Property name="StormAudioLevel" value="0.5" />
   <Property name="CloudCoverSmoothTime" value="10" />
   <Property name="CloudRatioSmoothTime" value="4" />
-  <Property name="StormCloudTopColourMinBlend" value="0.3" />
-  <Property name="StormCloudTopColourMaxBlend" value="0.75" />
-  <Property name="StormCloudBottomColourMinBlend" value="0.5" />
-  <Property name="StormCloudBottomColourMaxBlend" value="0.9" />
+  <Property name="StormCloudTopColourMinBlend" value="0" />
+  <Property name="StormCloudTopColourMaxBlend" value="0" />
+  <Property name="StormCloudBottomColourMinBlend" value="0" />
+  <Property name="StormCloudBottomColourMaxBlend" value="0" />
   <Property name="StormCloudSmoothTime" value="15" />
   <Property name="SleepSunFromSettings" value="True" />
   <Property name="SleepSunFromSettingsPos" value="Vector3f.xml">
@@ -228,8 +228,8 @@
     <Property name="PlanetFog" value="GcFogProperties.xml">
       <Property name="FogStrength" value="0.3" /> <!-- PlanetFog -->
       <Property name="FogMax" value="0.8" />
-      <Property name="FogColourStrength" value="24" /> <!-- PlanetFog -->
-      <Property name="FogColourMax" value="400" />
+      <Property name="FogColourStrength" value="0.8" /> <!-- PlanetFog -->
+      <Property name="FogColourMax" value="1" />
       <Property name="HeightFogStrength" value="0.4" />
       <Property name="HeightFogFadeOutStrength" value="0.001" />
       <Property name="HeightFogOffset" value="0.1" />
@@ -320,8 +320,8 @@
     <Property name="PlanetExtremeFog" value="GcFogProperties.xml">
       <Property name="FogStrength" value="0.6" /> <!-- PlanetExtremeFog -->
       <Property name="FogMax" value="0.8" />
-      <Property name="FogColourStrength" value="24" /> <!-- PlanetExtremeFog -->
-      <Property name="FogColourMax" value="400" />
+      <Property name="FogColourStrength" value="0.8" /> <!-- PlanetExtremeFog -->
+      <Property name="FogColourMax" value="1" />
       <Property name="HeightFogStrength" value="0.6" />
       <Property name="HeightFogFadeOutStrength" value="0.001" />
       <Property name="HeightFogOffset" value="0.1" />
@@ -412,8 +412,8 @@
     <Property name="PlanetStormFog" value="GcFogProperties.xml">
       <Property name="FogStrength" value="0.6" /> <!-- PlanetStormFog -->
       <Property name="FogMax" value="0.8" />
-      <Property name="FogColourStrength" value="24" /> <!-- PlanetStormFog -->
-      <Property name="FogColourMax" value="400" />
+      <Property name="FogColourStrength" value="0.8" /> <!-- PlanetStormFog -->
+      <Property name="FogColourMax" value="1" />
       <Property name="HeightFogStrength" value="0.6" />
       <Property name="HeightFogFadeOutStrength" value="0.001" />
       <Property name="HeightFogOffset" value="0.1" />
@@ -504,8 +504,8 @@
     <Property name="PlanetFlightFog" value="GcFogProperties.xml">
       <Property name="FogStrength" value="0.2" /> <!-- PlanetFlightFog -->
       <Property name="FogMax" value="0.8" />
-      <Property name="FogColourStrength" value="24" /> <!-- PlanetFlightFog -->
-      <Property name="FogColourMax" value="400" />
+      <Property name="FogColourStrength" value="0.8" /> <!-- PlanetFlightFog -->
+      <Property name="FogColourMax" value="1" />
       <Property name="HeightFogStrength" value="0.6" />
       <Property name="HeightFogFadeOutStrength" value="0.001" />
       <Property name="HeightFogOffset" value="0.1" />
@@ -612,8 +612,8 @@
     <Property name="PlanetFog" value="GcFogProperties.xml">
       <Property name="FogStrength" value="0.3" /> <!-- PlanetFog -->
       <Property name="FogMax" value="0.8" />
-      <Property name="FogColourStrength" value="24" /> <!-- PlanetFog -->
-      <Property name="FogColourMax" value="400" />
+      <Property name="FogColourStrength" value="0.8" /> <!-- PlanetFog -->
+      <Property name="FogColourMax" value="1" />
       <Property name="HeightFogStrength" value="1" />
       <Property name="HeightFogFadeOutStrength" value="0.001" />
       <Property name="HeightFogOffset" value="0.1" />
@@ -704,8 +704,8 @@
     <Property name="PlanetExtremeFog" value="GcFogProperties.xml">
       <Property name="FogStrength" value="0.6" /> <!-- PlanetExtremeFog -->
       <Property name="FogMax" value="0.8" />
-      <Property name="FogColourStrength" value="24" /> <!-- PlanetExtremeFog -->
-      <Property name="FogColourMax" value="400" />
+      <Property name="FogColourStrength" value="0.8" /> <!-- PlanetExtremeFog -->
+      <Property name="FogColourMax" value="1" />
       <Property name="HeightFogStrength" value="0" />
       <Property name="HeightFogFadeOutStrength" value="0.001" />
       <Property name="HeightFogOffset" value="0.1" />
@@ -796,8 +796,8 @@
     <Property name="PlanetStormFog" value="GcFogProperties.xml">
       <Property name="FogStrength" value="0.7" /> <!-- PlanetStormFog -->
       <Property name="FogMax" value="0.8" />
-      <Property name="FogColourStrength" value="24" /> <!-- PlanetStormFog -->
-      <Property name="FogColourMax" value="400" />
+      <Property name="FogColourStrength" value="0.8" /> <!-- PlanetStormFog -->
+      <Property name="FogColourMax" value="1" />
       <Property name="HeightFogStrength" value="0.6" />
       <Property name="HeightFogFadeOutStrength" value="0.001" />
       <Property name="HeightFogOffset" value="0.1" />
@@ -888,8 +888,8 @@
     <Property name="PlanetFlightFog" value="GcFogProperties.xml">
       <Property name="FogStrength" value="0.09" /> <!-- PlanetFlightFog -->
       <Property name="FogMax" value="0.8" />
-      <Property name="FogColourStrength" value="24" /> <!-- PlanetFlightFog -->
-      <Property name="FogColourMax" value="400" />
+      <Property name="FogColourStrength" value="0.8" /> <!-- PlanetFlightFog -->
+      <Property name="FogColourMax" value="1" />
       <Property name="HeightFogStrength" value="0.6" />
       <Property name="HeightFogFadeOutStrength" value="0.001" />
       <Property name="HeightFogOffset" value="0.1" />
@@ -981,8 +981,8 @@
   <Property name="AbandonedFreighterFog" value="GcFogProperties.xml">
     <Property name="FogStrength" value="0.025" /> <!-- AbandonedFreighterFog -->
     <Property name="FogMax" value="0.8" />
-    <Property name="FogColourStrength" value="24" /> <!-- AbandonedFreighterFog -->
-    <Property name="FogColourMax" value="400" />
+    <Property name="FogColourStrength" value="0.8" /> <!-- AbandonedFreighterFog -->
+    <Property name="FogColourMax" value="1" />
     <Property name="HeightFogStrength" value="0" />
     <Property name="HeightFogFadeOutStrength" value="0.001" />
     <Property name="HeightFogOffset" value="0.1" />
