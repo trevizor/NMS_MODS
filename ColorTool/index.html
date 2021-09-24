@@ -5,12 +5,23 @@
 <style>
   .main {
   	width: 100%;
-  	height: 100%;4
+  	height: 100%;
   }
   .color-display {
-  	width:  100%;
+  	width: 180px;
   	height: 50px;
-  	line-height: 50px;
+  	line-height: 25px;
+  	display: inline-block;
+  	overflow: hidden;
+  	font-size: 8px;
+  	font-family: "verdana";
+  	padding: 2px;
+  }
+  .line-break{
+  	background: rgba(0,0,0,0.25);
+  	width: 100%;
+  	height: 5px;
+  	display: inline-block;
   }
 </style>
 <script>
@@ -103,9 +114,16 @@
 	}
 
 	var main = function () {
+		let firstHeader = "";
 		mainContainer.innerHTML = "";
 		count = {}
 		colors.forEach( (element, index, array) => {
+			if(firstHeader == "") firstHeader = element.header
+			if(firstHeader == element.header) {
+				let dividernode = document.createElement("div");	
+				dividernode.setAttribute("class", "line-break");
+				mainContainer.appendChild(dividernode)
+			}
 			element.r = element.R;
 			element.g = element.G;
 			element.b = element.B;
@@ -119,11 +137,13 @@
 			node.setAttribute("class", "color-display");
 			if(!count[element.header]) count[element.header] = 0;
 			count[element.header]++;
-			node.innerHTML =  " [ "+ count[element.header] + " ] "+ element.header  + " ( R: " +element.r +
-								", G: " +element.g +
-								", B: " +element.b +
-								", A: " +element.a + ")";
-			mainContainer.appendChild(node)
+			node.innerHTML =  " ["+ count[element.header] + "] "+ element.header  + "<br> R:" +element.r +
+								", G:" +element.g +
+								", B:" +element.b +
+								", A:" +element.a;
+			if(element.header != "GradientSpeed") {
+				mainContainer.appendChild(node)
+			}
 		});
 	}
 

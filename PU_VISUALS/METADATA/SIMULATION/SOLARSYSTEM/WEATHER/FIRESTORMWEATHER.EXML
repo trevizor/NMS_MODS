@@ -4,15 +4,15 @@
   <Property name="Name" value="FIRESTORM" />
   <Property name="UseWeatherFog" value="True" />
   <Property name="Fog" value="GcFogProperties.xml">
-    <Property name="FogStrength" value="0.05" />
-    <Property name="FogMax" value="0.3" />
+    <Property name="FogStrength" value="0.1" />
+    <Property name="FogMax" value="0.4" />
     <Property name="FogColourStrength" value="10" />
     <Property name="FogColourMax" value="1" />
     <Property name="HeightFogStrength" value="0.08" />
     <Property name="HeightFogFadeOutStrength" value="0.25" />
     <Property name="HeightFogOffset" value="0" />
     <Property name="HeightFogMax" value="0.6" />
-    <Property name="FogHeight" value="512" />
+    <Property name="FogHeight" value="24" />
     <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
       <Property name="Settings">
         <Property value="GcHeavyAirSettingValues.xml">
@@ -104,7 +104,7 @@
     <Property name="HeightFogFadeOutStrength" value="0.25" />
     <Property name="HeightFogOffset" value="0" />
     <Property name="HeightFogMax" value="0.6" />
-    <Property name="FogHeight" value="512" />
+    <Property name="FogHeight" value="24" />
     <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
       <Property name="Settings">
         <Property value="GcHeavyAirSettingValues.xml">
@@ -196,7 +196,7 @@
     <Property name="HeightFogFadeOutStrength" value="0.25" />
     <Property name="HeightFogOffset" value="0" />
     <Property name="HeightFogMax" value="0.6" />
-    <Property name="FogHeight" value="512" />
+    <Property name="FogHeight" value="24" />
     <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
       <Property name="Settings">
         <Property value="GcHeavyAirSettingValues.xml">
@@ -288,7 +288,7 @@
     <Property name="HeightFogFadeOutStrength" value="0.25" />
     <Property name="HeightFogOffset" value="0" />
     <Property name="HeightFogMax" value="0.6" />
-    <Property name="FogHeight" value="512" />
+    <Property name="FogHeight" value="24" />
     <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
       <Property name="Settings">
         <Property value="GcHeavyAirSettingValues.xml">
@@ -517,12 +517,12 @@
         <Property name="MultiplyValue" value="1" />
       </Property>
       <Property value="GcColourModifier.xml">
-        <Property name="ForceColour" value="False" />
+        <Property name="ForceColour" value="True" />
         <Property name="ForceColourTo" value="Colour.xml">
-          <Property name="R" value="1" />
-          <Property name="G" value="1" />
-          <Property name="B" value="1" />
-          <Property name="A" value="1" />
+          <Property name="R" value="0.1" />
+          <Property name="G" value="0.1" />
+          <Property name="B" value="0.1" />
+          <Property name="A" value="0.1" />
         </Property>
         <Property name="OffsetSaturation" value="0" />
         <Property name="OffsetValue" value="0" />
@@ -575,7 +575,7 @@
         <Property name="HeightFogFadeOutStrength" value="1" />
         <Property name="HeightFogOffset" value="0" />
         <Property name="HeightFogMax" value="0" />
-        <Property name="FogHeight" value="0" />
+        <Property name="FogHeight" value="24" />
         <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
           <Property name="Settings">
             <Property value="GcHeavyAirSettingValues.xml">
@@ -870,7 +870,7 @@
   </Property>
   <Property name="HeavyAir">
     <Property value="NMSString0x80.xml">
-      <Property name="Value" value="MODELS/EFFECTS/HEAVYAIR/FIRESTORM/FIRESTORM.SCENE.MBIN" />
+      <Property name="Value" value="MODELS/EFFECTS/HEAVYAIR/SCORCHED/SCORCHED.SCENE.MBIN" />
     </Property>
   </Property>
   <Property name="LowStormsChance" value="0.7" />
