@@ -197,15 +197,15 @@
   <Property name="CloudColourV" value="0.03" />
   <Property name="SpaceAtmosphereThickness" value="0.4" />
   <Property name="WaterHeavyAirAlpha" value="0.2" />
-  <Property name="NightHorizonBlendMin" value="0.2" />
-  <Property name="NightHorizonBlendMax" value="0.6" />
-  <Property name="NightSkyBlendMin" value="0.1" />
-  <Property name="NightSkyBlendMax" value="0.2" />
+  <Property name="NightHorizonBlendMin" value="0.7" />
+  <Property name="NightHorizonBlendMax" value="0.9" />
+  <Property name="NightSkyBlendMin" value="0.3" />
+  <Property name="NightSkyBlendMax" value="0.8" />
   <Property name="NightLightBlendMin" value="0.35" />
   <Property name="NightLightBlendMax" value="0.65" />
   <Property name="ForceNightBlend" value="False" />
   <Property name="ForceNightBlendValue" value="0" />
-  <Property name="NoAtmosphereFogStrength" value="0.01" />
+  <Property name="NoAtmosphereFogStrength" value="0.001" />
   <Property name="NoAtmosphereFogMax" value="0.97" />
   <Property name="NoAtmosphereColourStrength" value="1" />
   <Property name="NoAtmosphereColourMax" value="1" />
@@ -215,8 +215,8 @@
       <Property name="AtmosphereThickness" value="0.919115" />
       <Property name="HorizonMultiplier" value="1.3" />
       <Property name="DuskHorizonMultiplier" value="1.5" />
-      <Property name="NightHorizonMultiplier" value="1.554867" />
-      <Property name="HorizonFadeSpeed" value="6" />
+      <Property name="NightHorizonMultiplier" value="2.954867" />
+      <Property name="HorizonFadeSpeed" value="12" />
       <Property name="DayHorizonTightness" value="0" />
       <Property name="SunSize" value="0.25" />
       <Property name="SunStrength" value="0.225806" />
@@ -232,9 +232,9 @@
       <Property name="FogColourMax" value="1" />
       <Property name="HeightFogStrength" value="0.4" />
       <Property name="HeightFogFadeOutStrength" value="0.001" />
-      <Property name="HeightFogOffset" value="0.1" />
+      <Property name="HeightFogOffset" value="0.5" />
       <Property name="HeightFogMax" value="0.3" />
-      <Property name="FogHeight" value="16" />
+      <Property name="FogHeight" value="4" />
       <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
         <Property name="Settings">
           <Property value="GcHeavyAirSettingValues.xml">
@@ -324,9 +324,9 @@
       <Property name="FogColourMax" value="1" />
       <Property name="HeightFogStrength" value="0.6" />
       <Property name="HeightFogFadeOutStrength" value="0.001" />
-      <Property name="HeightFogOffset" value="0.1" />
+      <Property name="HeightFogOffset" value="0.5" />
       <Property name="HeightFogMax" value="0.3" />
-      <Property name="FogHeight" value="16" />
+      <Property name="FogHeight" value="4" />
       <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
         <Property name="Settings">
           <Property value="GcHeavyAirSettingValues.xml">
@@ -416,9 +416,9 @@
       <Property name="FogColourMax" value="1" />
       <Property name="HeightFogStrength" value="0.6" />
       <Property name="HeightFogFadeOutStrength" value="0.001" />
-      <Property name="HeightFogOffset" value="0.1" />
+      <Property name="HeightFogOffset" value="0.5" />
       <Property name="HeightFogMax" value="0.3" />
-      <Property name="FogHeight" value="16" />
+      <Property name="FogHeight" value="4" />
       <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
         <Property name="Settings">
           <Property value="GcHeavyAirSettingValues.xml">
@@ -502,15 +502,15 @@
       <Property name="RainWetness" value="2" />
     </Property>
     <Property name="PlanetFlightFog" value="GcFogProperties.xml">
-      <Property name="FogStrength" value="0.2" /> <!-- PlanetFlightFog -->
+      <Property name="FogStrength" value="0.09" /> <!-- PlanetFlightFog -->
       <Property name="FogMax" value="0.8" />
       <Property name="FogColourStrength" value="0.8" /> <!-- PlanetFlightFog -->
       <Property name="FogColourMax" value="1" />
       <Property name="HeightFogStrength" value="0.6" />
       <Property name="HeightFogFadeOutStrength" value="0.001" />
-      <Property name="HeightFogOffset" value="0.1" />
+      <Property name="HeightFogOffset" value="0.5" />
       <Property name="HeightFogMax" value="0.3" />
-      <Property name="FogHeight" value="16" />
+      <Property name="FogHeight" value="4" />
       <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
         <Property name="Settings">
           <Property value="GcHeavyAirSettingValues.xml">
@@ -599,8 +599,8 @@
       <Property name="AtmosphereThickness" value="0.919115" />
       <Property name="HorizonMultiplier" value="1.3" />
       <Property name="DuskHorizonMultiplier" value="1.5" />
-      <Property name="NightHorizonMultiplier" value="1.554867" />
-      <Property name="HorizonFadeSpeed" value="6" />
+      <Property name="NightHorizonMultiplier" value="2.954867" />
+      <Property name="HorizonFadeSpeed" value="12" />
       <Property name="DayHorizonTightness" value="0" />
       <Property name="SunSize" value="0.25" />
       <Property name="SunStrength" value="0.225806" />
@@ -616,9 +616,9 @@
       <Property name="FogColourMax" value="1" />
       <Property name="HeightFogStrength" value="1" />
       <Property name="HeightFogFadeOutStrength" value="0.001" />
-      <Property name="HeightFogOffset" value="0.1" />
+      <Property name="HeightFogOffset" value="0.5" />
       <Property name="HeightFogMax" value="0.3" />
-      <Property name="FogHeight" value="16" />
+      <Property name="FogHeight" value="4" />
       <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
         <Property name="Settings">
           <Property value="GcHeavyAirSettingValues.xml">
@@ -708,9 +708,9 @@
       <Property name="FogColourMax" value="1" />
       <Property name="HeightFogStrength" value="0" />
       <Property name="HeightFogFadeOutStrength" value="0.001" />
-      <Property name="HeightFogOffset" value="0.1" />
+      <Property name="HeightFogOffset" value="0.5" />
       <Property name="HeightFogMax" value="0.3" />
-      <Property name="FogHeight" value="16" />
+      <Property name="FogHeight" value="4" />
       <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
         <Property name="Settings">
           <Property value="GcHeavyAirSettingValues.xml">
@@ -800,9 +800,9 @@
       <Property name="FogColourMax" value="1" />
       <Property name="HeightFogStrength" value="0.6" />
       <Property name="HeightFogFadeOutStrength" value="0.001" />
-      <Property name="HeightFogOffset" value="0.1" />
+      <Property name="HeightFogOffset" value="0.5" />
       <Property name="HeightFogMax" value="0.3" />
-      <Property name="FogHeight" value="16" />
+      <Property name="FogHeight" value="4" />
       <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
         <Property name="Settings">
           <Property value="GcHeavyAirSettingValues.xml">
@@ -892,9 +892,9 @@
       <Property name="FogColourMax" value="1" />
       <Property name="HeightFogStrength" value="0.6" />
       <Property name="HeightFogFadeOutStrength" value="0.001" />
-      <Property name="HeightFogOffset" value="0.1" />
+      <Property name="HeightFogOffset" value="0.5" />
       <Property name="HeightFogMax" value="0.3" />
-      <Property name="FogHeight" value="16" />
+      <Property name="FogHeight" value="4" />
       <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
         <Property name="Settings">
           <Property value="GcHeavyAirSettingValues.xml">
@@ -985,9 +985,9 @@
     <Property name="FogColourMax" value="1" />
     <Property name="HeightFogStrength" value="0" />
     <Property name="HeightFogFadeOutStrength" value="0.001" />
-    <Property name="HeightFogOffset" value="0.1" />
+    <Property name="HeightFogOffset" value="0.5" />
     <Property name="HeightFogMax" value="0.3" />
-    <Property name="FogHeight" value="16" />
+    <Property name="FogHeight" value="4" />
     <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
       <Property name="Settings">
         <Property value="GcHeavyAirSettingValues.xml">
