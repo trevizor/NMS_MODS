@@ -133,14 +133,14 @@
 			+element.r*255+","
 			+element.g*255+","
 			+element.b*255+","
-			+element.a+");";
+			+(255)+");";
 			node.setAttribute("class", "color-display");
 			if(!count[element.header]) count[element.header] = 0;
 			count[element.header]++;
 			node.innerHTML =  " ["+ count[element.header] + "] "+ element.header  + "<br> R:" +element.r +
 								", G:" +element.g +
 								", B:" +element.b +
-								", A:" +element.a;
+								", A:" +element.a+1;
 			if(element.header != "GradientSpeed") {
 				mainContainer.appendChild(node)
 			}
