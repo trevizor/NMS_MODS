@@ -3252,9 +3252,9 @@
       </Property>
       <Property name="Debris" />
       <Property name="Life" value="5.5" />
-      <Property name="Scale" value="1" />
+      <Property name="Scale" value="0.3" />
       <Property name="DistanceScale" value="0" />
-      <Property name="DistanceScaleMax" value="50" />
+      <Property name="DistanceScaleMax" value="1" />
       <Property name="CamShake" value="False" />
       <Property name="CamShakeSpaceScale" value="False" />
       <Property name="AllowTriggerActionOnDebris" value="False" />
@@ -3760,6 +3760,168 @@
       <Property name="AllowDestructableDebris" value="False" />
       <Property name="MaxSpawnDistance" value="0" />
       <Property name="CamShakeCustomMaxDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="METEORDISTANTIM" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/WEATHER/METEORDISTANTIMPACTFX.SCENE.MBIN" />
+      </Property>
+      <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="3" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpaceScale" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="AllowShootableDebris" value="False" />
+      <Property name="AllowDestructableDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+      <Property name="CamShakeCustomMaxDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="JETGOOFX" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/PLAYER/JETPACKEFFECTS/GOOJETPACKFX.SCENE.MBIN" />
+      </Property>
+      <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="3" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpaceScale" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="AllowShootableDebris" value="False" />
+      <Property name="AllowDestructableDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+      <Property name="CamShakeCustomMaxDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="FIREWORKWORM" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/EXPLOSION/FIREWORKWORM.SCENE.MBIN" />
+      </Property>
+      <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="3" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpaceScale" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="AllowShootableDebris" value="False" />
+      <Property name="AllowDestructableDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+      <Property name="CamShakeCustomMaxDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="FIREWORKWORMEXP" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/EXPLOSION/FIREWORKWORMEXPLOSION.SCENE.MBIN" />
+      </Property>
+      <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="3" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpaceScale" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="AllowShootableDebris" value="False" />
+      <Property name="AllowDestructableDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+      <Property name="CamShakeCustomMaxDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="MINIWORM_DIE" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/BLOOD/MINISANDWORMDEATH.SCENE.MBIN" />
+      </Property>
+      <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="697752394" />
+      </Property>
+      <Property name="Debris">
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/PLANETS/CREATURES/SANDWORMMINI/WORMORGANDROP.SCENE.MBIN" />
+          </Property>
+          <Property name="Number" value="1" />
+          <Property name="Radius" value="1" />
+          <Property name="Scale" value="1" />
+          <Property name="Speed" value="2" />
+          <Property name="AngularSpeed" value="1" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+      </Property>
+      <Property name="Life" value="10" />
+      <Property name="Scale" value="4" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpaceScale" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="True" />
+      <Property name="AllowShootableDebris" value="False" />
+      <Property name="AllowDestructableDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+      <Property name="CamShakeCustomMaxDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="SNDWRMMINIEMERG" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/DUST/SANDWORMMINIEMERGE.SCENE.MBIN" />
+      </Property>
+      <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="274707258" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="3" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="True" />
+      <Property name="CamShakeSpaceScale" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="AllowShootableDebris" value="False" />
+      <Property name="AllowDestructableDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+      <Property name="CamShakeCustomMaxDistance" value="500" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="SNDWRMMINISUB" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/DUST/SANDWORMMINISUBMERGE.SCENE.MBIN" />
+      </Property>
+      <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="2548776003" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="3" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="True" />
+      <Property name="CamShakeSpaceScale" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="AllowShootableDebris" value="False" />
+      <Property name="AllowDestructableDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+      <Property name="CamShakeCustomMaxDistance" value="500" />
     </Property>
   </Property>
 </Data>

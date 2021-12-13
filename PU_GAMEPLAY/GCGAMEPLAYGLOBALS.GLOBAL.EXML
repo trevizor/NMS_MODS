@@ -242,6 +242,8 @@
   <Property name="AutoTranslateWordChance" value="0.33" />
   <Property name="MissionSurveySuggestSurveyForNearScannables" value="True" />
   <Property name="MissionSurveyMaxGuidanceDistance" value="1500" />
+  <Property name="MissionSurveyMaxGuidanceDistanceWorms" value="10000" />  
+  <Property name="MissionSurveyWormID" value="WORMHUNT" />
   <Property name="MissionSurveyMarkerAutoHideTime" value="30" />
   <Property name="MissionSurveyScanRangeMultiplier" value="0.5" />
   <Property name="MissionSurveyMaxScanAngle" value="60" />
@@ -821,6 +823,7 @@
   <Property name="ResourceDirtMinAmount" value="1" />
   <Property name="ResourceDirtMaxAmount" value="8" />
   <Property name="ResourceDirtSubstanceID" value="SAND1" />
+  <Property name="SandwormTerrainResource" value="WORMDUST" />
   <Property name="BioShipTerrainResource" value="SUNGOLD" />
   <Property name="RobotResource" value="Hr" />
   <Property name="DepotResource" value="Ch" />
@@ -1583,7 +1586,8 @@
   <Property name="HUDLabelOffsetX" value="-5" />
   <Property name="HUDLabelOffsetY" value="1.5" />
   <Property name="HUDLabelOffsetZ" value="13" />
-  <Property name="HUDLabelScale" value="0.5" />
+  <Property name="HUDLabelScale" value="0.25" />
+  <Property name="PlayHitEffectsOnZeroDamage" value="True" />
   <Property name="MaxSpawnTime" value="5" />
   <Property name="ResourceParticleFile" value="MODELS/COMMON/PROJECTILES/RESOURCESHARD.SCENE.MBIN" />
   <Property name="ResourceParticleSpeed" value="3" />
@@ -1708,6 +1712,7 @@
   <Property name="HoursBetweenMiniStation" value="2" />
   <Property name="LegacyBaseBuildingTable" value="METADATA/REALITY/TABLES/LEGACYBASEBUILDINGTABLE.MXML" />
   <Property name="BaseBuildingTable" value="METADATA/REALITY/TABLES/BASEBUILDINGTABLE.MXML" />
+  <Property name="BaseBuildingHoverTimeToKnowPart" value="1" />
   <Property name="NPCWorkerInteractionCooldown" value="60" />
   <Property name="LightStrength" value="0.25" />
   <Property name="AirLockDoorRange" value="3" />
@@ -1788,4 +1793,5 @@
   <Property name="WeaponSpawnAltObject" value="TkTextureResource.xml">
     <Property name="Filename" value="" />
   </Property>
+ <Property name="UseCustomSaveDirectory" value="False" />
 </Data>

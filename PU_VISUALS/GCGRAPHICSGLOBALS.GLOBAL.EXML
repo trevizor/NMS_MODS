@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.60.0)-->
+<!--File created using MBINCompiler version (3.73.0)-->
 <Data template="GcGraphicsGlobals">
   <Property name="LUTDistanceFlightMultiplier" value="15" />
-  <Property name="SunLightIntensity" value="1.4" />
-  <Property name="SunLightBlendTime" value="1.0" />
+  <Property name="SunLightIntensity" value="0.9" />
+  <Property name="SunLightBlendTime" value="1" />
   <Property name="HBAOBias" value="0.2" />
   <Property name="HBAORadius" value="5" />
-  <Property name="HBAOIntensity" value="1.0" />
+  <Property name="HBAOIntensity" value="1" />
   <Property name="LightShaftProperties" value="GcLightShaftProperties.xml">
     <Property name="LightShaftScattering" value="2E-06" />
     <Property name="LightShaftStrength" value="0.4" />
@@ -268,8 +268,8 @@
   <Property name="DirectionLightRadius" value="500" />
   <Property name="DirectionLightFOV" value="212" />
   <Property name="DirectionLightShadowBias" value="0.007" />
-  <Property name="ShadowLength" value="800" />
-  <Property name="ShadowLengthShip" value="1200" />
+  <Property name="ShadowLength" value="1400" />
+  <Property name="ShadowLengthShip" value="1400" />
   <Property name="ShadowLengthSpace" value="20000" />
   <Property name="ShadowLengthStation" value="1300" />
   <Property name="ShadowLengthFreighter" value="2500" />
@@ -306,9 +306,9 @@
     <Property name="t" value="0" />
   </Property>
   <Property name="ShadowBias" value="Vector4f.xml">
-    <Property name="x" value="0.1" />
-    <Property name="y" value="0.1" />
-    <Property name="z" value="0.1" />
+    <Property name="x" value="0.004" />
+    <Property name="y" value="0.0007" />
+    <Property name="z" value="0.0002" />
     <Property name="t" value="0" />
   </Property>
   <Property name="ShadowQuantized" value="True" />
@@ -496,11 +496,11 @@
   <Property name="TaaHighFreqConstant" value="100" />
   <Property name="TaaAccumDelay" value="0.9" />
   <Property name="FrustumJitterAmount" value="0.6" />
-  <Property name="FrustumJitterAmountDLSS" value="0" />
+  <Property name="FrustumJitterAmountDLSS" value="1" />
   <Property name="UseTaaResolve" value="False" />
   <Property name="ApplyTaaTest" value="False" />
-  <Property name="ShowTaaBuf" value="True" />
-  <Property name="TonemapInLuminance" value="True" />
+  <Property name="ShowTaaBuf" value="False" />
+  <Property name="TonemapInLuminance" value="False" />
   <Property name="ShowTaaVarianceBuf" value="False" />
   <Property name="ShowTaaNVarianceBuf" value="False" />
   <Property name="ShowTaaCVarianceBuf" value="False" />
@@ -634,9 +634,9 @@
   <Property name="EnableCrossPipeSharing" value="True" />
   <Property name="EnableSSR" value="True" />
   <Property name="ShowReflectionProbes" value="False" />
-  <Property name="SharpenFilterAmount" value="0.4" />
-  <Property name="SharpenFilterDepthFactorStart" value="2.5" />
-  <Property name="SharpenFilterDepthFactorEnd" value="30" />
+  <Property name="SharpenFilterAmount" value="0.3" />
+  <Property name="SharpenFilterDepthFactorStart" value="0" />
+  <Property name="SharpenFilterDepthFactorEnd" value="80" />
   <Property name="GraphicsDetailPresetsPC">
     <Property name="Low" value="TkGraphicsDetailPreset.xml">
       <Property name="TextureQuality" value="TkGraphicsDetailTypes.xml">
@@ -1013,12 +1013,12 @@
     <Property name="AnisotropyLevel" value="_4" />
     <Property name="AntiAliasing" value="TAA" />
   </Property>
-  <Property name="EnableVariableUpdate" value="False" />
+  <Property name="EnableVariableUpdate" value="True" />
   <Property name="VariableUpdatePeriodModifers">
-    <Property value="0" />
-    <Property value="0" />
-    <Property value="0" />
-    <Property value="0" />
+    <Property value="1" />
+    <Property value="0.8" />
+    <Property value="0.5" />
+    <Property value="0.1" />
   </Property>
   <Property name="PhotoModeBloomGainMin" value="0.0001" />
   <Property name="PhotoModeBloomThresholdMin" value="0.5" />
