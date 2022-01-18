@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.52.0)-->
+<!--File created using MBINCompiler version (3.75.0)-->
 <Data template="GcCreatureGlobals">
+  <Property name="NumCreaturesRequiredForDiscoveryMission" value="0" />
   <Property name="AllCreaturesDiscoveredBonusMul" value="5" />
   <Property name="AllCreaturesDiscoveredColour" value="Colour.xml">
     <Property name="R" value="0.987" />
@@ -672,16 +673,16 @@
   <Property name="SandWormSpawnTimer" value="300" />
   <Property name="SandWormSpawnChanceMin" value="0.01" />
   <Property name="SandWormSpawnChanceMax" value="0.3" />
-  <Property name="GroundWormSpawnRadius" value="40" />  
-  <Property name="GroundWormSpawnSpacing" value="10" /> 
-  <Property name="GroundWormSpawnTimeOut" value="180" />  
-  <Property name="GroundWormSpawnMin" value="4" />  
-  <Property name="GroundWormSpawnMax" value="7" />  
-  <Property name="GroundWormSpawnerActivateRadius" value="100" /> 
-  <Property name="GroundWormSpawnerDestroyRadiusActive" value="150" />  
-  <Property name="GroundWormSpawnerDestroyRadiusInactive" value="8000" /> 
-  <Property name="GroundWormSpawnChance" value="1" /> 
-  <Property name="GroundWormScaleMin" value="0.8" />  
+  <Property name="GroundWormSpawnRadius" value="40" />
+  <Property name="GroundWormSpawnSpacing" value="10" />
+  <Property name="GroundWormSpawnTimeOut" value="180" />
+  <Property name="GroundWormSpawnMin" value="4" />
+  <Property name="GroundWormSpawnMax" value="7" />
+  <Property name="GroundWormSpawnerActivateRadius" value="100" />
+  <Property name="GroundWormSpawnerDestroyRadiusActive" value="150" />
+  <Property name="GroundWormSpawnerDestroyRadiusInactive" value="8000" />
+  <Property name="GroundWormSpawnChance" value="1" />
+  <Property name="GroundWormScaleMin" value="0.8" />
   <Property name="GroundWormScaleMax" value="2.2" />
   <Property name="ShieldFadeTime" value="1" />
   <Property name="SharkAlongPathSpeed" value="1" />
@@ -731,7 +732,7 @@
   <Property name="StickToGroundSpeed" value="1" />
   <Property name="StickToGroundCastBegin" value="2" />
   <Property name="StickToGroundCastEnd" value="-2" />
-  <Property name="AnimationStickToGroundSpeed" value="0.5" /> 
+  <Property name="AnimationStickToGroundSpeed" value="0.5" />
   <Property name="FlyingSnakeData" value="GcFlyingSnakeData.xml">
     <Property name="CircleSpeed" value="8" />
     <Property name="ApproachBaitSpeed" value="30" />
@@ -925,9 +926,9 @@
   <Property name="RagdollMotorFadeEnd" value="2" />
   <Property name="MaxRagdollsBeforeDespawnOffscreen" value="12" />
   <Property name="MaxRagdollsBeforeDespawnOnscreen" value="18" />
-  <Property name="TurnRadiusMultiplier" value="5" />  
-  <Property name="MaxTurnRadius" value="50" /> 
-  <Property name="TurnSlowAreaCos" value="0.75" />  
+  <Property name="TurnRadiusMultiplier" value="5" />
+  <Property name="MaxTurnRadius" value="50" />
+  <Property name="TurnSlowAreaCos" value="0.75" />
   <Property name="BadTurnPercent" value="0.3" />
   <Property name="BadTurnWeight" value="0" />
   <Property name="MinScaleForNavMap" value="1" />
@@ -992,10 +993,10 @@
   <Property name="DebugDrawTrails" value="False" />
   <Property name="TrailHalfLife" value="80" />
   <Property name="EnableTrailIk" value="True" />
-  <Property name="DetailAnimBlendInTime" value="1.0" />
-  <Property name="DetailAnimBlendOutTime" value="1.0" />
-  <Property name="DetailAnimMinPauseTime" value="1.0" />
-  <Property name="DetailAnimMaxPauseTime" value="4.0" />
+  <Property name="DetailAnimBlendInTime" value="1" />
+  <Property name="DetailAnimBlendOutTime" value="1" />
+  <Property name="DetailAnimMinPauseTime" value="1" />
+  <Property name="DetailAnimMaxPauseTime" value="4" />
   <Property name="DetailAnimPlayWhileWalking" value="True" />
   <Property name="CreatureDeathEffectSmall" value="DEATHBLOODSMALL" />
   <Property name="CreatureDeathEffectMedium" value="DEATHBLOODMED" />

@@ -230,7 +230,7 @@
     <Property name="ErosionEdgeSize" value="0.5" />
     <Property name="CloudDistortion" value="30" />
     <Property name="CloudDistortionScale" value="2" />
-    <Property name="MaxIterations" value="256" />
+    <Property name="MaxIterations" value="128" />
     <Property name="RayMinimumY" value="0" />
     <Property name="LODDistance" value="0" />
     <Property name="HorizonFadeStartAlpha" value="-0.3" />
@@ -297,15 +297,15 @@
   <Property name="FloraFadeTimeMin" value="0.6" />
   <Property name="FloraFadeTimeMax" value="2.25" />
   <Property name="PlanetUnwrapMin" value="0" />
-  <Property name="PlanetUnwrapMax" value="2" />
+  <Property name="PlanetUnwrapMax" value="0" />
   <Property name="TerrainFlattenMin" value="150" />
   <Property name="TerrainFlattenMax" value="800" />
-  <Property name="HeightFogHeightMin" value="-2" />
+  <Property name="HeightFogHeightMin" value="100" />
   <Property name="WaterFogHeightMax" value="102" />
-  <Property name="WaterAlphaHeightMin" value="2" />
+  <Property name="WaterAlphaHeightMin" value="40" />
   <Property name="WaterAlphaHeightMax" value="84" />
-  <Property name="DoFHeightMin" value="-400" />
-  <Property name="DoFHeightMax" value="0" />
+  <Property name="DoFHeightMin" value="251" />
+  <Property name="DoFHeightMax" value="300" />
   <Property name="SunClampHeightMin" value="300" />
   <Property name="SunClampHeightMax" value="390" />
   <Property name="HeavyAirFadeDistance" value="500" />
@@ -321,10 +321,10 @@
   <Property name="AsteroidMaxRotate" value="0.07" />
   <Property name="MinWaterReflections" value="0.2" />
   <Property name="SpacePlanetFogStrength">
-    <Property value="7" />
-    <Property value="8" />
-    <Property value="9" />
-    <Property value="10" />
+    <Property value="5" />
+    <Property value="5" />
+    <Property value="5" />
+    <Property value="5" />
   </Property>
   <Property name="SkyBlendLength">
     <Property value="2000" />
@@ -332,7 +332,7 @@
     <Property value="2000" />
     <Property value="400" />
   </Property>
-  <Property name="SkyAtmospherePower" value="4" />
+  <Property name="SkyAtmospherePower" value="3" />
   <Property name="SkyAtmosphereBlendLength">
     <Property value="60000" />
     <Property value="2800" />
@@ -348,9 +348,9 @@
   <Property name="FarBlendLength" value="10000" />
   <Property name="IndoorColourBlendTime" value="40" />
   <Property name="IndoorAmbientColour" value="Colour.xml">
-    <Property name="R" value="0.01" />
-    <Property name="G" value="0.01" />
-    <Property name="B" value="0.01" />
+    <Property name="R" value="0.0" />
+    <Property name="G" value="0.0" />
+    <Property name="B" value="0.0" />
     <Property name="A" value="1" />
   </Property>
   <Property name="LightDirectionHeight" value="4000" />

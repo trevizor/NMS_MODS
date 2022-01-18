@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (2.61.0)-->
+<!--File created using MBINCompiler version (3.75.0)-->
 <Data template="GcPlayerGlobals">
   <Property name="ForceFreighterProcTechRandom" value="False" />
   <Property name="AlienPodAggroDecay" value="0.15" />
@@ -216,6 +216,8 @@
     <Property name="y" value="0.07" />
     <Property name="z" value="0" />
   </Property>
+  <Property name="BinocularsHUDDistanceVR" value="0" />
+  <Property name="BinocularsHUDScaleVR" value="0" />
   <Property name="TeleportMaxTravelDistance" value="30" />
   <Property name="TeleportMaxTravelDistanceVertical" value="80" />
   <Property name="TeleportChargeMinDistance" value="10" />
@@ -275,17 +277,17 @@
   </Property>
   <Property name="FistClenchBlendInTime" value="0.1" />
   <Property name="FistClenchBlendOutTime" value="0.1" />
-  <Property name="DoPlayerAppearInVehicleEffect" value="False" />
+  <Property name="DoPlayerAppearInVehicleEffect" value="True" />
   <Property name="StickYDampingThreshold" value="0.75" />
-  <Property name="RequireHandsOnShipControls" value="True" />
-  <Property name="ShowFirstPersonCharacterShadowPCVR" value="False" />
+  <Property name="RequireHandsOnShipControls" value="False" />
+  <Property name="ShowFirstPersonCharacterShadowPCVR" value="True" />
   <Property name="ShowFirstPersonCharacterShadowPSVR" value="False" />
   <Property name="InteractNearbyRadiusEnabled" value="False" />
-  <Property name="PassiveLook" value="True" />
+  <Property name="PassiveLook" value="False" />
   <Property name="BodyRealignmentDelay" value="0.75" />
   <Property name="PointDownToMoveAngle" value="40" />
   <Property name="PointDownToMoveBackAngle" value="90" />
-  <Property name="EnableLeaning" value="True" />
+  <Property name="EnableLeaning" value="False" />
   <Property name="EnablePointDownToSmoothMove" value="False" />
   <Property name="HmdSmoothTurnAlways" value="False" />
   <Property name="HmdTurnSpeed" value="22.5" />
@@ -358,7 +360,7 @@
     <Property name="R" value="1" />
     <Property name="G" value="0.546" />
     <Property name="B" value="0.243" />
-    <Property name="A" value="0.2" />
+    <Property name="A" value="0.01" />
   </Property>
   <Property name="InteractionLineBaseColour" value="Colour.xml">
     <Property name="R" value="1" />
@@ -375,12 +377,12 @@
       <Property name="B" value="0" />
       <Property name="A" value="0" />
     </Property>
-    <Property name="BasecolourIntensity" value="-0.1" />
+    <Property name="BasecolourIntensity" value="0" />
     <Property name="ScanlinesSeparation" value="0" />
-    <Property name="FresnelIntensity" value="-2" />
+    <Property name="FresnelIntensity" value="0" />
     <Property name="GlowIntensity" value="0" />
     <Property name="WaveOffset" value="0" />
-    <Property name="WaveActive" value="True" />
+    <Property name="WaveActive" value="False" />
     <Property name="FixedUpAxis" value="False" />
     <Property name="Transparent" value="False" />
     <Property name="ModelFade" value="False" />
@@ -742,7 +744,7 @@
   <Property name="ShipCoolFactor" value="1.5" />
   <Property name="WeaponCoolFactor" value="3" />
   <Property name="FreighterCoolFactor" value="1.5" />
-  <Property name="MouseCrosshairVisible" value="True" />
+  <Property name="MouseCrosshairVisible" value="False" />
   <Property name="MouseMaxLength" value="450" />
   <Property name="MouseDeadZone" value="30" />
   <Property name="MouseMaxLengthVehicle" value="220" />
@@ -771,7 +773,7 @@
   <Property name="BulletCostReducer" value="2" />
   <Property name="BulletClipMultiplier" value="2" />
   <Property name="LootForceMultiplier" value="20" />
-  <Property name="WoundTimeMinimum" value="5" />
+  <Property name="WoundTimeMinimum" value="2" />
   <Property name="WoundDamageLimit" value="1750" />
   <Property name="WoundDamageLimitShip" value="1750" />
   <Property name="WoundDamageDecayTime" value="20" />
@@ -1545,7 +1547,7 @@
   <Property name="JetpackHelmetBob" value="0.2" />
   <Property name="ShipCameraLag" value="0.09" />
   <Property name="MaxResource" value="100" />
-  <Property name="ShieldMaximum" value="100" /> 
+  <Property name="ShieldMaximum" value="100" />
   <Property name="ShieldRestoreSpeed" value="0.28" />
   <Property name="ShieldRestoreDelay" value="10" />
   <Property name="TimeHoldDownAccelerateToLaunchFromOutpost" value="1" />
