@@ -283,7 +283,16 @@
     </Property>
     <Property name="Barren" value="GcBiomeFileListOptions.xml">
       <Property name="FileOptions">
+
         <Property value="GcBiomeFileListOption.xml">
+          <Property name="SubType" value="GcBiomeSubType.xml">
+            <Property name="BiomeSubType" value="Standard" />
+          </Property>
+          <Property name="Filename" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENDEADBIOME.MXML" />
+          <Property name="Weight" value="0.1" />
+        </Property>
+
+         <Property value="GcBiomeFileListOption.xml">
           <Property name="SubType" value="GcBiomeSubType.xml">
             <Property name="BiomeSubType" value="Standard" />
           </Property>
@@ -339,6 +348,8 @@
           <Property name="Filename" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/BARREN/BARRENBIGPROPSBIOME.MXML" />
           <Property name="Weight" value="0.1" />
         </Property>
+
+
       </Property>
     </Property>
     <Property name="Dead" value="GcBiomeFileListOptions.xml">
