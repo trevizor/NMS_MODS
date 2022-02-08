@@ -242,10 +242,10 @@
           <Property name="Herd" value="False" />
         </Property>
         <Property value="GcCreatureFlockMovementData.xml">
-          <Property name="MinFlockMembers" value="7" />
+          <Property name="MinFlockMembers" value="4" />
           <Property name="MaxFlockMembers" value="12" />
           <Property name="FlockFollow" value="1" />
-          <Property name="FlockHysteresis" value="0.5" />
+          <Property name="FlockHysteresis" value="0.25" />
           <Property name="FlockCohere" value="3" />
           <Property name="FlockSeperate" value="7" />
           <Property name="FlockSeperateMinDist" value="2" />
@@ -259,12 +259,12 @@
           <Property name="FlockAvoidPredatorsMaxDist" value="40" />
           <Property name="FlockAvoidPredatorsSpeedBoost" value="0.3" />
           <Property name="MoveInFacingStrength" value="0.9" />
-          <Property name="FlockMoveSpeed" value="0.17" />
+          <Property name="FlockMoveSpeed" value="0.017" />
           <Property name="FlockMoveDirectionTime" value="0.1" />
           <Property name="FlockTurnAngle" value="7" />
           <Property name="MaxBank" value="10" />
           <Property name="BankTime" value="0.1" />
-          <Property name="MinFlapSpeed" value="2.5" />
+          <Property name="MinFlapSpeed" value="1.0" />
           <Property name="MaxFlapSpeed" value="6" />
         </Property>
       </Property>
@@ -1480,7 +1480,7 @@
       <Property name="CanBeFemale" value="True" />
       <Property name="Tags" />
       <Property name="MoveArea" value="Air" />
-      <Property name="MinScale" value="0.25" />
+      <Property name="MinScale" value="0.15" />
       <Property name="MaxScale" value="0.4" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
       <Property name="FurLengthModifierAtMaxScale" value="1.4" />
@@ -1549,8 +1549,8 @@
               <Property name="AnimMoveSpeedCached" value="False" />
             </Property>
           </Property>
-          <Property name="MoveRange" value="20" />
-          <Property name="MoveSpeedScale" value="0.7" />
+          <Property name="MoveRange" value="40" />
+          <Property name="MoveSpeedScale" value="0.2" />
           <Property name="TurnRadiusScale" value="5" />
           <Property name="HeightMin" value="0.1" />
           <Property name="HeightMax" value="0.4" />
@@ -1558,7 +1558,7 @@
           <Property name="Herd" value="False" />
         </Property>
         <Property value="GcCreatureSwarmData.xml">
-          <Property name="MinCount" value="3" />
+          <Property name="MinCount" value="1" />
           <Property name="MaxCount" value="6" />
           <Property name="SwarmMovementSpeed" value="0.5" />
           <Property name="SwarmMovementRadius" value="100" />
@@ -1813,7 +1813,7 @@
       <Property name="CanBeFemale" value="False" />
       <Property name="Tags" />
       <Property name="MoveArea" value="Air" />
-      <Property name="MinScale" value="0.25" />
+      <Property name="MinScale" value="0.15" />
       <Property name="MaxScale" value="0.4" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
       <Property name="FurLengthModifierAtMaxScale" value="1.4" />
@@ -1831,8 +1831,8 @@
         <Property value="GcCreatureSwarmData.xml">
           <Property name="MinCount" value="1" />
           <Property name="MaxCount" value="1" />
-          <Property name="SwarmMovementSpeed" value="0.1" />
-          <Property name="SwarmMovementRadius" value="10" />
+          <Property name="SwarmMovementSpeed" value="0.001" />
+          <Property name="SwarmMovementRadius" value="40" />
           <Property name="SwarmMovementType" value="None" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
@@ -1925,9 +1925,9 @@
           <Property name="Herd" value="False" />
         </Property>
         <Property value="GcCreatureFlockMovementData.xml">
-          <Property name="MinFlockMembers" value="7" />
+          <Property name="MinFlockMembers" value="1" />
           <Property name="MaxFlockMembers" value="12" />
-          <Property name="FlockFollow" value="2" />
+          <Property name="FlockFollow" value="4" />
           <Property name="FlockHysteresis" value="0" />
           <Property name="FlockCohere" value="4" />
           <Property name="FlockSeperate" value="9" />
@@ -1942,8 +1942,8 @@
           <Property name="FlockAvoidPredatorsMaxDist" value="20" />
           <Property name="FlockAvoidPredatorsSpeedBoost" value="0.1" />
           <Property name="MoveInFacingStrength" value="0.5" />
-          <Property name="FlockMoveSpeed" value="0.1" />
-          <Property name="FlockMoveDirectionTime" value="0.2" />
+          <Property name="FlockMoveSpeed" value="0.01" />
+          <Property name="FlockMoveDirectionTime" value="0.02" />
           <Property name="FlockTurnAngle" value="5" />
           <Property name="MaxBank" value="10" />
           <Property name="BankTime" value="0.1" />
