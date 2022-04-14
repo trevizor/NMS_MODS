@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (3.75.0)-->
 <Data template="GcGameplayGlobals">
+  <Property name="CombatLevelBestWeaponBias" value="0.66" />
+  <Property name="CombatLevelBaseValueBoltcaster" value="0.1" />
+  <Property name="CombatLevelBaseValueShotgun" value="0.2" />
+  <Property name="CombatLevelBaseValueRailgun" value="0.25" />
+  <Property name="CombatLevelBaseValueSMG" value="0.2" />
+  <Property name="CombatLevelBaseValueCannon" value="0.25" />
+  <Property name="CombatLevelBaseValueGrenade" value="0.1" />
+  <Property name="CombatLevelSClassValue" value="4" />
   <Property name="NexusRecipeCostType" value="NANITES" />
   <Property name="NexusRecipeCostNaniteMultiplier" value="250" />
   <Property name="ShipScanPlanetRechargeMultiplier" value="0.25" />
@@ -445,7 +453,7 @@
   <Property name="AllRecipesKnownNanitesMax" value="200" />
   <Property name="MaxPossibleShipDamagePotential" value="17000" />
   <Property name="BuildingPlayerBaseIconOffset" value="4.6" />
-  <Property name="CriticalHitMultiplier" value="3" />
+  <Property name="CriticalHitMultiplier" value="1.5" />
   <Property name="HitEffectMinTime" value="0.1" />
   <Property name="GrabPlayerCooldownTime" value="2" />
   <Property name="TapInteractionIncreaseAmount" value="0.15" />
@@ -643,7 +651,7 @@
   <Property name="NumMissionsPerSolarSystem" value="4" />
   <Property name="EmergencyBuildingScanEventDistance" value="40" />
   <Property name="EmergencyBuildingScanEventTime" value="0.5" />
-  <Property name="ProjectileLightIntensity" value="1.5" />
+  <Property name="ProjectileLightIntensity" value="0.8" />
   <Property name="AggressiveSentinelProbability" value="0.13" />
   <Property name="AggressiveSentinelProbabilitySurvival" value="0.13" />
   <Property name="LowSentinelProbability" value="0.55" />
@@ -795,6 +803,7 @@
     <Property value="25" />
     <Property value="15" />
     <Property value="5" />
+    <Property value="0" />
     <Property value="0" />
   </Property>
   <Property name="SentinelsHigh" value="10" />
@@ -1623,7 +1632,10 @@
   <Property name="GunOffsetX" value="0" />
   <Property name="GunOffsetY" value="0" />
   <Property name="GunOffsetZ" value="0" />
-  <Property name="GunDownAngle" value="0" />
+  <Property name="GunOffsetAggressiveX" value="0" />  
+  <Property name="GunOffsetAggressiveY" value="0.05" /> 
+  <Property name="GunOffsetAggressiveZ" value="0" />  
+  <Property name="GunDownAngle" value="20" />
   <Property name="GunUpAngle" value="10" />
   <Property name="BarrelOffset" value="0.01" />
   <Property name="HitOffset" value="0.3" />
@@ -1783,6 +1795,7 @@
     <Property value="100" />
     <Property value="210" />
     <Property value="310" />
+    <Property value="430" />
     <Property value="430" />
     <Property value="430" />
   </Property>

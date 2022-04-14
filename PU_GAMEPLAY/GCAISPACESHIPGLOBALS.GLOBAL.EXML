@@ -65,7 +65,7 @@
     <Property name="PlanetDirectionBrake" value="1.2" />
     <Property name="Falloff" value="0.8" />
     <Property name="Roll" value="1" />
-    <Property name="MinHeight" value="30" />
+    <Property name="MinHeight" value="60" />
     <Property name="AvoidTime" value="3" />
     <Property name="Hovering" value="False" />
   </Property>
@@ -88,7 +88,7 @@
     <Property name="PlanetDirectionBrake" value="1.2" />
     <Property name="Falloff" value="0.8" />
     <Property name="Roll" value="1" />
-    <Property name="MinHeight" value="30" />
+    <Property name="MinHeight" value="60" />
     <Property name="AvoidTime" value="3" />
     <Property name="Hovering" value="False" />
   </Property>
@@ -111,7 +111,7 @@
     <Property name="PlanetDirectionBrake" value="1.2" />
     <Property name="Falloff" value="0.8" />
     <Property name="Roll" value="0.1" />
-    <Property name="MinHeight" value="15" />
+    <Property name="MinHeight" value="60" />
     <Property name="AvoidTime" value="3" />
     <Property name="Hovering" value="False" />
   </Property>
@@ -190,8 +190,8 @@
     <Property name="PlanetDirectionBrake" value="1.2" />
     <Property name="Falloff" value="0.8" />
     <Property name="Roll" value="2" />
-    <Property name="MinHeight" value="15" />
-    <Property name="AvoidTime" value="0" />
+    <Property name="MinHeight" value="60" />
+    <Property name="AvoidTime" value="3" />
     <Property name="Hovering" value="False" />
   </Property>
   <Property name="PlanetLanding" value="GcSpaceshipTravelData.xml">
@@ -213,8 +213,8 @@
     <Property name="PlanetDirectionBrake" value="1.2" />
     <Property name="Falloff" value="0.8" />
     <Property name="Roll" value="2" />
-    <Property name="MinHeight" value="15" />
-    <Property name="AvoidTime" value="0" />
+    <Property name="MinHeight" value="60" />
+    <Property name="AvoidTime" value="3" />
     <Property name="Hovering" value="False" />
   </Property>
   <Property name="OutpostLandingNoiseFreq" value="0.010001" />
@@ -624,7 +624,7 @@
   <Property name="WarpOutDistance" value="200000" />
   <Property name="PirateFlybyLength" value="1800" />
   <Property name="FlybyLength" value="2000" />
-  <Property name="FlybyHeight" value="120" />
+  <Property name="FlybyHeight" value="200" />
   <Property name="FlybyOffset" value="320" />
   <Property name="ShipBullet" value="GcProjectileLineData.xml">
     <Property name="BulletLength" value="20" />
@@ -659,7 +659,7 @@
     <Property name="PlanetDirectionBrake" value="3" />
     <Property name="Falloff" value="0.8" />
     <Property name="Roll" value="1" />
-    <Property name="MinHeight" value="50" />
+    <Property name="MinHeight" value="60" />
     <Property name="AvoidTime" value="3" />
     <Property name="Hovering" value="False" />
   </Property>
@@ -682,15 +682,15 @@
     <Property name="PlanetDirectionBrake" value="2000" />
     <Property name="Falloff" value="0.8" />
     <Property name="Roll" value="0.1" />
-    <Property name="MinHeight" value="15" />
-    <Property name="AvoidTime" value="0" />
+    <Property name="MinHeight" value="60" />
+    <Property name="AvoidTime" value="3" />
     <Property name="Hovering" value="False" />
   </Property>
   <Property name="WingmanLockDistance" value="500" />
   <Property name="WingmanLockBetweenTime" value="1000" />
   <Property name="WingmanLockArriveTime" value="0.5" />
-  <Property name="WingmanMinHeight" value="15" />
-  <Property name="WingmanHeightAdjust" value="1.8" />
+  <Property name="WingmanMinHeight" value="30" />
+  <Property name="WingmanHeightAdjust" value="4" />
   <Property name="WingmanStartTime" value="2" />
   <Property name="WingmanOffsetStart" value="200" />
   <Property name="WingmanOffset" value="10" />
@@ -740,10 +740,10 @@
   <Property name="RollAmount" value="45" />
   <Property name="RollMinTurnAngle" value="5" />
   <Property name="FinalDeathExplosionScale" value="2" />
-  <Property name="FinalDeathExplosionTime" value="4" />
+  <Property name="FinalDeathExplosionTime" value="2" />
   <Property name="FinalDeathFadeTime" value="1.8" />
   <Property name="Death" value="GcShipAIDeathData.xml">
-    <Property name="DroneDeathTime" value="5" />
+    <Property name="DroneDeathTime" value="1" />
     <Property name="DroneDeathForce" value="8" />
     <Property name="DroneDeathBoomTotalTime" value="2.5" />
     <Property name="DroneDeathOffset" value="20" />

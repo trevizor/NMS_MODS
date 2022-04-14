@@ -277,7 +277,7 @@
   </Property>
   <Property name="FistClenchBlendInTime" value="0.1" />
   <Property name="FistClenchBlendOutTime" value="0.1" />
-  <Property name="DoPlayerAppearInVehicleEffect" value="True" />
+  <Property name="DoPlayerAppearInVehicleEffect" value="False" />
   <Property name="StickYDampingThreshold" value="0.75" />
   <Property name="RequireHandsOnShipControls" value="True" />
   <Property name="ShowFirstPersonCharacterShadowPCVR" value="True" />
@@ -318,7 +318,7 @@
   <Property name="GroundRunSpeed" value="9" />
   <Property name="GroundWalkSpeedLowG" value="1.7" />
   <Property name="GroundRunSpeedLowG" value="3.4" />
-  <Property name="GroundWalkRecoverySpeedDamper" value="0.4" />
+  <Property name="GroundWalkRecoverySpeedDamper" value="0.1" />
   <Property name="HandSmoothMinAngle" value="3" />
   <Property name="HandSmoothAngleRange" value="6" />
   <Property name="HmdResetButtonTime" value="0.3" />
@@ -418,7 +418,7 @@
   <Property name="HandSwimForce" value="50" />
   <Property name="HandSwimMaxForce" value="100" />
   <Property name="HandSwimEnabled" value="False" />
-  <Property name="HmdTurnThreshold" value="0.01" />
+  <Property name="HmdTurnThreshold" value="0.1" />
   <Property name="HmdTurnAngle" value="45" />
   <Property name="HmdTurnAnglePad" value="45" />
   <Property name="TeleportInstantTravelDistance" value="10" />
@@ -493,7 +493,7 @@
   <Property name="UnderwaterJetpackEscapeForce" value="20" />
   <Property name="UnderwaterBrake" value="1" />
   <Property name="UnderwaterFloat" value="0" />
-  <Property name="UnderwaterFloatForce" value="2" />
+  <Property name="UnderwaterFloatForce" value="0.5" />
   <Property name="UnderwaterFloatRange" value="2" />
   <Property name="UnderwaterFloatFreq" value="0.5" />
   <Property name="RespawnOnPadRadius" value="25" />
@@ -559,6 +559,8 @@
   <Property name="FireButtonReloadsWeapon" value="True" />
   <Property name="WeaponZoomEnabled" value="True" />
   <Property name="WeaponZoomFOV" value="0.7" />
+   <Property name="PassiveWeaponZoomFOV" value="1" /> 
+  <Property name="PassiveWeaponZoomFOVThirdPerson" value="1" />
   <Property name="WeaponZoomRecoilMultiplier" value="2" />
   <Property name="WeaponZoomVertRotation" value="8" />
   <Property name="WeaponZoomHorzRotation" value="2" />
@@ -566,6 +568,7 @@
   <Property name="FrontShieldOffsetOff" value="-1.3" />
   <Property name="FrontShieldOffsetOn" value="-1.2" />
   <Property name="FrontShieldSpeedSlowdown" value="0.5" />
+  <Property name="FrontShieldSlerpTime" value="0.1" />
   <Property name="CombatSpawnMinWantedTime" value="10" />
   <Property name="ExperienceHardPiratesDamagePotentialMin" value="600" />
   <Property name="ExperienceHardPiratesDamagePotentialRange" value="800" />
@@ -642,6 +645,8 @@
     <Property name="B" value="0.388" />
     <Property name="A" value="1" />
   </Property>
+  <Property name="JetpackJetAnimateOutTime" value="0.2" />  
+  <Property name="JetpackJetAnimateInTime" value="0.1" />
   <Property name="FreeJetpackRange" value="1" />
   <Property name="FreeJetpackRangePrime" value="2" />
   <Property name="FreeJetpackRangeNonTerrain" value="1.1" />
@@ -677,6 +682,9 @@
   <Property name="RocketBootsWindUpBraking" value="0.9" />
   <Property name="RocketBootsDriftBraking" value="0.6" />
   <Property name="RocketBootsDriftDownwardForce" value="0.5" />
+  <Property name="StealthMinLevel" value="0.15" />  
+  <Property name="StealthDrainRate" value="15" /> 
+  <Property name="StealthRechargeRate" value="12" />
   <Property name="JetpackForce" value="18" />
   <Property name="JetpackBrake" value="0" />
   <Property name="JetpackMinLevel" value="0.1" />
@@ -744,7 +752,7 @@
   <Property name="ShipCoolFactor" value="1.5" />
   <Property name="WeaponCoolFactor" value="3" />
   <Property name="FreighterCoolFactor" value="1.5" />
-  <Property name="MouseCrosshairVisible" value="False" />
+  <Property name="MouseCrosshairVisible" value="True" />
   <Property name="MouseMaxLength" value="450" />
   <Property name="MouseDeadZone" value="30" />
   <Property name="MouseMaxLengthVehicle" value="220" />
@@ -978,6 +986,7 @@
   <Property name="BlastRecoilSpring" value="0.3" />
   <Property name="RailRecoilSpring" value="0.1" />
   <Property name="PulseRecoilSpring" value="0.19" />
+  <Property name="CannonRecoilSpring" value="0.3" />  
   <Property name="GunRecoilSettleSpring" value="0.4" />
   <Property name="ThirdPersonRecoilMultiplier" value="1.5" />
   <Property name="GunRecoilMin" value="0.15" />
@@ -987,134 +996,6 @@
   <Property name="ShotgunDispersion" value="0.8" />
   <Property name="FlamethrowerDispersion" value="0.6" />
   <Property name="MuzzleFlashMulThirdPerson" value="2" />
-  <Property name="MuzzleFlashScale">
-    <Property name="Bolt" value="0.5" />
-    <Property name="Shotgun" value="1" />
-    <Property name="Burst" value="0.5" />
-    <Property name="Laser" value="1" />
-    <Property name="Rail" value="1" />
-    <Property name="Grenade" value="1" />
-    <Property name="MineGrenade" value="1" />
-    <Property name="Scope" value="1" />
-    <Property name="FrontShield" value="1" />
-    <Property name="TerrainEdit" value="1" />
-    <Property name="SunLaser" value="1" />
-    <Property name="Spawner" value="1" />
-    <Property name="SpawnerAlt" value="1" />
-    <Property name="SoulLaser" value="1" />
-    <Property name="Flamethrower" value="1" />
-  </Property>
-  <Property name="WeaponVibrationIDs">
-    <Property name="Bolt" value="NMSString0x10.xml">
-      <Property name="Value" value="BIGFEET" />
-    </Property>
-    <Property name="Shotgun" value="NMSString0x10.xml">
-      <Property name="Value" value="BIGFEET" />
-    </Property>
-    <Property name="Burst" value="NMSString0x10.xml">
-      <Property name="Value" value="BIGFEET" />
-    </Property>
-    <Property name="Laser" value="NMSString0x10.xml">
-      <Property name="Value" value="" />
-    </Property>
-    <Property name="Rail" value="NMSString0x10.xml">
-      <Property name="Value" value="BIGFEET" />
-    </Property>
-    <Property name="Grenade" value="NMSString0x10.xml">
-      <Property name="Value" value="BIGFEET" />
-    </Property>
-    <Property name="MineGrenade" value="NMSString0x10.xml">
-      <Property name="Value" value="BIGFEET" />
-    </Property>
-    <Property name="Scope" value="NMSString0x10.xml">
-      <Property name="Value" value="" />
-    </Property>
-    <Property name="FrontShield" value="NMSString0x10.xml">
-      <Property name="Value" value="" />
-    </Property>
-    <Property name="TerrainEdit" value="NMSString0x10.xml">
-      <Property name="Value" value="" />
-    </Property>
-    <Property name="SunLaser" value="NMSString0x10.xml">
-      <Property name="Value" value="" />
-    </Property>
-    <Property name="Spawner" value="NMSString0x10.xml">
-      <Property name="Value" value="" />
-    </Property>
-    <Property name="SpawnerAlt" value="NMSString0x10.xml">
-      <Property name="Value" value="" />
-    </Property>
-    <Property name="SoulLaser" value="NMSString0x10.xml">
-      <Property name="Value" value="" />
-    </Property>
-    <Property name="Flamethrower" value="NMSString0x10.xml">
-      <Property name="Value" value="" />
-    </Property>
-  </Property>
-  <Property name="WeaponShakeIDs">
-    <Property name="Bolt" value="NMSString0x10.xml">
-      <Property name="Value" value="GUNSHAKE" />
-    </Property>
-    <Property name="Shotgun" value="NMSString0x10.xml">
-      <Property name="Value" value="GUNSHAKE" />
-    </Property>
-    <Property name="Burst" value="NMSString0x10.xml">
-      <Property name="Value" value="GUNSHAKE" />
-    </Property>
-    <Property name="Laser" value="NMSString0x10.xml">
-      <Property name="Value" value="" />
-    </Property>
-    <Property name="Rail" value="NMSString0x10.xml">
-      <Property name="Value" value="GUNSHAKE" />
-    </Property>
-    <Property name="Grenade" value="NMSString0x10.xml">
-      <Property name="Value" value="GUNSHAKE" />
-    </Property>
-    <Property name="MineGrenade" value="NMSString0x10.xml">
-      <Property name="Value" value="GUNSHAKE" />
-    </Property>
-    <Property name="Scope" value="NMSString0x10.xml">
-      <Property name="Value" value="" />
-    </Property>
-    <Property name="FrontShield" value="NMSString0x10.xml">
-      <Property name="Value" value="" />
-    </Property>
-    <Property name="TerrainEdit" value="NMSString0x10.xml">
-      <Property name="Value" value="" />
-    </Property>
-    <Property name="SunLaser" value="NMSString0x10.xml">
-      <Property name="Value" value="" />
-    </Property>
-    <Property name="Spawner" value="NMSString0x10.xml">
-      <Property name="Value" value="" />
-    </Property>
-    <Property name="SpawnerAlt" value="NMSString0x10.xml">
-      <Property name="Value" value="" />
-    </Property>
-    <Property name="SoulLaser" value="NMSString0x10.xml">
-      <Property name="Value" value="" />
-    </Property>
-    <Property name="Flamethrower" value="NMSString0x10.xml">
-      <Property name="Value" value="" />
-    </Property>
-  </Property>
-  <Property name="WeaponVibrationScales">
-    <Property name="Bolt" value="0.18" />
-    <Property name="Shotgun" value="0.8" />
-    <Property name="Burst" value="0.1" />
-    <Property name="Laser" value="0" />
-    <Property name="Rail" value="0.4" />
-    <Property name="Grenade" value="0.3" />
-    <Property name="MineGrenade" value="0.3" />
-    <Property name="Scope" value="0" />
-    <Property name="FrontShield" value="0" />
-    <Property name="TerrainEdit" value="0" />
-    <Property name="SunLaser" value="0" />
-    <Property name="Spawner" value="0" />
-    <Property name="SpawnerAlt" value="0" />
-    <Property name="SoulLaser" value="0" />
-    <Property name="Flamethrower" value="0" />
-  </Property>
   <Property name="TerrainResourceCollect" value="GcResourceCollectEffect.xml">
     <Property name="PlayerOffset" value="-0.2" />
     <Property name="SizeMin" value="0.5" />
@@ -1219,6 +1100,7 @@
   <Property name="AutoAimMaxAngle" value="30" />
   <Property name="AutoAimMinScreenDistance" value="25" />
   <Property name="AutoAimRadiusExtra" value="2" />
+  <Property name="AutoAimStickyRailgun" value="0.85" />
   <Property name="AutoAimStickyMin" value="0.8" />
   <Property name="AutoAimStickyMax" value="0.2" />
   <Property name="AutoAimDotCurve" value="TkCurveType.xml">
@@ -1269,6 +1151,9 @@
   <Property name="ExperienceDroneSpawnOffset" value="25" />
   <Property name="ExperienceDroneSpawnAngle" value="120" />
   <Property name="ExperienceMessageBroadcastNearbyDistance" value="1000" />
+  <Property name="ExperienceDefeatLevel5SentinelsRewardDelay" value="5" /> 
+  <Property name="ExperienceDefeatLevel5SentinelsReward" value="R_SHOW_HIVE" /> 
+  <Property name="ExperienceDefeatLevel5SentinelsDisableWantedTime" value="60" />
   <Property name="WantedEnemyAttackAmount" value="0.1" />
   <Property name="Gun" value="MODELS//COMMON//WEAPONS//DEFAULTGUN//DEFAULTGUN.SCENE.MBIN" />
   <Property name="StickDeadZoneMin" value="0" />
@@ -1446,16 +1331,19 @@
     <Property name="y" value="-0.06" />
     <Property name="z" value="0.02" />
   </Property>
-  <Property name="WeaponLowerDelay" value="3" />
-  <Property name="WeaponHolsterDelay" value="6" />
-  <Property name="WeaponLag" value="0.6" />
+  <Property name="WeaponLowerDelay" value="2" />
+  <Property name="WeaponHolsterDelay" value="3" />
+  <Property name="WeaponLag" value="0.2" />
   <Property name="WeaponBobFactorWalkDeadZone" value="1" />
   <Property name="WeaponBobFactorWalk" value="0.2" />
-  <Property name="WeaponBobFactorRun" value="0.2" />
+  <Property name="WeaponBobFactorRun" value="0.3" />
   <Property name="WeaponBobBlendTime" value="0.5" />
   <Property name="WeaponBobBlendCurve" value="TkCurveType.xml">
     <Property name="Curve" value="Squared" />
   </Property>
+  <Property name="WeaponCannonMinWeaponTimer" value="0.15" />
+  <Property name="WeaponCannonMinUnchargedShotThreshold" value="0.2" />
+  <Property name="WeaponCannonMinUnchargedShotTime" value="0.5" />
   <Property name="WeaponGrenadeTime" value="0.5" />
   <Property name="WeaponGunTime" value="0.12" />
   <Property name="WeaponRailFireTime" value="0.4" />
@@ -1756,7 +1644,7 @@
           </Property>
           <Property name="ShipHUDOverride" value="HUD_INC_TRADER" />
         </Property>
-        <Property name="Weighted" value="1" />
+        <Property name="Weight" value="1" />
       </Property>
       <Property name="Beg" value="GcPlayerCommunicatorMessageWeighted.xml">
         <Property name="Message" value="GcPlayerCommunicatorMessage.xml">
@@ -1768,7 +1656,7 @@
           </Property>
           <Property name="ShipHUDOverride" value="HUD_INC_TRADER" />
         </Property>
-        <Property name="Weighted" value="2" />
+        <Property name="Weight" value="2" />
       </Property>
       <Property name="Ambush" value="GcPlayerCommunicatorMessageWeighted.xml">
         <Property name="Message" value="GcPlayerCommunicatorMessage.xml">
@@ -1780,7 +1668,7 @@
           </Property>
           <Property name="ShipHUDOverride" value="HUD_INC_TRADER" />
         </Property>
-        <Property name="Weighted" value="1" />
+        <Property name="Weight" value="1" />
       </Property>
       <Property name="Trade" value="GcPlayerCommunicatorMessageWeighted.xml">
         <Property name="Message" value="GcPlayerCommunicatorMessage.xml">
@@ -1792,7 +1680,7 @@
           </Property>
           <Property name="ShipHUDOverride" value="HUD_INC_TRADER" />
         </Property>
-        <Property name="Weighted" value="10" />
+        <Property name="Weight" value="10" />
       </Property>
       <Property name="Help" value="GcPlayerCommunicatorMessageWeighted.xml">
         <Property name="Message" value="GcPlayerCommunicatorMessage.xml">
@@ -1804,7 +1692,7 @@
           </Property>
           <Property name="ShipHUDOverride" value="HUD_INC_TRADER" />
         </Property>
-        <Property name="Weighted" value="1" />
+        <Property name="Weight" value="1" />
       </Property>
       <Property name="Goods" value="GcPlayerCommunicatorMessageWeighted.xml">
         <Property name="Message" value="GcPlayerCommunicatorMessage.xml">
@@ -1816,7 +1704,7 @@
           </Property>
           <Property name="ShipHUDOverride" value="HUD_INC_TRADER" />
         </Property>
-        <Property name="Weighted" value="4" />
+        <Property name="Weight" value="4" />
       </Property>
       <Property name="Hostile" value="GcPlayerCommunicatorMessageWeighted.xml">
         <Property name="Message" value="GcPlayerCommunicatorMessage.xml">
@@ -1828,7 +1716,7 @@
           </Property>
           <Property name="ShipHUDOverride" value="HUD_INC_TRADER" />
         </Property>
-        <Property name="Weighted" value="1" />
+        <Property name="Weight" value="1" />
       </Property>
     </Property>
   </Property>
