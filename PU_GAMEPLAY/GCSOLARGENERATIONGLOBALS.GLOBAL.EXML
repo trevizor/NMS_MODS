@@ -108,8 +108,6 @@
   <Property name="RingAsteroidSpacing" value="300" />
   <Property name="RingAsteroidFadeRangeMin" value="500" />
   <Property name="RingAsteroidFadeRangeMax" value="2000" />
-  <Property name="AsteroidMaxNumGenerates" value="100000" />
-  <Property name="AsteroidMaxNumGeneratesPulseJump" value="1000" />
   <Property name="AsteroidSpaceStationAvoidRadius" value="5000" />
   <Property name="AsteroidAnomalyAvoidRadius" value="5000" />
   <Property name="AsteroidWarpInAreaAvoidRadius" value="5000" />
@@ -125,11 +123,18 @@
     <Property name="Blue" value="0.4" />
     <Property name="Red" value="0.95" />
   </Property>
+  <Property name="PirateSystemProbability"> 
+    <Property name="Yellow" value="0.25" /> 
+    <Property name="Green" value="0.15" />  
+    <Property name="Blue" value="0.15" /> 
+    <Property name="Red" value="0.5" /> 
+  </Property>
   <Property name="CivilianTraderSpaceshipsCacheCount" value="20" />
   <Property name="SpaceshipSpawnFreqMultipliers">
     <Property value="0.5" />
     <Property value="2" />
     <Property value="5" />
+    <Property value="2" />
   </Property>
   <Property name="SpaceshipWeightings">
     <Property value="GcAISpaceshipWeightingData.xml">
@@ -142,6 +147,7 @@
         <Property name="PlayerFreighter" value="0" />
         <Property name="Royal" value="1" />
         <Property name="Alien" value="0" />
+        <Property name="Sail" value="0" />
       </Property>
     </Property>
     <Property value="GcAISpaceshipWeightingData.xml">
@@ -154,6 +160,7 @@
         <Property name="PlayerFreighter" value="0" />
         <Property name="Royal" value="1" />
         <Property name="Alien" value="0" />
+        <Property name="Sail" value="0" />
       </Property>
     </Property>
     <Property value="GcAISpaceshipWeightingData.xml">
@@ -166,6 +173,7 @@
         <Property name="PlayerFreighter" value="0" />
         <Property name="Royal" value="1" />
         <Property name="Alien" value="0" />
+        <Property name="Sail" value="0" />
       </Property>
     </Property>
     <Property value="GcAISpaceshipWeightingData.xml">
@@ -178,6 +186,7 @@
         <Property name="PlayerFreighter" value="0" />
         <Property name="Royal" value="1" />
         <Property name="Alien" value="0" />
+        <Property name="Sail" value="0" />
       </Property>
     </Property>
     <Property value="GcAISpaceshipWeightingData.xml">
@@ -190,6 +199,7 @@
         <Property name="PlayerFreighter" value="0" />
         <Property name="Royal" value="1" />
         <Property name="Alien" value="0" />
+        <Property name="Sail" value="0" />
       </Property>
     </Property>
     <Property value="GcAISpaceshipWeightingData.xml">
@@ -202,6 +212,7 @@
         <Property name="PlayerFreighter" value="0" />
         <Property name="Royal" value="1" />
         <Property name="Alien" value="0" />
+        <Property name="Sail" value="0" />
       </Property>
     </Property>
     <Property value="GcAISpaceshipWeightingData.xml">
@@ -214,6 +225,7 @@
         <Property name="PlayerFreighter" value="0" />
         <Property name="Royal" value="1" />
         <Property name="Alien" value="0" />
+        <Property name="Sail" value="0" />
       </Property>
     </Property>
     <Property value="GcAISpaceshipWeightingData.xml">
@@ -226,6 +238,7 @@
         <Property name="PlayerFreighter" value="0" />
         <Property name="Royal" value="1" />
         <Property name="Alien" value="0" />
+        <Property name="Sail" value="0" />
       </Property>
     </Property>
   </Property>
@@ -255,8 +268,8 @@
     <Property name="SmallScale" value="300" />
     <Property name="MidStrength" value="0" />
     <Property name="Offset" value="0" />
-    <Property name="Depth" value="800" />
-    <Property name="AlphaMultiplier" value="1" />
+    <Property name="Depth" value="200" />
+    <Property name="AlphaMultiplier" value="0.1" />
   </Property>
   <Property name="PlanetRingsMax" value="GcPlanetRingData.xml">
     <Property name="HasRings" value="False" />
@@ -281,10 +294,10 @@
     <Property name="LargeScale2" value="3" />
     <Property name="MidScale" value="73" />
     <Property name="SmallScale" value="300" />
-    <Property name="MidStrength" value="0.8" />
+    <Property name="MidStrength" value="0.3" />
     <Property name="Offset" value="0" />
-    <Property name="Depth" value="800" />
-    <Property name="AlphaMultiplier" value="1" />
+    <Property name="Depth" value="400" />
+    <Property name="AlphaMultiplier" value="0.5" />
   </Property>
   <Property name="PercentChanceExtraPrime" value="33" />
 </Data>

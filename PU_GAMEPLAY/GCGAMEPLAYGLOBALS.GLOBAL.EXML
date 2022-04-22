@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (3.75.0)-->
 <Data template="GcGameplayGlobals">
+  <Property name="CargoShieldStrength" value="0.5" />  
+  <Property name="PirateRaidAccelerator" value="1.8" /> 
+  <Property name="PirateGroundAccelerator" value="0.5" /> 
+  <Property name="PirateGroundInventoryAccelerator" value="0.1" />  
+  <Property name="PoliceAcceleratorStationLockOn" value="6" />  
+  <Property name="PoliceAcceleratorPulseExtra" value="2" /> 
+  <Property name="PoliceAcceleratorSmugglingItemsMax" value="50" /> 
+  <Property name="PoliceAcceleratorSmugglingMulMax" value="8" />  
+  <Property name="PoliceAcceleratorNoCargoWealthy" value="0.6" /> 
+  <Property name="PoliceAcceleratorNoCargoNormal" value="0.3" />  
+  <Property name="PoliceAcceleratorNoCargoSkipScanOdds" value="0.75" /> 
+  <Property name="SmugglerSellingMarkup" value="2.66" />  
+  <Property name="IllegalTechProductTradingMod" value="0.2" />
   <Property name="CombatLevelBestWeaponBias" value="0.66" />
   <Property name="CombatLevelBaseValueBoltcaster" value="0.1" />
   <Property name="CombatLevelBaseValueShotgun" value="0.2" />
@@ -49,9 +62,8 @@
     <Property name="B" value="0.993" />
     <Property name="A" value="0.05" />
   </Property>
-  <Property name="BulletTraceLineWidth" value="0" />
-  <Property name="TracerBeamStart" value="0.2" />
-  <Property name="TracerBeamEnd" value="0.21" />
+  <Property name="BulletTraceLineWidth" value="0.1" />
+  <Property name="ShipBulletTraceLineWidth" value="0.5" />
   <Property name="VehicleAllIconScanTime" value="20" />
   <Property name="GPSRandomChangeTimeWide" value="10" />
   <Property name="GPSRandomChangeTimeMid" value="5" />
@@ -322,6 +334,9 @@
     <Property name="B" value="0.141" />
     <Property name="A" value="0.8" />
   </Property>
+  <Property name="OverheatColourCurveShip" value="TkCurveType.xml"> 
+    <Property name="Curve" value="SmoothInOut" /> 
+  </Property>
   <Property name="OverheatColourCurve" value="TkCurveType.xml">
     <Property name="Curve" value="EaseInExpo" />
   </Property>
@@ -530,6 +545,14 @@
   </Property>
   <Property name="CommunicatorSpawnScale" value="0.1" />
   <Property name="CommunicatorSpawnRotation" value="-40" />
+  <Property name="CommunicatorCargoScanDroneScale" value="0.2" /> 
+  <Property name="CommunicatorCargoScanDroneScaleFallback" value="0.1" /> 
+  <Property name="CommunicatorCargoScanDroneUpOffset" value="6" />  
+  <Property name="CommunicatorCargoScanDroneUpOffsetFallback" value="10" /> 
+  <Property name="CommunicatorCargoScanDroneAtOffsetFallback" value="-40" />  
+  <Property name="CommunicatorCargoScanDronePitch" value="190" /> 
+  <Property name="CommunicatorCargoScanDroneRoll" value="180" />  
+  <Property name="CommunicatorCargoScanDroneYaw" value="-30" />
   <Property name="CommunicatorFadeTime" value="1.2" />
   <Property name="CommunicatorEffectTable">
     <Property value="GcScanEffectData.xml">
@@ -599,6 +622,7 @@
   <Property name="HardModeTechDamageMidPercent" value="50" />
   <Property name="HardModeTechDamageHighPercent" value="20" />
   <Property name="EarlyPiratesToBeKilled" value="10" />
+  <Property name="PlanetPirateFlybyMaxRepeatCounter" value="1" />
   <Property name="PirateInterestOverride" value="0" />
   <Property name="PirateInterestDistance" value="8000" />
   <Property name="PirateInterestDistanceMPMission" value="80000" />
@@ -611,6 +635,19 @@
     <Property value="50000" />
     <Property value="150000" />
     <Property value="1600000" />
+  </Property>
+    <Property name="PoliceInterestOverride" value="0" />  
+  <Property name="PoliceInterestDistance" value="8000" /> 
+  <Property name="PoliceInterestDistanceMPMission" value="80000" /> 
+  <Property name="PoliceInterestLevels">  
+    <Property value="1" />  
+    <Property value="20000" />  
+    <Property value="500000" /> 
+  </Property> 
+  <Property name="PoliceInterestLevelsSurvival">  
+    <Property value="1" />  
+    <Property value="50000" />  
+    <Property value="200000" /> 
   </Property>
   <Property name="SpaceCombatRadius" value="5000" />
   <Property name="WarpsBetweenBattles" value="5" />
@@ -728,23 +765,55 @@
       <Property name="y" value="0" />
     </Property>
   </Property>
-  <Property name="PirateTimers" value="GcExperienceTimers.xml">
+  <Property name="PlanetPirateTimers" value="GcExperienceTimers.xml">
     <Property name="HighChance" value="0" />
     <Property name="LowChance" value="30" />
     <Property name="High" value="Vector2f.xml">
-      <Property name="x" value="60" />
+      <Property name="x" value="600" />
+      <Property name="y" value="900" />
+    </Property>
+    <Property name="Normal" value="Vector2f.xml">
+      <Property name="x" value="800" />
+      <Property name="y" value="1000" />
+    </Property>
+    <Property name="Low" value="Vector2f.xml">
+      <Property name="x" value="0" />
+      <Property name="y" value="0" />
+    </Property>
+  </Property>
+  <Property name="HardPlanetPirateTimers" value="GcExperienceTimers.xml">
+    <Property name="HighChance" value="0" />
+    <Property name="LowChance" value="30" />
+    <Property name="High" value="Vector2f.xml">
+      <Property name="x" value="300" />
+      <Property name="y" value="500" />
+    </Property>
+    <Property name="Normal" value="Vector2f.xml">
+      <Property name="x" value="500" />
+      <Property name="y" value="800" />
+    </Property>
+    <Property name="Low" value="Vector2f.xml">
+      <Property name="x" value="0" />
+      <Property name="y" value="0" />
+    </Property>
+  </Property>
+  <Property name="SpacePirateTimers" value="GcExperienceTimers.xml">
+    <Property name="HighChance" value="0" />
+    <Property name="LowChance" value="30" />
+    <Property name="High" value="Vector2f.xml">
+      <Property name="x" value="180" />
       <Property name="y" value="300" />
     </Property>
     <Property name="Normal" value="Vector2f.xml">
-      <Property name="x" value="120" />
+      <Property name="x" value="230" />
       <Property name="y" value="450" />
     </Property>
     <Property name="Low" value="Vector2f.xml">
-      <Property name="x" value="180" />
+      <Property name="x" value="350" />
       <Property name="y" value="600" />
     </Property>
   </Property>
-  <Property name="HardPirateTimers" value="GcExperienceTimers.xml">
+  <Property name="HardSpacePirateTimers" value="GcExperienceTimers.xml">
     <Property name="HighChance" value="0" />
     <Property name="LowChance" value="30" />
     <Property name="High" value="Vector2f.xml">
@@ -764,6 +833,7 @@
     <Property value="0" />
     <Property value="0" />
     <Property value="0.5" />
+    <Property value="0.8" />
   </Property>
   <Property name="PirateEarlySpawnTime" value="15" />
   <Property name="FlybyTimers" value="GcExperienceTimers.xml">
@@ -795,6 +865,22 @@
     </Property>
     <Property name="Low" value="Vector2f.xml">
       <Property name="x" value="200" />
+      <Property name="y" value="600" />
+    </Property>
+  </Property>
+  <Property name="PoliceTimers" value="GcExperienceTimers.xml">
+    <Property name="HighChance" value="0" />
+    <Property name="LowChance" value="30" />
+    <Property name="High" value="Vector2f.xml">
+      <Property name="x" value="120" />
+      <Property name="y" value="300" />
+    </Property>
+    <Property name="Normal" value="Vector2f.xml">
+      <Property name="x" value="300" />
+      <Property name="y" value="450" />
+    </Property>
+    <Property name="Low" value="Vector2f.xml">
+      <Property name="x" value="500" />
       <Property name="y" value="600" />
     </Property>
   </Property>
@@ -1659,6 +1745,8 @@
   <Property name="DebugDrawTriggerBoxes" value="False" />
   <Property name="SpeedReadoutMultiplier" value="1" />
   <Property name="SpaceSpeedReadoutMultiplier" value="1" />
+
+  <Property name="CombatSpeedReadoutMultiplier" value="1.5" />
   <Property name="TorchCookieIndex" value="0" />
   <Property name="TorchFoV" value="80" />
   <Property name="TorchStrength" value="6.5" />
@@ -1732,7 +1820,6 @@
   <Property name="KeepAttackingMaxWantedLevel" value="False" />
   <Property name="UseMultiplierBonus" value="True" />
   <Property name="ShipDisplayDamageMultiplier" value="10" />
-  <Property name="IllegalProductTradingMod" value="0.2" />
   <Property name="UseTradingCostTable" value="False" />
   <Property name="ChangePricesLocally" value="False" />
   <Property name="ShowPriceMarkupsAsPercentages" value="True" />
@@ -1747,6 +1834,7 @@
   </Property>
   <Property name="FourthRaceSpawnPercentage" value="3" />
   <Property name="NonDominantRaceSpawnPercentage" value="30" />
+  <Property name="NonDominantRaceSpawnPercentagePirate" value="66" />
   <Property name="ViciousSentinelProbability" value="0.25" />
   <Property name="ViciousStormProbability" value="0.5" />
   <Property name="ViciousWeatherProbability" value="0.5" />
@@ -1807,4 +1895,8 @@
     <Property name="Filename" value="" />
   </Property>
   <Property name="UseCustomSaveDirectory" value="False" />
+  <Property name="FrigateFlybyTimer" value="Vector2f.xml">  
+    <Property name="x" value="600" /> 
+    <Property name="y" value="1200" />  
+  </Property>
 </Data>

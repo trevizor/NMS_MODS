@@ -559,7 +559,7 @@
   <Property name="FireButtonReloadsWeapon" value="True" />
   <Property name="WeaponZoomEnabled" value="True" />
   <Property name="WeaponZoomFOV" value="0.7" />
-   <Property name="PassiveWeaponZoomFOV" value="1" /> 
+  <Property name="PassiveWeaponZoomFOV" value="1" />
   <Property name="PassiveWeaponZoomFOVThirdPerson" value="1" />
   <Property name="WeaponZoomRecoilMultiplier" value="2" />
   <Property name="WeaponZoomVertRotation" value="8" />
@@ -570,17 +570,14 @@
   <Property name="FrontShieldSpeedSlowdown" value="0.5" />
   <Property name="FrontShieldSlerpTime" value="0.1" />
   <Property name="CombatSpawnMinWantedTime" value="10" />
-  <Property name="ExperienceHardPiratesDamagePotentialMin" value="600" />
-  <Property name="ExperienceHardPiratesDamagePotentialRange" value="800" />
-  <Property name="ExperienceHardPiratesDamageMaxOdds" value="0.85" />
-  <Property name="ExperienceMediumPiratesDamagePotentialMin" value="400" />
-  <Property name="ExperienceMediumPiratesDamagePotentialRange" value="400" />
-  <Property name="ExperienceMediumPiratesDamageMaxOdds" value="0.85" />
+  <Property name="ExperiencePiratesDifficultyVariance" value="0.23" />
+  <Property name="ExperienceHardPiratesDamageMaxOdds" value="0.61" />
+  <Property name="ExperienceMediumPiratesDamageMaxOdds" value="0.33" />
   <Property name="CommunicatorSpeed" value="30" />
   <Property name="MinDistanceToCommunicatorTarget" value="100" />
-  <Property name="GrenadeBounceDamping" value="0.8" />
+  <Property name="GrenadeBounceDamping" value="0.1" />
   <Property name="GrenadeBounceMaxSpeed" value="16" />
-  <Property name="GrenadeStopExplodeTime" value="0.8" />
+  <Property name="GrenadeStopExplodeTime" value="0.4" />
   <Property name="CockpitEjectTestSphereRadius" value="0.4" />
   <Property name="CockpitEjectTestSphereRange" value="2" />
   <Property name="CockpitEjectSideTestRange" value="1.5" />
@@ -645,8 +642,8 @@
     <Property name="B" value="0.388" />
     <Property name="A" value="1" />
   </Property>
-  <Property name="JetpackJetAnimateOutTime" value="0.2" />  
-  <Property name="JetpackJetAnimateInTime" value="0.1" />
+  <Property name="JetpackJetAnimateOutTime" value="0" />  
+  <Property name="JetpackJetAnimateInTime" value="0" />
   <Property name="FreeJetpackRange" value="1" />
   <Property name="FreeJetpackRangePrime" value="2" />
   <Property name="FreeJetpackRangeNonTerrain" value="1.1" />
@@ -765,6 +762,11 @@
   <Property name="MouseCrosshairLineWidth" value="2" />
   <Property name="MouseCrosshairShipStrength" value="2" />
   <Property name="MouseCrosshairMultiplier" value="1" />
+  <Property name="MouseFlightCorrectionMultiplier" value="1.5" />
+  <Property name="MouseFlightCorrectionBrakeMultiplier" value="2.5" />
+  <Property name="MouseFlightCurve" value="TkCurveType.xml">
+    <Property name="Curve" value="EaseOutExpo" />
+  </Property>
   <Property name="MaximumCrouchVR" value="-0.5" />
   <Property name="MaximumHeadHeightIncreaseVR" value="0.5" />
   <Property name="MaximumHorizontalOffsetVR" value="0.65" />
@@ -801,12 +803,20 @@
   <Property name="DroneProbeScanTime" value="3" />
   <Property name="PirateHailPercent" value="100" />
   <Property name="PirateBountyInitTime" value="2" />
-  <Property name="PirateProbeInitTime" value="2" />
-  <Property name="PirateProbeAttackWaitTime" value="4" />
-  <Property name="PirateProbeAttackWarnTime" value="3" />
-  <Property name="PirateProbeScanTime" value="7" />
-  <Property name="PirateProbeScanTotalTime" value="8.5" />
-  <Property name="PirateProbeHailPause" value="1" />
+  <Property name="PirateBountyMaxDistance" value="4000" />  
+  <Property name="PirateBountyTimeoutTime" value="120" /> 
+  <Property name="PirateProbeInitTime" value="2" /> 
+  <Property name="PirateProbeAttackWaitTime" value="4" /> 
+  <Property name="PirateProbeAttackWarnTime" value="3" /> 
+  <Property name="PirateProbeScanTime" value="7" /> 
+  <Property name="PirateProbeScanTotalTime" value="8.5" />  
+  <Property name="PirateProbeHailPause" value="1" />  
+  <Property name="PirateFlybyAttackDistancePastPlayer" value="500" /> 
+  <Property name="PirateFlybyAttackProbability" value="0.5" />  
+  <Property name="PirateFlybyAttackMinTime" value="15" /> 
+  <Property name="PirateFlybyAttackMaxTime" value="25" /> 
+  <Property name="PirateRaidMinTime" value="90" />  
+  <Property name="PirateRaidMaxTime" value="180" />
   <Property name="PirateBattleMarkerRange" value="5001" />
   <Property name="PirateBattleWarnTime" value="3" />
   <Property name="PirateBattleMarkerTime" value="4" />
@@ -1085,9 +1095,10 @@
     <Property name="LeadTime" value="0" />
   </Property>
   <Property name="StickData" value="GcPlayerStickData.xml">
-    <Property name="AcceleratorStickPoint" value="0.75" />
+    <Property name="AcceleratorStickPoint" value="0
+      " />
     <Property name="AcceleratorMinTime" value="0" />
-    <Property name="Accelerate" value="1.4" />
+    <Property name="Accelerate" value="0" />
     <Property name="AccelerateAngle" value="5" />
     <Property name="Turn" value="2.4" />
     <Property name="TurnFast" value="12" />
@@ -1123,12 +1134,14 @@
   <Property name="AimDisperseCurve" value="TkCurveType.xml">
     <Property name="Curve" value="EaseInSine" />
   </Property>
-  <Property name="CrosshairTime" value="0.5" />
+  <Property name="CrosshairTime" value="0.15" />
   <Property name="BeaconActivateRange" value="20" />
   <Property name="ExperienceMaxCivilianShipSpawnsOnPlanet" value="10" />
   <Property name="ExperienceMaxCivilianShipSpawnsInSpace" value="30" />
   <Property name="ExperiencePirateFreighterAttackRange" value="40000" />
   <Property name="ExperienceWalkerSize" value="4" />
+  
+  <Property name="ExperienceInterestingPoliceDistance" value="8000" />
   <Property name="ExperienceInterestingShipDistance" value="2000" />
   <Property name="ExperienceInterestingFreighterDistance" value="100000" />
   <Property name="ExperienceInterestingDroneDistance" value="200" />
@@ -1153,6 +1166,7 @@
   <Property name="ExperienceMessageBroadcastNearbyDistance" value="1000" />
   <Property name="ExperienceDefeatLevel5SentinelsRewardDelay" value="5" /> 
   <Property name="ExperienceDefeatLevel5SentinelsReward" value="R_SHOW_HIVE" /> 
+  <Property name="ExperienceDefeatLevel5SentinelsNearHiveReward" value="R_SENT_OFF_W5" />
   <Property name="ExperienceDefeatLevel5SentinelsDisableWantedTime" value="60" />
   <Property name="WantedEnemyAttackAmount" value="0.1" />
   <Property name="Gun" value="MODELS//COMMON//WEAPONS//DEFAULTGUN//DEFAULTGUN.SCENE.MBIN" />
@@ -1331,9 +1345,9 @@
     <Property name="y" value="-0.06" />
     <Property name="z" value="0.02" />
   </Property>
-  <Property name="WeaponLowerDelay" value="2" />
-  <Property name="WeaponHolsterDelay" value="3" />
-  <Property name="WeaponLag" value="0.2" />
+  <Property name="WeaponLowerDelay" value="20" />
+  <Property name="WeaponHolsterDelay" value="50" />
+  <Property name="WeaponLag" value="0.1" />
   <Property name="WeaponBobFactorWalkDeadZone" value="1" />
   <Property name="WeaponBobFactorWalk" value="0.2" />
   <Property name="WeaponBobFactorRun" value="0.3" />
@@ -1623,6 +1637,15 @@
   <Property name="LaserShipRange" value="1000" />
   <Property name="TerrainLaserRange" value="100" />
   <Property name="VehicleLaserRange" value="200" />
+    <Property name="PoliceScanHailMessage" value="GcPlayerCommunicatorMessage.xml"> 
+    <Property name="Dialog" value="POLICE_SCAN" />  
+    <Property name="ShowHologram" value="True" /> 
+    <Property name="CommunicatorType" value="CargoScanDrone" /> 
+    <Property name="RaceOverride" value="GcAlienRace.xml">  
+      <Property name="AlienRace" value="None" />  
+    </Property> 
+    <Property name="ShipHUDOverride" value="HUD_INC_CARGOSCAN" /> 
+  </Property>
   <Property name="PirateHailMessage" value="GcPlayerCommunicatorMessage.xml">
     <Property name="Dialog" value="PIRATE_ATTACK" />
     <Property name="ShowHologram" value="True" />
