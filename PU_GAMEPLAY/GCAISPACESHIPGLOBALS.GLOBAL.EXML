@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.75.0)-->
+<!--File created using MBINCompiler version (3.88.0)-->
 <Data template="GcAISpaceshipGlobals">
   <Property name="PlayerSquadronConfig" value="GcPlayerSquadronConfig.xml">
     <Property name="SquadName" value="PLAYER_SQUADRON" />
-    <Property name="AttackDefinition" value="PLAYER_SQUADRON" />
     <Property name="PilotRankTraitRanges">
       <Property value="Vector2f.xml">
         <Property name="x" value="0" />
@@ -20,6 +19,20 @@
       <Property value="Vector2f.xml">
         <Property name="x" value="0.5" />
         <Property name="y" value="1" />
+      </Property>
+    </Property>
+    <Property name="PilotRankAttackDefinitions">
+      <Property value="NMSString0x10.xml">
+        <Property name="Value" value="SQUADRON_C" />
+      </Property>
+      <Property value="NMSString0x10.xml">
+        <Property name="Value" value="SQUADRON_B" />
+      </Property>
+      <Property value="NMSString0x10.xml">
+        <Property name="Value" value="SQUADRON_A" />
+      </Property>
+      <Property value="NMSString0x10.xml">
+        <Property name="Value" value="SQUADRON_S" />
       </Property>
     </Property>
     <Property name="SummonArriveTime" value="1" />
@@ -220,10 +233,10 @@
   <Property name="EnergyShieldFadeOutRate" value="2" />
   <Property name="MinLaserFireTime" value="1" />
   <Property name="ShipAlertPirateRange" value="10000" />
-  <Property name="PlanetaryPirateHostileShipPerceptionRange" value="5000" />  
-  <Property name="PlanetaryPirateRaidFocusBuildingsTime" value="40" />  
-  <Property name="PlanetaryPirateRaidTradersEngageTime" value="30" /> 
-  <Property name="PlanetaryPirateRaidMaxTradersJoinCombat" value="4" /> 
+  <Property name="PlanetaryPirateHostileShipPerceptionRange" value="5000" />
+  <Property name="PlanetaryPirateRaidFocusBuildingsTime" value="40" />
+  <Property name="PlanetaryPirateRaidTradersEngageTime" value="30" />
+  <Property name="PlanetaryPirateRaidMaxTradersJoinCombat" value="4" />
   <Property name="EscapeRollTimePlanet" value="0.8" />
   <Property name="EscapeRollTime" value="0" />
   <Property name="EscapeRollPlanet" value="0" />
@@ -246,25 +259,25 @@
   <Property name="AttackRepositionBoost" value="True" />
   <Property name="AttackShipsFollowLeader" value="False" />
   <Property name="AttackTooCloseMinRelSpeed" value="41" />
-    <Property name="ProjectileWeaponMuzzleFlashes"> 
-    <Property value="NMSString0x10.xml">  
-      <Property name="Value" value="" />  
-    </Property> 
-    <Property value="NMSString0x10.xml">  
-      <Property name="Value" value="PIRATESHIPMUZ" /> 
-    </Property> 
-    <Property value="NMSString0x10.xml">  
-      <Property name="Value" value="POLICESHIPMUZ" /> 
-    </Property> 
-    <Property value="NMSString0x10.xml">  
-      <Property name="Value" value="SHIPMUZZLE" />  
-    </Property> 
-    <Property value="NMSString0x10.xml">  
-      <Property name="Value" value="TURRETGUN" /> 
-    </Property> 
-    <Property value="NMSString0x10.xml">  
-      <Property name="Value" value="SQUADSHIPMUZ" />  
-    </Property> 
+  <Property name="ProjectileWeaponMuzzleFlashes">
+    <Property value="NMSString0x10.xml">
+      <Property name="Value" value="" />
+    </Property>
+    <Property value="NMSString0x10.xml">
+      <Property name="Value" value="PIRATESHIPMUZ" />
+    </Property>
+    <Property value="NMSString0x10.xml">
+      <Property name="Value" value="POLICESHIPMUZ" />
+    </Property>
+    <Property value="NMSString0x10.xml">
+      <Property name="Value" value="SHIPMUZZLE" />
+    </Property>
+    <Property value="NMSString0x10.xml">
+      <Property name="Value" value="TURRETGUN" />
+    </Property>
+    <Property value="NMSString0x10.xml">
+      <Property name="Value" value="SQUADSHIPMUZ" />
+    </Property>
   </Property>
   <Property name="RewardLootOffset" value="2.5" />
   <Property name="RewardLootOffsetSpeed" value="2.5" />

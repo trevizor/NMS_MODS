@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.62.0)-->
+<!--File created using MBINCompiler version (3.87.0)-->
 <Data template="GcExplosionDataTable">
   <Property name="Name" value="Planet Effects" />
   <Property name="Table">
@@ -48,7 +48,7 @@
     <Property value="GcExplosionData.xml">
       <Property name="Id" value="REPAIR" />
       <Property name="Model" value="TkModelResource.xml">
-        <Property name="Filename" value="MODELS/EFFECTS/QUADS/REPAIREFFECT.SCENE.MBIN" />
+        <Property name="Filename" value="MODELS/EFFECTS/WEAPONS/ROBOTS/DRONEHEAL.SCENE.MBIN" />
       </Property>
       <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
@@ -181,8 +181,8 @@
       </Property>
       <Property name="Debris" />
       <Property name="Life" value="3" />
-      <Property name="Scale" value="1.3" />
-      <Property name="DistanceScale" value="0.01" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="50" />
       <Property name="CamShake" value="True" />
       <Property name="CamShakeSpaceScale" value="False" />
@@ -321,8 +321,8 @@
           </Property>
         </Property>
       </Property>
-      <Property name="Life" value="6" />
-      <Property name="Scale" value="1" />
+      <Property name="Life" value="3" />
+      <Property name="Scale" value="3" />
       <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="50" />
       <Property name="CamShake" value="True" />
@@ -379,7 +379,7 @@
         </Property>
       </Property>
       <Property name="Life" value="3" />
-      <Property name="Scale" value="4" />
+      <Property name="Scale" value="3" />
       <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="50" />
       <Property name="CamShake" value="True" />
@@ -401,12 +401,26 @@
       <Property name="Debris">
         <Property value="GcDebrisData.xml">
           <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/INEDITOR/PLANET/DRONEEXPLODE/DEBRISTRAIL.SCENE.MBIN" />
+          </Property>
+          <Property name="Number" value="2" />
+          <Property name="Radius" value="1" />
+          <Property name="Scale" value="0.6" />
+          <Property name="Speed" value="30" />
+          <Property name="AngularSpeed" value="10" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
             <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/DRONE/ENGINE_GIB.SCENE.MBIN" />
           </Property>
           <Property name="Number" value="1" />
           <Property name="Radius" value="1" />
           <Property name="Scale" value="0.5" />
-          <Property name="Speed" value="5" />
+          <Property name="Speed" value="20" />
           <Property name="AngularSpeed" value="0.1" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
@@ -420,7 +434,7 @@
           <Property name="Number" value="1" />
           <Property name="Radius" value="1" />
           <Property name="Scale" value="0.5" />
-          <Property name="Speed" value="5" />
+          <Property name="Speed" value="20" />
           <Property name="AngularSpeed" value="0.1" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
@@ -434,7 +448,7 @@
           <Property name="Number" value="1" />
           <Property name="Radius" value="1" />
           <Property name="Scale" value="0.5" />
-          <Property name="Speed" value="5" />
+          <Property name="Speed" value="20" />
           <Property name="AngularSpeed" value="0.1" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
@@ -448,7 +462,7 @@
           <Property name="Number" value="1" />
           <Property name="Radius" value="1" />
           <Property name="Scale" value="0.5" />
-          <Property name="Speed" value="5" />
+          <Property name="Speed" value="20" />
           <Property name="AngularSpeed" value="0.1" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
@@ -462,7 +476,7 @@
           <Property name="Number" value="1" />
           <Property name="Radius" value="1" />
           <Property name="Scale" value="0.5" />
-          <Property name="Speed" value="5" />
+          <Property name="Speed" value="20" />
           <Property name="AngularSpeed" value="0.1" />
           <Property name="OverrideSeed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
@@ -470,8 +484,8 @@
           </Property>
         </Property>
       </Property>
-      <Property name="Life" value="5" />
-      <Property name="Scale" value="2" />
+      <Property name="Life" value="3" />
+      <Property name="Scale" value="1" />
       <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="50" />
       <Property name="CamShake" value="True" />
@@ -533,7 +547,7 @@
           </Property>
           <Property name="Number" value="3" />
           <Property name="Radius" value="1" />
-          <Property name="Scale" value="0.5" />
+          <Property name="Scale" value="0.25" />
           <Property name="Speed" value="2" />
           <Property name="AngularSpeed" value="1" />
           <Property name="OverrideSeed" value="GcSeed.xml">
@@ -543,7 +557,7 @@
         </Property>
       </Property>
       <Property name="Life" value="5" />
-      <Property name="Scale" value="0.9" />
+      <Property name="Scale" value="0.5" />
       <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="50" />
       <Property name="CamShake" value="False" />
@@ -938,8 +952,8 @@
       <Property name="Debris" />
       <Property name="Life" value="3" />
       <Property name="Scale" value="1" />
-      <Property name="DistanceScale" value="0.01" />
-      <Property name="DistanceScaleMax" value="50" />
+      <Property name="DistanceScale" value="0.1" />
+      <Property name="DistanceScaleMax" value="3" />
       <Property name="CamShake" value="True" />
       <Property name="CamShakeSpaceScale" value="False" />
       <Property name="AllowTriggerActionOnDebris" value="False" />
@@ -951,7 +965,7 @@
     <Property value="GcExplosionData.xml">
       <Property name="Id" value="LASERCREATURE" />
       <Property name="Model" value="TkModelResource.xml">
-        <Property name="Filename" value="MODELS/COMMON/PROJECTILES/DRONELASERIMPACT.SCENE.MBIN" />
+        <Property name="Filename" value="MODELS/COMMON/PROJECTILES/CREATURELASERIMPACT.SCENE.MBIN" />
       </Property>
       <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
@@ -959,8 +973,8 @@
       <Property name="Debris" />
       <Property name="Life" value="3" />
       <Property name="Scale" value="1" />
-      <Property name="DistanceScale" value="0.01" />
-      <Property name="DistanceScaleMax" value="50" />
+      <Property name="DistanceScale" value="0.1" />
+      <Property name="DistanceScaleMax" value="3" />
       <Property name="CamShake" value="False" />
       <Property name="CamShakeSpaceScale" value="False" />
       <Property name="AllowTriggerActionOnDebris" value="False" />
@@ -1503,7 +1517,7 @@
           </Property>
         </Property>
       </Property>
-      <Property name="Life" value="4" />
+      <Property name="Life" value="2" />
       <Property name="Scale" value="1" />
       <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="50" />
@@ -1610,20 +1624,6 @@
       <Property name="Debris">
         <Property value="GcDebrisData.xml">
           <Property name="Filename" value="TkModelResource.xml">
-            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/FIENDDEBRIS.SCENE.MBIN" />
-          </Property>
-          <Property name="Number" value="4" />
-          <Property name="Radius" value="0.2" />
-          <Property name="Scale" value="1.5" />
-          <Property name="Speed" value="8" />
-          <Property name="AngularSpeed" value="12" />
-          <Property name="OverrideSeed" value="GcSeed.xml">
-            <Property name="Seed" value="0" />
-            <Property name="UseSeedValue" value="True" />
-          </Property>
-        </Property>
-        <Property value="GcDebrisData.xml">
-          <Property name="Filename" value="TkModelResource.xml">
             <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/RARERESOURCE/GROUND/SPOREBAG_DESTROYED.SCENE.MBIN" />
           </Property>
           <Property name="Number" value="4" />
@@ -1664,8 +1664,22 @@
             <Property name="UseSeedValue" value="False" />
           </Property>
         </Property>
+        <Property value="GcDebrisData.xml">
+          <Property name="Filename" value="TkModelResource.xml">
+            <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/FIENDDEBRIS.SCENE.MBIN" />
+          </Property>
+          <Property name="Number" value="3" />
+          <Property name="Radius" value="1" />
+          <Property name="Scale" value="1.5" />
+          <Property name="Speed" value="7" />
+          <Property name="AngularSpeed" value="3" />
+          <Property name="OverrideSeed" value="GcSeed.xml">
+            <Property name="Seed" value="0" />
+            <Property name="UseSeedValue" value="False" />
+          </Property>
+        </Property>
       </Property>
-      <Property name="Life" value="6" />
+      <Property name="Life" value="3" />
       <Property name="Scale" value="1.5" />
       <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="50" />
@@ -1860,7 +1874,7 @@
         <Property name="Filename" value="MODELS/EFFECTS/SMOKE/SHIPDAMAGESMOKE.SCENE.MBIN" />
       </Property>
       <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="INVALID_EVENT" />
+        <Property name="AkEvent" value="PARTICLES_ELECTRICAL_SPARKS" />
       </Property>
       <Property name="Debris" />
       <Property name="Life" value="3" />
@@ -2717,6 +2731,27 @@
       <Property name="CamShakeCustomMaxDistance" value="0" />
     </Property>
     <Property value="GcExplosionData.xml">
+      <Property name="Id" value="JETWATERFX" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/PLAYER/JETPACKEFFECTS/JETPACK_UNDERWATER.SCENE.MBIN" />
+      </Property>
+      <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="10" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpaceScale" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="AllowShootableDebris" value="False" />
+      <Property name="AllowDestructableDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+      <Property name="CamShakeCustomMaxDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
       <Property name="Id" value="JETREDFX" />
       <Property name="Model" value="TkModelResource.xml">
         <Property name="Filename" value="MODELS/EFFECTS/PLAYER/JETPACKEFFECTS/REDJETPACKFX.SCENE.MBIN" />
@@ -2866,7 +2901,7 @@
     <Property value="GcExplosionData.xml">
       <Property name="Id" value="WALKERLAND" />
       <Property name="Model" value="TkModelResource.xml">
-        <Property name="Filename" value="MODELS/EFFECTS/DUST/SANDWORMEXPLODE.SCENE.MBIN" />
+        <Property name="Filename" value="MODELS/EFFECTS/DUST/WALKERLAND.SCENE.MBIN" />
       </Property>
       <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="WALKER_FALL_IMPACT" />
@@ -3203,16 +3238,16 @@
           </Property>
         </Property>
       </Property>
-      <Property name="Life" value="60" />
-      <Property name="Scale" value="2" />
+      <Property name="Life" value="4.5" />
+      <Property name="Scale" value="1" />
       <Property name="DistanceScale" value="0" />
-      <Property name="DistanceScaleMax" value="50" />
+      <Property name="DistanceScaleMax" value="1000" />
       <Property name="CamShake" value="False" />
       <Property name="CamShakeSpaceScale" value="False" />
       <Property name="AllowTriggerActionOnDebris" value="False" />
       <Property name="AllowShootableDebris" value="False" />
       <Property name="AllowDestructableDebris" value="False" />
-      <Property name="MaxSpawnDistance" value="0" />
+      <Property name="MaxSpawnDistance" value="10000" />
       <Property name="CamShakeCustomMaxDistance" value="0" />
     </Property>
     <Property value="GcExplosionData.xml">
@@ -3267,9 +3302,9 @@
       </Property>
       <Property name="Debris" />
       <Property name="Life" value="5.5" />
-      <Property name="Scale" value="0.3" />
+      <Property name="Scale" value="1" />
       <Property name="DistanceScale" value="0" />
-      <Property name="DistanceScaleMax" value="1" />
+      <Property name="DistanceScaleMax" value="50" />
       <Property name="CamShake" value="False" />
       <Property name="CamShakeSpaceScale" value="False" />
       <Property name="AllowTriggerActionOnDebris" value="False" />
@@ -3866,7 +3901,7 @@
         <Property name="Filename" value="MODELS/EFFECTS/BLOOD/MINISANDWORMDEATH.SCENE.MBIN" />
       </Property>
       <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="697752394" />
+        <Property name="AkEvent" value="MINIWORM_DEATH" />
       </Property>
       <Property name="Debris">
         <Property value="GcDebrisData.xml">
@@ -3902,7 +3937,7 @@
         <Property name="Filename" value="MODELS/EFFECTS/DUST/SANDWORMMINIEMERGE.SCENE.MBIN" />
       </Property>
       <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="274707258" />
+        <Property name="AkEvent" value="MINIWORM_BURSTOUT" />
       </Property>
       <Property name="Debris" />
       <Property name="Life" value="3" />
@@ -3923,7 +3958,7 @@
         <Property name="Filename" value="MODELS/EFFECTS/DUST/SANDWORMMINISUBMERGE.SCENE.MBIN" />
       </Property>
       <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="2548776003" />
+        <Property name="AkEvent" value="MINIWORM_RETRACT" />
       </Property>
       <Property name="Debris" />
       <Property name="Life" value="3" />
@@ -4064,7 +4099,7 @@
         <Property name="Filename" value="MODELS/EFFECTS/WEAPONS/ROBOTS/SHIELDDESTROY.SCENE.MBIN" />
       </Property>
       <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
-        <Property name="AkEvent" value="2864522852" />
+        <Property name="AkEvent" value="DRONE_SHIELD_DEACTIVATE" />
       </Property>
       <Property name="Debris" />
       <Property name="Life" value="3" />

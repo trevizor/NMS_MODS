@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.75.0)-->
+<!--File created using MBINCompiler version (3.87.0)-->
 <Data template="GcExplosionDataTable">
   <Property name="Name" value="Space Effects" />
   <Property name="Table">
@@ -112,7 +112,7 @@
         </Property>
       </Property>
       <Property name="Life" value="0.6" />
-      <Property name="Scale" value="60" />
+      <Property name="Scale" value="50" />
       <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="50" />
       <Property name="CamShake" value="False" />
@@ -133,7 +133,7 @@
       </Property>
       <Property name="Debris" />
       <Property name="Life" value="0.6" />
-      <Property name="Scale" value="5" />
+      <Property name="Scale" value="7" />
       <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="50" />
       <Property name="CamShake" value="True" />
@@ -154,7 +154,7 @@
       </Property>
       <Property name="Debris" />
       <Property name="Life" value="0.3" />
-      <Property name="Scale" value="5" />
+      <Property name="Scale" value="8" />
       <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="50" />
       <Property name="CamShake" value="True" />
@@ -204,7 +204,7 @@
         </Property>
       </Property>
       <Property name="Life" value="0.6" />
-      <Property name="Scale" value="100" />
+      <Property name="Scale" value="90" />
       <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="50" />
       <Property name="CamShake" value="False" />
@@ -240,7 +240,7 @@
         </Property>
       </Property>
       <Property name="Life" value="0.5" />
-      <Property name="Scale" value="100" />
+      <Property name="Scale" value="90" />
       <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="50" />
       <Property name="CamShake" value="False" />
@@ -261,7 +261,7 @@
       </Property>
       <Property name="Debris" />
       <Property name="Life" value="0.8" />
-      <Property name="Scale" value="40" />
+      <Property name="Scale" value="50" />
       <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="50" />
       <Property name="CamShake" value="False" />
@@ -324,7 +324,7 @@
       </Property>
       <Property name="Debris" />
       <Property name="Life" value="3" />
-      <Property name="Scale" value="1.1" />
+      <Property name="Scale" value="1.3" />
       <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="10" />
       <Property name="CamShake" value="False" />
@@ -360,7 +360,7 @@
         </Property>
       </Property>
       <Property name="Life" value="1" />
-      <Property name="Scale" value="2" />
+      <Property name="Scale" value="3" />
       <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="10" />
       <Property name="CamShake" value="True" />
@@ -381,7 +381,7 @@
       </Property>
       <Property name="Debris" />
       <Property name="Life" value="1" />
-      <Property name="Scale" value="1" />
+      <Property name="Scale" value="1.4" />
       <Property name="DistanceScale" value="0.002" />
       <Property name="DistanceScaleMax" value="2" />
       <Property name="CamShake" value="True" />
@@ -389,7 +389,7 @@
       <Property name="AllowTriggerActionOnDebris" value="False" />
       <Property name="AllowShootableDebris" value="False" />
       <Property name="AllowDestructableDebris" value="False" />
-      <Property name="MaxSpawnDistance" value="3000" />
+      <Property name="MaxSpawnDistance" value="5000" />
       <Property name="CamShakeCustomMaxDistance" value="0" />
     </Property>
     <Property value="GcExplosionData.xml">
@@ -416,14 +416,14 @@
     <Property value="GcExplosionData.xml">
       <Property name="Id" value="TURRETGUN" />
       <Property name="Model" value="TkModelResource.xml">
-        <Property name="Filename" value="MODELS/EFFECTS/WEAPONS/SHIPS/PROJECTILEMUZZLEFLASHPINK.SCENE.MBIN" />
+        <Property name="Filename" value="MODELS/EFFECTS/WEAPONS/SHIPS/GREENSHIPMUZZLEFLASH.SCENE.MBIN" />
       </Property>
       <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
       <Property name="Debris" />
       <Property name="Life" value="3" />
-      <Property name="Scale" value="25" />
+      <Property name="Scale" value="1" />
       <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="50" />
       <Property name="CamShake" value="False" />
@@ -550,6 +550,174 @@
       <Property name="Debris" />
       <Property name="Life" value="3" />
       <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpaceScale" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="AllowShootableDebris" value="False" />
+      <Property name="AllowDestructableDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+      <Property name="CamShakeCustomMaxDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="AISHIPLASERIMP" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/IMPACTS/AISHIPLASER.SCENE.MBIN" />
+      </Property>
+      <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="3" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpaceScale" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="AllowShootableDebris" value="False" />
+      <Property name="AllowDestructableDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+      <Property name="CamShakeCustomMaxDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="AISHIPGUNIMPACT" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/IMPACTS/AISHIPGUN.SCENE.MBIN" />
+      </Property>
+      <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="3" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpaceScale" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="AllowShootableDebris" value="False" />
+      <Property name="AllowDestructableDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+      <Property name="CamShakeCustomMaxDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="SHIPESHIELDIMP" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/IMPACTS/SHIPSHIELDIMPACT.SCENE.MBIN" />
+      </Property>
+      <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="3" />
+      <Property name="Scale" value="16" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="3" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpaceScale" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="AllowShootableDebris" value="False" />
+      <Property name="AllowDestructableDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="10000" />
+      <Property name="CamShakeCustomMaxDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="SHIPSHIELDBREAK" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/SPACECRAFT/SHIELDBREAK.SCENE.MBIN" />
+      </Property>
+      <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="3" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpaceScale" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="AllowShootableDebris" value="False" />
+      <Property name="AllowDestructableDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+      <Property name="CamShakeCustomMaxDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="SHIPSHIELDRECHA" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/SPACECRAFT/SHIELDRECHARGE.SCENE.MBIN" />
+      </Property>
+      <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="3" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpaceScale" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="AllowShootableDebris" value="False" />
+      <Property name="AllowDestructableDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+      <Property name="CamShakeCustomMaxDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="SHIPSTUN" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/COMMON/SHIPSTUN.SCENE.MBIN" />
+      </Property>
+      <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="3" />
+      <Property name="Scale" value="1" />
+      <Property name="DistanceScale" value="0.01" />
+      <Property name="DistanceScaleMax" value="2" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpaceScale" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="AllowShootableDebris" value="False" />
+      <Property name="AllowDestructableDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="0" />
+      <Property name="CamShakeCustomMaxDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="SHIPSHIELDLSRIM" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/IMPACTS/SHIPSHIELDLASERIMPACT.SCENE.MBIN" />
+      </Property>
+      <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="3" />
+      <Property name="Scale" value="4" />
+      <Property name="DistanceScale" value="0" />
+      <Property name="DistanceScaleMax" value="50" />
+      <Property name="CamShake" value="False" />
+      <Property name="CamShakeSpaceScale" value="False" />
+      <Property name="AllowTriggerActionOnDebris" value="False" />
+      <Property name="AllowShootableDebris" value="False" />
+      <Property name="AllowDestructableDebris" value="False" />
+      <Property name="MaxSpawnDistance" value="10000" />
+      <Property name="CamShakeCustomMaxDistance" value="0" />
+    </Property>
+    <Property value="GcExplosionData.xml">
+      <Property name="Id" value="SHPSHLDIMPWEAK" />
+      <Property name="Model" value="TkModelResource.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/IMPACTS/SHIPSHIELDIMPACTWEAK.SCENE.MBIN" />
+      </Property>
+      <Property name="AudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Debris" />
+      <Property name="Life" value="3" />
+      <Property name="Scale" value="8" />
       <Property name="DistanceScale" value="0" />
       <Property name="DistanceScaleMax" value="50" />
       <Property name="CamShake" value="False" />

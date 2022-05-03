@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.73.0)-->
+<!--File created using MBINCompiler version (3.87.0)-->
 <Data template="GcEnvironmentGlobals">
   <Property name="LODSettings">
     <Property value="TkLODSettingsData.xml">
@@ -219,7 +219,7 @@
     <Property name="ForwardScatteringG" value="0.9" />
     <Property name="BackwardScatteringG" value="0.3" />
     <Property name="DarkOutlineScalar" value="1" />
-    <Property name="AnimationScale" value="18" />
+    <Property name="AnimationScale" value="20" />
     <Property name="WindOffset" value="Vector2f.xml">
       <Property name="x" value="0.5" />
       <Property name="y" value="0.5" />
@@ -250,16 +250,16 @@
       <Property name="z" value="0.3" />
       <Property name="t" value="1" />
     </Property>
-    <Property name="DetailScale" value="9" />
+    <Property name="DetailScale" value="6" />
     <Property name="ErosionEdgeSize" value="0.5" />
-    <Property name="CloudDistortion" value="30" />
-    <Property name="CloudDistortionScale" value="2" />
+    <Property name="CloudDistortion" value="50" />
+    <Property name="CloudDistortionScale" value="1" />
     <Property name="MaxIterations" value="128" />
     <Property name="RayMinimumY" value="0" />
     <Property name="LODDistance" value="0" />
-    <Property name="HorizonFadeStartAlpha" value="-1.0" />
-    <Property name="HorizonFadeScalar" value="0.8" />
-    <Property name="HorizonDistance" value="11165" />
+    <Property name="HorizonFadeStartAlpha" value="0" />
+    <Property name="HorizonFadeScalar" value="0.25" />
+    <Property name="HorizonDistance" value="14165" />
   </Property>
   <Property name="SenseProbingValueSmoothingTime" value="0.25" />
   <Property name="SenseProbingValueSmoothingTimeMed" value="0.8" />
@@ -268,10 +268,10 @@
   <Property name="IndoorsLightingWeightOverhead" value="1.7" />
   <Property name="IndoorsLightingWeightTowardsSun" value="0.2" />
   <Property name="IndoorsLightingWeightGround" value="0.3" />
-  <Property name="IndoorsLightingTransitionTime" value="3.2" />
+  <Property name="IndoorsLightingTransitionTime" value="1.2" />
   <Property name="IndoorsLightingThreshold" value="0.8" />
   <Property name="IndoorsLightingPlanetMax" value="0.42" />
-  <Property name="IndoorsLightingAbandonedFreighterMax" value="0.3" />
+  <Property name="IndoorsLightingAbandonedFreighterMax" value="1" />
   <Property name="IndoorsLightingNexusMax" value="1" />
   <Property name="MaxElevation" value="500" />
   <Property name="SphereLodTextureScale" value="2048" />
@@ -284,7 +284,7 @@
   <Property name="LocationStableTime" value="0.5" />
   <Property name="InterestStableTime" value="2.5" />
   <Property name="TemperatureSmoothTime" value="0.5" />
-  <Property name="SunFactorMin" value="0.1" />
+  <Property name="SunFactorMin" value="0.4" />
   <Property name="ExposureSurfaceContrib" value="0.3" />
   <Property name="ExposureSurfaceDistMax" value="10" />
   <Property name="ExposureGroundFactorAddMul" value="0.5" />
@@ -292,10 +292,10 @@
     <Property name="x" value="35" />
     <Property name="y" value="180" />
   </Property>
-  <Property name="DailyTempChangePercent" value="0.8" />
+  <Property name="DailyTempChangePercent" value="0.25" />
   <Property name="SpaceTemperature" value="0" />
-  <Property name="AbandonedFreighterMinTemperature" value="-62" />
-  <Property name="AbandonedFreighterMaxTemperature" value="-10" />
+  <Property name="AbandonedFreighterMinTemperature" value="-42" />
+  <Property name="AbandonedFreighterMaxTemperature" value="-20" />
   <Property name="ShipTemperature" value="19" />
   <Property name="SpaceRadiation" value="5" />
   <Property name="ShipRadiation" value="0" />
@@ -315,8 +315,8 @@
   <Property name="SpaceStationStateBoundingBoxScaler" value="0.75" />
   <Property name="AtmosphereSpaceRadius" value="10800" />
   <Property name="SpawnLowerAtmosphereRadiusMultiplier" value="0.75" />
-  <Property name="TerrainFadeTime" value="3" />
-  <Property name="TerrainFadeTimeInShip" value="3" />
+  <Property name="TerrainFadeTime" value="2" />
+  <Property name="TerrainFadeTimeInShip" value="2" />
   <Property name="CreatureFadeTime" value="1.5" />
   <Property name="FloraFadeTimeMin" value="0.6" />
   <Property name="FloraFadeTimeMax" value="2.25" />
@@ -332,18 +332,18 @@
   <Property name="DoFHeightMax" value="300" />
   <Property name="SunClampHeightMin" value="300" />
   <Property name="SunClampHeightMax" value="390" />
-  <Property name="HeavyAirFadeDistance" value="500" />
+  <Property name="HeavyAirFadeDistance" value="200" />
   <Property name="HeavyAirFadeInTime" value="1.5" />
   <Property name="HeavyAirFadeOutTime" value="1.5" />
   <Property name="PlanetFlipDistance" value="2000" />
   <Property name="PlanetEffectEndDistance" value="10000" />
-  <Property name="AsteroidFadeHeightMin" value="300" />
-  <Property name="AsteroidFadeHeightMax" value="2300" />
+  <Property name="AsteroidFadeHeightMin" value="700" />
+  <Property name="AsteroidFadeHeightMax" value="1300" />
   <Property name="AsteroidScale" value="0.25" />
-  <Property name="SmallAsteroidScale" value="4" />
+  <Property name="SmallAsteroidScale" value="0.15" />
   <Property name="AsteroidMinRotate" value="0" />
-  <Property name="AsteroidMaxRotate" value="0.4" />
-  <Property name="MinWaterReflections" value="0.9" />
+  <Property name="AsteroidMaxRotate" value="0.07" />
+  <Property name="MinWaterReflections" value="0.2" />
   <Property name="SpacePlanetFogStrength">
     <Property value="5" />
     <Property value="5" />
@@ -370,21 +370,21 @@
     <Property value="10000" />
   </Property>
   <Property name="FarBlendLength" value="10000" />
-  <Property name="IndoorColourBlendTime" value="40" />
+  <Property name="IndoorColourBlendTime" value="0.6" />
   <Property name="IndoorAmbientColour" value="Colour.xml">
-    <Property name="R" value="0.0" />
-    <Property name="G" value="0.0" />
-    <Property name="B" value="0.0" />
-    <Property name="A" value="1" />
+    <Property name="R" value="0" />
+    <Property name="G" value="0" />
+    <Property name="B" value="0" />
+    <Property name="A" value="0" />
   </Property>
   <Property name="LightDirectionHeight" value="4000" />
   <Property name="LightDirectionBlend" value="5000" />
   <Property name="LightColourHeight" value="5000" />
   <Property name="LightColourBlend" value="5000" />
-  <Property name="ObjectSpawnFirstRadius" value="5" />
+  <Property name="ObjectSpawnFirstRadius" value="4" />
   <Property name="ObjectSpawnFirstDotCheck" value="0.99" />
-  <Property name="ObjectSpawnDetailRadius" value="0.8" />
-  <Property name="InteractionRadius" value="0.05" />
+  <Property name="ObjectSpawnDetailRadius" value="0.5" />
+  <Property name="InteractionRadius" value="0.15" />
   <Property name="EnableWind" value="True" />
   <Property name="ShearWindSettings">
     <Property value="TkShearWindData.xml">
@@ -398,8 +398,8 @@
       <Property name="WindShearToDotLdsFactor" value="0.3" />
       <Property name="WindStrengthToVertpush" value="0.1" />
       <Property name="Octave0" value="TkShearWindOctaveData.xml">
-        <Property name="MinStrength" value="0.05" />
-        <Property name="MaxStrength" value="0.2" />
+        <Property name="MinStrength" value="0.1" />
+        <Property name="MaxStrength" value="0.15" />
         <Property name="StrengthVariationFreq" value="1" />
         <Property name="WaveSize" value="5" />
         <Property name="WaveFrequency" value="1.7" />
@@ -420,7 +420,7 @@
       </Property>
       <Property name="Octave3" value="TkShearWindOctaveData.xml">
         <Property name="MinStrength" value="0" />
-        <Property name="MaxStrength" value="0.1" />
+        <Property name="MaxStrength" value="0" />
         <Property name="StrengthVariationFreq" value="1" />
         <Property name="WaveSize" value="2" />
         <Property name="WaveFrequency" value="18" />
@@ -513,7 +513,7 @@
   <Property name="EnvironmentProperties" value="GcEnvironmentProperties.xml">
     <Property name="FlightFogheight" value="50" />
     <Property name="FlightFogBlend" value="250" />
-    <Property name="CloudHeightMin" value="750" />
+    <Property name="CloudHeightMin" value="650" />
     <Property name="CloudHeightMax" value="900" />
     <Property name="HeavyAirHeightMin" value="700" />
     <Property name="HeavyAirHeightMax" value="750" />
@@ -539,15 +539,15 @@
     <Property name="SkyPositionHeight" value="3000" />
     <Property name="SkyPositionBlendLength" value="1000" />
     <Property name="SolarSystemLUTHeight" value="1000" />
-    <Property name="SolarSystemLUTBlendLength" value="700" />
-    <Property name="AtmosphereStartHeight" value="800" />
+    <Property name="SolarSystemLUTBlendLength" value="500" />
+    <Property name="AtmosphereStartHeight" value="600" />
     <Property name="AtmosphereEndHeight" value="1276" />
     <Property name="StratosphereHeight" value="4000" />
   </Property>
   <Property name="EnvironmentPrimeProperties" value="GcEnvironmentProperties.xml">
     <Property name="FlightFogheight" value="50" />
     <Property name="FlightFogBlend" value="250" />
-    <Property name="CloudHeightMin" value="1250" />
+    <Property name="CloudHeightMin" value="1500" />
     <Property name="CloudHeightMax" value="1500" />
     <Property name="HeavyAirHeightMin" value="1900" />
     <Property name="HeavyAirHeightMax" value="1950" />

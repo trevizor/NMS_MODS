@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (3.82.0)-->
 <Data template="GcGraphicsGlobals">
-  <Property name="LUTDistanceFlightMultiplier" value="10" />
-  <Property name="SunLightIntensity" value="1" />
+  <Property name="LUTDistanceFlightMultiplier" value="15" />
+  <Property name="SunLightIntensity" value="2.5" />
   <Property name="SunLightBlendTime" value="8" />
   <Property name="HBAOBias" value="0.1" />
-  <Property name="HBAORadius" value="3" />
-  <Property name="HBAOIntensity" value="3" />
+  <Property name="HBAORadius" value="2" />
+  <Property name="HBAOIntensity" value="5" />
   <Property name="LightShaftProperties" value="GcLightShaftProperties.xml">
     <Property name="LightShaftScattering" value="0.15" />
-    <Property name="LightShaftStrength" value="3" />
+    <Property name="LightShaftStrength" value="1" />
     <Property name="LightShaftBottom" value="0" />
-    <Property name="LightShaftTop" value="0.75" />
+    <Property name="LightShaftTop" value="0.25" />
     <Property name="LightShaftColourBottom" value="Colour.xml">
-      <Property name="R" value="0.263" />
-      <Property name="G" value="0.263" />
-      <Property name="B" value="0.263" />
+      <Property name="R" value="0.531" />
+      <Property name="G" value="0.493" />
+      <Property name="B" value="0.443" />
       <Property name="A" value="1" />
     </Property>
     <Property name="LightShaftColourTop" value="Colour.xml">
-      <Property name="R" value="0.263" />
-      <Property name="G" value="0.263" />
-      <Property name="B" value="0.263" />
+      <Property name="R" value="0.04" />
+      <Property name="G" value="0.034" />
+      <Property name="B" value="0.03" />
       <Property name="A" value="1" />
     </Property>
   </Property>
@@ -43,7 +43,7 @@
       <Property name="A" value="1" />
     </Property>
   </Property>
-  <Property name="SunRayDensity" value="0.8" />
+  <Property name="SunRayDensity" value="0.9" />
   <Property name="SunRayDecay" value="1" />
   <Property name="SunRayExposure" value="0.1" />
   <Property name="SunRayWeight" value="0.1" />
@@ -51,7 +51,7 @@
   <Property name="Contrast" value="1" />
   <Property name="Saturation" value="1" />
   <Property name="Redo_On" value="False" />
-  <Property name="Redo_LightIntensity" value="1" />
+  <Property name="Redo_LightIntensity" value="2" />
   <Property name="Redo_SkyIntensity" value="1" />
   <Property name="Redo_BounceIntensity" value="1" />
   <Property name="New_BounceLightWarp" value="1" />
@@ -1026,7 +1026,7 @@
     <Property name="AnisotropyLevel" value="_4" />
     <Property name="AntiAliasing" value="TAA" />
   </Property>
-  <Property name="EnableVariableUpdate" value="True" />
+  <Property name="EnableVariableUpdate" value="False" />
   <Property name="VariableUpdatePeriodModifers">
     <Property value="1" />
     <Property value="0.8" />

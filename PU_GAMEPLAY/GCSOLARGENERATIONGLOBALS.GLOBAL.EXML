@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.75.0)-->
+<!--File created using MBINCompiler version (3.88.0)-->
 <Data template="GcSolarGenerationGlobals">
   <Property name="MassiveSolarSystems" value="True" />
   <Property name="SolarSystemSize" value="Vector3f.xml">
@@ -123,11 +123,11 @@
     <Property name="Blue" value="0.4" />
     <Property name="Red" value="0.95" />
   </Property>
-  <Property name="PirateSystemProbability"> 
-    <Property name="Yellow" value="0.25" /> 
-    <Property name="Green" value="0.15" />  
-    <Property name="Blue" value="0.15" /> 
-    <Property name="Red" value="0.5" /> 
+  <Property name="PirateSystemProbability">
+    <Property name="Yellow" value="0.25" />
+    <Property name="Green" value="0.15" />
+    <Property name="Blue" value="0.15" />
+    <Property name="Red" value="0.5" />
   </Property>
   <Property name="CivilianTraderSpaceshipsCacheCount" value="20" />
   <Property name="SpaceshipSpawnFreqMultipliers">
@@ -242,6 +242,8 @@
       </Property>
     </Property>
   </Property>
+  <Property name="PirateClassShipOverrideProbability" value="0" />
+  <Property name="PirateClassShipOverrideProbabilityPirateSystem" value="0" />
   <Property name="PlanetRingProbability" value="0.2" />
   <Property name="PlanetRingsMin" value="GcPlanetRingData.xml">
     <Property name="HasRings" value="False" />
