@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.88.0)-->
+<!--File created using MBINCompiler version (3.91.0)-->
 <Data template="GcCameraGlobals">
   <Property name="OffsetCombatCameraHorizontal" value="False" />
   <Property name="OffsetCombatCameraHorizontalAngle" value="-90" />
@@ -42,8 +42,8 @@
     <Property name="LookForFocusInMasterModel" value="False" />
   </Property>
   <Property name="Cameras">
-    <Property value="GcCameraFollowSettings.xml"> 
-      <Property name="Name" value="TEST" /> <!-- TEST Property -->
+    <Property value="GcCameraFollowSettings.xml">
+      <Property name="Name" value="TEST" />
       <Property name="MinSpeed" value="4" />
       <Property name="SpeedRange" value="20" />
       <Property name="OffsetX" value="0" />
@@ -109,8 +109,8 @@
       <Property name="CustomBlendTime" value="0.5" />
     </Property>
   </Property>
-  <Property name="VehicleCamHmd" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="VEHICLE_HMD" /> <!-- VEHICLE_HMD VehicleCamHmd -->
+  <Property name="VehicleCamHmd" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="VEHICLE_HMD" />
     <Property name="MinSpeed" value="0" />
     <Property name="SpeedRange" value="200" />
     <Property name="OffsetX" value="0" />
@@ -175,8 +175,8 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="VehicleCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="VEHICLE" /> <!-- VEHICLE VehicleCam -->
+  <Property name="VehicleCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="VEHICLE" />
     <Property name="MinSpeed" value="0" />
     <Property name="SpeedRange" value="200" />
     <Property name="OffsetX" value="0" />
@@ -241,8 +241,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="0" />
   </Property>
-  <Property name="MechFirstPersonCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="MECHFP" /> <!-- MECHFP MechFirstPersonCam -->
+  <Property name="MechFirstPersonCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="MECHFP" />
     <Property name="MinSpeed" value="0" />
     <Property name="SpeedRange" value="200" />
     <Property name="OffsetX" value="0" />
@@ -347,7 +347,7 @@
   <Property name="FlybyInVehicleDamper" value="0.5" />
   <Property name="BinocularFlashTime" value="0.24" />
   <Property name="BinocularFlashStrength" value="0.9" />
-  <Property name="MinFirstPersonCameraPitch" value="15" />
+  <Property name="MinFirstPersonCameraPitch" value="80" />
   <Property name="MaxFirstPersonCameraPitch" value="89" />
   <Property name="MaxCreatureRidingYaw" value="90" />
   <Property name="ThirdPersonRotationBackAdjustAngleMin" value="10" />
@@ -375,8 +375,8 @@
   <Property name="MechCameraExtraYPostLandingBlendTime" value="2" />
   <Property name="MechCameraArmShootOffsetY" value="1" />
   <Property name="MechCameraCombatFakeSpeed" value="14" />
-  <Property name="CharacterUnarmedCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="CHARUNARMED" /> <!-- OUTDOORCHAR CharacterUnarmedCam -->
+  <Property name="CharacterUnarmedCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="CHARUNARMED" />
     <Property name="MinSpeed" value="4" />
     <Property name="SpeedRange" value="20" />
     <Property name="OffsetX" value="0" />
@@ -385,7 +385,7 @@
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
     <Property name="BackMinDistance" value="10" />
-    <Property name="BackMaxDistance" value="10" /> 
+    <Property name="BackMaxDistance" value="10" />
     <Property name="BackSlopeAdjust" value="-1.8" />
     <Property name="BackSlopeRotationAdjust" value="-1.8" />
     <Property name="UpMinDistance" value="0" />
@@ -441,8 +441,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="2" />
   </Property>
-  <Property name="CharacterRunCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="CHARRUN" /> <!-- OUTDOORCHAR CharacterRunCam -->
+  <Property name="CharacterRunCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="CHARRUN" />
     <Property name="MinSpeed" value="4" />
     <Property name="SpeedRange" value="8.8" />
     <Property name="OffsetX" value="0" />
@@ -451,7 +451,7 @@
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
     <Property name="BackMinDistance" value="10" />
-    <Property name="BackMaxDistance" value="10" /> 
+    <Property name="BackMaxDistance" value="10" />
     <Property name="BackSlopeAdjust" value="-1.8" />
     <Property name="BackSlopeRotationAdjust" value="-1.8" />
     <Property name="UpMinDistance" value="0" />
@@ -507,8 +507,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="2" />
   </Property>
-  <Property name="CharacterCombatCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="CHARCOMBAT" /> <!-- CHARINDOOR CharacterCombatCam -->
+  <Property name="CharacterCombatCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="CHARCOMBAT" />
     <Property name="MinSpeed" value="10" />
     <Property name="SpeedRange" value="20" />
     <Property name="OffsetX" value="0.8" />
@@ -517,7 +517,7 @@
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
     <Property name="BackMinDistance" value="2" />
-    <Property name="BackMaxDistance" value="3" /> 
+    <Property name="BackMaxDistance" value="3" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -573,8 +573,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="2" />
   </Property>
-  <Property name="CharacterMiningCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="CHARCOMBAT" /> <!-- CHARINDOOR CharacterMiningCam -->
+  <Property name="CharacterMiningCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="CHARCOMBAT" />
     <Property name="MinSpeed" value="10" />
     <Property name="SpeedRange" value="20" />
     <Property name="OffsetX" value="0.8" />
@@ -583,7 +583,7 @@
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
     <Property name="BackMinDistance" value="2" />
-    <Property name="BackMaxDistance" value="3" /> 
+    <Property name="BackMaxDistance" value="3" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -639,8 +639,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="2" />
   </Property>
-  <Property name="CharacterIndoorCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="CHARINDOOR" /> <!-- CHARINDOOR CharacterIndoorCam -->
+  <Property name="CharacterIndoorCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="CHARINDOOR" />
     <Property name="MinSpeed" value="10" />
     <Property name="SpeedRange" value="1" />
     <Property name="OffsetX" value="0.8" />
@@ -649,7 +649,7 @@
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
     <Property name="BackMinDistance" value="2" />
-    <Property name="BackMaxDistance" value="3" /> 
+    <Property name="BackMaxDistance" value="3" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -705,8 +705,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="2" />
   </Property>
-  <Property name="CharacterAbandCombatCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="FREIGHTCOMBAT" /> <!-- CHARINDOOR CharacterAbandCombatCam -->
+  <Property name="CharacterAbandCombatCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="FREIGHTCOMBAT" />
     <Property name="MinSpeed" value="1" />
     <Property name="SpeedRange" value="20" />
     <Property name="OffsetX" value="0.8" />
@@ -715,7 +715,7 @@
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
     <Property name="BackMinDistance" value="2" />
-    <Property name="BackMaxDistance" value="3" /> 
+    <Property name="BackMaxDistance" value="3" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -771,8 +771,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="2" />
   </Property>
-  <Property name="CharacterAbandCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="ABANDFREIGHT" /> <!-- CHARINDOOR CharacterAbandCam -->
+  <Property name="CharacterAbandCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="ABANDFREIGHT" />
     <Property name="MinSpeed" value="1" />
     <Property name="SpeedRange" value="20" />
     <Property name="OffsetX" value="0.8" />
@@ -781,7 +781,7 @@
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
     <Property name="BackMinDistance" value="2" />
-    <Property name="BackMaxDistance" value="3" /> 
+    <Property name="BackMaxDistance" value="3" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -837,8 +837,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="2" />
   </Property>
-  <Property name="CharacterNexusCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="CHARNEXUS" /> <!-- OUTDOORCHAR CharacterNexusCam -->
+  <Property name="CharacterNexusCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="CHARNEXUS" />
     <Property name="MinSpeed" value="10" />
     <Property name="SpeedRange" value="1" />
     <Property name="OffsetX" value="0.8" />
@@ -847,7 +847,7 @@
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
     <Property name="BackMinDistance" value="2" />
-    <Property name="BackMaxDistance" value="3" /> 
+    <Property name="BackMaxDistance" value="3" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -903,8 +903,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="2" />
   </Property>
-  <Property name="CharacterAirborneCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="CHARJETPACK" /> <!-- OUTDOORCHAR CharacterAirborneCam -->
+  <Property name="CharacterAirborneCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="CHARJETPACK" />
     <Property name="MinSpeed" value="5" />
     <Property name="SpeedRange" value="10" />
     <Property name="OffsetX" value="0" />
@@ -913,7 +913,7 @@
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
     <Property name="BackMinDistance" value="10" />
-    <Property name="BackMaxDistance" value="10" /> 
+    <Property name="BackMaxDistance" value="10" />
     <Property name="BackSlopeAdjust" value="-1.8" />
     <Property name="BackSlopeRotationAdjust" value="-1.8" />
     <Property name="UpMinDistance" value="0" />
@@ -969,8 +969,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="2" />
   </Property>
-  <Property name="CharacterMeleeBoostCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="CHARMELBOOST" /> <!-- OUTDOORCHAR CharacterMeleeBoostCam -->
+  <Property name="CharacterMeleeBoostCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="CHARMELBOOST" />
     <Property name="MinSpeed" value="4" />
     <Property name="SpeedRange" value="8.8" />
     <Property name="OffsetX" value="0" />
@@ -979,7 +979,7 @@
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
     <Property name="BackMinDistance" value="10" />
-    <Property name="BackMaxDistance" value="10" /> 
+    <Property name="BackMaxDistance" value="10" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -1035,8 +1035,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="2" />
   </Property>
-  <Property name="CharacterRocketBootsCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="ROCKETBOOTS" /> <!-- OUTDOORCHAR CharacterRocketBootsCam -->
+  <Property name="CharacterRocketBootsCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="ROCKETBOOTS" />
     <Property name="MinSpeed" value="5" />
     <Property name="SpeedRange" value="10" />
     <Property name="OffsetX" value="0" />
@@ -1045,7 +1045,7 @@
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
     <Property name="BackMinDistance" value="10" />
-    <Property name="BackMaxDistance" value="10" /> 
+    <Property name="BackMaxDistance" value="10" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -1101,8 +1101,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="2" />
   </Property>
-  <Property name="CharacterRocketBootsChargeCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="ROCKETBOOTSCHRG" /> <!-- ROCKETBOOTSCHRG CharacterRocketBootsChargeCam -->
+  <Property name="CharacterRocketBootsChargeCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="ROCKETBOOTSCHRG" />
     <Property name="MinSpeed" value="4" />
     <Property name="SpeedRange" value="20" />
     <Property name="OffsetX" value="0.8" />
@@ -1167,8 +1167,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="2" />
   </Property>
-  <Property name="CharacterFallingCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="CHARFALL" /> <!-- OUTDOORCHAR CharacterFallingCam -->
+  <Property name="CharacterFallingCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="CHARFALL" />
     <Property name="MinSpeed" value="5" />
     <Property name="SpeedRange" value="20" />
     <Property name="OffsetX" value="0" />
@@ -1177,7 +1177,7 @@
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
     <Property name="BackMinDistance" value="10" />
-    <Property name="BackMaxDistance" value="10" /> 
+    <Property name="BackMaxDistance" value="10" />
     <Property name="BackSlopeAdjust" value="-1.8" />
     <Property name="BackSlopeRotationAdjust" value="-1.8" />
     <Property name="UpMinDistance" value="0" />
@@ -1233,8 +1233,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="2" />
   </Property>
-  <Property name="CharacterAirborneCombatCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="CHARJETCOMBAT" /> <!-- OUTDOORCHAR CharacterAirborneCombatCam -->
+  <Property name="CharacterAirborneCombatCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="CHARJETCOMBAT" />
     <Property name="MinSpeed" value="5" />
     <Property name="SpeedRange" value="10" />
     <Property name="OffsetX" value="0" />
@@ -1243,7 +1243,7 @@
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
     <Property name="BackMinDistance" value="10" />
-    <Property name="BackMaxDistance" value="10" /> 
+    <Property name="BackMaxDistance" value="10" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -1299,8 +1299,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="2" />
   </Property>
-  <Property name="CharacterSpaceCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="CHARSPACE" /> <!-- OUTDOORCHAR CharacterSpaceCam -->
+  <Property name="CharacterSpaceCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="CHARSPACE" />
     <Property name="MinSpeed" value="5" />
     <Property name="SpeedRange" value="10" />
     <Property name="OffsetX" value="0" />
@@ -1309,7 +1309,7 @@
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
     <Property name="BackMinDistance" value="10" />
-    <Property name="BackMaxDistance" value="10" /> 
+    <Property name="BackMaxDistance" value="10" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -1365,8 +1365,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="2" />
   </Property>
-  <Property name="CharacterSteepSlopeCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="CHARSLOPE" /> <!-- OUTDOORCHAR CharacterSteepSlopeCam -->
+  <Property name="CharacterSteepSlopeCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="CHARSLOPE" />
     <Property name="MinSpeed" value="4" />
     <Property name="SpeedRange" value="20" />
     <Property name="OffsetX" value="0" />
@@ -1375,7 +1375,7 @@
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
     <Property name="BackMinDistance" value="10" />
-    <Property name="BackMaxDistance" value="10" /> 
+    <Property name="BackMaxDistance" value="10" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -1431,8 +1431,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="2" />
   </Property>
-  <Property name="CharacterUnderwaterCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="CHARWATER" /> <!-- OUTDOORCHAR CharacterUnderwaterCam -->
+  <Property name="CharacterUnderwaterCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="CHARWATER" />
     <Property name="MinSpeed" value="4" />
     <Property name="SpeedRange" value="3" />
     <Property name="OffsetX" value="0" />
@@ -1441,7 +1441,7 @@
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
     <Property name="BackMinDistance" value="10" />
-    <Property name="BackMaxDistance" value="10" /> 
+    <Property name="BackMaxDistance" value="10" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -1497,8 +1497,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="2" />
   </Property>
-  <Property name="CharacterUnderwaterCombatCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="WETCOMBAT" /> <!-- WETCOMBAT CharacterUnderwaterCombatCam -->
+  <Property name="CharacterUnderwaterCombatCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="WETCOMBAT" />
     <Property name="MinSpeed" value="4" />
     <Property name="SpeedRange" value="8" />
     <Property name="OffsetX" value="0.7" />
@@ -1563,8 +1563,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="2" />
   </Property>
-  <Property name="CharacterUnderwaterJetpackCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="WETJETPACK" /> <!-- WETJETPACK CharacterUnderwaterJetpackCam -->
+  <Property name="CharacterUnderwaterJetpackCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="WETJETPACK" />
     <Property name="MinSpeed" value="5" />
     <Property name="SpeedRange" value="8" />
     <Property name="OffsetX" value="0.6" />
@@ -1629,8 +1629,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="2" />
   </Property>
-  <Property name="CharacterGrabbedCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="GRABBED" /> <!-- GRABBED CharacterGrabbedCam -->
+  <Property name="CharacterGrabbedCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="GRABBED" />
     <Property name="MinSpeed" value="4" />
     <Property name="SpeedRange" value="3" />
     <Property name="OffsetX" value="0" />
@@ -1695,8 +1695,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="2" />
   </Property>
-  <Property name="CharacterSitCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="CHARSIT" /> <!-- CHARSIT CharacterSitCam -->
+  <Property name="CharacterSitCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="CHARSIT" />
     <Property name="MinSpeed" value="4" />
     <Property name="SpeedRange" value="1" />
     <Property name="OffsetX" value="0.4" />
@@ -1705,7 +1705,7 @@
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
     <Property name="BackMinDistance" value="4" />
-    <Property name="BackMaxDistance" value="4.9" /> 
+    <Property name="BackMaxDistance" value="4.9" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -1761,8 +1761,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="2" />
   </Property>
-  <Property name="CharacterRideCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="CHARRIDEMED" /> <!-- CHARRIDEMED CharacterRideCam -->
+  <Property name="CharacterRideCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="CHARRIDEMED" />
     <Property name="MinSpeed" value="1" />
     <Property name="SpeedRange" value="3" />
     <Property name="OffsetX" value="0" />
@@ -1771,7 +1771,7 @@
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
     <Property name="BackMinDistance" value="10" />
-    <Property name="BackMaxDistance" value="15" /> 
+    <Property name="BackMaxDistance" value="15" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -1827,8 +1827,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="2" />
   </Property>
-  <Property name="CharacterRideCamMedium" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="CHARRIDEMED" /> <!-- CHARRIDEMED CharacterRideCamMedium -->
+  <Property name="CharacterRideCamMedium" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="CHARRIDEMED" />
     <Property name="MinSpeed" value="1" />
     <Property name="SpeedRange" value="3" />
     <Property name="OffsetX" value="0" />
@@ -1837,7 +1837,7 @@
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
     <Property name="BackMinDistance" value="10" />
-    <Property name="BackMaxDistance" value="15" /> 
+    <Property name="BackMaxDistance" value="15" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -1893,8 +1893,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="2" />
   </Property>
-  <Property name="CharacterRideCamLarge" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="CHARRIDELRG" /> <!-- CHARRIDELRG CharacterRideCamLarge -->
+  <Property name="CharacterRideCamLarge" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="CHARRIDELRG" />
     <Property name="MinSpeed" value="1" />
     <Property name="SpeedRange" value="3" />
     <Property name="OffsetX" value="0" />
@@ -1903,7 +1903,7 @@
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
     <Property name="BackMinDistance" value="18" />
-    <Property name="BackMaxDistance" value="25" /> 
+    <Property name="BackMaxDistance" value="25" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -1959,8 +1959,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="2" />
   </Property>
-  <Property name="CharacterRideCamHuge" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="CHARRIDEHUGE" /> <!-- CHARRIDEHUGE CharacterRideCamHuge -->
+  <Property name="CharacterRideCamHuge" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="CHARRIDEHUGE" />
     <Property name="MinSpeed" value="1" />
     <Property name="SpeedRange" value="3" />
     <Property name="OffsetX" value="0" />
@@ -1969,7 +1969,7 @@
     <Property name="OffsetYSlopeExtra" value="0.5" />
     <Property name="OffsetZFlat" value="0" />
     <Property name="BackMinDistance" value="38" />
-    <Property name="BackMaxDistance" value="50" /> 
+    <Property name="BackMaxDistance" value="50" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
     <Property name="UpMinDistance" value="0" />
@@ -2027,8 +2027,8 @@
   </Property>
   <Property name="ThirdPersonCameraChangeBlendTime" value="0.8" />
   <Property name="ThirdPersonCameraChangeMinimumBlend" value="0.8" />
-  <Property name="BuggyFollowCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="BUGGY" /> <!-- BUGGY BuggyFollowCam -->
+  <Property name="BuggyFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="BUGGY" />
     <Property name="MinSpeed" value="5" />
     <Property name="SpeedRange" value="25" />
     <Property name="OffsetX" value="0" />
@@ -2093,8 +2093,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="0" />
   </Property>
-  <Property name="HovercraftFollowCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="HOVERCRAFT" /> <!-- HOVERCRAFT HovercraftFollowCam -->
+  <Property name="HovercraftFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="HOVERCRAFT" />
     <Property name="MinSpeed" value="12" />
     <Property name="SpeedRange" value="15" />
     <Property name="OffsetX" value="0" />
@@ -2159,8 +2159,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="0" />
   </Property>
-  <Property name="SubmarineFollowCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="SUBMARINE" /> <!-- SUBMARINE SubmarineFollowCam -->
+  <Property name="SubmarineFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="SUBMARINE" />
     <Property name="MinSpeed" value="14" />
     <Property name="SpeedRange" value="20" />
     <Property name="OffsetX" value="0" />
@@ -2225,8 +2225,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="0" />
   </Property>
-  <Property name="BikeFollowCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="VEHICLE" /> <!-- VEHICLE BikeFollowCam -->
+  <Property name="BikeFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="VEHICLE" />
     <Property name="MinSpeed" value="5" />
     <Property name="SpeedRange" value="30" />
     <Property name="OffsetX" value="0" />
@@ -2291,8 +2291,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="0" />
   </Property>
-  <Property name="WheeledBikeFollowCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="VEHICLE" /> <!-- VEHICLE WheeledBikeFollowCam -->
+  <Property name="WheeledBikeFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="VEHICLE" />
     <Property name="MinSpeed" value="5" />
     <Property name="SpeedRange" value="30" />
     <Property name="OffsetX" value="0" />
@@ -2357,8 +2357,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="0" />
   </Property>
-  <Property name="TruckFollowCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="VEHICLE" /> <!-- VEHICLE TruckFollowCam -->
+  <Property name="TruckFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="VEHICLE" />
     <Property name="MinSpeed" value="8" />
     <Property name="SpeedRange" value="14" />
     <Property name="OffsetX" value="0" />
@@ -2423,8 +2423,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="0" />
   </Property>
-  <Property name="MechFollowCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="MECH" /> <!-- MECH MechFollowCam -->
+  <Property name="MechFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="MECH" />
     <Property name="MinSpeed" value="2" />
     <Property name="SpeedRange" value="2" />
     <Property name="OffsetX" value="2.2" />
@@ -2489,8 +2489,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="1" />
   </Property>
-  <Property name="MechCombatCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="MECH" /> <!-- MECH MechCombatCam -->
+  <Property name="MechCombatCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="MECH" />
     <Property name="MinSpeed" value="2" />
     <Property name="SpeedRange" value="2" />
     <Property name="OffsetX" value="5" />
@@ -2555,8 +2555,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="1" />
   </Property>
-  <Property name="MechJetpackCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="MECHJETPACK" /> <!-- MECHJETPACK MechJetpackCam -->
+  <Property name="MechJetpackCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="MECHJETPACK" />
     <Property name="MinSpeed" value="1" />
     <Property name="SpeedRange" value="14" />
     <Property name="OffsetX" value="1" />
@@ -2621,8 +2621,8 @@
     <Property name="UseCustomBlendTime" value="True" />
     <Property name="CustomBlendTime" value="1" />
   </Property>
-  <Property name="SpaceshipFollowCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="SPACESHIP" /> <!-- STARSHIP SpaceshipFollowCam -->
+  <Property name="SpaceshipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="SPACESHIP" />
     <Property name="MinSpeed" value="10" />
     <Property name="SpeedRange" value="200" />
     <Property name="OffsetX" value="0" />
@@ -2687,8 +2687,8 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="DropshipFollowCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="DROPSHIP" /> <!-- STARSHIP DropshipFollowCam -->
+  <Property name="DropshipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="DROPSHIP" />
     <Property name="MinSpeed" value="10" />
     <Property name="SpeedRange" value="200" />
     <Property name="OffsetX" value="0" />
@@ -2753,8 +2753,8 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="ShuttleFollowCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="SHUTTLE" /> <!-- STARSHIP ShuttleFollowCam -->
+  <Property name="ShuttleFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="SHUTTLE" />
     <Property name="MinSpeed" value="10" />
     <Property name="SpeedRange" value="200" />
     <Property name="OffsetX" value="0" />
@@ -2819,8 +2819,8 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="RoyalShipFollowCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="ROYAL" /> <!-- STARSHIP RoyalShipFollowCam -->
+  <Property name="RoyalShipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="ROYAL" />
     <Property name="MinSpeed" value="10" />
     <Property name="SpeedRange" value="300" />
     <Property name="OffsetX" value="0" />
@@ -2885,8 +2885,8 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="SailShipFollowCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="SAILSHIP" /> <!-- STARSHIP SailShipFollowCam -->
+  <Property name="SailShipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="SAILSHIP" />
     <Property name="MinSpeed" value="10" />
     <Property name="SpeedRange" value="300" />
     <Property name="OffsetX" value="0" />
@@ -2951,8 +2951,8 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="ScienceShipFollowCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="SCIENCE" /> <!-- STARSHIP ScienceShipFollowCam -->
+  <Property name="ScienceShipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="SCIENCE" />
     <Property name="MinSpeed" value="10" />
     <Property name="SpeedRange" value="300" />
     <Property name="OffsetX" value="0" />
@@ -3017,8 +3017,8 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="AlienShipFollowCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="ALIENSHIP" /> <!-- STARSHIP AlienShipFollowCam -->
+  <Property name="AlienShipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="ALIENSHIP" />
     <Property name="MinSpeed" value="10" />
     <Property name="SpeedRange" value="200" />
     <Property name="OffsetX" value="0" />
@@ -3083,8 +3083,8 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="BuildingIndoorsCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="BUILDINGINDOOR" /> <!-- BUILDINGINDOOR BuildingIndoorsCam -->
+  <Property name="BuildingIndoorsCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="BUILDINGINDOOR" />
     <Property name="MinSpeed" value="10" />
     <Property name="SpeedRange" value="1" />
     <Property name="OffsetX" value="0.4" />
@@ -3149,8 +3149,8 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="BuildingOutdoorsCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="BUILDINGOUTDOOR" /> <!-- BUILDINGOUTDOOR BuildingOutdoorsCam -->
+  <Property name="BuildingOutdoorsCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="BUILDINGOUTDOOR" />
     <Property name="MinSpeed" value="4" />
     <Property name="SpeedRange" value="20" />
     <Property name="OffsetX" value="0" />
@@ -3215,8 +3215,8 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-  <Property name="BuildingUnderwaterCam" value="GcCameraFollowSettings.xml"> 
-    <Property name="Name" value="BUILDINGUNDERWA" /> <!-- BUILDINGUNDERWA BuildingUnderwaterCam -->
+  <Property name="BuildingUnderwaterCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="BUILDINGUNDERWA" />
     <Property name="MinSpeed" value="4" />
     <Property name="SpeedRange" value="3" />
     <Property name="OffsetX" value="0.55" />
@@ -5888,9 +5888,59 @@
       <Property name="FOVStrength" value="0" />
       <Property name="FOVFrequency" value="0" />
     </Property>
+    <Property value="GcCameraShakeData.xml">
+      <Property name="Name" value="LIVE_FRG_DEVOUR" />
+      <Property name="TimeStart" value="0" />
+      <Property name="TotalTime" value="9" />
+      <Property name="DecayRate" value="-1" />
+      <Property name="StrengthScale" value="6" />
+      <Property name="ThirdPersonDamp" value="0.5" />
+      <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
+        <Property name="Active" value="True" />
+        <Property name="ShakeStrength" value="0.05" />
+        <Property name="ShakeFrequency" value="7" />
+        <Property name="VibrateStrength" value="0.04" />
+        <Property name="VibrateFrequency" value="7" />
+      </Property>
+      <Property name="MechanicalData" value="GcCameraShakeMechanicalData.xml">
+        <Property name="Active" value="False" />
+        <Property name="ShakeStrength" value="Vector3f.xml">
+          <Property name="x" value="0.01" />
+          <Property name="y" value="0" />
+          <Property name="z" value="0.01" />
+        </Property>
+        <Property name="ShakeFrequency" value="Vector3f.xml">
+          <Property name="x" value="7" />
+          <Property name="y" value="1.7" />
+          <Property name="z" value="7" />
+        </Property>
+        <Property name="ExtraShakeFrequency" value="Vector3f.xml">
+          <Property name="x" value="1" />
+          <Property name="y" value="0" />
+          <Property name="z" value="11" />
+        </Property>
+        <Property name="VibrateStrength" value="Vector3f.xml">
+          <Property name="x" value="0.01" />
+          <Property name="y" value="0.2" />
+          <Property name="z" value="0" />
+        </Property>
+        <Property name="VibrateFrequency" value="Vector3f.xml">
+          <Property name="x" value="7" />
+          <Property name="y" value="8" />
+          <Property name="z" value="0" />
+        </Property>
+        <Property name="ExtraVibrateFrequency" value="Vector3f.xml">
+          <Property name="x" value="19" />
+          <Property name="y" value="3" />
+          <Property name="z" value="0" />
+        </Property>
+      </Property>
+      <Property name="FOVStrength" value="0" />
+      <Property name="FOVFrequency" value="0" />
+    </Property>
   </Property>
-  <Property name="BobAmountAbandFreighter" value="0.1" />
-  <Property name="BobFactorAbandFreighter" value="0.3" />
+  <Property name="BobAmountAbandFreighter" value="0.05" />
+  <Property name="BobFactorAbandFreighter" value="0.2" />
   <Property name="BobAmount" value="0.06" />
   <Property name="BobFactor" value="0.19" />
   <Property name="BobFocus" value="500" />

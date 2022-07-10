@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.88.0)-->
+<!--File created using MBINCompiler version (3.91.0)-->
 <Data template="GcPlayerGlobals">
   <Property name="ForceFreighterProcTechRandom" value="False" />
   <Property name="AlienPodAggroDecay" value="0.15" />
@@ -1068,8 +1068,8 @@
   </Property>
   <Property name="ShardResourceCollect" value="GcResourceCollectEffect.xml">
     <Property name="PlayerOffset" value="-0.2" />
-    <Property name="SizeMin" value="0.2" />
-    <Property name="SizeMax" value="0.3" />
+    <Property name="SizeMin" value="0.1" />
+    <Property name="SizeMax" value="0.4" />
     <Property name="RotateMin" value="1.2" />
     <Property name="RotateMax" value="5" />
     <Property name="StartOffsetMin" value="1" />
@@ -1077,9 +1077,9 @@
     <Property name="TimeMin" value="0.7" />
     <Property name="TimeMax" value="1.5" />
     <Property name="StartSpeedMin" value="1" />
-    <Property name="StartSpeedMax" value="2" />
-    <Property name="OffsetMin" value="2" />
-    <Property name="OffsetMax" value="3" />
+    <Property name="StartSpeedMax" value="3" />
+    <Property name="OffsetMin" value="3" />
+    <Property name="OffsetMax" value="4" />
   </Property>
   <Property name="MissileSwarm" value="GcBoidData.xml">
     <Property name="Coherence" value="2" />
@@ -1097,17 +1097,17 @@
   <Property name="StickData" value="GcPlayerStickData.xml">
     <Property name="AcceleratorStickPoint" value="0" />
     <Property name="AcceleratorMinTime" value="0" />
-    <Property name="Accelerate" value="0" />
+    <Property name="Accelerate" value="4" />
     <Property name="AccelerateAngle" value="5" />
-    <Property name="Turn" value="2.4" />
-    <Property name="TurnFast" value="12" />
-    <Property name="StickyFactor" value="0.5" />
+    <Property name="Turn" value="4" />
+    <Property name="TurnFast" value="4" />
+    <Property name="StickyFactor" value="0.25" />
   </Property>
-  <Property name="AutoAim" value="False" />
+  <Property name="AutoAim" value="True" />
   <Property name="AutoAimMaxAccelFactor" value="0.8" />
   <Property name="AutoAimFixedInterceptSpeed" value="200" />
-  <Property name="AutoAimTimeOut" value="0.5" />
-  <Property name="AutoAimMaxAngle" value="30" />
+  <Property name="AutoAimTimeOut" value="0.25" />
+  <Property name="AutoAimMaxAngle" value="15" />
   <Property name="AutoAimMinScreenDistance" value="25" />
   <Property name="AutoAimRadiusExtra" value="2" />
   <Property name="AutoAimStickyRailgun" value="0.85" />
@@ -1345,11 +1345,11 @@
   </Property>
   <Property name="WeaponLowerDelay" value="20" />
   <Property name="WeaponHolsterDelay" value="50" />
-  <Property name="WeaponLag" value="0.1" />
+  <Property name="WeaponLag" value="1.0" />
   <Property name="WeaponBobFactorWalkDeadZone" value="1" />
-  <Property name="WeaponBobFactorWalk" value="0.2" />
+  <Property name="WeaponBobFactorWalk" value="0.1" />
   <Property name="WeaponBobFactorRun" value="0.3" />
-  <Property name="WeaponBobBlendTime" value="0.5" />
+  <Property name="WeaponBobBlendTime" value="0.25" />
   <Property name="WeaponBobBlendCurve" value="TkCurveType.xml">
     <Property name="Curve" value="Squared" />
   </Property>
@@ -1357,7 +1357,7 @@
   <Property name="WeaponCannonMinUnchargedShotThreshold" value="0.2" />
   <Property name="WeaponCannonMinUnchargedShotTime" value="0.5" />
   <Property name="WeaponGrenadeTime" value="0.5" />
-  <Property name="WeaponGunTime" value="0.12" />
+  <Property name="WeaponGunTime" value="0.001" />
   <Property name="WeaponRailFireTime" value="0.4" />
   <Property name="WeaponRailRechargeTime" value="0.8" />
   <Property name="MaxBuildHeight" value="64" />

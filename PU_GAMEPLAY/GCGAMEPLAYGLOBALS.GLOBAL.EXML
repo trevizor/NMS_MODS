@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.88.0)-->
+<!--File created using MBINCompiler version (3.91.0)-->
 <Data template="GcGameplayGlobals">
   <Property name="CargoShieldStrength" value="0.5" />
   <Property name="PirateRaidAccelerator" value="1.8" />
@@ -12,6 +12,7 @@
   <Property name="PoliceAcceleratorNoCargoWealthy" value="0.6" />
   <Property name="PoliceAcceleratorNoCargoNormal" value="0.3" />
   <Property name="PoliceAcceleratorNoCargoSkipScanOdds" value="0.75" />
+  <Property name="InfestedPlanetDeepSpaceFlybyMultiplier" value="3.5" />
   <Property name="SmugglerSellingMarkup" value="2.66" />
   <Property name="IllegalTechProductTradingMod" value="0.2" />
   <Property name="CombatLevelBestWeaponBias" value="0.66" />
@@ -1685,10 +1686,10 @@
   <Property name="PlayHitEffectsOnZeroDamage" value="True" />
   <Property name="MaxSpawnTime" value="5" />
   <Property name="ResourceParticleFile" value="MODELS/COMMON/PROJECTILES/RESOURCESHARD.SCENE.MBIN" />
-  <Property name="ResourceParticleSpeed" value="3" />
-  <Property name="ResourceParticleSpread" value="8" />
-  <Property name="ResourceParticleMaxNum" value="12" />
-  <Property name="ResourceParticleMinNum" value="1" />
+  <Property name="ResourceParticleSpeed" value="0.5" />
+  <Property name="ResourceParticleSpread" value="10" />
+  <Property name="ResourceParticleMaxNum" value="18" />
+  <Property name="ResourceParticleMinNum" value="4" />
   <Property name="MapHeight" value="700" />
   <Property name="MapOffset" value="1400" />
   <Property name="MapTargetOffset" value="15" />
@@ -1702,7 +1703,7 @@
   <Property name="HUDScaleFarTarget" value="20" />
   <Property name="HUDReticuleMoveBack" value="0.01" />
   <Property name="HUDReticuleMoveAim" value="0.08" />
-  <Property name="MouseSensitivity" value="0.10" />
+  <Property name="MouseSensitivity" value="0.3" />
   <Property name="MouseSensitivityShip" value="15" />
   <Property name="MouseSensitivityVehicle" value="15" />
   <Property name="PainTime" value="1.5" />
@@ -1721,7 +1722,7 @@
   <Property name="GunOffsetAggressiveX" value="0" />
   <Property name="GunOffsetAggressiveY" value="0.05" />
   <Property name="GunOffsetAggressiveZ" value="0" />
-  <Property name="GunDownAngle" value="20" />
+  <Property name="GunDownAngle" value="0" />
   <Property name="GunUpAngle" value="10" />
   <Property name="BarrelOffset" value="0.01" />
   <Property name="HitOffset" value="0.3" />
