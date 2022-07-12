@@ -120,15 +120,15 @@
     <Property name="A" value="1" />
   </Property>
   <Property name="DayLightColour" value="Colour.xml">
-    <Property name="R" value="1" />
-    <Property name="G" value="1" />
-    <Property name="B" value="0.904" />
+    <Property name="R" value="0.9" />
+    <Property name="G" value="0.9" />
+    <Property name="B" value="0.9" />
     <Property name="A" value="1" />
   </Property>
   <Property name="NightLightColour" value="Colour.xml">
-    <Property name="R" value="0.123" />
+    <Property name="R" value="0.452" />
     <Property name="G" value="0.452" />
-    <Property name="B" value="0.86" />
+    <Property name="B" value="0.452" />
     <Property name="A" value="1" />
   </Property>
   <Property name="DuskLightColour" value="Colour.xml">
@@ -198,11 +198,11 @@
   <Property name="SpaceAtmosphereThickness" value="0.4" />
   <Property name="WaterHeavyAirAlpha" value="0.2" />
   <Property name="NightHorizonBlendMin" value="0.6" />
-  <Property name="NightHorizonBlendMax" value="0.6" />
+  <Property name="NightHorizonBlendMax" value="0.8" />
   <Property name="NightSkyBlendMin" value="0.1" />
-  <Property name="NightSkyBlendMax" value="0.1" />
+  <Property name="NightSkyBlendMax" value="0.3" />
   <Property name="NightLightBlendMin" value="0.65" />
-  <Property name="NightLightBlendMax" value="0.65" />
+  <Property name="NightLightBlendMax" value="0.9" />
   <Property name="ForceNightBlend" value="False" />
   <Property name="ForceNightBlendValue" value="0" />
   <Property name="NoAtmosphereFogStrength" value="0.3" />
@@ -218,23 +218,23 @@
       <Property name="NightHorizonMultiplier" value="1.554867" />
       <Property name="HorizonFadeSpeed" value="0.6" />
       <Property name="DayHorizonTightness" value="0" />
-      <Property name="SunSize" value="0.08" />
-      <Property name="SunStrength" value="0.115806" />
-      <Property name="SunSurroundSize" value="10" />
-      <Property name="SunSurroundStrength" value="10" />
-      <Property name="UpperSkyFadeSpeed" value="4" />
-      <Property name="UpperSkyFadeOffset" value="0.1" />
+      <Property name="SunSize" value="0.78" />
+      <Property name="SunStrength" value="0.000055806" />
+      <Property name="SunSurroundSize" value="16" />
+      <Property name="SunSurroundStrength" value="26" />
+      <Property name="UpperSkyFadeSpeed" value="1" />
+      <Property name="UpperSkyFadeOffset" value="0" />
     </Property>
     <Property name="PlanetFog" value="GcFogProperties.xml">
       <Property name="FogStrength" value="0.04" />
-      <Property name="FogMax" value="1" />
+      <Property name="FogMax" value="0.8" />
       <Property name="FogColourStrength" value="10" />
       <Property name="FogColourMax" value="1" />
-      <Property name="HeightFogStrength" value="0.08" />
-      <Property name="HeightFogFadeOutStrength" value="0.25" />
+      <Property name="HeightFogStrength" value="0.1" />
+      <Property name="HeightFogFadeOutStrength" value="0.01" />
       <Property name="HeightFogOffset" value="0" />
       <Property name="HeightFogMax" value="0.8" />
-      <Property name="FogHeight" value="128" />
+      <Property name="FogHeight" value="32" />
       <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
         <Property name="Settings">
           <Property value="GcHeavyAirSettingValues.xml">
@@ -319,14 +319,14 @@
     </Property>
     <Property name="PlanetExtremeFog" value="GcFogProperties.xml">
       <Property name="FogStrength" value="0.5" />
-      <Property name="FogMax" value="0.9" />
+      <Property name="FogMax" value="0.8" />
       <Property name="FogColourStrength" value="6" />
       <Property name="FogColourMax" value="1" />
-      <Property name="HeightFogStrength" value="0.3" />
-      <Property name="HeightFogFadeOutStrength" value="0.1" />
+      <Property name="HeightFogStrength" value="0.1" />
+      <Property name="HeightFogFadeOutStrength" value="0.01" />
       <Property name="HeightFogOffset" value="0" />
       <Property name="HeightFogMax" value="0.6" />
-      <Property name="FogHeight" value="8" />
+      <Property name="FogHeight" value="32" />
       <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
         <Property name="Settings">
           <Property value="GcHeavyAirSettingValues.xml">
@@ -411,14 +411,14 @@
     </Property>
     <Property name="PlanetStormFog" value="GcFogProperties.xml">
       <Property name="FogStrength" value="1.5" />
-      <Property name="FogMax" value="0.95" />
+      <Property name="FogMax" value="0.8" />
       <Property name="FogColourStrength" value="2.5" />
       <Property name="FogColourMax" value="1" />
-      <Property name="HeightFogStrength" value="0.5" />
-      <Property name="HeightFogFadeOutStrength" value="0.3" />
+      <Property name="HeightFogStrength" value="0.1" />
+      <Property name="HeightFogFadeOutStrength" value="0.01" />
       <Property name="HeightFogOffset" value="0" />
       <Property name="HeightFogMax" value="0.6" />
-      <Property name="FogHeight" value="4" />
+      <Property name="FogHeight" value="32" />
       <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
         <Property name="Settings">
           <Property value="GcHeavyAirSettingValues.xml">
@@ -503,14 +503,14 @@
     </Property>
     <Property name="PlanetFlightFog" value="GcFogProperties.xml">
       <Property name="FogStrength" value="0.04" />
-      <Property name="FogMax" value="1" />
+      <Property name="FogMax" value="0.8" />
       <Property name="FogColourStrength" value="10" />
       <Property name="FogColourMax" value="1" />
-      <Property name="HeightFogStrength" value="0.15" />
-      <Property name="HeightFogFadeOutStrength" value="0.25" />
+      <Property name="HeightFogStrength" value="0.1" />
+      <Property name="HeightFogFadeOutStrength" value="0.01" />
       <Property name="HeightFogOffset" value="0" />
       <Property name="HeightFogMax" value="0.6" />
-      <Property name="FogHeight" value="128" />
+      <Property name="FogHeight" value="32" />
       <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
         <Property name="Settings">
           <Property value="GcHeavyAirSettingValues.xml">
@@ -602,23 +602,23 @@
       <Property name="NightHorizonMultiplier" value="1.554867" />
       <Property name="HorizonFadeSpeed" value="0.6" />
       <Property name="DayHorizonTightness" value="0" />
-      <Property name="SunSize" value="0.08" />
-      <Property name="SunStrength" value="0.115806" />
-      <Property name="SunSurroundSize" value="10" />
-      <Property name="SunSurroundStrength" value="10" />
-      <Property name="UpperSkyFadeSpeed" value="4" />
-      <Property name="UpperSkyFadeOffset" value="0.1" />
+      <Property name="SunSize" value="0.78" />
+      <Property name="SunStrength" value="0.000055806" />
+      <Property name="SunSurroundSize" value="16" />
+      <Property name="SunSurroundStrength" value="26" />
+      <Property name="UpperSkyFadeSpeed" value="1" />
+      <Property name="UpperSkyFadeOffset" value="0" />
     </Property>
     <Property name="PlanetFog" value="GcFogProperties.xml">
       <Property name="FogStrength" value="0.035" />
       <Property name="FogMax" value="0.8" />
       <Property name="FogColourStrength" value="10" />
       <Property name="FogColourMax" value="0.9" />
-      <Property name="HeightFogStrength" value="1" />
-      <Property name="HeightFogFadeOutStrength" value="1" />
+      <Property name="HeightFogStrength" value="0.1" />
+      <Property name="HeightFogFadeOutStrength" value="0.01" />
       <Property name="HeightFogOffset" value="0" />
-      <Property name="HeightFogMax" value="0.9" />
-      <Property name="FogHeight" value="1024" />
+      <Property name="HeightFogMax" value="0.5" />
+      <Property name="FogHeight" value="32" />
       <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
         <Property name="Settings">
           <Property value="GcHeavyAirSettingValues.xml">
@@ -703,14 +703,14 @@
     </Property>
     <Property name="PlanetExtremeFog" value="GcFogProperties.xml">
       <Property name="FogStrength" value="0.5" />
-      <Property name="FogMax" value="0.9" />
+      <Property name="FogMax" value="0.8" />
       <Property name="FogColourStrength" value="6" />
       <Property name="FogColourMax" value="1" />
-      <Property name="HeightFogStrength" value="0" />
-      <Property name="HeightFogFadeOutStrength" value="0.1" />
+      <Property name="HeightFogStrength" value="0.1" />
+      <Property name="HeightFogFadeOutStrength" value="0.01" />
       <Property name="HeightFogOffset" value="0" />
-      <Property name="HeightFogMax" value="0" />
-      <Property name="FogHeight" value="512" />
+      <Property name="HeightFogMax" value="0.4" />
+      <Property name="FogHeight" value="32" />
       <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
         <Property name="Settings">
           <Property value="GcHeavyAirSettingValues.xml">
@@ -795,14 +795,14 @@
     </Property>
     <Property name="PlanetStormFog" value="GcFogProperties.xml">
       <Property name="FogStrength" value="1.5" />
-      <Property name="FogMax" value="0.95" />
+      <Property name="FogMax" value="0.8" />
       <Property name="FogColourStrength" value="2.5" />
       <Property name="FogColourMax" value="1" />
-      <Property name="HeightFogStrength" value="0.5" />
-      <Property name="HeightFogFadeOutStrength" value="0.3" />
+      <Property name="HeightFogStrength" value="0.1" />
+      <Property name="HeightFogFadeOutStrength" value="0.01" />
       <Property name="HeightFogOffset" value="0" />
       <Property name="HeightFogMax" value="0.6" />
-      <Property name="FogHeight" value="4" />
+      <Property name="FogHeight" value="32" />
       <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
         <Property name="Settings">
           <Property value="GcHeavyAirSettingValues.xml">
@@ -890,11 +890,11 @@
       <Property name="FogMax" value="0.8" />
       <Property name="FogColourStrength" value="10" />
       <Property name="FogColourMax" value="1" />
-      <Property name="HeightFogStrength" value="0.15" />
-      <Property name="HeightFogFadeOutStrength" value="0.25" />
+      <Property name="HeightFogStrength" value="0.1" />
+      <Property name="HeightFogFadeOutStrength" value="0.01" />
       <Property name="HeightFogOffset" value="0" />
-      <Property name="HeightFogMax" value="0.6" />
-      <Property name="FogHeight" value="1024" />
+      <Property name="HeightFogMax" value="0.9" />
+      <Property name="FogHeight" value="32" />
       <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
         <Property name="Settings">
           <Property value="GcHeavyAirSettingValues.xml">
@@ -980,14 +980,14 @@
   </Property>
   <Property name="AbandonedFreighterFog" value="GcFogProperties.xml">
     <Property name="FogStrength" value="0.025" />
-    <Property name="FogMax" value="1" />
+    <Property name="FogMax" value="0.8" />
     <Property name="FogColourStrength" value="0" />
     <Property name="FogColourMax" value="1" />
-    <Property name="HeightFogStrength" value="0" />
-    <Property name="HeightFogFadeOutStrength" value="0" />
+    <Property name="HeightFogStrength" value="0.1" />
+    <Property name="HeightFogFadeOutStrength" value="0.01" />
     <Property name="HeightFogOffset" value="0" />
     <Property name="HeightFogMax" value="0" />
-    <Property name="FogHeight" value="128" />
+    <Property name="FogHeight" value="32" />
     <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
       <Property name="Settings">
         <Property value="GcHeavyAirSettingValues.xml">
@@ -1094,7 +1094,7 @@
     <Property name="AtmosphereThickness" value="0.28" />
     <Property name="HorizonMultiplier" value="1" />
     <Property name="HorizonFadeSpeed" value="1" />
-    <Property name="PlanetFogStrength" value="10" />
+    <Property name="PlanetFogStrength" value="0.5" />
     <Property name="SpaceFogStrength" value="0.04" />
     <Property name="SpaceFogColourStrength" value="0" />
     <Property name="SpaceFogColour2Strength" value="0" />
@@ -1141,7 +1141,7 @@
     <Property name="AtmosphereThickness" value="0.28" />
     <Property name="HorizonMultiplier" value="1" />
     <Property name="HorizonFadeSpeed" value="1" />
-    <Property name="PlanetFogStrength" value="2.5" />
+    <Property name="PlanetFogStrength" value="0.5" />
     <Property name="SpaceFogStrength" value="0.04" />
     <Property name="SpaceFogColourStrength" value="0" />
     <Property name="SpaceFogColour2Strength" value="0" />
