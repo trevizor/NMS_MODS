@@ -313,11 +313,11 @@
   <Property name="GroundWalkForceMultiplier" value="13" />
   <Property name="GroundWalkBrake" value="3.5" />
   <Property name="GroundWalkBrakeWhileMoving" value="2" />
-  <Property name="GroundWalkSpeed" value="3.3" />
+  <Property name="GroundWalkSpeed" value="3.5" />
   <Property name="GroundWalkSpeedTeleportHmd" value="3.8" />
   <Property name="GroundRunSpeed" value="9" />
   <Property name="GroundWalkSpeedLowG" value="1.7" />
-  <Property name="GroundRunSpeedLowG" value="3.4" />
+  <Property name="GroundRunSpeedLowG" value="3.5" />
   <Property name="GroundWalkRecoverySpeedDamper" value="0.1" />
   <Property name="HandSmoothMinAngle" value="3" />
   <Property name="HandSmoothAngleRange" value="6" />
@@ -840,7 +840,7 @@
   <Property name="TraderStayCloseLockBaseOffset" value="Vector3f.xml">
     <Property name="x" value="5" />
     <Property name="y" value="5" />
-    <Property name="z" value="0" />
+    <Property name="z" value="10" />
   </Property>
   <Property name="TraderHealthFightThreshold" value="75" />
   <Property name="TraderCommunicationBanMinTime" value="120" />
@@ -1076,7 +1076,7 @@
     <Property name="StartOffsetMax" value="1" />
     <Property name="TimeMin" value="0.7" />
     <Property name="TimeMax" value="1.5" />
-    <Property name="StartSpeedMin" value="1" />
+    <Property name="StartSpeedMin" value="0.5" />
     <Property name="StartSpeedMax" value="3" />
     <Property name="OffsetMin" value="3" />
     <Property name="OffsetMax" value="4" />
@@ -1407,20 +1407,20 @@
   <Property name="ExertionSmoothTime" value="6" />
   <Property name="ExertionFromPainTime" value="5" />
   <Property name="AnimWalkSpeed" value="1.5" />
-  <Property name="AnimRunSpeed" value="4" />
+  <Property name="AnimRunSpeed" value="4.4" />
   <Property name="AnimWalkToRunSpeed" value="4.5" />
   <Property name="AnimWalkBlendPoint" value="0.05" />
   <Property name="AnimRunBlendPoint" value="0.1" />
   <Property name="MaxSlopeAngle" value="89" />
-  <Property name="SlopeSlidingSpeed" value="-12" />
+  <Property name="SlopeSlidingSpeed" value="-6" />
   <Property name="SlopeSlideBrake" value="0" />
-  <Property name="MinSlideTime" value="0.1" />
-  <Property name="MaxWalkableSlopeAngle" value="43" />
-  <Property name="MinSpidermanSlopeAngle" value="36" />
-  <Property name="MinTimeToHoldSpidermanPose" value="0.1" />
+  <Property name="MinSlideTime" value="0.01" />
+  <Property name="MaxWalkableSlopeAngle" value="47" />
+  <Property name="MinSpidermanSlopeAngle" value="45" />
+  <Property name="MinTimeToHoldSpidermanPose" value="0" />
   <Property name="MaxSpidermanSlopeAngle" value="90" />
   <Property name="MaxClingableSlopeAngle" value="81" />
-  <Property name="MinimumPushOffForceToSlide" value="0.85" />
+  <Property name="MinimumPushOffForceToSlide" value="1.1" />
   <Property name="FreeJetpackSlopeAngle" value="65" />
   <Property name="FreeJetpackSlopeAnglePrime" value="45" />
   <Property name="FullClipReloadSpeedMultiplier" value="2" />

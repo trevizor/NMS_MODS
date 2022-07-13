@@ -8,11 +8,11 @@
     <Property name="FogMax" value="0.93" />
     <Property name="FogColourStrength" value="1" />
     <Property name="FogColourMax" value="1" />
-    <Property name="HeightFogStrength" value="0.1" />
-    <Property name="HeightFogFadeOutStrength" value="0.001" />
-    <Property name="HeightFogOffset" value="-1" />
+    <Property name="HeightFogStrength" value="0.007" />
+    <Property name="HeightFogFadeOutStrength" value="1.5" />
+    <Property name="HeightFogOffset" value="5" />
     <Property name="HeightFogMax" value="0.3" />
-    <Property name="FogHeight" value="64" />
+    <Property name="FogHeight" value="32" />
     <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
       <Property name="Settings">
         <Property value="GcHeavyAirSettingValues.xml">
@@ -96,15 +96,15 @@
     <Property name="RainWetness" value="0" />
   </Property>
   <Property name="FlightFog" value="GcFogProperties.xml">
-    <Property name="FogStrength" value="0.05" />
-    <Property name="FogMax" value="0.93" />
+    <!-- flight --><Property name="FogStrength" value="0.06" />
+    <Property name="FogMax" value="0.8" />
     <Property name="FogColourStrength" value="1" />
     <Property name="FogColourMax" value="1" />
-    <Property name="HeightFogStrength" value="0.1" />
-    <Property name="HeightFogFadeOutStrength" value="0.001" />
-    <Property name="HeightFogOffset" value="-1" />
+    <Property name="HeightFogStrength" value="0.007" />
+    <Property name="HeightFogFadeOutStrength" value="1.5" />
+    <Property name="HeightFogOffset" value="5" />
     <Property name="HeightFogMax" value="0.3" />
-    <Property name="FogHeight" value="64" />
+    <Property name="FogHeight" value="32" />
     <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
       <Property name="Settings">
         <Property value="GcHeavyAirSettingValues.xml">
@@ -192,11 +192,11 @@
     <Property name="FogMax" value="0.93" />
     <Property name="FogColourStrength" value="1" />
     <Property name="FogColourMax" value="1" />
-    <Property name="HeightFogStrength" value="0.1" />
-    <Property name="HeightFogFadeOutStrength" value="0.001" />
-    <Property name="HeightFogOffset" value="-1" />
+    <Property name="HeightFogStrength" value="0.007" />
+    <Property name="HeightFogFadeOutStrength" value="1.5" />
+    <Property name="HeightFogOffset" value="5" />
     <Property name="HeightFogMax" value="0.3" />
-    <Property name="FogHeight" value="64" />
+    <Property name="FogHeight" value="32" />
     <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
       <Property name="Settings">
         <Property value="GcHeavyAirSettingValues.xml">
@@ -284,11 +284,11 @@
     <Property name="FogMax" value="0.93" />
     <Property name="FogColourStrength" value="1" />
     <Property name="FogColourMax" value="1" />
-    <Property name="HeightFogStrength" value="0.1" />
-    <Property name="HeightFogFadeOutStrength" value="0.001" />
-    <Property name="HeightFogOffset" value="-1" />
+    <Property name="HeightFogStrength" value="0.007" />
+    <Property name="HeightFogFadeOutStrength" value="1.5" />
+    <Property name="HeightFogOffset" value="5" />
     <Property name="HeightFogMax" value="0.3" />
-    <Property name="FogHeight" value="64" />
+    <Property name="FogHeight" value="32" />
     <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
       <Property name="Settings">
         <Property value="GcHeavyAirSettingValues.xml">
@@ -567,15 +567,15 @@
     <Property value="GcStormProperties.xml">
       <Property name="Weighting" value="1" />
       <Property name="Fog" value="GcFogProperties.xml">
-        <Property name="FogStrength" value="6" />
+        <Property name="FogStrength" value="0.7" />
         <Property name="FogMax" value="0.93" />
         <Property name="FogColourStrength" value="1" />
         <Property name="FogColourMax" value="1" />
-        <Property name="HeightFogStrength" value="0.1" />
-        <Property name="HeightFogFadeOutStrength" value="0.001" />
-        <Property name="HeightFogOffset" value="-1" />
+        <Property name="HeightFogStrength" value="0.007" />
+        <Property name="HeightFogFadeOutStrength" value="1.5" />
+        <Property name="HeightFogOffset" value="5" />
         <Property name="HeightFogMax" value="0.3" />
-        <Property name="FogHeight" value="64" />
+        <Property name="FogHeight" value="32" />
         <Property name="HeavyAir" value="GcHeavyAirSetting.xml">
           <Property name="Settings">
             <Property value="GcHeavyAirSettingValues.xml">
@@ -650,60 +650,60 @@
             </Property>
           </Property>
         </Property>
-        <Property name="CloudRatio" value="0.55" />
-        <Property name="FullscreenEffect" value="0.65" />
-        <Property name="DepthOfField" value="1" />
-        <Property name="DepthOfFieldDistance" value="200" />
-        <Property name="DepthOfFieldFade" value="500" />
-        <Property name="IsRaining" value="False" />
-        <Property name="RainWetness" value="0" />
+        <Property name="CloudRatio" value="0" />
+        <Property name="FullscreenEffect" value="0" />
+        <Property name="DepthOfField" value="0.1" />
+        <Property name="DepthOfFieldDistance" value="100" />
+        <Property name="DepthOfFieldFade" value="800" />
+        <Property name="IsRaining" value="True" />
+        <Property name="RainWetness" value="1" />
       </Property>
       <Property name="ColourModifiers" value="GcWeatherColourModifiers.xml">
         <Property name="SkyColour" value="GcColourModifier.xml">
           <Property name="ForceColour" value="False" />
           <Property name="ForceColourTo" value="Colour.xml">
-            <Property name="R" value="0.553" />
-            <Property name="G" value="0.478" />
-            <Property name="B" value="0.498" />
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
             <Property name="A" value="1" />
           </Property>
-          <Property name="OffsetSaturation" value="0" />
-          <Property name="OffsetValue" value="0" />
+          <Property name="OffsetSaturation" value="-0.1" />
+          <Property name="OffsetValue" value="-0.3" />
           <Property name="MultiplySaturation" value="1" />
           <Property name="MultiplyValue" value="1" />
         </Property>
         <Property name="SkyUpperColour" value="GcColourModifier.xml">
           <Property name="ForceColour" value="False" />
           <Property name="ForceColourTo" value="Colour.xml">
-            <Property name="R" value="1" />
-            <Property name="G" value="1" />
-            <Property name="B" value="1" />
+            <Property name="R" value="0" />
+            <Property name="G" value="0" />
+            <Property name="B" value="0" />
             <Property name="A" value="1" />
           </Property>
-          <Property name="OffsetSaturation" value="0" />
-          <Property name="OffsetValue" value="0" />
+          <Property name="OffsetSaturation" value="-0.3" />
+          <Property name="OffsetValue" value="-0.5" />
           <Property name="MultiplySaturation" value="1" />
           <Property name="MultiplyValue" value="1" />
         </Property>
         <Property name="HorizonColour" value="GcColourModifier.xml">
           <Property name="ForceColour" value="False" />
           <Property name="ForceColourTo" value="Colour.xml">
-            <Property name="R" value="1" />
-            <Property name="G" value="0.337" />
-            <Property name="B" value="0.337" />
+            <Property name="R" value="0.722" />
+            <Property name="G" value="0.722" />
+            <Property name="B" value="0.722" />
             <Property name="A" value="1" />
           </Property>
-          <Property name="OffsetSaturation" value="0" />
-          <Property name="OffsetValue" value="0" />
+          <Property name="OffsetSaturation" value="-0.1" />
+          <Property name="OffsetValue" value="-0.3" />
           <Property name="MultiplySaturation" value="1" />
           <Property name="MultiplyValue" value="1" />
         </Property>
         <Property name="SunColour" value="GcColourModifier.xml">
           <Property name="ForceColour" value="False" />
           <Property name="ForceColourTo" value="Colour.xml">
-            <Property name="R" value="0.988" />
-            <Property name="G" value="1" />
-            <Property name="B" value="0.824" />
+            <Property name="R" value="0.132" />
+            <Property name="G" value="0.723" />
+            <Property name="B" value="0.239" />
             <Property name="A" value="1" />
           </Property>
           <Property name="OffsetSaturation" value="0" />
@@ -714,39 +714,39 @@
         <Property name="FogColour" value="GcColourModifier.xml">
           <Property name="ForceColour" value="False" />
           <Property name="ForceColourTo" value="Colour.xml">
-            <Property name="R" value="0.851" />
-            <Property name="G" value="0.706" />
-            <Property name="B" value="0.706" />
+            <Property name="R" value="0.424" />
+            <Property name="G" value="0.384" />
+            <Property name="B" value="0.384" />
             <Property name="A" value="1" />
           </Property>
-          <Property name="OffsetSaturation" value="0" />
-          <Property name="OffsetValue" value="0" />
+          <Property name="OffsetSaturation" value="-0.1" />
+          <Property name="OffsetValue" value="-0.3" />
           <Property name="MultiplySaturation" value="1" />
           <Property name="MultiplyValue" value="1" />
         </Property>
         <Property name="HeightFogColour" value="GcColourModifier.xml">
           <Property name="ForceColour" value="False" />
           <Property name="ForceColourTo" value="Colour.xml">
-            <Property name="R" value="0.357" />
-            <Property name="G" value="0.843" />
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
             <Property name="B" value="1" />
             <Property name="A" value="1" />
           </Property>
-          <Property name="OffsetSaturation" value="0" />
-          <Property name="OffsetValue" value="0" />
+          <Property name="OffsetSaturation" value="-0.1" />
+          <Property name="OffsetValue" value="-0.3" />
           <Property name="MultiplySaturation" value="1" />
           <Property name="MultiplyValue" value="1" />
         </Property>
         <Property name="LightColour" value="GcColourModifier.xml">
           <Property name="ForceColour" value="False" />
           <Property name="ForceColourTo" value="Colour.xml">
-            <Property name="R" value="0.827" />
-            <Property name="G" value="0.525" />
-            <Property name="B" value="0.467" />
+            <Property name="R" value="0.5" />
+            <Property name="G" value="0.5" />
+            <Property name="B" value="0.5" />
             <Property name="A" value="1" />
           </Property>
-          <Property name="OffsetSaturation" value="0" />
-          <Property name="OffsetValue" value="0" />
+          <Property name="OffsetSaturation" value="-0.25" />
+          <Property name="OffsetValue" value="-0.6" />
           <Property name="MultiplySaturation" value="1" />
           <Property name="MultiplyValue" value="1" />
         </Property>
@@ -754,8 +754,8 @@
           <Property name="ForceColour" value="False" />
           <Property name="ForceColourTo" value="Colour.xml">
             <Property name="R" value="1" />
-            <Property name="G" value="0.843" />
-            <Property name="B" value="0.843" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
             <Property name="A" value="1" />
           </Property>
           <Property name="OffsetSaturation" value="0" />
@@ -766,13 +766,13 @@
         <Property name="CloudColour2" value="GcColourModifier.xml">
           <Property name="ForceColour" value="False" />
           <Property name="ForceColourTo" value="Colour.xml">
-            <Property name="R" value="0.345" />
-            <Property name="G" value="0.404" />
-            <Property name="B" value="0.42" />
+            <Property name="R" value="1" />
+            <Property name="G" value="1" />
+            <Property name="B" value="1" />
             <Property name="A" value="1" />
           </Property>
-          <Property name="OffsetSaturation" value="0" />
-          <Property name="OffsetValue" value="0" />
+          <Property name="OffsetSaturation" value="-0.3" />
+          <Property name="OffsetValue" value="-0.4" />
           <Property name="MultiplySaturation" value="1" />
           <Property name="MultiplyValue" value="1" />
         </Property>
@@ -819,9 +819,9 @@
           <Property value="GcColourModifier.xml">
             <Property name="ForceColour" value="False" />
             <Property name="ForceColourTo" value="Colour.xml">
-              <Property name="R" value="1" />
-              <Property name="G" value="1" />
-              <Property name="B" value="1" />
+              <Property name="R" value="0.5" />
+              <Property name="G" value="0.5" />
+              <Property name="B" value="0.56" />
               <Property name="A" value="1" />
             </Property>
             <Property name="OffsetSaturation" value="0" />
@@ -832,9 +832,9 @@
           <Property value="GcColourModifier.xml">
             <Property name="ForceColour" value="False" />
             <Property name="ForceColourTo" value="Colour.xml">
-              <Property name="R" value="1" />
-              <Property name="G" value="1" />
-              <Property name="B" value="1" />
+              <Property name="R" value="0.5" />
+              <Property name="G" value="0.5" />
+              <Property name="B" value="0.56" />
               <Property name="A" value="1" />
             </Property>
             <Property name="OffsetSaturation" value="0" />

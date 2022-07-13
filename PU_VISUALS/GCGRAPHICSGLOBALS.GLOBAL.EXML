@@ -3,7 +3,7 @@
 <Data template="GcGraphicsGlobals">
   <Property name="LUTDistanceFlightMultiplier" value="15" />
   <Property name="SunLightIntensity" value="6" />
-  <Property name="SunLightBlendTime" value="2" />
+  <Property name="SunLightBlendTime" value="1" />
   <Property name="HBAOBias" value="0.1" />
   <Property name="HBAORadius" value="2" />
   <Property name="HBAOIntensity" value="5" />
@@ -43,7 +43,7 @@
       <Property name="A" value="1" />
     </Property>
   </Property>
-  <Property name="SunRayDensity" value="1.2" />
+  <Property name="SunRayDensity" value="1.3" />
   <Property name="SunRayDecay" value="1" />
   <Property name="SunRayExposure" value="0.2" />
   <Property name="SunRayWeight" value="0.1" />
@@ -352,8 +352,8 @@
   <Property name="DOFFarPlaneSpace" value="80000" />
   <Property name="DOFFarFadeDistanceSpace" value="1000" />
   <Property name="DOFFarStrengthWater" value="0.3" />
-  <Property name="DOFFarPlaneWater" value="10" />
-  <Property name="DOFFarFadeDistanceWater" value="10" />
+  <Property name="DOFFarPlaneWater" value="5" />
+  <Property name="DOFFarFadeDistanceWater" value="200" />
   <Property name="DOFFarPlaneManual" value="50" />
   <Property name="DOFFarFadeDistanceManualIndoor" value="10" />
   <Property name="DOFFarFadeDistanceManual" value="50" />
@@ -483,7 +483,7 @@
   <Property name="SpaceScale" value="18000" />
   <Property name="SpaceMieFactor" value="0.3" />
   <Property name="SpaceSunFactor" value="20" />
-  <Property name="MaxSpaceFogStrength" value="0.5" />
+  <Property name="MaxSpaceFogStrength" value="0.9" />
   <Property name="ReflectionStrength" value="0.7" />
   <Property name="AlphaCutoutMin" value="0.45" />
   <Property name="AlphaCutoutMax" value="0.8" />
