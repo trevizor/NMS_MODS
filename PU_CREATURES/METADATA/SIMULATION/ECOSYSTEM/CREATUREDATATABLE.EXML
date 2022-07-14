@@ -1053,7 +1053,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="3.5" />
-      <Property name="MaxScale" value="4" />
+      <Property name="MaxScale" value="12" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
       <Property name="FurLengthModifierAtMaxScale" value="1" />
       <Property name="FurChance" value="0.3" />
@@ -1134,7 +1134,7 @@
               <Property name="ValidDescriptors" />
               <Property name="NavOffsetY" value="0" />
               <Property name="NavOffsetZ" value="0" />
-              <Property name="GroundHeightOffset" value="0" />
+              <Property name="GroundHeightOffset" value="-15" />
               <Property name="GroundEffect" value="" />
               <Property name="GroundEffectHeightForMaxAlpha" value="0.2" />
               <Property name="GroundEffectHeightForMinAlpha" value="0.6" />
@@ -1198,14 +1198,14 @@
           <Property name="MoveRange" value="150" />
           <Property name="MoveSpeedScale" value="1" />
           <Property name="TurnRadiusScale" value="2" />
-          <Property name="HeightMin" value="45" />
-          <Property name="HeightMax" value="100" />
+          <Property name="HeightMin" value="15" />
+          <Property name="HeightMax" value="40" />
           <Property name="HeightTime" value="2" />
           <Property name="Herd" value="False" />
         </Property>
         <Property value="GcCreatureSwarmData.xml">
           <Property name="MinCount" value="2" />
-          <Property name="MaxCount" value="3" />
+          <Property name="MaxCount" value="4" />
           <Property name="SwarmMovementSpeed" value="10" />
           <Property name="SwarmMovementRadius" value="1000" />
           <Property name="SwarmMovementType" value="Circle" />

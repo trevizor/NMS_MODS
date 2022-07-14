@@ -205,9 +205,9 @@
   <Property name="NightLightBlendMax" value="0.9" />
   <Property name="ForceNightBlend" value="False" />
   <Property name="ForceNightBlendValue" value="0" />
-  <Property name="NoAtmosphereFogStrength" value="0.3" />
-  <Property name="NoAtmosphereFogMax" value="0.97" />
-  <Property name="NoAtmosphereColourStrength" value="12" />
+  <Property name="NoAtmosphereFogStrength" value="0.05" />
+  <Property name="NoAtmosphereFogMax" value="0.1" />
+  <Property name="NoAtmosphereColourStrength" value="1" />
   <Property name="NoAtmosphereColourMax" value="1" />
   <Property name="LowFlightFogThreshold" value="0.5" />
   <Property name="PlanetProperties" value="GcPlanetSkyProperties.xml">
@@ -1091,15 +1091,15 @@
     <Property name="SunSize" value="0.005" />
     <Property name="StarVisibility" value="0.82" />
     <Property name="CenterPower" value="2.5" />
-    <Property name="AtmosphereThickness" value="0.28" />
+    <Property name="AtmosphereThickness" value="0.20" />
     <Property name="HorizonMultiplier" value="1" />
     <Property name="HorizonFadeSpeed" value="1" />
-    <Property name="PlanetFogStrength" value="1" />
+    <Property name="PlanetFogStrength" value="0" />
     <Property name="SpaceFogStrength" value="0.04" />
     <Property name="SpaceFogColourStrength" value="0" />
     <Property name="SpaceFogColour2Strength" value="0" />
-    <Property name="SpaceFogMax" value="0.4" />
-    <Property name="SpaceFogPlanetMax" value="0.5" />
+    <Property name="SpaceFogMax" value="0.6" />
+    <Property name="SpaceFogPlanetMax" value="0.7" />
     <Property name="NebulaFrequency" value="1.75" />
     <Property name="NebulaSparseness" value="0.7" />
     <Property name="NebulaWispyness" value="0.2" />
@@ -1141,12 +1141,12 @@
     <Property name="AtmosphereThickness" value="0.28" />
     <Property name="HorizonMultiplier" value="1" />
     <Property name="HorizonFadeSpeed" value="1" />
-    <Property name="PlanetFogStrength" value="1" />
+    <Property name="PlanetFogStrength" value="0" />
     <Property name="SpaceFogStrength" value="0.04" />
     <Property name="SpaceFogColourStrength" value="0" />
     <Property name="SpaceFogColour2Strength" value="0" />
-    <Property name="SpaceFogMax" value="0.4" />
-    <Property name="SpaceFogPlanetMax" value="0.5" />
+    <Property name="SpaceFogMax" value="0.6" />
+    <Property name="SpaceFogPlanetMax" value="0.7" />
     <Property name="NebulaFrequency" value="2.5" />
     <Property name="NebulaSparseness" value="0.9" />
     <Property name="NebulaWispyness" value="0.99" />
@@ -1618,7 +1618,7 @@
       <Property name="Seed" value="0" />
       <Property name="UseSeedValue" value="False" />
     </Property>
-    <Property name="Coverage1" value="0.5" />
+    <Property name="Coverage1" value="0.15" />
     <Property name="Coverage2" value="1" />
     <Property name="Coverage3" value="1" />
     <Property name="Offset1" value="0" />
@@ -1655,7 +1655,7 @@
   </Property>
   <Property name="BinaryStarChance" value="0.2" />
   <Property name="TernaryStarChance" value="0.05" />
-  <Property name="WeatherBloomGain" value="7.1" />
+  <Property name="WeatherBloomGain" value="1.1" />
   <Property name="WeatherBloomGainSpeed" value="0.875" />
   <Property name="WeatherBloomThreshold" value="0.0975" />
   <Property name="WeatherBloomThresholdSpeed" value="1.675" />
@@ -1663,7 +1663,7 @@
   <Property name="WeatherBloomCurve" value="TkCurveType.xml">
     <Property name="Curve" value="Squared" />
   </Property>
-  <Property name="MaxRainWetness" value="1" />
+  <Property name="MaxRainWetness" value="2" />
   <Property name="RainWetnessFadeInTime" value="15" />
   <Property name="RainWetnessFadeOutTime" value="30" />
 </Data>
