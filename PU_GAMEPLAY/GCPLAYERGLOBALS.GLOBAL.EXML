@@ -311,11 +311,11 @@
     <Property name="z" value="0.2" />
   </Property>
   <Property name="GroundWalkForceMultiplier" value="13" />
-  <Property name="GroundWalkBrake" value="3.5" />
+  <Property name="GroundWalkBrake" value="3" />
   <Property name="GroundWalkBrakeWhileMoving" value="2" />
-  <Property name="GroundWalkSpeed" value="3.5" />
+  <Property name="GroundWalkSpeed" value="3.1" />
   <Property name="GroundWalkSpeedTeleportHmd" value="3.8" />
-  <Property name="GroundRunSpeed" value="9" />
+  <Property name="GroundRunSpeed" value="7" />
   <Property name="GroundWalkSpeedLowG" value="1.7" />
   <Property name="GroundRunSpeedLowG" value="3.5" />
   <Property name="GroundWalkRecoverySpeedDamper" value="0.1" />
@@ -1187,7 +1187,7 @@
       <Property name="AlertInitiator" value="GcCreatureTypes.xml">
         <Property name="CreatureType" value="None" />
       </Property>
-      <Property name="HearingRange" value="7" />
+      <Property name="HearingRange" value="2" />
       <Property name="SightRange" value="7" />
       <Property name="SightAngle" value="50" />
       <Property name="FleeRange" value="12" />
@@ -1199,7 +1199,7 @@
       <Property name="AlertInitiator" value="GcCreatureTypes.xml">
         <Property name="CreatureType" value="None" />
       </Property>
-      <Property name="HearingRange" value="7" />
+      <Property name="HearingRange" value="2" />
       <Property name="SightRange" value="7" />
       <Property name="SightAngle" value="50" />
       <Property name="FleeRange" value="0" />
@@ -1211,7 +1211,7 @@
       <Property name="AlertInitiator" value="GcCreatureTypes.xml">
         <Property name="CreatureType" value="Predator" />
       </Property>
-      <Property name="HearingRange" value="7" />
+      <Property name="HearingRange" value="2" />
       <Property name="SightRange" value="7" />
       <Property name="SightAngle" value="50" />
       <Property name="FleeRange" value="12" />
@@ -1223,7 +1223,7 @@
       <Property name="AlertInitiator" value="GcCreatureTypes.xml">
         <Property name="CreatureType" value="None" />
       </Property>
-      <Property name="HearingRange" value="7" />
+      <Property name="HearingRange" value="2" />
       <Property name="SightRange" value="7" />
       <Property name="SightAngle" value="50" />
       <Property name="FleeRange" value="15" />
@@ -1247,10 +1247,10 @@
       <Property name="AlertInitiator" value="GcCreatureTypes.xml">
         <Property name="CreatureType" value="None" />
       </Property>
-      <Property name="HearingRange" value="25" />
+      <Property name="HearingRange" value="5" />
       <Property name="SightRange" value="25" />
-      <Property name="SightAngle" value="90" />
-      <Property name="FleeRange" value="15" />
+      <Property name="SightAngle" value="70" />
+      <Property name="FleeRange" value="0" />
     </Property>
     <Property value="GcCreatureAlertData.xml">
       <Property name="AlertTarget" value="GcCreatureTypes.xml">
@@ -1259,10 +1259,10 @@
       <Property name="AlertInitiator" value="GcCreatureTypes.xml">
         <Property name="CreatureType" value="None" />
       </Property>
-      <Property name="HearingRange" value="25" />
+      <Property name="HearingRange" value="5" />
       <Property name="SightRange" value="25" />
-      <Property name="SightAngle" value="90" />
-      <Property name="FleeRange" value="15" />
+      <Property name="SightAngle" value="70" />
+      <Property name="FleeRange" value="0" />
     </Property>
   </Property>
   <Property name="PainFlickerAmount" value="1.3" />
@@ -1415,7 +1415,7 @@
   <Property name="SlopeSlidingSpeed" value="-6" />
   <Property name="SlopeSlideBrake" value="0" />
   <Property name="MinSlideTime" value="0.01" />
-  <Property name="MaxWalkableSlopeAngle" value="47" />
+  <Property name="MaxWalkableSlopeAngle" value="60" />
   <Property name="MinSpidermanSlopeAngle" value="45" />
   <Property name="MinTimeToHoldSpidermanPose" value="0" />
   <Property name="MaxSpidermanSlopeAngle" value="90" />
@@ -1426,14 +1426,14 @@
   <Property name="FullClipReloadSpeedMultiplier" value="2" />
   <Property name="ReloadTapButtonSpeedIncrease" value="1" />
   <Property name="FootDustEffect" value="FOOTFROZEN" />
-  <Property name="FootDustScale" value="0.5" />
+  <Property name="FootDustScale" value="0.65" />
   <Property name="ClingBrakeMultiplier" value="1" />
   <Property name="ClingAngleThreshold" value="50" />
   <Property name="ClingSpeedThreshold" value="0.8" />
   <Property name="ClimbableStickinessAngle" value="30" />
   <Property name="MinUpAmount" value="0.4" />
   <Property name="FootOffset" value="0.2" />
-  <Property name="MaxFallSpeed" value="460" />
+  <Property name="MaxFallSpeed" value="860" />
   <Property name="PushForceDecay" value="40" />
   <Property name="LeanFwdMaxAngle" value="120" />
   <Property name="LeanBackMaxAngle" value="40" />
