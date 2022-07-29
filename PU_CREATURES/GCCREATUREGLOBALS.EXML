@@ -567,10 +567,10 @@
   <Property name="UncapSpawningforVideo" value="False" />
   <Property name="AllowSpawningOnscreen" value="False" />
   <Property name="ResourceSpawnTime" value="1" />
-  <Property name="TurnInPlaceIdleTime" value="15" />
-  <Property name="TurnInPlaceMaxAngle" value="15" />
-  <Property name="TurnInPlaceMinTime" value="5" />
-  <Property name="TurnInPlaceMaxSpeed" value="2" />
+  <Property name="TurnInPlaceIdleTime" value="0.3" />
+  <Property name="TurnInPlaceMaxAngle" value="5" />
+  <Property name="TurnInPlaceMinTime" value="0.05" />
+  <Property name="TurnInPlaceMaxSpeed" value="5" />
   <Property name="TurnInPlaceMaxSpeedIndoor" value="0.1" />
   <Property name="SceneTerrainSpawnMinDistance" value="0" />
   <Property name="CreatureMinAlignSpeed" value="0.05" />
@@ -582,9 +582,9 @@
   <Property name="CreatureMinRunTime" value="8" />
   <Property name="CreatureHearingRange" value="200" />
   <Property name="CreatureSightRange" value="100" />
-  <Property name="CreatureMoveIdle" value="2" />
-  <Property name="CreatureTurnMin" value="8" />
-  <Property name="CreatureTurnMax" value="4" />
+  <Property name="CreatureMoveIdle" value="0.1" />
+  <Property name="CreatureTurnMin" value="1" />
+  <Property name="CreatureTurnMax" value="0.1" />
   <Property name="CreatureBrakeForce" value="2" />
   <Property name="CreatureMinAnimMoveSpeed" value="0.1" />
   <Property name="CreatureLookBeforeGoingTime" value="4" />
@@ -650,7 +650,7 @@
     <Property name="FOVStrength" value="0" />
     <Property name="FOVFrequency" value="0" />
   </Property>
-  <Property name="PatrolSwitchMinTime" value="20" />
+  <Property name="PatrolSwitchMinTime" value="0.5" />
   <Property name="ExtraFollowStrength" value="1" />
   <Property name="ExtraFollowFreq1" value="0.5" />
   <Property name="ExtraFollowFreq2" value="3" />
@@ -668,6 +668,7 @@
   <Property name="SandWormSpawnTimer" value="300" />
   <Property name="SandWormSpawnChanceMin" value="0.01" />
   <Property name="SandWormSpawnChanceMax" value="0.3" />
+  <Property name="SandWormSpawnChanceInfested" value="1" />
   <Property name="GroundWormSpawnRadius" value="40" />
   <Property name="GroundWormSpawnSpacing" value="10" />
   <Property name="GroundWormSpawnTimeOut" value="180" />
@@ -709,8 +710,8 @@
   <Property name="HeightLookAhead" value="2" />
   <Property name="MaxHeightTime" value="5" />
   <Property name="PlayerBirdDistance" value="1" />
-  <Property name="FishSpeedMin" value="0.1" />
-  <Property name="FishSpeedMax" value="5" />
+  <Property name="FishSpeedMin" value="0.15" />
+  <Property name="FishSpeedMax" value="7" />
   <Property name="FishSwimMaxAcceleration" value="0.3" />
   <Property name="AlertDistance" value="20" />
   <Property name="RepelRange" value="5" />
@@ -731,17 +732,17 @@
   <Property name="FlyingSnakeData" value="GcFlyingSnakeData.xml">
     <Property name="CircleSpeed" value="3" />
     <Property name="ApproachBaitSpeed" value="30" />
-    <Property name="DefaultCircleDistance" value="400" />
+    <Property name="DefaultCircleDistance" value="50" />
     <Property name="BarrelRollSpawnDelay" value="1.5" />
     <Property name="BarrelRollCount" value="1" />
-    <Property name="BarrelRollSpeed" value="4" />
+    <Property name="BarrelRollSpeed" value="2" />
     <Property name="RiseDelay" value="8" />
-    <Property name="RiseHeight" value="0" />
+    <Property name="RiseHeight" value="2" />
     <Property name="RiseTime" value="6" />
     <Property name="AirThickness" value="16" />
     <Property name="WindForce" value="15" />
     <Property name="TailStiffness" value="0" />
-    <Property name="TwistLimit" value="5" />
+    <Property name="TwistLimit" value="3" />
     <Property name="AltitudeSinPeriod" value="6" />
     <Property name="AltitudeSinAmp" value="6" />
     <Property name="AscendDescendSpeed" value="2" />
@@ -912,6 +913,8 @@
   <Property name="FishFiendBigBoostStrength" value="4" />
   <Property name="FishFiendBigBoostTime" value="1" />
   <Property name="FishFiendBigScale" value="3" />
+  <Property name="AsteroidCreatureSpawnPercentOverride" value="-1" />
+  <Property name="AsteroidCreatureRichSystemSpawnPercent" value="50" />
   <Property name="RoutineSpeed" value="1" />
   <Property name="RoutineOffset" value="4242" />
   <Property name="RagdollTau" value="0.6" />
@@ -937,7 +940,7 @@
   <Property name="BrakingForce" value="15" />
   <Property name="BrakingForceY" value="16" />
   <Property name="FlowFieldWeight" value="0.7" />
-  <Property name="FollowWeight" value="2" />
+  <Property name="FollowWeight" value="8" />
   <Property name="RidingSteerWeight" value="2" />
   <Property name="AvoidCreaturesWeight" value="6" />
   <Property name="AvoidImpassableWeight" value="10" />
@@ -945,8 +948,10 @@
   <Property name="FollowLeaderAlignWeight" value="1" />
   <Property name="FollowLeaderCohereWeight" value="0.1" />
   <Property name="SoftenAvoidanceRadiusMod" value="1" />
-  <Property name="FreighterJellySwimSpeed" value="0.6" />
-  <Property name="DefaultSwimSpeed" value="0.6" />
+  <Property name="FreighterJellySwimSpeed" value="2" />
+  <Property name="LandJellySwimSpeed" value="0.6" />
+  <Property name="SpaceJellySwimSpeed" value="20" />
+  <Property name="DefaultSwimSpeed" value="0.5" />
   <Property name="FastSwimSpeed" value="2.5" />
   <Property name="DefaultWalkMoveSpeed" value="0.6" />
   <Property name="DefaultTrotMoveSpeed" value="2.5" />
@@ -958,7 +963,7 @@
   <Property name="EdgeClosenessPenalty" value="6" />
   <Property name="PelvisIkStrength" value="0.25" />
   <Property name="SteeringUpdateRate" value="0.25" />
-  <Property name="PathOverestimate" value="6" />
+  <Property name="PathOverestimate" value="2" />
   <Property name="FishWaterSurfaceAnticipate" value="3" />
   <Property name="FishWaterSurfaceAvoidStrength" value="16" />
   <Property name="FishDesiredDepth" value="2" />
@@ -970,7 +975,7 @@
   <Property name="FishPlayerAttractionMinDist" value="5" />
   <Property name="FishPlayerAttractionMaxDist" value="35" />
   <Property name="FishPlayerAttractionStrength" value="1" />
-  <Property name="AttackPlayerDistance" value="1.5" />
+  <Property name="AttackPlayerDistance" value="0.8" />
   <Property name="SpawnCameraAngleCos" value="-0.8" />
   <Property name="SpawnMinDistPercentage" value="0.55" />
   <Property name="SpawnOnscreenDist" value="30" />
@@ -990,9 +995,9 @@
   <Property name="TrailHalfLife" value="80" />
   <Property name="EnableTrailIk" value="True" />
   <Property name="DetailAnimBlendInTime" value="1" />
-  <Property name="DetailAnimBlendOutTime" value="1" />
-  <Property name="DetailAnimMinPauseTime" value="1" />
-  <Property name="DetailAnimMaxPauseTime" value="4" />
+  <Property name="DetailAnimBlendOutTime" value="1" />  
+  <Property name="DetailAnimMinPauseTime" value="0.4" />  
+  <Property name="DetailAnimMaxPauseTime" value="1.2" />
   <Property name="DetailAnimPlayWhileWalking" value="True" />
   <Property name="CreatureDeathEffectSmall" value="DEATHBLOODSMALL" />
   <Property name="CreatureDeathEffectMedium" value="DEATHBLOODMED" />
@@ -1201,8 +1206,8 @@
   <Property name="GroupLookAtProbability" value="0.4" />
   <Property name="GroupLookAtDurationMin" value="4" />
   <Property name="GroupLookAtDurationMax" value="10" />
-  <Property name="GroupRunDurationMin" value="3" />
-  <Property name="GroupRunDurationMax" value="20" />
+  <Property name="GroupRunDurationMin" value="10" />
+  <Property name="GroupRunDurationMax" value="30" />
   <Property name="GroupFemaleProportion" value="0.6" />
   <Property name="GroupBabyProportion" value="0.3" />
   <Property name="GroupBabyScale" value="0.5" />

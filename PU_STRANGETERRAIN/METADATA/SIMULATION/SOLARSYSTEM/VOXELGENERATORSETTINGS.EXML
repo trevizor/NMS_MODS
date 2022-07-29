@@ -2,7 +2,6 @@
 <!--File created using MBINCompiler version (3.91.0)-->
 <Data template="TkVoxelGeneratorSettingsArray">
   <Property name="TerrainSettings">
-    
     <Property name="FloatingIslands" value="TkVoxelGeneratorSettingsElement.xml">
       <Property name="Min" value="TkVoxelGeneratorData.xml">
         <Property name="BaseSeed" value="GcSeed.xml">
@@ -11669,6 +11668,7 @@
         <Property name="WaterFadeInDistance" value="50" />
       </Property>
     </Property>
+
     <Property name="Alien" value="TkVoxelGeneratorSettingsElement.xml">
       <Property name="Min" value="TkVoxelGeneratorData.xml">
         <Property name="BaseSeed" value="GcSeed.xml">
@@ -12032,7 +12032,7 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="NoiseGridType" value="Cube" />
+            <Property name="NoiseGridType" value="Cone" />
             <Property name="Filename" value="" />
             <Property name="MinWidth" value="64" />
             <Property name="MaxWidth" value="256" />
@@ -13586,7 +13586,7 @@
             <Property name="NoiseVoxelType" value="TkNoiseVoxelTypeEnum.xml">
               <Property name="NoiseVoxelType" value="Base" />
             </Property>
-            <Property name="NoiseGridType" value="Cube" />
+            <Property name="NoiseGridType" value="Sphere" />
             <Property name="Filename" value="" />
             <Property name="MinWidth" value="16" />
             <Property name="MaxWidth" value="128" />
@@ -14585,6 +14585,7 @@
         <Property name="WaterFadeInDistance" value="50" />
       </Property>
     </Property>
+    
     <Property name="Craters" value="TkVoxelGeneratorSettingsElement.xml">
       <Property name="Min" value="TkVoxelGeneratorData.xml">
         <Property name="BaseSeed" value="GcSeed.xml">

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.88.0)-->
+<!--File created using MBINCompiler version (3.97.0)-->
 <Data template="GcUIGlobals">
+  <Property name="FreighterMegaWarpTransitionTime" value="2" />
   <Property name="UseIntermediateMissionGiverOptions" value="True" />
   <Property name="SentinelsDisabledHUDMessageTime" value="10" />
   <Property name="UseZoomedOutBuildCamRadius" value="3" />
@@ -770,6 +771,7 @@
   <Property name="MarkerOffsetTypeAngleBattle" value="1" />
   <Property name="MarkerOffsetTypeAngleBounty" value="5" />
   <Property name="MarkerOffsetTypeAnglePlayerShip" value="5" />
+  <Property name="MarkerOffsetTypeAngleAsteroid" value="1.5" />
   <Property name="MarkerHorizonOffPlanetLightBeamAngle" value="2" />
   <Property name="MarkerHorizonShipApproachOffset" value="2000" />
   <Property name="TransferPopupCursorOffsetFactor" value="0.2" />
@@ -853,10 +855,13 @@
       <Property name="Value" value="UI_BUILD_MENU_TOGGLE_SELECT_ON" />
     </Property>
     <Property name="ToggleWiringMode" value="NMSString0x20.xml">
-      <Property name="Value" value="UI_BUILD_MENU_TOGGLE_WIRING_ON" />
+      <Property name="Value" value="" />
+    </Property>
+    <Property name="ViewRelatives" value="NMSString0x20.xml">
+      <Property name="Value" value="" />
     </Property>
     <Property name="CyclePart" value="NMSString0x20.xml">
-      <Property name="Value" value="" />
+      <Property name="Value" value="BASEBUILD_CYCLE_PART_MSG" />
     </Property>
     <Property name="PlaceWire" value="NMSString0x20.xml">
       <Property name="Value" value="" />
@@ -900,7 +905,10 @@
       <Property name="Value" value="UI_BUILD_MENU_TOGGLE_SELECT_OFF" />
     </Property>
     <Property name="ToggleWiringMode" value="NMSString0x20.xml">
-      <Property name="Value" value="UI_BUILD_MENU_TOGGLE_WIRING_OFF" />
+      <Property name="Value" value="" />
+    </Property>
+    <Property name="ViewRelatives" value="NMSString0x20.xml">
+      <Property name="Value" value="" />
     </Property>
     <Property name="CyclePart" value="NMSString0x20.xml">
       <Property name="Value" value="" />
@@ -947,6 +955,9 @@
       <Property name="Value" value="UI_BUILD_MENU_SLCT_UNAVAILABLE" />
     </Property>
     <Property name="ToggleWiringMode" value="NMSString0x20.xml">
+      <Property name="Value" value="" />
+    </Property>
+    <Property name="ViewRelatives" value="NMSString0x20.xml">
       <Property name="Value" value="" />
     </Property>
     <Property name="CyclePart" value="NMSString0x20.xml">
@@ -1933,16 +1944,16 @@
   <Property name="FreighterSummonTurn" value="-150" />
   <Property name="FreighterSummonPitch" value="-15" />
   <Property name="FreighterSummonOffset" value="2500" />
+  <Property name="FreighterSummonOffsetPulse" value="5000" />
   <Property name="FreighterSummonDelay" value="0.3" />
   <Property name="FreighterSummonTurnNumTries" value="10" />
   <Property name="FreighterSummonTurnAngleIncrement" value="5" />
   <Property name="FreighterSummonGridSize" value="1000" />
   <Property name="FreighterCommanderMarkerMinDistance" value="10" />
-  <Property name="FreighterBaseIconOffset" value="2.5" />
   <Property name="FreighterSurfaceMinAngle" value="15" />
   <Property name="FreighterSummonPulseRate" value="0.5" />
   <Property name="FreighterSummonPulseFadeAmount" value="0.8" />
-  <Property name="FreighterSummonPlanetOffset" value="400" />
+  <Property name="FreighterSummonPlanetOffset" value="2000" />
   <Property name="FreighterSummonLookTime" value="1.5" />
   <Property name="FreighterHighlightRange" value="20000" />
   <Property name="FreighterSummonScanEffect" value="GcScanEffectData.xml">
@@ -2413,6 +2424,58 @@
   </Property>
   <Property name="HUDPlayerTrackArrowMinFadeDist" value="600" />
   <Property name="HUDPlayerTrackArrowFadeRange" value="450" />
+  <Property name="SystemHooverLEDColours">
+    <Property name="Yellow" value="Colour.xml">
+      <Property name="R" value="0.898" />
+      <Property name="G" value="0.722" />
+      <Property name="B" value="0.333" />
+      <Property name="A" value="1" />
+    </Property>
+    <Property name="Green" value="Colour.xml">
+      <Property name="R" value="0.133" />
+      <Property name="G" value="0.737" />
+      <Property name="B" value="0.471" />
+      <Property name="A" value="1" />
+    </Property>
+    <Property name="Blue" value="Colour.xml">
+      <Property name="R" value="0.11" />
+      <Property name="G" value="0.553" />
+      <Property name="B" value="0.996" />
+      <Property name="A" value="1" />
+    </Property>
+    <Property name="Red" value="Colour.xml">
+      <Property name="R" value="0.941" />
+      <Property name="G" value="0.369" />
+      <Property name="B" value="0.369" />
+      <Property name="A" value="1" />
+    </Property>
+  </Property>
+  <Property name="SystemHooverStatusBarColours">
+    <Property name="Yellow" value="Colour.xml">
+      <Property name="R" value="0.898" />
+      <Property name="G" value="0.722" />
+      <Property name="B" value="0.333" />
+      <Property name="A" value="1" />
+    </Property>
+    <Property name="Green" value="Colour.xml">
+      <Property name="R" value="0.132" />
+      <Property name="G" value="0.737" />
+      <Property name="B" value="0.469" />
+      <Property name="A" value="1" />
+    </Property>
+    <Property name="Blue" value="Colour.xml">
+      <Property name="R" value="0.11" />
+      <Property name="G" value="0.553" />
+      <Property name="B" value="0.996" />
+      <Property name="A" value="1" />
+    </Property>
+    <Property name="Red" value="Colour.xml">
+      <Property name="R" value="0.941" />
+      <Property name="G" value="0.369" />
+      <Property name="B" value="0.369" />
+      <Property name="A" value="1" />
+    </Property>
+  </Property>
   <Property name="GalaxyMapRadialBorder" value="125" />
   <Property name="GalaxyMapRadialTargetDist" value="900" />
   <Property name="IconBackgroundAlpha" value="0.7" />
@@ -2592,7 +2655,9 @@
   <Property name="ShowJetpackNotificationForNonTerrain" value="False" />
   <Property name="StatsMessageDelayTime" value="12" />
   <Property name="SeasonMessageDelayTime" value="0.5" />
-  <Property name="HideExtremePlanetNotifications" value="False" />
+  <Property name="HideExtremePlanetNotifications" value="True" />
+  <Property name="NotificationBackgroundGradientEndOffsetPercentInShip" value="80" />
+  <Property name="NotificationBackgroundGradientAlphaInShip" value="0.85" />
   <Property name="NotificationsResourceExtractHintCount" value="1500" />
   <Property name="NotificationStaminaHintDistanceWalked" value="10000" />
   <Property name="NotificationMinVisibleTime" value="3" />
@@ -5140,78 +5205,192 @@
           <Property name="AkEvent" value="INVALID_EVENT" />
         </Property>
         <Property name="Time" value="1" />
+        <Property name="RequiresTechBroken" value="" />
       </Property>
       <Property name="Startup" value="GcHUDStartup.xml">
         <Property name="Audio" value="GcAudioWwiseEvents.xml">
           <Property name="AkEvent" value="SUITBOOT_INIT" />
         </Property>
         <Property name="Time" value="0" />
+        <Property name="RequiresTechBroken" value="" />
       </Property>
       <Property name="Booting" value="GcHUDStartup.xml">
         <Property name="Audio" value="GcAudioWwiseEvents.xml">
           <Property name="AkEvent" value="SUITBOOT_INIT" />
         </Property>
         <Property name="Time" value="9" />
+        <Property name="RequiresTechBroken" value="" />
       </Property>
       <Property name="LifeSupport" value="GcHUDStartup.xml">
         <Property name="Audio" value="GcAudioWwiseEvents.xml">
           <Property name="AkEvent" value="SUITBOOT_LIFESUPPORT" />
         </Property>
         <Property name="Time" value="8" />
+        <Property name="RequiresTechBroken" value="" />
       </Property>
       <Property name="Shield" value="GcHUDStartup.xml">
         <Property name="Audio" value="GcAudioWwiseEvents.xml">
           <Property name="AkEvent" value="SUITBOOT_SHIELD" />
         </Property>
         <Property name="Time" value="2" />
+        <Property name="RequiresTechBroken" value="" />
       </Property>
       <Property name="ShieldEffect" value="GcHUDStartup.xml">
         <Property name="Audio" value="GcAudioWwiseEvents.xml">
           <Property name="AkEvent" value="PL_SHIELD_CHARGE" />
         </Property>
         <Property name="Time" value="7.5" />
+        <Property name="RequiresTechBroken" value="" />
       </Property>
       <Property name="Scanner" value="GcHUDStartup.xml">
         <Property name="Audio" value="GcAudioWwiseEvents.xml">
           <Property name="AkEvent" value="SUITBOOT_SCANNER" />
         </Property>
         <Property name="Time" value="8" />
+        <Property name="RequiresTechBroken" value="SCAN1" />
       </Property>
       <Property name="Jetpack" value="GcHUDStartup.xml">
         <Property name="Audio" value="GcAudioWwiseEvents.xml">
           <Property name="AkEvent" value="SUITBOOT_JETPACK" />
         </Property>
         <Property name="Time" value="8" />
+        <Property name="RequiresTechBroken" value="" />
       </Property>
       <Property name="Weapon" value="GcHUDStartup.xml">
         <Property name="Audio" value="GcAudioWwiseEvents.xml">
           <Property name="AkEvent" value="SUITBOOT_WEAPON" />
         </Property>
         <Property name="Time" value="8" />
+        <Property name="RequiresTechBroken" value="" />
       </Property>
       <Property name="Finishing" value="GcHUDStartup.xml">
         <Property name="Audio" value="GcAudioWwiseEvents.xml">
           <Property name="AkEvent" value="SUITBOOT_FINISHED" />
         </Property>
         <Property name="Time" value="0" />
+        <Property name="RequiresTechBroken" value="" />
       </Property>
       <Property name="DiscoverPlanet" value="GcHUDStartup.xml">
         <Property name="Audio" value="GcAudioWwiseEvents.xml">
           <Property name="AkEvent" value="UI_NEW_DISCOVERY" />
         </Property>
         <Property name="Time" value="0" />
+        <Property name="RequiresTechBroken" value="" />
       </Property>
       <Property name="Done" value="GcHUDStartup.xml">
         <Property name="Audio" value="GcAudioWwiseEvents.xml">
           <Property name="AkEvent" value="INVALID_EVENT" />
         </Property>
         <Property name="Time" value="1" />
+        <Property name="RequiresTechBroken" value="" />
       </Property>
       <Property name="Inactive" value="GcHUDStartup.xml">
         <Property name="Audio" value="GcAudioWwiseEvents.xml">
           <Property name="AkEvent" value="INVALID_EVENT" />
         </Property>
         <Property name="Time" value="1" />
+        <Property name="RequiresTechBroken" value="" />
+      </Property>
+    </Property>
+  </Property>
+  <Property name="IntroTimingFreighter" value="GcHUDStartupTable.xml">
+    <Property name="FadeInFlashTime" value="12" />
+    <Property name="LookSpeed" value="15" />
+    <Property name="StartHoldTime" value="1.2" />
+    <Property name="ButtonFlashRate" value="0.4" />
+    <Property name="ButtonFlashAlpha" value="0.2" />
+    <Property name="BackgroundAlpha" value="1" />
+    <Property name="HUDStartup">
+      <Property name="WaitingForInit" value="GcHUDStartup.xml">
+        <Property name="Audio" value="GcAudioWwiseEvents.xml">
+          <Property name="AkEvent" value="INVALID_EVENT" />
+        </Property>
+        <Property name="Time" value="1" />
+        <Property name="RequiresTechBroken" value="" />
+      </Property>
+      <Property name="Startup" value="GcHUDStartup.xml">
+        <Property name="Audio" value="GcAudioWwiseEvents.xml">
+          <Property name="AkEvent" value="SUIT_INIT_LIFESUPPORT" />
+        </Property>
+        <Property name="Time" value="5" />
+        <Property name="RequiresTechBroken" value="" />
+      </Property>
+      <Property name="Booting" value="GcHUDStartup.xml">
+        <Property name="Audio" value="GcAudioWwiseEvents.xml">
+          <Property name="AkEvent" value="SUITBOOT_FREIGHTERINTRO_07" />
+        </Property>
+        <Property name="Time" value="5" />
+        <Property name="RequiresTechBroken" value="" />
+      </Property>
+      <Property name="LifeSupport" value="GcHUDStartup.xml">
+        <Property name="Audio" value="GcAudioWwiseEvents.xml">
+          <Property name="AkEvent" value="SUITBOOT_FREIGHTERINTRO_01" />
+        </Property>
+        <Property name="Time" value="7" />
+        <Property name="RequiresTechBroken" value="" />
+      </Property>
+      <Property name="Shield" value="GcHUDStartup.xml">
+        <Property name="Audio" value="GcAudioWwiseEvents.xml">
+          <Property name="AkEvent" value="SUITBOOT_FREIGHTERINTRO_02" />
+        </Property>
+        <Property name="Time" value="4" />
+        <Property name="RequiresTechBroken" value="" />
+      </Property>
+      <Property name="ShieldEffect" value="GcHUDStartup.xml">
+        <Property name="Audio" value="GcAudioWwiseEvents.xml">
+          <Property name="AkEvent" value="PL_SHIELD_CHARGE" />
+        </Property>
+        <Property name="Time" value="4.5" />
+        <Property name="RequiresTechBroken" value="" />
+      </Property>
+      <Property name="Scanner" value="GcHUDStartup.xml">
+        <Property name="Audio" value="GcAudioWwiseEvents.xml">
+          <Property name="AkEvent" value="SUITBOOT_FREIGHTERINTRO_03" />
+        </Property>
+        <Property name="Time" value="7" />
+        <Property name="RequiresTechBroken" value="" />
+      </Property>
+      <Property name="Jetpack" value="GcHUDStartup.xml">
+        <Property name="Audio" value="GcAudioWwiseEvents.xml">
+          <Property name="AkEvent" value="SUITBOOT_FREIGHTERINTRO_04" />
+        </Property>
+        <Property name="Time" value="6" />
+        <Property name="RequiresTechBroken" value="" />
+      </Property>
+      <Property name="Weapon" value="GcHUDStartup.xml">
+        <Property name="Audio" value="GcAudioWwiseEvents.xml">
+          <Property name="AkEvent" value="SUITBOOT_FREIGHTERINTRO_05" />
+        </Property>
+        <Property name="Time" value="6" />
+        <Property name="RequiresTechBroken" value="" />
+      </Property>
+      <Property name="Finishing" value="GcHUDStartup.xml">
+        <Property name="Audio" value="GcAudioWwiseEvents.xml">
+          <Property name="AkEvent" value="SUITBOOT_FREIGHTERINTRO_06" />
+        </Property>
+        <Property name="Time" value="0" />
+        <Property name="RequiresTechBroken" value="" />
+      </Property>
+      <Property name="DiscoverPlanet" value="GcHUDStartup.xml">
+        <Property name="Audio" value="GcAudioWwiseEvents.xml">
+          <Property name="AkEvent" value="UI_NEW_DISCOVERY" />
+        </Property>
+        <Property name="Time" value="0" />
+        <Property name="RequiresTechBroken" value="" />
+      </Property>
+      <Property name="Done" value="GcHUDStartup.xml">
+        <Property name="Audio" value="GcAudioWwiseEvents.xml">
+          <Property name="AkEvent" value="INVALID_EVENT" />
+        </Property>
+        <Property name="Time" value="1" />
+        <Property name="RequiresTechBroken" value="" />
+      </Property>
+      <Property name="Inactive" value="GcHUDStartup.xml">
+        <Property name="Audio" value="GcAudioWwiseEvents.xml">
+          <Property name="AkEvent" value="INVALID_EVENT" />
+        </Property>
+        <Property name="Time" value="1" />
+        <Property name="RequiresTechBroken" value="" />
       </Property>
     </Property>
   </Property>
@@ -5481,5 +5660,12 @@
   </Property>
   <Property name="MinimumHoldFill" value="0.05" />
   <Property name="EnableAccessibleUI" value="False" />
+  <Property name="AccessibleUIPopupScale" value="1.25" />
   <Property name="DetailMessageDismissTime" value="0.3" />
+  <Property name="InfoPortalGuideCycleTime" value="5" />
+  <Property name="InfoPortalMilestonesCycleTime" value="5" />
+  <Property name="FeedFrigateAnimPeriod" value="0" />
+  <Property name="FeedFrigateAnimNumPeriods" value="96" />
+  <Property name="FeedFrigateAnimScaleChange" value="0" />
+  <Property name="FeedFrigateAnimAlphaChange" value="6E-45" />
 </Data>

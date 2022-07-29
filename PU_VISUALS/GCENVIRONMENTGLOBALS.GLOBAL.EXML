@@ -42,10 +42,13 @@
         <Property value="7" />
         <Property value="10" />
       </Property>
-      <Property name="NumberOfImposterViews" value="6" />
+      <Property name="EnableOctahedralImposters" value="False" />
+      <Property name="ViewImpostersFromSpace" value="False" />
+      <Property name="NumberOfImposterViews" value="8" />
       <Property name="ImposterResolutionMultiplier" value="1" />
       <Property name="AsteroidCountMultiplier" value="1" />
       <Property name="AsteroidDividerMultiplier" value="1" />
+      <Property name="AsteroidFadeRangeMultiplier" value="0.25" />
       <Property name="MaxAsteroidGenerationPerFrame" value="5000" />
       <Property name="MaxAsteroidGenerationPerFramePulseJump" value="1000" />
     </Property>
@@ -89,59 +92,65 @@
         <Property value="10" />
         <Property value="10" />
       </Property>
-      <Property name="NumberOfImposterViews" value="6" />
-      <Property name="ImposterResolutionMultiplier" value="2" />
-      <Property name="AsteroidCountMultiplier" value="1" />
-      <Property name="AsteroidDividerMultiplier" value="1" />
-      <Property name="MaxAsteroidGenerationPerFrame" value="5000" />
-      <Property name="MaxAsteroidGenerationPerFramePulseJump" value="1000" />
-    </Property>
-    <Property value="TkLODSettingsData.xml">
-      <Property name="LODAdjust">
-        <Property value="1" />
-        <Property value="1" />
-        <Property value="1" />
-        <Property value="1" />
-        <Property value="1" />
-      </Property>
-      <Property name="ImposterOverrideRange">
-        <Property value="999" />
-        <Property value="999" />
-        <Property value="999" />
-        <Property value="999" />
-        <Property value="999" />
-        <Property value="999" />
-      </Property>
-      <Property name="MaxObjectDistanceOverride">
-        <Property value="999" />
-        <Property value="999" />
-        <Property value="999" />
-        <Property value="999" />
-        <Property value="999" />
-        <Property value="999" />
-      </Property>
-      <Property name="RegionLODHiddenRanges">
-        <Property value="999" />
-        <Property value="999" />
-        <Property value="999" />
-        <Property value="999" />
-        <Property value="999" />
-        <Property value="999" />
-      </Property>
-      <Property name="RegionLODRadius">
-        <Property value="5" />
-        <Property value="10" />
-        <Property value="16" />
-        <Property value="12" />
-        <Property value="10" />
-        <Property value="10" />
-      </Property>
+      <Property name="EnableOctahedralImposters" value="True" />
+      <Property name="ViewImpostersFromSpace" value="True" />
       <Property name="NumberOfImposterViews" value="8" />
-      <Property name="ImposterResolutionMultiplier" value="2" />
-      <Property name="AsteroidCountMultiplier" value="1" />
-      <Property name="AsteroidDividerMultiplier" value="1" />
+      <Property name="ImposterResolutionMultiplier" value="1" />
+      <Property name="AsteroidCountMultiplier" value="2" />
+      <Property name="AsteroidDividerMultiplier" value="3" />
+      <Property name="AsteroidFadeRangeMultiplier" value="1" />
       <Property name="MaxAsteroidGenerationPerFrame" value="5000" />
       <Property name="MaxAsteroidGenerationPerFramePulseJump" value="1000" />
+    </Property>
+    <Property value="TkLODSettingsData.xml">
+      <Property name="LODAdjust">
+        <Property value="1" />
+        <Property value="1" />
+        <Property value="1" />
+        <Property value="1" />
+        <Property value="1" />
+      </Property>
+      <Property name="ImposterOverrideRange">
+        <Property value="999" />
+        <Property value="999" />
+        <Property value="999" />
+        <Property value="999" />
+        <Property value="999" />
+        <Property value="999" />
+      </Property>
+      <Property name="MaxObjectDistanceOverride">
+        <Property value="999" />
+        <Property value="999" />
+        <Property value="999" />
+        <Property value="999" />
+        <Property value="999" />
+        <Property value="999" />
+      </Property>
+      <Property name="RegionLODHiddenRanges">
+        <Property value="999" />
+        <Property value="999" />
+        <Property value="999" />
+        <Property value="999" />
+        <Property value="999" />
+        <Property value="999" />
+      </Property>
+      <Property name="RegionLODRadius">
+        <Property value="5" />
+        <Property value="10" />
+        <Property value="16" />
+        <Property value="12" />
+        <Property value="10" />
+        <Property value="10" />
+      </Property>
+      <Property name="EnableOctahedralImposters" value="True" />
+      <Property name="ViewImpostersFromSpace" value="True" />
+      <Property name="NumberOfImposterViews" value="8" />
+      <Property name="ImposterResolutionMultiplier" value="1" />
+      <Property name="AsteroidCountMultiplier" value="3" />
+      <Property name="AsteroidDividerMultiplier" value="3" />
+      <Property name="AsteroidFadeRangeMultiplier" value="1" />
+      <Property name="MaxAsteroidGenerationPerFrame" value="7500" />
+      <Property name="MaxAsteroidGenerationPerFramePulseJump" value="2000" />
     </Property>
     <Property value="TkLODSettingsData.xml">
       <Property name="LODAdjust">
@@ -183,12 +192,15 @@
         <Property value="10" />
         <Property value="10" />
       </Property>
-      <Property name="NumberOfImposterViews" value="10" />
-      <Property name="ImposterResolutionMultiplier" value="4" />
-      <Property name="AsteroidCountMultiplier" value="1" />
-      <Property name="AsteroidDividerMultiplier" value="1" />
-      <Property name="MaxAsteroidGenerationPerFrame" value="5000" />
-      <Property name="MaxAsteroidGenerationPerFramePulseJump" value="1000" />
+      <Property name="EnableOctahedralImposters" value="True" />
+      <Property name="ViewImpostersFromSpace" value="True" />
+      <Property name="NumberOfImposterViews" value="8" />
+      <Property name="ImposterResolutionMultiplier" value="1" />
+      <Property name="AsteroidCountMultiplier" value="4" />
+      <Property name="AsteroidDividerMultiplier" value="3" />
+      <Property name="AsteroidFadeRangeMultiplier" value="1" />
+      <Property name="MaxAsteroidGenerationPerFrame" value="10000" />
+      <Property name="MaxAsteroidGenerationPerFramePulseJump" value="4000" />
     </Property>
   </Property>
   <Property name="SpaceBuildingTemperature" value="Vector2f.xml">
@@ -283,6 +295,8 @@
   <Property name="VDeform" value="0.2" />
   <Property name="LocationStableTime" value="0.5" />
   <Property name="InterestStableTime" value="2.5" />
+  <Property name="AsteroidFieldStableEnterTime" value="0.05" />
+  <Property name="AsteroidFieldStableLeaveTime" value="0.25" />
   <Property name="TemperatureSmoothTime" value="0.5" />
   <Property name="SunFactorMin" value="0.4" />
   <Property name="ExposureSurfaceContrib" value="0.3" />

@@ -12,6 +12,7 @@
   <Property name="PoliceAcceleratorNoCargoWealthy" value="0.6" />
   <Property name="PoliceAcceleratorNoCargoNormal" value="0.3" />
   <Property name="PoliceAcceleratorNoCargoSkipScanOdds" value="0.75" />
+  <Property name="ShipInterestAcceleratorInAsteroidField" value="2" />
   <Property name="InfestedPlanetDeepSpaceFlybyMultiplier" value="3.5" />
   <Property name="SmugglerSellingMarkup" value="2.66" />
   <Property name="IllegalTechProductTradingMod" value="0.2" />
@@ -417,6 +418,9 @@
     <Property name="Curve" value="EaseInSine" />
   </Property>
   <Property name="AtmosphereEntryErrorTime" value="0.75" />
+  <Property name="AsteroidScanMaxShown" value="3" />
+  <Property name="AsteroidScanTime" value="70" />
+  <Property name="AsteroidScanRange" value="1000000" />
   <Property name="TerrainResourceScanTime" value="30" />
   <Property name="TerrainResourceScanRange" value="1200" />
   <Property name="TerrainResourceCompassRange" value="120" />
@@ -770,12 +774,12 @@
     <Property name="HighChance" value="0" />
     <Property name="LowChance" value="30" />
     <Property name="High" value="Vector2f.xml">
-      <Property name="x" value="600" />
-      <Property name="y" value="900" />
-    </Property>
-    <Property name="Normal" value="Vector2f.xml">
       <Property name="x" value="800" />
       <Property name="y" value="1000" />
+    </Property>
+    <Property name="Normal" value="Vector2f.xml">
+      <Property name="x" value="1000" />
+      <Property name="y" value="1400" />
     </Property>
     <Property name="Low" value="Vector2f.xml">
       <Property name="x" value="0" />
@@ -786,11 +790,11 @@
     <Property name="HighChance" value="0" />
     <Property name="LowChance" value="30" />
     <Property name="High" value="Vector2f.xml">
-      <Property name="x" value="300" />
-      <Property name="y" value="500" />
+      <Property name="x" value="600" />
+      <Property name="y" value="600" />
     </Property>
     <Property name="Normal" value="Vector2f.xml">
-      <Property name="x" value="500" />
+      <Property name="x" value="600" />
       <Property name="y" value="800" />
     </Property>
     <Property name="Low" value="Vector2f.xml">
@@ -802,15 +806,15 @@
     <Property name="HighChance" value="0" />
     <Property name="LowChance" value="30" />
     <Property name="High" value="Vector2f.xml">
-      <Property name="x" value="180" />
+      <Property name="x" value="300" />
       <Property name="y" value="300" />
     </Property>
     <Property name="Normal" value="Vector2f.xml">
-      <Property name="x" value="230" />
-      <Property name="y" value="450" />
+      <Property name="x" value="300" />
+      <Property name="y" value="500" />
     </Property>
     <Property name="Low" value="Vector2f.xml">
-      <Property name="x" value="350" />
+      <Property name="x" value="400" />
       <Property name="y" value="600" />
     </Property>
   </Property>
@@ -833,8 +837,8 @@
   <Property name="PirateEarlySpawnChances">
     <Property value="0" />
     <Property value="0" />
+    <Property value="0.2" />
     <Property value="0.5" />
-    <Property value="0.8" />
   </Property>
   <Property name="PirateEarlySpawnTime" value="15" />
   <Property name="FlybyTimers" value="GcExperienceTimers.xml">
@@ -1871,6 +1875,7 @@
   <Property name="SalvageShipOneRevolutionTime" value="30" />
   <Property name="CommunicatorFireteamNexusExitDialog" value="?NEXUS_EXIT" />
   <Property name="CommunicatorNexusExitAbandonWarningDialog" value="?NEXUS_ABANDON" />
+  <Property name="BackgroundSpaceEncounterCheckTimer" value="5" />
   <Property name="PulseEncounterCheckTimer" value="1" />
   <Property name="PulseEncounterChance" value="0.00066" />
   <Property name="PulseEncounterChanceStandard" value="0.0066" />
@@ -1879,6 +1884,7 @@
   <Property name="PulseEncounterChanceBlue" value="0.003" />
   <Property name="PulseEncounterStopPower" value="30" />
   <Property name="PulseEncounterStopSpeed" value="50" />
+  <Property name="DerelictPulseEncounterAtmosphericEffectChance" value="0.3" />
   <Property name="AlienShipEvolveCosts">
     <Property value="100" />
     <Property value="210" />

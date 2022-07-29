@@ -47,7 +47,7 @@
   <Property name="DoFAdjustMagnitudeMaxCurve" value="TkCurveType.xml">
     <Property name="Curve" value="Linear" />
   </Property>
-  <Property name="DayLength" value="3800" />
+  <Property name="DayLength" value="1800" />
   <Property name="SunRotationAxis" value="Vector3f.xml">
     <Property name="x" value="1" />
     <Property name="y" value="0" />
@@ -97,10 +97,10 @@
   <Property name="StormAudioLevel" value="0.5" />
   <Property name="CloudCoverSmoothTime" value="10" />
   <Property name="CloudRatioSmoothTime" value="4" />
-  <Property name="StormCloudTopColourMinBlend" value="0.01" />
-  <Property name="StormCloudTopColourMaxBlend" value="0.1" />
-  <Property name="StormCloudBottomColourMinBlend" value="0.01" />
-  <Property name="StormCloudBottomColourMaxBlend" value="0.1" />
+  <Property name="StormCloudTopColourMinBlend" value="0.3" /> 
+  <Property name="StormCloudTopColourMaxBlend" value="0.75" />  
+  <Property name="StormCloudBottomColourMinBlend" value="0.5" />  
+  <Property name="StormCloudBottomColourMaxBlend" value="0.9" />
   <Property name="StormCloudSmoothTime" value="0.8" />
   <Property name="SleepSunFromSettings" value="True" />
   <Property name="SleepSunFromSettingsPos" value="Vector3f.xml">
@@ -1094,10 +1094,10 @@
     <Property name="AtmosphereThickness" value="0.20" />
     <Property name="HorizonMultiplier" value="1" />
     <Property name="HorizonFadeSpeed" value="1" />
-    <Property name="PlanetFogStrength" value="0" />
+    <Property name="PlanetFogStrength" value="0.01" />
     <Property name="SpaceFogStrength" value="0.5" />
-    <Property name="SpaceFogColourStrength" value="0" />
-    <Property name="SpaceFogColour2Strength" value="0" />
+    <Property name="SpaceFogColourStrength" value="4" />
+    <Property name="SpaceFogColour2Strength" value="4" />
     <Property name="SpaceFogMax" value="0.7" />
     <Property name="SpaceFogPlanetMax" value="0.8" />
     <Property name="NebulaFrequency" value="1.75" />
@@ -1141,10 +1141,10 @@
     <Property name="AtmosphereThickness" value="0.28" />
     <Property name="HorizonMultiplier" value="1" />
     <Property name="HorizonFadeSpeed" value="1" />
-    <Property name="PlanetFogStrength" value="0" />
-    <Property name="SpaceFogStrength" value="0.9" />
-    <Property name="SpaceFogColourStrength" value="0" />
-    <Property name="SpaceFogColour2Strength" value="0" />
+    <Property name="PlanetFogStrength" value="0.1" />
+    <Property name="SpaceFogStrength" value="0.7" />
+    <Property name="SpaceFogColourStrength" value="4" />
+    <Property name="SpaceFogColour2Strength" value="4" />
     <Property name="SpaceFogMax" value="0.7" />
     <Property name="SpaceFogPlanetMax" value="0.8" />
     <Property name="NebulaFrequency" value="2.5" />
