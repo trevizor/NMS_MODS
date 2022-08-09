@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.97.0)-->
+<!--File created using MBINCompiler version (3.98.0)-->
 <Data template="GcUIGlobals">
   <Property name="FreighterMegaWarpTransitionTime" value="2" />
   <Property name="UseIntermediateMissionGiverOptions" value="True" />
@@ -710,21 +710,21 @@
   <Property name="PopupValueSectionBaseHeight" value="28" />
   <Property name="PopupValueSectionHeight" value="62" />
   <Property name="ProcProductColourCommon" value="Colour.xml">
-    <Property name="R" value="0.082" />
-    <Property name="G" value="0.2" />
-    <Property name="B" value="0.31" />
+    <Property name="R" value="0.762" />
+    <Property name="G" value="0.7926" />
+    <Property name="B" value="0.8211" />
     <Property name="A" value="1" />
   </Property>
   <Property name="ProcProductColourUncommon" value="Colour.xml">
-    <Property name="R" value="0.271" />
-    <Property name="G" value="0.047" />
-    <Property name="B" value="0.192" />
+    <Property name="R" value="0.811" />
+    <Property name="G" value="0.7529" />
+    <Property name="B" value="0.7905" />
     <Property name="A" value="1" />
   </Property>
   <Property name="ProcProductColourRare" value="Colour.xml">
-    <Property name="R" value="0.863" />
-    <Property name="G" value="0.58" />
-    <Property name="B" value="0" />
+    <Property name="R" value="0.9645" />
+    <Property name="G" value="0.8911" />
+    <Property name="B" value="0.7407" />
     <Property name="A" value="1" />
   </Property>
   <Property name="InventoryIconPositions">
@@ -1048,12 +1048,12 @@
   </Property>
   <Property name="BaseBuildingInputHighlightDuration" value="0.5" />
   <Property name="BaseBuildingInputHighlightAlpha" value="0.5" />
-  <Property name="BaseBuildingScaleSpeed" value="0.3" />
-  <Property name="BaseBuildingMinFreeRotateSpeed" value="0.8" />
-  <Property name="BaseBuildingMaxFreeRotateSpeed" value="3.5" />
+  <Property name="BaseBuildingScaleSpeed" value="0.25" />
+  <Property name="BaseBuildingMinFreeRotateSpeed" value="5" />
+  <Property name="BaseBuildingMaxFreeRotateSpeed" value="5" />
   <Property name="BaseBuildingTimeToMaxRotationSpeed" value="1" />
   <Property name="BaseBuildingRotationResetRate" value="4" />
-  <Property name="BaseBuildingFreeRotateSpeedPadMultiplier" value="1.111111" />
+  <Property name="BaseBuildingFreeRotateSpeedPadMultiplier" value="1" />
   <Property name="BaseBuildingFreeRotateDelayBeforeReset" value="0.55" />
   <Property name="BaseBuildingFreeRotateDelayBeforeAudioStops" value="0.075" />
   <Property name="BaseBuildingSmoothMenuWhileSnapped" value="True" />
@@ -1628,8 +1628,8 @@
   <Property name="HUDPlayerPhonePulseScanFreq" value="-1" />
   <Property name="RefinerAutoCloseTime" value="999" />
   <Property name="RefinerBackgroundColour" value="Colour.xml">
-    <Property name="R" value="0.016" />
-    <Property name="G" value="0.247" />
+    <Property name="R" value="0.216" />
+    <Property name="G" value="0.227" />
     <Property name="B" value="0.498" />
     <Property name="A" value="1" />
   </Property>
@@ -2135,8 +2135,8 @@
   <Property name="SpaceMarkersBattleOffset" value="3000" />
   <Property name="LargeSpaceIconSize" value="80" />
   <Property name="SmallSpaceIconSize" value="48" />
-  <Property name="PetHoverIconSize" value="64" />
-  <Property name="PetIconSize" value="52" />
+  <Property name="PetHoverIconSize" value="32" />
+  <Property name="PetIconSize" value="26" />
   <Property name="TrackTypeIconOffset" value="Vector2f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="-100" />
@@ -2478,7 +2478,7 @@
   </Property>
   <Property name="GalaxyMapRadialBorder" value="125" />
   <Property name="GalaxyMapRadialTargetDist" value="900" />
-  <Property name="IconBackgroundAlpha" value="0.7" />
+  <Property name="IconBackgroundAlpha" value="0.4" />
   <Property name="WantedLevelWitnessPulseRate" value="0.7" />
   <Property name="WantedLevelWitnessOffset" value="100" />
   <Property name="WantedLevelTimeoutPulseRate" value="1" />
@@ -3161,15 +3161,15 @@
   <Property name="InteractionIconOuterRadius" value="1" />
   <Property name="InteractionLabelPixelHeightMin" value="80" />
   <Property name="InteractionLabelPixelHeightMax" value="1000" />
-  <Property name="ScanTime" value="2.0" />
+  <Property name="ScanTime" value="2" />
   <Property name="ModelViews" value="GcModelViewCollection.xml">
     <Property name="ModelViews">
       <Property name="Suit" value="TkModelRendererData.xml">
         <Property name="Camera" value="TkModelRendererCameraData.xml">
-          <Property name="Distance" value="2" />
+          <Property name="Distance" value="1.6" />
           <Property name="Offset" value="Vector3f.xml">
             <Property name="x" value="-0.65" />
-            <Property name="y" value="0.1" />
+            <Property name="y" value="0.08" />
             <Property name="z" value="0" />
           </Property>
           <Property name="Roll" value="90" />
@@ -3242,9 +3242,9 @@
       </Property>
       <Property name="Ship" value="TkModelRendererData.xml">
         <Property name="Camera" value="TkModelRendererCameraData.xml">
-          <Property name="Distance" value="1.3" />
+          <Property name="Distance" value="1.15" />
           <Property name="Offset" value="Vector3f.xml">
-            <Property name="x" value="-0.3" />
+            <Property name="x" value="-0.25" />
             <Property name="y" value="0.077" />
             <Property name="z" value="0" />
           </Property>
@@ -3701,12 +3701,12 @@
           <Property name="Distance" value="0.7" />
           <Property name="Offset" value="Vector3f.xml">
             <Property name="x" value="-0.1" />
-            <Property name="y" value="-0.01" />
+            <Property name="y" value="0.06" />
             <Property name="z" value="0" />
           </Property>
           <Property name="Roll" value="0" />
-          <Property name="Pitch" value="0" />
-          <Property name="Rotate" value="120" />
+          <Property name="Pitch" value="10" />
+          <Property name="Rotate" value="125" />
           <Property name="LightPitch" value="45" />
           <Property name="LightRotate" value="45" />
           <Property name="Wander" value="TkCameraWanderData.xml">
@@ -3725,7 +3725,7 @@
           <Property name="y" value="0" />
           <Property name="z" value="0" />
         </Property>
-        <Property name="FocusInterpTime" value="0" />
+        <Property name="FocusInterpTime" value="1.6" />
         <Property name="BlendInTime" value="0.8" />
         <Property name="BlendInOffset" value="0" />
         <Property name="Anim" value="" />
@@ -4078,15 +4078,15 @@
       </Property>
       <Property name="FreighterRepair" value="TkModelRendererData.xml">
         <Property name="Camera" value="TkModelRendererCameraData.xml">
-          <Property name="Distance" value="0.7" />
+          <Property name="Distance" value="0.4" />
           <Property name="Offset" value="Vector3f.xml">
-            <Property name="x" value="-0.1" />
-            <Property name="y" value="-0.01" />
+            <Property name="x" value="0.1" />
+            <Property name="y" value="0.05" />
             <Property name="z" value="0" />
           </Property>
           <Property name="Roll" value="0" />
-          <Property name="Pitch" value="0" />
-          <Property name="Rotate" value="120" />
+          <Property name="Pitch" value="10" />
+          <Property name="Rotate" value="115" />
           <Property name="LightPitch" value="45" />
           <Property name="LightRotate" value="45" />
           <Property name="Wander" value="TkCameraWanderData.xml">
@@ -4105,7 +4105,7 @@
           <Property name="y" value="0" />
           <Property name="z" value="0" />
         </Property>
-        <Property name="FocusInterpTime" value="0" />
+        <Property name="FocusInterpTime" value="1.6" />
         <Property name="BlendInTime" value="0.8" />
         <Property name="BlendInOffset" value="0" />
         <Property name="Anim" value="" />
@@ -4447,9 +4447,9 @@
   <Property name="CursorHoverSlowFactor" value="0.95" />
   <Property name="FrontendBGAlpha" value="1" />
   <Property name="FrontendConfirmTimeMouseMultiplier" value="0.35" />
-  <Property name="FrontendConfirmTimeFast" value="0.20" />
+  <Property name="FrontendConfirmTimeFast" value="0.2" />
   <Property name="FrontendConfirmTime" value="0.4" />
-  <Property name="FrontendConfirmTimeSlow" value="1.0" />
+  <Property name="FrontendConfirmTimeSlow" value="1" />
   <Property name="FrontendConfirmCurve" value="TkCurveType.xml">
     <Property name="Curve" value="Squared" />
   </Property>
@@ -5126,6 +5126,8 @@
     <Property name="B" value="0.384" />
     <Property name="A" value="0.528" />
   </Property>
+  <Property name="AsteroidMarkerMinDisplayDistance" value="0" />
+  <Property name="AsteroidMarkerMinDisplayAngleDegrees" value="0" />
   <Property name="MissileIconAttackPulseTime" value="0.3" />
   <Property name="MissileIconAttackPulseAmount" value="1.4" />
   <Property name="NGuiModelRotationDegreesX" value="0" />
@@ -5664,8 +5666,8 @@
   <Property name="DetailMessageDismissTime" value="0.3" />
   <Property name="InfoPortalGuideCycleTime" value="5" />
   <Property name="InfoPortalMilestonesCycleTime" value="5" />
-  <Property name="FeedFrigateAnimPeriod" value="0" />
-  <Property name="FeedFrigateAnimNumPeriods" value="96" />
-  <Property name="FeedFrigateAnimScaleChange" value="0" />
-  <Property name="FeedFrigateAnimAlphaChange" value="6E-45" />
+  <Property name="FeedFrigateAnimPeriod" value="0.4" />  
+  <Property name="FeedFrigateAnimNumPeriods" value="1" /> 
+  <Property name="FeedFrigateAnimScaleChange" value="0.15" /> 
+  <Property name="FeedFrigateAnimAlphaChange" value="0.5" />
 </Data>

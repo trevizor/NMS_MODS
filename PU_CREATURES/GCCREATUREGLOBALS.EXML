@@ -709,7 +709,7 @@
   <Property name="VelocityAlignSpeed" value="8" />
   <Property name="HeightLookAhead" value="2" />
   <Property name="MaxHeightTime" value="5" />
-  <Property name="PlayerBirdDistance" value="1" />
+  <Property name="PlayerBirdDistance" value="20" />
   <Property name="FishSpeedMin" value="0.15" />
   <Property name="FishSpeedMax" value="7" />
   <Property name="FishSwimMaxAcceleration" value="0.3" />
@@ -744,8 +744,8 @@
     <Property name="TailStiffness" value="0" />
     <Property name="TwistLimit" value="3" />
     <Property name="AltitudeSinPeriod" value="6" />
-    <Property name="AltitudeSinAmp" value="6" />
-    <Property name="AscendDescendSpeed" value="2" />
+    <Property name="AltitudeSinAmp" value="3" />
+    <Property name="AscendDescendSpeed" value="8" />
   </Property>
   <Property name="AlertTable">
     <Property value="GcCreatureAlertData.xml">
@@ -829,8 +829,8 @@
   <Property name="PredatorPerceptionDistance" value="160" />
   <Property name="PredatorFishPerceptionDistance" value="60" />
   <Property name="PassiveFleePlayerDistance" value="10" />
-  <Property name="AdultBabyKilledNoticeDistance" value="700" />
-  <Property name="PercentagePlayerPredators" value="100" />
+  <Property name="AdultBabyKilledNoticeDistance" value="70" />
+  <Property name="PercentagePlayerPredators" value="0.5" />
   <Property name="PredatorSmallHealth" value="800" />
   <Property name="PredatorMedHealth" value="2800" />
   <Property name="PredatorLargeHealth" value="6000" />
@@ -891,7 +891,7 @@
   <Property name="FiendMaxEngaged" value="6" />
   <Property name="FiendMaxAttackers" value="2" />
   <Property name="FiendMaxVerticalForPounce" value="0.3" />
-  <Property name="FiendZigZagSpeed" value="2" />
+  <Property name="FiendZigZagSpeed" value="0" />
   <Property name="FiendZigZagStrength" value="0" />
   <Property name="FiendEggsToUnlockSpit" value="0" />
   <Property name="MaxFiendsToSpawn" value="6" />
@@ -927,9 +927,9 @@
   <Property name="MaxRagdollsBeforeDespawnOnscreen" value="18" />
   <Property name="TurnRadiusMultiplier" value="5" />
   <Property name="MaxTurnRadius" value="50" />
-  <Property name="TurnSlowAreaCos" value="0.35" />
+  <Property name="TurnSlowAreaCos" value="0.75" />
   <Property name="BadTurnPercent" value="0.3" />
-  <Property name="BadTurnWeight" value="0" />
+  <Property name="BadTurnWeight" value="0.1" />
   <Property name="MinScaleForNavMap" value="1" />
   <Property name="ImpassabilityBrakeTime" value="0.2" />
   <Property name="ImpassabilityUnbrakeTime" value="0.4" />
@@ -1199,15 +1199,15 @@
     <Property name="B" value="0.574" />
     <Property name="A" value="1" />
   </Property>
-  <Property name="AnimChangeCoolDown" value="0.5" />
-  <Property name="GroupRunProbability" value="0.2" />
-  <Property name="GroupBabyRunProbability" value="0.4" />
-  <Property name="GroupRunStormProbability" value="100" />
-  <Property name="GroupLookAtProbability" value="0.4" />
-  <Property name="GroupLookAtDurationMin" value="4" />
-  <Property name="GroupLookAtDurationMax" value="10" />
-  <Property name="GroupRunDurationMin" value="10" />
-  <Property name="GroupRunDurationMax" value="30" />
+  <Property name="AnimChangeCoolDown" value="0.25" />
+  <Property name="GroupRunProbability" value="0.8" />
+  <Property name="GroupBabyRunProbability" value="0.8" />
+  <Property name="GroupRunStormProbability" value="0.95" />
+  <Property name="GroupLookAtProbability" value="0.1" />
+  <Property name="GroupLookAtDurationMin" value="1" />
+  <Property name="GroupLookAtDurationMax" value="2" />
+  <Property name="GroupRunDurationMin" value="7" />
+  <Property name="GroupRunDurationMax" value="10" />
   <Property name="GroupFemaleProportion" value="0.6" />
   <Property name="GroupBabyProportion" value="0.3" />
   <Property name="GroupBabyScale" value="0.5" />

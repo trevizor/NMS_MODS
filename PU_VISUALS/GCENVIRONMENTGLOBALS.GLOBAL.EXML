@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.87.0)-->
+<!--File created using MBINCompiler version (3.98.0)-->
 <Data template="GcEnvironmentGlobals">
   <Property name="LODSettings">
     <Property value="TkLODSettingsData.xml">
@@ -282,9 +282,10 @@
   <Property name="IndoorsLightingWeightGround" value="0.3" />
   <Property name="IndoorsLightingTransitionTime" value="1.2" />
   <Property name="IndoorsLightingThreshold" value="0.8" />
-  <Property name="IndoorsLightingPlanetMax" value="0.42" />
+  <Property name="IndoorsLightingPlanetMax" value="1" />
   <Property name="IndoorsLightingAbandonedFreighterMax" value="1" />
   <Property name="IndoorsLightingNexusMax" value="1" />
+  <Property name="IndoorsLightingFreighterMax" value="1" />
   <Property name="MaxElevation" value="500" />
   <Property name="SphereLodTextureScale" value="2048" />
   <Property name="ForceAddUnderwaterProps" value="False" />
@@ -384,12 +385,12 @@
     <Property value="10000" />
   </Property>
   <Property name="FarBlendLength" value="10000" />
-  <Property name="IndoorColourBlendTime" value="10" />
+  <Property name="IndoorColourBlendTime" value="1" />
   <Property name="IndoorAmbientColour" value="Colour.xml">
-    <Property name="R" value="0" />
-    <Property name="G" value="0" />
-    <Property name="B" value="0" />
-    <Property name="A" value="0" />
+    <Property name="R" value="0.5" />
+    <Property name="G" value="0.5" />
+    <Property name="B" value="0.5" />
+    <Property name="A" value="1" />
   </Property>
   <Property name="LightDirectionHeight" value="4000" />
   <Property name="LightDirectionBlend" value="5000" />
