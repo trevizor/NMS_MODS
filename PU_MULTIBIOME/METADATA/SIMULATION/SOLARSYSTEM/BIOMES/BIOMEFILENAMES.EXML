@@ -633,7 +633,7 @@
     </Property>
   </Property>
   <Property name="ValidStartPlanetBiome">
-    <Property value="GcBiomeType.xml">
+    <!--<Property value="GcBiomeType.xml">
       <Property name="Biome" value="Barren" />
     </Property>
     <Property value="GcBiomeType.xml">
@@ -641,7 +641,7 @@
     </Property>
     <Property value="GcBiomeType.xml">
       <Property name="Biome" value="Lush" />
-    </Property>
+    </Property> -->
     <Property value="GcBiomeType.xml">
       <Property name="Biome" value="Toxic" />
     </Property>
@@ -760,9 +760,6 @@
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENHQOBJECTSFULL.MBIN" />
         </Property>
         <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENINFESTEDOBJECTS.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/BARRENROCKYOBJECTS.MBIN" />
         </Property>
         <Property value="NMSString0x80.xml">
@@ -770,9 +767,6 @@
         </Property>
         <Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/DEADBIGPROPSOBJECTSFULL.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/DEADOBJECTSDEAD.MBIN" />
         </Property>
         <Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/FROZENDEADOBJECTS.MBIN" />
@@ -818,9 +812,6 @@
         </Property>
         <Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHHQTENTACLEOBJECTSFULL.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHINFESTEDOBJECTS.MBIN" />
         </Property>
         <Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROCKYOBJECTS.MBIN" />
@@ -875,9 +866,6 @@
         </Property>
         <Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICEGGSOBJECTS.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICINFESTEDOBJECTS.MBIN" />
         </Property>
         <Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/TOXICSPORESOBJECTS.MBIN" />
@@ -1009,9 +997,6 @@
         </Property>
         <Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/DEADBIGPROPSOBJECTSFULL.MBIN" />
-        </Property>
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/DEADOBJECTSDEAD.MBIN" />
         </Property>
         <Property value="NMSString0x80.xml">
           <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/FROZENDEADOBJECTS.MBIN" />
@@ -1161,7 +1146,7 @@
       <Property name="Name" value="EXTRALUSH" />
       <Property name="ResourceHint" value="" />
       <Property name="ResourceHintIcon" value="" />
-      <Property name="Probability" value="0.1" />
+      <Property name="Probability" value="0.3" />
       <Property name="SeasonalProbabilityOverride" value="1" />
       <Property name="TileType" value="GcTerrainTileType.xml">
         <Property name="TileType" value="Base" />
@@ -1179,7 +1164,7 @@
       <Property name="Name" value="INFECTION" />
       <Property name="ResourceHint" value="" />
       <Property name="ResourceHintIcon" value="" />
-      <Property name="Probability" value="0.5" />
+      <Property name="Probability" value="0.15" />
       <Property name="SeasonalProbabilityOverride" value="1" />
       <Property name="TileType" value="GcTerrainTileType.xml">
         <Property name="TileType" value="Base" />

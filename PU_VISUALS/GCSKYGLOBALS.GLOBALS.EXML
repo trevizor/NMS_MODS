@@ -53,10 +53,10 @@
     <Property name="y" value="0" />
     <Property name="z" value="0" />
   </Property>
-  <Property name="SafeSkyMinIndex" value="0" />
-  <Property name="SafeSkyMaxIndex" value="73" />
-  <Property name="FrozenSkyMinIndex" value="0" />
-  <Property name="FrozenSkyMaxIndex" value="73" />
+  <Property name="SafeSkyMinIndex" value="-1" />
+  <Property name="SafeSkyMaxIndex" value="256" />
+  <Property name="FrozenSkyMinIndex" value="-1" />
+  <Property name="FrozenSkyMaxIndex" value="256" />
   <Property name="SunClampAngle" value="70" />
   <Property name="PhotoModeVignette" value="Vector2f.xml">
     <Property name="x" value="0.9" />
@@ -175,10 +175,10 @@
   <Property name="MaxSaturation" value="0.65" />
   <Property name="MinValue" value="0.3" />
   <Property name="MaxValue" value="0.5" />
-  <Property name="MinFogSaturation" value="0.1" />
-  <Property name="MaxFogSaturation" value="0.4" />
+  <Property name="MinFogSaturation" value="0.2" />
+  <Property name="MaxFogSaturation" value="0.7" />
   <Property name="MinFogValue" value="0.1" />
-  <Property name="MaxFogValue" value="0.6" />
+  <Property name="MaxFogValue" value="0.4" />
   <Property name="MinColourS" value="0" />
   <Property name="MaxColourS" value="1" />
   <Property name="MinColourV" value="0.4" />
@@ -216,7 +216,7 @@
       <Property name="HorizonMultiplier" value="2.8" />
       <Property name="DuskHorizonMultiplier" value="3" />
       <Property name="NightHorizonMultiplier" value="0.754867" />
-      <Property name="HorizonFadeSpeed" value="2" />
+      <Property name="HorizonFadeSpeed" value="0.15" />
       <Property name="DayHorizonTightness" value="0.3" />
       <Property name="SunSize" value="0.78" />
       <Property name="SunStrength" value="1E-06" />
@@ -600,7 +600,7 @@
       <Property name="HorizonMultiplier" value="2.8" />
       <Property name="DuskHorizonMultiplier" value="3" />
       <Property name="NightHorizonMultiplier" value="0.754867" />
-      <Property name="HorizonFadeSpeed" value="2" />
+      <Property name="HorizonFadeSpeed" value="0.15" />
       <Property name="DayHorizonTightness" value="0.3" />
       <Property name="SunSize" value="0.78" />
       <Property name="SunStrength" value="1E-06" />
@@ -1093,7 +1093,7 @@
     <Property name="CenterPower" value="2.5" />
     <Property name="AtmosphereThickness" value="0.2" />
     <Property name="HorizonMultiplier" value="1" />
-    <Property name="HorizonFadeSpeed" value="1" />
+    <Property name="HorizonFadeSpeed" value="0.15" />
     <Property name="PlanetFogStrength" value="0.01" />
     <Property name="SpaceFogStrength" value="0.5" />
     <Property name="SpaceFogColourStrength" value="4" />
@@ -1140,7 +1140,7 @@
     <Property name="CenterPower" value="2.5" />
     <Property name="AtmosphereThickness" value="0.28" />
     <Property name="HorizonMultiplier" value="1" />
-    <Property name="HorizonFadeSpeed" value="1" />
+    <Property name="HorizonFadeSpeed" value="0.15" />
     <Property name="PlanetFogStrength" value="0.1" />
     <Property name="SpaceFogStrength" value="0.7" />
     <Property name="SpaceFogColourStrength" value="4" />
