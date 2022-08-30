@@ -1,0 +1,169 @@
+<html>
+<header>
+	
+</header>
+<style>
+  .main {
+  	width: 100%;
+  	height: 100%;
+  }
+  .color-display {
+  	width: 180px;
+  	height: 50px;
+  	line-height: 25px;
+  	display: inline-block;
+  	overflow: hidden;
+  	font-size: 8px;
+  	font-family: "verdana";
+  	padding: 2px;
+  }
+  .line-break{
+  	background: rgba(0,0,0,0.25);
+  	width: 100%;
+  	height: 5px;
+  	display: inline-block;
+  }
+</style>
+<script>
+	var body = document.getElementById("mainContainer")
+	var count = {}
+
+	var proccess = function () {
+		let value = document.getElementById("pallete-input").value
+		value = value + "ENDSENTENCE";
+		value = value.replace(/(\r\n|\n|\r)/gm,"")
+		value = value.replace(/<\/Property><Property value="GcPlanetWeatherColourData.xml">/g,"") 
+		value = value.replace(/<\/Property><Property value="GcPlanetWaterColourData.xml">/g,"") 
+		value = value.replace(/<Property value="GcPlanetWeatherColourData.xml">/g,"") 
+		value = value.replace(/<Property value="GcPlanetWaterColourData.xml">/g,"") 
+		value = value.replace(/<Property value="GcSolarSystemSkyColourData.xml">/g,"") 
+		
+		value = value.replace(/<Property value="Colour.xml">/g,"{\"header\":\"Colour\",") 
+		value = value.replace(/<Property name="ColourMiddle" value="Colour.xml">/g,"{\"header\":\"Colour\",") 
+
+		value = value.replace(/<Property name="ColourStart" value="Colour.xml">/g,"{\"header\":\"Colour\",") 
+		value = value.replace(/<Property name="ColourEnd" value="Colour.xml">/g,"{\"header\":\"Colour\",") 
+
+		value = value.replace(/<Property name="SkyUpperColour" value="Colour.xml">/g,"{\"header\":\"SkyUpperColour\",") 
+		value = value.replace(/<Property name="SkyColour" value="Colour.xml">/g,"{\"header\":\"SkyColour\",") 
+		value = value.replace(/<Property name="SkySolarColour" value="Colour.xml">/g,"{\"header\":\"SkySolarColour\",") 
+		value = value.replace(/<Property name="HorizonColour" value="Colour.xml">/g,"{\"header\":\"HorizonColour\",") 
+		value = value.replace(/<Property name="SunColour" value="Colour.xml">/g,"{\"header\":\"SunColour\",") 
+		value = value.replace(/<Property name="FogColour" value="Colour.xml">/g,"{\"header\":\"FogColour\",") 
+		value = value.replace(/<Property name="FogColour2" value="Colour.xml">/g,"{\"header\":\"FogColour2\",") 
+		value = value.replace(/<Property name="HeightFogColour" value="Colour.xml">/g,"{\"header\":\"HeightFogColour\",") 
+		value = value.replace(/<Property name="LightColour" value="Colour.xml">/g,"{\"header\":\"LightColour\",") 
+		value = value.replace(/<Property name="CloudColour1" value="Colour.xml">/g,"{\"header\":\"CloudColour1\",") 
+		value = value.replace(/<Property name="CloudColour2" value="Colour.xml">/g,"{\"header\":\"CloudColour2\",") 
+		value = value.replace(/<Property name="WaterFogColourNear" value="Colour.xml">/g,"{\"header\":\"WaterFogColourNear\",") 
+		value = value.replace(/<Property name="WaterFogColourFar" value="Colour.xml">/g,"{\"header\":\"WaterFogColourFar\",") 
+		value = value.replace(/<Property name="WaterColourBase" value="Colour.xml">/g,"{\"header\":\"WaterColourBase\",") 
+		value = value.replace(/<Property name="WaterColourAdd" value="Colour.xml">/g,"{\"header\":\"WaterColourAdd\",") 
+		value = value.replace(/<Property name="FoamColour" value="Colour.xml">/g,"{\"header\":\"FoamColour\",") 
+		value = value.replace(/<Property name="SkyGradientSpeed" value="Vector4f.xml">/g,"{\"header\":\"GradientSpeed\",") 
+		value = value.replace(/<Property name="SkyGradientSpeed" value="Vector3f.xml">/g,"{\"header\":\"GradientSpeed\",") 
+		value = value.replace(/<Property name="TopColour" value="Colour.xml">/g,"{\"header\":\"TopColour\",") 
+		value = value.replace(/<Property name="MidColour" value="Colour.xml">/g,"{\"header\":\"MidColour\",") 
+		value = value.replace(/<Property name="BottomColour" value="Colour.xml">/g,"{\"header\":\"BottomColour\",") 
+		value = value.replace(/<Property name="TopColourPlanet" value="Colour.xml">/g,"{\"header\":\"TopColourPlanet\",") 
+		value = value.replace(/<Property name="MidColourPlanet" value="Colour.xml">/g,"{\"header\":\"MidColourPlanet\",") 
+		value = value.replace(/<Property name="BottomColourPlanet" value="Colour.xml">/g,"{\"header\":\"BottomColourPlanet\",") 
+		value = value.replace(/<Property name="CloudColour" value="Colour.xml">/g,"{\"header\":\"CloudColour\",") 
+		value = value.replace(/<Property name="LightColour" value="Colour.xml">/g,"{\"header\":\"LightColour\",") 
+		value = value.replace(/<Property name="NebulaColour1" value="Colour.xml">/g,"{\"header\":\"NebulaColour1\",") 
+		value = value.replace(/<Property name="NebulaColour2" value="Colour.xml">/g,"{\"header\":\"NebulaColour2\",") 
+		value = value.replace(/<Property name="NebulaColour3" value="Colour.xml">/g,"{\"header\":\"NebulaColour3\",") 
+		value = value.replace(/<Property name="FogColour" value="Colour.xml">/g,"{\"header\":\"FogColour\",") 
+		value = value.replace(/<Property name="FogColour2" value="Colour.xml">/g,"{\"header\":\"FogColour2\",") 
+
+
+
+		value = value.replace(/name="x"/g,'name="r"')
+		value = value.replace(/name="y"/g,'name="g"')
+		value = value.replace(/name="z"/g,'name="b"')
+		value = value.replace(/name="t"/g,'name="a"')
+		value = value.replace(/<Property name=/g,"")
+		value = value.replace(/value=/g,":")
+		value = value.replace(/\/>/g,",")
+		value = value.replace(/<\/Property>/g,"},")
+		value = value.replace(/ /g,"")
+		value = value.replace(/,}/g,"}")
+		value = value.replace(/}}/g,"}")
+		value = value.replace(/,ENDSENTENCE/g,"")
+		value = "[" + value + "]";
+		console.log(value)
+		colors = JSON.parse(value);
+		console.log(colors)
+		main();
+		document.getElementById("pallete-input").value = "";
+	}
+
+	var replace = function () {
+		let value = document.getElementById("pallete-input").value
+		let minValue = document.getElementById("min-value-input").value
+		let randomValue = document.getElementById("random-value-input").value
+		while(value.indexOf("RANDOM") != -1){
+			value = value.replace("RANDOM", Math.random()*parseFloat(randomValue) + parseFloat(minValue))
+		}
+		mainContainer.innerHTML = value;
+		var copyText = document.getElementById("pallete-input");
+		copyText.value = value;
+		copyText.select();
+		copyText.setSelectionRange(0, 99999); /* For mobile devices */
+		document.execCommand("copy");
+		console.log(value)
+	}
+
+	var main = function () {
+
+		let newColors = [];
+		let firstHeader = "";
+		mainContainer.innerHTML = "";
+		count = {}
+		let highestColor = null;
+		let colorMultiplier = 0;
+		colors.forEach( (element, index, array) => {
+			let newColor = {
+				r: 0,
+				g: 0,
+				b: 0,
+			}
+			//element.R = element.R.replace(".", ",");
+			element.R = parseFloat(element.R);
+			//element.G = element.G.replace(".", ",");
+			element.G = parseFloat(element.G);
+			//element.B = element.B.replace(".", ",");
+			element.B = parseFloat(element.B);
+			
+			highestColor = Math.max(element.R, element.G, element.B);
+			colorMultiplier = 1/highestColor;
+			newColor.r = element.R * colorMultiplier;
+			newColor.g = element.G * colorMultiplier;
+			newColor.b = element.B * colorMultiplier;
+			newColors[newColors.length] = newColor;
+		});
+
+		console.log(newColors);
+		newColors.forEach( (element, index, array) => { 
+			document.getElementById("mainContainer").innerHTML += "------- R:" + element.r + "<br>";	
+			document.getElementById("mainContainer").innerHTML += "------- G:" + element.g + "<br>";	
+			document.getElementById("mainContainer").innerHTML += "------- B:" + element.b + "<br>";	
+			document.getElementById("mainContainer").innerHTML += "------<br>";	
+		} );
+		
+	}
+
+</script>
+<body >
+	<div> 
+
+		Insert Color Pallete Data
+
+		<textarea id="pallete-input"></textarea>
+		<button onclick="proccess()">Proccess!</button><br>
+	</div>
+	<div id="mainContainer">
+		
+	</div>
+</body>
+</html>
