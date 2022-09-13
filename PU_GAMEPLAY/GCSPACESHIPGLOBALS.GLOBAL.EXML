@@ -6,7 +6,7 @@
   <Property name="SailShipCoreTechID" value="SOLAR_SAIL" />
   <Property name="AllowSideScreenPointing" value="False" />
   <Property name="AddShipToCollectionOnEnter" value="False" />
-  <Property name="EnablePulseDriveSpaceStationOrient" value="False" />
+  <Property name="EnablePulseDriveSpaceStationOrient" value="True" />
   <Property name="DockingApproachRollHmdMod" value="1" />
   <Property name="DockingApproachSpeedHmdMod" value="1" />
   <Property name="DockingApproachBrakeHmdMod" value="1" />
@@ -142,7 +142,7 @@
   <Property name="NearGroundPitchCorrectRange" value="15" />
   <Property name="NearGroundPitchCorrectMinHeightRemote" value="30" />
   <Property name="NearGroundPitchCorrectRangeRemote" value="30" />
-  <Property name="MiniWarpMarkerApproachSlowdown" value="0.5" />
+  <Property name="MiniWarpMarkerApproachSlowdown" value="0.75" />
   <Property name="MiniWarpMarkerAlignSlowdown" value="0.8" />
   <Property name="MiniWarpMarkerAlignSlowdownRange" value="3" />
   <Property name="MiniWarpAlignSlerp" value="0.08" />
@@ -559,7 +559,7 @@
     <Property name="ShipPlanetBrakeForce" value="50" />
     <Property name="ShipPlanetBrakeAlignMinTime" value="0.3" />
     <Property name="ShipPlanetBrakeAlignMaxTime" value="8" />
-    <Property name="ShipMinHeightForce" value="1" />
+    <Property name="ShipMinHeightForce" value="0.15" />
   </Property>
   <Property name="ControlLight" value="GcPlayerSpaceshipControlData.xml">
     <Property name="SpaceEngine" value="GcPlayerSpaceshipEngineData.xml">
@@ -708,7 +708,7 @@
     <Property name="ShipPlanetBrakeForce" value="50" />
     <Property name="ShipPlanetBrakeAlignMinTime" value="0.3" />
     <Property name="ShipPlanetBrakeAlignMaxTime" value="8" />
-    <Property name="ShipMinHeightForce" value="1" />
+    <Property name="ShipMinHeightForce" value="0.15" />
   </Property>
   <Property name="ControlHeavy" value="GcPlayerSpaceshipControlData.xml">
     <Property name="SpaceEngine" value="GcPlayerSpaceshipEngineData.xml">
@@ -857,7 +857,7 @@
     <Property name="ShipPlanetBrakeForce" value="50" />
     <Property name="ShipPlanetBrakeAlignMinTime" value="0.3" />
     <Property name="ShipPlanetBrakeAlignMaxTime" value="8" />
-    <Property name="ShipMinHeightForce" value="1" />
+    <Property name="ShipMinHeightForce" value="0.15" />
   </Property>
   <Property name="ControlBonusC" value="GcPlayerSpaceshipClassBonuses.xml">
     <Property name="ThrustForceMax" value="30" />
@@ -1004,7 +1004,7 @@
   <Property name="DriftSpring" value="0" />
   <Property name="DriftTurnStrengthMultiplier" value="2" />
   <Property name="DriftTurnBrakeMultiplier" value="0.1" />
-  <Property name="DirectionBrakeVRBoost" value="0" />
+  <Property name="DirectionBrakeVRBoost" value="1" />
   <Property name="TurnRudderStrength" value="0.4" />
   <Property name="MuzzleLightIntensity" value="4.5" />
   <Property name="MuzzleAnimSpeed" value="1.5" />
@@ -1205,7 +1205,7 @@
   <Property name="MiniWarpPlanetRadius" value="500" />
   <Property name="MiniWarpStationRadius" value="700" />
   <Property name="MiniWarpFuelTime" value="0.5" />
-  <Property name="MiniWarpAlignStrength" value="0.25" />
+  <Property name="MiniWarpAlignStrength" value="2" />
   <Property name="MiniWarpChargeTime" value="2" />
   <Property name="MiniWarpSpeed" value="30000" />
   <Property name="MiniWarpTopSpeedTime" value="0.1" />
@@ -1219,7 +1219,7 @@
   <Property name="MiniWarpExitSpeed" value="1000" />
   <Property name="MiniWarpExitSpeedStation" value="500" />
   <Property name="MiniWarpExitTime" value="0.5" />
-  <Property name="MiniWarpHUDArrowAttractAngle" value="10" />
+  <Property name="MiniWarpHUDArrowAttractAngle" value="3" />
   <Property name="MiniWarpHUDArrowAttractAngleStation" value="5" />
   <Property name="MiniWarpHUDArrowAttractAngleOtherPlayerStuff" value="2" />
   <Property name="MiniWarpHUDArrowAttractAngleSaveBeacon" value="2.5" />
@@ -1429,7 +1429,7 @@
     </Property>
   </Property>
   <Property name="HUDBoostUpgradeMultiplier" value="10" />
-  <Property name="LaunchThrustersRegenTimePeriod" value="1440" />
+  <Property name="LaunchThrustersRegenTimePeriod" value="700" />
   <Property name="LaunchThrustersMinimumSummonPercentage" value="25" />
   <Property name="LaunchThrustersSummonCostMultiplier" value="1" />
   <Property name="SpeedUpDistanceThreshold" value="975" />

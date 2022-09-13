@@ -19,10 +19,10 @@
   <Property name="BinocularAimOffset" value="1" />
   <Property name="BinocularScopeScale" value="0.3" />
   <Property name="BinocularScopeSmoothing" value="0.2" />
-  <Property name="MaxArmExtension" value="1" />
+  <Property name="MaxArmExtension" value="4" />
   <Property name="MinArmExtension" value="1.5" />
   <Property name="SummonArcRange" value="40" />
-  <Property name="InteractionAimOffset" value="5" />
+  <Property name="InteractionAimOffset" value="3" />
   <Property name="QuickMenuLauncherTransforms" value="GcProjectorOffsetData.xml">
     <Property name="Scale" value="0.045" />
     <Property name="Active" value="GcInWorldUIScreenData.xml">
@@ -282,7 +282,7 @@
   <Property name="DoPlayerAppearInVehicleEffect" value="False" />
   <Property name="StickYDampingThreshold" value="0.75" />
   <Property name="RequireHandsOnShipControls" value="True" />
-  <Property name="ShowFirstPersonCharacterShadowPCVR" value="True" />
+  <Property name="ShowFirstPersonCharacterShadowPCVR" value="False" />
   <Property name="ShowFirstPersonCharacterShadowPSVR" value="False" />
   <Property name="InteractNearbyRadiusEnabled" value="False" />
   <Property name="InteractNearbyRadius" value="10" />
@@ -290,7 +290,7 @@
   <Property name="BodyRealignmentDelay" value="0.75" />
   <Property name="PointDownToMoveAngle" value="40" />
   <Property name="PointDownToMoveBackAngle" value="90" />
-  <Property name="EnableLeaning" value="False" />
+  <Property name="EnableLeaning" value="True" />
   <Property name="EnablePointDownToSmoothMove" value="False" />
   <Property name="HmdSmoothTurnAlways" value="False" />
   <Property name="HmdTurnSpeed" value="22.5" />
@@ -313,7 +313,7 @@
     <Property name="y" value="0.15" />
     <Property name="z" value="0.2" />
   </Property>
-  <Property name="GroundWalkForceMultiplier" value="5" />
+  <Property name="GroundWalkForceMultiplier" value="8" />
   <Property name="GroundWalkBrake" value="8" />
   <Property name="GroundWalkBrakeWhileMoving" value="5" />
   <Property name="GroundWalkSpeed" value="3" />
@@ -526,17 +526,17 @@
   <Property name="SpawningSpaceBattleLookOffsetUp" value="-1000" />
   <Property name="MultiplayerShareWanted" value="False" />
   <Property name="ReportAllProjectileDamage" value="True" />
-  <Property name="DefaultHitPoints" value="60" />
+  <Property name="DefaultHitPoints" value="200" />
   <Property name="DefaultHealthPips" value="3" />
   <Property name="DefaultShipHealthPips" value="6" />
-  <Property name="MaxHealthPips" value="9" />
+  <Property name="MaxHealthPips" value="10" />
   <Property name="UseLargeHealthBar" value="True" />
   <Property name="DroneSpawnAccelerator" value="10" />
   <Property name="TrackArrowStaticTargetOffsetMultiplier" value="1.6" />
   <Property name="WitnessSenseEnhancementTime" value="5" />
   <Property name="WitnessSenseEnhancement" value="2" />
   <Property name="MultiplayerMinWanteEscalationTime" value="10" />
-  <Property name="HealthRechargeMinTimeSinceDamage" value="10" />
+  <Property name="HealthRechargeMinTimeSinceDamage" value="60" />
   <Property name="HealthPipRechargeRate" value="200" />
   <Property name="MinEnergyPercentOnRespawn" value="0.5" />
   <Property name="VehicleRaceResultsHintTime" value="20" />
@@ -861,8 +861,8 @@
   <Property name="PulseEncounterSpawnEffectTime" value="0.3" />
   <Property name="PulseEncounterSpaceEggID" value="SPACE_EGG" />
   <Property name="LaserMiningDamageMultiplier" value="1" />
-  <Property name="ShieldRechargeMinTimeSinceDamage" value="40" />
-  <Property name="ShieldRechargeRate" value="20" />
+  <Property name="ShieldRechargeMinTimeSinceDamage" value="15" />
+  <Property name="ShieldRechargeRate" value="4" />
   <Property name="MoveStickHighRangeLimit" value="0.75" />
   <Property name="WitnessAIDamageDistance" value="3000" />
   <Property name="WitnessAIDamageAngle" value="40" />
@@ -872,11 +872,11 @@
   <Property name="HardLandPainTime" value="1" />
   <Property name="GunBaseClipSize" value="0" />
   <Property name="GrenadeBaseClipSize" value="100" />
-  <Property name="MeleeCooldown" value="0.5" />
-  <Property name="ChargeMeleeCooldown" value="0.6" />
+  <Property name="MeleeCooldown" value="1.2" />
+  <Property name="ChargeMeleeCooldown" value="1.8" />
   <Property name="MeleeDistance" value="2.8" />
   <Property name="MeleeDistance3P" value="1.8" />
-  <Property name="MeleeRadius" value="0.75" />
+  <Property name="MeleeRadius" value="1.0" />
   <Property name="MeleeHitTime" value="0.2" />
   <Property name="MeleeSpeedBoost" value="1" />
   <Property name="MeleeSpeedDamageBoost" value="1.2" />
@@ -884,7 +884,7 @@
   <Property name="MeleeStaminaDrain" value="1.2" />
   <Property name="MeleeCooldownAlt" value="0.4" />
   <Property name="MeleePosDelta" value="0.05" />
-  <Property name="MeleeDamageScale" value="3" />
+  <Property name="MeleeDamageScale" value="30" />
   <Property name="MeleeRadiusAlt" value="0.5" />
   <Property name="MeleeDistanceAlt" value="3" />
   <Property name="MeleeHitEffect" value="GcScanEffectData.xml">
@@ -1113,8 +1113,8 @@
   <Property name="AutoAimTimeOut" value="0.25" />
   <Property name="AutoAimMaxAngle" value="15" />
   <Property name="AutoAimMinScreenDistance" value="25" />
-  <Property name="AutoAimRadiusExtra" value="2" />
-  <Property name="AutoAimStickyRailgun" value="0.85" />
+  <Property name="AutoAimRadiusExtra" value="1" />
+  <Property name="AutoAimStickyRailgun" value="0.45" />
   <Property name="AutoAimStickyMin" value="0.8" />
   <Property name="AutoAimStickyMax" value="0.2" />
   <Property name="AutoAimDotCurve" value="TkCurveType.xml">
@@ -1450,9 +1450,9 @@
   <Property name="HelmetBob" value="0.02" />
   <Property name="JetpackHelmetBob" value="0.2" />
   <Property name="ShipCameraLag" value="0.09" />
-  <Property name="MaxResource" value="100" />
-  <Property name="ShieldMaximum" value="100" />
-  <Property name="ShieldRestoreSpeed" value="0.28" />
+  <Property name="MaxResource" value="500" />
+  <Property name="ShieldMaximum" value="35" />
+  <Property name="ShieldRestoreSpeed" value="0.08" />
   <Property name="ShieldRestoreDelay" value="10" />
   <Property name="TimeHoldDownAccelerateToLaunchFromOutpost" value="1" />
   <Property name="DeathScreenFadeInThirdPerson" value="1.8" />
@@ -1482,7 +1482,7 @@
     <Property name="StickyFactor" value="1" />
   </Property>
   <Property name="LowHealthEffectPips" value="1" />
-  <Property name="LowHealthEffectShield" value="40" />
+  <Property name="LowHealthEffectShield" value="20" />
   <Property name="CriticalHitTime" value="0.5" />
   <Property name="CriticalHitDesatTime" value="5" />
   <Property name="CriticalHitDesatFreq" value="2" />
