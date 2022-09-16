@@ -220,7 +220,7 @@
   <Property name="MaxNumActivePolice" value="15" />
   <Property name="MaxNumActivePoliceRadius" value="10000" />
   <Property name="MinAggroDamage" value="100" />
-  <Property name="TrailLandingFadeTime" value="0.5" />
+  <Property name="TrailLandingFadeTime" value="0.25" />
   <Property name="EnergyShieldsEnabled" value="True" />
   <Property name="EnergyShield" value="MODELS/EFFECTS/SPACECRAFT/SHIELDSPHERE.SCENE.MBIN" />
   <Property name="EnergyShieldDepletedEffect" value="SHIPSHIELDBREAK" />
@@ -237,9 +237,9 @@
   <Property name="PlanetaryPirateRaidFocusBuildingsTime" value="40" />
   <Property name="PlanetaryPirateRaidTradersEngageTime" value="30" />
   <Property name="PlanetaryPirateRaidMaxTradersJoinCombat" value="4" />
-  <Property name="EscapeRollTimePlanet" value="0.8" />
-  <Property name="EscapeRollTime" value="0.5" />
-  <Property name="EscapeRollPlanet" value="0.1" />
+  <Property name="EscapeRollTimePlanet" value="0" />
+  <Property name="EscapeRollTime" value="0" />
+  <Property name="EscapeRollPlanet" value="0" />
   <Property name="EscapeRoll" value="0" />
   <Property name="CrashedShipMinNonBrokenSlots" value="3" />
   <Property name="CrashedShipBrokenSlotChance" value="0.75" />
@@ -321,8 +321,8 @@
   <Property name="FallbackTravelData" value="GcSpaceshipTravelData.xml">
     <Property name="Id" value="" />
     <Property name="MinSpeed" value="80" />
-    <Property name="MaxSpeed" value="80" />
-    <Property name="BoostSpeed" value="1000" />
+    <Property name="MaxSpeed" value="120" />
+    <Property name="BoostSpeed" value="1300" /> 
     <Property name="Force" value="50" />
     <Property name="MinSpeedForce" value="5" />
     <Property name="TurnMin" value="0.4" />
@@ -332,14 +332,14 @@
     <Property name="Falloff" value="0.8" />
     <Property name="Roll" value="1" />
     <Property name="MinHeight" value="50" />
-    <Property name="AvoidTime" value="3" />
+    <Property name="AvoidTime" value="0.5" />
     <Property name="Hovering" value="False" />
   </Property>
   <Property name="SlowCombatEffectAttackTravel" value="GcSpaceshipTravelData.xml">
     <Property name="Id" value="" />
-    <Property name="MinSpeed" value="0" />
-    <Property name="MaxSpeed" value="40" />
-    <Property name="BoostSpeed" value="80" />
+    <Property name="MinSpeed" value="40" />
+    <Property name="MaxSpeed" value="80" />
+    <Property name="BoostSpeed" value="140" /> 
     <Property name="Force" value="50" />
     <Property name="MinSpeedForce" value="5" />
     <Property name="TurnMin" value="0.6" />
@@ -349,14 +349,14 @@
     <Property name="Falloff" value="0.8" />
     <Property name="Roll" value="0" />
     <Property name="MinHeight" value="20" />
-    <Property name="AvoidTime" value="0" />
+    <Property name="AvoidTime" value="0.5" />
     <Property name="Hovering" value="False" />
   </Property>
   <Property name="AsteroidMiningPositioningTravelData" value="GcSpaceshipTravelData.xml">
     <Property name="Id" value="" />
-    <Property name="MinSpeed" value="0" />
-    <Property name="MaxSpeed" value="150" />
-    <Property name="BoostSpeed" value="200" />
+    <Property name="MinSpeed" value="40" />
+    <Property name="MaxSpeed" value="250" />
+    <Property name="BoostSpeed" value="300" /> 
     <Property name="Force" value="50" />
     <Property name="MinSpeedForce" value="5" />
     <Property name="TurnMin" value="0.6" />
@@ -366,14 +366,14 @@
     <Property name="Falloff" value="0.8" />
     <Property name="Roll" value="0.1" />
     <Property name="MinHeight" value="20" />
-    <Property name="AvoidTime" value="0" />
+    <Property name="AvoidTime" value="0.5" />
     <Property name="Hovering" value="False" />
   </Property>
   <Property name="AsteroidMiningTravelData" value="GcSpaceshipTravelData.xml">
     <Property name="Id" value="" />
-    <Property name="MinSpeed" value="0" />
-    <Property name="MaxSpeed" value="1" />
-    <Property name="BoostSpeed" value="1" />
+    <Property name="MinSpeed" value="40" />
+    <Property name="MaxSpeed" value="90" />
+    <Property name="BoostSpeed" value="140" /> 
     <Property name="Force" value="50" />
     <Property name="MinSpeedForce" value="5" />
     <Property name="TurnMin" value="1.5" />
@@ -383,7 +383,7 @@
     <Property name="Falloff" value="0.8" />
     <Property name="Roll" value="0" />
     <Property name="MinHeight" value="20" />
-    <Property name="AvoidTime" value="0" />
+    <Property name="AvoidTime" value="0.5" />
     <Property name="Hovering" value="False" />
   </Property>
   <Property name="AsteroidMiningSearchRadius" value="2500" />
@@ -458,8 +458,8 @@
   <Property name="OutpostLanding" value="GcSpaceshipTravelData.xml">
     <Property name="Id" value="" />
     <Property name="MinSpeed" value="80" />
-    <Property name="MaxSpeed" value="80" />
-    <Property name="BoostSpeed" value="1000" />
+    <Property name="MaxSpeed" value="120" />
+    <Property name="BoostSpeed" value="1300" /> 
     <Property name="Force" value="300" />
     <Property name="MinSpeedForce" value="5" />
     <Property name="TurnMin" value="1" />
@@ -469,14 +469,14 @@
     <Property name="Falloff" value="0.8" />
     <Property name="Roll" value="2" />
     <Property name="MinHeight" value="15" />
-    <Property name="AvoidTime" value="0" />
+    <Property name="AvoidTime" value="0.5" />
     <Property name="Hovering" value="False" />
   </Property>
   <Property name="PlanetLanding" value="GcSpaceshipTravelData.xml">
     <Property name="Id" value="" />
     <Property name="MinSpeed" value="15" />
-    <Property name="MaxSpeed" value="20" />
-    <Property name="BoostSpeed" value="1000" />
+    <Property name="MaxSpeed" value="60" />
+    <Property name="BoostSpeed" value="1300" /> 
     <Property name="Force" value="200" />
     <Property name="MinSpeedForce" value="5" />
     <Property name="TurnMin" value="2" />
@@ -486,7 +486,7 @@
     <Property name="Falloff" value="0.8" />
     <Property name="Roll" value="2" />
     <Property name="MinHeight" value="15" />
-    <Property name="AvoidTime" value="0" />
+    <Property name="AvoidTime" value="0.5" />
     <Property name="Hovering" value="False" />
   </Property>
   <Property name="OutpostLandingNoiseFreq" value="0.010001" />
@@ -737,9 +737,9 @@
   <Property name="PoliceWarnBeaconPulseTime" value="2" />
   <Property name="ArrivalStaggerOffset" value="0.8" />
   <Property name="TrailScaleMinDistance" value="200" />
-  <Property name="TrailScale" value="1" />
+  <Property name="TrailScale" value="0.75" />
   <Property name="TrailScaleRange" value="20000" />
-  <Property name="TrailScaleMaxScale" value="2" />
+  <Property name="TrailScaleMaxScale" value="1" />
   <Property name="TrailScaleFreighterMaxScale" value="2" />
   <Property name="TrailScaleCurve" value="TkCurveType.xml">
     <Property name="Curve" value="Squared" />
