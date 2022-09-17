@@ -12197,12 +12197,12 @@
       <Property name="EcoSystemCreature" value="False" />
       <Property name="CanBeFemale" value="False" />
       <Property name="Tags" />
-      <Property name="MoveArea" value="Air" />
+      <Property name="MoveArea" value="Water" />
       <Property name="MinScale" value="0.75" />
       <Property name="MaxScale" value="1.25" /> <!-- MINIDRONE -->
       <Property name="FurLengthModifierAtMinScale" value="1" />
       <Property name="FurLengthModifierAtMaxScale" value="1" />
-      <Property name="FurChance" value="0.3" />
+      <Property name="FurChance" value="0" />
       <Property name="Rarity" value="GcCreatureRarity.xml">
         <Property name="CreatureRarity" value="Common" />
       </Property>
@@ -12273,8 +12273,8 @@
           <Property name="Herd" value="False" />
         </Property>
         <Property value="GcCreatureSwarmData.xml">
-          <Property name="MinCount" value="8" />
-          <Property name="MaxCount" value="25" />
+          <Property name="MinCount" value="1" />
+          <Property name="MaxCount" value="1" />
           <Property name="SwarmMovementSpeed" value="1" />
           <Property name="SwarmMovementRadius" value="50" />
           <Property name="SwarmMovementType" value="Random" />
@@ -12320,8 +12320,8 @@
           </Property>
         </Property>
         <Property value="GcCreatureFiendAttackData.xml">
-          <Property name="NearDist" value="6" />
-          <Property name="FarDist" value="10" />
+          <Property name="NearDist" value="4" />
+          <Property name="FarDist" value="8" />
           <Property name="ModifyDistanceForHeight" value="3" />
           <Property name="SpitAnim" value="SPIT" />
           <Property name="SpitAnimFrame" value="22" />
