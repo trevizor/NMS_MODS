@@ -1,0 +1,30 @@
+[VERSION]: MBINCompiler v3.99.1.1
+[ARGS]: "D:\NMS-Modding-Station\MODS\AllRewards\METADATA\REALITY\TABLES\REWARDTABLE.EXML"
+
+If you encounter any errors, please submit a bug report and include this log file.
+Please check that there isn't already a similar issue open before creating a new one.
+https://github.com/monkeyman192/MBINCompiler/issues
+
+[INFO]: Auto-Detected --input-format=EXML
+[INFO]: --input-format=EXML --output-format=MBIN
+[INFO]: D:\NMS-Modding-Station\MODS\AllRewards\METADATA\REALITY\TABLES\REWARDTABLE.EXML
+
+[ERROR]: [ExmlException]: Object reference not set to an instance of an object.
+[NullReferenceException]
+
+[INFO]: D:\NMS-Modding-Station\MODS\AllRewards\METADATA\REALITY\TABLES\REWARDTABLE.EXML
+
+   at libMBIN.NMSTemplate.DeserializeEXml(EXmlBase xmlData)
+   at libMBIN.NMSTemplate.DeserializeEXml(EXmlBase xmlData)
+   at libMBIN.NMSTemplate.DeserializeEXmlValue(NMSTemplate template, Type fieldType, FieldInfo field, EXmlProperty xmlProperty, Type templateType, NMSAttribute settings)
+   at libMBIN.NMSTemplate.DeserializeEXml(EXmlBase xmlData)
+   at libMBIN.NMSTemplate.DeserializeEXmlValue(NMSTemplate template, Type fieldType, FieldInfo field, EXmlProperty xmlProperty, Type templateType, NMSAttribute settings)
+   at libMBIN.NMSTemplate.DeserializeEXml(EXmlBase xmlData)
+   at libMBIN.NMSTemplate.DeserializeEXmlValue(NMSTemplate template, Type fieldType, FieldInfo field, EXmlProperty xmlProperty, Type templateType, NMSAttribute settings)
+   at libMBIN.NMSTemplate.DeserializeEXml(EXmlBase xmlData)
+   at libMBIN.NMSTemplate.DeserializeEXmlValue(NMSTemplate template, Type fieldType, FieldInfo field, EXmlProperty xmlProperty, Type templateType, NMSAttribute settings)
+   at libMBIN.NMSTemplate.DeserializeEXml(EXmlBase xmlData)
+   at libMBIN.EXmlFile.ReadTemplateFromXmlReader(XmlReader reader, String& templateName)
+   at libMBIN.EXmlFile.ReadTemplateFromStream(Stream input, String& templateName)
+   at MBINCompiler.Commands.Convert.ConvertEXML(String inputPath, FileStream fIn, MemoryStream msOut, String fileOut)
+

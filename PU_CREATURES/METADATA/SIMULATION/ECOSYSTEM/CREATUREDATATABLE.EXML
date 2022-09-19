@@ -9886,7 +9886,7 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="0.5" />
+              <Property name="AnimSpeed" value="0.01" />
               <Property name="MinSpeedScale" value="0.3" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
@@ -9899,7 +9899,7 @@
               <Property name="Anim" value="RUN" />
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
-              <Property name="AnimSpeed" value="0.5" />
+              <Property name="AnimSpeed" value="0.01" />
               <Property name="MinSpeedScale" value="1" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
@@ -10304,7 +10304,7 @@
       </Property>
       <Property name="MoveArea" value="Ground" />
       <Property name="MinScale" value="1" />
-      <Property name="MaxScale" value="3" /> <!-- PLOUGH -->
+      <Property name="MaxScale" value="4" /> <!-- PLOUGH -->
       <Property name="FurLengthModifierAtMinScale" value="1" />
       <Property name="FurLengthModifierAtMaxScale" value="1" />
       <Property name="FurChance" value="0.3" />
@@ -10328,13 +10328,13 @@
           <Property name="DespawnOnDeathDescriptors" />
         </Property>
         <Property value="GcBirdData.xml">
-          <Property name="FlapSpeedMin" value="5" />
-          <Property name="FlapSpeedMax" value="1" />
-          <Property name="FlapSpeed" value="20" />
-          <Property name="FlapAccel" value="5" />
+          <Property name="FlapSpeedMin" value="0.1" />
+          <Property name="FlapSpeedMax" value="0.1" />
+          <Property name="FlapSpeed" value="1" />
+          <Property name="FlapAccel" value="0" />
           <Property name="FlapTurn" value="0.5" />
-          <Property name="FlapSpeedMinScale" value="1" />
-          <Property name="FlapSpeedMaxScale" value="1" />
+          <Property name="FlapSpeedMinScale" value="0.1" />
+          <Property name="FlapSpeedMaxScale" value="0.1" />
           <Property name="FlapSpeedForMinScale" value="1" />
           <Property name="FlapSpeedForMaxScale" value="1" />
           <Property name="CircleAttractor" value="" />
@@ -10345,9 +10345,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="LEFT" />
               <Property name="AnimRight" value="RIGHT" />
-              <Property name="AnimSpeed" value="0.5" />
+              <Property name="AnimSpeed" value="0.01" />
               <Property name="MinSpeedScale" value="0.3" />
-              <Property name="MaxSpeedScale" value="1.3" />
+              <Property name="MaxSpeedScale" value="2.3" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -10358,9 +10358,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="LEFT" />
               <Property name="AnimRight" value="RIGHT" />
-              <Property name="AnimSpeed" value="0.5" />
+              <Property name="AnimSpeed" value="0.01" />
               <Property name="MinSpeedScale" value="0.3" />
-              <Property name="MaxSpeedScale" value="1.3" />
+              <Property name="MaxSpeedScale" value="2.3" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -10371,9 +10371,9 @@
               <Property name="Anim" value="WALK" />
               <Property name="AnimLeft" value="LEFT" />
               <Property name="AnimRight" value="RIGHT" />
-              <Property name="AnimSpeed" value="0.5" />
+              <Property name="AnimSpeed" value="0.01" />
               <Property name="MinSpeedScale" value="0.3" />
-              <Property name="MaxSpeedScale" value="1.3" />
+              <Property name="MaxSpeedScale" value="2.3" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
               <Property name="MinPetSpeedScale" value="1" />
               <Property name="MaxPetSpeedScale" value="1" />
@@ -10382,8 +10382,8 @@
             </Property>
           </Property>
           <Property name="MoveRange" value="150" />
-          <Property name="MoveSpeedScale" value="10" />
-          <Property name="TurnRadiusScale" value="20" />
+          <Property name="MoveSpeedScale" value="20" />
+          <Property name="TurnRadiusScale" value="200" />
           <Property name="HeightMin" value="0.1" />
           <Property name="HeightMax" value="0.1" />
           <Property name="HeightTime" value="1" />
@@ -10460,7 +10460,7 @@
               <Property name="TintableEffects">
                 <Property value="GcCreatureHoverTintableEffect.xml">
                   <Property name="EffectNode" value="PlowRocks" />
-                  <Property name="LightStrength" value="0.4" />
+                  <Property name="LightStrength" value="0.2" />
                   <Property name="TintStrength" value="0" />
                   <Property name="TintColour" value="Colour.xml">
                     <Property name="R" value="1" />
@@ -10471,7 +10471,7 @@
                 </Property>
                 <Property value="GcCreatureHoverTintableEffect.xml">
                   <Property name="EffectNode" value="PlowSmokeTrail" />
-                  <Property name="LightStrength" value="0.5" />
+                  <Property name="LightStrength" value="0.2" />
                   <Property name="TintStrength" value="0" />
                   <Property name="TintColour" value="Colour.xml">
                     <Property name="R" value="1" />
@@ -10482,7 +10482,7 @@
                 </Property>
                 <Property value="GcCreatureHoverTintableEffect.xml">
                   <Property name="EffectNode" value="PlowFrontSmoke" />
-                  <Property name="LightStrength" value="0.5" />
+                  <Property name="LightStrength" value="0.2" />
                   <Property name="TintStrength" value="0" />
                   <Property name="TintColour" value="Colour.xml">
                     <Property name="R" value="1" />
