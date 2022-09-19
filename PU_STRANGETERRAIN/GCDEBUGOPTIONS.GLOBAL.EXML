@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.91.0)-->
+<!--File created using MBINCompiler version (3.99.1)-->
 <Data template="GcDebugOptions">
   <Property name="ForceScanEventsToGoPrime" value="False" />
   <Property name="SkipAbandonedFreighterUnlocking" value="False" />
@@ -43,6 +43,17 @@
   <Property name="DisableStorms" value="False" />
   <Property name="ForceEnablePlayerClothComponent" value="False" />
   <Property name="ForceDisablePlayerClothComponent" value="False" />
+  <Property name="ClothForcePositionExtrapolationOff" value="False" />
+  <Property name="ClothForcePositionExtrapolationOn" value="False" />
+  <Property name="ClothForcePositionExtrapolationBackOn" value="False" />
+  <Property name="ClothForcePositionExtrapolationUpdateOrderDependent" value="False" />
+  <Property name="ClothForcePositionExtrapolationSyncWithFpsLock" value="False" />
+  <Property name="ClothForcePositionExtrapolationAntiSyncWithFpsLock" value="False" />
+  <Property name="ForceEnablePlayerSpringAttachmentComponent" value="False" />
+  <Property name="ForceDisablePlayerSpringAttachmentComponent" value="False" />
+  <Property name="ForceEnableSplitIkOptimisation" value="False" />
+  <Property name="ForceDisableSplitIkOptimisation" value="False" />
+  <Property name="DisableNPCs" value="False" />
   <Property name="AlternateControls" value="False" />
   <Property name="AlwaysShowURI" value="True" />
   <Property name="MPMissionsAlwaysEPIC" value="False" />
@@ -62,6 +73,8 @@
   <Property name="DisableSettlements" value="False" />
   <Property name="PlaceOnGroundWhenLeavingDebugCamera" value="True" />
   <Property name="OctahedralImpostersEnable" value="False" />
+  <Property name="OctahedralImpostersDisable" value="False" />
+  <Property name="OctahedralImpostersViewFromSpace" value="False" />
   <Property name="OctahedralImpostersViewCount" value="-1" />
   <Property name="UseDebugScreenSettings" value="False" />
   <Property name="ScreenWidth" value="1920" />
@@ -122,7 +135,7 @@
   <Property name="AllSeasonMilestonesShowComplete" value="False" />
   <Property name="EnableGalaxyRecolouring" value="False" />
   <Property name="IgnoreSteamDev" value="False" />
-  <Property name="EnableBaseBuildingExpandables" value="False" />
+  <Property name="EnableBaseBuildingExpandables" value="True" />
   <Property name="MouseLookEnabled" value="True" />
   <Property name="StartPaused" value="False" />
   <Property name="DisableDebugControls" value="False" />
@@ -174,7 +187,7 @@
   <Property name="FormatDownloadStorageAreaOnBoot" value="False" />
   <Property name="ForceBasicLoadScreen" value="False" />
   <Property name="BootLogoFadeRate" value="2.5" />
-  <Property name="BootMusic" value="False" />
+  <Property name="BootMusic" value="True" />
   <Property name="WeaponScale3P" value="0.55" />
   <Property name="LogMissingLocalisedText" value="False" />
   <Property name="FleetDirectorAutoMode" value="True" />
@@ -235,6 +248,7 @@
   <Property name="DrawCreaturesInRoutines" value="False" />
   <Property name="CompressTextures" value="True" />
   <Property name="DebugIBL" value="False" />
+  <Property name="DebugSpotlights" value="False" />
   <Property name="DebugTerrainTextures" value="False" />
   <Property name="DisableShadowSwitching" value="False" />
   <Property name="PipelineFile" value="PIPELINES/PIPELINEDEFERRED.BIN" />
@@ -249,6 +263,7 @@
   <Property name="EnableEvenOddRender" value="False" />
   <Property name="MinGPUMode" value="False" />
   <Property name="Proto2DevKit" value="False" />
+  <Property name="SimulateDisabledParticleRefractions" value="False" />
   <Property name="AlwaysIncludeLocalPlayerInChatMessage" value="False" />
   <Property name="SimulateNoNetworkConnection" value="False" />
   <Property name="ProxyType" value="InetProxy" />
@@ -321,9 +336,9 @@
   <Property name="ForceStarTypeTo" value="GcGalaxyStarTypes.xml">
     <Property name="GalaxyStarType" value="Red" />
   </Property>
-  <Property name="ForceBiome" value="True" />
+  <Property name="ForceBiome" value="False" />
   <Property name="ForceBiomeTo" value="GcBiomeType.xml">
-    <Property name="Biome" value="Lush" />
+    <Property name="Biome" value="Barren" />
   </Property>
   <Property name="ForceScreenFilter" value="False" />
   <Property name="ForceScreenFilterTo" value="GcScreenFilters.xml">
@@ -336,7 +351,7 @@
   <Property name="ForceBuildingRaceTo" value="GcAlienRace.xml">
     <Property name="AlienRace" value="Traders" />
   </Property>
-  <Property name="ForceLifeLevel" value="True" />
+  <Property name="ForceLifeLevel" value="False" />
   <Property name="ForceLifeLevelTo" value="GcPlanetLife.xml">
     <Property name="LifeSetting" value="Full" />
   </Property>
@@ -354,18 +369,20 @@
   </Property>
   <Property name="ForceTerrainType" value="True" />
   <Property name="ForceTerrainTypeTo" value="TkVoxelGeneratorSettingsTypes.xml">
-    <Property name="TerrainSettings" value="DesertPrime" />
+    <Property name="TerrainSettings" value="LilyPadPrime" />
   </Property>
   <Property name="ForcePirateSystem" value="False" />
-  <Property name="ForcePrimeTerrain" value="True" />
+  <Property name="ForcePrimeTerrain" value="False" />
   <Property name="ForceBinaryStar" value="False" />
   <Property name="ForceTernaryStar" value="False" />
   <Property name="ForceAnomalyTo" value="GcGalaxyStarAnomaly.xml">
     <Property name="GalaxyStarAnomaly" value="None" />
   </Property>
-  <Property name="ForcePlanetsToHaveWater" value="True" />
+  <Property name="ForcePlanetsToHaveWater" value="False" />
   <Property name="ForceWaterObjectFileIndex" value="-1" />
   <Property name="ForceSkyColourIndex" value="-1" />
+  <Property name="ForceSpaceSkyColourIndex" value="-1" />
+  <Property name="ForceSpaceSkyColourRare" value="False" />
   <Property name="ForceWaterColourIndex" value="-1" />
   <Property name="ForceGrassColourIndex" value="-1" />
   <Property name="ModifyPlanetsInInitialSystems" value="True" />
@@ -373,6 +390,8 @@
   <Property name="ForcePlanetsToHaveNoCaves" value="False" />
   <Property name="ForcePlanetsToHaveNoNoiseLayers" value="False" />
   <Property name="ForcePlanetsToHaveNoTerrainFeatures" value="False" />
+  <Property name="ForceRareAsteroidSystem" value="False" />
+  <Property name="ForceAsteroidSystemIndex" value="-1" />
   <Property name="DisableLimits" value="False" />
   <Property name="LimitPerRegionInstances" value="True" />
   <Property name="LimitPerRegionBodies" value="True" />
@@ -431,4 +450,5 @@
   <Property name="OverrideSettlementOwnershipOnlineId" value="" />
   <Property name="BlockSettlementsNetwork" value="False" />
   <Property name="EnableAccessibleUI" value="False" />
+  <Property name="UnlockAllStories" value="False" />
 </Data>
