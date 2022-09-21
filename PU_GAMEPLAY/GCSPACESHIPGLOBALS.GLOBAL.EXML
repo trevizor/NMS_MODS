@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.91.0)-->
+<!--File created using MBINCompiler version (3.99.1)-->
 <Data template="GcSpaceshipGlobals">
   <Property name="ShieldLeechMul" value="0.07" />
   <Property name="AtmosphereCombatHeight" value="1000" />
@@ -445,11 +445,11 @@
       <Property name="FollowIntegralDecay" value="0.99" />
     </Property>
     <Property name="PlanetEngine" value="GcPlayerSpaceshipEngineData.xml">
-      <Property name="ThrustForce" value="10" />
+      <Property name="ThrustForce" value="20" />
       <Property name="MaxSpeed" value="125" />
-      <Property name="MinSpeed" value="2" />
+      <Property name="MinSpeed" value="20" />
       <Property name="Falloff" value="0.5" />
-      <Property name="MinSpeedForce" value="4" />
+      <Property name="MinSpeedForce" value="31" />
       <Property name="BoostThrustForce" value="100" />
       <Property name="BoostMaxSpeed" value="155" />
       <Property name="BoostFalloff" value="0.7" />
@@ -594,11 +594,11 @@
       <Property name="FollowIntegralDecay" value="0.99" />
     </Property>
     <Property name="PlanetEngine" value="GcPlayerSpaceshipEngineData.xml">
-      <Property name="ThrustForce" value="20" />
+      <Property name="ThrustForce" value="40" />
       <Property name="MaxSpeed" value="125" />
-      <Property name="MinSpeed" value="2" />
+      <Property name="MinSpeed" value="20" />
       <Property name="Falloff" value="0.5" />
-      <Property name="MinSpeedForce" value="4" />
+      <Property name="MinSpeedForce" value="31" />
       <Property name="BoostThrustForce" value="200" />
       <Property name="BoostMaxSpeed" value="150" />
       <Property name="BoostFalloff" value="0.7" />
@@ -743,11 +743,11 @@
       <Property name="FollowIntegralDecay" value="0.99" />
     </Property>
     <Property name="PlanetEngine" value="GcPlayerSpaceshipEngineData.xml">
-      <Property name="ThrustForce" value="10" />
+      <Property name="ThrustForce" value="20" />
       <Property name="MaxSpeed" value="130" />
-      <Property name="MinSpeed" value="2" />
+      <Property name="MinSpeed" value="20" />
       <Property name="Falloff" value="0.5" />
-      <Property name="MinSpeedForce" value="4" />
+      <Property name="MinSpeedForce" value="31" />
       <Property name="BoostThrustForce" value="20" />
       <Property name="BoostMaxSpeed" value="185" />
       <Property name="BoostFalloff" value="0.7" />
@@ -1201,7 +1201,7 @@
   <Property name="FreighterApproachDistanceMax" value="300" />
   <Property name="FreighterApproachSpeedDamper" value="0.5" />
   <Property name="FreighterApproachExtraMargin" value="1000" />
-  <Property name="MiniWarpShakeStrength" value="1" />
+  <Property name="MiniWarpShakeStrength" value="4" />
   <Property name="MiniWarpPlanetRadius" value="500" />
   <Property name="MiniWarpStationRadius" value="700" />
   <Property name="MiniWarpFuelTime" value="0.5" />
