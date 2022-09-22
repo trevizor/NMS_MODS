@@ -8,7 +8,7 @@
         <Property name="CreatureType" value="Fish" />
       </Data>
       <Property name="MoveArea" value="Water" />
-      <Property name="MinScale" value="0.5" />
+      <Property name="MinScale" value="0.25" />
       <Property name="MaxScale" value="1.5" />
       <Data name="Rarity" template="GcRarity">
         <Property name="Rarity" value="Common" />
@@ -21,7 +21,7 @@
               <Property name="AnimLeft" value="LEFT" />
               <Property name="AnimRight" value="RIGHT" />
               <Property name="AnimSpeed" value="0.25" />
-              <Property name="MinSpeedScale" value="0.3" />
+              <Property name="MinSpeedScale" value="0.1" />
               <Property name="MaxSpeedScale" value="1.3" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -30,7 +30,7 @@
               <Property name="AnimLeft" value="LEFT" />
               <Property name="AnimRight" value="RIGHT" />
               <Property name="AnimSpeed" value="0.25" />
-              <Property name="MinSpeedScale" value="0.3" />
+              <Property name="MinSpeedScale" value="0.1" />
               <Property name="MaxSpeedScale" value="1.3" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -39,13 +39,13 @@
               <Property name="AnimLeft" value="LEFT" />
               <Property name="AnimRight" value="RIGHT" />
               <Property name="AnimSpeed" value="0.25" />
-              <Property name="MinSpeedScale" value="0.3" />
+              <Property name="MinSpeedScale" value="0.1" />
               <Property name="MaxSpeedScale" value="1.3" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
           </Property>
-          <Property name="MoveRange" value="150" />
-          <Property name="MoveSpeedScale" value="1" />
+          <Property name="MoveRange" value="1500" />
+          <Property name="MoveSpeedScale" value="0.3" />
           <Property name="HeightMin" value="0" />
           <Property name="HeightMax" value="256" />
           <Property name="HeightTime" value="3" />
@@ -53,16 +53,16 @@
         <Data template="GcCreatureSwarmData">
           <Property name="MinCount" value="8" />
           <Property name="MaxCount" value="10" />
-          <Property name="SwarmMovementSpeed" value="1" />
+          <Property name="SwarmMovementSpeed" value="0.5" />
           <Property name="SwarmMovementRadius" value="40" />
           <Property name="SwarmMovementType" value="Random" />
           <Property name="Coherence" value="0.2" />
           <Property name="Alignment" value="0.1" />
           <Property name="Spacing" value="20" />
           <Property name="Follow" value="0.3" />
-          <Property name="Range" value="30" />
-          <Property name="MaxSpeed" value="10" />
-          <Property name="AlignTime" value="0.2" />
+          <Property name="Range" value="100" />
+          <Property name="MaxSpeed" value="5" />
+          <Property name="AlignTime" value="0.1" />
           <Property name="RepelList">
             <Data template="NMSString0x10">
               <Property name="Value" value="" />
@@ -91,7 +91,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -100,7 +100,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1.5" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -109,7 +109,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1.5" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -118,7 +118,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -127,7 +127,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -494,7 +494,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -503,7 +503,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1.5" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -512,7 +512,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="RIGHT" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1.5" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -521,7 +521,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -530,7 +530,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -613,7 +613,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -622,7 +622,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1.5" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -631,7 +631,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1.5" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -640,7 +640,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -649,7 +649,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -789,7 +789,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -798,7 +798,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -881,7 +881,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -890,7 +890,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -899,7 +899,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -908,7 +908,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1.7" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -917,7 +917,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1.5" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -1000,7 +1000,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -1009,7 +1009,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -1018,7 +1018,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -1027,7 +1027,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1.5" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -1036,7 +1036,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1.5" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -1119,7 +1119,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -1128,7 +1128,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -1137,7 +1137,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -1146,7 +1146,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1.5" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -1155,7 +1155,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1.5" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -1315,7 +1315,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -1333,7 +1333,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1.5" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -1342,7 +1342,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -1351,7 +1351,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -1428,8 +1428,8 @@
       </Data>
       <Property name="Data">
         <Data template="GcBirdData">
-          <Property name="FlapSpeedMax" value="1" />
-          <Property name="FlapSpeedMin" value="5" />
+          <Property name="FlapSpeedMax" value="0.5" />
+          <Property name="FlapSpeedMin" value="10" />
           <Property name="FlapSpeed" value="20" />
           <Property name="FlapAccel" value="5" />
           <Property name="CircleAttractor" value="" />
@@ -1473,15 +1473,15 @@
         <Data template="GcCreatureSwarmData">
           <Property name="MinCount" value="4" />
           <Property name="MaxCount" value="8" />
-          <Property name="SwarmMovementSpeed" value="0.5" />
-          <Property name="SwarmMovementRadius" value="60" />
+          <Property name="SwarmMovementSpeed" value="0.15" />
+          <Property name="SwarmMovementRadius" value="10" />
           <Property name="SwarmMovementType" value="Random" />
           <Property name="Coherence" value="0.1" />
           <Property name="Alignment" value="0.1" />
           <Property name="Spacing" value="20" />
           <Property name="Follow" value="1" />
           <Property name="Range" value="0.5" />
-          <Property name="MaxSpeed" value="1" />
+          <Property name="MaxSpeed" value="0.2" />
           <Property name="AlignTime" value="0.1" />
           <Property name="RepelList">
             <Data template="NMSString0x10">
@@ -1511,7 +1511,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -1520,7 +1520,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1.5" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -1529,7 +1529,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1.5" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -1538,7 +1538,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -1547,7 +1547,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -1630,7 +1630,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -1639,7 +1639,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -1648,7 +1648,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -1657,7 +1657,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1.5" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -1666,7 +1666,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1.5" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -1749,7 +1749,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -1758,7 +1758,7 @@
               <Property name="AnimLeft" value="LEFT" />
               <Property name="AnimRight" value="RIGHT" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1.5" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -1767,7 +1767,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1.5" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -1776,7 +1776,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -1785,7 +1785,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -1907,7 +1907,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -1916,7 +1916,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1.5" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -1925,7 +1925,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1.5" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -1934,7 +1934,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -1943,7 +1943,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -1987,7 +1987,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -1996,7 +1996,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1.5" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -2005,7 +2005,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1.5" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -2014,7 +2014,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -2023,7 +2023,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -2067,7 +2067,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -2076,7 +2076,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1.5" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -2085,7 +2085,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1.5" />
               <Property name="MaxPredatorSpeedScale" value="1.8" />
             </Data>
@@ -2094,7 +2094,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
@@ -2103,7 +2103,7 @@
               <Property name="AnimLeft" value="" />
               <Property name="AnimRight" value="" />
               <Property name="AnimSpeed" value="0.5" />
-              <Property name="MinSpeedScale" value="1" />
+              <Property name="MinSpeedScale" value="0.7" />
               <Property name="MaxSpeedScale" value="1" />
               <Property name="MaxPredatorSpeedScale" value="1" />
             </Data>
