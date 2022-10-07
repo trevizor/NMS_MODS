@@ -1,11 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.94.0)-->
+<!--File created using MBINCompiler version (4.0.0)-->
 <Data template="GcProjectileDataTable">
   <Property name="Table">
     <Property value="GcProjectileData.xml">
       <Property name="Id" value="MELEE" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -114,6 +117,9 @@
       <Property name="Id" value="MELEE_KICK" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -222,6 +228,9 @@
       <Property name="Id" value="BOLTGUN" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/COMMON/PROJECTILES/MULTITOOL_BOLTGUN.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -338,6 +347,9 @@
       <Property name="Id" value="FLAMETHROW" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/COMMON/PROJECTILES/MULTITOOL_FLAMETHROWER.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -454,6 +466,9 @@
       <Property name="Id" value="SHOTGUN" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/COMMON/PROJECTILES/MULTITOOL_SHOTGUN.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -570,6 +585,9 @@
       <Property name="Id" value="SMG" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/COMMON/PROJECTILES/MULTITOOL_SMG.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -686,6 +704,9 @@
       <Property name="Id" value="CANNON" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/COMMON/PROJECTILES/MULTITOOL_NEUTRON.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -761,7 +782,7 @@
         <Property name="B" value="1" />
         <Property name="A" value="1" />
       </Property>
-      <Property name="BehaviourFlags" value="ScareCreatures, ExplosionForce" />
+      <Property name="BehaviourFlags" value="96" />
       <Property name="Class" value="Player" />
       <Property name="DefaultImpact" value="BLASTOVERIMPACT" />
       <Property name="CriticalImpact" value="" />
@@ -786,6 +807,9 @@
       <Property name="Id" value="GRENADE" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/COMMON/PROJECTILES/CHARGEDENERGYBALL.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -861,7 +885,7 @@
         <Property name="B" value="1" />
         <Property name="A" value="1" />
       </Property>
-      <Property name="BehaviourFlags" value="ScareCreatures, ExplosionForce" />
+      <Property name="BehaviourFlags" value="96" />
       <Property name="Class" value="Player" />
       <Property name="DefaultImpact" value="GRENADEEXPLODE" />
       <Property name="CriticalImpact" value="" />
@@ -886,6 +910,9 @@
       <Property name="Id" value="MINE_GREN" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/COMMON/PROJECTILES/CHARGEDENERGYBALL.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -977,6 +1004,9 @@
       <Property name="Id" value="STUN_GREN" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/COMMON/PROJECTILES/STUNGRENADEPROJECTILE.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -1052,7 +1082,7 @@
         <Property name="B" value="1" />
         <Property name="A" value="1" />
       </Property>
-      <Property name="BehaviourFlags" value="ScareCreatures, ExplosionForce" />
+      <Property name="BehaviourFlags" value="96" />
       <Property name="Class" value="Player" />
       <Property name="DefaultImpact" value="STUNGRENADE" />
       <Property name="CriticalImpact" value="" />
@@ -1068,6 +1098,9 @@
       <Property name="Id" value="MINIROBOTGUN" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/EFFECTS/WEAPONS/ROBOTS/ROBOTPROJECTILE.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -1168,6 +1201,9 @@
       <Property name="Id" value="ROBOTGUN" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/EFFECTS/WEAPONS/ROBOTS/ROBOTPROJECTILE.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -1268,6 +1304,9 @@
       <Property name="Id" value="ROBOTGUNFRIENDL" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/EFFECTS/WEAPONS/ROBOTS/ROBOTPROJECTILE.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -1368,6 +1407,9 @@
       <Property name="Id" value="ROBOTGUNWEAK" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/EFFECTS/WEAPONS/ROBOTS/ROBOTPROJECTILE.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -1468,6 +1510,9 @@
       <Property name="Id" value="ROBOTSMG" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/EFFECTS/WEAPONS/ROBOTS/ROBOTPROJECTILE.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -1568,6 +1613,9 @@
       <Property name="Id" value="ROBOTSHOTGUN" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/COMMON/PROJECTILES/DRONE_SHOTGUN.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -1668,6 +1716,9 @@
       <Property name="Id" value="ROBOTGRENADE" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/COMMON/PROJECTILES/DRONEGRENADEPROJECTILE.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -1743,7 +1794,7 @@
         <Property name="B" value="1" />
         <Property name="A" value="1" />
       </Property>
-      <Property name="BehaviourFlags" value="DestroyTerrain, ScareCreatures, ExplosionForce" />
+      <Property name="BehaviourFlags" value="97" />
       <Property name="Class" value="Robot" />
       <Property name="DefaultImpact" value="DRONEGRENEXPL" />
       <Property name="CriticalImpact" value="" />
@@ -1768,6 +1819,9 @@
       <Property name="Id" value="ROBOTGRENADE2" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/COMMON/PROJECTILES/DRONEGRENADEPROJECTILE.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -1843,7 +1897,7 @@
         <Property name="B" value="0" />
         <Property name="A" value="0" />
       </Property>
-      <Property name="BehaviourFlags" value="DestroyTerrain, ScareCreatures, ExplosionForce" />
+      <Property name="BehaviourFlags" value="97" />
       <Property name="Class" value="Robot" />
       <Property name="DefaultImpact" value="DRONEGRENEXPL" />
       <Property name="CriticalImpact" value="" />
@@ -1868,6 +1922,9 @@
       <Property name="Id" value="ROBOTBIGGUN" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/EFFECTS/WEAPONS/ROBOTS/ROBOTPROJECTILE.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -1959,6 +2016,9 @@
       <Property name="Id" value="SHIPGUN" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/EFFECTS/WEAPONS/SHIPS/SHIPBULLET_BLUE.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -2083,6 +2143,9 @@
       <Property name="Id" value="SHIPSHOTGUN" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/COMMON/PROJECTILES/SHIP_SHOTGUN.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -2207,6 +2270,9 @@
       <Property name="Id" value="SHIPMINIGUN" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/COMMON/PROJECTILES/SHIP_MINIGUN.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -2331,6 +2397,9 @@
       <Property name="Id" value="SHIPPLASMAGUN" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/COMMON/PROJECTILES/SHIPPLASMAPROJECTILE.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -2451,7 +2520,9 @@
       </Property>
       <Property name="CombatEffectsOnImpact">
         <Property value="GcImpactCombatEffectData.xml">
-          <Property name="CombatEffectType" value="Slow" />
+          <Property name="CombatEffectType" value="GcCombatEffectType.xml">
+            <Property name="CombatEffectType" value="Slow" />
+          </Property>
           <Property name="TotalDuration" value="4" />
           <Property name="DamagePerSeccond" value="0" />
           <Property name="CurrentDuration" value="0" />
@@ -2462,6 +2533,9 @@
       <Property name="Id" value="TRADERGUN" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/EFFECTS/WEAPONS/SHIPS/SHIPBULLET_GREEN.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -2570,6 +2644,9 @@
       <Property name="Id" value="POLICEGUN" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/EFFECTS/WEAPONS/SHIPS/SHIPBULLET_POLICE.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -2678,6 +2755,9 @@
       <Property name="Id" value="AISHIPGUN" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/EFFECTS/WEAPONS/SHIPS/SHIPBULLET_RED.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -2786,6 +2866,9 @@
       <Property name="Id" value="FREIGHTGUN" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/EFFECTS/WEAPONS/SHIPS/SHIPBULLET_RED.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -2894,6 +2977,9 @@
       <Property name="Id" value="COP_FREIGHTGUN" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/EFFECTS/WEAPONS/SHIPS/SHIPBULLET_POLICE.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -3002,6 +3088,9 @@
       <Property name="Id" value="BASE_TURRET_M" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/COMMON/PROJECTILES/MISSILE.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -3093,6 +3182,9 @@
       <Property name="Id" value="VEHICLEGUN" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/COMMON/PROJECTILES/CHARGEDENERGYBALL.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -3184,6 +3276,9 @@
       <Property name="Id" value="SHIPROCKET" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/EFFECTS/WEAPONS/SHIPS/ROCKETS/ROCKETPROJECTILE.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -3284,6 +3379,9 @@
       <Property name="Id" value="FIENDSPIT" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/COMMON/PROJECTILES/FIENDSPITBALL.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -3375,6 +3473,9 @@
       <Property name="Id" value="SCUTTLERSPIT" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/COMMON/PROJECTILES/FIENDSPITBALL.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -3466,6 +3567,9 @@
       <Property name="Id" value="TURRETINT" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/EFFECTS/PROJECTILES/TURRETINT/TURRETINT_PORJECTILE.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -3566,6 +3670,9 @@
       <Property name="Id" value="SENMECHCANON" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/COMMON/PROJECTILES/DRONEGRENADEPROJECTILE.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -3641,7 +3748,7 @@
         <Property name="B" value="1" />
         <Property name="A" value="1" />
       </Property>
-      <Property name="BehaviourFlags" value="DestroyTerrain, ScareCreatures, ExplosionForce" />
+      <Property name="BehaviourFlags" value="97" />
       <Property name="Class" value="Robot" />
       <Property name="DefaultImpact" value="DRONEGRENEXPL" />
       <Property name="CriticalImpact" value="" />
@@ -3666,6 +3773,9 @@
       <Property name="Id" value="SENMECHSMG" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/EFFECTS/WEAPONS/ROBOTS/ROBOTPROJECTILE.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -3766,6 +3876,9 @@
       <Property name="Id" value="VEHICLESTUNGUN" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/COMMON/PROJECTILES/STUNGRENADEPROJECTILE.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -3841,7 +3954,7 @@
         <Property name="B" value="1" />
         <Property name="A" value="1" />
       </Property>
-      <Property name="BehaviourFlags" value="ScareCreatures, ExplosionForce" />
+      <Property name="BehaviourFlags" value="96" />
       <Property name="Class" value="Player" />
       <Property name="DefaultImpact" value="VEHICLEGUNHIT" />
       <Property name="CriticalImpact" value="" />
@@ -3853,13 +3966,17 @@
       </Property>
       <Property name="CombatEffectsOnImpact">
         <Property value="GcImpactCombatEffectData.xml">
-          <Property name="CombatEffectType" value="Stun" />
+          <Property name="CombatEffectType" value="GcCombatEffectType.xml">
+            <Property name="CombatEffectType" value="Stun" />
+          </Property>
           <Property name="TotalDuration" value="3" />
           <Property name="DamagePerSeccond" value="0" />
           <Property name="CurrentDuration" value="0" />
         </Property>
         <Property value="GcImpactCombatEffectData.xml">
-          <Property name="CombatEffectType" value="Fire" />
+          <Property name="CombatEffectType" value="GcCombatEffectType.xml">
+            <Property name="CombatEffectType" value="Fire" />
+          </Property>
           <Property name="TotalDuration" value="3" />
           <Property name="DamagePerSeccond" value="80" />
           <Property name="CurrentDuration" value="0" />
@@ -3870,6 +3987,9 @@
       <Property name="Id" value="PIRATERAIDGUN" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/COMMON/PROJECTILES/PIRATESHIPRAIDPROJECTILE.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -3978,6 +4098,9 @@
       <Property name="Id" value="SQUADGUN" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="MODELS/EFFECTS/WEAPONS/SHIPS/SHIPBULLET_GREEN.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -4086,6 +4209,9 @@
       <Property name="Id" value="CREATURE_SHOCK" />
       <Property name="Model" value="GcResourceElement.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
         <Property name="Seed" value="GcSeed.xml">
           <Property name="Seed" value="0" />
           <Property name="UseSeedValue" value="False" />
@@ -4173,7 +4299,9 @@
       </Property>
       <Property name="CombatEffectsOnImpact">
         <Property value="GcImpactCombatEffectData.xml">
-          <Property name="CombatEffectType" value="Stun" />
+          <Property name="CombatEffectType" value="GcCombatEffectType.xml">
+            <Property name="CombatEffectType" value="Stun" />
+          </Property>
           <Property name="TotalDuration" value="5" />
           <Property name="DamagePerSeccond" value="0" />
           <Property name="CurrentDuration" value="0" />
@@ -5301,7 +5429,9 @@
       </Property>
       <Property name="CombatEffectsOnImpact">
         <Property value="GcImpactCombatEffectData.xml">
-          <Property name="CombatEffectType" value="Fire" />
+          <Property name="CombatEffectType" value="GcCombatEffectType.xml">
+            <Property name="CombatEffectType" value="Fire" />
+          </Property>
           <Property name="TotalDuration" value="5" />
           <Property name="DamagePerSeccond" value="50" />
           <Property name="CurrentDuration" value="0" />

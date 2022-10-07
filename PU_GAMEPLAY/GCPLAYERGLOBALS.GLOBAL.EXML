@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.98.0)-->
+<!--File created using MBINCompiler version (4.0.0)-->
 <Data template="GcPlayerGlobals">
   <Property name="ForceFreighterProcTechRandom" value="False" />
   <Property name="AlienPodAggroDecay" value="0.15" />
@@ -13,16 +13,16 @@
   <Property name="TeleportDisappearEffectSpeed" value="4" />
   <Property name="MiniportalAppearEffectTime" value="0.8" />
   <Property name="MiniportalDisappearEffectTime" value="0.65" />
-  <Property name="RecenterViewWhenEnteringShip" value="False" />
-  <Property name="UseInitialFacingForMoveDirection" value="False" />
+  <Property name="RecenterViewWhenEnteringShip" value="True" />
+  <Property name="UseInitialFacingForMoveDirection" value="True" />
   <Property name="EmulateNoHandsForHandScreens" value="False" />
   <Property name="BinocularAimOffset" value="1" />
   <Property name="BinocularScopeScale" value="0.3" />
   <Property name="BinocularScopeSmoothing" value="0.2" />
-  <Property name="MaxArmExtension" value="4" />
+  <Property name="MaxArmExtension" value="0.99" />
   <Property name="MinArmExtension" value="1.5" />
   <Property name="SummonArcRange" value="40" />
-  <Property name="InteractionAimOffset" value="3" />
+  <Property name="InteractionAimOffset" value="5" />
   <Property name="QuickMenuLauncherTransforms" value="GcProjectorOffsetData.xml">
     <Property name="Scale" value="0.045" />
     <Property name="Active" value="GcInWorldUIScreenData.xml">
@@ -218,8 +218,8 @@
     <Property name="y" value="0.07" />
     <Property name="z" value="0" />
   </Property>
-  <Property name="BinocularsHUDDistanceVR" value="0" />
-  <Property name="BinocularsHUDScaleVR" value="0" />
+  <Property name="BinocularsHUDDistanceVR" value="1.2" />
+  <Property name="BinocularsHUDScaleVR" value="2" />
   <Property name="TeleportMaxTravelDistance" value="30" />
   <Property name="TeleportMaxTravelDistanceVertical" value="80" />
   <Property name="TeleportChargeMinDistance" value="10" />
@@ -242,13 +242,13 @@
     <Property name="x" value="0.06" />
     <Property name="y" value="0.06" />
   </Property>
-  <Property name="HandInteractionLightIntensity" value="0" />
-  <Property name="HandInteractionLightIntensityMax" value="0" />
+  <Property name="HandInteractionLightIntensity" value="0.5" />
+  <Property name="HandInteractionLightIntensityMax" value="4" />
   <Property name="HandInteractionFresnel" value="-9" />
   <Property name="HandInteractionFresnelMax" value="-2" />
   <Property name="HandInteractionLightOffset" value="0.2" />
   <Property name="HandInteractionLightOffsetAt" value="0.2" />
-  <Property name="HandInteractionLightTime" value="0" />
+  <Property name="HandInteractionLightTime" value="0.3" />
   <Property name="HandScreenLookActiveAngle" value="30" />
   <Property name="HandScreenMinAngle" value="40" />
   <Property name="HandScreenMinAngleWithPoint" value="75" />
@@ -284,13 +284,13 @@
   <Property name="RequireHandsOnShipControls" value="True" />
   <Property name="ShowFirstPersonCharacterShadowPCVR" value="False" />
   <Property name="ShowFirstPersonCharacterShadowPSVR" value="False" />
-  <Property name="InteractNearbyRadiusEnabled" value="False" />
+  <Property name="InteractNearbyRadiusEnabled" value="True" />
   <Property name="InteractNearbyRadius" value="10" />
   <Property name="PassiveLook" value="True" />
   <Property name="BodyRealignmentDelay" value="0.75" />
   <Property name="PointDownToMoveAngle" value="40" />
   <Property name="PointDownToMoveBackAngle" value="90" />
-  <Property name="EnableLeaning" value="True" />
+  <Property name="EnableLeaning" value="False" />
   <Property name="EnablePointDownToSmoothMove" value="False" />
   <Property name="HmdSmoothTurnAlways" value="False" />
   <Property name="HmdTurnSpeed" value="22.5" />
@@ -324,7 +324,7 @@
   <Property name="GroundWalkRecoverySpeedDamper" value="0.1" />
   <Property name="HandSmoothMinAngle" value="3" />
   <Property name="HandSmoothAngleRange" value="6" />
-  <Property name="HmdResetButtonTime" value="0.3" />
+  <Property name="HmdResetButtonTime" value="1" />
   <Property name="SummonShipDirectionChangeDeadZoneAngle" value="15" />
   <Property name="TeleportArcRadius" value="0.25" />
   <Property name="TeleportArcRadiusInner" value="0.1" />
@@ -363,29 +363,29 @@
     <Property name="R" value="1" />
     <Property name="G" value="0.546" />
     <Property name="B" value="0.243" />
-    <Property name="A" value="0.01" />
+    <Property name="A" value="1" />
   </Property>
   <Property name="InteractionLineBaseColour" value="Colour.xml">
     <Property name="R" value="1" />
     <Property name="G" value="1" />
     <Property name="B" value="1" />
-    <Property name="A" value="0.2" />
+    <Property name="A" value="1" />
   </Property>
   <Property name="InteractHighlightEffect" value="GcScanEffectData.xml">
     <Property name="Id" value="" />
     <Property name="ScanEffectType" value="Creature" />
     <Property name="Colour" value="Colour.xml">
-      <Property name="R" value="0" />
-      <Property name="G" value="0" />
-      <Property name="B" value="0" />
-      <Property name="A" value="0" />
+      <Property name="R" value="0.852" />
+      <Property name="G" value="1" />
+      <Property name="B" value="1" />
+      <Property name="A" value="1" />
     </Property>
-    <Property name="BasecolourIntensity" value="0" />
+    <Property name="BasecolourIntensity" value="-0.1" />
     <Property name="ScanlinesSeparation" value="0" />
-    <Property name="FresnelIntensity" value="0" />
+    <Property name="FresnelIntensity" value="-2" />
     <Property name="GlowIntensity" value="0" />
     <Property name="WaveOffset" value="0" />
-    <Property name="WaveActive" value="False" />
+    <Property name="WaveActive" value="True" />
     <Property name="FixedUpAxis" value="False" />
     <Property name="Transparent" value="False" />
     <Property name="ModelFade" value="False" />
@@ -479,7 +479,7 @@
   <Property name="HitReactNoiseAmount" value="0.7" />
   <Property name="HitReactBlendOutSpeedMin" value="5" />
   <Property name="HitReactBlendOutSpeedMax" value="20" />
-  <Property name="JetpackUnderwaterDrainRate" value="0.3" />
+  <Property name="JetpackUnderwaterDrainRate" value="0.4" />
   <Property name="JetpackUnderwaterFillRate" value="1" />
   <Property name="UnderwaterMargin" value="1.5" />
   <Property name="UnderwaterMinDepth" value="2" />
@@ -536,15 +536,15 @@
   <Property name="WitnessSenseEnhancementTime" value="5" />
   <Property name="WitnessSenseEnhancement" value="2" />
   <Property name="MultiplayerMinWanteEscalationTime" value="10" />
-  <Property name="HealthRechargeMinTimeSinceDamage" value="60" />
+  <Property name="HealthRechargeMinTimeSinceDamage" value="120" />
   <Property name="HealthPipRechargeRate" value="200" />
   <Property name="MinEnergyPercentOnRespawn" value="0.5" />
   <Property name="VehicleRaceResultsHintTime" value="20" />
   <Property name="OtherPlayerTrackArrowRange" value="100" />
   <Property name="WantedLevelPlayerRange" value="50" />
   <Property name="WantedLevelPlayerRangeSpace" value="2000" />
-  <Property name="PlayerTransferRange" value="60" />
-  <Property name="PlayerSpaceTransferRange" value="6000" />
+  <Property name="PlayerTransferRange" value="20" />
+  <Property name="PlayerSpaceTransferRange" value="2000" />
   <Property name="DroneScanTimeToForget" value="1" />
   <Property name="GhostbusterStartLength" value="10" />
   <Property name="GhostbusterStart1" value="0" />
@@ -599,9 +599,6 @@
     <Property name="x" value="3" />
     <Property name="y" value="12" />
   </Property>
-  <Property name="HardModeEnergyDischargeRateLow" value="0.08" />
-  <Property name="HardModeEnergyDischargeRateMedium" value="0.8" />
-  <Property name="HardModeEnergyDischargeRateHigh" value="2.2" />
   <Property name="HazardDamageMinTime" value="20" />
   <Property name="EnergyDamageMinTime" value="30" />
   <Property name="EnergyDischargeRateLow" value="0.02" />
@@ -719,22 +716,21 @@
   <Property name="EnableHeadMovements" value="True" />
   <Property name="ClampPitch" value="False" />
   <Property name="DamageRepairFactor" value="0.5" />
-  <Property name="DamageRepairFactorHardMode" value="0.5" />
   <Property name="AbandonedFreighterStaminaRecoveryMod" value="2" />
   <Property name="AbandonedFreighterStaminaRate" value="0.075" />
   <Property name="VRModeHazardTimeMultiplier" value="1.6" />
   <Property name="VRStartHazardTimeMultiplier" value="25" />
-  <Property name="FreighterAbandonedHazardTimeMultiplier" value="0.33" />
+  <Property name="EarlyHazardTimeMultiplier" value="1.6" />
+  <Property name="StartHazardTimeMultiplier" value="10" />
+  <Property name="FreighterAbandonedHazardTimeMultiplier" value="0.15" />
   <Property name="AbandonedFreighterRechargeMod" value="0.33" />
-  <Property name="NormalModeHazardTimeMultiplier" value="1.0" />
+  <Property name="NormalModeHazardTimeMultiplier" value="0.9" />
   <Property name="NormalModeHazardDamageRateMultiplier" value="0.8" />
   <Property name="NormalModeHazardDamageWoundRateMultiplier" value="0.8" />
-  <Property name="NormalModeSubstanceRewardMultiplier" value="1.1" />
   <Property name="NormalModeHazardRechargeUnderground" value="1.5" />
   <Property name="HardModeHazardTimeMultiplier" value="0.3" />
   <Property name="HardModeHazardDamageRateMultiplier" value="0.3" />
   <Property name="HardModeHazardDamageWoundRateMultiplier" value="0.5" />
-  <Property name="HardModeSubstanceRewardMultiplier" value="0.75" />
   <Property name="HardModeHazardRechargeUnderground" value="3.5" />
   <Property name="VehicleHazardDampingModifier" value="3" />
   <Property name="FreighterProbeScanTime" value="5" />
@@ -787,9 +783,9 @@
   <Property name="BulletCostReducer" value="2" />
   <Property name="BulletClipMultiplier" value="2" />
   <Property name="LootForceMultiplier" value="20" />
-  <Property name="WoundTimeMinimum" value="2" />
-  <Property name="WoundDamageLimit" value="1750" />
-  <Property name="WoundDamageLimitShip" value="1750" />
+  <Property name="WoundTimeMinimum" value="5" />
+  <Property name="WoundDamageLimit" value="175" />
+  <Property name="WoundDamageLimitShip" value="450" />
   <Property name="WoundDamageDecayTime" value="20" />
   <Property name="ResourceBlobFinalScaleDistance" value="0.8" />
   <Property name="LaserPlayerOffset" value="2" />
@@ -802,7 +798,7 @@
   <Property name="UpgradeExosuitWithProduct" value="True" />
   <Property name="ExosuitUpgradeProduct" value="NAV_DATA_DROP" />
   <Property name="SuitInventoryStartSeed" value="2" />
-  <Property name="MaxNumShipsAttackingPlayer" value="8" />
+  <Property name="MaxNumShipsAttackingPlayer" value="3" />
   <Property name="ObjectScanTime" value="3" />
   <Property name="DroneProbeScanTime" value="3" />
   <Property name="PirateHailPercent" value="100" />
@@ -832,12 +828,12 @@
   <Property name="TraderHailDistance" value="300" />
   <Property name="TraderApproachDistance" value="3000" />
   <Property name="TraderSpamTimeWait" value="60" />
-  <Property name="TraderStayCloseLockOffset" value="30" />
+  <Property name="TraderStayCloseLockOffset" value="80" />
   <Property name="TraderStayCloseLockSin1Coeff" value="0.2" />
   <Property name="TraderStayCloseLockSin1Offset" value="2" />
   <Property name="TraderStayCloseLockSin2Coeff" value="0.33" />
   <Property name="TraderStayCloseLockSin2Offset" value="0" />
-  <Property name="TraderStayCloseLockSinsAdd" value="1.75" />
+  <Property name="TraderStayCloseLockSinsAdd" value="15" />
   <Property name="TraderStayCloseLockSpread" value="20" />
   <Property name="TraderStayCloseLockSpreadAdd" value="10" />
   <Property name="TraderStayCloseLockSpreadTime" value="5" />
@@ -869,22 +865,22 @@
   <Property name="DeathDamageDrainChargeFactor" value="1" />
   <Property name="DeathDamageTechBrokenPercent" value="40" />
   <Property name="MaxProjectileRadiusMultiplier" value="5" />
-  <Property name="HardLandPainTime" value="1" />
+  <Property name="HardLandPainTime" value="4" />
   <Property name="GunBaseClipSize" value="0" />
   <Property name="GrenadeBaseClipSize" value="100" />
-  <Property name="MeleeCooldown" value="1.2" />
-  <Property name="ChargeMeleeCooldown" value="1.8" />
+  <Property name="MeleeCooldown" value="0.62" />
+  <Property name="ChargeMeleeCooldown" value="1.3" />
   <Property name="MeleeDistance" value="2.8" />
   <Property name="MeleeDistance3P" value="1.8" />
-  <Property name="MeleeRadius" value="1.0" />
+  <Property name="MeleeRadius" value="0.75" />
   <Property name="MeleeHitTime" value="0.2" />
   <Property name="MeleeSpeedBoost" value="1" />
   <Property name="MeleeSpeedDamageBoost" value="1.2" />
   <Property name="MeleeSpeedBoostRangeMultiplier" value="1.2" />
-  <Property name="MeleeStaminaDrain" value="1.2" />
-  <Property name="MeleeCooldownAlt" value="0.4" />
+  <Property name="MeleeStaminaDrain" value="0.2" />
+  <Property name="MeleeCooldownAlt" value="0.5" />
   <Property name="MeleePosDelta" value="0.05" />
-  <Property name="MeleeDamageScale" value="30" />
+  <Property name="MeleeDamageScale" value="3" />
   <Property name="MeleeRadiusAlt" value="0.5" />
   <Property name="MeleeDistanceAlt" value="3" />
   <Property name="MeleeHitEffect" value="GcScanEffectData.xml">
@@ -932,8 +928,8 @@
   <Property name="SpeedLinesMaxAlpha" value="1" />
   <Property name="SpeedLinesOffset" value="50" />
   <Property name="SleepFadeTime" value="3.5" />
-  <Property name="StaminaRate" value="0.07" />
-  <Property name="StaminaRecoveryRate" value="0.15" />
+  <Property name="StaminaRate" value="0.1" />
+  <Property name="StaminaRecoveryRate" value="0.1" />
   <Property name="StaminaRecoveredFactor" value="0.5" />
   <Property name="ScanLabelTime" value="1.2" />
   <Property name="ScanWobbleFreq" value="0.02" />
@@ -955,7 +951,7 @@
   <Property name="WantedWitnessTimer" value="0.6" />
   <Property name="WantedWitnessFuzzyTime" value="1.4" />
   <Property name="WantedMinorCrimeAmount" value="0.1" />
-  <Property name="WantedTimeoutAggressive" value="20" />
+  <Property name="WantedTimeoutAggressive" value="5" />
   <Property name="WantedTimeout">
     <Property value="10" />
     <Property value="15" />
@@ -992,7 +988,7 @@
   <Property name="HeatShieldTime" value="200" />
   <Property name="LaserShakeMin" value="0.5" />
   <Property name="LaserShakeMax" value="2" />
-  <Property name="GunRecoil" value="7" />
+  <Property name="GunRecoil" value="5" />
   <Property name="LaserRecoil" value="2" />
   <Property name="BeamRecoil" value="6" />
   <Property name="GrenadeRecoil" value="10" />
@@ -1004,7 +1000,7 @@
   <Property name="GunRecoilSettleSpring" value="0.4" />
   <Property name="ThirdPersonRecoilMultiplier" value="1.5" />
   <Property name="GunRecoilMin" value="0.15" />
-  <Property name="GunRecoilMax" value="15.6" />
+  <Property name="GunRecoilMax" value="1.6" />
   <Property name="BoltcasterHasTracer" value="True" />
   <Property name="ProjectileDamageFalloff" value="1" />
   <Property name="ShotgunDispersion" value="0.8" />
@@ -1072,18 +1068,18 @@
   </Property>
   <Property name="ShardResourceCollect" value="GcResourceCollectEffect.xml">
     <Property name="PlayerOffset" value="-0.2" />
-    <Property name="SizeMin" value="0.1" />
-    <Property name="SizeMax" value="0.4" />
+    <Property name="SizeMin" value="0.2" />
+    <Property name="SizeMax" value="0.3" />
     <Property name="RotateMin" value="1.2" />
     <Property name="RotateMax" value="5" />
     <Property name="StartOffsetMin" value="1" />
     <Property name="StartOffsetMax" value="1" />
     <Property name="TimeMin" value="0.7" />
     <Property name="TimeMax" value="1.5" />
-    <Property name="StartSpeedMin" value="0.5" />
-    <Property name="StartSpeedMax" value="3" />
-    <Property name="OffsetMin" value="3" />
-    <Property name="OffsetMax" value="4" />
+    <Property name="StartSpeedMin" value="1" />
+    <Property name="StartSpeedMax" value="2" />
+    <Property name="OffsetMin" value="2" />
+    <Property name="OffsetMax" value="3" />
   </Property>
   <Property name="MissileSwarm" value="GcBoidData.xml">
     <Property name="Coherence" value="2" />
@@ -1111,7 +1107,7 @@
   <Property name="AutoAimMaxAccelFactor" value="0.2" />
   <Property name="AutoAimFixedInterceptSpeed" value="200" />
   <Property name="AutoAimTimeOut" value="0.15" />
-  <Property name="AutoAimMaxAngle" value="10" />
+  <Property name="AutoAimMaxAngle" value="1" />
   <Property name="AutoAimMinScreenDistance" value="25" />
   <Property name="AutoAimRadiusExtra" value="1" />
   <Property name="AutoAimStickyRailgun" value="0.15" />
@@ -1191,7 +1187,7 @@
       <Property name="AlertInitiator" value="GcCreatureTypes.xml">
         <Property name="CreatureType" value="None" />
       </Property>
-      <Property name="HearingRange" value="2" />
+      <Property name="HearingRange" value="7" />
       <Property name="SightRange" value="7" />
       <Property name="SightAngle" value="50" />
       <Property name="FleeRange" value="12" />
@@ -1203,7 +1199,7 @@
       <Property name="AlertInitiator" value="GcCreatureTypes.xml">
         <Property name="CreatureType" value="None" />
       </Property>
-      <Property name="HearingRange" value="2" />
+      <Property name="HearingRange" value="7" />
       <Property name="SightRange" value="7" />
       <Property name="SightAngle" value="50" />
       <Property name="FleeRange" value="0" />
@@ -1215,7 +1211,7 @@
       <Property name="AlertInitiator" value="GcCreatureTypes.xml">
         <Property name="CreatureType" value="Predator" />
       </Property>
-      <Property name="HearingRange" value="2" />
+      <Property name="HearingRange" value="7" />
       <Property name="SightRange" value="7" />
       <Property name="SightAngle" value="50" />
       <Property name="FleeRange" value="12" />
@@ -1227,7 +1223,7 @@
       <Property name="AlertInitiator" value="GcCreatureTypes.xml">
         <Property name="CreatureType" value="None" />
       </Property>
-      <Property name="HearingRange" value="2" />
+      <Property name="HearingRange" value="7" />
       <Property name="SightRange" value="7" />
       <Property name="SightAngle" value="50" />
       <Property name="FleeRange" value="15" />
@@ -1251,10 +1247,10 @@
       <Property name="AlertInitiator" value="GcCreatureTypes.xml">
         <Property name="CreatureType" value="None" />
       </Property>
-      <Property name="HearingRange" value="5" />
+      <Property name="HearingRange" value="25" />
       <Property name="SightRange" value="25" />
-      <Property name="SightAngle" value="70" />
-      <Property name="FleeRange" value="0" />
+      <Property name="SightAngle" value="90" />
+      <Property name="FleeRange" value="15" />
     </Property>
     <Property value="GcCreatureAlertData.xml">
       <Property name="AlertTarget" value="GcCreatureTypes.xml">
@@ -1263,10 +1259,10 @@
       <Property name="AlertInitiator" value="GcCreatureTypes.xml">
         <Property name="CreatureType" value="None" />
       </Property>
-      <Property name="HearingRange" value="5" />
+      <Property name="HearingRange" value="25" />
       <Property name="SightRange" value="25" />
-      <Property name="SightAngle" value="70" />
-      <Property name="FleeRange" value="0" />
+      <Property name="SightAngle" value="90" />
+      <Property name="FleeRange" value="15" />
     </Property>
   </Property>
   <Property name="PainFlickerAmount" value="1.3" />
@@ -1335,7 +1331,7 @@
   <Property name="LaserBeamTerrainDeformRadius" value="2" />
   <Property name="LaserBeamTerrainDeformVariance" value="0.4" />
   <Property name="LaserBeamAmmoUseTime" value="1.2" />
-  <Property name="ReloadButtonHoldTimeToHolster" value="0.15" />
+  <Property name="ReloadButtonHoldTimeToHolster" value="0.25" />
   <Property name="WeaponChangeModeTime" value="0.15" />
   <Property name="WeaponBarrelOffset" value="Vector3f.xml">
     <Property name="x" value="0" />
@@ -1383,10 +1379,10 @@
   <Property name="LookRayRadius" value="1" />
   <Property name="PickRange" value="15" />
   <Property name="DamageRateWhenUnderNoGravity" value="10" />
-  <Property name="TakeDamageImpulse" value="30" />
-  <Property name="HardLandTime" value="0.5" />
-  <Property name="HardLandMin" value="10" />
-  <Property name="HardLandMax" value="30" />
+  <Property name="TakeDamageImpulse" value="35" />
+  <Property name="HardLandTime" value="1.5" />
+  <Property name="HardLandMin" value="8" />
+  <Property name="HardLandMax" value="240" />
   <Property name="MeleeRange" value="8" />
   <Property name="MeleeTime" value="0.8" />
   <Property name="MeleeForcePush" value="100" />
@@ -1410,34 +1406,34 @@
   <Property name="BalanceSpeed" value="2" />
   <Property name="ExertionSmoothTime" value="6" />
   <Property name="ExertionFromPainTime" value="5" />
-  <Property name="AnimWalkSpeed" value="1" />
+  <Property name="AnimWalkSpeed" value="1.5" />
   <Property name="AnimRunSpeed" value="4" />
   <Property name="AnimWalkToRunSpeed" value="4.5" />
   <Property name="AnimWalkBlendPoint" value="0.05" />
   <Property name="AnimRunBlendPoint" value="0.1" />
   <Property name="MaxSlopeAngle" value="89" />
-  <Property name="SlopeSlidingSpeed" value="-6" />
-  <Property name="SlopeSlideBrake" value="0" />
-  <Property name="MinSlideTime" value="0.01" />
-  <Property name="MaxWalkableSlopeAngle" value="60" />
+  <Property name="SlopeSlidingSpeed" value="-15" />
+  <Property name="SlopeSlideBrake" value="18.5" />
+  <Property name="MinSlideTime" value="0.3" />
+  <Property name="MaxWalkableSlopeAngle" value="45" />
   <Property name="MinSpidermanSlopeAngle" value="45" />
-  <Property name="MinTimeToHoldSpidermanPose" value="0" />
-  <Property name="MaxSpidermanSlopeAngle" value="90" />
+  <Property name="MinTimeToHoldSpidermanPose" value="0.7" />
+  <Property name="MaxSpidermanSlopeAngle" value="65" />
   <Property name="MaxClingableSlopeAngle" value="81" />
-  <Property name="MinimumPushOffForceToSlide" value="1.1" />
+  <Property name="MinimumPushOffForceToSlide" value="0.4" />
   <Property name="FreeJetpackSlopeAngle" value="65" />
   <Property name="FreeJetpackSlopeAnglePrime" value="45" />
   <Property name="FullClipReloadSpeedMultiplier" value="2" />
   <Property name="ReloadTapButtonSpeedIncrease" value="1" />
   <Property name="FootDustEffect" value="FOOTFROZEN" />
-  <Property name="FootDustScale" value="0.65" />
+  <Property name="FootDustScale" value="1" />
   <Property name="ClingBrakeMultiplier" value="1" />
   <Property name="ClingAngleThreshold" value="50" />
   <Property name="ClingSpeedThreshold" value="0.8" />
   <Property name="ClimbableStickinessAngle" value="30" />
   <Property name="MinUpAmount" value="0.4" />
   <Property name="FootOffset" value="0.2" />
-  <Property name="MaxFallSpeed" value="860" />
+  <Property name="MaxFallSpeed" value="240" />
   <Property name="PushForceDecay" value="40" />
   <Property name="LeanFwdMaxAngle" value="120" />
   <Property name="LeanBackMaxAngle" value="40" />
@@ -1450,7 +1446,7 @@
   <Property name="HelmetBob" value="0.02" />
   <Property name="JetpackHelmetBob" value="0.2" />
   <Property name="ShipCameraLag" value="0.09" />
-  <Property name="MaxResource" value="500" />
+  <Property name="MaxResource" value="100" />
   <Property name="ShieldMaximum" value="35" />
   <Property name="ShieldRestoreSpeed" value="0.08" />
   <Property name="ShieldRestoreDelay" value="10" />
@@ -1463,6 +1459,11 @@
   <Property name="DeathScreenMaxRegenWaitTime" value="30" />
   <Property name="DeathScreenMinRegenWaitTime" value="8" />
   <Property name="DeathScreenFadeOutTime" value="3" />
+  <Property name="AutoSaveMaxTime" value="60" />
+  <Property name="AutoSaveMinTime" value="5" />
+  <Property name="AutoSaveRangeOnFoot" value="500" />
+  <Property name="AutoSaveRangeInVehicle" value="8000" />
+  <Property name="AutoSaveRangeInSpace" value="100000" />
   <Property name="LookStickData" value="GcPlayerStickData.xml">
     <Property name="AcceleratorStickPoint" value="0.9" />
     <Property name="AcceleratorMinTime" value="0" />
@@ -1482,8 +1483,8 @@
     <Property name="StickyFactor" value="1" />
   </Property>
   <Property name="LowHealthEffectPips" value="1" />
-  <Property name="LowHealthEffectShield" value="20" />
-  <Property name="CriticalHitTime" value="0.5" />
+  <Property name="LowHealthEffectShield" value="5" />
+  <Property name="CriticalHitTime" value="0.2" />
   <Property name="CriticalHitDesatTime" value="5" />
   <Property name="CriticalHitDesatFreq" value="2" />
   <Property name="FirstSpawnDataTable">
@@ -1545,7 +1546,7 @@
     <Property value="0" />
   </Property>
   <Property name="NumTechShopSlots" value="10" />
-  <Property name="GrassPushDistance" value="4" />
+  <Property name="GrassPushDistance" value="3.2" />
   <Property name="GrassPushDistanceFeet" value="1.5" />
   <Property name="AnomalyBlachHoleSpawnData" value="GcCameraAnomalySetupData.xml">
     <Property name="CameraAt" value="Vector4f.xml">
