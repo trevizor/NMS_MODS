@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.98.0)-->
+<!--File created using MBINCompiler version (4.0.0)-->
 <Data template="GcEnvironmentGlobals">
   <Property name="LODSettings">
-    <Property value="TkLODSettingsData.xml">
+    <Property name="Low" value="TkLODSettingsData.xml">
       <Property name="LODAdjust">
         <Property value="0" />
         <Property value="0" />
@@ -52,7 +52,7 @@
       <Property name="MaxAsteroidGenerationPerFrame" value="5000" />
       <Property name="MaxAsteroidGenerationPerFramePulseJump" value="1000" />
     </Property>
-    <Property value="TkLODSettingsData.xml">
+    <Property name="Medium" value="TkLODSettingsData.xml">
       <Property name="LODAdjust">
         <Property value="1" />
         <Property value="1" />
@@ -102,7 +102,7 @@
       <Property name="MaxAsteroidGenerationPerFrame" value="5000" />
       <Property name="MaxAsteroidGenerationPerFramePulseJump" value="1000" />
     </Property>
-    <Property value="TkLODSettingsData.xml">
+    <Property name="High" value="TkLODSettingsData.xml">
       <Property name="LODAdjust">
         <Property value="1" />
         <Property value="1" />
@@ -152,7 +152,7 @@
       <Property name="MaxAsteroidGenerationPerFrame" value="7500" />
       <Property name="MaxAsteroidGenerationPerFramePulseJump" value="2000" />
     </Property>
-    <Property value="TkLODSettingsData.xml">
+    <Property name="Ultra" value="TkLODSettingsData.xml">
       <Property name="LODAdjust">
         <Property value="1" />
         <Property value="1" />
@@ -233,7 +233,7 @@
     <Property name="DarkOutlineScalar" value="1" />
     <Property name="AnimationScale" value="20" />
     <Property name="WindOffset" value="Vector2f.xml">
-      <Property name="x" value="1.0" />
+      <Property name="x" value="1" />
       <Property name="y" value="0.5" />
     </Property>
     <Property name="StratosphereWindOffset" value="Vector2f.xml">
@@ -269,7 +269,7 @@
     <Property name="MaxIterations" value="128" />
     <Property name="RayMinimumY" value="0" />
     <Property name="LODDistance" value="0" />
-    <Property name="HorizonFadeStartAlpha" value="-1.0" />
+    <Property name="HorizonFadeStartAlpha" value="-1" />
     <Property name="HorizonFadeScalar" value="0.45" />
     <Property name="HorizonDistance" value="39165" />
   </Property>
@@ -526,7 +526,7 @@
   <Property name="MinHotspotFalloffDistance" value="100" />
   <Property name="MaxHotspotFalloffDistance" value="500" />
   <Property name="EnvironmentProperties" value="GcEnvironmentProperties.xml">
-    <Property name="FlightFogheight" value="50" />
+    <Property name="FlightFogHeight" value="50" />
     <Property name="FlightFogBlend" value="250" />
     <Property name="CloudHeightMin" value="650" />
     <Property name="CloudHeightMax" value="900" />
@@ -560,7 +560,7 @@
     <Property name="StratosphereHeight" value="4000" />
   </Property>
   <Property name="EnvironmentPrimeProperties" value="GcEnvironmentProperties.xml">
-    <Property name="FlightFogheight" value="50" />
+    <Property name="FlightFogHeight" value="50" />
     <Property name="FlightFogBlend" value="250" />
     <Property name="CloudHeightMin" value="1500" />
     <Property name="CloudHeightMax" value="1500" />
