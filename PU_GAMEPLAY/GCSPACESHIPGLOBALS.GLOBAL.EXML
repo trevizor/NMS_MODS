@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.99.1)-->
+<!--File created using MBINCompiler version (4.0.0)-->
 <Data template="GcSpaceshipGlobals">
   <Property name="ShieldLeechMul" value="0.07" />
   <Property name="AtmosphereCombatHeight" value="1000" />
   <Property name="SailShipCoreTechID" value="SOLAR_SAIL" />
   <Property name="AllowSideScreenPointing" value="False" />
   <Property name="AddShipToCollectionOnEnter" value="False" />
-  <Property name="EnablePulseDriveSpaceStationOrient" value="True" />
+  <Property name="EnablePulseDriveSpaceStationOrient" value="False" />
   <Property name="DockingApproachRollHmdMod" value="1" />
   <Property name="DockingApproachSpeedHmdMod" value="1" />
   <Property name="DockingApproachBrakeHmdMod" value="1" />
@@ -17,8 +17,8 @@
   <Property name="LandingMargin" value="1.4" />
   <Property name="LandingObstacleMinHeight" value="2" />
   <Property name="LandingTooManyLowPointsFraction" value="0.3" />
-  <Property name="VignetteAmountAcceleration" value="0" />
-  <Property name="VignetteAmountTurning" value="0" />
+  <Property name="VignetteAmountAcceleration" value="20" />
+  <Property name="VignetteAmountTurning" value="0.4" />
   <Property name="PulseDriveBoostDoubleTapTime" value="0" />
   <Property name="RudderToRollMultiplierMin" value="0.09" />
   <Property name="RudderToRollMultiplierMax" value="0.16" />
@@ -52,8 +52,8 @@
     <Property name="y" value="1" />
   </Property>
   <Property name="HandControllerDeadZone" value="Vector2f.xml">
-    <Property name="x" value="0.1" />
-    <Property name="y" value="0.1" />
+    <Property name="x" value="0.08" />
+    <Property name="y" value="0.08" />
   </Property>
   <Property name="HandControllerExtents" value="Vector2f.xml">
     <Property name="x" value="0.8" />
@@ -71,11 +71,11 @@
   <Property name="CockpitRollAngleHmd" value="-20" />
   <Property name="CockpitPitchCorrectAngleHmd" value="0" />
   <Property name="CockpitDriftAngleHmd" value="0" />
-  <Property name="CockpitRollAngle" value="-13.5" />
+  <Property name="CockpitRollAngle" value="-10.5" />
   <Property name="CockpitPitchCorrectAngle" value="4" />
-  <Property name="CockpitDriftAngle" value="0.1" />
+  <Property name="CockpitDriftAngle" value="0" />
   <Property name="CockpitRollAngleExtra" value="2" />
-  <Property name="CockpitRollTime" value="0.9" />
+  <Property name="CockpitRollTime" value="1.2" />
   <Property name="CockpitRollMultiplierCentre" value="0.66" />
   <Property name="CockpitRollMultiplierOpposite" value="0.38" />
   <Property name="MaximumDistanceFromShipWhenExiting" value="10" />
@@ -142,7 +142,7 @@
   <Property name="NearGroundPitchCorrectRange" value="15" />
   <Property name="NearGroundPitchCorrectMinHeightRemote" value="30" />
   <Property name="NearGroundPitchCorrectRangeRemote" value="30" />
-  <Property name="MiniWarpMarkerApproachSlowdown" value="0.75" />
+  <Property name="MiniWarpMarkerApproachSlowdown" value="0.5" />
   <Property name="MiniWarpMarkerAlignSlowdown" value="0.8" />
   <Property name="MiniWarpMarkerAlignSlowdownRange" value="3" />
   <Property name="MiniWarpAlignSlerp" value="0.08" />
@@ -211,32 +211,32 @@
   <Property name="TestShipAnimSpace" value="0" />
   <Property name="TestShipAnimLowAltitude" value="1" />
   <Property name="Avoidance" value="GcSpaceshipAvoidanceData.xml">
-    <Property name="NumRays" value="6" />
-    <Property name="RayMinRange" value="15" />
+    <Property name="NumRays" value="12" />
+    <Property name="RayMinRange" value="40" />
     <Property name="RaySpeedTime" value="6" />
-    <Property name="Force" value="200" />
+    <Property name="Force" value="400" />
     <Property name="StartRadiusMultiplier" value="2" />
-    <Property name="EndRadiusMultiplier" value="2" />
+    <Property name="EndRadiusMultiplier" value="3" />
     <Property name="SpeedInterp" value="0.6" />
     <Property name="SpeedInterpMinSpeed" value="40" />
     <Property name="SpeedInterpRange" value="30" />
   </Property>
-  <Property name="DefaultTrailInitialSpeed" value="400" />
+  <Property name="DefaultTrailInitialSpeed" value="200" />
   <Property name="DefaultTrailSpeedDamping" value="1.2" />
   <Property name="DefaultTrailMinForwardSpeed" value="45" />
   <Property name="TrailVelocityFactor" value="1" />
   <Property name="ContrailSpeedDamping" value="1" />
-  <Property name="MaxOverspeedBrake" value="15" />
+  <Property name="MaxOverspeedBrake" value="1000" />
   <Property name="PostWarpSlowDownTime" value="3" />
   <Property name="PostFreighterWarpTransitionTime" value="1" />
-  <Property name="PulseDrivePlanetApproachMinAngle" value="2" />
+  <Property name="PulseDrivePlanetApproachMinAngle" value="5" />
   <Property name="PulseDrivePlanetApproachMaxAngle" value="10" />
   <Property name="PulseDrivePlanetApproachHeight" value="6000" />
   <Property name="TestJetsStage1" value="0" />
   <Property name="TestJetsStage2" value="0" />
   <Property name="TestJetsBoost" value="0" />
   <Property name="TestTrailThreshold" value="0.4" />
-  <Property name="ContrailDefaultAlpha" value="0.2" />
+  <Property name="ContrailDefaultAlpha" value="0.4" />
   <Property name="EngineJetLightIntensityMultiplier" value="0.5" />
   <Property name="EngineEffectsThrustContribution" value="0.3" />
   <Property name="TestShieldEffect" value="0" />
@@ -267,10 +267,10 @@
   </Property>
   <Property name="AcrobaticLowFlightLevel" value="85" />
   <Property name="_3rdPersonUpOffsetRollChangeSpeed" value="10" />
-  <Property name="_3rdPersonRollAngle" value="15" />
-  <Property name="_3rdPersonRollAngleDropship" value="15" />
-  <Property name="_3rdPersonRollAngleScience" value="15" />
-  <Property name="_3rdPersonRollAngleAlien" value="15" />
+  <Property name="_3rdPersonRollAngle" value="75" />
+  <Property name="_3rdPersonRollAngleDropship" value="45" />
+  <Property name="_3rdPersonRollAngleScience" value="62" />
+  <Property name="_3rdPersonRollAngleAlien" value="30" />
   <Property name="_3rdPersonPitchAngle" value="12" />
   <Property name="_3rdPersonYawAngle" value="10" />
   <Property name="_3rdPersonYawAngleLateralExtra" value="0.075" />
@@ -290,9 +290,9 @@
   <Property name="_3rdPersonFlashIntensity" value="0.9" />
   <Property name="_3rdPersonFlashDuration" value="0.9" />
   <Property name="_3rdPersonTransitionTime" value="0.2" />
-  <Property name="_3rdPersonWarpXWander" value="2" />
-  <Property name="_3rdPersonWarpYWander" value="2" />
-  <Property name="_3rdPersonWarpZWander" value="8" />
+  <Property name="_3rdPersonWarpXWander" value="6" />
+  <Property name="_3rdPersonWarpYWander" value="1.5" />
+  <Property name="_3rdPersonWarpZWander" value="5.5" />
   <Property name="_3rdPersonWarpWanderStartTime" value="6.5" />
   <Property name="_3rdPersonWarpWanderSpring" value="2" />
   <Property name="_3rdPersonWarpWanderTimeX" value="38" />
@@ -301,10 +301,10 @@
   <Property name="_3rdPersonWarpWanderCurve" value="TkCurveType.xml">
     <Property name="Curve" value="EaseOutSine" />
   </Property>
-  <Property name="AvoidancePower" value="2" />
-  <Property name="AvoidanceDistancePower" value="1" />
-  <Property name="CollisionDeflectForce" value="8" />
-  <Property name="CollisionAlignStrength" value="0" />
+  <Property name="AvoidancePower" value="3" />
+  <Property name="AvoidanceDistancePower" value="1.5" />
+  <Property name="CollisionDeflectForce" value="5" />
+  <Property name="CollisionAlignStrength" value="3" />
   <Property name="DefaultCentreOffset" value="Vector3f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="1.5" />
@@ -333,7 +333,7 @@
   <Property name="WeaponDamagePotentialReferenceRange" value="1500" />
   <Property name="DirectionBrakeVerticalMultiplier" value="5" />
   <Property name="LateralDriftRollAmount" value="0.1" />
-  <Property name="LateralDriftRange" value="6000" />
+  <Property name="LateralDriftRange" value="60" />
   <Property name="PadTurnSpeed" value="1" />
   <Property name="PadThrustSmoothTime" value="0.2" />
   <Property name="KBThrustSmoothTime" value="0.2" />
@@ -354,10 +354,10 @@
   <Property name="HoverLandManeuvreBrake" value="5" />
   <Property name="LandingOnGroundTip" value="0" />
   <Property name="LandingCheckBuildings" value="True" />
-  <Property name="LandingCheckBuildingRadiusFactor" value="1.3" />
+  <Property name="LandingCheckBuildingRadiusFactor" value="1.1" />
   <Property name="AutoLevelWaterMargin" value="0.5" />
-  <Property name="AutoLevelWaterTorque" value="0.5" />
-  <Property name="AutoLevelWaterAngle" value="10" />
+  <Property name="AutoLevelWaterTorque" value="1.5" />
+  <Property name="AutoLevelWaterAngle" value="45" />
   <Property name="AutoLevelPitchCorrectMargin" value="0.5" />
   <Property name="PostCollisionAngularFactor" value="Vector3f.xml">
     <Property name="x" value="0.05" />
@@ -367,8 +367,8 @@
   <Property name="DrawLineLockTargetLineWidth" value="5" />
   <Property name="DamageFlashScale" value="50" />
   <Property name="DamageFlashMin" value="0.2" />
-  <Property name="LandingButtonMinTime" value="0.25" />
-  <Property name="LandingPushNoseUpFactor" value="0" />
+  <Property name="LandingButtonMinTime" value="0.5" />
+  <Property name="LandingPushNoseUpFactor" value="0.15" />
   <Property name="GroundHeightSoftForce" value="35" />
   <Property name="GroundHeightSoft" value="20" />
   <Property name="GroundHeightSoftHorizontal" value="5" />
@@ -559,7 +559,7 @@
     <Property name="ShipPlanetBrakeForce" value="50" />
     <Property name="ShipPlanetBrakeAlignMinTime" value="0.3" />
     <Property name="ShipPlanetBrakeAlignMaxTime" value="8" />
-    <Property name="ShipMinHeightForce" value="0.15" />
+    <Property name="ShipMinHeightForce" value="1" />
   </Property>
   <Property name="ControlLight" value="GcPlayerSpaceshipControlData.xml">
     <Property name="SpaceEngine" value="GcPlayerSpaceshipEngineData.xml">
@@ -708,7 +708,7 @@
     <Property name="ShipPlanetBrakeForce" value="50" />
     <Property name="ShipPlanetBrakeAlignMinTime" value="0.3" />
     <Property name="ShipPlanetBrakeAlignMaxTime" value="8" />
-    <Property name="ShipMinHeightForce" value="0.15" />
+    <Property name="ShipMinHeightForce" value="1" />
   </Property>
   <Property name="ControlHeavy" value="GcPlayerSpaceshipControlData.xml">
     <Property name="SpaceEngine" value="GcPlayerSpaceshipEngineData.xml">
@@ -857,7 +857,7 @@
     <Property name="ShipPlanetBrakeForce" value="50" />
     <Property name="ShipPlanetBrakeAlignMinTime" value="0.3" />
     <Property name="ShipPlanetBrakeAlignMaxTime" value="8" />
-    <Property name="ShipMinHeightForce" value="0.15" />
+    <Property name="ShipMinHeightForce" value="1" />
   </Property>
   <Property name="ControlBonusC" value="GcPlayerSpaceshipClassBonuses.xml">
     <Property name="ThrustForceMax" value="30" />
@@ -944,7 +944,7 @@
       <Property name="z" value="0" />
     </Property>
   </Property>
-  <Property name="AlarmLightIntensity" value="4" />
+  <Property name="AlarmLightIntensity" value="8" />
   <Property name="AlarmRate" value="1" />
   <Property name="AlarmLightIntensityHostile" value="12" />
   <Property name="AlarmRateHostileMin" value="0.5" />
@@ -979,12 +979,12 @@
   </Property>
   <Property name="ShieldRechargeMinHitTime" value="60" />
   <Property name="ShieldRechargeRate" value="6" />
-  <Property name="NoBoostStationDistance" value="1000" />
-  <Property name="NoBoostAnomalyDistance" value="1000" />
-  <Property name="NoBoostSpaceAnomalyDistance" value="300" />
-  <Property name="NoBoostFreighterDistance" value="300" />
+  <Property name="NoBoostStationDistance" value="2000" />
+  <Property name="NoBoostAnomalyDistance" value="3000" />
+  <Property name="NoBoostSpaceAnomalyDistance" value="700" />
+  <Property name="NoBoostFreighterDistance" value="800" />
   <Property name="NoBoostFreighterAngle" value="10" />
-  <Property name="NoBoostShipDistance" value="1000" />
+  <Property name="NoBoostShipDistance" value="2000" />
   <Property name="NoBoostShipNearMinTime" value="5" />
   <Property name="NoBoostShipLastHitTime" value="10" />
   <Property name="NoBoostCombatEventMinBattleTime" value="35" />
@@ -1004,7 +1004,7 @@
   <Property name="DriftTurnBrakeMultiplier" value="0.1" />
   <Property name="DirectionBrakeVRBoost" value="1" />
   <Property name="TurnRudderStrength" value="0.4" />
-  <Property name="MuzzleLightIntensity" value="4.5" />
+  <Property name="MuzzleLightIntensity" value="9" />
   <Property name="MuzzleAnimSpeed" value="1.5" />
   <Property name="MuzzleLightCurve" value="TkHitCurveData.xml">
     <Property name="Time" value="0.3" />
@@ -1039,7 +1039,7 @@
     <Property name="y" value="-1" />
     <Property name="z" value="1" />
   </Property>
-  <Property name="DamageLightIntensity" value="5" />
+  <Property name="DamageLightIntensity" value="25" />
   <Property name="DamageLightCurve" value="TkHitCurveData.xml">
     <Property name="Time" value="0.8" />
     <Property name="Curve" value="TkInOutCurve.xml">
@@ -1106,7 +1106,7 @@
   <Property name="GravityDropMinHeight" value="100" />
   <Property name="GravityDropMaxForceHeight" value="200" />
   <Property name="GravityDropMaxHeight" value="5000" />
-  <Property name="GravityDropForce" value="6" />
+  <Property name="GravityDropForce" value="0" />
   <Property name="StickData" value="GcPlayerStickData.xml">
     <Property name="AcceleratorStickPoint" value="0.9" />
     <Property name="AcceleratorMinTime" value="0" />
@@ -1189,7 +1189,7 @@
   </Property>
   <Property name="MissileLockSpeedUp" value="2" />
   <Property name="MissileLockTime" value="3" />
-  <Property name="AutoPilotAlignStrength" value="1" />
+  <Property name="AutoPilotAlignStrength" value="3" />
   <Property name="AutoPilotSmallShipAlignStrength" value="1.2" />
   <Property name="AutoPilotCallDistance" value="480" />
   <Property name="AutoPilotCallAngle" value="-10" />
@@ -1199,7 +1199,7 @@
   <Property name="FreighterApproachDistanceMax" value="300" />
   <Property name="FreighterApproachSpeedDamper" value="0.5" />
   <Property name="FreighterApproachExtraMargin" value="1000" />
-  <Property name="MiniWarpShakeStrength" value="4" />
+  <Property name="MiniWarpShakeStrength" value="2" />
   <Property name="MiniWarpPlanetRadius" value="500" />
   <Property name="MiniWarpStationRadius" value="700" />
   <Property name="MiniWarpFuelTime" value="0.5" />
@@ -1217,7 +1217,7 @@
   <Property name="MiniWarpExitSpeed" value="1000" />
   <Property name="MiniWarpExitSpeedStation" value="500" />
   <Property name="MiniWarpExitTime" value="0.5" />
-  <Property name="MiniWarpHUDArrowAttractAngle" value="3" />
+  <Property name="MiniWarpHUDArrowAttractAngle" value="10" />
   <Property name="MiniWarpHUDArrowAttractAngleStation" value="5" />
   <Property name="MiniWarpHUDArrowAttractAngleOtherPlayerStuff" value="2" />
   <Property name="MiniWarpHUDArrowAttractAngleSaveBeacon" value="2.5" />
@@ -1253,7 +1253,7 @@
   <Property name="AnomalyStationMaxApproachSpeed" value="60" />
   <Property name="TakeOffSphereCastLength" value="50" />
   <Property name="TakeOffSphereCastRadiusMul" value="1.5" />
-  <Property name="LandGroundTakeOffTime" value="2.5" />
+  <Property name="LandGroundTakeOffTime" value="1.2" />
   <Property name="LandLookingForward" value="160" />
   <Property name="LandHeightThreshold" value="100" />
   <Property name="LandWidthThreshold" value="2" />
@@ -1269,17 +1269,17 @@
   <Property name="DamageMinWoundTime" value="2.5" />
   <Property name="SpaceBrakeMinAngularSpeed" value="0.5" />
   <Property name="SpaceBrakeAngularRange" value="0.5" />
-  <Property name="CollisionSpeedDamageAmount" value="2" />
+  <Property name="CollisionSpeedDamageAmount" value="1" />
   <Property name="CollisionDeflectTime" value="0.15" />
   <Property name="CollisionDeflectDamping" value="0.9" />
-  <Property name="CollisionDeflectNormalFactor" value="1.5" />
+  <Property name="CollisionDeflectNormalFactor" value="2" />
   <Property name="CollisionAsteroidDamp" value="0.6" />
   <Property name="CollisionGroundDamp" value="0.75" />
   <Property name="CollisionDistance" value="200" />
-  <Property name="CollisionDistanceGround" value="6" />
+  <Property name="CollisionDistanceGround" value="10" />
   <Property name="CollisionDistanceAsteroid" value="17" />
   <Property name="CollisionDistanceAsteroidSide" value="5" />
-  <Property name="CollisionDistanceSpaceships" value="15" />
+  <Property name="CollisionDistanceSpaceships" value="20" />
   <Property name="DeflectDistance" value="150" />
   <Property name="DeflectAlignTimeMin" value="1.5" />
   <Property name="DeflectAlignTimeMax" value="0.6" />
@@ -1420,7 +1420,7 @@
     </Property>
   </Property>
   <Property name="HUDBoostUpgradeMultiplier" value="10" />
-  <Property name="LaunchThrustersRegenTimePeriod" value="700" />
+  <Property name="LaunchThrustersRegenTimePeriod" value="1440" />
   <Property name="LaunchThrustersMinimumSummonPercentage" value="25" />
   <Property name="LaunchThrustersSummonCostMultiplier" value="1" />
   <Property name="SpeedUpDistanceThreshold" value="975" />

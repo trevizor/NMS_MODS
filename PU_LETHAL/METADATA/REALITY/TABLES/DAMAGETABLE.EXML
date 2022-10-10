@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.88.0)-->
+<!--File created using MBINCompiler version (4.0.0)-->
 <Data template="GcPlayerDamageTable">
   <Property name="DamageTable">
     <Property value="GcPlayerDamageData.xml">
@@ -8,6 +8,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="" />
       <Property name="HitMessage" value="" />
@@ -18,16 +21,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- BASICDAMAGE --><Property name="Damage" value="2" />
-      <Property name="HardModeMultiplier" value="1.5" />
-      <Property name="PushForce" value="2" /> <!-- BASICDAMAGE -->
-      <Property name="CameraTurn" value="0" /> <!-- BASICDAMAGE -->
+      <Property name="Damage" value="2" />
+      <Property name="PushForce" value="2" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="ENERGY" />
@@ -35,6 +39,9 @@
       <Property name="DeathStat" value="DEATH_ENERGY" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/HAZARDS/HUDLIFESUPPORT.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_ENERGY" />
       <Property name="HitMessage" value="NOTIFY_HIT_ENERGY" />
@@ -45,16 +52,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_ENERGY" />
       </Property>
-      <!-- ENERGY --><Property name="Damage" value="38" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="2" /> <!-- ENERGY -->
-      <Property name="CameraTurn" value="0" /> <!-- ENERGY -->
+      <Property name="Damage" value="38" />
+      <Property name="PushForce" value="2" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="EXTREMEHEATDMG" />
@@ -62,6 +70,9 @@
       <Property name="DeathStat" value="DEATH_HOT" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/HAZARDS/HAZARDS.HEAT.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_HEAT" />
       <Property name="HitMessage" value="NOTIFY_HIT_HEAT" />
@@ -72,16 +83,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITICAL_HEAT" />
       </Property>
-      <!-- EXTREMEHEATDMG --><Property name="Damage" value="38" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- EXTREMEHEATDMG -->
-      <Property name="CameraTurn" value="0" /> <!-- EXTREMEHEATDMG -->
+      <Property name="Damage" value="38" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Scorch" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="NOOXYDAMAGE" />
@@ -89,6 +101,9 @@
       <Property name="DeathStat" value="DEATH_DROWN" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/HAZARDS/HAZARDS.WATER.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_DROWN" />
       <Property name="HitMessage" value="" />
@@ -99,16 +114,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITICAL_NOOXYGEN" />
       </Property>
-      <!-- NOOXYDAMAGE --><Property name="Damage" value="38" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- NOOXYDAMAGE -->
-      <Property name="CameraTurn" value="0" /> <!-- NOOXYDAMAGE -->
+      <Property name="Damage" value="38" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="EXTREMECOLDDMG" />
@@ -116,6 +132,9 @@
       <Property name="DeathStat" value="DEATH_COLD" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/HAZARDS/HAZARDS.COLD.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_COLD" />
       <Property name="HitMessage" value="NOTIFY_HIT_COLD" />
@@ -126,16 +145,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITICAL_COLD" />
       </Property>
-      <!-- EXTREMECOLDDMG --><Property name="Damage" value="38" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- EXTREMECOLDDMG -->
-      <Property name="CameraTurn" value="0" /> <!-- EXTREMECOLDDMG -->
+      <Property name="Damage" value="38" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Freeze" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="TOXICGASDMG" />
@@ -143,6 +163,9 @@
       <Property name="DeathStat" value="DEATH_TOXIC" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/HAZARDS/HAZARDS.TOXIC.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_TOXIC" />
       <Property name="HitMessage" value="NOTIFY_HIT_TOXIC" />
@@ -153,16 +176,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITICAL_TOXIC" />
       </Property>
-      <!-- TOXICGASDMG --><Property name="Damage" value="38" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- TOXICGASDMG -->
-      <Property name="CameraTurn" value="0" /> <!-- TOXICGASDMG -->
+      <Property name="Damage" value="38" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Toxic" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="RADIATIONDMG" />
@@ -170,6 +194,9 @@
       <Property name="DeathStat" value="DEATH_RAD" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/HAZARDS/HAZARDS.RADIOACTIVE.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_RADIATION" />
       <Property name="HitMessage" value="NOTIFY_HIT_RAD" />
@@ -180,16 +207,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITICAL_RAD" />
       </Property>
-      <!-- RADIATIONDMG --><Property name="Damage" value="38" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- RADIATIONDMG -->
-      <Property name="CameraTurn" value="0" /> <!-- RADIATIONDMG -->
+      <Property name="Damage" value="38" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Radioactive" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="IMPACTDAMAGE" />
@@ -197,6 +225,9 @@
       <Property name="DeathStat" value="DEATH_FALL" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_TERRAIN" />
       <Property name="HitMessage" value="" />
@@ -207,16 +238,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- IMPACTDAMAGE --><Property name="Damage" value="14" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="5" /> <!-- IMPACTDAMAGE -->
-      <Property name="CameraTurn" value="0" /> <!-- IMPACTDAMAGE -->
+      <Property name="Damage" value="14" />
+      <Property name="PushForce" value="5" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="IMPACTSHIP" />
@@ -224,6 +256,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_SHIP" />
       <Property name="HitMessage" value="" />
@@ -234,16 +269,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- IMPACTSHIP --><Property name="Damage" value="24" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="10" /> <!-- IMPACTSHIP -->
-      <Property name="CameraTurn" value="0" /> <!-- IMPACTSHIP -->
+      <Property name="Damage" value="24" />
+      <Property name="PushForce" value="10" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="IMPACTGROUND" />
@@ -251,6 +287,9 @@
       <Property name="DeathStat" value="DEATH_FALL" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_TERRAIN" />
       <Property name="HitMessage" value="" />
@@ -261,16 +300,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- IMPACTGROUND --><Property name="Damage" value="24" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="10" /> <!-- IMPACTGROUND -->
-      <Property name="CameraTurn" value="0" /> <!-- IMPACTGROUND -->
+      <Property name="Damage" value="24" />
+      <Property name="PushForce" value="10" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="EXPLOSIONPAINSH" />
       <Property name="CameraShakeNoShield" value="EXPLOSIONPAINSH" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="IMPACTINSTANCE" />
@@ -278,6 +318,9 @@
       <Property name="DeathStat" value="DEATH_FALL" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_TERRAIN" />
       <Property name="HitMessage" value="" />
@@ -288,16 +331,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
-      <!-- IMPACTINSTANCE --><Property name="Damage" value="41" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="2" /> <!-- IMPACTINSTANCE -->
-      <Property name="CameraTurn" value="0" /> <!-- IMPACTINSTANCE -->
+      <Property name="Damage" value="41" />
+      <Property name="PushForce" value="2" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="SMALLPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="STANDING_STONE" />
@@ -305,6 +349,9 @@
       <Property name="DeathStat" value="UI_DAMAGE_STAND" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="" />
       <Property name="HitMessage" value="" />
@@ -315,16 +362,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- STANDING_STONE --><Property name="Damage" value="59" />
-      <Property name="HardModeMultiplier" value="1.5" />
-      <Property name="PushForce" value="20" /> <!-- STANDING_STONE -->
-      <Property name="CameraTurn" value="0" /> <!-- STANDING_STONE -->
+      <Property name="Damage" value="59" />
+      <Property name="PushForce" value="20" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="ROBOTGUNDMG" />
@@ -332,6 +380,9 @@
       <Property name="DeathStat" value="DEATH_ROBOT" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_SENTINEL" />
       <Property name="HitMessage" value="" />
@@ -342,16 +393,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- ROBOTGUNDMG --><Property name="Damage" value="5" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="5" /> <!-- ROBOTGUNDMG -->
-      <Property name="CameraTurn" value="0" /> <!-- ROBOTGUNDMG -->
+      <Property name="Damage" value="5" />
+      <Property name="PushForce" value="5" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="ROBOTGUNDMG_MED" />
@@ -359,6 +411,9 @@
       <Property name="DeathStat" value="DEATH_ROBOT" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_SENTINEL" />
       <Property name="HitMessage" value="" />
@@ -369,16 +424,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- ROBOTGUNDMG_MED --><Property name="Damage" value="10" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="10" /> <!-- ROBOTGUNDMG_MED -->
-      <Property name="CameraTurn" value="0" /> <!-- ROBOTGUNDMG_MED -->
+      <Property name="Damage" value="10" />
+      <Property name="PushForce" value="10" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="ROBOTBIGGUN" />
@@ -386,6 +442,9 @@
       <Property name="DeathStat" value="DEATH_ROBOT" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_SENTINEL" />
       <Property name="HitMessage" value="" />
@@ -396,16 +455,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- ROBOTBIGGUN --><Property name="Damage" value="15" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="15" /> <!-- ROBOTBIGGUN -->
-      <Property name="CameraTurn" value="0" /> <!-- ROBOTBIGGUN -->
+      <Property name="Damage" value="15" />
+      <Property name="PushForce" value="15" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="ROBOTGRENADEDMG" />
@@ -413,6 +473,9 @@
       <Property name="DeathStat" value="DEATH_ROBOT" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_SENTINEL" />
       <Property name="HitMessage" value="" />
@@ -423,16 +486,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- ROBOTGRENADEDMG --><Property name="Damage" value="12" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="30" /> <!-- ROBOTGRENADEDMG -->
-      <Property name="CameraTurn" value="0" /> <!-- ROBOTGRENADEDMG -->
+      <Property name="Damage" value="12" />
+      <Property name="PushForce" value="30" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="LASERDAMAGE" />
@@ -440,6 +504,9 @@
       <Property name="DeathStat" value="DEATH_ROBOT" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_LASER" />
       <Property name="HitMessage" value="" />
@@ -450,16 +517,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- LASERDAMAGE --><Property name="Damage" value="5" />
-      <Property name="HardModeMultiplier" value="1.5" />
-      <Property name="PushForce" value="0" /> <!-- LASERDAMAGE -->
-      <Property name="CameraTurn" value="0" /> <!-- LASERDAMAGE -->
+      <Property name="Damage" value="5" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="SMLCREATUREDMG" />
@@ -467,6 +535,9 @@
       <Property name="DeathStat" value="DEATH_CREATURE" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_CREATURE" />
       <Property name="HitMessage" value="" />
@@ -477,16 +548,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- SMLCREATUREDMG --><Property name="Damage" value="27" />
-      <Property name="HardModeMultiplier" value="2" />
-      <Property name="PushForce" value="10" /> <!-- SMLCREATUREDMG -->
-      <Property name="CameraTurn" value="0" /> <!-- SMLCREATUREDMG -->
+      <Property name="Damage" value="27" />
+      <Property name="PushForce" value="10" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="MEDCREATUREDMG" />
@@ -494,6 +566,9 @@
       <Property name="DeathStat" value="DEATH_CREATURE" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_CREATURE" />
       <Property name="HitMessage" value="" />
@@ -504,16 +579,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- MEDCREATUREDMG --><Property name="Damage" value="41" />
-      <Property name="HardModeMultiplier" value="2" />
-      <Property name="PushForce" value="10" /> <!-- MEDCREATUREDMG -->
-      <Property name="CameraTurn" value="0" /> <!-- MEDCREATUREDMG -->
+      <Property name="Damage" value="41" />
+      <Property name="PushForce" value="10" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="LRGCREATUREDMG" />
@@ -521,6 +597,9 @@
       <Property name="DeathStat" value="DEATH_CREATURE" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_CREATURE" />
       <Property name="HitMessage" value="" />
@@ -531,16 +610,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- LRGCREATUREDMG --><Property name="Damage" value="80" />
-      <Property name="HardModeMultiplier" value="2" />
-      <Property name="PushForce" value="15" /> <!-- LRGCREATUREDMG -->
-      <Property name="CameraTurn" value="0" /> <!-- LRGCREATUREDMG -->
+      <Property name="Damage" value="80" />
+      <Property name="PushForce" value="15" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="BIGPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="HUGECREATUREDMG" />
@@ -548,6 +628,9 @@
       <Property name="DeathStat" value="DEATH_CREATURE" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_CREATURE" />
       <Property name="HitMessage" value="" />
@@ -558,16 +641,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- HUGECREATUREDMG --><Property name="Damage" value="140" />
-      <Property name="HardModeMultiplier" value="2" />
-      <Property name="PushForce" value="15" /> <!-- HUGECREATUREDMG -->
-      <Property name="CameraTurn" value="0" /> <!-- HUGECREATUREDMG -->
+      <Property name="Damage" value="140" />
+      <Property name="PushForce" value="15" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="PLAYERPREDDMG" />
@@ -575,6 +659,9 @@
       <Property name="DeathStat" value="DEATH_CREATURE" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_CREATURE" />
       <Property name="HitMessage" value="" />
@@ -585,16 +672,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- PLAYERPREDDMG --><Property name="Damage" value="59" />
-      <Property name="HardModeMultiplier" value="2" />
-      <Property name="PushForce" value="15" /> <!-- PLAYERPREDDMG -->
-      <Property name="CameraTurn" value="0" /> <!-- PLAYERPREDDMG -->
+      <Property name="Damage" value="59" />
+      <Property name="PushForce" value="15" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="PREDDMGVR" />
@@ -602,6 +690,9 @@
       <Property name="DeathStat" value="DEATH_CREATURE" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_CREATURE" />
       <Property name="HitMessage" value="" />
@@ -612,16 +703,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- PREDDMGVR --><Property name="Damage" value="59" />
-      <Property name="HardModeMultiplier" value="1.5" />
-      <Property name="PushForce" value="15" /> <!-- PREDDMGVR -->
-      <Property name="CameraTurn" value="0" /> <!-- PREDDMGVR -->
+      <Property name="Damage" value="59" />
+      <Property name="PushForce" value="15" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="WEIRDCRTDMG" />
@@ -629,6 +721,9 @@
       <Property name="DeathStat" value="DEATH_CREATURE" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_CREATURE" />
       <Property name="HitMessage" value="" />
@@ -639,16 +734,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- WEIRDCRTDMG --><Property name="Damage" value="54" />
-      <Property name="HardModeMultiplier" value="2" />
-      <Property name="PushForce" value="50" /> <!-- WEIRDCRTDMG -->
-      <Property name="CameraTurn" value="0" /> <!-- WEIRDCRTDMG -->
+      <Property name="Damage" value="54" />
+      <Property name="PushForce" value="50" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="FIEND_DMG" />
@@ -656,6 +752,9 @@
       <Property name="DeathStat" value="DEATH_HORROR" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_FIEND" />
       <Property name="HitMessage" value="" />
@@ -666,16 +765,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- FIEND_DMG --><Property name="Damage" value="50" />
-      <Property name="HardModeMultiplier" value="2" />
-      <Property name="PushForce" value="2" /> <!-- FIEND_DMG -->
-      <Property name="CameraTurn" value="0" /> <!-- FIEND_DMG -->
+      <Property name="Damage" value="50" />
+      <Property name="PushForce" value="2" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="FIENDSPIT_DMG" />
@@ -683,6 +783,9 @@
       <Property name="DeathStat" value="DEATH_HORROR" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_FIEND" />
       <Property name="HitMessage" value="" />
@@ -693,16 +796,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- FIENDSPIT_DMG --><Property name="Damage" value="3" />
-      <Property name="HardModeMultiplier" value="1.5" />
-      <Property name="PushForce" value="0" /> <!-- FIENDSPIT_DMG -->
-      <Property name="CameraTurn" value="0" /> <!-- FIENDSPIT_DMG -->
+      <Property name="Damage" value="3" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="WORM_DMG" />
@@ -710,6 +814,9 @@
       <Property name="DeathStat" value="DEATH_HORROR" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_WORM" />
       <Property name="HitMessage" value="" />
@@ -720,16 +827,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- WORM_DMG --><Property name="Damage" value="58" />
-      <Property name="HardModeMultiplier" value="2" />
-      <Property name="PushForce" value="50" /> <!-- WORM_DMG -->
-      <Property name="CameraTurn" value="0" /> <!-- WORM_DMG -->
+      <Property name="Damage" value="58" />
+      <Property name="PushForce" value="50" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="PLANTDMG" />
@@ -737,6 +845,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/HAZARDS/HAZARDS.TOXIC.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_FLORA" />
       <Property name="HitMessage" value="" />
@@ -747,16 +858,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
-      <!-- PLANTDMG --><Property name="Damage" value="32" />
-      <Property name="HardModeMultiplier" value="1.5" />
-      <Property name="PushForce" value="5" /> <!-- PLANTDMG -->
-      <Property name="CameraTurn" value="0" /> <!-- PLANTDMG -->
+      <Property name="Damage" value="32" />
+      <Property name="PushForce" value="5" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="True" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Toxic" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="AISHIPGUN" />
@@ -764,6 +876,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_SHIP" />
       <Property name="HitMessage" value="" />
@@ -774,16 +889,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- AISHIPGUN --><Property name="Damage" value="19" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- AISHIPGUN -->
-      <Property name="CameraTurn" value="0" /> <!-- AISHIPGUN -->
+      <Property name="Damage" value="19" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="SHIPLASER" />
@@ -791,6 +907,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_SHIP" />
       <Property name="HitMessage" value="" />
@@ -801,16 +920,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- SHIPLASER --><Property name="Damage" value="30" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- SHIPLASER -->
-      <Property name="CameraTurn" value="0" /> <!-- SHIPLASER -->
+      <Property name="Damage" value="30" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="BOUNTYGUN1" />
@@ -818,6 +938,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_SHIP" />
       <Property name="HitMessage" value="" />
@@ -828,16 +951,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- BOUNTYGUN1 --><Property name="Damage" value="20" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- BOUNTYGUN1 -->
-      <Property name="CameraTurn" value="0" /> <!-- BOUNTYGUN1 -->
+      <Property name="Damage" value="20" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="BOUNTYGUN2" />
@@ -845,6 +969,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_SHIP" />
       <Property name="HitMessage" value="" />
@@ -855,16 +982,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- BOUNTYGUN2 --><Property name="Damage" value="30" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- BOUNTYGUN2 -->
-      <Property name="CameraTurn" value="0" /> <!-- BOUNTYGUN2 -->
+      <Property name="Damage" value="30" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="BOUNTYGUN3" />
@@ -872,6 +1000,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_SHIP" />
       <Property name="HitMessage" value="" />
@@ -882,16 +1013,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- BOUNTYGUN3 --><Property name="Damage" value="40" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- BOUNTYGUN3 -->
-      <Property name="CameraTurn" value="0" /> <!-- BOUNTYGUN3 -->
+      <Property name="Damage" value="40" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="BOUNTYLASER1" />
@@ -899,6 +1031,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_SHIP" />
       <Property name="HitMessage" value="" />
@@ -909,16 +1044,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- BOUNTYLASER1 --><Property name="Damage" value="27" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- BOUNTYLASER1 -->
-      <Property name="CameraTurn" value="0" /> <!-- BOUNTYLASER1 -->
+      <Property name="Damage" value="27" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="BOUNTYLASER3" />
@@ -926,6 +1062,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_SHIP" />
       <Property name="HitMessage" value="" />
@@ -936,16 +1075,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- BOUNTYLASER3 --><Property name="Damage" value="41" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- BOUNTYLASER3 -->
-      <Property name="CameraTurn" value="0" /> <!-- BOUNTYLASER3 -->
+      <Property name="Damage" value="41" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="BOUNTYLASER3" />
@@ -953,6 +1093,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_SHIP" />
       <Property name="HitMessage" value="" />
@@ -963,16 +1106,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- BOUNTYLASER3 --><Property name="Damage" value="68" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- BOUNTYLASER3 -->
-      <Property name="CameraTurn" value="0" /> <!-- BOUNTYLASER3 -->
+      <Property name="Damage" value="68" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="WALKERLASER" />
@@ -980,6 +1124,9 @@
       <Property name="DeathStat" value="DEATH_ROBOT" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_SENTINEL_WALKER" />
       <Property name="HitMessage" value="" />
@@ -990,16 +1137,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- WALKERLASER --><Property name="Damage" value="11" />
-      <Property name="HardModeMultiplier" value="1.5" />
-      <Property name="PushForce" value="5" /> <!-- WALKERLASER -->
-      <Property name="CameraTurn" value="0" /> <!-- WALKERLASER -->
+      <Property name="Damage" value="11" />
+      <Property name="PushForce" value="5" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="BIGPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="POLICEGUN" />
@@ -1007,6 +1155,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_POLICE" />
       <Property name="HitMessage" value="" />
@@ -1017,16 +1168,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- POLICEGUN --><Property name="Damage" value="22" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- POLICEGUN -->
-      <Property name="CameraTurn" value="0" /> <!-- POLICEGUN -->
+      <Property name="Damage" value="22" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="POLICELASER" />
@@ -1034,6 +1186,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_POLICE" />
       <Property name="HitMessage" value="" />
@@ -1044,16 +1199,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- POLICELASER --><Property name="Damage" value="25" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- POLICELASER -->
-      <Property name="CameraTurn" value="0" /> <!-- POLICELASER -->
+      <Property name="Damage" value="25" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="SMALLASTEROID" />
@@ -1061,6 +1217,9 @@
       <Property name="DeathStat" value="DEATH_FALL" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_ASTEROID" />
       <Property name="HitMessage" value="" />
@@ -1071,16 +1230,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- SMALLASTEROID --><Property name="Damage" value="20" />
-      <Property name="HardModeMultiplier" value="1.5" />
-      <Property name="PushForce" value="0" /> <!-- SMALLASTEROID -->
-      <Property name="CameraTurn" value="0" /> <!-- SMALLASTEROID -->
+      <Property name="Damage" value="20" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="MEDIUMASTEROID" />
@@ -1088,6 +1248,9 @@
       <Property name="DeathStat" value="DEATH_FALL" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_ASTEROID" />
       <Property name="HitMessage" value="" />
@@ -1098,16 +1261,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- MEDIUMASTEROID --><Property name="Damage" value="40" />
-      <Property name="HardModeMultiplier" value="1.5" />
-      <Property name="PushForce" value="0" /> <!-- MEDIUMASTEROID -->
-      <Property name="CameraTurn" value="0" /> <!-- MEDIUMASTEROID -->
+      <Property name="Damage" value="40" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="LARGEASTEROID" />
@@ -1115,6 +1279,9 @@
       <Property name="DeathStat" value="DEATH_FALL" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_ASTEROID" />
       <Property name="HitMessage" value="" />
@@ -1125,16 +1292,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- LARGEASTEROID --><Property name="Damage" value="60" />
-      <Property name="HardModeMultiplier" value="1.5" />
-      <Property name="PushForce" value="0" /> <!-- LARGEASTEROID -->
-      <Property name="CameraTurn" value="0" /> <!-- LARGEASTEROID -->
+      <Property name="Damage" value="60" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="BIGPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="LANDING" />
@@ -1142,6 +1310,9 @@
       <Property name="DeathStat" value="DEATH_FALL" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_LANDING" />
       <Property name="HitMessage" value="" />
@@ -1152,16 +1323,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- LANDING --><Property name="Damage" value="108" />
-      <Property name="HardModeMultiplier" value="4" />
-      <Property name="PushForce" value="0" /> <!-- LANDING -->
-      <Property name="CameraTurn" value="0" /> <!-- LANDING -->
+      <Property name="Damage" value="108" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="FREIGHTERGUN" />
@@ -1169,6 +1341,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_FREIGHTER" />
       <Property name="HitMessage" value="" />
@@ -1179,16 +1354,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- FREIGHTERGUN --><Property name="Damage" value="40" />
-      <Property name="HardModeMultiplier" value="1.5" />
-      <Property name="PushForce" value="0" /> <!-- FREIGHTERGUN -->
-      <Property name="CameraTurn" value="0" /> <!-- FREIGHTERGUN -->
+      <Property name="Damage" value="40" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="BIGPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="FREIGHTERLASER" />
@@ -1196,6 +1372,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_FREIGHTER" />
       <Property name="HitMessage" value="" />
@@ -1206,16 +1385,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- FREIGHTERLASER --><Property name="Damage" value="50" />
-      <Property name="HardModeMultiplier" value="1.5" />
-      <Property name="PushForce" value="20" /> <!-- FREIGHTERLASER -->
-      <Property name="CameraTurn" value="0" /> <!-- FREIGHTERLASER -->
+      <Property name="Damage" value="50" />
+      <Property name="PushForce" value="20" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="BIGPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="VOLUNTARY" />
@@ -1223,6 +1403,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="" />
       <Property name="HitMessage" value="" />
@@ -1233,16 +1416,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- VOLUNTARY --><Property name="Damage" value="135" />
-      <Property name="HardModeMultiplier" value="1.5" />
-      <Property name="PushForce" value="0" /> <!-- VOLUNTARY -->
-      <Property name="CameraTurn" value="0" /> <!-- VOLUNTARY -->
+      <Property name="Damage" value="135" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="MPGUN" />
@@ -1250,6 +1434,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_SENTINEL" />
       <Property name="HitMessage" value="" />
@@ -1260,16 +1447,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- MPGUN --><Property name="Damage" value="5" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- MPGUN -->
-      <Property name="CameraTurn" value="0" /> <!-- MPGUN -->
+      <Property name="Damage" value="5" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="MPSHIPGUN" />
@@ -1277,6 +1465,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_SHIP" />
       <Property name="HitMessage" value="" />
@@ -1287,16 +1478,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- MPSHIPGUN --><Property name="Damage" value="34" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- MPSHIPGUN -->
-      <Property name="CameraTurn" value="0" /> <!-- MPSHIPGUN -->
+      <Property name="Damage" value="34" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="MPSHIPSHOTGUN" />
@@ -1304,6 +1496,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_SHIP" />
       <Property name="HitMessage" value="" />
@@ -1314,16 +1509,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- MPSHIPSHOTGUN --><Property name="Damage" value="122" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- MPSHIPSHOTGUN -->
-      <Property name="CameraTurn" value="0" /> <!-- MPSHIPSHOTGUN -->
+      <Property name="Damage" value="122" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="MPSHIPMINIGUN" />
@@ -1331,6 +1527,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_SHIP" />
       <Property name="HitMessage" value="" />
@@ -1341,16 +1540,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- MPSHIPMINIGUN --><Property name="Damage" value="17.7" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- MPSHIPMINIGUN -->
-      <Property name="CameraTurn" value="0" /> <!-- MPSHIPMINIGUN -->
+      <Property name="Damage" value="17.7" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="MPSHIPPLASMAGUN" />
@@ -1358,6 +1558,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_SHIP" />
       <Property name="HitMessage" value="" />
@@ -1368,16 +1571,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- MPSHIPPLASMAGUN --><Property name="Damage" value="169" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- MPSHIPPLASMAGUN -->
-      <Property name="CameraTurn" value="0" /> <!-- MPSHIPPLASMAGUN -->
+      <Property name="Damage" value="169" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="MPPLAYER" />
@@ -1385,6 +1589,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_PLAYER" />
       <Property name="HitMessage" value="" />
@@ -1395,16 +1602,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- MPPLAYER --><Property name="Damage" value="1.7" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- MPPLAYER -->
-      <Property name="CameraTurn" value="0" /> <!-- MPPLAYER -->
+      <Property name="Damage" value="1.7" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="MPPLAYER_SHIP" />
@@ -1412,6 +1620,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_SHIP" />
       <Property name="HitMessage" value="" />
@@ -1422,16 +1633,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- MPPLAYER_SHIP --><Property name="Damage" value="61" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- MPPLAYER_SHIP -->
-      <Property name="CameraTurn" value="0" /> <!-- MPPLAYER_SHIP -->
+      <Property name="Damage" value="61" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="MPPLAYER_RAIL" />
@@ -1439,6 +1651,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_PLAYER_WEAP" />
       <Property name="HitMessage" value="" />
@@ -1449,16 +1664,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- MPPLAYER_RAIL --><Property name="Damage" value="7" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- MPPLAYER_RAIL -->
-      <Property name="CameraTurn" value="0" /> <!-- MPPLAYER_RAIL -->
+      <Property name="Damage" value="7" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="MPPLAYER_SHOT" />
@@ -1466,6 +1682,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_PLAYER_WEAP" />
       <Property name="HitMessage" value="" />
@@ -1476,16 +1695,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- MPPLAYER_SHOT --><Property name="Damage" value="1" />
-      <Property name="HardModeMultiplier" value="1.5" />
-      <Property name="PushForce" value="0" /> <!-- MPPLAYER_SHOT -->
-      <Property name="CameraTurn" value="0" /> <!-- MPPLAYER_SHOT -->
+      <Property name="Damage" value="1" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="MPPLAYER_SMG" />
@@ -1493,6 +1713,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_PLAYER_WEAP" />
       <Property name="HitMessage" value="" />
@@ -1503,16 +1726,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- MPPLAYER_SMG --><Property name="Damage" value="1" />
-      <Property name="HardModeMultiplier" value="1.5" />
-      <Property name="PushForce" value="0" /> <!-- MPPLAYER_SMG -->
-      <Property name="CameraTurn" value="0" /> <!-- MPPLAYER_SMG -->
+      <Property name="Damage" value="1" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="MPPLAYER_GUN" />
@@ -1520,6 +1744,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_PLAYER_WEAP" />
       <Property name="HitMessage" value="" />
@@ -1530,16 +1757,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- MPPLAYER_GUN --><Property name="Damage" value="5" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- MPPLAYER_GUN -->
-      <Property name="CameraTurn" value="0" /> <!-- MPPLAYER_GUN -->
+      <Property name="Damage" value="5" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="MPPLAYER_CANNON" />
@@ -1547,6 +1775,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_PLAYER_WEAP" />
       <Property name="HitMessage" value="" />
@@ -1557,16 +1788,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITICAL_HEAT" />
       </Property>
-      <!-- MPPLAYER_CANNON --><Property name="Damage" value="1" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="1" /> <!-- MPPLAYER_CANNON -->
-      <Property name="CameraTurn" value="0" /> <!-- MPPLAYER_CANNON -->
+      <Property name="Damage" value="1" />
+      <Property name="PushForce" value="1" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="MPVEHICLE" />
@@ -1574,6 +1806,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_EXOCRAFT" />
       <Property name="HitMessage" value="" />
@@ -1584,16 +1819,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- MPVEHICLE --><Property name="Damage" value="1" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- MPVEHICLE -->
-      <Property name="CameraTurn" value="0" /> <!-- MPVEHICLE -->
+      <Property name="Damage" value="1" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="MPSHIPROCKET" />
@@ -1601,6 +1837,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_SHIP" />
       <Property name="HitMessage" value="" />
@@ -1611,16 +1850,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- MPSHIPROCKET --><Property name="Damage" value="338" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- MPSHIPROCKET -->
-      <Property name="CameraTurn" value="0" /> <!-- MPSHIPROCKET -->
+      <Property name="Damage" value="338" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="MPGRENADE" />
@@ -1628,6 +1868,9 @@
       <Property name="DeathStat" value="DEATH_ACCIDENT" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_PLAYER_WEAP" />
       <Property name="HitMessage" value="" />
@@ -1638,16 +1881,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- MPGRENADE --><Property name="Damage" value="68" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- MPGRENADE -->
-      <Property name="CameraTurn" value="0" /> <!-- MPGRENADE -->
+      <Property name="Damage" value="68" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="MPVEHICLEGUN" />
@@ -1655,6 +1899,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_EXOCRAFT" />
       <Property name="HitMessage" value="" />
@@ -1665,16 +1912,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- MPVEHICLEGUN --><Property name="Damage" value="1" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- MPVEHICLEGUN -->
-      <Property name="CameraTurn" value="0" /> <!-- MPVEHICLEGUN -->
+      <Property name="Damage" value="1" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="GASPLANT" />
@@ -1682,6 +1930,9 @@
       <Property name="DeathStat" value="DEATH_TOXIC" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/HAZARDS/HAZARDS.TOXIC.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_FLORA" />
       <Property name="HitMessage" value="NOTIFY_GAS_PLANT" />
@@ -1692,16 +1943,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITICAL_TOXIC" />
       </Property>
-      <!-- GASPLANT --><Property name="Damage" value="58" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- GASPLANT -->
-      <Property name="CameraTurn" value="0" /> <!-- GASPLANT -->
+      <Property name="Damage" value="58" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="True" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Toxic" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="LOSTINSPACE" />
@@ -1709,6 +1961,9 @@
       <Property name="DeathStat" value="DEATH_FALL" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_LOSTINSPACE" />
       <Property name="HitMessage" value="" />
@@ -1719,16 +1974,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
-      <!-- LOSTINSPACE --><Property name="Damage" value="1" />
-      <Property name="HardModeMultiplier" value="1.5" />
-      <Property name="PushForce" value="0" /> <!-- LOSTINSPACE -->
-      <Property name="CameraTurn" value="0" /> <!-- LOSTINSPACE -->
+      <Property name="Damage" value="1" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="NOSHAKE" />
       <Property name="CameraShakeNoShield" value="NOSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Freeze" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="RADIATION_LEAK" />
@@ -1736,6 +1992,9 @@
       <Property name="DeathStat" value="DEATH_RAD" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/HAZARDS/HAZARDS.RADIOACTIVE.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_RADIATION" />
       <Property name="HitMessage" value="NOTIFY_RADLEAK_DAMAGE" />
@@ -1746,16 +2005,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITICAL_RAD" />
       </Property>
-      <!-- RADIATION_LEAK --><Property name="Damage" value="20" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- RADIATION_LEAK -->
-      <Property name="CameraTurn" value="0" /> <!-- RADIATION_LEAK -->
+      <Property name="Damage" value="20" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="True" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Radioactive" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="JUSTPUSH" />
@@ -1763,6 +2023,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="" />
       <Property name="HitMessage" value="" />
@@ -1773,16 +2036,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
-      <!-- JUSTPUSH --><Property name="Damage" value="0" />
-      <Property name="HardModeMultiplier" value="0" />
-      <Property name="PushForce" value="50" /> <!-- JUSTPUSH -->
-      <Property name="CameraTurn" value="0" /> <!-- JUSTPUSH -->
+      <Property name="Damage" value="0" />
+      <Property name="PushForce" value="50" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="VENT_HEAT" />
@@ -1790,6 +2054,9 @@
       <Property name="DeathStat" value="DEATH_HOT" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/HAZARDS/HAZARDS.HEAT.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_HEAT" />
       <Property name="HitMessage" value="NOTIFY_HIT_HEAT" />
@@ -1800,16 +2067,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITICAL_HEAT" />
       </Property>
-      <!-- VENT_HEAT --><Property name="Damage" value="101" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="100" /> <!-- VENT_HEAT -->
-      <Property name="CameraTurn" value="0" /> <!-- VENT_HEAT -->
+      <Property name="Damage" value="101" />
+      <Property name="PushForce" value="100" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="True" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="SPORE_VENT" />
@@ -1817,6 +2085,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/HAZARDS/HAZARDS.TOXIC.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_FLORA" />
       <Property name="HitMessage" value="NOTIFY_GAS_PLANT" />
@@ -1827,16 +2098,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITICAL_TOXIC" />
       </Property>
-      <!-- SPORE_VENT --><Property name="Damage" value="58" />
-      <Property name="HardModeMultiplier" value="1.5" />
-      <Property name="PushForce" value="25" /> <!-- SPORE_VENT -->
-      <Property name="CameraTurn" value="0.25" /> <!-- SPORE_VENT -->
+      <Property name="Damage" value="58" />
+      <Property name="PushForce" value="25" />
+      <Property name="CameraTurn" value="0.25" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="True" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="FISHFIEND_DMG" />
@@ -1844,6 +2116,9 @@
       <Property name="DeathStat" value="DEATH_HORROR" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_FISHFIEND" />
       <Property name="HitMessage" value="" />
@@ -1854,16 +2129,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- FISHFIEND_DMG --><Property name="Damage" value="88" />
-      <Property name="HardModeMultiplier" value="2" />
-      <Property name="PushForce" value="30" /> <!-- FISHFIEND_DMG -->
-      <Property name="CameraTurn" value="0" /> <!-- FISHFIEND_DMG -->
+      <Property name="Damage" value="88" />
+      <Property name="PushForce" value="30" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="FLOATER_DMG" />
@@ -1871,6 +2147,9 @@
       <Property name="DeathStat" value="DEATH_HORROR" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/HAZARDS/LIFESUPPORT.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_FLOATER" />
       <Property name="HitMessage" value="" />
@@ -1881,16 +2160,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- FLOATER_DMG --><Property name="Damage" value="108" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="3" /> <!-- FLOATER_DMG -->
-      <Property name="CameraTurn" value="0.02" /> <!-- FLOATER_DMG -->
+      <Property name="Damage" value="108" />
+      <Property name="PushForce" value="3" />
+      <Property name="CameraTurn" value="0.02" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="True" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="JELLYFISH_DMG" />
@@ -1898,6 +2178,9 @@
       <Property name="DeathStat" value="DEATH_HORROR" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/HAZARDS/LIFESUPPORT.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_JELLYFISH" />
       <Property name="HitMessage" value="" />
@@ -1908,16 +2191,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- JELLYFISH_DMG --><Property name="Damage" value="27" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="3" /> <!-- JELLYFISH_DMG -->
-      <Property name="CameraTurn" value="0.02" /> <!-- JELLYFISH_DMG -->
+      <Property name="Damage" value="27" />
+      <Property name="PushForce" value="3" />
+      <Property name="CameraTurn" value="0.02" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="True" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="GRABPLANT_DMG" />
@@ -1925,6 +2209,9 @@
       <Property name="DeathStat" value="DEATH_HORROR" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/HAZARDS/HAZARDS.TOXIC.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_GRABPLANT" />
       <Property name="HitMessage" value="" />
@@ -1935,16 +2222,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- GRABPLANT_DMG --><Property name="Damage" value="14" />
-      <Property name="HardModeMultiplier" value="1.5" />
-      <Property name="PushForce" value="0" /> <!-- GRABPLANT_DMG -->
-      <Property name="CameraTurn" value="0" /> <!-- GRABPLANT_DMG -->
+      <Property name="Damage" value="14" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="True" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Toxic" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="FISHFIEND_PROP" />
@@ -1952,6 +2240,9 @@
       <Property name="DeathStat" value="DEATH_HORROR" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_FISHFIEND" />
       <Property name="HitMessage" value="" />
@@ -1962,16 +2253,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- FISHFIEND_PROP --><Property name="Damage" value="1" />
-      <Property name="HardModeMultiplier" value="1.5" />
-      <Property name="PushForce" value="100" /> <!-- FISHFIEND_PROP -->
-      <Property name="CameraTurn" value="0" /> <!-- FISHFIEND_PROP -->
+      <Property name="Damage" value="1" />
+      <Property name="PushForce" value="100" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="True" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="CLAM_DMG" />
@@ -1979,6 +2271,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_CLAM" />
       <Property name="HitMessage" value="" />
@@ -1989,16 +2284,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- CLAM_DMG --><Property name="Damage" value="47" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="50" /> <!-- CLAM_DMG -->
-      <Property name="CameraTurn" value="0.1" /> <!-- CLAM_DMG -->
+      <Property name="Damage" value="47" />
+      <Property name="PushForce" value="50" />
+      <Property name="CameraTurn" value="0.1" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="VENUSFLY_DMG" />
@@ -2006,6 +2302,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_FLORA" />
       <Property name="HitMessage" value="" />
@@ -2016,16 +2315,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- VENUSFLY_DMG --><Property name="Damage" value="15" />
-      <Property name="HardModeMultiplier" value="1.5" />
-      <Property name="PushForce" value="20" /> <!-- VENUSFLY_DMG -->
-      <Property name="CameraTurn" value="0.1" /> <!-- VENUSFLY_DMG -->
+      <Property name="Damage" value="15" />
+      <Property name="PushForce" value="20" />
+      <Property name="CameraTurn" value="0.1" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="INTERACT_SMALL" />
@@ -2033,6 +2333,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="" />
       <Property name="HitMessage" value="" />
@@ -2043,16 +2346,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- INTERACT_SMALL --><Property name="Damage" value="68" />
-      <Property name="HardModeMultiplier" value="1.5" />
-      <Property name="PushForce" value="20" /> <!-- INTERACT_SMALL -->
-      <Property name="CameraTurn" value="0" /> <!-- INTERACT_SMALL -->
+      <Property name="Damage" value="68" />
+      <Property name="PushForce" value="20" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="True" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="INTERACT_LARGE" />
@@ -2060,6 +2364,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="" />
       <Property name="HitMessage" value="" />
@@ -2070,16 +2377,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- INTERACT_LARGE --><Property name="Damage" value="108" />
-      <Property name="HardModeMultiplier" value="2" />
-      <Property name="PushForce" value="15" /> <!-- INTERACT_LARGE -->
-      <Property name="CameraTurn" value="0" /> <!-- INTERACT_LARGE -->
+      <Property name="Damage" value="108" />
+      <Property name="PushForce" value="15" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="True" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="INTERACT_ENERGY" />
@@ -2087,6 +2395,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/ENERGY.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="" />
       <Property name="HitMessage" value="NOTIFY_HIT_ENERGY" />
@@ -2097,16 +2408,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_ENERGY" />
       </Property>
-      <!-- INTERACT_ENERGY --><Property name="Damage" value="38" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- INTERACT_ENERGY -->
-      <Property name="CameraTurn" value="0" /> <!-- INTERACT_ENERGY -->
+      <Property name="Damage" value="38" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="True" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="BARRELEXPLODE" />
@@ -2114,6 +2426,9 @@
       <Property name="DeathStat" value="DEATH_FALL" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_BARRELEXPLODE" />
       <Property name="HitMessage" value="" />
@@ -2124,16 +2439,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- BARRELEXPLODE --><Property name="Damage" value="59" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="30" /> <!-- BARRELEXPLODE -->
-      <Property name="CameraTurn" value="0" /> <!-- BARRELEXPLODE -->
+      <Property name="Damage" value="59" />
+      <Property name="PushForce" value="30" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="SCUTTLERSPITDMG" />
@@ -2141,6 +2457,9 @@
       <Property name="DeathStat" value="DEATH_HORROR" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_SCUTTLER" />
       <Property name="HitMessage" value="" />
@@ -2151,16 +2470,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- SCUTTLERSPITDMG --><Property name="Damage" value="24" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="5" /> <!-- SCUTTLERSPITDMG -->
-      <Property name="CameraTurn" value="0" /> <!-- SCUTTLERSPITDMG -->
+      <Property name="Damage" value="24" />
+      <Property name="PushForce" value="5" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="BASETURRETPDMG" />
@@ -2168,6 +2488,9 @@
       <Property name="DeathStat" value="DEATH_ROBOT" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_TURRET" />
       <Property name="HitMessage" value="" />
@@ -2178,16 +2501,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- BASETURRETPDMG --><Property name="Damage" value="12" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- BASETURRETPDMG -->
-      <Property name="CameraTurn" value="0" /> <!-- BASETURRETPDMG -->
+      <Property name="Damage" value="12" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="LIGHTNING" />
@@ -2195,6 +2519,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_LIGHTNING" />
       <Property name="HitMessage" value="" />
@@ -2205,16 +2532,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- LIGHTNING --><Property name="Damage" value="58" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="10" /> <!-- LIGHTNING -->
-      <Property name="CameraTurn" value="0" /> <!-- LIGHTNING -->
+      <Property name="Damage" value="58" />
+      <Property name="PushForce" value="10" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="True" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="METEOR" />
@@ -2222,6 +2550,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_METEOR" />
       <Property name="HitMessage" value="" />
@@ -2232,16 +2563,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- METEOR --><Property name="Damage" value="58" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="30" /> <!-- METEOR -->
-      <Property name="CameraTurn" value="0" /> <!-- METEOR -->
+      <Property name="Damage" value="58" />
+      <Property name="PushForce" value="30" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="True" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="TORNADO" />
@@ -2249,6 +2581,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_TORNADO" />
       <Property name="HitMessage" value="" />
@@ -2259,16 +2594,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- TORNADO --><Property name="Damage" value="47" />
-      <Property name="HardModeMultiplier" value="1.5" />
-      <Property name="PushForce" value="1" /> <!-- TORNADO -->
-      <Property name="CameraTurn" value="0" /> <!-- TORNADO -->
+      <Property name="Damage" value="47" />
+      <Property name="PushForce" value="1" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="True" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="MINIDRONE_DMG" />
@@ -2276,6 +2612,9 @@
       <Property name="DeathStat" value="DEATH_ROBOT" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_SENTINEL" />
       <Property name="HitMessage" value="" />
@@ -2286,16 +2625,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- MINIDRONE_DMG --><Property name="Damage" value="12" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="2" /> <!-- MINIDRONE_DMG -->
-      <Property name="CameraTurn" value="0" /> <!-- MINIDRONE_DMG -->
+      <Property name="Damage" value="12" />
+      <Property name="PushForce" value="2" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="FIRE_CE_DMG" />
@@ -2303,6 +2643,9 @@
       <Property name="DeathStat" value="DEATH_HOT" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/HAZARDS/HAZARDS.HEAT.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_HEAT" />
       <Property name="HitMessage" value="NOTIFY_HIT_HEAT" />
@@ -2313,16 +2656,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITICAL_HEAT" />
       </Property>
-      <!-- FIRE_CE_DMG --><Property name="Damage" value="0" />
-      <Property name="HardModeMultiplier" value="1.5" />
-      <Property name="PushForce" value="2" /> <!-- FIRE_CE_DMG -->
-      <Property name="CameraTurn" value="0" /> <!-- FIRE_CE_DMG -->
+      <Property name="Damage" value="0" />
+      <Property name="PushForce" value="2" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Scorch" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="SENTINEL_FLAME" />
@@ -2330,6 +2674,9 @@
       <Property name="DeathStat" value="DEATH_ROBOT" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/HAZARDS/HAZARDS.HEAT.DDS" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_SENTINEL" />
       <Property name="HitMessage" value="" />
@@ -2340,16 +2687,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITICAL_HEAT" />
       </Property>
-      <!-- SENTINEL_FLAME --><Property name="Damage" value="6" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="1" /> <!-- SENTINEL_FLAME -->
-      <Property name="CameraTurn" value="0" /> <!-- SENTINEL_FLAME -->
+      <Property name="Damage" value="6" />
+      <Property name="PushForce" value="1" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Scorch" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="PIRATERAID" />
@@ -2357,6 +2705,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="UI_DAMAGE_SHIP" />
       <Property name="HitMessage" value="" />
@@ -2367,16 +2718,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- PIRATERAID --><Property name="Damage" value="8" />
-      <Property name="HardModeMultiplier" value="1" />
-      <Property name="PushForce" value="0" /> <!-- PIRATERAID -->
-      <Property name="CameraTurn" value="0" /> <!-- PIRATERAID -->
+      <Property name="Damage" value="8" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
     <Property value="GcPlayerDamageData.xml">
       <Property name="Id" value="BIOFRIGATE" />
@@ -2384,6 +2736,9 @@
       <Property name="DeathStat" value="" />
       <Property name="HitIcon" value="TkTextureResource.xml">
         <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
       </Property>
       <Property name="HitChatMessage" value="" />
       <Property name="HitMessage" value="" />
@@ -2394,16 +2749,17 @@
       <Property name="CriticalHitMessageAudio" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="NOTIFY_CRITIAL_HIT" />
       </Property>
-      <!-- BIOFRIGATE --><Property name="Damage" value="1" />
-      <Property name="HardModeMultiplier" value="1.5" />
-      <Property name="PushForce" value="0" /> <!-- BIOFRIGATE -->
-      <Property name="CameraTurn" value="0" /> <!-- BIOFRIGATE -->
+      <Property name="Damage" value="1" />
+      <Property name="PushForce" value="0" />
+      <Property name="CameraTurn" value="0" />
       <Property name="CameraShakeShield" value="SMALLPAINSHAKE" />
       <Property name="CameraShakeNoShield" value="BIGPAINSHAKE" />
       <Property name="ShowTrackIcon" value="False" />
       <Property name="ForceDamageInInteraction" value="False" />
       <Property name="AllowDeathInInteraction" value="False" />
       <Property name="PlayerDamageType" value="Normal" />
+      <Property name="DamageTechWithStat" />
+      <Property name="TechDamageChance" value="0" />
     </Property>
   </Property>
 </Data>

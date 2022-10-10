@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.97.0)-->
+<!--File created using MBINCompiler version (4.0.0)-->
 <Data template="GcProceduralProductTable">
   <Property name="Table">
     <Property name="Loot" value="GcProceduralProductData.xml">
@@ -13,7 +13,7 @@
             <Property name="Word" value="ITEMGEN_LOOT_CONT" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -28,7 +28,7 @@
             <Property name="Word" value="ITEMGEN_LOOT_ADJ" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -43,7 +43,7 @@
             <Property name="Word" value="ITEMGEN_LOOT_NOUN" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -56,7 +56,7 @@
       </Property>
       <Property name="NameGeneratorLegacyRolls" value="0" />
       <Property name="Product" value="GcProductData.xml">
-        <Property name="Id" value="PROC_LOOT" />
+        <Property name="ID" value="PROC_LOOT" />
         <Property name="Name" value="ITEMGEN_FORMAT_LOOT" />
         <Property name="NameLower" value="ITEMGEN_FORMAT_LOOT" />
         <Property name="Subtitle" value="VariableSizeString.xml">
@@ -69,19 +69,28 @@
         <Property name="GroupID" value="" />
         <Property name="DebrisFile" value="TkModelResource.xml">
           <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="BaseValue" value="1000" />
         <Property name="Level" value="0" />
         <Property name="Icon" value="TkTextureResource.xml">
           <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/UPDATE3/TREASUREPROD.COINCRATE.DDS" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="HeroIcon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.8973" />
-          <Property name="G" value="0.9521" />
-          <Property name="B" value="0.8898" />
+          <Property name="R" value="0.12" />
+          <Property name="G" value="0.723" />
+          <Property name="B" value="0.038" />
           <Property name="A" value="1" />
         </Property>
         <Property name="Category" value="GcRealitySubstanceCategory.xml">
@@ -129,12 +138,12 @@
         <Property name="GoodForSelling" value="False" />
         <Property name="GiveRewardOnSpecialPurchase" value="" />
         <Property name="EggModifierIngredient" value="False" />
-        <Property name="IsTechBox" value="False" />
+        <Property name="IsTechbox" value="False" />
       </Property>
       <Property name="ProceduralData">
         <Property name="Common" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="4" />
-          <Property name="BasevalueMin" value="100000" />
+          <Property name="BaseValueMin" value="100000" />
           <Property name="BaseValueMax" value="200000" />
           <Property name="AgeMin" value="200" />
           <Property name="AgeMax" value="500" />
@@ -144,14 +153,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Uncommon" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="4" />
-          <Property name="BasevalueMin" value="400000" />
+          <Property name="BaseValueMin" value="400000" />
           <Property name="BaseValueMax" value="700000" />
           <Property name="AgeMin" value="600" />
           <Property name="AgeMax" value="1100" />
@@ -161,14 +176,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Rare" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="2" />
-          <Property name="BasevalueMin" value="800000" />
+          <Property name="BaseValueMin" value="800000" />
           <Property name="BaseValueMax" value="2000000" />
           <Property name="AgeMin" value="1400" />
           <Property name="AgeMax" value="3000" />
@@ -178,9 +199,15 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -236,7 +263,7 @@
             <Property name="Word" value="ITEMGEN_HIST_ADJ" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -251,7 +278,7 @@
             <Property name="Word" value="ITEMGEN_HIST_NOUN" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -264,7 +291,7 @@
       </Property>
       <Property name="NameGeneratorLegacyRolls" value="3" />
       <Property name="Product" value="GcProductData.xml">
-        <Property name="Id" value="PROC_HIST" />
+        <Property name="ID" value="PROC_HIST" />
         <Property name="Name" value="ITEMGEN_FORMAT_DOC" />
         <Property name="NameLower" value="ITEMGEN_FORMAT_DOC" />
         <Property name="Subtitle" value="VariableSizeString.xml">
@@ -277,19 +304,28 @@
         <Property name="GroupID" value="" />
         <Property name="DebrisFile" value="TkModelResource.xml">
           <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="BaseValue" value="1000" />
         <Property name="Level" value="0" />
         <Property name="Icon" value="TkTextureResource.xml">
           <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/UPDATE3/TREASUREPROD.STRANGEBOOK.DDS" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="HeroIcon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.8973" />
-          <Property name="G" value="0.9521" />
-          <Property name="B" value="0.8898" />
+          <Property name="R" value="0.12" />
+          <Property name="G" value="0.723" />
+          <Property name="B" value="0.038" />
           <Property name="A" value="1" />
         </Property>
         <Property name="Category" value="GcRealitySubstanceCategory.xml">
@@ -337,12 +373,12 @@
         <Property name="GoodForSelling" value="False" />
         <Property name="GiveRewardOnSpecialPurchase" value="" />
         <Property name="EggModifierIngredient" value="False" />
-        <Property name="IsTechBox" value="False" />
+        <Property name="IsTechbox" value="False" />
       </Property>
       <Property name="ProceduralData">
         <Property name="Common" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="4" />
-          <Property name="BasevalueMin" value="100000" />
+          <Property name="BaseValueMin" value="100000" />
           <Property name="BaseValueMax" value="200000" />
           <Property name="AgeMin" value="200" />
           <Property name="AgeMax" value="500" />
@@ -352,14 +388,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Uncommon" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="4" />
-          <Property name="BasevalueMin" value="400000" />
+          <Property name="BaseValueMin" value="400000" />
           <Property name="BaseValueMax" value="700000" />
           <Property name="AgeMin" value="600" />
           <Property name="AgeMax" value="1100" />
@@ -369,14 +411,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Rare" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="2" />
-          <Property name="BasevalueMin" value="800000" />
+          <Property name="BaseValueMin" value="800000" />
           <Property name="BaseValueMax" value="2000000" />
           <Property name="AgeMin" value="1400" />
           <Property name="AgeMax" value="3000" />
@@ -386,9 +434,15 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -444,7 +498,7 @@
             <Property name="Word" value="ITEMGEN_BIO_CONT" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -459,7 +513,7 @@
             <Property name="Word" value="ITEMGEN_BIO_ADJ" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -474,7 +528,7 @@
             <Property name="Word" value="ITEMGEN_BIO_NOUN" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -487,7 +541,7 @@
       </Property>
       <Property name="NameGeneratorLegacyRolls" value="5" />
       <Property name="Product" value="GcProductData.xml">
-        <Property name="Id" value="PROC_BIO" />
+        <Property name="ID" value="PROC_BIO" />
         <Property name="Name" value="ITEMGEN_FORMAT_BIO" />
         <Property name="NameLower" value="ITEMGEN_FORMAT_BIO" />
         <Property name="Subtitle" value="VariableSizeString.xml">
@@ -500,19 +554,28 @@
         <Property name="GroupID" value="" />
         <Property name="DebrisFile" value="TkModelResource.xml">
           <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="BaseValue" value="1000" />
         <Property name="Level" value="0" />
         <Property name="Icon" value="TkTextureResource.xml">
           <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/UPDATE3/TREASUREPROD.WEIRDSEEDS.DDS" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="HeroIcon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.8973" />
-          <Property name="G" value="0.9521" />
-          <Property name="B" value="0.8898" />
+          <Property name="R" value="0.12" />
+          <Property name="G" value="0.723" />
+          <Property name="B" value="0.038" />
           <Property name="A" value="1" />
         </Property>
         <Property name="Category" value="GcRealitySubstanceCategory.xml">
@@ -560,12 +623,12 @@
         <Property name="GoodForSelling" value="False" />
         <Property name="GiveRewardOnSpecialPurchase" value="" />
         <Property name="EggModifierIngredient" value="False" />
-        <Property name="IsTechBox" value="False" />
+        <Property name="IsTechbox" value="False" />
       </Property>
       <Property name="ProceduralData">
         <Property name="Common" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="4" />
-          <Property name="BasevalueMin" value="100000" />
+          <Property name="BaseValueMin" value="100000" />
           <Property name="BaseValueMax" value="200000" />
           <Property name="AgeMin" value="200" />
           <Property name="AgeMax" value="500" />
@@ -575,14 +638,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Uncommon" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="4" />
-          <Property name="BasevalueMin" value="400000" />
+          <Property name="BaseValueMin" value="400000" />
           <Property name="BaseValueMax" value="700000" />
           <Property name="AgeMin" value="600" />
           <Property name="AgeMax" value="1100" />
@@ -592,14 +661,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Rare" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="2" />
-          <Property name="BasevalueMin" value="800000" />
+          <Property name="BaseValueMin" value="800000" />
           <Property name="BaseValueMax" value="2000000" />
           <Property name="AgeMin" value="1400" />
           <Property name="AgeMax" value="3000" />
@@ -609,9 +684,15 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -667,7 +748,7 @@
             <Property name="Word" value="ITEMGEN_FOSSIL_ADJ" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -682,7 +763,7 @@
             <Property name="Word" value="ITEMGEN_FOSSIL_ANIMAL" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -697,7 +778,7 @@
             <Property name="Word" value="ITEMGEN_FOSSIL_PART" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -710,7 +791,7 @@
       </Property>
       <Property name="NameGeneratorLegacyRolls" value="8" />
       <Property name="Product" value="GcProductData.xml">
-        <Property name="Id" value="PROC_FOSS" />
+        <Property name="ID" value="PROC_FOSS" />
         <Property name="Name" value="ITEMGEN_FORMAT_FOSSIL" />
         <Property name="NameLower" value="ITEMGEN_FORMAT_FOSSIL" />
         <Property name="Subtitle" value="VariableSizeString.xml">
@@ -723,19 +804,28 @@
         <Property name="GroupID" value="" />
         <Property name="DebrisFile" value="TkModelResource.xml">
           <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="BaseValue" value="1000" />
         <Property name="Level" value="0" />
         <Property name="Icon" value="TkTextureResource.xml">
           <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/UPDATE3/TREASUREPROD.FOSSIL.DDS" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="HeroIcon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.8973" />
-          <Property name="G" value="0.9521" />
-          <Property name="B" value="0.8898" />
+          <Property name="R" value="0.12" />
+          <Property name="G" value="0.723" />
+          <Property name="B" value="0.038" />
           <Property name="A" value="1" />
         </Property>
         <Property name="Category" value="GcRealitySubstanceCategory.xml">
@@ -783,12 +873,12 @@
         <Property name="GoodForSelling" value="False" />
         <Property name="GiveRewardOnSpecialPurchase" value="" />
         <Property name="EggModifierIngredient" value="False" />
-        <Property name="IsTechBox" value="False" />
+        <Property name="IsTechbox" value="False" />
       </Property>
       <Property name="ProceduralData">
         <Property name="Common" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="4" />
-          <Property name="BasevalueMin" value="100000" />
+          <Property name="BaseValueMin" value="100000" />
           <Property name="BaseValueMax" value="200000" />
           <Property name="AgeMin" value="200" />
           <Property name="AgeMax" value="500" />
@@ -798,14 +888,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Uncommon" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="4" />
-          <Property name="BasevalueMin" value="400000" />
+          <Property name="BaseValueMin" value="400000" />
           <Property name="BaseValueMax" value="700000" />
           <Property name="AgeMin" value="600" />
           <Property name="AgeMax" value="1100" />
@@ -815,14 +911,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Rare" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="2" />
-          <Property name="BasevalueMin" value="800000" />
+          <Property name="BaseValueMin" value="800000" />
           <Property name="BaseValueMax" value="2000000" />
           <Property name="AgeMin" value="1400" />
           <Property name="AgeMax" value="3000" />
@@ -832,9 +934,15 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -890,7 +998,7 @@
             <Property name="Word" value="ITEMGEN_PLANT_BOX" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -905,7 +1013,7 @@
             <Property name="Word" value="ITEMGEN_PLANT_PART1" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -920,7 +1028,7 @@
             <Property name="Word" value="ITEMGEN_PLANT_PART2" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -935,7 +1043,7 @@
             <Property name="Word" value="ITEMGEN_PLANT_NOUN" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -948,7 +1056,7 @@
       </Property>
       <Property name="NameGeneratorLegacyRolls" value="11" />
       <Property name="Product" value="GcProductData.xml">
-        <Property name="Id" value="PROC_PLNT" />
+        <Property name="ID" value="PROC_PLNT" />
         <Property name="Name" value="ITEMGEN_FORMAT_PLANT" />
         <Property name="NameLower" value="ITEMGEN_FORMAT_PLANT" />
         <Property name="Subtitle" value="VariableSizeString.xml">
@@ -961,19 +1069,28 @@
         <Property name="GroupID" value="" />
         <Property name="DebrisFile" value="TkModelResource.xml">
           <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="BaseValue" value="1000" />
         <Property name="Level" value="0" />
         <Property name="Icon" value="TkTextureResource.xml">
           <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/DECORATION.PLANTPOT3.DDS" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="HeroIcon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.8973" />
-          <Property name="G" value="0.9521" />
-          <Property name="B" value="0.8898" />
+          <Property name="R" value="0.12" />
+          <Property name="G" value="0.723" />
+          <Property name="B" value="0.038" />
           <Property name="A" value="1" />
         </Property>
         <Property name="Category" value="GcRealitySubstanceCategory.xml">
@@ -1021,12 +1138,12 @@
         <Property name="GoodForSelling" value="False" />
         <Property name="GiveRewardOnSpecialPurchase" value="" />
         <Property name="EggModifierIngredient" value="False" />
-        <Property name="IsTechBox" value="False" />
+        <Property name="IsTechbox" value="False" />
       </Property>
       <Property name="ProceduralData">
         <Property name="Common" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="4" />
-          <Property name="BasevalueMin" value="100000" />
+          <Property name="BaseValueMin" value="100000" />
           <Property name="BaseValueMax" value="200000" />
           <Property name="AgeMin" value="200" />
           <Property name="AgeMax" value="500" />
@@ -1036,14 +1153,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Uncommon" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="4" />
-          <Property name="BasevalueMin" value="400000" />
+          <Property name="BaseValueMin" value="400000" />
           <Property name="BaseValueMax" value="700000" />
           <Property name="AgeMin" value="600" />
           <Property name="AgeMax" value="1100" />
@@ -1053,14 +1176,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Rare" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="2" />
-          <Property name="BasevalueMin" value="800000" />
+          <Property name="BaseValueMin" value="800000" />
           <Property name="BaseValueMax" value="2000000" />
           <Property name="AgeMin" value="1400" />
           <Property name="AgeMax" value="3000" />
@@ -1070,9 +1199,15 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -1128,7 +1263,7 @@
             <Property name="Word" value="ITEMGEN_TOOL_ADJ" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -1143,7 +1278,7 @@
             <Property name="Word" value="ITEMGEN_TOOL_USE" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -1158,7 +1293,7 @@
             <Property name="Word" value="ITEMGEN_TOOL_NOUN" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -1171,7 +1306,7 @@
       </Property>
       <Property name="NameGeneratorLegacyRolls" value="15" />
       <Property name="Product" value="GcProductData.xml">
-        <Property name="Id" value="PROC_TOOL" />
+        <Property name="ID" value="PROC_TOOL" />
         <Property name="Name" value="ITEMGEN_FORMAT_TOOL" />
         <Property name="NameLower" value="ITEMGEN_FORMAT_TOOL" />
         <Property name="Subtitle" value="VariableSizeString.xml">
@@ -1184,19 +1319,28 @@
         <Property name="GroupID" value="" />
         <Property name="DebrisFile" value="TkModelResource.xml">
           <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="BaseValue" value="1000" />
         <Property name="Level" value="0" />
         <Property name="Icon" value="TkTextureResource.xml">
           <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/UPDATE3/TRADEPROD.COMPONENT4.DDS" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="HeroIcon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.8973" />
-          <Property name="G" value="0.9521" />
-          <Property name="B" value="0.8898" />
+          <Property name="R" value="0.12" />
+          <Property name="G" value="0.723" />
+          <Property name="B" value="0.038" />
           <Property name="A" value="1" />
         </Property>
         <Property name="Category" value="GcRealitySubstanceCategory.xml">
@@ -1244,12 +1388,12 @@
         <Property name="GoodForSelling" value="False" />
         <Property name="GiveRewardOnSpecialPurchase" value="" />
         <Property name="EggModifierIngredient" value="False" />
-        <Property name="IsTechBox" value="False" />
+        <Property name="IsTechbox" value="False" />
       </Property>
       <Property name="ProceduralData">
         <Property name="Common" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="4" />
-          <Property name="BasevalueMin" value="100000" />
+          <Property name="BaseValueMin" value="100000" />
           <Property name="BaseValueMax" value="200000" />
           <Property name="AgeMin" value="200" />
           <Property name="AgeMax" value="500" />
@@ -1259,14 +1403,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Uncommon" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="4" />
-          <Property name="BasevalueMin" value="400000" />
+          <Property name="BaseValueMin" value="400000" />
           <Property name="BaseValueMax" value="700000" />
           <Property name="AgeMin" value="600" />
           <Property name="AgeMax" value="1100" />
@@ -1276,14 +1426,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Rare" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="2" />
-          <Property name="BasevalueMin" value="800000" />
+          <Property name="BaseValueMin" value="800000" />
           <Property name="BaseValueMax" value="2000000" />
           <Property name="AgeMin" value="1400" />
           <Property name="AgeMax" value="3000" />
@@ -1293,9 +1449,15 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -1351,7 +1513,7 @@
             <Property name="Word" value="ITEMGEN_PLANT_BOX" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -1366,7 +1528,7 @@
             <Property name="Word" value="ITEMGEN_PLANT_PART1" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -1381,7 +1543,7 @@
             <Property name="Word" value="ITEMGEN_PLANT_PART2" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -1396,7 +1558,7 @@
             <Property name="Word" value="ITEMGEN_PLANT_NOUN" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -1409,7 +1571,7 @@
       </Property>
       <Property name="NameGeneratorLegacyRolls" value="11" />
       <Property name="Product" value="GcProductData.xml">
-        <Property name="Id" value="PROC_FARM" />
+        <Property name="ID" value="PROC_FARM" />
         <Property name="Name" value="ITEMGEN_FORMAT_PLANT" />
         <Property name="NameLower" value="ITEMGEN_FORMAT_PLANT" />
         <Property name="Subtitle" value="VariableSizeString.xml">
@@ -1422,19 +1584,28 @@
         <Property name="GroupID" value="" />
         <Property name="DebrisFile" value="TkModelResource.xml">
           <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="BaseValue" value="1000" />
         <Property name="Level" value="0" />
         <Property name="Icon" value="TkTextureResource.xml">
           <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/BUILDABLE/DECORATION.PLANTPOT3.DDS" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="HeroIcon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.8971" />
-          <Property name="G" value="0.952" />
-          <Property name="B" value="0.8896" />
+          <Property name="R" value="0.118" />
+          <Property name="G" value="0.722" />
+          <Property name="B" value="0.035" />
           <Property name="A" value="1" />
         </Property>
         <Property name="Category" value="GcRealitySubstanceCategory.xml">
@@ -1482,12 +1653,12 @@
         <Property name="GoodForSelling" value="False" />
         <Property name="GiveRewardOnSpecialPurchase" value="" />
         <Property name="EggModifierIngredient" value="False" />
-        <Property name="IsTechBox" value="False" />
+        <Property name="IsTechbox" value="False" />
       </Property>
       <Property name="ProceduralData">
         <Property name="Common" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="10" />
-          <Property name="BasevalueMin" value="100000" />
+          <Property name="BaseValueMin" value="100000" />
           <Property name="BaseValueMax" value="200000" />
           <Property name="AgeMin" value="2" />
           <Property name="AgeMax" value="5" />
@@ -1497,14 +1668,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Uncommon" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="6" />
-          <Property name="BasevalueMin" value="400000" />
+          <Property name="BaseValueMin" value="400000" />
           <Property name="BaseValueMax" value="700000" />
           <Property name="AgeMin" value="6" />
           <Property name="AgeMax" value="11" />
@@ -1514,14 +1691,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Rare" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="800000" />
+          <Property name="BaseValueMin" value="800000" />
           <Property name="BaseValueMax" value="1200000" />
           <Property name="AgeMin" value="14" />
           <Property name="AgeMax" value="30" />
@@ -1531,9 +1714,15 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -1589,7 +1778,7 @@
             <Property name="Word" value="ITEMGEN_WATER_ADJ" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -1604,7 +1793,7 @@
             <Property name="Word" value="ITEMGEN_WATER_NOUN" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -1617,7 +1806,7 @@
       </Property>
       <Property name="NameGeneratorLegacyRolls" value="18" />
       <Property name="Product" value="GcProductData.xml">
-        <Property name="Id" value="PROC_SEA" />
+        <Property name="ID" value="PROC_SEA" />
         <Property name="Name" value="ITEMGEN_FORMAT_WATER" />
         <Property name="NameLower" value="ITEMGEN_FORMAT_WATER" />
         <Property name="Subtitle" value="VariableSizeString.xml">
@@ -1630,19 +1819,28 @@
         <Property name="GroupID" value="" />
         <Property name="DebrisFile" value="TkModelResource.xml">
           <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="BaseValue" value="1000" />
         <Property name="Level" value="0" />
         <Property name="Icon" value="TkTextureResource.xml">
           <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/UPDATE3/TREASUREPROD.WATERLOOT.DDS" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="HeroIcon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.8971" />
-          <Property name="G" value="0.952" />
-          <Property name="B" value="0.8896" />
+          <Property name="R" value="0.118" />
+          <Property name="G" value="0.722" />
+          <Property name="B" value="0.035" />
           <Property name="A" value="1" />
         </Property>
         <Property name="Category" value="GcRealitySubstanceCategory.xml">
@@ -1690,12 +1888,12 @@
         <Property name="GoodForSelling" value="False" />
         <Property name="GiveRewardOnSpecialPurchase" value="" />
         <Property name="EggModifierIngredient" value="False" />
-        <Property name="IsTechBox" value="False" />
+        <Property name="IsTechbox" value="False" />
       </Property>
       <Property name="ProceduralData">
         <Property name="Common" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="10" />
-          <Property name="BasevalueMin" value="100000" />
+          <Property name="BaseValueMin" value="100000" />
           <Property name="BaseValueMax" value="200000" />
           <Property name="AgeMin" value="2" />
           <Property name="AgeMax" value="5" />
@@ -1705,14 +1903,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Uncommon" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="6" />
-          <Property name="BasevalueMin" value="400000" />
+          <Property name="BaseValueMin" value="400000" />
           <Property name="BaseValueMax" value="700000" />
           <Property name="AgeMin" value="6" />
           <Property name="AgeMax" value="11" />
@@ -1722,14 +1926,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Rare" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="800000" />
+          <Property name="BaseValueMin" value="800000" />
           <Property name="BaseValueMax" value="1200000" />
           <Property name="AgeMin" value="14" />
           <Property name="AgeMax" value="30" />
@@ -1739,9 +1949,15 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -1797,7 +2013,7 @@
             <Property name="Word" value="ITEMGEN_WATERWEIRD_ADJ" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -1812,7 +2028,7 @@
             <Property name="Word" value="ITEMGEN_WATERWEIRD_NOUN" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -1825,7 +2041,7 @@
       </Property>
       <Property name="NameGeneratorLegacyRolls" value="20" />
       <Property name="Product" value="GcProductData.xml">
-        <Property name="Id" value="PROC_FEAR" />
+        <Property name="ID" value="PROC_FEAR" />
         <Property name="Name" value="ITEMGEN_FORMAT_WATERWEIRD" />
         <Property name="NameLower" value="ITEMGEN_FORMAT_WATERWEIRD" />
         <Property name="Subtitle" value="VariableSizeString.xml">
@@ -1838,19 +2054,28 @@
         <Property name="GroupID" value="" />
         <Property name="DebrisFile" value="TkModelResource.xml">
           <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="BaseValue" value="1000" />
         <Property name="Level" value="0" />
         <Property name="Icon" value="TkTextureResource.xml">
           <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.HORRIFICARTIFACT.DDS" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="HeroIcon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.8971" />
-          <Property name="G" value="0.952" />
-          <Property name="B" value="0.8896" />
+          <Property name="R" value="0.118" />
+          <Property name="G" value="0.722" />
+          <Property name="B" value="0.035" />
           <Property name="A" value="1" />
         </Property>
         <Property name="Category" value="GcRealitySubstanceCategory.xml">
@@ -1898,12 +2123,12 @@
         <Property name="GoodForSelling" value="False" />
         <Property name="GiveRewardOnSpecialPurchase" value="" />
         <Property name="EggModifierIngredient" value="False" />
-        <Property name="IsTechBox" value="False" />
+        <Property name="IsTechbox" value="False" />
       </Property>
       <Property name="ProceduralData">
         <Property name="Common" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="10" />
-          <Property name="BasevalueMin" value="100000" />
+          <Property name="BaseValueMin" value="100000" />
           <Property name="BaseValueMax" value="250000" />
           <Property name="AgeMin" value="2" />
           <Property name="AgeMax" value="5" />
@@ -1913,14 +2138,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Uncommon" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="6" />
-          <Property name="BasevalueMin" value="300000" />
+          <Property name="BaseValueMin" value="300000" />
           <Property name="BaseValueMax" value="600000" />
           <Property name="AgeMin" value="6" />
           <Property name="AgeMax" value="11" />
@@ -1930,14 +2161,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Rare" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="900000" />
+          <Property name="BaseValueMin" value="900000" />
           <Property name="BaseValueMax" value="1200000" />
           <Property name="AgeMin" value="14" />
           <Property name="AgeMax" value="30" />
@@ -1947,9 +2184,15 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -2005,7 +2248,7 @@
             <Property name="Word" value="ITEMGEN_SALVAGE_ADJ" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="ITEMGEN_SALVAGE_ADJ" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -2020,7 +2263,7 @@
             <Property name="Word" value="ITEMGEN_SALVAGE_NOUN" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="ITEMGEN_SALVAGE_NOUN" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -2033,7 +2276,7 @@
       </Property>
       <Property name="NameGeneratorLegacyRolls" value="0" />
       <Property name="Product" value="GcProductData.xml">
-        <Property name="Id" value="PROC_SALV" />
+        <Property name="ID" value="PROC_SALV" />
         <Property name="Name" value="ITEMGEN_FORMAT_SALVAGE" />
         <Property name="NameLower" value="ITEMGEN_FORMAT_SALVAGE" />
         <Property name="Subtitle" value="VariableSizeString.xml">
@@ -2046,19 +2289,28 @@
         <Property name="GroupID" value="" />
         <Property name="DebrisFile" value="TkModelResource.xml">
           <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="BaseValue" value="1000" />
         <Property name="Level" value="0" />
         <Property name="Icon" value="TkTextureResource.xml">
           <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.SALVAGE.COMMON.DDS" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="HeroIcon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.9773" />
-          <Property name="G" value="0.9773" />
-          <Property name="B" value="0.9773" />
+          <Property name="R" value="1" />
+          <Property name="G" value="1" />
+          <Property name="B" value="1" />
           <Property name="A" value="1" />
         </Property>
         <Property name="Category" value="GcRealitySubstanceCategory.xml">
@@ -2106,12 +2358,12 @@
         <Property name="GoodForSelling" value="False" />
         <Property name="GiveRewardOnSpecialPurchase" value="" />
         <Property name="EggModifierIngredient" value="False" />
-        <Property name="IsTechBox" value="False" />
+        <Property name="IsTechbox" value="False" />
       </Property>
       <Property name="ProceduralData">
         <Property name="Common" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="4" />
-          <Property name="BasevalueMin" value="100000" />
+          <Property name="BaseValueMin" value="100000" />
           <Property name="BaseValueMax" value="300000" />
           <Property name="AgeMin" value="200" />
           <Property name="AgeMax" value="500" />
@@ -2121,14 +2373,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.SALVAGE.COMMON.DDS" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Uncommon" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="2" />
-          <Property name="BasevalueMin" value="400000" />
+          <Property name="BaseValueMin" value="400000" />
           <Property name="BaseValueMax" value="850000" />
           <Property name="AgeMin" value="600" />
           <Property name="AgeMax" value="1100" />
@@ -2138,14 +2396,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.SALVAGE.UNCOMMON.DDS" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Rare" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="1100000" />
+          <Property name="BaseValueMin" value="1100000" />
           <Property name="BaseValueMax" value="2400000" />
           <Property name="AgeMin" value="1400" />
           <Property name="AgeMax" value="3000" />
@@ -2155,9 +2419,15 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.SALVAGE.RARE.DDS" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -2213,7 +2483,7 @@
             <Property name="Word" value="ITEMGEN_BONES_ADJ" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="ITEMGEN_BONES_ADJ" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -2228,7 +2498,7 @@
             <Property name="Word" value="ITEMGEN_BONES_NOUN" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="ITEMGEN_BONES_NOUN" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -2241,7 +2511,7 @@
       </Property>
       <Property name="NameGeneratorLegacyRolls" value="0" />
       <Property name="Product" value="GcProductData.xml">
-        <Property name="Id" value="PROC_BONE" />
+        <Property name="ID" value="PROC_BONE" />
         <Property name="Name" value="ITEMGEN_FORMAT_BONES" />
         <Property name="NameLower" value="ITEMGEN_FORMAT_BONES" />
         <Property name="Subtitle" value="VariableSizeString.xml">
@@ -2254,19 +2524,28 @@
         <Property name="GroupID" value="" />
         <Property name="DebrisFile" value="TkModelResource.xml">
           <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="BaseValue" value="1000" />
         <Property name="Level" value="0" />
         <Property name="Icon" value="TkTextureResource.xml">
           <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.BONES.DDS" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="HeroIcon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.9773" />
-          <Property name="G" value="0.9773" />
-          <Property name="B" value="0.9773" />
+          <Property name="R" value="1" />
+          <Property name="G" value="1" />
+          <Property name="B" value="1" />
           <Property name="A" value="1" />
         </Property>
         <Property name="Category" value="GcRealitySubstanceCategory.xml">
@@ -2314,12 +2593,12 @@
         <Property name="GoodForSelling" value="False" />
         <Property name="GiveRewardOnSpecialPurchase" value="" />
         <Property name="EggModifierIngredient" value="False" />
-        <Property name="IsTechBox" value="False" />
+        <Property name="IsTechbox" value="False" />
       </Property>
       <Property name="ProceduralData">
         <Property name="Common" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="20" />
-          <Property name="BasevalueMin" value="50000" />
+          <Property name="BaseValueMin" value="50000" />
           <Property name="BaseValueMax" value="110000" />
           <Property name="AgeMin" value="250" />
           <Property name="AgeMax" value="500" />
@@ -2329,14 +2608,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.BONES.COMMON.DDS" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Uncommon" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="5" />
-          <Property name="BasevalueMin" value="200000" />
+          <Property name="BaseValueMin" value="200000" />
           <Property name="BaseValueMax" value="600000" />
           <Property name="AgeMin" value="600" />
           <Property name="AgeMax" value="1100" />
@@ -2346,14 +2631,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.BONES.UNCOMMON.DDS" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Rare" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="700000" />
+          <Property name="BaseValueMin" value="700000" />
           <Property name="BaseValueMax" value="1700000" />
           <Property name="AgeMin" value="1400" />
           <Property name="AgeMax" value="3000" />
@@ -2363,9 +2654,15 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.BONES.RARE.DDS" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -2421,7 +2718,7 @@
             <Property name="Word" value="ITEMGEN_SPACEFEAR_ADJ" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -2436,7 +2733,7 @@
             <Property name="Word" value="ITEMGEN_SPACEFEAR_NOUN" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -2449,7 +2746,7 @@
       </Property>
       <Property name="NameGeneratorLegacyRolls" value="0" />
       <Property name="Product" value="GcProductData.xml">
-        <Property name="Id" value="PROC_DARK" />
+        <Property name="ID" value="PROC_DARK" />
         <Property name="Name" value="ITEMGEN_FORMAT_SPACEFEAR" />
         <Property name="NameLower" value="ITEMGEN_FORMAT_SPACEFEAR" />
         <Property name="Subtitle" value="VariableSizeString.xml">
@@ -2462,19 +2759,28 @@
         <Property name="GroupID" value="" />
         <Property name="DebrisFile" value="TkModelResource.xml">
           <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="BaseValue" value="1000" />
         <Property name="Level" value="0" />
         <Property name="Icon" value="TkTextureResource.xml">
           <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.HORRIFICARTIFACT.DDS" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="HeroIcon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.9773" />
-          <Property name="G" value="0.9773" />
-          <Property name="B" value="0.9773" />
+          <Property name="R" value="1" />
+          <Property name="G" value="1" />
+          <Property name="B" value="1" />
           <Property name="A" value="0.8" />
         </Property>
         <Property name="Category" value="GcRealitySubstanceCategory.xml">
@@ -2522,12 +2828,12 @@
         <Property name="GoodForSelling" value="False" />
         <Property name="GiveRewardOnSpecialPurchase" value="" />
         <Property name="EggModifierIngredient" value="False" />
-        <Property name="IsTechBox" value="False" />
+        <Property name="IsTechbox" value="False" />
       </Property>
       <Property name="ProceduralData">
         <Property name="Common" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="10" />
-          <Property name="BasevalueMin" value="100000" />
+          <Property name="BaseValueMin" value="100000" />
           <Property name="BaseValueMax" value="250000" />
           <Property name="AgeMin" value="2" />
           <Property name="AgeMax" value="5" />
@@ -2537,14 +2843,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Uncommon" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="6" />
-          <Property name="BasevalueMin" value="300000" />
+          <Property name="BaseValueMin" value="300000" />
           <Property name="BaseValueMax" value="600000" />
           <Property name="AgeMin" value="6" />
           <Property name="AgeMax" value="11" />
@@ -2554,14 +2866,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Rare" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="900000" />
+          <Property name="BaseValueMin" value="900000" />
           <Property name="BaseValueMax" value="1200000" />
           <Property name="AgeMin" value="14" />
           <Property name="AgeMax" value="30" />
@@ -2571,9 +2889,15 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -2629,7 +2953,7 @@
             <Property name="Word" value="ITEMGEN_STARBONE_ADJ" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="ITEMGEN_STARBONE_ADJ" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -2644,7 +2968,7 @@
             <Property name="Word" value="ITEMGEN_STARBONE_NOUN" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="ITEMGEN_STARBONE_NOUN" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -2657,7 +2981,7 @@
       </Property>
       <Property name="NameGeneratorLegacyRolls" value="0" />
       <Property name="Product" value="GcProductData.xml">
-        <Property name="Id" value="PROC_STAR" />
+        <Property name="ID" value="PROC_STAR" />
         <Property name="Name" value="ITEMGEN_FORMAT_STARBONE" />
         <Property name="NameLower" value="ITEMGEN_FORMAT_STARBONE" />
         <Property name="Subtitle" value="VariableSizeString.xml">
@@ -2670,19 +2994,28 @@
         <Property name="GroupID" value="" />
         <Property name="DebrisFile" value="TkModelResource.xml">
           <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="BaseValue" value="1000" />
         <Property name="Level" value="0" />
         <Property name="Icon" value="TkTextureResource.xml">
           <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.BONES.DDS" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="HeroIcon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.9773" />
-          <Property name="G" value="0.9773" />
-          <Property name="B" value="0.9773" />
+          <Property name="R" value="1" />
+          <Property name="G" value="1" />
+          <Property name="B" value="1" />
           <Property name="A" value="1" />
         </Property>
         <Property name="Category" value="GcRealitySubstanceCategory.xml">
@@ -2730,12 +3063,12 @@
         <Property name="GoodForSelling" value="False" />
         <Property name="GiveRewardOnSpecialPurchase" value="" />
         <Property name="EggModifierIngredient" value="False" />
-        <Property name="IsTechBox" value="False" />
+        <Property name="IsTechbox" value="False" />
       </Property>
       <Property name="ProceduralData">
         <Property name="Common" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="20" />
-          <Property name="BasevalueMin" value="50000" />
+          <Property name="BaseValueMin" value="50000" />
           <Property name="BaseValueMax" value="110000" />
           <Property name="AgeMin" value="250" />
           <Property name="AgeMax" value="500" />
@@ -2745,14 +3078,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.BONES.COMMON.DDS" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Uncommon" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="5" />
-          <Property name="BasevalueMin" value="200000" />
+          <Property name="BaseValueMin" value="200000" />
           <Property name="BaseValueMax" value="600000" />
           <Property name="AgeMin" value="600" />
           <Property name="AgeMax" value="1100" />
@@ -2762,14 +3101,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.BONES.UNCOMMON.DDS" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Rare" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="700000" />
+          <Property name="BaseValueMin" value="700000" />
           <Property name="BaseValueMax" value="1200000" />
           <Property name="AgeMin" value="1400" />
           <Property name="AgeMax" value="3000" />
@@ -2779,9 +3124,15 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/U4PRODUCTS/PRODUCT.BONES.RARE.DDS" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -2834,7 +3185,7 @@
       <Property name="NameGeneratorWordList" />
       <Property name="NameGeneratorLegacyRolls" value="0" />
       <Property name="Product" value="GcProductData.xml">
-        <Property name="Id" value="PROC_PASS" />
+        <Property name="ID" value="PROC_PASS" />
         <Property name="Name" value="ITEMGEN_FORMAT_FREI_PASS" />
         <Property name="NameLower" value="ITEMGEN_FORMAT_FREI_PASS" />
         <Property name="Subtitle" value="VariableSizeString.xml">
@@ -2847,19 +3198,28 @@
         <Property name="GroupID" value="" />
         <Property name="DebrisFile" value="TkModelResource.xml">
           <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="BaseValue" value="1000" />
         <Property name="Level" value="0" />
         <Property name="Icon" value="TkTextureResource.xml">
           <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.PROCFREIGHTER.PASS.DDS" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="HeroIcon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.8874" />
-          <Property name="G" value="0.887" />
-          <Property name="B" value="0.9043" />
+          <Property name="R" value="0.011" />
+          <Property name="G" value="0.007" />
+          <Property name="B" value="0.197" />
           <Property name="A" value="1" />
         </Property>
         <Property name="Category" value="GcRealitySubstanceCategory.xml">
@@ -2907,12 +3267,12 @@
         <Property name="GoodForSelling" value="False" />
         <Property name="GiveRewardOnSpecialPurchase" value="" />
         <Property name="EggModifierIngredient" value="False" />
-        <Property name="IsTechBox" value="False" />
+        <Property name="IsTechbox" value="False" />
       </Property>
       <Property name="ProceduralData">
         <Property name="Common" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="0" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -2922,14 +3282,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.PROCFREIGHTER.PASS.DDS" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Uncommon" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="0" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -2939,14 +3305,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.PROCFREIGHTER.PASS.DDS" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Rare" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="1" />
           <Property name="AgeMax" value="10" />
@@ -2956,9 +3328,15 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.PROCFREIGHTER.PASS.DDS" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -3011,7 +3389,7 @@
       <Property name="NameGeneratorWordList" />
       <Property name="NameGeneratorLegacyRolls" value="0" />
       <Property name="Product" value="GcProductData.xml">
-        <Property name="Id" value="PROC_CAPT" />
+        <Property name="ID" value="PROC_CAPT" />
         <Property name="Name" value="ITEMGEN_FORMAT_FREI_CAPT" />
         <Property name="NameLower" value="ITEMGEN_FORMAT_FREI_CAPT" />
         <Property name="Subtitle" value="VariableSizeString.xml">
@@ -3024,19 +3402,28 @@
         <Property name="GroupID" value="" />
         <Property name="DebrisFile" value="TkModelResource.xml">
           <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="BaseValue" value="1000" />
         <Property name="Level" value="0" />
         <Property name="Icon" value="TkTextureResource.xml">
           <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.PROCFREIGHTER.CAPT.DDS" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="HeroIcon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.8874" />
-          <Property name="G" value="0.887" />
-          <Property name="B" value="0.9043" />
+          <Property name="R" value="0.011" />
+          <Property name="G" value="0.007" />
+          <Property name="B" value="0.197" />
           <Property name="A" value="1" />
         </Property>
         <Property name="Category" value="GcRealitySubstanceCategory.xml">
@@ -3084,12 +3471,12 @@
         <Property name="GoodForSelling" value="False" />
         <Property name="GiveRewardOnSpecialPurchase" value="" />
         <Property name="EggModifierIngredient" value="False" />
-        <Property name="IsTechBox" value="False" />
+        <Property name="IsTechbox" value="False" />
       </Property>
       <Property name="ProceduralData">
         <Property name="Common" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="0" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -3099,14 +3486,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.PROCFREIGHTER.CAPT.DDS" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Uncommon" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="0" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -3116,14 +3509,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.PROCFREIGHTER.CAPT.DDS" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Rare" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -3133,9 +3532,15 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.PROCFREIGHTER.CAPT.DDS" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -3188,7 +3593,7 @@
       <Property name="NameGeneratorWordList" />
       <Property name="NameGeneratorLegacyRolls" value="0" />
       <Property name="Product" value="GcProductData.xml">
-        <Property name="Id" value="PROC_CREW" />
+        <Property name="ID" value="PROC_CREW" />
         <Property name="Name" value="ITEMGEN_FORMAT_FREI_CREW" />
         <Property name="NameLower" value="ITEMGEN_FORMAT_FREI_CRE" />
         <Property name="Subtitle" value="VariableSizeString.xml">
@@ -3201,19 +3606,28 @@
         <Property name="GroupID" value="" />
         <Property name="DebrisFile" value="TkModelResource.xml">
           <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="BaseValue" value="1000" />
         <Property name="Level" value="0" />
         <Property name="Icon" value="TkTextureResource.xml">
           <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.PROCFREIGHTER.CREW.DDS" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="HeroIcon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.8874" />
-          <Property name="G" value="0.887" />
-          <Property name="B" value="0.9043" />
+          <Property name="R" value="0.011" />
+          <Property name="G" value="0.007" />
+          <Property name="B" value="0.197" />
           <Property name="A" value="1" />
         </Property>
         <Property name="Category" value="GcRealitySubstanceCategory.xml">
@@ -3261,12 +3675,12 @@
         <Property name="GoodForSelling" value="False" />
         <Property name="GiveRewardOnSpecialPurchase" value="" />
         <Property name="EggModifierIngredient" value="False" />
-        <Property name="IsTechBox" value="False" />
+        <Property name="IsTechbox" value="False" />
       </Property>
       <Property name="ProceduralData">
         <Property name="Common" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="0" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -3276,14 +3690,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.PROCFREIGHTER.CREW.DDS" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Uncommon" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="0" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -3293,14 +3713,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.PROCFREIGHTER.CREW.DDS" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Rare" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -3310,9 +3736,15 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/PRODUCTS/PRODUCT.PROCFREIGHTER.CREW.DDS" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -3365,7 +3797,7 @@
       <Property name="NameGeneratorWordList" />
       <Property name="NameGeneratorLegacyRolls" value="0" />
       <Property name="Product" value="GcProductData.xml">
-        <Property name="Id" value="UP_FRHYP" />
+        <Property name="ID" value="UP_FRHYP" />
         <Property name="Name" value="" />
         <Property name="NameLower" value="" />
         <Property name="Subtitle" value="VariableSizeString.xml">
@@ -3378,19 +3810,28 @@
         <Property name="GroupID" value="" />
         <Property name="DebrisFile" value="TkModelResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="BaseValue" value="1000" />
         <Property name="Level" value="1" />
         <Property name="Icon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="HeroIcon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.9773" />
-          <Property name="G" value="0.9773" />
-          <Property name="B" value="0.9773" />
+          <Property name="R" value="1" />
+          <Property name="G" value="1" />
+          <Property name="B" value="1" />
           <Property name="A" value="1" />
         </Property>
         <Property name="Category" value="GcRealitySubstanceCategory.xml">
@@ -3438,12 +3879,12 @@
         <Property name="GoodForSelling" value="False" />
         <Property name="GiveRewardOnSpecialPurchase" value="" />
         <Property name="EggModifierIngredient" value="False" />
-        <Property name="IsTechBox" value="False" />
+        <Property name="IsTechbox" value="False" />
       </Property>
       <Property name="ProceduralData">
         <Property name="Common" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -3453,14 +3894,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Uncommon" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -3470,14 +3917,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Rare" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -3487,9 +3940,15 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -3542,7 +4001,7 @@
       <Property name="NameGeneratorWordList" />
       <Property name="NameGeneratorLegacyRolls" value="0" />
       <Property name="Product" value="GcProductData.xml">
-        <Property name="Id" value="UP_FRSPE" />
+        <Property name="ID" value="UP_FRSPE" />
         <Property name="Name" value="" />
         <Property name="NameLower" value="" />
         <Property name="Subtitle" value="VariableSizeString.xml">
@@ -3555,19 +4014,28 @@
         <Property name="GroupID" value="" />
         <Property name="DebrisFile" value="TkModelResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="BaseValue" value="1000" />
         <Property name="Level" value="1" />
         <Property name="Icon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="HeroIcon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.9773" />
-          <Property name="G" value="0.9773" />
-          <Property name="B" value="0.9773" />
+          <Property name="R" value="1" />
+          <Property name="G" value="1" />
+          <Property name="B" value="1" />
           <Property name="A" value="1" />
         </Property>
         <Property name="Category" value="GcRealitySubstanceCategory.xml">
@@ -3615,12 +4083,12 @@
         <Property name="GoodForSelling" value="False" />
         <Property name="GiveRewardOnSpecialPurchase" value="" />
         <Property name="EggModifierIngredient" value="False" />
-        <Property name="IsTechBox" value="False" />
+        <Property name="IsTechbox" value="False" />
       </Property>
       <Property name="ProceduralData">
         <Property name="Common" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -3630,14 +4098,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Uncommon" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -3647,14 +4121,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Rare" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -3664,9 +4144,15 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -3719,7 +4205,7 @@
       <Property name="NameGeneratorWordList" />
       <Property name="NameGeneratorLegacyRolls" value="0" />
       <Property name="Product" value="GcProductData.xml">
-        <Property name="Id" value="UP_FRFUE" />
+        <Property name="ID" value="UP_FRFUE" />
         <Property name="Name" value="" />
         <Property name="NameLower" value="" />
         <Property name="Subtitle" value="VariableSizeString.xml">
@@ -3732,19 +4218,28 @@
         <Property name="GroupID" value="" />
         <Property name="DebrisFile" value="TkModelResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="BaseValue" value="1000" />
         <Property name="Level" value="1" />
         <Property name="Icon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="HeroIcon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.9773" />
-          <Property name="G" value="0.9773" />
-          <Property name="B" value="0.9773" />
+          <Property name="R" value="1" />
+          <Property name="G" value="1" />
+          <Property name="B" value="1" />
           <Property name="A" value="1" />
         </Property>
         <Property name="Category" value="GcRealitySubstanceCategory.xml">
@@ -3792,12 +4287,12 @@
         <Property name="GoodForSelling" value="False" />
         <Property name="GiveRewardOnSpecialPurchase" value="" />
         <Property name="EggModifierIngredient" value="False" />
-        <Property name="IsTechBox" value="False" />
+        <Property name="IsTechbox" value="False" />
       </Property>
       <Property name="ProceduralData">
         <Property name="Common" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -3807,14 +4302,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Uncommon" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -3824,14 +4325,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Rare" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -3841,9 +4348,15 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -3896,7 +4409,7 @@
       <Property name="NameGeneratorWordList" />
       <Property name="NameGeneratorLegacyRolls" value="0" />
       <Property name="Product" value="GcProductData.xml">
-        <Property name="Id" value="UP_FRCOM" />
+        <Property name="ID" value="UP_FRCOM" />
         <Property name="Name" value="" />
         <Property name="NameLower" value="" />
         <Property name="Subtitle" value="VariableSizeString.xml">
@@ -3909,19 +4422,28 @@
         <Property name="GroupID" value="" />
         <Property name="DebrisFile" value="TkModelResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="BaseValue" value="1000" />
         <Property name="Level" value="1" />
         <Property name="Icon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="HeroIcon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.9773" />
-          <Property name="G" value="0.9773" />
-          <Property name="B" value="0.9773" />
+          <Property name="R" value="1" />
+          <Property name="G" value="1" />
+          <Property name="B" value="1" />
           <Property name="A" value="1" />
         </Property>
         <Property name="Category" value="GcRealitySubstanceCategory.xml">
@@ -3969,12 +4491,12 @@
         <Property name="GoodForSelling" value="False" />
         <Property name="GiveRewardOnSpecialPurchase" value="" />
         <Property name="EggModifierIngredient" value="False" />
-        <Property name="IsTechBox" value="False" />
+        <Property name="IsTechbox" value="False" />
       </Property>
       <Property name="ProceduralData">
         <Property name="Common" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -3984,14 +4506,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Uncommon" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -4001,14 +4529,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Rare" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -4018,9 +4552,15 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -4073,7 +4613,7 @@
       <Property name="NameGeneratorWordList" />
       <Property name="NameGeneratorLegacyRolls" value="0" />
       <Property name="Product" value="GcProductData.xml">
-        <Property name="Id" value="UP_FRTRA" />
+        <Property name="ID" value="UP_FRTRA" />
         <Property name="Name" value="" />
         <Property name="NameLower" value="" />
         <Property name="Subtitle" value="VariableSizeString.xml">
@@ -4086,19 +4626,28 @@
         <Property name="GroupID" value="" />
         <Property name="DebrisFile" value="TkModelResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="BaseValue" value="1000" />
         <Property name="Level" value="1" />
         <Property name="Icon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="HeroIcon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.9773" />
-          <Property name="G" value="0.9773" />
-          <Property name="B" value="0.9773" />
+          <Property name="R" value="1" />
+          <Property name="G" value="1" />
+          <Property name="B" value="1" />
           <Property name="A" value="1" />
         </Property>
         <Property name="Category" value="GcRealitySubstanceCategory.xml">
@@ -4146,12 +4695,12 @@
         <Property name="GoodForSelling" value="False" />
         <Property name="GiveRewardOnSpecialPurchase" value="" />
         <Property name="EggModifierIngredient" value="False" />
-        <Property name="IsTechBox" value="False" />
+        <Property name="IsTechbox" value="False" />
       </Property>
       <Property name="ProceduralData">
         <Property name="Common" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -4161,14 +4710,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Uncommon" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -4178,14 +4733,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Rare" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -4195,9 +4756,15 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -4250,7 +4817,7 @@
       <Property name="NameGeneratorWordList" />
       <Property name="NameGeneratorLegacyRolls" value="0" />
       <Property name="Product" value="GcProductData.xml">
-        <Property name="Id" value="UP_FREXP" />
+        <Property name="ID" value="UP_FREXP" />
         <Property name="Name" value="" />
         <Property name="NameLower" value="" />
         <Property name="Subtitle" value="VariableSizeString.xml">
@@ -4263,19 +4830,28 @@
         <Property name="GroupID" value="" />
         <Property name="DebrisFile" value="TkModelResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="BaseValue" value="1000" />
         <Property name="Level" value="1" />
         <Property name="Icon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="HeroIcon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.9773" />
-          <Property name="G" value="0.9773" />
-          <Property name="B" value="0.9773" />
+          <Property name="R" value="1" />
+          <Property name="G" value="1" />
+          <Property name="B" value="1" />
           <Property name="A" value="1" />
         </Property>
         <Property name="Category" value="GcRealitySubstanceCategory.xml">
@@ -4323,12 +4899,12 @@
         <Property name="GoodForSelling" value="False" />
         <Property name="GiveRewardOnSpecialPurchase" value="" />
         <Property name="EggModifierIngredient" value="False" />
-        <Property name="IsTechBox" value="False" />
+        <Property name="IsTechbox" value="False" />
       </Property>
       <Property name="ProceduralData">
         <Property name="Common" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -4338,14 +4914,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Uncommon" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -4355,14 +4937,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Rare" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -4372,9 +4960,15 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -4427,7 +5021,7 @@
       <Property name="NameGeneratorWordList" />
       <Property name="NameGeneratorLegacyRolls" value="0" />
       <Property name="Product" value="GcProductData.xml">
-        <Property name="Id" value="UP_FRMIN" />
+        <Property name="ID" value="UP_FRMIN" />
         <Property name="Name" value="" />
         <Property name="NameLower" value="" />
         <Property name="Subtitle" value="VariableSizeString.xml">
@@ -4440,19 +5034,28 @@
         <Property name="GroupID" value="" />
         <Property name="DebrisFile" value="TkModelResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="BaseValue" value="1000" />
         <Property name="Level" value="1" />
         <Property name="Icon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="HeroIcon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.9773" />
-          <Property name="G" value="0.9773" />
-          <Property name="B" value="0.9773" />
+          <Property name="R" value="1" />
+          <Property name="G" value="1" />
+          <Property name="B" value="1" />
           <Property name="A" value="1" />
         </Property>
         <Property name="Category" value="GcRealitySubstanceCategory.xml">
@@ -4500,12 +5103,12 @@
         <Property name="GoodForSelling" value="False" />
         <Property name="GiveRewardOnSpecialPurchase" value="" />
         <Property name="EggModifierIngredient" value="False" />
-        <Property name="IsTechBox" value="False" />
+        <Property name="IsTechbox" value="False" />
       </Property>
       <Property name="ProceduralData">
         <Property name="Common" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -4515,14 +5118,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Uncommon" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -4532,14 +5141,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Rare" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="500" />
+          <Property name="BaseValueMin" value="500" />
           <Property name="BaseValueMax" value="1000" />
           <Property name="AgeMin" value="500" />
           <Property name="AgeMax" value="1000" />
@@ -4549,9 +5164,15 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -4607,7 +5228,7 @@
             <Property name="Word" value="ITEMGEN_LUMP_ADJ" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -4622,7 +5243,7 @@
             <Property name="Word" value="ITEMGEN_LUMP_NOUN" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -4635,7 +5256,7 @@
       </Property>
       <Property name="NameGeneratorLegacyRolls" value="0" />
       <Property name="Product" value="GcProductData.xml">
-        <Property name="Id" value="PROC_LUMP" />
+        <Property name="ID" value="PROC_LUMP" />
         <Property name="Name" value="ITEMGEN_FORMAT_LUMP" />
         <Property name="NameLower" value="ITEMGEN_FORMAT_LUMP" />
         <Property name="Subtitle" value="VariableSizeString.xml">
@@ -4648,19 +5269,28 @@
         <Property name="GroupID" value="" />
         <Property name="DebrisFile" value="TkModelResource.xml">
           <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="BaseValue" value="1000" />
         <Property name="Level" value="0" />
         <Property name="Icon" value="TkTextureResource.xml">
           <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/UPDATE3/TREASURE.LUMP.DDS" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="HeroIcon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.8973" />
-          <Property name="G" value="0.9521" />
-          <Property name="B" value="0.8898" />
+          <Property name="R" value="0.12" />
+          <Property name="G" value="0.723" />
+          <Property name="B" value="0.038" />
           <Property name="A" value="1" />
         </Property>
         <Property name="Category" value="GcRealitySubstanceCategory.xml">
@@ -4708,12 +5338,12 @@
         <Property name="GoodForSelling" value="False" />
         <Property name="GiveRewardOnSpecialPurchase" value="" />
         <Property name="EggModifierIngredient" value="False" />
-        <Property name="IsTechBox" value="False" />
+        <Property name="IsTechbox" value="False" />
       </Property>
       <Property name="ProceduralData">
         <Property name="Common" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="250" />
+          <Property name="BaseValueMin" value="250" />
           <Property name="BaseValueMax" value="1250" />
           <Property name="AgeMin" value="999" />
           <Property name="AgeMax" value="9999" />
@@ -4723,14 +5353,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Uncommon" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="0" />
-          <Property name="BasevalueMin" value="400000" />
+          <Property name="BaseValueMin" value="400000" />
           <Property name="BaseValueMax" value="700000" />
           <Property name="AgeMin" value="600" />
           <Property name="AgeMax" value="1100" />
@@ -4740,14 +5376,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Rare" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="0" />
-          <Property name="BasevalueMin" value="800000" />
+          <Property name="BaseValueMin" value="800000" />
           <Property name="BaseValueMax" value="2000000" />
           <Property name="AgeMin" value="1400" />
           <Property name="AgeMax" value="3000" />
@@ -4757,9 +5399,15 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -4815,7 +5463,7 @@
             <Property name="Word" value="ITEMGEN_COG_ADJ" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -4830,7 +5478,7 @@
             <Property name="Word" value="ITEMGEN_COG_NOUN" />
             <Property name="NumOptions" value="0" />
           </Property>
-          <Property name="UncommonWordWord" value="GcNameGeneratorWord.xml">
+          <Property name="UncommonWord" value="GcNameGeneratorWord.xml">
             <Property name="Word" value="" />
             <Property name="NumOptions" value="0" />
           </Property>
@@ -4843,7 +5491,7 @@
       </Property>
       <Property name="NameGeneratorLegacyRolls" value="0" />
       <Property name="Product" value="GcProductData.xml">
-        <Property name="Id" value="PROC_COG" />
+        <Property name="ID" value="PROC_COG" />
         <Property name="Name" value="ITEMGEN_FORMAT_COG" />
         <Property name="NameLower" value="ITEMGEN_FORMAT_COG" />
         <Property name="Subtitle" value="VariableSizeString.xml">
@@ -4856,19 +5504,28 @@
         <Property name="GroupID" value="" />
         <Property name="DebrisFile" value="TkModelResource.xml">
           <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="BaseValue" value="1000" />
         <Property name="Level" value="0" />
         <Property name="Icon" value="TkTextureResource.xml">
           <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/UPDATE3/TREASURE.COG.DDS" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="HeroIcon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.8973" />
-          <Property name="G" value="0.9521" />
-          <Property name="B" value="0.8898" />
+          <Property name="R" value="0.12" />
+          <Property name="G" value="0.723" />
+          <Property name="B" value="0.038" />
           <Property name="A" value="1" />
         </Property>
         <Property name="Category" value="GcRealitySubstanceCategory.xml">
@@ -4916,12 +5573,12 @@
         <Property name="GoodForSelling" value="False" />
         <Property name="GiveRewardOnSpecialPurchase" value="" />
         <Property name="EggModifierIngredient" value="False" />
-        <Property name="IsTechBox" value="False" />
+        <Property name="IsTechbox" value="False" />
       </Property>
       <Property name="ProceduralData">
         <Property name="Common" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="50" />
+          <Property name="BaseValueMin" value="50" />
           <Property name="BaseValueMax" value="400" />
           <Property name="AgeMin" value="200" />
           <Property name="AgeMax" value="5000" />
@@ -4931,14 +5588,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Uncommon" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="0" />
-          <Property name="BasevalueMin" value="400000" />
+          <Property name="BaseValueMin" value="400000" />
           <Property name="BaseValueMax" value="700000" />
           <Property name="AgeMin" value="600" />
           <Property name="AgeMax" value="1100" />
@@ -4948,14 +5611,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Rare" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="0" />
-          <Property name="BasevalueMin" value="800000" />
+          <Property name="BaseValueMin" value="800000" />
           <Property name="BaseValueMax" value="2000000" />
           <Property name="AgeMin" value="1400" />
           <Property name="AgeMax" value="3000" />
@@ -4965,9 +5634,15 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>
@@ -5020,7 +5695,7 @@
       <Property name="NameGeneratorWordList" />
       <Property name="NameGeneratorLegacyRolls" value="0" />
       <Property name="Product" value="GcProductData.xml">
-        <Property name="Id" value="PROC_DATA" />
+        <Property name="ID" value="PROC_DATA" />
         <Property name="Name" value="ITEMGEN_FORMAT_DATA" />
         <Property name="NameLower" value="ITEMGEN_FORMAT_DATA" />
         <Property name="Subtitle" value="VariableSizeString.xml">
@@ -5033,19 +5708,28 @@
         <Property name="GroupID" value="" />
         <Property name="DebrisFile" value="TkModelResource.xml">
           <Property name="Filename" value="MODELS/EFFECTS/DEBRIS/TERRAINDEBRIS/TERRAINDEBRIS4.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="BaseValue" value="1000" />
         <Property name="Level" value="0" />
         <Property name="Icon" value="TkTextureResource.xml">
           <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/UPDATE3/TREASURE.DATAPACK.DDS" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="HeroIcon" value="TkTextureResource.xml">
           <Property name="Filename" value="" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
         </Property>
         <Property name="Colour" value="Colour.xml">
-          <Property name="R" value="0.8973" />
-          <Property name="G" value="0.9521" />
-          <Property name="B" value="0.8898" />
+          <Property name="R" value="0.12" />
+          <Property name="G" value="0.723" />
+          <Property name="B" value="0.038" />
           <Property name="A" value="1" />
         </Property>
         <Property name="Category" value="GcRealitySubstanceCategory.xml">
@@ -5093,12 +5777,12 @@
         <Property name="GoodForSelling" value="False" />
         <Property name="GiveRewardOnSpecialPurchase" value="" />
         <Property name="EggModifierIngredient" value="False" />
-        <Property name="IsTechBox" value="False" />
+        <Property name="IsTechbox" value="False" />
       </Property>
       <Property name="ProceduralData">
         <Property name="Common" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="1" />
-          <Property name="BasevalueMin" value="700" />
+          <Property name="BaseValueMin" value="700" />
           <Property name="BaseValueMax" value="8000" />
           <Property name="AgeMin" value="200" />
           <Property name="AgeMax" value="500" />
@@ -5108,14 +5792,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Uncommon" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="0" />
-          <Property name="BasevalueMin" value="400000" />
+          <Property name="BaseValueMin" value="400000" />
           <Property name="BaseValueMax" value="700000" />
           <Property name="AgeMin" value="600" />
           <Property name="AgeMax" value="1100" />
@@ -5125,14 +5815,20 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
         <Property name="Rare" value="GcProductProceduralOnlyData.xml">
           <Property name="DropWeight" value="0" />
-          <Property name="BasevalueMin" value="800000" />
+          <Property name="BaseValueMin" value="800000" />
           <Property name="BaseValueMax" value="2000000" />
           <Property name="AgeMin" value="1400" />
           <Property name="AgeMax" value="3000" />
@@ -5142,9 +5838,15 @@
           </Property>
           <Property name="Icon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
           <Property name="HeroIcon" value="TkTextureResource.xml">
             <Property name="Filename" value="" />
+            <Property name="ResHandle" value="GcResource.xml">
+              <Property name="ResourceID" value="0" />
+            </Property>
           </Property>
         </Property>
       </Property>

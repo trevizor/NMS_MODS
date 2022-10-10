@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.99.1)-->
+<!--File created using MBINCompiler version (4.0.0)-->
 <Data template="GcAISpaceshipGlobals">
   <Property name="PlayerSquadronConfig" value="GcPlayerSquadronConfig.xml">
     <Property name="SquadName" value="PLAYER_SQUADRON" />
@@ -260,25 +260,25 @@
   <Property name="AttackShipsFollowLeader" value="False" />
   <Property name="AttackTooCloseMinRelSpeed" value="41" />
   <Property name="ProjectileWeaponMuzzleFlashes">
-    <Property value="NMSString0x10.xml">
+    <Property name="None" value="NMSString0x10.xml">
       <Property name="Value" value="" />
     </Property>
-    <Property value="NMSString0x10.xml">
+    <Property name="Pirate" value="NMSString0x10.xml">
       <Property name="Value" value="PIRATESHIPMUZ" />
     </Property>
-    <Property value="NMSString0x10.xml">
+    <Property name="Police" value="NMSString0x10.xml">
       <Property name="Value" value="POLICESHIPMUZ" />
     </Property>
-    <Property value="NMSString0x10.xml">
+    <Property name="Trader" value="NMSString0x10.xml">
       <Property name="Value" value="SHIPMUZZLE" />
     </Property>
-    <Property value="NMSString0x10.xml">
+    <Property name="Freighter" value="NMSString0x10.xml">
       <Property name="Value" value="TURRETGUN" />
     </Property>
-    <Property value="NMSString0x10.xml">
+    <Property name="PlayerSquadron" value="NMSString0x10.xml">
       <Property name="Value" value="SQUADSHIPMUZ" />
     </Property>
-    <Property value="NMSString0x10.xml">
+    <Property name="DefenceForce" value="NMSString0x10.xml">
       <Property name="Value" value="" />
     </Property>
   </Property>
@@ -288,28 +288,28 @@
   <Property name="FlybyPlanetLandingProbability" value="0.02" />
   <Property name="CombatEffectsComponentData" value="GcCombatEffectsComponentData.xml">
     <Property name="EffectsProperties">
-      <Property value="GcCombatEffectsProperties.xml">
+      <Property name="None" value="GcCombatEffectsProperties.xml">
         <Property name="IsAffected" value="True" />
         <Property name="IgnoreFromOtherPlayers" value="False" />
         <Property name="IgnoreFromSelf" value="True" />
         <Property name="DurationMultiplier" value="1" />
         <Property name="DamageMultiplier" value="1" />
       </Property>
-      <Property value="GcCombatEffectsProperties.xml">
+      <Property name="Fire" value="GcCombatEffectsProperties.xml">
         <Property name="IsAffected" value="False" />
         <Property name="IgnoreFromOtherPlayers" value="False" />
         <Property name="IgnoreFromSelf" value="True" />
         <Property name="DurationMultiplier" value="1" />
         <Property name="DamageMultiplier" value="1" />
       </Property>
-      <Property value="GcCombatEffectsProperties.xml">
+      <Property name="Stun" value="GcCombatEffectsProperties.xml">
         <Property name="IsAffected" value="False" />
         <Property name="IgnoreFromOtherPlayers" value="False" />
         <Property name="IgnoreFromSelf" value="True" />
         <Property name="DurationMultiplier" value="1" />
         <Property name="DamageMultiplier" value="1" />
       </Property>
-      <Property value="GcCombatEffectsProperties.xml">
+      <Property name="Slow" value="GcCombatEffectsProperties.xml">
         <Property name="IsAffected" value="True" />
         <Property name="IgnoreFromOtherPlayers" value="False" />
         <Property name="IgnoreFromSelf" value="True" />
@@ -866,48 +866,48 @@
   <Property name="WarpInAudioFXDelay" value="0.7" />
   <Property name="WarpOutDistance" value="200000" />
   <Property name="WarpStartEffectIDs">
-    <Property value="NMSString0x10.xml">
+    <Property name="None" value="NMSString0x10.xml">
       <Property name="Value" value="" />
     </Property>
-    <Property value="NMSString0x10.xml">
+    <Property name="Pirate" value="NMSString0x10.xml">
       <Property name="Value" value="REDWARPSTART" />
     </Property>
-    <Property value="NMSString0x10.xml">
+    <Property name="Police" value="NMSString0x10.xml">
       <Property name="Value" value="REDWARPSTART" />
     </Property>
-    <Property value="NMSString0x10.xml">
+    <Property name="Trader" value="NMSString0x10.xml">
       <Property name="Value" value="" />
     </Property>
-    <Property value="NMSString0x10.xml">
+    <Property name="Freighter" value="NMSString0x10.xml">
       <Property name="Value" value="" />
     </Property>
-    <Property value="NMSString0x10.xml">
+    <Property name="PlayerSquadron" value="NMSString0x10.xml">
       <Property name="Value" value="GOLDWARPSTART" />
     </Property>
-    <Property value="NMSString0x10.xml">
+    <Property name="DefenceForce" value="NMSString0x10.xml">
       <Property name="Value" value="" />
     </Property>
   </Property>
   <Property name="WarpArriveEffectIDs">
-    <Property value="NMSString0x10.xml">
+    <Property name="None" value="NMSString0x10.xml">
       <Property name="Value" value="" />
     </Property>
-    <Property value="NMSString0x10.xml">
+    <Property name="Pirate" value="NMSString0x10.xml">
       <Property name="Value" value="REDWARPARRIVE" />
     </Property>
-    <Property value="NMSString0x10.xml">
+    <Property name="Police" value="NMSString0x10.xml">
       <Property name="Value" value="REDWARPARRIVE" />
     </Property>
-    <Property value="NMSString0x10.xml">
+    <Property name="Trader" value="NMSString0x10.xml">
       <Property name="Value" value="" />
     </Property>
-    <Property value="NMSString0x10.xml">
+    <Property name="Freighter" value="NMSString0x10.xml">
       <Property name="Value" value="" />
     </Property>
-    <Property value="NMSString0x10.xml">
+    <Property name="PlayerSquadron" value="NMSString0x10.xml">
       <Property name="Value" value="GOLDWARPARRIVE" />
     </Property>
-    <Property value="NMSString0x10.xml">
+    <Property name="DefenceForce" value="NMSString0x10.xml">
       <Property name="Value" value="" />
     </Property>
   </Property>

@@ -1,11 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.98.0)-->
+<!--File created using MBINCompiler version (4.0.0)-->
 <Data template="GcUIGlobals">
+  <Property name="DebugMedalRank" value="-1" />
+  <Property name="PadCursorUICurve" value="TkCurveType.xml">
+    <Property name="Curve" value="EaseInExpo" />
+  </Property>
+  <Property name="JoaoBoxCompletedObjectiveColour" value="Colour.xml">
+    <Property name="R" value="0.587" />
+    <Property name="G" value="0.587" />
+    <Property name="B" value="0.587" />
+    <Property name="A" value="0.42" />
+  </Property>
+  <Property name="InvSlotGradientBaseColour" value="Colour.xml">
+    <Property name="R" value="1" />
+    <Property name="G" value="1" />
+    <Property name="B" value="1" />
+    <Property name="A" value="1" />
+  </Property>
+  <Property name="InvSlotGradientFactorMin" value="0" />
+  <Property name="InvSlotGradientFactor" value="0" />
+  <Property name="InvSlotGradientTime" value="0" />
+  <Property name="GridDecayRateSwitchValue" value="0.5" />
+  <Property name="PadCursorUICurveStrength" value="0" />
+  <Property name="ReplaceItemBarWithNumbers" value="True" />
+  <Property name="DebugInventoryHint" value="" />
+  <Property name="MaxSubstanceMaxAmountForAmountFraction" value="1000" />
+  <Property name="UseSquareSlots" value="True" />
+  <Property name="BigPicking" value="True" />
+  <Property name="BigPickingUsesNumbers" value="True" />
   <Property name="FreighterMegaWarpTransitionTime" value="2" />
+  <Property name="EnablePopupUses" value="True" />
+  <Property name="TechBoxesCanStack" value="True" />
+  <Property name="UnknownWordsToShowInCatalogue" value="32" />
   <Property name="UseIntermediateMissionGiverOptions" value="True" />
   <Property name="SentinelsDisabledHUDMessageTime" value="10" />
   <Property name="UseZoomedOutBuildCamRadius" value="3" />
-  <Property name="ParagraphScrollSpeed" value="10" />
+  <Property name="ParagraphAutoScrollSpeed" value="10" />
   <Property name="AutoScrollParagraphs" value="True" />
   <Property name="EggModifiyAnimMaxSize" value="96" />
   <Property name="EggModifiyAnimLoopTime" value="1" />
@@ -186,6 +216,7 @@
   <Property name="ClosestDoorMarkerBuffer" value="4" />
   <Property name="SkipShopIntro" value="True" />
   <Property name="ZoomFactorOverride" value="1" />
+  <Property name="HandheldZoomFactor" value="1.5" />
   <Property name="PlacedMarkerFadeTime" value="0.5" />
   <Property name="LoadingTravelDistance" value="12500" />
   <Property name="LoadingScreenTravelSpeed" value="50" />
@@ -343,7 +374,7 @@
   <Property name="SolidPointerMaxLength" value="0.99" />
   <Property name="InWorldInteractionScreenScale" value="0.8" />
   <Property name="InWorldNPCInteractionScreenScale" value="0.385" />
-  <Property name="EnableCraftingTree" value="False" />
+  <Property name="EnableCraftingTree" value="True" />
   <Property name="QuickMenuEnableSwipe" value="False" />
   <Property name="QuickMenuSwipeHeightMin" value="190" />
   <Property name="QuickMenuSwipeHeightMax" value="1000" />
@@ -777,7 +808,10 @@
   <Property name="TransferPopupCursorOffsetFactor" value="0.2" />
   <Property name="ScannableIconMergeAngle" value="9" />
   <Property name="CreatureIconMergeAngle" value="2" />
+  <Property name="MaxNumMessageBeaconIcons" value="10" />
   <Property name="MissionObjectiveBaseHeight" value="50" />
+  <Property name="MissionObjectiveDoneHeight" value="30" />
+  <Property name="MissionDetailsPageBaseHeight" value="300" />
   <Property name="MarkerTagAppearDelay" value="0.2" />
   <Property name="CompassCentre" value="Vector2f.xml">
     <Property name="x" value="960" />
@@ -970,6 +1004,24 @@
       <Property name="Value" value="UI_BUILD_MENU_CYCLEROTATE_ERR" />
     </Property>
   </Property>
+  <Property name="BuildMenuUseSmallIconOnPad">
+    <Property name="Place" value="False" />
+    <Property name="ChangeColour" value="False" />
+    <Property name="FreeRotate" value="True" />
+    <Property name="Scale" value="False" />
+    <Property name="SnapRotate" value="True" />
+    <Property name="Move" value="False" />
+    <Property name="Duplicate" value="False" />
+    <Property name="Delete" value="False" />
+    <Property name="ToggleBuildCam" value="False" />
+    <Property name="ToggleSnappingAndCollision" value="False" />
+    <Property name="ToggleSelectionMode" value="False" />
+    <Property name="ToggleWiringMode" value="False" />
+    <Property name="ViewRelatives" value="False" />
+    <Property name="CyclePart" value="False" />
+    <Property name="PlaceWire" value="False" />
+    <Property name="CycleRotateMode" value="True" />
+  </Property>
   <Property name="BuildMenuPassiveErrorTextColour" value="Colour.xml">
     <Property name="R" value="1" />
     <Property name="G" value="1" />
@@ -1046,14 +1098,15 @@
     <Property name="B" value="0.851" />
     <Property name="A" value="1" />
   </Property>
+  <Property name="BaseBuildingPinHighlightDuration" value="1" />
   <Property name="BaseBuildingInputHighlightDuration" value="0.5" />
   <Property name="BaseBuildingInputHighlightAlpha" value="0.5" />
-  <Property name="BaseBuildingScaleSpeed" value="0.15" />
-  <Property name="BaseBuildingMinFreeRotateSpeed" value="2" />
-  <Property name="BaseBuildingMaxFreeRotateSpeed" value="2" />
+  <Property name="BaseBuildingScaleSpeed" value="0.3" />
+  <Property name="BaseBuildingMinFreeRotateSpeed" value="0.8" />
+  <Property name="BaseBuildingMaxFreeRotateSpeed" value="3.5" />
   <Property name="BaseBuildingTimeToMaxRotationSpeed" value="1" />
   <Property name="BaseBuildingRotationResetRate" value="4" />
-  <Property name="BaseBuildingFreeRotateSpeedPadMultiplier" value="0.5" />
+  <Property name="BaseBuildingFreeRotateSpeedPadMultiplier" value="1.111111" />
   <Property name="BaseBuildingFreeRotateDelayBeforeReset" value="0.55" />
   <Property name="BaseBuildingFreeRotateDelayBeforeAudioStops" value="0.075" />
   <Property name="BaseBuildingSmoothMenuWhileSnapped" value="True" />
@@ -1072,12 +1125,21 @@
   <Property name="BaseBuildingPartsGridPopupDelay" value="0.4" />
   <Property name="BaseBuildingPartsGridExpandableIcon" value="TkTextureResource.xml">
     <Property name="Filename" value="/TEXTURES/UI/FRONTEND/COMPONENTS/BASEPARTEXPANDABLE.DDS" />
+    <Property name="ResHandle" value="GcResource.xml">
+      <Property name="ResourceID" value="0" />
+    </Property>
   </Property>
   <Property name="BaseBuildingPartsGridExpandedIcon" value="TkTextureResource.xml">
     <Property name="Filename" value="/TEXTURES/UI/FRONTEND/COMPONENTS/BASEPARTEXPANDED.DDS" />
+    <Property name="ResHandle" value="GcResource.xml">
+      <Property name="ResourceID" value="0" />
+    </Property>
   </Property>
   <Property name="BaseBuildingPartsGridRetractableIcon" value="TkTextureResource.xml">
     <Property name="Filename" value="/TEXTURES/UI/FRONTEND/COMPONENTS/BASEPARTRETRACTABLE.DDS" />
+    <Property name="ResHandle" value="GcResource.xml">
+      <Property name="ResourceID" value="0" />
+    </Property>
   </Property>
   <Property name="MarkerRingInnerRadius" value="22" />
   <Property name="MarkerRingOuterRadius" value="30" />
@@ -1215,7 +1277,7 @@
     <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
     <Property name="LookForFocusInMasterModel" value="False" />
   </Property>
-  <Property name="RepairShipCamera" value="TkModelRendererData.xml">
+  <Property name="RepairShipCameraInWorld" value="TkModelRendererData.xml">
     <Property name="Camera" value="TkModelRendererCameraData.xml">
       <Property name="Distance" value="8" />
       <Property name="Offset" value="Vector3f.xml">
@@ -1247,6 +1309,44 @@
     <Property name="FocusInterpTime" value="1.8" />
     <Property name="BlendInTime" value="2.8" />
     <Property name="BlendInOffset" value="2" />
+    <Property name="Anim" value="" />
+    <Property name="HeightOffset" value="0.005" />
+    <Property name="UsePlayerCameraInHmd" value="True" />
+    <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
+    <Property name="LookForFocusInMasterModel" value="False" />
+  </Property>
+  <Property name="RepairShipCameraModelView" value="TkModelRendererData.xml">
+    <Property name="Camera" value="TkModelRendererCameraData.xml">
+      <Property name="Distance" value="1.8" />
+      <Property name="Offset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
+      <Property name="Roll" value="0" />
+      <Property name="Pitch" value="5" />
+      <Property name="Rotate" value="-60" />
+      <Property name="LightPitch" value="45" />
+      <Property name="LightRotate" value="45" />
+      <Property name="Wander" value="TkCameraWanderData.xml">
+        <Property name="CamWander" value="False" />
+        <Property name="CamWanderPhase" value="0.003" />
+        <Property name="CamWanderAmplitude" value="0.5" />
+      </Property>
+    </Property>
+    <Property name="Fov" value="30" />
+    <Property name="AspectRatio" value="1.7777" />
+    <Property name="ThumbnailMode" value="None" />
+    <Property name="FocusType" value="ResourceBoundingHeight" />
+    <Property name="FocusLocator" value="MAINTENANCESLOT0" />
+    <Property name="FocusOffset" value="Vector3f.xml">
+      <Property name="x" value="0" />
+      <Property name="y" value="0" />
+      <Property name="z" value="0" />
+    </Property>
+    <Property name="FocusInterpTime" value="1.8" />
+    <Property name="BlendInTime" value="0.8" />
+    <Property name="BlendInOffset" value="0" />
     <Property name="Anim" value="" />
     <Property name="HeightOffset" value="0.005" />
     <Property name="UsePlayerCameraInHmd" value="True" />
@@ -1591,6 +1691,9 @@
   </Property>
   <Property name="RefinerPopupEmptyOutputIcon" value="TkTextureResource.xml">
     <Property name="Filename" value="/TEXTURES/UI/FRONTEND/COMPONENTS/EMPTYSLOTCIRCLE.DDS" />
+    <Property name="ResHandle" value="GcResource.xml">
+      <Property name="ResourceID" value="0" />
+    </Property>
   </Property>
   <Property name="RefinerPadStartTime" value="1" />
   <Property name="RefinerPadStartDecayTime" value="0.3" />
@@ -1628,8 +1731,8 @@
   <Property name="HUDPlayerPhonePulseScanFreq" value="-1" />
   <Property name="RefinerAutoCloseTime" value="999" />
   <Property name="RefinerBackgroundColour" value="Colour.xml">
-    <Property name="R" value="0.216" />
-    <Property name="G" value="0.227" />
+    <Property name="R" value="0.016" />
+    <Property name="G" value="0.247" />
     <Property name="B" value="0.498" />
     <Property name="A" value="1" />
   </Property>
@@ -2017,7 +2120,7 @@
   <Property name="FreighterEntranceOffset" value="30" />
   <Property name="ShipHeadsUpDisplayDistance" value="200" />
   <Property name="ShipHeadsUpLineFadeTime" value="0.6" />
-  <Property name="CrosshairAimTime" value="0.01" />
+  <Property name="CrosshairAimTime" value="0.1" />
   <Property name="CrosshairAimOffTime" value="1.5" />
   <Property name="CrosshairInnerMinFade" value="0" />
   <Property name="CrosshairInnerMinFadeRange" value="5" />
@@ -2135,8 +2238,8 @@
   <Property name="SpaceMarkersBattleOffset" value="3000" />
   <Property name="LargeSpaceIconSize" value="80" />
   <Property name="SmallSpaceIconSize" value="48" />
-  <Property name="PetHoverIconSize" value="32" />
-  <Property name="PetIconSize" value="26" />
+  <Property name="PetHoverIconSize" value="64" />
+  <Property name="PetIconSize" value="52" />
   <Property name="TrackTypeIconOffset" value="Vector2f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="-100" />
@@ -2303,7 +2406,7 @@
     <Property name="y" value="7.5" />
   </Property>
   <Property name="HUDPlayerTrackArrowGlowBaseOpacity" value="0.1" />
-  <Property name="HUDPlayerTrackArrowDamageGlowHullHitCriticalOpacityScale" value="2" />
+  <Property name="HUDPlayerTrackArrowDamageGlowHullHitCriticalOpacit" value="2" />
   <Property name="HUDPlayerTrackArrowDamageGlowHullHitOpacityScale" value="1" />
   <Property name="HUDPlayerTrackArrowDamageGlowHullHitMaxColour" value="Colour.xml">
     <Property name="R" value="1" />
@@ -2317,7 +2420,7 @@
     <Property name="B" value="1" />
     <Property name="A" value="1" />
   </Property>
-  <Property name="HUDPlayerTrackArrowDamageGlowShieldHitCriticalOpacityScale" value="2" />
+  <Property name="HUDPlayerTrackArrowDamageGlowShieldHitCriticalOpac" value="2" />
   <Property name="HUDPlayerTrackArrowDamageGlowShieldHitOpacityScale" value="1" />
   <Property name="HUDPlayerTrackArrowDamageGlowShieldHitMaxColour" value="Colour.xml">
     <Property name="R" value="1" />
@@ -2341,35 +2444,35 @@
     <Property name="x" value="110" />
     <Property name="y" value="15" />
   </Property>
-  <Property name="HUDPlayerTrackArrowEnergyShieldDepletedGlowOpacityScale" value="0" />
+  <Property name="HUDPlayerTrackArrowEnergyShieldDepletedGlowOpacity" value="0" />
   <Property name="HUDPlayerTrackArrowEnergyShieldDepletedTime" value="1" />
   <Property name="HUDPlayerTrackArrowEnergyShieldDepletedCurve" value="TkCurveType.xml">
     <Property name="Curve" value="EaseInQuart" />
   </Property>
-  <Property name="HUDPlayerTrackArrowEnergyShieldDepletedGlowMaxColour" value="Colour.xml">
+  <Property name="HUDPlayerTrackArrowEnergyShieldDepletedGlowMaxColo" value="Colour.xml">
     <Property name="R" value="1" />
     <Property name="G" value="0.727" />
     <Property name="B" value="0.025" />
     <Property name="A" value="1" />
   </Property>
-  <Property name="HUDPlayerTrackArrowEnergyShieldDepletedGlowMinColour" value="Colour.xml">
+  <Property name="HUDPlayerTrackArrowEnergyShieldDepletedGlowMinColo" value="Colour.xml">
     <Property name="R" value="0.607" />
     <Property name="G" value="0.413" />
     <Property name="B" value="0.002" />
     <Property name="A" value="1" />
   </Property>
-  <Property name="HUDPlayerTrackArrowEnergyShieldStartChargeGlowOpacityScale" value="10" />
+  <Property name="HUDPlayerTrackArrowEnergyShieldStartChargeGlowOpac" value="10" />
   <Property name="HUDPlayerTrackArrowEnergyShieldStartChargeTime" value="1" />
   <Property name="HUDPlayerTrackArrowEnergyShieldStartChargeCurve" value="TkCurveType.xml">
     <Property name="Curve" value="EaseInQuart" />
   </Property>
-  <Property name="HUDPlayerTrackArrowEnergyShieldStartChargeGlowMaxColour" value="Colour.xml">
+  <Property name="HUDPlayerTrackArrowEnergyShieldStartChargeGlowMaxC" value="Colour.xml">
     <Property name="R" value="1" />
     <Property name="G" value="0.727" />
     <Property name="B" value="0.025" />
     <Property name="A" value="1" />
   </Property>
-  <Property name="HUDPlayerTrackArrowEnergyShieldStartChargeGlowMinColour" value="Colour.xml">
+  <Property name="HUDPlayerTrackArrowEnergyShieldStartChargeGlowMinC" value="Colour.xml">
     <Property name="R" value="0.987" />
     <Property name="G" value="0.899" />
     <Property name="B" value="0.674" />
@@ -2478,7 +2581,7 @@
   </Property>
   <Property name="GalaxyMapRadialBorder" value="125" />
   <Property name="GalaxyMapRadialTargetDist" value="900" />
-  <Property name="IconBackgroundAlpha" value="0.4" />
+  <Property name="IconBackgroundAlpha" value="0.7" />
   <Property name="WantedLevelWitnessPulseRate" value="0.7" />
   <Property name="WantedLevelWitnessOffset" value="100" />
   <Property name="WantedLevelTimeoutPulseRate" value="1" />
@@ -2656,7 +2759,7 @@
   <Property name="StatsMessageDelayTime" value="12" />
   <Property name="SeasonMessageDelayTime" value="0.5" />
   <Property name="HideExtremePlanetNotifications" value="True" />
-  <Property name="NotificationBackgroundGradientEndOffsetPercentInShip" value="80" />
+  <Property name="NotificationBackgroundGradientEndOffsetPercentInSh" value="80" />
   <Property name="NotificationBackgroundGradientAlphaInShip" value="0.85" />
   <Property name="NotificationsResourceExtractHintCount" value="1500" />
   <Property name="NotificationStaminaHintDistanceWalked" value="10000" />
@@ -2756,7 +2859,7 @@
     <Property name="UIWorldQuadOffsetBuildMenu" value="0.2" />
     <Property name="UIWorldQuadSideOffset" value="-0.5" />
     <Property name="UIWorldQuadShipAddOffset" value="-0.9" />
-    <Property name="UIWorldQuadScale" value="0.00001" />
+    <Property name="UIWorldQuadScale" value="0.32" />
     <Property name="UIWorldQuadShipScale" value="1" />
     <Property name="HUDWorldQuadOffset" value="1.8" />
     <Property name="HUDWorldQuadShipAddOffset" value="-2.5" />
@@ -2999,12 +3102,12 @@
   <Property name="ModelRendererBGPass" value="True" />
   <Property name="ModelRendererPass1" value="True" />
   <Property name="ModelRendererPass2" value="True" />
-  <Property name="HazardScreenEffectPulseRate" value="0.4" />
+  <Property name="HazardScreenEffectPulseRate" value="0.1" />
   <Property name="KeepHazardBarActiveTime" value="6" />
   <Property name="KeepSecondHazardBarActiveTime" value="1" />
   <Property name="HazardBarPulseTime" value="1" />
   <Property name="HazardScreenEffectPulseTime" value="2" />
-  <Property name="HazardScreenEffectStrength" value="0.5" />
+  <Property name="HazardScreenEffectStrength" value="1" />
   <Property name="HazardWarningPulseTime" value="4" />
   <Property name="HazardWarningPulseStrength" value="1.66" />
   <Property name="HazardPainPulseStrength" value="2" />
@@ -3013,16 +3116,16 @@
   <Property name="ShieldHazardPulseRate" value="0.6" />
   <Property name="ShieldHUDAlwaysOn" value="False" />
   <Property name="ShieldHazardPulseThreshold" value="0.2" />
-  <Property name="AlwaysOnHazardThreshold" value="0.25" />
-  <Property name="AlwaysOnHazardStrengthTox" value="0.13" />
-  <Property name="AlwaysOnHazardStrengthHeat" value="0.36" />
-  <Property name="AlwaysOnHazardStrengthRad" value="0.13" />
-  <Property name="AlwaysOnHazardStrengthCold" value="0.25" />
+  <Property name="AlwaysOnHazardThreshold" value="0.5" />
+  <Property name="AlwaysOnHazardStrengthTox" value="0.3" />
+  <Property name="AlwaysOnHazardStrengthHeat" value="0.6" />
+  <Property name="AlwaysOnHazardStrengthRad" value="0.3" />
+  <Property name="AlwaysOnHazardStrengthCold" value="0.5" />
   <Property name="AlwaysOnHazardMultiplierTox" value="1" />
-  <Property name="AlwaysOnHazardMultiplierHeat" value="1" />
+  <Property name="AlwaysOnHazardMultiplierHeat" value="1.1" />
   <Property name="AlwaysOnHazardMultiplierRad" value="1" />
-  <Property name="AlwaysOnHazardMultiplierCold" value="1" />
-  <Property name="HazardPulseRate" value="400" />
+  <Property name="AlwaysOnHazardMultiplierCold" value="1.1" />
+  <Property name="HazardPulseRate" value="200" />
   <Property name="HazardTextures">
     <Property value="NMSString0x80.xml">
       <Property name="Value" value="" />
@@ -3161,7 +3264,7 @@
   <Property name="InteractionIconOuterRadius" value="1" />
   <Property name="InteractionLabelPixelHeightMin" value="80" />
   <Property name="InteractionLabelPixelHeightMax" value="1000" />
-  <Property name="ScanTime" value="2" />
+  <Property name="ScanTime" value="0.5" />
   <Property name="ModelViews" value="GcModelViewCollection.xml">
     <Property name="ModelViews">
       <Property name="Suit" value="TkModelRendererData.xml">
@@ -4444,12 +4547,14 @@
     <Property name="B" value="0" />
     <Property name="A" value="0.9" />
   </Property>
-  <Property name="CursorHoverSlowFactor" value="0.95" />
+  <Property name="CursorHoverSlowFactor" value="0.98" />
+  <Property name="CursorHoverSlowFactorMin" value="0.85" />
   <Property name="FrontendBGAlpha" value="1" />
-  <Property name="FrontendConfirmTimeMouseMultiplier" value="0.35" />
-  <Property name="FrontendConfirmTimeFast" value="0.2" />
-  <Property name="FrontendConfirmTime" value="0.4" />
-  <Property name="FrontendConfirmTimeSlow" value="1" />
+  <Property name="FrontendConfirmTimeMouseMultiplier" value="0.20" />
+  <Property name="FrontendConfirmTimeFast" value="0.10" />
+  <Property name="FrontendTouchConfirmTimeFastMultiplier" value="0" />
+  <Property name="FrontendConfirmTime" value="0.3" />
+  <Property name="FrontendConfirmTimeSlow" value="1.0" />
   <Property name="FrontendConfirmCurve" value="TkCurveType.xml">
     <Property name="Curve" value="Squared" />
   </Property>
@@ -5126,7 +5231,7 @@
     <Property name="B" value="0.384" />
     <Property name="A" value="0.528" />
   </Property>
-  <Property name="AsteroidMarkerMinDisplayDistance" value="0" />
+  <Property name="AsteroidMarkerMinDisplayDistance" value="400" />
   <Property name="AsteroidMarkerMinDisplayAngleDegrees" value="0" />
   <Property name="MissileIconAttackPulseTime" value="0.3" />
   <Property name="MissileIconAttackPulseAmount" value="1.4" />
@@ -5142,7 +5247,7 @@
   <Property name="NGuiModelViewCdSmoothTime" value="0.15" />
   <Property name="NGuiAltPlacementDistanceScrollSpeed" value="10" />
   <Property name="NGuiPlacementAngleScrollSpeed" value="0.3" />
-  <Property name="NGuiModelViewFractionOfBBHeightAboveReflectivePlane" value="0.005" />
+  <Property name="NGuiModelViewFractionOfBBHeightAboveReflectivePlan" value="0.005" />
   <Property name="NGuiModelTranslationFactors" value="Vector3f.xml">
     <Property name="x" value="-0.15" />
     <Property name="y" value="-0.035" />
@@ -5594,80 +5699,148 @@
   <Property name="SettlementStatBasicImages">
     <Property name="Population" value="TkTextureResource.xml">
       <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SETTLEMENT/BASICPOPULATION.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
     </Property>
     <Property name="Happiness" value="TkTextureResource.xml">
       <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SETTLEMENT/BASICHAPPINESS.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
     </Property>
     <Property name="Production" value="TkTextureResource.xml">
       <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SETTLEMENT/BASICPRODUCTION.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
     </Property>
     <Property name="Upkeep" value="TkTextureResource.xml">
       <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SETTLEMENT/BASICMAINTENANCE.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
     </Property>
     <Property name="Sentinels" value="TkTextureResource.xml">
       <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SETTLEMENT/BASICALERT.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
     </Property>
     <Property name="Debt" value="TkTextureResource.xml">
       <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SETTLEMENT/BASICPRODUCTION.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
     </Property>
     <Property name="Alert" value="TkTextureResource.xml">
       <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SETTLEMENT/BASICALERT.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
     </Property>
   </Property>
   <Property name="SettlementStatPositiveImages">
     <Property name="Population" value="TkTextureResource.xml">
       <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SETTLEMENT/POSITIVEPOPULATION.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
     </Property>
     <Property name="Happiness" value="TkTextureResource.xml">
       <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SETTLEMENT/POSITIVEHAPPINESS.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
     </Property>
     <Property name="Production" value="TkTextureResource.xml">
       <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SETTLEMENT/POSITIVEPRODUCTION.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
     </Property>
     <Property name="Upkeep" value="TkTextureResource.xml">
       <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SETTLEMENT/POSITIVEMAINTENANCE.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
     </Property>
     <Property name="Sentinels" value="TkTextureResource.xml">
       <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SETTLEMENT/POSITIVEALERT.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
     </Property>
     <Property name="Debt" value="TkTextureResource.xml">
       <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SETTLEMENT/POSITIVEPRODUCTION.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
     </Property>
     <Property name="Alert" value="TkTextureResource.xml">
       <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SETTLEMENT/POSITIVEALERT.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
     </Property>
   </Property>
   <Property name="SettlementStatNegativeImages">
     <Property name="Population" value="TkTextureResource.xml">
       <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SETTLEMENT/NEGATIVEPOPULATION.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
     </Property>
     <Property name="Happiness" value="TkTextureResource.xml">
       <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SETTLEMENT/NEGATIVEHAPPINESS.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
     </Property>
     <Property name="Production" value="TkTextureResource.xml">
       <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SETTLEMENT/NEGATIVEPRODUCTION.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
     </Property>
     <Property name="Upkeep" value="TkTextureResource.xml">
       <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SETTLEMENT/NEGATIVEMAINTENANCE.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
     </Property>
     <Property name="Sentinels" value="TkTextureResource.xml">
       <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SETTLEMENT/NEGATIVEALERT.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
     </Property>
     <Property name="Debt" value="TkTextureResource.xml">
       <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SETTLEMENT/NEGATIVEPRODUCTION.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
     </Property>
     <Property name="Alert" value="TkTextureResource.xml">
       <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/SETTLEMENT/NEGATIVEALERT.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
     </Property>
   </Property>
   <Property name="MinimumHoldFill" value="0.05" />
   <Property name="EnableAccessibleUI" value="False" />
-  <Property name="AccessibleUIPopupScale" value="1.25" />
+  <Property name="AccessibleUIPopupScale" value="1.2" />
   <Property name="DetailMessageDismissTime" value="0.3" />
+  <Property name="TouchScrollMaxDelta" value="30" />
+  <Property name="TextTouchScrollCap" value="0.1" />
+  <Property name="TouchScrollChangePageThreshold" value="35" />
+  <Property name="ManualScrollChangePerInputMin" value="0.008" />
+  <Property name="ManualScrollChangePerInputMax" value="0.1" />
   <Property name="InfoPortalGuideCycleTime" value="5" />
   <Property name="InfoPortalMilestonesCycleTime" value="5" />
-  <Property name="FeedFrigateAnimPeriod" value="0.4" />  
-  <Property name="FeedFrigateAnimNumPeriods" value="1" /> 
-  <Property name="FeedFrigateAnimScaleChange" value="0.15" /> 
+  <Property name="FeedFrigateAnimPeriod" value="0.4" />
+  <Property name="FeedFrigateAnimNumPeriods" value="1" />
+  <Property name="FeedFrigateAnimScaleChange" value="0.15" />
   <Property name="FeedFrigateAnimAlphaChange" value="0.5" />
 </Data>

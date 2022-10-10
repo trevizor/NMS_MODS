@@ -25,7 +25,7 @@
     <RenderTarget id="SSR_HIT_TRACE"      platforms="NEXT|XB1X"   hasMips="false"  autoGenMips="false" depthBuf="false" numColBufs="3"  scale="0.5"     format0="R11FG11FB10F"  format1="RG16" format2="RED8" shareTarget0="SSR_HIT_RAD" shareBuffer0="0"  shareTarget1="SSR_HIT_UVS" shareBuffer1="0" shareTarget2="SSR_HIT_PDF" shareBuffer2="0" numUniformBuffers="3" numSlices="2" />
     <RenderTarget id="SSR_HIT_RAD"        platforms="NEXT|XB1X"   hasMips="false"  autoGenMips="false" depthBuf="false" numColBufs="1"  scale="0.5"     format="R11FG11FB10F"   pointSampleColBuf0="true" numUniformBuffers="3" numSlices="2" />
     <RenderTarget id="SSR_HIT_UVS"        platforms="NEXT|XB1X"   hasMips="false"  autoGenMips="false" depthBuf="false" numColBufs="1"  scale="0.5"     format="RG16"           pointSampleColBuf0="true" numUniformBuffers="3" numSlices="2" />
-    <RenderTarget id="SSR_HIT_PDF"        platforms="NEXT|XB1X"   hasMips="false"  autoGenMips="false" depthBuf="false" numColBufs="1"  scale="0.5"     format="RED8"           pointSampleColBuf0="true" numUniformBuffers="3" numSlices="2" />
+    <RenderTarget id="SSR_HIT_PDF"        platforms="NEXT|XB1X"   hasMips="false"  autoGenMips="false" depthBuf="false" numColBufs="1"  scale="0.5"     format="RED8"           pointSampleColBuf0="true" numUniformBuffers="3" numSlices="2"  allowDcc="false" />
     <RenderTarget id="SSR_REFL_0"         platforms="NEXT|XB1X"   hasMips="true"   autoGenMips="false" depthBuf="false" numColBufs="1"  scale="0.5"     format="R11FG11FB10F"   numUniformBuffers="3" numSlices="2" />
     <RenderTarget id="SSR_REFL_1"         platforms="NEXT|XB1X"   hasMips="true"   autoGenMips="false" depthBuf="false" numColBufs="1"  scale="0.5"     format="R11FG11FB10F"   numUniformBuffers="3" numSlices="2" />
     <RenderTarget id="SSR_RESOLVE"        platforms="NEXT|XB1X"   hasMips="false"  autoGenMips="false" depthBuf="false" numColBufs="1"  scale="1.0"     format="R11FG11FB10F"   numUniformBuffers="3" numSlices="2" />
@@ -33,10 +33,10 @@
     <RenderTarget id="SSR_TEMPORAL_H"     platforms="NEXT|XB1X"   hasMips="false"  autoGenMips="false" depthBuf="false" numColBufs="3"  scale="1.0"     format0="R11FG11FB10F"  format1="RED8" format2="RED8" shareTarget0="SSR_RAD_T_H"  shareBuffer0="0" shareTarget1="SSR_VAR_T_F" shareBuffer1="0" shareTarget2="SSR_MOT_T_H" shareBuffer2="0" numUniformBuffers="3" numSlices="2" />
     <RenderTarget id="SSR_RAD_T_H"        platforms="NEXT|XB1X"   hasMips="false"  autoGenMips="false" depthBuf="false" numColBufs="1"  scale="1.0"     format="R11FG11FB10F"   pointSampleColBuf0="false" numUniformBuffers="3" numSlices="2" />
     <RenderTarget id="SSR_RAD_T_F"        platforms="NEXT|XB1X"   hasMips="false"  autoGenMips="false" depthBuf="false" numColBufs="1"  scale="1.0"     format="R11FG11FB10F"   pointSampleColBuf0="false" numUniformBuffers="3" numSlices="2" />
-    <RenderTarget id="SSR_VAR_T_H"        platforms="NEXT|XB1X"   hasMips="false"  autoGenMips="false" depthBuf="false" numColBufs="1"  scale="0.5"     format="RED8"           pointSampleColBuf0="false" numUniformBuffers="3" numSlices="2" />
-    <RenderTarget id="SSR_VAR_T_F"        platforms="NEXT|XB1X"   hasMips="false"  autoGenMips="false" depthBuf="false" numColBufs="1"  scale="1.0"     format="RED8"           pointSampleColBuf0="false" numUniformBuffers="3" numSlices="2" />
-    <RenderTarget id="SSR_MOT_T_H"        platforms="NEXT|XB1X"   hasMips="false"  autoGenMips="false" depthBuf="false" numColBufs="1"  scale="1.0"     format="RED8"           pointSampleColBuf0="false" numUniformBuffers="3" numSlices="2" />
-    <RenderTarget id="SSR_MOT_T_F"        platforms="NEXT|XB1X"   hasMips="false"  autoGenMips="false" depthBuf="false" numColBufs="1"  scale="1.0"     format="RED8"           pointSampleColBuf0="false" numUniformBuffers="3" numSlices="2" />
+    <RenderTarget id="SSR_VAR_T_H"        platforms="NEXT|XB1X"   hasMips="false"  autoGenMips="false" depthBuf="false" numColBufs="1"  scale="0.5"     format="RED8"           pointSampleColBuf0="false" numUniformBuffers="3" numSlices="2"  allowDcc="false" />
+    <RenderTarget id="SSR_VAR_T_F"        platforms="NEXT|XB1X"   hasMips="false"  autoGenMips="false" depthBuf="false" numColBufs="1"  scale="1.0"     format="RED8"           pointSampleColBuf0="false" numUniformBuffers="3" numSlices="2"  allowDcc="false" />
+    <RenderTarget id="SSR_MOT_T_H"        platforms="NEXT|XB1X"   hasMips="false"  autoGenMips="false" depthBuf="false" numColBufs="1"  scale="1.0"     format="RED8"           pointSampleColBuf0="false" numUniformBuffers="3" numSlices="2"  allowDcc="false" />
+    <RenderTarget id="SSR_MOT_T_F"        platforms="NEXT|XB1X"   hasMips="false"  autoGenMips="false" depthBuf="false" numColBufs="1"  scale="1.0"     format="RED8"           pointSampleColBuf0="false" numUniformBuffers="3" numSlices="2"  allowDcc="false" />
     <!-- SSR Debug Targets    
     <RenderTarget id="SSR_VIS"            platforms="NEXT|XB1X"   hasMips="false"  autoGenMips="false" depthBuf="false" numColBufs="1"  scale="0.5"     format="RED16F"       pointSampleColBuf0="true" />
     -->
@@ -49,16 +49,16 @@
     <RenderTarget id="GTAO_FINAL"         depthBuf="false"  numColBufs="1"  format="RED8" pointSampleColBuf0="false"  scale="1.0"                                             allowDcc="false" numUniformBuffers="3" numSlices="2" shareTarget0="RED8_BUF_0" />
 
     <!--Volume Targets-->
-    <RenderTarget id="VOLUME"             depthBuf="false"  numColBufs="2"  format0="RGBA16F" format1="RED16F" scale="1.0" maxSamples="0" pointSampleColBuf0="true" pointSampleColBuf1="true"   numUniformBuffers="3" numSlices="2" shareTarget1="LIGHTSHAFT" shareBuffer1="0" />
+    <RenderTarget id="VOLUME"             depthBuf="false"  numColBufs="2"  format0="RGBA16F" format1="RED16F" scale="0.5" maxSamples="0" pointSampleColBuf0="true" pointSampleColBuf1="true"   numUniformBuffers="3" numSlices="2" shareTarget1="LIGHTSHAFT" shareBuffer1="0" />
     <RenderTarget id="BLUR1"              depthBuf="false"  numColBufs="1"  format="RGBA16F"  scale="0.5" pointSampleColBuf0="true"   numUniformBuffers="3" numSlices="2" shareTarget0="HDRBUF_DOWN_16_0" />
     <RenderTarget id="BLUR1_REDONLY"      depthBuf="false"  numColBufs="1"  format="RED16F"   scale="0.5" pointSampleColBuf0="true"   numUniformBuffers="3" numSlices="2" allowDcc="false"  />
     <RenderTarget id="LIGHTSHAFT"         depthBuf="false"  numColBufs="1"  format="RED16F"   scale="0.5" pointSampleColBuf0="true"   numUniformBuffers="3" numSlices="2" />
     
     <!--Clouds Targets-->
     <RenderTarget id="CLOUDSHADOWS"       depthBuf="false"  numColBufs="1" format="RED8"   bilinear="true" scale="0.5" allowDcc="false" numUniformBuffers="3" numSlices="2" />
-    <RenderTarget id="CLOUDS_HIGH"        depthBuf="false"  numColBufs="2" format0="RGBA8" format1="RED32F" bilinear="true" width="1742" height="1796"  allowDcc="false" numUniformBuffers="3" numSlices="2"  crossPipeShareId="CLOUDS_SHARED"   />
-    <RenderTarget id="CLOUD_BLURBUF1"     depthBuf="false"  numColBufs="1" format="RGBA8"  bilinear="true" width="1742" height="1796" allowDcc="false" numUniformBuffers="3" numSlices="2" crossPipeShareId="CLOUDSB1_SHARED" />
-    <RenderTarget id="CLOUD_BLURBUF2"     depthBuf="false"  numColBufs="1" format="RGBA8"  bilinear="true" width="1742" height="1796" allowDcc="false" numUniformBuffers="3" numSlices="2" crossPipeShareId="CLOUDSB2_SHARED" />
+    <RenderTarget id="CLOUDS_HIGH"        depthBuf="false"  numColBufs="2" format0="RGBA8" format1="RED32F" bilinear="true" width="884" height="1402"  allowDcc="false" numUniformBuffers="3" numSlices="2"  crossPipeShareId="CLOUDS_SHARED"   />
+    <RenderTarget id="CLOUD_BLURBUF1"     depthBuf="false"  numColBufs="1" format="RGBA8"  bilinear="true" width="884" height="1402" allowDcc="false" numUniformBuffers="3" numSlices="2" crossPipeShareId="CLOUDSB1_SHARED" />
+    <RenderTarget id="CLOUD_BLURBUF2"     depthBuf="false"  numColBufs="1" format="RGBA8"  bilinear="true" width="884" height="1402" allowDcc="false" numUniformBuffers="3" numSlices="2" crossPipeShareId="CLOUDSB2_SHARED" />
 
     <!--Water Targets-->
     <RenderTarget id="WATER"              depthBuf="false"  numColBufs="1" format="RGBA16F" bilinear="true" scale="0.5"   shareTarget0="HDRBUF_DOWN_16_0" numUniformBuffers="3" numSlices="2" />
@@ -124,18 +124,18 @@
 
     <RenderTarget id="LUM_BUF_OP"         depthBuf="false"  numColBufs="1"  format="RED8"          scale="1.0" allowDcc="false" numUniformBuffers="3" numSlices="2" />
     <RenderTarget id="LUM_BUF_TR"         depthBuf="false"  numColBufs="1"  format="RED8"          scale="1.0" allowDcc="false" numUniformBuffers="3" numSlices="2" />
-
+    
     <!--Depth Targets-->    
     <RenderTarget id="DEPTH_UI"           platforms="PC" postDlss="true"         depthBuf="true"   numColBufs="0"  format="RGBA8"  scale="1.0" stencilBuf="true"           numUniformBuffers="3" numSlices="2" />
-    <RenderTarget id="DEPTH_UI"           platforms="ORBIS" postDlss="true"         depthBufUsesBB="true"   depthBuf="true"   numColBufs="0"  format="RGBA8"  scale="1.0" stencilBuf="true"           numUniformBuffers="3" numSlices="2" />
+    <RenderTarget id="DEPTH_UI"           platforms="ORBIS|PS5" postDlss="true"         depthBufUsesBB="true"   depthBuf="true"   numColBufs="0"  format="RGBA8"  scale="1.0" stencilBuf="true"           numUniformBuffers="3" numSlices="2" />
     <RenderTarget id="DEPTH"                                depthBufUsesBB="true"   depthBuf="true"   numColBufs="0"  format="RGBA8"  scale="1.0" stencilBuf="true"           numUniformBuffers="3" numSlices="2" crossPipeShareId="DEPTH_SHARED" />
-    <RenderTarget id="DEPTH_SSR"          platforms="PC"    depthBufUsesBB="false"  depthBuf="true"   numColBufs="0"  format="RGBA8"  scale="0.5" stencilBuf="true"           numUniformBuffers="3" numSlices="2" />
+    <RenderTarget id="DEPTH_SSR"          platforms="PC|PS5"    depthBufUsesBB="false"  depthBuf="true"   numColBufs="0"  format="RGBA8"  scale="0.5" stencilBuf="true"           numUniformBuffers="3" numSlices="2" />
     <RenderTarget id="DEPTH_DOWN_REV_Z"                                             depthBuf="true"   numColBufs="0"  format="RGBA8"  scale="0.5" pointSampleColBuf0="true"   numUniformBuffers="3" numSlices="2" />
     <RenderTarget id="DEPTH_DOWN"                                                   depthBuf="false"  numColBufs="1"  format="RED32F" scale="0.5" pointSampleColBuf0="true"   numUniformBuffers="3" numSlices="2" crossPipeShareId="DEPTHD_SHARED" allowDcc="false" />
     <RenderTarget id="DEPTH_PART"                                                   depthBuf="false"  numColBufs="1"  format="RED32F" scale="0.5" pointSampleColBuf0="true"   numUniformBuffers="3" numSlices="2" />
     <RenderTarget id="DEPTH_LINEAR"                                                 depthBuf="false"  numColBufs="1"  format="RED32F" scale="1.0" pointSampleColBuf0="true"   numUniformBuffers="3" numSlices="2" crossPipeShareId="DEPTH_LINEAR_SHARED" />
-    <RenderTarget id="DEPTH_SSR_HI_Z"     platforms="PC"                            depthBuf="false"  numColBufs="1"  format="RED16F" scale="0.5" pointSampleColBuf0="true"   numUniformBuffers="3" numSlices="2" hasMips="true" autoGenMips="false" mipsSRVs="true" />
-    <RenderTarget id="DEPTH_SSR_LOW_Z"    platforms="PC"                            depthBuf="false"  numColBufs="1"  format="RED16F" scale="0.5" pointSampleColBuf0="true"   numUniformBuffers="3" numSlices="2" hasMips="true" autoGenMips="false" mipsSRVs="true" />
+    <RenderTarget id="DEPTH_SSR_HI_Z"     platforms="PC|PS5"                            depthBuf="false"  numColBufs="1"  format="RED16F" scale="0.5" pointSampleColBuf0="true"   numUniformBuffers="3" numSlices="2" hasMips="true" autoGenMips="false" mipsSRVs="true" />
+    <RenderTarget id="DEPTH_SSR_LOW_Z"    platforms="PC|PS5"                            depthBuf="false"  numColBufs="1"  format="RED16F" scale="0.5" pointSampleColBuf0="true"   numUniformBuffers="3" numSlices="2" hasMips="true" autoGenMips="false" mipsSRVs="true" />
   </Setup>
 
   <!-- Scene rendering -->
@@ -937,7 +937,7 @@
       <ColourMask channels="R" />
       <SetContext zwrite="false" colourWrite="true" cullMode="none" blendMode="replace" depthTest="always" alphaToCoverage="false" stencilMode="disabled" />
       <BindBuffer sampler="gBufferMap"  sourceRT="HDRBUF_0" bufIndex="0" />
-      <DrawQuadMT material="materials/PostProcess.material.mbin" context="COPYTOLUM" />
+      <DrawQuadMT material="materials/PostProcess.material.mbin" context="COPY_RGB2LUM_LINEAR" />
       <EndTarget flushCB="true" flushDB="false" /> -->
     </Stage>
     
@@ -973,8 +973,14 @@
       <!-- Transparent Objects -->
       <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="add" depthTest="less"  stencilMode="maskWrite" stencilRef="4"  stencilMask="4"/>
       <DoForwardLightLoop type="Mesh"     class="Additive"    context="LIT_FORWARD" order="BACK_TO_FRONT" />
+
+      <ColourMask channels="RGBA"  />
+      <SetContext zwrite="true" colourWrite="true" cullMode="back" blendMode="add" depthTest="less" stencilMode="maskWrite" stencilRef="4" stenciMask="4" />
+      <DrawGeometry type="LINERENDERER"  class="Opaque"   context="LINE3D"            order="STATECHANGES" />
+
       <UnbindBuffers />
-      <EndTarget flushCB="false" flushDB="false" />
+      <EndTarget flushCB="false" flushDB="true" />
+
     </Stage>
 
     <Stage id="TranslucentNormal" enabled="true" >
@@ -983,8 +989,8 @@
       <BindBuffer sampler="gShadowMap"       sourceRT="SHADOWBUF"       bufIndex="32" />
       <BindBuffer sampler="gCloudShadowMap"  sourceRT="CLOUDSHADOWS"    bufIndex="0" addressMode="wrap" />
       <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="blend" depthTest="less"  stencilMode="maskWrite" stencilRef="4"  stencilMask="4"/>
-      <DoForwardLightLoop type="Mesh"     class="Translucent" context="LIT_FORWARD" order="BACK_TO_FRONT" />
       <DoForwardLightLoop type="Mesh"     class="Additive" context="LIT_FORWARD" order="BACK_TO_FRONT" />
+      <DoForwardLightLoop type="Mesh"     class="Translucent" context="LIT_FORWARD" order="BACK_TO_FRONT" />
       <UnbindBuffers />
       <EndTarget flushCB="false" flushDB="false" />
     </Stage>
@@ -1001,8 +1007,8 @@
       <BindBuffer sampler="gShadowMap"       sourceRT="SHADOWBUF"       bufIndex="32" />
       <BindBuffer sampler="gCloudShadowMap"  sourceRT="CLOUDSHADOWS"    bufIndex="0" addressMode="wrap" />
       <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="blend" depthTest="less"  stencilMode="maskWrite" stencilRef="20"  stencilMask="20" />
-      <DoForwardLightLoop type="Mesh"     class="Translucent" context="LIT_FRWD_REFR_H" order="BACK_TO_FRONT" />
       <DoForwardLightLoop type="Mesh"     class="Additive" context="LIT_FRWD_REFR_H" order="BACK_TO_FRONT" />
+      <DoForwardLightLoop type="Mesh"     class="Translucent" context="LIT_FRWD_REFR_H" order="BACK_TO_FRONT" />
       <UnbindBuffers />
       <EndTarget flushCB="true" flushDB="false" />
     </Stage>
@@ -1070,7 +1076,7 @@
       <!--<ClearTarget colBuf0="false" depthBuf="false" stencilBuf="true" />-->
       <ColourMask channels="RGB" colBuf1="true" />
       <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="blend" depthTest="lessEqual" stencilMode="maskWrite"  stencilRef="36"  stencilMask="36"/>
-      <!-- DoForwardLightLoop type="Mesh"     class="Highlight"            context="LIT_FORWARD_WITH_MASK" order="BACK_TO_FRONT" / -->
+      <DoForwardLightLoop type="Mesh"     class="Highlight"            context="LIT_FORWARD_WITH_MASK" order="BACK_TO_FRONT" />
       <SetContext stencilMode="disabled" />
 
       <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="blend" depthTest="lessEqual" stencilMode="maskWrite"  stencilRef="36"  stencilMask="36"/>
@@ -1162,21 +1168,13 @@
       <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="Blend_OutputAlpha" depthTest="less" />
       <DoForwardLightLoop type="Mesh"  class="GlowTranslucent" context="LIT_FORWARD"   order="BACK_TO_FRONT" />
       <DoForwardLightLoop type="Trail" class="Translucent"     context="LIGHTING_GLOW" order="STATECHANGES"  />
-      <DoForwardLightLoop type="Trail" class="Additive"     context="LIGHTING_GLOW" order="STATECHANGES"  />
       <DoForwardLightLoop type="Trail" class="Additive"        context="LIGHTING_GLOW" order="STATECHANGES"  />
       <UnbindBuffers />
       <EndTarget flushCB="true" flushDB="false" />
 
     </Stage>
       
-    <Stage id="3dLines">
-      <BeginTarget target="HDRBUF_0" depthTarget="DEPTH" />
-      <ColourMask channels="RGBA"  />
-      <SetContext zwrite="true" colourWrite="true" cullMode="back" blendMode="blend" depthTest="less" stencilMode="maskWrite" stencilRef="4" stenciMask="4" />
-      <DrawGeometry type="LINERENDERER"  class="Opaque"   context="LINE3D"            order="STATECHANGES" />
-      <EndTarget flushCB="true" flushDB="true" />
-    </Stage>    
-
+    
     <Stage id="LUTMaskClear">
       <BeginTarget target="LUT_MASK" depthTarget="DEPTH" readOnlyDepth="true" onlyStencil="true" />      
       <ColourMask channels="R" />
@@ -1190,7 +1188,7 @@
       <ColourMask channels="R" />
       <SetContext zwrite="false" colourWrite="true" cullMode="none" blendMode="replace" depthTest="always" alphaToCoverage="false" stencilMode="disabled" />
       <BindBuffer sampler="gBufferMap"  sourceRT="HDRBUF_0" bufIndex="0" />
-      <DrawQuadMT material="materials/PostProcess.material.mbin" context="COPYTOLUM" />
+      <DrawQuadMT material="materials/PostProcess.material.mbin" context="COPY_RGB2LUM_LINEAR" />
       <EndTarget flushCB="true" flushDB="false" /> -->
     </Stage>
 
@@ -1671,7 +1669,7 @@
     </Stage>
 
     <Stage id="SSR_March" enabled="false">
-      <BeginTarget target="SSR_VAR_T_H" depthTarget="DEPTH" />
+      <BeginTarget target="SSR_VAR_T_H" />
       <ColourMask channels="RGBA"/>
       <ClearTarget colBuf0="false" depthBuf="false" stencilBuf="false" />
       <BindBuffer sampler="gBufferMap"    sourceRT="SSR_VAR_T_F"        bufIndex="0"  />
@@ -2193,7 +2191,7 @@
       <ColourMask channels="RGBA"/>
       <SetContext zwrite="false" colourWrite="true" cullMode="none" blendMode="replace" depthTest="always" alphaToCoverage="false"/>
       <BindBuffer sampler="gBufferMap"  sourceRT="MOTIONRESOLVE" bufIndex="0" />
-      <DrawQuadMT material="materials/PostProcess.material.mbin" context="COPYTOLUM" />
+      <DrawQuadMT material="materials/PostProcess.material.mbin" context="COPY_RGB2LUM_GAMMA" />
       <UnbindBuffers />
       <EndTarget flushCB="true" flushDB="false" />
 
@@ -2225,6 +2223,7 @@
       <BindBuffer sampler="gBufferMap"  sourceRT="PARTICLES" bufIndex="0" />
       <BindBuffer sampler="gBuffer1Map"  sourceRT="LUM_BUF_OP" bufIndex="0" />
       <BindBuffer sampler="gBuffer2Map"  sourceRT="LUM_BUF_TR" bufIndex="0" />
+      <BindBuffer sampler="gBuffer3Map"  sourceRT="GBUFFER"    bufIndex="3" />
       <DrawQuadMT material="materials/PostProcess.material.mbin" context="FSR2_GENREACT" />
       <EndTarget flushCB="true" flushDB="false" />
       
@@ -2232,10 +2231,11 @@
     </Stage>
 
     <Stage id="FFX_SUPER_RES" enabled="false" >
-      <BeginTarget target="" />
+      <BeginTarget target=""  />
       <DiscardTargetContents colBuf0="true" />
       <BindBuffer sampler="gBufferMap"  sourceRT="MOTIONRESOLVE" bufIndex="0" />
-      <SetContext zwrite="false" colourWrite="true" cullMode="none" blendMode="replace" depthTest="always" alphaToCoverage="false" stencilMode="disabled" />
+      <SetContext zwrite="false" colourWrite="true" cullMode="none" blendMode="replace" depthTest="always" alphaToCoverage="false"  />
+      <!-- <DrawQuadMT material="materials/PostProcess.material.mbin" context="UPSAMPLE_5TAP_BICUBIC" /> -->
       <DrawQuadMT material="materials/PostProcess.material.mbin" context="FFX_SUPER_RES" />
       <UnbindBuffers />
       <EndTarget flushCB="false" flushDB="false" />

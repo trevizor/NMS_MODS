@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.98.0)-->
+<!--File created using MBINCompiler version (4.0.0)-->
 <Data template="GcCreatureGlobals">
   <Property name="NumCreaturesRequiredForDiscoveryMission" value="8" />
   <Property name="AllCreaturesDiscoveredBonusMul" value="5" />
@@ -647,23 +647,23 @@
         <Property name="z" value="0" />
       </Property>
     </Property>
-    <Property name="FOVStrength" value="0" />
-    <Property name="FOVFrequency" value="0" />
+    <Property name="FovStrength" value="0" />
+    <Property name="FovFrequency" value="0" />
   </Property>
   <Property name="PatrolSwitchMinTime" value="0.5" />
   <Property name="ExtraFollowStrength" value="1" />
   <Property name="ExtraFollowFreq1" value="0.5" />
   <Property name="ExtraFollowFreq2" value="3" />
-  <Property name="SandWormChangeDirectionTime" value="2.25" />  
-  <Property name="SandWormSteerAdjustTime" value="0.25" />  
-  <Property name="SandWormMaxSteer" value="1" />  
-  <Property name="SandWormMaxHeightAdjust" value="3" /> 
-  <Property name="SandWormJumpHeight" value="0.15" /> 
-  <Property name="SandWormJumpTime" value="0.5" />  
-  <Property name="SandWormSubmergeDepth" value="1" /> 
-  <Property name="SandWormSubmergeTime" value="4" />  
-  <Property name="SandWormSurfaceTime" value="6" /> 
-  <Property name="SandWormMaxJumps" value="15" /> 
+  <Property name="SandWormChangeDirectionTime" value="2.25" />
+  <Property name="SandWormSteerAdjustTime" value="0.25" />
+  <Property name="SandWormMaxSteer" value="1" />
+  <Property name="SandWormMaxHeightAdjust" value="3" />
+  <Property name="SandWormJumpHeight" value="0.15" />
+  <Property name="SandWormJumpTime" value="0.5" />
+  <Property name="SandWormSubmergeDepth" value="1" />
+  <Property name="SandWormSubmergeTime" value="4" />
+  <Property name="SandWormSurfaceTime" value="6" />
+  <Property name="SandWormMaxJumps" value="15" />
   <Property name="SandWormDespawnDist" value="3500" />
   <Property name="SandWormSpawnTimer" value="300" />
   <Property name="SandWormSpawnChanceMin" value="0.01" />
@@ -1136,15 +1136,16 @@
   <Property name="PetMaxSizeOffPlanet" value="1" />
   <Property name="PetTeleportDistOffPlanet" value="30" />
   <Property name="PetTeleportDistOnPlanet" value="150" />
-  <Property name="PetAnimSpeedBoostSmallerThan" value="1.2" />
-  <Property name="PetAnimSpeedBoostStrength" value="1" />
-  <Property name="PetAnimSpeedMax" value="1.5" />
-  <Property name="PetAnimSpeedMin" value="0.2" />
-  <Property name="PetNavRadForMinTurn" value="0.5" />
-  <Property name="PetNavRadForMaxTurn" value="3" />
-  <Property name="PetMinTurnRad" value="0.2" />
-  <Property name="PetMaxTurnRad" value="1" />
-  <Property name="PetMoodCurvePower" value="0.7" />
+  <Property name="PetCanSummonOnFreighter" value="True" />
+  <Property name="PetAnimSpeedBoostSmallerThan" value="1" />
+  <Property name="PetAnimSpeedBoostStrength" value="1.5" />
+  <Property name="PetAnimSpeedMax" value="0.2" />
+  <Property name="PetAnimSpeedMin" value="0.5" />
+  <Property name="PetNavRadForMinTurn" value="3" />
+  <Property name="PetNavRadForMaxTurn" value="0.2" />
+  <Property name="PetMinTurnRad" value="1" />
+  <Property name="PetMaxTurnRad" value="0.7" />
+  <Property name="PetMoodCurvePower" value="0" />
   <Property name="PetOffPlanetEffect" value="GcScanEffectData.xml">
     <Property name="Id" value="" />
     <Property name="ScanEffectType" value="Creature" />
