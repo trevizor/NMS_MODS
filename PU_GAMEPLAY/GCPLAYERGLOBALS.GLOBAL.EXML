@@ -750,7 +750,7 @@
   <Property name="FreighterCoolFactor" value="1.5" />
   <Property name="MouseCrosshairVisible" value="True" />
   <Property name="MouseMaxLength" value="450" />
-  <Property name="MouseDeadZone" value="30" />
+  <Property name="MouseDeadZone" value="20" />
   <Property name="MouseMaxLengthVehicle" value="220" />
   <Property name="MouseDeadZoneVehicle" value="20" />
   <Property name="MouseAimZone" value="120" />
@@ -783,7 +783,7 @@
   <Property name="BulletClipMultiplier" value="2" />
   <Property name="LootForceMultiplier" value="20" />
   <Property name="WoundTimeMinimum" value="5" />
-  <Property name="WoundDamageLimit" value="175" />
+  <Property name="WoundDamageLimit" value="100" />
   <Property name="WoundDamageLimitShip" value="450" />
   <Property name="WoundDamageDecayTime" value="20" />
   <Property name="ResourceBlobFinalScaleDistance" value="0.8" />
@@ -923,8 +923,8 @@
   <Property name="SpeedLinesRadiusStartMax" value="150" />
   <Property name="SpeedLinesRadiusIncrement" value="4" />
   <Property name="SpeedLinesStartFade" value="0.9" />
-  <Property name="SpeedLinesMinAlpha" value="0.6" />
-  <Property name="SpeedLinesMaxAlpha" value="1" />
+  <Property name="SpeedLinesMinAlpha" value="0.1" />
+  <Property name="SpeedLinesMaxAlpha" value="0.3" />
   <Property name="SpeedLinesOffset" value="50" />
   <Property name="SleepFadeTime" value="3.5" />
   <Property name="StaminaRate" value="0.1" />
@@ -1268,10 +1268,10 @@
   <Property name="PainColourSeperateAmount" value="0.04" />
   <Property name="PainTime" value="0.4" />
   <Property name="PlayerBullet" value="GcProjectileLineData.xml">
-    <Property name="BulletLength" value="2" />
+    <Property name="BulletLength" value="0.5" />
     <Property name="BulletGlowWidthTime" value="5" />
-    <Property name="BulletGlowWidthMax" value="8" />
-    <Property name="BulletGlowWidthMin" value="8" />
+    <Property name="BulletGlowWidthMax" value="4" />
+    <Property name="BulletGlowWidthMin" value="4" />
     <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
       <Property name="Curve" value="Cubed" />
     </Property>
@@ -1379,10 +1379,10 @@
   <Property name="PickRange" value="15" />
   <Property name="DamageRateWhenUnderNoGravity" value="10" />
   <Property name="TakeDamageImpulse" value="35" />
-  <Property name="HardLandTime" value="1.5" />
-  <Property name="HardLandMin" value="8" />
-  <Property name="HardLandMax" value="240" />
-  <Property name="MeleeRange" value="8" />
+  <Property name="HardLandTime" value="0.5" />
+  <Property name="HardLandMin" value="5" />
+  <Property name="HardLandMax" value="18" />
+  <Property name="MeleeRange" value="9" />
   <Property name="MeleeTime" value="0.8" />
   <Property name="MeleeForcePush" value="100" />
   <Property name="MeleeOffset" value="0.8" />
@@ -1413,7 +1413,7 @@
   <Property name="MaxSlopeAngle" value="89" />
   <Property name="SlopeSlidingSpeed" value="-15" />
   <Property name="SlopeSlideBrake" value="18.5" />
-  <Property name="MinSlideTime" value="0.3" />
+  <Property name="MinSlideTime" value="0.1" />
   <Property name="MaxWalkableSlopeAngle" value="45" />
   <Property name="MinSpidermanSlopeAngle" value="45" />
   <Property name="MinTimeToHoldSpidermanPose" value="0.7" />

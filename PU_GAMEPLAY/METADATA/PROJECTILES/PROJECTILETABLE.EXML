@@ -30,16 +30,16 @@
       <Property name="Scale" value="1" />
       <Property name="IsAutonomous" value="False" />
       <Property name="ApplyCombatLevelMultipliers" value="False" />
-      <Property name="Radius" value="0.1" />
+      <Property name="Radius" value="1" />
       <Property name="CapsuleHeight" value="0" />
       <Property name="DefaultSpeed" value="200" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="2000000" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="8" />
-      <Property name="DefaultDamage" value="110" />
+      <Property name="DefaultDamage" value="220" /> <!-- MELEE -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Melee" />
@@ -141,16 +141,16 @@
       <Property name="Scale" value="1" />
       <Property name="IsAutonomous" value="False" />
       <Property name="ApplyCombatLevelMultipliers" value="False" />
-      <Property name="Radius" value="0.1" />
+      <Property name="Radius" value="0.3" />
       <Property name="CapsuleHeight" value="0" />
       <Property name="DefaultSpeed" value="200" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="2000000" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="8" />
-      <Property name="DefaultDamage" value="8" />
+      <Property name="DefaultDamage" value="46" /> <!-- MELEE_KICK -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Melee" />
@@ -252,16 +252,16 @@
       <Property name="Scale" value="1" />
       <Property name="IsAutonomous" value="False" />
       <Property name="ApplyCombatLevelMultipliers" value="False" />
-      <Property name="Radius" value="1" />
+      <Property name="Radius" value="0.5" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="480" />
+      <Property name="DefaultSpeed" value="100" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0.75" />
-      <Property name="DefaultDamage" value="1" />
+      <Property name="DefaultDamage" value="2" /> <!-- BOLTGUN -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
@@ -378,9 +378,9 @@
       <Property name="Life" value="0.5" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="1" />
+      <Property name="DefaultDamage" value="2" /> <!-- FLAMETHROW -->
       <Property name="ExtraPlayerDamage" value="2" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Explosion" />
@@ -492,14 +492,14 @@
       <Property name="ApplyCombatLevelMultipliers" value="False" />
       <Property name="Radius" value="1" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="300" />
+      <Property name="DefaultSpeed" value="80" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="2" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="1" />
+      <Property name="DefaultDamage" value="2" /> <!-- SHOTGUN -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Shotgun" />
@@ -609,16 +609,16 @@
       <Property name="Scale" value="1" />
       <Property name="IsAutonomous" value="False" />
       <Property name="ApplyCombatLevelMultipliers" value="False" />
-      <Property name="Radius" value="1" />
+      <Property name="Radius" value="0.25" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="60" />
+      <Property name="DefaultSpeed" value="90" />
       <Property name="Gravity" value="0.5" />
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="1" />
+      <Property name="DefaultDamage" value="2" /> <!-- SMG -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Burst" />
@@ -737,7 +737,7 @@
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="3" />
-      <Property name="DefaultDamage" value="1" />
+      <Property name="DefaultDamage" value="2" /> <!-- CANNON -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Cannon" />
@@ -831,16 +831,16 @@
       <Property name="Scale" value="1" />
       <Property name="IsAutonomous" value="False" />
       <Property name="ApplyCombatLevelMultipliers" value="False" />
-      <Property name="Radius" value="4" />
+      <Property name="Radius" value="3" />
       <Property name="CapsuleHeight" value="0" />
       <Property name="DefaultSpeed" value="60" />
       <Property name="Gravity" value="30" />
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="8" />
-      <Property name="DefaultDamage" value="1" />
+      <Property name="DefaultDamage" value="2" /> <!-- GRENADE -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Explosion" />
@@ -941,9 +941,9 @@
       <Property name="Life" value="6" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="25" />
+      <Property name="DefaultDamage" value="50" /> <!-- MINE_GREN -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Explosion" />
@@ -1035,9 +1035,9 @@
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="0" />
+      <Property name="DefaultDamage" value="0" /> <!-- STUN_GREN -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Explosion" />
@@ -1129,9 +1129,9 @@
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="1" />
+      <Property name="DefaultDamage" value="1" /> <!-- MINIROBOTGUN -->
       <Property name="ExtraPlayerDamage" value="3" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
@@ -1227,14 +1227,14 @@
       <Property name="ApplyCombatLevelMultipliers" value="True" />
       <Property name="Radius" value="0.5" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="90" />
+      <Property name="DefaultSpeed" value="80" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="1" />
+      <Property name="DefaultDamage" value="1" /> <!-- ROBOTGUN -->
       <Property name="ExtraPlayerDamage" value="1.5" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
@@ -1330,14 +1330,14 @@
       <Property name="ApplyCombatLevelMultipliers" value="False" />
       <Property name="Radius" value="2.5" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="90" />
+      <Property name="DefaultSpeed" value="80" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="0.1" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="100" />
+      <Property name="DefaultDamage" value="100" /> <!-- ROBOTGUNFRIENDL -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="PlayerWeapons" />
@@ -1438,9 +1438,9 @@
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="1" />
+      <Property name="DefaultDamage" value="1" /> <!-- ROBOTGUNWEAK -->
       <Property name="ExtraPlayerDamage" value="1" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
@@ -1534,16 +1534,16 @@
       <Property name="Scale" value="3" />
       <Property name="IsAutonomous" value="False" />
       <Property name="ApplyCombatLevelMultipliers" value="True" />
-      <Property name="Radius" value="0.5" />
+      <Property name="Radius" value="0.25" />
       <Property name="CapsuleHeight" value="0" />
       <Property name="DefaultSpeed" value="40" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="1" />
+      <Property name="DefaultDamage" value="1" /> <!-- ROBOTSMG -->
       <Property name="ExtraPlayerDamage" value="1.8" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
@@ -1637,16 +1637,16 @@
       <Property name="Scale" value="1" />
       <Property name="IsAutonomous" value="False" />
       <Property name="ApplyCombatLevelMultipliers" value="True" />
-      <Property name="Radius" value="0.5" />
+      <Property name="Radius" value="0.35" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="50" />
+      <Property name="DefaultSpeed" value="40" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="1" />
+      <Property name="DefaultDamage" value="1" /> <!-- ROBOTSHOTGUN -->
       <Property name="ExtraPlayerDamage" value="4" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
@@ -1742,19 +1742,19 @@
       <Property name="ApplyCombatLevelMultipliers" value="True" />
       <Property name="Radius" value="4" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="30" />
+      <Property name="DefaultSpeed" value="20" />
       <Property name="Gravity" value="30" />
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="25" />
+      <Property name="DefaultDamage" value="25" /> <!-- ROBOTGRENADE -->
       <Property name="ExtraPlayerDamage" value="5" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Explosion" />
       </Property>
-      <Property name="DefaultBounces" value="0" />
+      <Property name="DefaultBounces" value="2" />
       <Property name="BounceMaxSpeed" value="0" />
       <Property name="BounceDamping" value="0.8" />
       <Property name="BounceFinalStopTime" value="0" />
@@ -1850,14 +1850,14 @@
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="25" />
+      <Property name="DefaultDamage" value="25" /> <!-- ROBOTGRENADE2 -->
       <Property name="ExtraPlayerDamage" value="5" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Explosion" />
       </Property>
-      <Property name="DefaultBounces" value="0" />
+      <Property name="DefaultBounces" value="2" />
       <Property name="BounceMaxSpeed" value="0" />
       <Property name="BounceDamping" value="0.8" />
       <Property name="BounceFinalStopTime" value="0" />
@@ -1953,9 +1953,9 @@
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="1" />
+      <Property name="DefaultDamage" value="1" /> <!-- ROBOTBIGGUN -->
       <Property name="ExtraPlayerDamage" value="4" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
@@ -2037,19 +2037,19 @@
       <Property name="OverheatAudioEvent" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
-      <Property name="Scale" value="60" />
+      <Property name="Scale" value="70" />
       <Property name="IsAutonomous" value="False" />
       <Property name="ApplyCombatLevelMultipliers" value="False" />
-      <Property name="Radius" value="15" />
+      <Property name="Radius" value="20" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="3200" />
+      <Property name="DefaultSpeed" value="1800" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="2" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="1000" />
+      <Property name="DefaultDamage" value="2000" /> <!-- SHIPGUN -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipGun" />
@@ -2167,16 +2167,16 @@
       <Property name="Scale" value="1" />
       <Property name="IsAutonomous" value="False" />
       <Property name="ApplyCombatLevelMultipliers" value="False" />
-      <Property name="Radius" value="30" />
+      <Property name="Radius" value="40" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="2000" />
+      <Property name="DefaultSpeed" value="1800" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="1" />
+      <Property name="DefaultDamage" value="2" /> <!-- SHIPSHOTGUN -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipShotgun" />
@@ -2294,16 +2294,16 @@
       <Property name="Scale" value="35" />
       <Property name="IsAutonomous" value="False" />
       <Property name="ApplyCombatLevelMultipliers" value="False" />
-      <Property name="Radius" value="0.75" />
+      <Property name="Radius" value="2" />
       <Property name="CapsuleHeight" value="0" />
       <Property name="DefaultSpeed" value="1800" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="1" />
+      <Property name="DefaultDamage" value="2" /> <!-- SHIPMINIGUN -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipMinigun" />
@@ -2421,16 +2421,16 @@
       <Property name="Scale" value="1" />
       <Property name="IsAutonomous" value="False" />
       <Property name="ApplyCombatLevelMultipliers" value="False" />
-      <Property name="Radius" value="30" />
+      <Property name="Radius" value="45" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="1000" />
+      <Property name="DefaultSpeed" value="1800" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="1" />
+      <Property name="DefaultDamage" value="2" /> <!-- SHIPPLASMAGUN -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipPlasma" />
@@ -2559,14 +2559,14 @@
       <Property name="ApplyCombatLevelMultipliers" value="False" />
       <Property name="Radius" value="1" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="3000" />
+      <Property name="DefaultSpeed" value="1800" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="2" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="40" />
+      <Property name="DefaultDamage" value="40" /> <!-- TRADERGUN -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipGun" />
@@ -2611,7 +2611,7 @@
         <Property name="B" value="1" />
         <Property name="A" value="1" />
       </Property>
-      <Property name="BehaviourFlags" value="DestroyTerrain" />
+      <Property name="BehaviourFlags" value="None" />
       <Property name="Class" value="Ship" />
       <Property name="DefaultImpact" value="SHIPGUNHIT" />
       <Property name="CriticalImpact" value="" />
@@ -2670,14 +2670,14 @@
       <Property name="ApplyCombatLevelMultipliers" value="False" />
       <Property name="Radius" value="7.5" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="3000" />
+      <Property name="DefaultSpeed" value="1800" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="2" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="15" />
+      <Property name="DefaultDamage" value="20" /> <!-- POLICEGUN -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipGun" />
@@ -2781,14 +2781,14 @@
       <Property name="ApplyCombatLevelMultipliers" value="False" />
       <Property name="Radius" value="7.5" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="3000" />
+      <Property name="DefaultSpeed" value="1800" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="2" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="15" />
+      <Property name="DefaultDamage" value="20" /> <!-- AISHIPGUN -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipGun" />
@@ -2833,7 +2833,7 @@
         <Property name="B" value="1" />
         <Property name="A" value="1" />
       </Property>
-      <Property name="BehaviourFlags" value="DestroyTerrain" />
+      <Property name="BehaviourFlags" value="None" />
       <Property name="Class" value="Ship" />
       <Property name="DefaultImpact" value="SHIPGUNHIT" />
       <Property name="CriticalImpact" value="" />
@@ -2892,14 +2892,14 @@
       <Property name="ApplyCombatLevelMultipliers" value="False" />
       <Property name="Radius" value="40" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="1000" />
+      <Property name="DefaultSpeed" value="1800" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="2" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="15" />
+      <Property name="DefaultDamage" value="20" /> <!-- FREIGHTGUN -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipGun" />
@@ -2944,7 +2944,7 @@
         <Property name="B" value="1" />
         <Property name="A" value="1" />
       </Property>
-      <Property name="BehaviourFlags" value="DestroyTerrain" />
+      <Property name="BehaviourFlags" value="None" />
       <Property name="Class" value="Ship" />
       <Property name="DefaultImpact" value="SHIPGUNHIT" />
       <Property name="CriticalImpact" value="" />
@@ -3003,14 +3003,14 @@
       <Property name="ApplyCombatLevelMultipliers" value="False" />
       <Property name="Radius" value="40" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="1000" />
+      <Property name="DefaultSpeed" value="1800" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="2" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="300" />
+      <Property name="DefaultDamage" value="300" /> <!-- COP_FREIGHTGUN -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipGun" />
@@ -3055,7 +3055,7 @@
         <Property name="B" value="1" />
         <Property name="A" value="1" />
       </Property>
-      <Property name="BehaviourFlags" value="DestroyTerrain" />
+      <Property name="BehaviourFlags" value="None" />
       <Property name="Class" value="Ship" />
       <Property name="DefaultImpact" value="SHIPGUNHIT" />
       <Property name="CriticalImpact" value="" />
@@ -3119,9 +3119,9 @@
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="200" />
+      <Property name="DefaultDamage" value="200" /> <!-- BASE_TURRET_M -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Explosion" />
@@ -3213,9 +3213,9 @@
       <Property name="Life" value="4" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="5" />
-      <Property name="DefaultDamage" value="1" />
+      <Property name="DefaultDamage" value="2" /> <!-- VEHICLEGUN -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="VehicleGun" />
@@ -3300,16 +3300,16 @@
       <Property name="Scale" value="55" />
       <Property name="IsAutonomous" value="False" />
       <Property name="ApplyCombatLevelMultipliers" value="False" />
-      <Property name="Radius" value="25" />
+      <Property name="Radius" value="45" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="2200" />
+      <Property name="DefaultSpeed" value="1800" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="10" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="1" />
+      <Property name="DefaultDamage" value="2" /> <!-- SHIPROCKET -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipRockets" />
@@ -3410,9 +3410,9 @@
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="5" />
+      <Property name="DefaultDamage" value="5" /> <!-- FIENDSPIT -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
@@ -3499,14 +3499,14 @@
       <Property name="ApplyCombatLevelMultipliers" value="False" />
       <Property name="Radius" value="0.5" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="41" />
+      <Property name="DefaultSpeed" value="35" />
       <Property name="Gravity" value="20" />
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="1" />
+      <Property name="DefaultDamage" value="1" /> <!-- SCUTTLERSPIT -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
@@ -3598,9 +3598,9 @@
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="1" />
+      <Property name="DefaultDamage" value="1" /> <!-- TURRETINT -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
@@ -3701,9 +3701,9 @@
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="25" />
+      <Property name="DefaultDamage" value="25" /> <!-- SENMECHCANON -->
       <Property name="ExtraPlayerDamage" value="5" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Explosion" />
@@ -3804,9 +3804,9 @@
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="1" />
+      <Property name="DefaultDamage" value="1" /> <!-- SENMECHSMG -->
       <Property name="ExtraPlayerDamage" value="3" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
@@ -3907,9 +3907,9 @@
       <Property name="Life" value="4" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="5" />
-      <Property name="DefaultDamage" value="1" />
+      <Property name="DefaultDamage" value="1" /> <!-- VEHICLESTUNGUN -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="VehicleGun" />
@@ -4018,9 +4018,9 @@
       <Property name="Life" value="2" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="15" />
+      <Property name="DefaultDamage" value="15" /> <!-- PIRATERAIDGUN -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipGun" />
@@ -4065,7 +4065,7 @@
         <Property name="B" value="1" />
         <Property name="A" value="1" />
       </Property>
-      <Property name="BehaviourFlags" value="DestroyTerrain" />
+      <Property name="BehaviourFlags" value="None" />
       <Property name="Class" value="Ship" />
       <Property name="DefaultImpact" value="PIRATERAIDIMP" />
       <Property name="CriticalImpact" value="" />
@@ -4129,9 +4129,9 @@
       <Property name="Life" value="2" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="40" />
+      <Property name="DefaultDamage" value="80" /> <!-- SQUADGUN -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipGun" />
@@ -4176,7 +4176,7 @@
         <Property name="B" value="1" />
         <Property name="A" value="1" />
       </Property>
-      <Property name="BehaviourFlags" value="DestroyTerrain" />
+      <Property name="BehaviourFlags" value="None" />
       <Property name="Class" value="Ship" />
       <Property name="DefaultImpact" value="SHIPGUNHIT" />
       <Property name="CriticalImpact" value="" />
@@ -4240,9 +4240,9 @@
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="100" />
-      <Property name="PhysicsPush" value="2.5" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="0" />
+      <Property name="DefaultDamage" value="0" /> <!-- CREATURE_SHOCK -->
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Melee" />
@@ -4329,14 +4329,14 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="WPN_PL_HANDLASER_OVERHEAT" />
       </Property>
-      <Property name="DefaultDamage" value="1" />
-      <Property name="ExtraPlayerDamage" value="0" />
+      <Property name="DefaultDamage" value="2" /> <!-- PLAYER -->
+      <Property name="ExtraPlayerDamage" value="0" /> <!-- PLAYER -->
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Laser" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="MPPLAYER" />
-      <Property name="ImpactEffect" value="LASERSUBSTANCE" />
+      <Property name="ImpactEffect" value="LASERSUBSTANCE" /> <!-- PLAYER -->
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="LASERNEEDTECH" />
@@ -4406,7 +4406,7 @@
       <Property name="HitRate" value="0.05" />
       <Property name="SingleHit" value="False" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="0.1" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="MiningHitRate" value="0.4" />
       <Property name="HasLight" value="True" />
       <Property name="CanMine" value="False" />
@@ -4415,9 +4415,9 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="LightIntensity" value="1.5" />
       <Property name="LightColour" value="Colour.xml">
-        <Property name="R" value="0.351" />
+        <Property name="R" value="0.96" />
         <Property name="G" value="0.967" />
-        <Property name="B" value="0.388" />
+        <Property name="B" value="0.96" />
         <Property name="A" value="1" />
       </Property>
       <Property name="Colour" value="Colour.xml">
@@ -4453,14 +4453,14 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="WPN_PL_HANDLASER_OVERHEAT" />
       </Property>
-      <Property name="DefaultDamage" value="1" />
-      <Property name="ExtraPlayerDamage" value="0" />
+      <Property name="DefaultDamage" value="2" /> <!-- PLAYER_RAIL -->
+      <Property name="ExtraPlayerDamage" value="0" /> <!-- PLAYER_RAIL -->
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Rail" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="MPPLAYER_RAIL" />
-      <Property name="ImpactEffect" value="RAILIMPACT" />
+      <Property name="ImpactEffect" value="RAILIMPACT" /> <!-- PLAYER_RAIL -->
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="RAILIMPACT" />
@@ -4514,7 +4514,7 @@
       <Property name="HitRate" value="1" />
       <Property name="SingleHit" value="True" />
       <Property name="RagdollPush" value="10" />
-      <Property name="PhysicsPush" value="0.1" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="MiningHitRate" value="0.4" />
       <Property name="HasLight" value="True" />
       <Property name="CanMine" value="False" />
@@ -4561,14 +4561,14 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="WPN_PL_HANDLASER_OVERHEAT" />
       </Property>
-      <Property name="DefaultDamage" value="1" />
-      <Property name="ExtraPlayerDamage" value="0" />
+      <Property name="DefaultDamage" value="2" /> <!-- PLAYER_BOLT -->
+      <Property name="ExtraPlayerDamage" value="0" /> <!-- PLAYER_BOLT -->
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Rail" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="MPPLAYER_RAIL" />
-      <Property name="ImpactEffect" value="RAILIMPACT" />
+      <Property name="ImpactEffect" value="RAILIMPACT" /> <!-- PLAYER_BOLT -->
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="RAILIMPACT" />
@@ -4622,7 +4622,7 @@
       <Property name="HitRate" value="1" />
       <Property name="SingleHit" value="True" />
       <Property name="RagdollPush" value="10" />
-      <Property name="PhysicsPush" value="0.1" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="MiningHitRate" value="0.4" />
       <Property name="HasLight" value="True" />
       <Property name="CanMine" value="False" />
@@ -4669,14 +4669,14 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="WPN_SHIP_OVERHEAT" />
       </Property>
-      <Property name="DefaultDamage" value="2" />
-      <Property name="ExtraPlayerDamage" value="0" />
+      <Property name="DefaultDamage" value="4" /> <!-- PLAYER_SHIP -->
+      <Property name="ExtraPlayerDamage" value="0" /> <!-- PLAYER_SHIP -->
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipLaser" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="MPPLAYER_SHIP" />
-      <Property name="ImpactEffect" value="LASERHIT" />
+      <Property name="ImpactEffect" value="LASERHIT" /> <!-- PLAYER_SHIP -->
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="LASERSHIP" />
@@ -4714,7 +4714,7 @@
       <Property name="HitRate" value="0.5" />
       <Property name="SingleHit" value="False" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="0.1" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="MiningHitRate" value="0.4" />
       <Property name="HasLight" value="True" />
       <Property name="CanMine" value="False" />
@@ -4761,19 +4761,19 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
-      <Property name="DefaultDamage" value="9" />
-      <Property name="ExtraPlayerDamage" value="0" />
+      <Property name="DefaultDamage" value="9" /> <!-- AI_SHIP -->
+      <Property name="ExtraPlayerDamage" value="0" /> <!-- AI_SHIP -->
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipLaser" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="SHIPLASER" />
-      <Property name="ImpactEffect" value="LASERPLAYER" />
+      <Property name="ImpactEffect" value="LASERPLAYER" /> <!-- AI_SHIP -->
       <Property name="Impacts" />
       <Property name="HitRate" value="0.2" />
       <Property name="SingleHit" value="False" />
       <Property name="RagdollPush" value="0" />
-      <Property name="PhysicsPush" value="0.1" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="MiningHitRate" value="0.4" />
       <Property name="HasLight" value="False" />
       <Property name="CanMine" value="False" />
@@ -4820,19 +4820,19 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
-      <Property name="DefaultDamage" value="15" />
-      <Property name="ExtraPlayerDamage" value="0" />
+      <Property name="DefaultDamage" value="15" /> <!-- AI_FREIGHTER -->
+      <Property name="ExtraPlayerDamage" value="0" /> <!-- AI_FREIGHTER -->
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipLaser" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="FREIGHTERLASER" />
-      <Property name="ImpactEffect" value="LASERPLAYER" />
+      <Property name="ImpactEffect" value="LASERPLAYER" /> <!-- AI_FREIGHTER -->
       <Property name="Impacts" />
       <Property name="HitRate" value="0.2" />
       <Property name="SingleHit" value="False" />
       <Property name="RagdollPush" value="0" />
-      <Property name="PhysicsPush" value="0.1" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="MiningHitRate" value="0.4" />
       <Property name="HasLight" value="False" />
       <Property name="CanMine" value="False" />
@@ -4879,19 +4879,19 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
-      <Property name="DefaultDamage" value="15" />
-      <Property name="ExtraPlayerDamage" value="0" />
+      <Property name="DefaultDamage" value="15" /> <!-- COP_FREIGHTER -->
+      <Property name="ExtraPlayerDamage" value="0" /> <!-- COP_FREIGHTER -->
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipLaser" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="FREIGHTERLASER" />
-      <Property name="ImpactEffect" value="LASERPLAYER" />
+      <Property name="ImpactEffect" value="LASERPLAYER" /> <!-- COP_FREIGHTER -->
       <Property name="Impacts" />
       <Property name="HitRate" value="0.2" />
       <Property name="SingleHit" value="False" />
       <Property name="RagdollPush" value="0" />
-      <Property name="PhysicsPush" value="0.1" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="MiningHitRate" value="0.4" />
       <Property name="HasLight" value="False" />
       <Property name="CanMine" value="False" />
@@ -4938,19 +4938,19 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
-      <Property name="DefaultDamage" value="1" />
-      <Property name="ExtraPlayerDamage" value="2" />
+      <Property name="DefaultDamage" value="1" /> <!-- ROBOT_QUAD -->
+      <Property name="ExtraPlayerDamage" value="2" /> <!-- ROBOT_QUAD -->
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="LASERDAMAGE" />
-      <Property name="ImpactEffect" value="LASERPLAYER" />
+      <Property name="ImpactEffect" value="LASERPLAYER" /> <!-- ROBOT_QUAD -->
       <Property name="Impacts" />
       <Property name="HitRate" value="0.1" />
       <Property name="SingleHit" value="False" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="0.1" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="MiningHitRate" value="0.4" />
       <Property name="HasLight" value="False" />
       <Property name="CanMine" value="False" />
@@ -4997,19 +4997,19 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
-      <Property name="DefaultDamage" value="1" />
-      <Property name="ExtraPlayerDamage" value="5" />
+      <Property name="DefaultDamage" value="1" /> <!-- ROBOT_WALKER -->
+      <Property name="ExtraPlayerDamage" value="5" /> <!-- ROBOT_WALKER -->
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="WALKERLASER" />
-      <Property name="ImpactEffect" value="LASERPLAYERLRG" />
+      <Property name="ImpactEffect" value="LASERPLAYERLRG" /> <!-- ROBOT_WALKER -->
       <Property name="Impacts" />
       <Property name="HitRate" value="0.1" />
       <Property name="SingleHit" value="False" />
       <Property name="RagdollPush" value="10" />
-      <Property name="PhysicsPush" value="0.1" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="MiningHitRate" value="0.1" />
       <Property name="HasLight" value="False" />
       <Property name="CanMine" value="True" />
@@ -5056,14 +5056,14 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="WPN_SHIP_OVERHEAT" />
       </Property>
-      <Property name="DefaultDamage" value="1" />
-      <Property name="ExtraPlayerDamage" value="0" />
+      <Property name="DefaultDamage" value="1" /> <!-- VEHICLE -->
+      <Property name="ExtraPlayerDamage" value="0" /> <!-- VEHICLE -->
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="VehicleLaser" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="MPVEHICLE" />
-      <Property name="ImpactEffect" value="VEHICLELASERSUB" />
+      <Property name="ImpactEffect" value="VEHICLELASERSUB" /> <!-- VEHICLE -->
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="VEHICLELASERSUB" />
@@ -5117,7 +5117,7 @@
       <Property name="HitRate" value="0.1" />
       <Property name="SingleHit" value="False" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="0.1" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="MiningHitRate" value="0.4" />
       <Property name="HasLight" value="True" />
       <Property name="CanMine" value="True" />
@@ -5164,19 +5164,19 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
-      <Property name="DefaultDamage" value="100" />
-      <Property name="ExtraPlayerDamage" value="0" />
+      <Property name="DefaultDamage" value="100" /> <!-- BASE_TURRET_L -->
+      <Property name="ExtraPlayerDamage" value="0" /> <!-- BASE_TURRET_L -->
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="LASERDAMAGE" />
-      <Property name="ImpactEffect" value="LASERPLAYER" />
+      <Property name="ImpactEffect" value="LASERPLAYER" /> <!-- BASE_TURRET_L -->
       <Property name="Impacts" />
       <Property name="HitRate" value="0.2" />
       <Property name="SingleHit" value="False" />
       <Property name="RagdollPush" value="0" />
-      <Property name="PhysicsPush" value="0.1" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="MiningHitRate" value="0.4" />
       <Property name="HasLight" value="False" />
       <Property name="CanMine" value="False" />
@@ -5223,19 +5223,19 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
-      <Property name="DefaultDamage" value="0" />
-      <Property name="ExtraPlayerDamage" value="0" />
+      <Property name="DefaultDamage" value="0" /> <!-- TURRET_POINTER -->
+      <Property name="ExtraPlayerDamage" value="0" /> <!-- TURRET_POINTER -->
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="LASERDAMAGE" />
-      <Property name="ImpactEffect" value="" />
+      <Property name="ImpactEffect" value="" /> <!-- TURRET_POINTER -->
       <Property name="Impacts" />
       <Property name="HitRate" value="0.2" />
       <Property name="SingleHit" value="False" />
       <Property name="RagdollPush" value="0" />
-      <Property name="PhysicsPush" value="0.1" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="MiningHitRate" value="0.4" />
       <Property name="HasLight" value="False" />
       <Property name="CanMine" value="False" />
@@ -5282,19 +5282,19 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
-      <Property name="DefaultDamage" value="1" />
-      <Property name="ExtraPlayerDamage" value="0" />
+      <Property name="DefaultDamage" value="2" /> <!-- PET -->
+      <Property name="ExtraPlayerDamage" value="0" /> <!-- PET -->
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="LASERDAMAGE" />
-      <Property name="ImpactEffect" value="" />
+      <Property name="ImpactEffect" value="" /> <!-- PET -->
       <Property name="Impacts" />
       <Property name="HitRate" value="0.2" />
       <Property name="SingleHit" value="False" />
       <Property name="RagdollPush" value="0" />
-      <Property name="PhysicsPush" value="0.1" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="MiningHitRate" value="0.4" />
       <Property name="HasLight" value="False" />
       <Property name="CanMine" value="False" />
@@ -5341,14 +5341,14 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="WPN_SHIP_OVERHEAT" />
       </Property>
-      <Property name="DefaultDamage" value="1" />
-      <Property name="ExtraPlayerDamage" value="0" />
+      <Property name="DefaultDamage" value="2" /> <!-- VEHICLE_ARM -->
+      <Property name="ExtraPlayerDamage" value="0" /> <!-- VEHICLE_ARM -->
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="VehicleLaser" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="MPVEHICLE" />
-      <Property name="ImpactEffect" value="VEHICLELASERSUB" />
+      <Property name="ImpactEffect" value="VEHICLELASERSUB" /> <!-- VEHICLE_ARM -->
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="VEHICLELASERSUB" />
@@ -5402,7 +5402,7 @@
       <Property name="HitRate" value="0.1" />
       <Property name="SingleHit" value="False" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="0.1" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="MiningHitRate" value="0.4" />
       <Property name="HasLight" value="True" />
       <Property name="CanMine" value="True" />
@@ -5465,14 +5465,14 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="WPN_SHIP_OVERHEAT" />
       </Property>
-      <Property name="DefaultDamage" value="0" />
-      <Property name="ExtraPlayerDamage" value="0" />
+      <Property name="DefaultDamage" value="0" /> <!-- SHIP_TRACER -->
+      <Property name="ExtraPlayerDamage" value="0" /> <!-- SHIP_TRACER -->
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipLaser" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="MPPLAYER_SHIP" />
-      <Property name="ImpactEffect" value="LASERHIT" />
+      <Property name="ImpactEffect" value="LASERHIT" /> <!-- SHIP_TRACER -->
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="LASERSHIP" />
@@ -5510,7 +5510,7 @@
       <Property name="HitRate" value="0.5" />
       <Property name="SingleHit" value="False" />
       <Property name="RagdollPush" value="5" />
-      <Property name="PhysicsPush" value="0.1" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="MiningHitRate" value="0.4" />
       <Property name="HasLight" value="True" />
       <Property name="CanMine" value="False" />
@@ -5557,19 +5557,19 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
-      <Property name="DefaultDamage" value="8" />
-      <Property name="ExtraPlayerDamage" value="0" />
+      <Property name="DefaultDamage" value="9" /> <!-- AI_SHIP_MINING -->
+      <Property name="ExtraPlayerDamage" value="0" /> <!-- AI_SHIP_MINING -->
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipLaser" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="SHIPLASER" />
-      <Property name="ImpactEffect" value="MININGLASERIMP" />
+      <Property name="ImpactEffect" value="MININGLASERIMP" /> <!-- AI_SHIP_MINING -->
       <Property name="Impacts" />
       <Property name="HitRate" value="0.2" />
       <Property name="SingleHit" value="False" />
       <Property name="RagdollPush" value="0" />
-      <Property name="PhysicsPush" value="0.1" />
+      <Property name="PhysicsPush" value="8" />
       <Property name="MiningHitRate" value="0.4" />
       <Property name="HasLight" value="True" />
       <Property name="CanMine" value="True" />

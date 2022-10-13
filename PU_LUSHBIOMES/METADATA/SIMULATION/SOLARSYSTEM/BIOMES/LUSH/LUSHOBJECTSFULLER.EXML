@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.91.0)-->
+<!--File created using MBINCompiler version (4.0.0)-->
 <Data template="GcExternalObjectList">
   <Property name="Objects" value="GcEnvironmentSpawnData.xml">
     <Property name="Creatures" />
     <Property name="DistantObjects" />
     <Property name="Landmarks">
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- HQTREEREF -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -164,7 +167,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.12" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -178,7 +181,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -194,9 +197,9 @@
             <Property name="FadeOutOffsetDistance" value="0" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="20" />
+              <Property value="10" />
+              <Property value="30" />
               <Property value="40" />
-              <Property value="60" />
               <Property value="500" />
             </Property>
           </Property>
@@ -213,19 +216,22 @@
             <Property name="FadeOutOffsetDistance" value="0" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
+              <Property value="10" />
+              <Property value="40" />
+              <Property value="120" />
               <Property value="500" />
             </Property>
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- HQTREEREF -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -394,7 +400,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -410,9 +416,9 @@
             <Property name="FadeOutOffsetDistance" value="0" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="20" />
+              <Property value="10" />
+              <Property value="30" />
               <Property value="40" />
-              <Property value="60" />
               <Property value="500" />
             </Property>
           </Property>
@@ -429,19 +435,22 @@
             <Property name="FadeOutOffsetDistance" value="0" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
+              <Property value="10" />
+              <Property value="40" />
+              <Property value="120" />
               <Property value="500" />
             </Property>
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- HQTREEREF -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -596,7 +605,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.12" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -610,7 +619,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -626,9 +635,9 @@
             <Property name="FadeOutOffsetDistance" value="0" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="20" />
+              <Property value="10" />
+              <Property value="30" />
               <Property value="40" />
-              <Property value="60" />
               <Property value="500" />
             </Property>
           </Property>
@@ -645,19 +654,22 @@
             <Property name="FadeOutOffsetDistance" value="0" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
+              <Property value="10" />
+              <Property value="40" />
+              <Property value="120" />
               <Property value="500" />
             </Property>
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- HQTREEREF -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/HQLUSH/HQTREES/HQTREEREF.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -707,7 +719,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.12" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -721,7 +733,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -737,9 +749,9 @@
             <Property name="FadeOutOffsetDistance" value="0" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="20" />
+              <Property value="10" />
+              <Property value="30" />
               <Property value="40" />
-              <Property value="60" />
               <Property value="500" />
             </Property>
           </Property>
@@ -756,9 +768,9 @@
             <Property name="FadeOutOffsetDistance" value="0" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
+              <Property value="10" />
+              <Property value="40" />
+              <Property value="120" />
               <Property value="500" />
             </Property>
           </Property>
@@ -766,11 +778,14 @@
       </Property>
     </Property>
     <Property name="Objects">
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- MEDIUMBUSH -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/PLANTS/MEDIUMBUSH.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -855,7 +870,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -879,11 +894,14 @@
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- MEDIUMROCK -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/ROCKS/MEDIUM/MEDIUMROCK.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -986,7 +1004,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -1000,7 +1018,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -1024,11 +1042,14 @@
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- LARGEROCK -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/ROCKS/LARGE/LARGEROCK.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -1115,7 +1136,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -1129,7 +1150,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -1153,11 +1174,14 @@
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- LARGEROCK -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/ROCKS/LARGE/LARGEROCK.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -1244,7 +1268,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -1258,7 +1282,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -1282,11 +1306,14 @@
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- LARGEPLANT -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/PLANTS/LARGEPLANT.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -1389,7 +1416,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -1403,7 +1430,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -1427,11 +1454,14 @@
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- LARGEPLANT -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/PLANTS/LARGEPLANT.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -1550,7 +1580,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -1564,7 +1594,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -1588,11 +1618,14 @@
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- LARGEROCK -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/ROCKS/LARGE/LARGEROCK.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -1679,7 +1712,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -1693,7 +1726,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -1717,11 +1750,14 @@
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- MEDIUMBUSH -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/PLANTS/MEDIUMBUSH.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -1740,7 +1776,7 @@
                     </Property>
                     <Property name="OverrideColour" value="True" />
                     <Property name="Colour" value="Colour.xml">
-                      <Property name="R" value="0.4" />
+                      <Property name="R" value="0.3" />
                       <Property name="G" value="0.53" />
                       <Property name="B" value="0.289" />
                       <Property name="A" value="1" />
@@ -1792,7 +1828,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -1806,7 +1842,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -1830,11 +1866,14 @@
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- MEDIUMBUSH -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/PLANTS/MEDIUMBUSH.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -1853,7 +1892,7 @@
                     </Property>
                     <Property name="OverrideColour" value="True" />
                     <Property name="Colour" value="Colour.xml">
-                      <Property name="R" value="0.4" />
+                      <Property name="R" value="0.3" />
                       <Property name="G" value="0.53" />
                       <Property name="B" value="0.289" />
                       <Property name="A" value="1" />
@@ -1905,7 +1944,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -1919,7 +1958,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -1945,11 +1984,14 @@
       </Property>
     </Property>
     <Property name="DetailObjects">
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- SMALLFLOWERS -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLFLOWERS.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -2068,7 +2110,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -2082,13 +2124,13 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="STANDARD" />
             <Property name="Coverage" value="0.05" />
-            <Property name="FlatDensity" value="0.5" />
+            <Property name="FlatDensity" value="0.3" />
             <Property name="SlopeDensity" value="0" />
             <Property name="SlopeMultiplier" value="2" />
             <Property name="MaxRegionRadius" value="10" />
@@ -2125,11 +2167,14 @@
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- TALLGRASSBILLBOARD -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -2200,7 +2245,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.4" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -2214,7 +2259,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -2257,11 +2302,14 @@
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- SMALLPLANT -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -2313,7 +2361,7 @@
         <Property name="SwapPrimaryForRandomColour" value="False" />
         <Property name="AlignToNormal" value="True" />
         <Property name="MinScale" value="1" />
-        <Property name="MaxScale" value="0.4" />
+        <Property name="MaxScale" value="0.3" />
         <Property name="MinScaleY" value="1" />
         <Property name="MaxScaleY" value="1" />
         <Property name="SlopeScaling" value="1" />
@@ -2332,7 +2380,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -2346,7 +2394,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -2389,11 +2437,14 @@
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- MEDIUMPLANT -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/PLANTS/MEDIUMPLANT.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -2528,7 +2579,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -2542,7 +2593,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -2585,11 +2636,14 @@
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- SMALLROCK -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/SMALLROCK.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -2692,7 +2746,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -2706,7 +2760,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -2749,11 +2803,14 @@
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- TALLGRASSBILLBOARD -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/GRASS/TALLGRASSBILLBOARD.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -2824,7 +2881,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -2838,7 +2895,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -2881,11 +2938,14 @@
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- SMALLPLANT -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/PLANTS/SMALLPLANT.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -3020,7 +3080,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -3034,7 +3094,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -3077,11 +3137,14 @@
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- MEDIUMPLANT -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/PLANTS/MEDIUMPLANT.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -3216,7 +3279,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -3230,7 +3293,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -3273,11 +3336,14 @@
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- SMALLROCK -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/ROCKS/SMALL/SMALLROCK.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -3380,7 +3446,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -3394,7 +3460,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -3437,11 +3503,14 @@
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- NEWCROSSGRASS -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/GRASS/NEWCROSSGRASS.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -3512,7 +3581,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -3526,7 +3595,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -3569,11 +3638,14 @@
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- GROUNDFLOWER -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -3623,7 +3695,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -3637,7 +3709,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -3653,9 +3725,9 @@
             <Property name="FadeOutOffsetDistance" value="0" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
+              <Property value="10" />
+              <Property value="40" />
+              <Property value="120" />
               <Property value="500" />
             </Property>
           </Property>
@@ -3672,19 +3744,22 @@
             <Property name="FadeOutOffsetDistance" value="10" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
+              <Property value="10" />
+              <Property value="40" />
+              <Property value="120" />
               <Property value="500" />
             </Property>
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- GROUNDFLOWER -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/BARREN/PLANTS/GROUNDFLOWER.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -3734,7 +3809,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -3748,7 +3823,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -3764,9 +3839,9 @@
             <Property name="FadeOutOffsetDistance" value="0" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
+              <Property value="10" />
+              <Property value="40" />
+              <Property value="120" />
               <Property value="500" />
             </Property>
           </Property>
@@ -3783,19 +3858,22 @@
             <Property name="FadeOutOffsetDistance" value="10" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
+              <Property value="10" />
+              <Property value="40" />
+              <Property value="120" />
               <Property value="500" />
             </Property>
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- GRAVELPATCHMOSSBLEND -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/ROCKS/SURFACEBLEND/GRAVELPATCHMOSSBLEND.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -3845,7 +3923,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -3859,7 +3937,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -3902,11 +3980,14 @@
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- YARROW -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -3956,7 +4037,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -3970,7 +4051,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -4013,11 +4094,14 @@
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- DECORATIVEFERN -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVEFERN.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -4067,7 +4151,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -4081,7 +4165,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -4124,11 +4208,14 @@
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- BUTTERCUP -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/FLOWERS/BUTTERCUP.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -4178,7 +4265,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -4192,7 +4279,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -4235,11 +4322,14 @@
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- SCABIOUS -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/FLOWERS/SCABIOUS.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -4289,7 +4379,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -4303,7 +4393,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -4346,11 +4436,14 @@
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- YARROW -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/FLOWERS/YARROW.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -4400,7 +4493,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -4414,7 +4507,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -4457,11 +4550,14 @@
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- TOXICGRASS -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -4511,7 +4607,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -4525,7 +4621,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -4560,19 +4656,22 @@
             <Property name="FadeOutOffsetDistance" value="10" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
+              <Property value="10" />
+              <Property value="40" />
+              <Property value="120" />
               <Property value="500" />
             </Property>
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- DECORATIVESMALLFLOWERS -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -4622,7 +4721,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -4636,7 +4735,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -4652,9 +4751,9 @@
             <Property name="FadeOutOffsetDistance" value="0" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
+              <Property value="10" />
+              <Property value="40" />
+              <Property value="120" />
               <Property value="500" />
             </Property>
           </Property>
@@ -4671,19 +4770,22 @@
             <Property name="FadeOutOffsetDistance" value="10" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
+              <Property value="10" />
+              <Property value="40" />
+              <Property value="120" />
               <Property value="500" />
             </Property>
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- BARRENGRASSLARGE -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/BARREN/HQ/FOLIAGE/BARRENGRASSLARGE.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -4733,7 +4835,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -4747,7 +4849,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -4763,17 +4865,17 @@
             <Property name="FadeOutOffsetDistance" value="0" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
+              <Property value="10" />
+              <Property value="40" />
+              <Property value="120" />
               <Property value="500" />
             </Property>
           </Property>
           <Property value="GcObjectSpawnDataVariant.xml">
             <Property name="ID" value="ULTRA" />
             <Property name="Coverage" value="0.2" />
-            <Property name="FlatDensity" value="0.4" />
-            <Property name="SlopeDensity" value="0.4" />
+            <Property name="FlatDensity" value="0.3" />
+            <Property name="SlopeDensity" value="0.3" />
             <Property name="SlopeMultiplier" value="1" />
             <Property name="MaxRegionRadius" value="3" />
             <Property name="MaxImposterRadius" value="10" />
@@ -4782,19 +4884,22 @@
             <Property name="FadeOutOffsetDistance" value="10" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
+              <Property value="10" />
+              <Property value="40" />
+              <Property value="120" />
               <Property value="500" />
             </Property>
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- SPRIGBUSH -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/COMMON/PLANTS/SPRIGBUSH.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -4844,7 +4949,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -4858,7 +4963,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -4874,9 +4979,9 @@
             <Property name="FadeOutOffsetDistance" value="0" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
+              <Property value="10" />
+              <Property value="40" />
+              <Property value="120" />
               <Property value="500" />
             </Property>
           </Property>
@@ -4893,19 +4998,22 @@
             <Property name="FadeOutOffsetDistance" value="10" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
+              <Property value="10" />
+              <Property value="40" />
+              <Property value="120" />
               <Property value="500" />
             </Property>
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- DECORATIVESMALLFLOWERS -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/HQLUSHULTRA/DECORATIVESMALLFLOWERS.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -4955,7 +5063,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -4969,7 +5077,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -4985,9 +5093,9 @@
             <Property name="FadeOutOffsetDistance" value="0" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
+              <Property value="10" />
+              <Property value="40" />
+              <Property value="120" />
               <Property value="500" />
             </Property>
           </Property>
@@ -5004,19 +5112,22 @@
             <Property name="FadeOutOffsetDistance" value="10" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
+              <Property value="10" />
+              <Property value="40" />
+              <Property value="120" />
               <Property value="500" />
             </Property>
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- SMALLBOULDER -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/HQLUSH/SMALLPROPS/SMALLBOULDER.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -5066,7 +5177,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -5080,7 +5191,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -5096,9 +5207,9 @@
             <Property name="FadeOutOffsetDistance" value="0" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
+              <Property value="10" />
+              <Property value="40" />
+              <Property value="120" />
               <Property value="500" />
             </Property>
           </Property>
@@ -5115,19 +5226,22 @@
             <Property name="FadeOutOffsetDistance" value="10" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
+              <Property value="10" />
+              <Property value="40" />
+              <Property value="120" />
               <Property value="500" />
             </Property>
           </Property>
         </Property>
       </Property>
-      <Property value="GcObjectSpawnData.xml">
+      <Property value="GcObjectSpawnData.xml"> <!-- TOXICGRASS -->
         <Property name="DebugName" value="" />
         <Property name="Type" value="Instanced" />
         <Property name="Resource" value="GcResourceElement.xml">
           <Property name="Filename" value="MODELS/PLANETS/BIOMES/TOXIC/SMALL/TOXICGRASS.SCENE.MBIN" />
+          <Property name="ResHandle" value="GcResource.xml">
+            <Property name="ResourceID" value="0" />
+          </Property>
           <Property name="Seed" value="GcSeed.xml">
             <Property name="Seed" value="0" />
             <Property name="UseSeedValue" value="False" />
@@ -5177,7 +5291,7 @@
         <Property name="QualityVariantData" value="GcObjectSpawnDataVariant.xml">
           <Property name="ID" value="STANDARD" />
           <Property name="Coverage" value="0.2" />
-          <Property name="FlatDensity" value="0.5" />
+          <Property name="FlatDensity" value="0.3" />
           <Property name="SlopeDensity" value="0" />
           <Property name="SlopeMultiplier" value="3" />
           <Property name="MaxRegionRadius" value="9999" />
@@ -5191,7 +5305,7 @@
             <Property value="0" />
             <Property value="0" />
             <Property value="0" />
-          </Property>
+          </Property> 
         </Property>
         <Property name="QualityVariants">
           <Property value="GcObjectSpawnDataVariant.xml">
@@ -5226,9 +5340,9 @@
             <Property name="FadeOutOffsetDistance" value="10" />
             <Property name="LodDistances">
               <Property value="0" />
-              <Property value="20" />
-              <Property value="60" />
-              <Property value="150" />
+              <Property value="10" />
+              <Property value="40" />
+              <Property value="120" />
               <Property value="500" />
             </Property>
           </Property>
