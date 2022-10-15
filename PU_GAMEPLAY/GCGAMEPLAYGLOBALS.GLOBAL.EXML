@@ -28,6 +28,7 @@
     </Property>
     <Property name="Presets">
       <Property name="Invalid" value="GcDifficultySettingsData.xml">
+        <Property name="SettingsLocked" value="False" />
         <Property name="InventoriesAlwaysInRange" value="False" />
         <Property name="AllSlotsUnlocked" value="False" />
         <Property name="WarpDriveRequirements" value="True" />
@@ -97,6 +98,7 @@
         </Property>
       </Property>
       <Property name="Custom" value="GcDifficultySettingsData.xml">
+        <Property name="SettingsLocked" value="False" />
         <Property name="InventoriesAlwaysInRange" value="False" />
         <Property name="AllSlotsUnlocked" value="False" />
         <Property name="WarpDriveRequirements" value="True" />
@@ -166,6 +168,7 @@
         </Property>
       </Property>
       <Property name="Normal" value="GcDifficultySettingsData.xml">
+        <Property name="SettingsLocked" value="False" />
         <Property name="InventoriesAlwaysInRange" value="False" />
         <Property name="AllSlotsUnlocked" value="False" />
         <Property name="WarpDriveRequirements" value="True" />
@@ -235,6 +238,7 @@
         </Property>
       </Property>
       <Property name="Creative" value="GcDifficultySettingsData.xml">
+        <Property name="SettingsLocked" value="False" />
         <Property name="InventoriesAlwaysInRange" value="True" />
         <Property name="AllSlotsUnlocked" value="True" />
         <Property name="WarpDriveRequirements" value="False" />
@@ -304,6 +308,7 @@
         </Property>
       </Property>
       <Property name="Relaxed" value="GcDifficultySettingsData.xml">
+        <Property name="SettingsLocked" value="False" />
         <Property name="InventoriesAlwaysInRange" value="True" />
         <Property name="AllSlotsUnlocked" value="False" />
         <Property name="WarpDriveRequirements" value="True" />
@@ -373,6 +378,7 @@
         </Property>
       </Property>
       <Property name="Survival" value="GcDifficultySettingsData.xml">
+        <Property name="SettingsLocked" value="False" />
         <Property name="InventoriesAlwaysInRange" value="False" />
         <Property name="AllSlotsUnlocked" value="False" />
         <Property name="WarpDriveRequirements" value="True" />
@@ -442,6 +448,7 @@
         </Property>
       </Property>
       <Property name="Permadeath" value="GcDifficultySettingsData.xml">
+        <Property name="SettingsLocked" value="False" />
         <Property name="InventoriesAlwaysInRange" value="False" />
         <Property name="AllSlotsUnlocked" value="False" />
         <Property name="WarpDriveRequirements" value="True" />
@@ -512,6 +519,7 @@
       </Property>
     </Property>
     <Property name="PermadeathMinSettings" value="GcDifficultySettingsData.xml">
+      <Property name="SettingsLocked" value="False" />
       <Property name="InventoriesAlwaysInRange" value="False" />
       <Property name="AllSlotsUnlocked" value="False" />
       <Property name="WarpDriveRequirements" value="True" />
@@ -754,10 +762,29 @@
             </Property>
             <Property name="AlsoChangeOptions" />
           </Property>
+          <Property value="GcDifficultySettingUIOption.xml">
+            <Property name="MainOption" value="GcDifficultySettingEnum.xml">
+              <Property name="DifficultySetting" value="SettingsLocked" />
+            </Property>
+            <Property name="AlsoChangeOptions" />
+          </Property>
         </Property>
       </Property>
     </Property>
     <Property name="CommonSettingsData">
+      <Property name="SettingsLocked" value="GcDifficultySettingCommonData.xml">
+        <Property name="SettingType" value="GcDifficultySettingType.xml">
+          <Property name="DifficultySettingType" value="Toggle" />
+        </Property>
+        <Property name="IsAscendingDifficulty" value="True" />
+        <Property name="EditabilityInOptionsMenu" value="GcDifficultySettingEditability.xml">
+          <Property name="DifficultySettingEditability" value="IncreaseOnly" />
+        </Property>
+        <Property name="TitleLocID" value="DIFFICULTY_SELF_BAN" />
+        <Property name="DescriptionLocID" value="DIFFICULTY_SELF_BAN_DESC" />
+        <Property name="ToggleEnabledLocID" value="DIFFICULTY_SELF_BAN_ON" />
+        <Property name="ToggleDisabledLocID" value="DIFFICULTY_SELF_BAN_OFF" />
+      </Property>
       <Property name="InventoriesAlwaysInRange" value="GcDifficultySettingCommonData.xml">
         <Property name="SettingType" value="GcDifficultySettingType.xml">
           <Property name="DifficultySettingType" value="Toggle" />
@@ -4372,6 +4399,7 @@
   <Property name="PirateMissionSecondReward" value="R_PIRATEBOARD_B" />
   <Property name="UseSecondaryBiomeSubstances" value="False" />
   <Property name="TechMustBeInTechInventory" value="True" />
+  <Property name="SpecialTechSlotBonus" value="1" />
   <Property name="RocketLockerFuelUse" value="10" />
   <Property name="EnableTechPackaging" value="True" />
   <Property name="CargoShieldStrength" value="0.5" />
