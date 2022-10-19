@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (4.0.0)-->
 <Data template="GcUIGlobals">
+  <Property name="ShowDifficultyForBases" value="False" />  
+  <Property name="ShowPadlockForLockedSettings" value="True" />
   <Property name="DebugMedalRank" value="-1" />
   <Property name="PadCursorUICurve" value="TkCurveType.xml">
     <Property name="Curve" value="EaseInExpo" />
@@ -20,6 +22,33 @@
   <Property name="InvSlotGradientFactorMin" value="0" />
   <Property name="InvSlotGradientFactor" value="0" />
   <Property name="InvSlotGradientTime" value="0" />
+  <Property name="SuperchargePopupColour" value="Colour.xml">
+    <Property name="R" value="0.744" />
+    <Property name="G" value="0.542" />
+    <Property name="B" value="1" />
+    <Property name="A" value="1" />
+  </Property>
+  <Property name="SuperchargeGradientBaseColour" value="Colour.xml">
+    <Property name="R" value="0.82" />
+    <Property name="G" value="0.738" />
+    <Property name="B" value="0.923" />
+    <Property name="A" value="1" />
+  </Property>
+  <Property name="SuperchargeGradientBlendColour" value="Colour.xml">
+    <Property name="R" value="0.294" />
+    <Property name="G" value="0.643" />
+    <Property name="B" value="0.993" />
+    <Property name="A" value="1" />
+  </Property>
+  <Property name="SuperchargeGradientTechColour" value="Colour.xml">
+    <Property name="R" value="0.503" />
+    <Property name="G" value="0.134" />
+    <Property name="B" value="0.793" />
+    <Property name="A" value="1" />
+  </Property>
+  <Property name="SuperchargeGradientFactorMin" value="0.1" />  
+  <Property name="SuperchargeGradientFactor" value="0.8" /> 
+  <Property name="SuperchargeGradientTime" value="3.8" />
   <Property name="GridDecayRateSwitchValue" value="0.5" />
   <Property name="PadCursorUICurveStrength" value="0" />
   <Property name="ReplaceItemBarWithNumbers" value="True" />
@@ -2406,7 +2435,7 @@
     <Property name="y" value="7.5" />
   </Property>
   <Property name="HUDPlayerTrackArrowGlowBaseOpacity" value="0.1" />
-  <Property name="HUDPlayerTrackArrowDamageGlowHullHitCriticalOpacit" value="2" />
+  <Property name="HUDPlayerTrackArrowDamageGlowHullHitCriticalOpacityScale" value="2" />
   <Property name="HUDPlayerTrackArrowDamageGlowHullHitOpacityScale" value="1" />
   <Property name="HUDPlayerTrackArrowDamageGlowHullHitMaxColour" value="Colour.xml">
     <Property name="R" value="1" />
@@ -2420,7 +2449,7 @@
     <Property name="B" value="1" />
     <Property name="A" value="1" />
   </Property>
-  <Property name="HUDPlayerTrackArrowDamageGlowShieldHitCriticalOpac" value="2" />
+  <Property name="HUDPlayerTrackArrowDamageGlowShieldHitCriticalOpacityScale" value="2" />
   <Property name="HUDPlayerTrackArrowDamageGlowShieldHitOpacityScale" value="1" />
   <Property name="HUDPlayerTrackArrowDamageGlowShieldHitMaxColour" value="Colour.xml">
     <Property name="R" value="1" />
@@ -2444,35 +2473,35 @@
     <Property name="x" value="110" />
     <Property name="y" value="15" />
   </Property>
-  <Property name="HUDPlayerTrackArrowEnergyShieldDepletedGlowOpacity" value="0" />
+  <Property name="HUDPlayerTrackArrowEnergyShieldDepletedGlowOpacityScale" value="0" />
   <Property name="HUDPlayerTrackArrowEnergyShieldDepletedTime" value="1" />
   <Property name="HUDPlayerTrackArrowEnergyShieldDepletedCurve" value="TkCurveType.xml">
     <Property name="Curve" value="EaseInQuart" />
   </Property>
-  <Property name="HUDPlayerTrackArrowEnergyShieldDepletedGlowMaxColo" value="Colour.xml">
+  <Property name="HUDPlayerTrackArrowEnergyShieldDepletedGlowMaxColour" value="Colour.xml">
     <Property name="R" value="1" />
     <Property name="G" value="0.727" />
     <Property name="B" value="0.025" />
     <Property name="A" value="1" />
   </Property>
-  <Property name="HUDPlayerTrackArrowEnergyShieldDepletedGlowMinColo" value="Colour.xml">
+  <Property name="HUDPlayerTrackArrowEnergyShieldDepletedGlowMinColour" value="Colour.xml">
     <Property name="R" value="0.607" />
     <Property name="G" value="0.413" />
     <Property name="B" value="0.002" />
     <Property name="A" value="1" />
   </Property>
-  <Property name="HUDPlayerTrackArrowEnergyShieldStartChargeGlowOpac" value="10" />
+  <Property name="HUDPlayerTrackArrowEnergyShieldStartChargeGlowOpacityScale" value="10" />
   <Property name="HUDPlayerTrackArrowEnergyShieldStartChargeTime" value="1" />
   <Property name="HUDPlayerTrackArrowEnergyShieldStartChargeCurve" value="TkCurveType.xml">
     <Property name="Curve" value="EaseInQuart" />
   </Property>
-  <Property name="HUDPlayerTrackArrowEnergyShieldStartChargeGlowMaxC" value="Colour.xml">
+  <Property name="HUDPlayerTrackArrowEnergyShieldStartChargeGlowMaxColour" value="Colour.xml">
     <Property name="R" value="1" />
     <Property name="G" value="0.727" />
     <Property name="B" value="0.025" />
     <Property name="A" value="1" />
   </Property>
-  <Property name="HUDPlayerTrackArrowEnergyShieldStartChargeGlowMinC" value="Colour.xml">
+  <Property name="HUDPlayerTrackArrowEnergyShieldStartChargeGlowMinColour" value="Colour.xml">
     <Property name="R" value="0.987" />
     <Property name="G" value="0.899" />
     <Property name="B" value="0.674" />
@@ -2758,8 +2787,8 @@
   <Property name="ShowJetpackNotificationForNonTerrain" value="False" />
   <Property name="StatsMessageDelayTime" value="12" />
   <Property name="SeasonMessageDelayTime" value="0.5" />
-  <Property name="HideExtremePlanetNotifications" value="True" />
-  <Property name="NotificationBackgroundGradientEndOffsetPercentInSh" value="80" />
+  <Property name="HideExtremePlanetNotifications" value="False" />
+  <Property name="NotificationBackgroundGradientEndOffsetPercentInShip" value="80" />
   <Property name="NotificationBackgroundGradientAlphaInShip" value="0.85" />
   <Property name="NotificationsResourceExtractHintCount" value="1500" />
   <Property name="NotificationStaminaHintDistanceWalked" value="10000" />
@@ -5247,7 +5276,7 @@
   <Property name="NGuiModelViewCdSmoothTime" value="0.15" />
   <Property name="NGuiAltPlacementDistanceScrollSpeed" value="10" />
   <Property name="NGuiPlacementAngleScrollSpeed" value="0.3" />
-  <Property name="NGuiModelViewFractionOfBBHeightAboveReflectivePlan" value="0.005" />
+  <Property name="NGuiModelViewFractionOfBBHeightAboveReflectivePlane" value="0.005" />
   <Property name="NGuiModelTranslationFactors" value="Vector3f.xml">
     <Property name="x" value="-0.15" />
     <Property name="y" value="-0.035" />

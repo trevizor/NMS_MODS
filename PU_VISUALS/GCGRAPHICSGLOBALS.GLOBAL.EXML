@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.98.0)-->
+<!--File created using MBINCompiler version (4.4.0)-->
 <Data template="GcGraphicsGlobals">
   <Property name="LUTDistanceFlightMultiplier" value="15" />
-  <Property name="SunLightIntensity" value="4" />
+  <Property name="SunLightIntensity" value="1" />
   <Property name="SunLightBlendTime" value="10" />
   <Property name="HBAOBias" value="0.1" />
   <Property name="HBAORadius" value="2" />
   <Property name="HBAOIntensity" value="5" />
   <Property name="LightShaftProperties" value="GcLightShaftProperties.xml">
-      <Property name="LightShaftScattering" value="0.15" />
-      <Property name="LightShaftStrength" value="2.8" />
-      <Property name="LightShaftBottom" value="0.05" />
-      <Property name="LightShaftTop" value="0.1" />
-      <Property name="LightShaftColourBottom" value="Colour.xml">
-        <Property name="R" value="0.03" />
-        <Property name="G" value="0.02" />
-        <Property name="B" value="0.04" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="LightShaftColourTop" value="Colour.xml">
-        <Property name="R" value="0.03" />
-        <Property name="G" value="0.02" />
-        <Property name="B" value="0.04" />
-        <Property name="A" value="1" />
-      </Property>
+    <Property name="LightShaftScattering" value="0.15" />
+    <Property name="LightShaftStrength" value="2.8" />
+    <Property name="LightShaftBottom" value="0.05" />
+    <Property name="LightShaftTop" value="0.1" />
+    <Property name="LightShaftColourBottom" value="Colour.xml">
+      <Property name="R" value="0.03" />
+      <Property name="G" value="0.02" />
+      <Property name="B" value="0.04" />
+      <Property name="A" value="1" />
     </Property>
+    <Property name="LightShaftColourTop" value="Colour.xml">
+      <Property name="R" value="0.03" />
+      <Property name="G" value="0.02" />
+      <Property name="B" value="0.04" />
+      <Property name="A" value="1" />
+    </Property>
+  </Property>
   <Property name="StormLightShaftProperties" value="GcLightShaftProperties.xml">
     <Property name="LightShaftScattering" value="0.15" />
     <Property name="LightShaftStrength" value="2.8" />
     <Property name="LightShaftBottom" value="0.05" />
     <Property name="LightShaftTop" value="0.1" />
-      <Property name="LightShaftColourBottom" value="Colour.xml">
-        <Property name="R" value="0.03" />
-        <Property name="G" value="0.02" />
-        <Property name="B" value="0.04" />
-        <Property name="A" value="1" />
-      </Property>
-      <Property name="LightShaftColourTop" value="Colour.xml">
-        <Property name="R" value="0.03" />
-        <Property name="G" value="0.02" />
-        <Property name="B" value="0.04" />
-        <Property name="A" value="1" />
-      </Property>
+    <Property name="LightShaftColourBottom" value="Colour.xml">
+      <Property name="R" value="0.03" />
+      <Property name="G" value="0.02" />
+      <Property name="B" value="0.04" />
+      <Property name="A" value="1" />
+    </Property>
+    <Property name="LightShaftColourTop" value="Colour.xml">
+      <Property name="R" value="0.03" />
+      <Property name="G" value="0.02" />
+      <Property name="B" value="0.04" />
+      <Property name="A" value="1" />
+    </Property>
   </Property>
   <Property name="SunRayDensity" value="1.3" />
   <Property name="SunRayDecay" value="1" />
@@ -1048,12 +1048,49 @@
     <Property name="AnisotropyLevel" value="_4" />
     <Property name="AntiAliasing" value="TAA" />
   </Property>
+  <Property name="GraphicsDetailPresetPS5VR" value="TkGraphicsDetailPreset.xml">
+    <Property name="TextureQuality" value="TkGraphicsDetailTypes.xml">
+      <Property name="GraphicDetail" value="Low" />
+    </Property>
+    <Property name="AnimationQuality" value="TkGraphicsDetailTypes.xml">
+      <Property name="GraphicDetail" value="Low" />
+    </Property>
+    <Property name="ShadowQuality" value="TkGraphicsDetailTypes.xml">
+      <Property name="GraphicDetail" value="Low" />
+    </Property>
+    <Property name="PostProcessingEffects" value="TkGraphicsDetailTypes.xml">
+      <Property name="GraphicDetail" value="Low" />
+    </Property>
+    <Property name="ReflectionsQuality" value="TkGraphicsDetailTypes.xml">
+      <Property name="GraphicDetail" value="Low" />
+    </Property>
+    <Property name="VolumetricsQuality" value="TkGraphicsDetailTypes.xml">
+      <Property name="GraphicDetail" value="Low" />
+    </Property>
+    <Property name="TerrainTessellation" value="TkGraphicsDetailTypes.xml">
+      <Property name="GraphicDetail" value="Low" />
+    </Property>
+    <Property name="PlanetQuality" value="TkGraphicsDetailTypes.xml">
+      <Property name="GraphicDetail" value="Low" />
+    </Property>
+    <Property name="BaseQuality" value="TkGraphicsDetailTypes.xml">
+      <Property name="GraphicDetail" value="Low" />
+    </Property>
+    <Property name="UIQuality" value="Normal" />
+    <Property name="DLSSQuality" value="MaxPerformance" />
+    <Property name="FFXSRQuality" value="Off" />
+    <Property name="FFXSR2Quality" value="UltraPerformance" />
+    <Property name="XESSQuality" value="UltraPerformance" />
+    <Property name="AmbientOcclusion" value="Off" />
+    <Property name="AnisotropyLevel" value="_1" />
+    <Property name="AntiAliasing" value="None" />
+  </Property>
   <Property name="EnableVariableUpdate" value="False" />
   <Property name="VariableUpdatePeriodModifers">
-    <Property value="1" />
-    <Property value="0.8" />
-    <Property value="0.5" />
-    <Property value="0.1" />
+    <Property name="Low" value="1" />
+    <Property name="Medium" value="0.8" />
+    <Property name="High" value="0.5" />
+    <Property name="Ultra" value="0.1" />
   </Property>
   <Property name="PhotoModeBloomGainMin" value="0.0001" />
   <Property name="PhotoModeBloomThresholdMin" value="0.5" />

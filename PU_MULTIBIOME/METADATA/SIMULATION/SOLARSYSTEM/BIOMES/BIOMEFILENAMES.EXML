@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.91.0)-->
+<!--File created using MBINCompiler version (4.4.0)-->
 <Data template="GcBiomeFileList">
   <Property name="BiomeFiles">
     <Property name="Lush" value="GcBiomeFileListOptions.xml">
@@ -633,15 +633,6 @@
     </Property>
   </Property>
   <Property name="ValidStartPlanetBiome">
-    <!--<Property value="GcBiomeType.xml">
-      <Property name="Biome" value="Barren" />
-    </Property>
-    <Property value="GcBiomeType.xml">
-      <Property name="Biome" value="Swamp" />
-    </Property>
-    <Property value="GcBiomeType.xml">
-      <Property name="Biome" value="Lush" />
-    </Property> -->
     <Property value="GcBiomeType.xml">
       <Property name="Biome" value="Toxic" />
     </Property>
@@ -1141,25 +1132,6 @@
         </Property>
       </Property>
     </Property>
-
-    <Property value="GcExternalObjectListOptions.xml">
-      <Property name="Name" value="EXTRALUSH" />
-      <Property name="ResourceHint" value="" />
-      <Property name="ResourceHintIcon" value="" />
-      <Property name="Probability" value="0.3" />
-      <Property name="SeasonalProbabilityOverride" value="1" />
-      <Property name="TileType" value="GcTerrainTileType.xml">
-        <Property name="TileType" value="Base" />
-      </Property>
-      <Property name="AllowLimiting" value="True" />
-      <Property name="ChooseUsingLifeLevel" value="False" />
-      <Property name="Options">
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/EXTRALUSHHQOBJECTSFULL.MBIN" />
-        </Property>
-      </Property>
-    </Property>
-
     <Property value="GcExternalObjectListOptions.xml">
       <Property name="Name" value="INFECTION" />
       <Property name="ResourceHint" value="" />
@@ -1177,7 +1149,6 @@
         </Property>
       </Property>
     </Property>
-
     <Property value="GcExternalObjectListOptions.xml">
       <Property name="Name" value="CRYSTALSCAVE" />
       <Property name="ResourceHint" value="" />
@@ -1197,6 +1168,59 @@
     </Property>
   </Property>
   <Property name="OptionalExternalObjectLists">
+    <Property value="GcExternalObjectFileList.xml">
+      <Property name="Id" value="EXTRALUSH" />
+      <Property name="OnlyOnExtremeWeather" value="False" />
+      <Property name="OnlyOnExtremeSentinels" value="False" />
+      <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="NotOnExtremePlanets" value="False" />
+      <Property name="NotOnStartPlanets" value="False" />
+      <Property name="NotOnWeirdPlanets" value="False" />
+      <Property name="NotOnDeadPlanets" value="True" />
+      <Property name="ForceOnSeasonStart" value="False" />
+      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
+        <Property name="Biome" value="All" />
+      </Property>
+      <Property name="ProbabilityOfBeingActive" value="0.3" />
+      <Property name="MinFilesToChoose" value="1" />
+      <Property name="MaxFilesToChoose" value="1" />
+      <Property name="ExternalObjectFiles">
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="EXTRALUSHHQOBJEC" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="0" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/EXTRALUSHHQOBJECTSFULL.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="PROC_BONES" />
+          <Property name="ResourceHint" value="UI_BONES_HINT" />
+          <Property name="ResourceHintIcon" value="BONES" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/RARE/PROCBONES.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
     <Property value="GcExternalObjectFileList.xml">
       <Property name="Id" value="VALUABLE_STUFF" />
       <Property name="OnlyOnExtremeWeather" value="False" />

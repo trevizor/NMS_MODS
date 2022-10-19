@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (4.0.0)-->
+<!--File created using MBINCompiler version (4.4.0)-->
 <Data template="GcGameplayGlobals">
   <Property name="DifficultyConfig" value="GcDifficultyConfig.xml">
     <Property name="PresetLocId" value="DIFFICULTY_PRESET" />
@@ -1137,6 +1137,11 @@
         <Property name="ToggleDisabledLocID" value="UI_DISABLED" />
       </Property>
     </Property>
+    <Property name="AllSlotsUnlockedStartingSuitSlots" value="42" />
+    <Property name="AllSlotsUnlockedStartingSuitTechSlots" value="22" />
+    <Property name="AllSlotsUnlockedStartingWeaponSlots" value="14" />
+    <Property name="AllSlotsUnlockedStartingShipSlots" value="48" />
+    <Property name="AllSlotsUnlockedStartingShipTechSlots" value="24" />
     <Property name="StartWithAllItemsKnownDisabledData" value="GcDifficultyStartWithAllItemsKnownOptionData.xml">
       <Property name="InitialKnownThings" value="GcKnownThingsPreset.xml">
         <Property name="KnownTech">
@@ -4399,12 +4404,14 @@
   <Property name="PirateMissionSecondReward" value="R_PIRATEBOARD_B" />
   <Property name="UseSecondaryBiomeSubstances" value="False" />
   <Property name="TechMustBeInTechInventory" value="True" />
-  <Property name="SpecialTechSlotBonus" value="1" />
+  <Property name="SpecialTechSlotBonus" value="1.25" />
   <Property name="RocketLockerFuelUse" value="10" />
   <Property name="EnableTechPackaging" value="True" />
   <Property name="CargoShieldStrength" value="0.5" />
-  <Property name="TechDamageChanceShielded" value="0.25" />
-  <Property name="TechDamageChanceToSelectPrimary" value="0.33" />
+  <Property name="TechDamageChanceShieldedMax" value="0.5" />
+  <Property name="TechDamageChanceShieldLevelMin" value="0.01" />
+  <Property name="TechDamageChanceShieldLevelMax" value="0.75" />
+  <Property name="TechDamageChanceToSelectPrimary" value="0.1" />
   <Property name="PirateRaidAccelerator" value="1.8" />
   <Property name="PirateGroundAccelerator" value="0.5" />
   <Property name="PirateGroundInventoryAccelerator" value="0.1" />
@@ -4756,7 +4763,7 @@
   <Property name="EveryMaintenanceIsBroken" value="False" />
   <Property name="SpawnResourceBlobsOnPartDelete" value="False" />
   <Property name="EnableShootHitEffect" value="True" />
-  <Property name="MaxNumSameGroupTech" value="6" />
+  <Property name="MaxNumSameGroupTech" value="3" />
   <Property name="ShootableArmourHighlightHitTime" value="0.3" />
   <Property name="ShootableAggroMinStartTime" value="0.5" />
   <Property name="ShootableAggroForgetTime" value="3" />
@@ -4801,9 +4808,9 @@
   <Property name="BinocularScanTargetMinHeight" value="5" />
   <Property name="BinocularScanTargetHeightRange" value="0" />
   <Property name="BinocTimeBeforeScan" value="0.2" />
-  <Property name="BinocMinScanTime" value="1.0" />
-  <Property name="BinocScanTime" value="1.0" />
-  <Property name="BinocCreatureScanTime" value="1.0" />
+  <Property name="BinocMinScanTime" value="1" />
+  <Property name="BinocScanTime" value="1" />
+  <Property name="BinocCreatureScanTime" value="1" />
   <Property name="BinocularScanTargetHeightCurve" value="TkCurveType.xml">
     <Property name="Curve" value="EaseOutSine" />
   </Property>
@@ -6106,7 +6113,7 @@
     <Property name="B" value="0.444" />
     <Property name="A" value="1" />
   </Property>
-  <Property name="PlayerAmbientSpotLightIntensity" value="0.0" />
+  <Property name="PlayerAmbientSpotLightIntensity" value="0" />
   <Property name="PlayerAmbientSpotLightColour" value="Colour.xml">
     <Property name="R" value="1" />
     <Property name="G" value="0.76" />
