@@ -115,7 +115,7 @@
 	}
 
 	var main = function () {
-
+		let alwaysForceToOne = false;
 		let newColors = [];
 		let firstHeader = "";
 		mainContainer.innerHTML = "";
@@ -136,19 +136,26 @@
 			element.B = parseFloat(element.B);
 			
 			highestColor = Math.max(element.R, element.G, element.B);
-			colorMultiplier = 1/highestColor;
-			newColor.r = element.R * colorMultiplier;
-			newColor.g = element.G * colorMultiplier;
-			newColor.b = element.B * colorMultiplier;
-			newColors[newColors.length] = newColor;
+			if(highestColor > 1 || alwaysForceToOne){
+				colorMultiplier = 1/highestColor;
+				newColor.r = element.R * colorMultiplier;
+				newColor.g = element.G * colorMultiplier;
+				newColor.b = element.B * colorMultiplier;	
+			} else {
+				newColor.r = element.R;
+				newColor.g = element.G;
+				newColor.b = element.B;	
+			}
+			
+			newColors[index] = newColor;
 		});
 
 		console.log(newColors);
 		newColors.forEach( (element, index, array) => { 
-			document.getElementById("mainContainer").innerHTML += "------- R:" + element.r + "<br>";	
-			document.getElementById("mainContainer").innerHTML += "------- G:" + element.g + "<br>";	
-			document.getElementById("mainContainer").innerHTML += "------- B:" + element.b + "<br>";	
-			document.getElementById("mainContainer").innerHTML += "------<br>";	
+			document.getElementById('mainContainer').innerHTML += '&#60;Property name="R" value="' + element.r + '" /&#62;';	
+			document.getElementById('mainContainer').innerHTML += '&#60;Property name="G" value="' + element.g + '" /&#62;';	
+			document.getElementById('mainContainer').innerHTML += '&#60;Property name="B" value="' + element.b + '" /&#62;';	
+			document.getElementById('mainContainer').innerHTML += '<br>';	
 		} );
 		
 	}

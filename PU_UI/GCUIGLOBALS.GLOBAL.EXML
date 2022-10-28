@@ -248,8 +248,8 @@
   <Property name="HandheldZoomFactor" value="1.5" />
   <Property name="PlacedMarkerFadeTime" value="0.5" />
   <Property name="LoadingTravelDistance" value="12500" />
-  <Property name="LoadingScreenTravelSpeed" value="50" />
-  <Property name="LoadingScreenTime" value="75" />
+  <Property name="LoadingScreenTravelSpeed" value="30" />
+  <Property name="LoadingScreenTime" value="45" />
   <Property name="OSDMessagePauseOffscreenAngle" value="25" />
   <Property name="QuickMenuCentrePos" value="375" />
   <Property name="QuickMenuSideOffset" value="70" />
@@ -2149,8 +2149,8 @@
   <Property name="FreighterEntranceOffset" value="30" />
   <Property name="ShipHeadsUpDisplayDistance" value="200" />
   <Property name="ShipHeadsUpLineFadeTime" value="0.6" />
-  <Property name="CrosshairAimTime" value="0.1" />
-  <Property name="CrosshairAimOffTime" value="1.5" />
+  <Property name="CrosshairAimTime" value="0" />
+  <Property name="CrosshairAimOffTime" value="0" />
   <Property name="CrosshairInnerMinFade" value="0" />
   <Property name="CrosshairInnerMinFadeRange" value="5" />
   <Property name="CrosshairLeadScaleIn" value="1.6" />
@@ -3131,12 +3131,12 @@
   <Property name="ModelRendererBGPass" value="True" />
   <Property name="ModelRendererPass1" value="True" />
   <Property name="ModelRendererPass2" value="True" />
-  <Property name="HazardScreenEffectPulseRate" value="0.8" />
+  <Property name="HazardScreenEffectPulseRate" value="0.1" />
   <Property name="KeepHazardBarActiveTime" value="6" />
   <Property name="KeepSecondHazardBarActiveTime" value="1" />
   <Property name="HazardBarPulseTime" value="1" />
   <Property name="HazardScreenEffectPulseTime" value="2" />
-  <Property name="HazardScreenEffectStrength" value="0.8" />
+  <Property name="HazardScreenEffectStrength" value="1" />
   <Property name="HazardWarningPulseTime" value="4" />
   <Property name="HazardWarningPulseStrength" value="1.66" />
   <Property name="HazardPainPulseStrength" value="2" />
@@ -3145,15 +3145,15 @@
   <Property name="ShieldHazardPulseRate" value="0.6" />
   <Property name="ShieldHUDAlwaysOn" value="False" />
   <Property name="ShieldHazardPulseThreshold" value="0.2" />
-  <Property name="AlwaysOnHazardThreshold" value="0.2" />
-  <Property name="AlwaysOnHazardStrengthTox" value="0.1" />
-  <Property name="AlwaysOnHazardStrengthHeat" value="0.2" />
-  <Property name="AlwaysOnHazardStrengthRad" value="0.1" />
-  <Property name="AlwaysOnHazardStrengthCold" value="0.2" />
-  <Property name="AlwaysOnHazardMultiplierTox" value="0.8" />
-  <Property name="AlwaysOnHazardMultiplierHeat" value="0.8" />
-  <Property name="AlwaysOnHazardMultiplierRad" value="0.8" />
-  <Property name="AlwaysOnHazardMultiplierCold" value="0.8" />
+  <Property name="AlwaysOnHazardThreshold" value="0.5" />
+  <Property name="AlwaysOnHazardStrengthTox" value="0.3" />
+  <Property name="AlwaysOnHazardStrengthHeat" value="0.6" />
+  <Property name="AlwaysOnHazardStrengthRad" value="0.3" />
+  <Property name="AlwaysOnHazardStrengthCold" value="0.5" />
+  <Property name="AlwaysOnHazardMultiplierTox" value="1" />
+  <Property name="AlwaysOnHazardMultiplierHeat" value="1.1" />
+  <Property name="AlwaysOnHazardMultiplierRad" value="1" />
+  <Property name="AlwaysOnHazardMultiplierCold" value="1.1" />
   <Property name="HazardPulseRate" value="200" />
   <Property name="HazardTextures">
     <Property value="NMSString0x80.xml">
@@ -3163,10 +3163,10 @@
       <Property name="Value" value="" />
     </Property>
     <Property value="NMSString0x80.xml">
-      <Property name="Value" value="" />
+      <Property name="Value" value="TEXTURES/EFFECTS/FULLSCREEN/HAZARDS/HOT.DDS" />
     </Property>
     <Property value="NMSString0x80.xml">
-      <Property name="Value" value="" />
+      <Property name="Value" value="TEXTURES/EFFECTS/FULLSCREEN/HAZARDS/COLD.DDS" />
     </Property>
     <Property value="NMSString0x80.xml">
       <Property name="Value" value="TEXTURES/EFFECTS/FULLSCREEN/HAZARDS/TOXIC.DDS" />

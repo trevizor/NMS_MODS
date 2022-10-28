@@ -242,13 +242,13 @@
     <Property name="x" value="0.06" />
     <Property name="y" value="0.06" />
   </Property>
-  <Property name="HandInteractionLightIntensity" value="0.5" />
-  <Property name="HandInteractionLightIntensityMax" value="4" />
-  <Property name="HandInteractionFresnel" value="-9" />
-  <Property name="HandInteractionFresnelMax" value="-2" />
-  <Property name="HandInteractionLightOffset" value="0.2" />
-  <Property name="HandInteractionLightOffsetAt" value="0.2" />
-  <Property name="HandInteractionLightTime" value="0.3" />
+  <Property name="HandInteractionLightIntensity" value="0" />
+  <Property name="HandInteractionLightIntensityMax" value="0" />
+  <Property name="HandInteractionFresnel" value="0" />
+  <Property name="HandInteractionFresnelMax" value="0" />
+  <Property name="HandInteractionLightOffset" value="0" />
+  <Property name="HandInteractionLightOffsetAt" value="0" />
+  <Property name="HandInteractionLightTime" value="0" />
   <Property name="HandScreenLookActiveAngle" value="30" />
   <Property name="HandScreenMinAngle" value="40" />
   <Property name="HandScreenMinAngleWithPoint" value="75" />
@@ -1411,15 +1411,15 @@
   <Property name="AnimWalkBlendPoint" value="0.05" />
   <Property name="AnimRunBlendPoint" value="0.1" />
   <Property name="MaxSlopeAngle" value="89" />
-  <Property name="SlopeSlidingSpeed" value="-17" />
-  <Property name="SlopeSlideBrake" value="18.5" />
-  <Property name="MinSlideTime" value="0.1" />
-  <Property name="MaxWalkableSlopeAngle" value="46" />
-  <Property name="MinSpidermanSlopeAngle" value="45" />
-  <Property name="MinTimeToHoldSpidermanPose" value="0.7" />
-  <Property name="MaxSpidermanSlopeAngle" value="65" />
-  <Property name="MaxClingableSlopeAngle" value="81" />
-  <Property name="MinimumPushOffForceToSlide" value="0.4" />
+  <Property name="SlopeSlidingSpeed" value="-20" />
+  <Property name="SlopeSlideBrake" value="8.5" />
+  <Property name="MinSlideTime" value="0.01" />
+  <Property name="MaxWalkableSlopeAngle" value="70" />
+  <Property name="MinSpidermanSlopeAngle" value="40" />
+  <Property name="MinTimeToHoldSpidermanPose" value="0.0" />
+  <Property name="MaxSpidermanSlopeAngle" value="50" />
+  <Property name="MaxClingableSlopeAngle" value="86" />
+  <Property name="MinimumPushOffForceToSlide" value="0.0" />
   <Property name="FreeJetpackSlopeAngle" value="65" />
   <Property name="FreeJetpackSlopeAnglePrime" value="45" />
   <Property name="FullClipReloadSpeedMultiplier" value="2" />
@@ -1429,7 +1429,7 @@
   <Property name="ClingBrakeMultiplier" value="1" />
   <Property name="ClingAngleThreshold" value="50" />
   <Property name="ClingSpeedThreshold" value="0.8" />
-  <Property name="ClimbableStickinessAngle" value="30" />
+  <Property name="ClimbableStickinessAngle" value="20" />
   <Property name="MinUpAmount" value="0.4" />
   <Property name="FootOffset" value="0.2" />
   <Property name="MaxFallSpeed" value="240" />
@@ -1447,8 +1447,8 @@
   <Property name="ShipCameraLag" value="0.09" />
   <Property name="MaxResource" value="100" />
   <Property name="ShieldMaximum" value="35" />
-  <Property name="ShieldRestoreSpeed" value="0.08" />
-  <Property name="ShieldRestoreDelay" value="10" />
+  <Property name="ShieldRestoreSpeed" value="0.1" />
+  <Property name="ShieldRestoreDelay" value="9" />
   <Property name="TimeHoldDownAccelerateToLaunchFromOutpost" value="1" />
   <Property name="DeathScreenFadeInThirdPerson" value="1.8" />
   <Property name="DeathScreenFadeInUnderwaterThirdPerson" value="4" />
