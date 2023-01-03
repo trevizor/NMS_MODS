@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (4.4.0)-->
+<!--File created using MBINCompiler version (4.6.0)-->
 <Data template="GcPlayerGlobals">
   <Property name="ForceFreighterProcTechRandom" value="False" />
   <Property name="AlienPodAggroDecay" value="0.15" />
@@ -749,8 +749,10 @@
   <Property name="WeaponCoolFactor" value="3" />
   <Property name="FreighterCoolFactor" value="1.5" />
   <Property name="MouseCrosshairVisible" value="True" />
+  <Property name="MouseMaxLengthOld" value="8" />
+  <Property name="MouseDeadZoneOld" value="7" />
   <Property name="MouseMaxLength" value="450" />
-  <Property name="MouseDeadZone" value="20" />
+  <Property name="MouseDeadZone" value="30" />
   <Property name="MouseMaxLengthVehicle" value="220" />
   <Property name="MouseDeadZoneVehicle" value="20" />
   <Property name="MouseAimZone" value="120" />
@@ -761,6 +763,7 @@
   <Property name="MouseCrosshairLineWidth" value="2" />
   <Property name="MouseCrosshairShipStrength" value="2" />
   <Property name="MouseCrosshairMultiplier" value="1" />
+  <Property name="MouseCrosshairShipStrengthOld" value="1.2" />
   <Property name="MouseFlightCorrectionMultiplier" value="1.5" />
   <Property name="MouseFlightCorrectionBrakeMultiplier" value="2.5" />
   <Property name="MouseFlightCurve" value="TkCurveType.xml">
@@ -1416,10 +1419,10 @@
   <Property name="MinSlideTime" value="0.01" />
   <Property name="MaxWalkableSlopeAngle" value="70" />
   <Property name="MinSpidermanSlopeAngle" value="40" />
-  <Property name="MinTimeToHoldSpidermanPose" value="0.0" />
+  <Property name="MinTimeToHoldSpidermanPose" value="0" />
   <Property name="MaxSpidermanSlopeAngle" value="50" />
   <Property name="MaxClingableSlopeAngle" value="86" />
-  <Property name="MinimumPushOffForceToSlide" value="0.0" />
+  <Property name="MinimumPushOffForceToSlide" value="0" />
   <Property name="FreeJetpackSlopeAngle" value="65" />
   <Property name="FreeJetpackSlopeAnglePrime" value="45" />
   <Property name="FullClipReloadSpeedMultiplier" value="2" />

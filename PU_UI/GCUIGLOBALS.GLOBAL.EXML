@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (4.0.0)-->
+<!--File created using MBINCompiler version (4.6.0)-->
 <Data template="GcUIGlobals">
-  <Property name="ShowDifficultyForBases" value="False" />  
+  <Property name="ShowDifficultyForBases" value="False" />
   <Property name="ShowPadlockForLockedSettings" value="True" />
   <Property name="DebugMedalRank" value="-1" />
   <Property name="PadCursorUICurve" value="TkCurveType.xml">
@@ -46,8 +46,8 @@
     <Property name="B" value="0.793" />
     <Property name="A" value="1" />
   </Property>
-  <Property name="SuperchargeGradientFactorMin" value="0.1" />  
-  <Property name="SuperchargeGradientFactor" value="0.8" /> 
+  <Property name="SuperchargeGradientFactorMin" value="0.1" />
+  <Property name="SuperchargeGradientFactor" value="0.8" />
   <Property name="SuperchargeGradientTime" value="3.8" />
   <Property name="GridDecayRateSwitchValue" value="0.5" />
   <Property name="PadCursorUICurveStrength" value="0" />
@@ -352,7 +352,7 @@
   <Property name="InWorldInteractLabelWidth" value="700" />
   <Property name="InWorldInteractLabelHeight" value="300" />
   <Property name="VRDistanceWarningUIFile" value="UI//HUD//HUDVRWARNING.MBIN" />
-  <Property name="ShowVRDistanceWarning" value="True" />
+  <Property name="ShowVRDistanceWarning" value="False" />
   <Property name="FaceLockedScreenOffset" value="Vector3f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="0" />
@@ -840,6 +840,7 @@
   <Property name="MaxNumMessageBeaconIcons" value="10" />
   <Property name="MissionObjectiveBaseHeight" value="50" />
   <Property name="MissionObjectiveDoneHeight" value="30" />
+  <Property name="MissionObjectiveScrollingExtra" value="0" />
   <Property name="MissionDetailsPageBaseHeight" value="300" />
   <Property name="MarkerTagAppearDelay" value="0.2" />
   <Property name="CompassCentre" value="Vector2f.xml">
@@ -2511,13 +2512,13 @@
   <Property name="HUDPlayerTrackArrowTargetDist" value="450" />
   <Property name="HUDPlayerTrackArrowOffset" value="0.4" />
   <Property name="HUDPlayerTrackArrowScreenBorder" value="125" />
-  <Property name="HUDPlayerTrackArrowSize" value="10" />
-  <Property name="HUDPlayerTrackArrowSizeMin" value="50" />
-  <Property name="HUDPlayerTrackArrowSizeMax" value="60" />
-  <Property name="HUDPlayerTrackArrowIconSize" value="0.7" />
-  <Property name="HUDPlayerTrackArrowSmallIconSize" value="1" />
-  <Property name="HUDPlayerTrackArrowArrowSize" value="0.6" />
-  <Property name="HUDPlayerTrackArrowDotSize" value="0.9" />
+  <Property name="HUDPlayerTrackArrowSize" value="0" />
+  <Property name="HUDPlayerTrackArrowSizeMin" value="0" />
+  <Property name="HUDPlayerTrackArrowSizeMax" value="0" />
+  <Property name="HUDPlayerTrackArrowIconSize" value="0" />
+  <Property name="HUDPlayerTrackArrowSmallIconSize" value="0" />
+  <Property name="HUDPlayerTrackArrowArrowSize" value="0" />
+  <Property name="HUDPlayerTrackArrowDotSize" value="0" />
   <Property name="HUDPlayerTrackArrowDotColour" value="Colour.xml">
     <Property name="R" value="0.011" />
     <Property name="G" value="0.763" />
@@ -4579,15 +4580,15 @@
   <Property name="CursorHoverSlowFactor" value="0.98" />
   <Property name="CursorHoverSlowFactorMin" value="0.85" />
   <Property name="FrontendBGAlpha" value="1" />
-  <Property name="FrontendConfirmTimeMouseMultiplier" value="0.20" />
-  <Property name="FrontendConfirmTimeFast" value="0.10" />
+  <Property name="FrontendConfirmTimeMouseMultiplier" value="0.3" />
+  <Property name="FrontendConfirmTimeFast" value="0.2" />
   <Property name="FrontendTouchConfirmTimeFastMultiplier" value="0" />
   <Property name="FrontendConfirmTime" value="0.3" />
-  <Property name="FrontendConfirmTimeSlow" value="1.0" />
+  <Property name="FrontendConfirmTimeSlow" value="1" />
   <Property name="FrontendConfirmCurve" value="TkCurveType.xml">
     <Property name="Curve" value="Squared" />
   </Property>
-  <Property name="FrontendCursorSize" value="16" />
+  <Property name="FrontendCursorSize" value="12" />
   <Property name="FrontendCursorOffset" value="0" />
   <Property name="PopupXClampOffset" value="3" />
   <Property name="PopupXClampOffsetRightAligned" value="20" />
