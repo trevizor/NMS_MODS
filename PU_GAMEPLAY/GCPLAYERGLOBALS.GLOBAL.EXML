@@ -242,13 +242,13 @@
     <Property name="x" value="0.06" />
     <Property name="y" value="0.06" />
   </Property>
-  <Property name="HandInteractionLightIntensity" value="0" />
-  <Property name="HandInteractionLightIntensityMax" value="0" />
-  <Property name="HandInteractionFresnel" value="0" />
-  <Property name="HandInteractionFresnelMax" value="0" />
-  <Property name="HandInteractionLightOffset" value="0" />
-  <Property name="HandInteractionLightOffsetAt" value="0" />
-  <Property name="HandInteractionLightTime" value="0" />
+  <Property name="HandInteractionLightIntensity" value="0.5" />
+  <Property name="HandInteractionLightIntensityMax" value="4" />
+  <Property name="HandInteractionFresnel" value="-9" />
+  <Property name="HandInteractionFresnelMax" value="-2" />
+  <Property name="HandInteractionLightOffset" value="0.2" />
+  <Property name="HandInteractionLightOffsetAt" value="0.2" />
+  <Property name="HandInteractionLightTime" value="0.03" />
   <Property name="HandScreenLookActiveAngle" value="30" />
   <Property name="HandScreenMinAngle" value="40" />
   <Property name="HandScreenMinAngleWithPoint" value="75" />
@@ -345,15 +345,15 @@
   <Property name="TeleportLineFadeRange" value="1" />
   <Property name="TeleportInitiateThreshold" value="0.9" />
   <Property name="TeleportRecentre" value="False" />
-  <Property name="TeleportLineBezierOffset" value="0.8" />
-  <Property name="TeleportLineBezierDistanceFactor" value="0.25" />
+  <Property name="TeleportLineBezierOffset" value="0" />
+  <Property name="TeleportLineBezierDistanceFactor" value="0" />
   <Property name="InteractionLineSplineOffset" value="1" />
   <Property name="InteractionLineSplineOffsetMin" value="0.1" />
   <Property name="InteractionLineSplineMinDistance" value="0.5" />
   <Property name="InteractionLineSplineOffsetRange" value="2" />
-  <Property name="InteractionLineCircleRadius" value="0.01" />
-  <Property name="InteractionLineCircleThickness" value="6" />
-  <Property name="InteractionLineCircleSpeed" value="-0.3" />
+  <Property name="InteractionLineCircleRadius" value="0.0" />
+  <Property name="InteractionLineCircleThickness" value="0" />
+  <Property name="InteractionLineCircleSpeed" value="0.3" />
   <Property name="InteractionLineCircleOffsetMin" value="1" />
   <Property name="InteractionLineCircleOffsetMax" value="1" />
   <Property name="InteractionLineNumCirclesPerMetre" value="0" />
@@ -363,29 +363,29 @@
     <Property name="R" value="1" />
     <Property name="G" value="0.546" />
     <Property name="B" value="0.243" />
-    <Property name="A" value="1" />
+    <Property name="A" value="0" />
   </Property>
   <Property name="InteractionLineBaseColour" value="Colour.xml">
     <Property name="R" value="1" />
     <Property name="G" value="1" />
     <Property name="B" value="1" />
-    <Property name="A" value="1" />
+    <Property name="A" value="0" />
   </Property>
   <Property name="InteractHighlightEffect" value="GcScanEffectData.xml">
     <Property name="Id" value="" />
     <Property name="ScanEffectType" value="Creature" />
     <Property name="Colour" value="Colour.xml">
-      <Property name="R" value="0.852" />
-      <Property name="G" value="1" />
-      <Property name="B" value="1" />
-      <Property name="A" value="1" />
+      <Property name="R" value="0" />
+      <Property name="G" value="0" />
+      <Property name="B" value="0" />
+      <Property name="A" value="0" />
     </Property>
-    <Property name="BasecolourIntensity" value="-0.1" />
+    <Property name="BasecolourIntensity" value="1" />
     <Property name="ScanlinesSeparation" value="0" />
     <Property name="FresnelIntensity" value="-2" />
     <Property name="GlowIntensity" value="0" />
     <Property name="WaveOffset" value="0" />
-    <Property name="WaveActive" value="True" />
+    <Property name="WaveActive" value="False" />
     <Property name="FixedUpAxis" value="False" />
     <Property name="Transparent" value="False" />
     <Property name="ModelFade" value="False" />
@@ -399,7 +399,7 @@
       <Property name="R" value="0.852" />
       <Property name="G" value="1" />
       <Property name="B" value="1" />
-      <Property name="A" value="1" />
+      <Property name="A" value="0" />
     </Property>
     <Property name="BasecolourIntensity" value="-0.1" />
     <Property name="ScanlinesSeparation" value="0" />
@@ -408,7 +408,7 @@
     <Property name="WaveOffset" value="0" />
     <Property name="WaveActive" value="True" />
     <Property name="FixedUpAxis" value="False" />
-    <Property name="Transparent" value="False" />
+    <Property name="Transparent" value="True" />
     <Property name="ModelFade" value="True" />
     <Property name="FadeInTime" value="0.1" />
     <Property name="FadeOutTime" value="0.2" />
@@ -872,9 +872,9 @@
   <Property name="GrenadeBaseClipSize" value="100" />
   <Property name="MeleeCooldown" value="0.62" />
   <Property name="ChargeMeleeCooldown" value="1.3" />
-  <Property name="MeleeDistance" value="2.8" />
-  <Property name="MeleeDistance3P" value="1.8" />
-  <Property name="MeleeRadius" value="0.75" />
+  <Property name="MeleeDistance" value="3.8" />
+  <Property name="MeleeDistance3P" value="2.8" />
+  <Property name="MeleeRadius" value="0.95" />
   <Property name="MeleeHitTime" value="0.2" />
   <Property name="MeleeSpeedBoost" value="1" />
   <Property name="MeleeSpeedDamageBoost" value="1.2" />

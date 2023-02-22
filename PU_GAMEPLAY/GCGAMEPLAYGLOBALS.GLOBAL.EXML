@@ -4676,7 +4676,7 @@
   <Property name="MissionSurveyScanSpeed" value="0.2" />
   <Property name="MissionSurveyScanSpeedScannableComp" value="0.66" />
   <Property name="MissionSurveyRevealWithoutScanDistance" value="45" />
-  <Property name="MissionSurveyAutoScanDistance" value="50" />
+  <Property name="MissionSurveyAutoScanDistance" value="1000" />
   <Property name="MissionSurveyAutoScanFlattenRadiusMul" value="2" />
   <Property name="MissionSurveySonarMinPulseSpeed" value="0.1" />
   <Property name="MissionSurveySonarMaxPulseSpeed" value="2" />
@@ -5960,12 +5960,18 @@
   <Property name="HUDDamageRadius" value="420" />
   <Property name="HUDTarget" value="GcShipHUDTargetData.xml">
     <Property name="IconData" value="GcShipHUDTargetIconData.xml">
-      <Property name="Corner" value="TEXTURES//UI//HUD//LINES//LINECORNERSOLID.DDS" />
+      <Property name="Corner" value="" />
+      <Property name="LineHorizontal" value="" />
+      <Property name="LineVertical" value="" />
+      <Property name="GlowCorner" value="" />
+      <Property name="GlowLineHorizontal" value="" />
+      <Property name="GlowLineVertical" value="" />
+<!--       <Property name="Corner" value="TEXTURES//UI//HUD//LINES//LINECORNERSOLID.DDS" />
       <Property name="LineHorizontal" value="TEXTURES//UI//HUD//LINES//LINESOLID.DDS" />
       <Property name="LineVertical" value="TEXTURES//UI//HUD//LINES//LINEVERTSOLID.DDS" />
       <Property name="GlowCorner" value="TEXTURES//UI//HUD//LINES//LINECORNERGLOW.DDS" />
       <Property name="GlowLineHorizontal" value="TEXTURES//UI//HUD//LINES//LINEGLOW.DDS" />
-      <Property name="GlowLineVertical" value="TEXTURES//UI//HUD//LINES//LINEVERTGLOW.DDS" />
+      <Property name="GlowLineVertical" value="TEXTURES//UI//HUD//LINES//LINEVERTGLOW.DDS" /> -->
     </Property>
     <Property name="Arrow" value="TEXTURES//UI//HUD//ARROW.DDS" />
     <Property name="IconSizeIn" value="1.2" />

@@ -56,9 +56,9 @@
     
     <!--Clouds Targets-->
     <RenderTarget id="CLOUDSHADOWS"       depthBuf="false"  numColBufs="1" format="RED8"   bilinear="true" scale="0.5" allowDcc="false" numUniformBuffers="3" numSlices="2" />
-    <RenderTarget id="CLOUDS_HIGH"        depthBuf="false"  numColBufs="2" format0="RGBA8" format1="RED32F" bilinear="true" width="884" height="992"  allowDcc="false" numUniformBuffers="3" numSlices="2"  crossPipeShareId="CLOUDS_SHARED"   />
-    <RenderTarget id="CLOUD_BLURBUF1"     depthBuf="false"  numColBufs="1" format="RGBA8"  bilinear="true" width="884" height="992" allowDcc="false" numUniformBuffers="3" numSlices="2" crossPipeShareId="CLOUDSB1_SHARED" />
-    <RenderTarget id="CLOUD_BLURBUF2"     depthBuf="false"  numColBufs="1" format="RGBA8"  bilinear="true" width="884" height="992" allowDcc="false" numUniformBuffers="3" numSlices="2" crossPipeShareId="CLOUDSB2_SHARED" />
+    <RenderTarget id="CLOUDS_HIGH"        depthBuf="false"  numColBufs="2" format0="RGBA8" format1="RED32F" bilinear="true" width="884" height="1402"  allowDcc="false" numUniformBuffers="3" numSlices="2"  crossPipeShareId="CLOUDS_SHARED"   />
+    <RenderTarget id="CLOUD_BLURBUF1"     depthBuf="false"  numColBufs="1" format="RGBA8"  bilinear="true" width="884" height="1402" allowDcc="false" numUniformBuffers="3" numSlices="2" crossPipeShareId="CLOUDSB1_SHARED" />
+    <RenderTarget id="CLOUD_BLURBUF2"     depthBuf="false"  numColBufs="1" format="RGBA8"  bilinear="true" width="884" height="1402" allowDcc="false" numUniformBuffers="3" numSlices="2" crossPipeShareId="CLOUDSB2_SHARED" />
 
     <!--Water Targets-->
     <RenderTarget id="WATER"              depthBuf="false"  numColBufs="1" format="RGBA16F" bilinear="true" scale="0.5"   shareTarget0="HDRBUF_DOWN_16_0" numUniformBuffers="3" numSlices="2" />
@@ -989,6 +989,7 @@
       <BindBuffer sampler="gShadowMap"       sourceRT="SHADOWBUF"       bufIndex="32" />
       <BindBuffer sampler="gCloudShadowMap"  sourceRT="CLOUDSHADOWS"    bufIndex="0" addressMode="wrap" />
       <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="blend" depthTest="less"  stencilMode="maskWrite" stencilRef="4"  stencilMask="4"/>
+      <DoForwardLightLoop type="Mesh"     class="Additive" context="LIT_FORWARD" order="BACK_TO_FRONT" />
       <DoForwardLightLoop type="Mesh"     class="Translucent" context="LIT_FORWARD" order="BACK_TO_FRONT" />
       <UnbindBuffers />
       <EndTarget flushCB="false" flushDB="false" />
@@ -1006,6 +1007,7 @@
       <BindBuffer sampler="gShadowMap"       sourceRT="SHADOWBUF"       bufIndex="32" />
       <BindBuffer sampler="gCloudShadowMap"  sourceRT="CLOUDSHADOWS"    bufIndex="0" addressMode="wrap" />
       <SetContext zwrite="false" colourWrite="true" cullMode="back" blendMode="blend" depthTest="less"  stencilMode="maskWrite" stencilRef="20"  stencilMask="20" />
+      <DoForwardLightLoop type="Mesh"     class="Additive" context="LIT_FRWD_REFR_H" order="BACK_TO_FRONT" />
       <DoForwardLightLoop type="Mesh"     class="Translucent" context="LIT_FRWD_REFR_H" order="BACK_TO_FRONT" />
       <UnbindBuffers />
       <EndTarget flushCB="true" flushDB="false" />
@@ -1109,6 +1111,7 @@
       <ColourMask channels="RGB" colBuf1="false" />
       <SetContext zwrite="false" colourWrite="true" cullMode="none" blendMode="blend" depthTest="less"  stencilMode="maskWrite" stencilRef="4"  stencilMask="4"/>
       <DoForwardLightLoop type="Trail" class="Translucent" context="LIGHTING" order="STATECHANGES" />
+      <DoForwardLightLoop type="Trail" class="Additive" context="LIGHTING" order="STATECHANGES" />
 
       <ColourMask channels="RGB" colBuf1="false" />
       <SetContext zwrite="false" colourWrite="true" cullMode="none" blendMode="add" depthTest="less"  stencilMode="maskWrite" stencilRef="4"  stencilMask="4"  />
@@ -1816,7 +1819,9 @@
       <SetContext zwrite="false" colourWrite="true" cullMode="none" blendMode="Blend_OutputOneMinusAlpha" depthTest="less" />
 
       <DoForwardLightLoop  type="EMITTER"  class="Translucent" context="TRANSLUCENT_SOFT" order="BACK_TO_FRONT" singlePassStereo="false" />
+      <DoForwardLightLoop  type="EMITTER"  class="Additive" context="TRANSLUCENT_SOFT" order="BACK_TO_FRONT" singlePassStereo="false" />
       <DoForwardLightLoop  type="HEAVYAIR" class="Translucent" context="HEAVYAIR_SOFT" order="BACK_TO_FRONT" />
+      <DoForwardLightLoop  type="HEAVYAIR" class="Additive" context="HEAVYAIR_SOFT" order="BACK_TO_FRONT" />
       <UnbindBuffers />
 
       <EndTarget flushCB="true" flushDB="false" />
