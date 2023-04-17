@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (4.4.0)-->
+<!--File created using MBINCompiler version (4.22.0)-->
 <Data template="GcSpaceshipGlobals">
+  <Property name="ShipThrottleNotchVibrationStrength" value="0.12" />
+  <Property name="ShipThrottleBrakeVibrationStrength" value="0.33" />
+  <Property name="ShipThrustReverseThreshhold" value="0.33" />
   <Property name="ShieldLeechMul" value="0.07" />
   <Property name="AtmosphereCombatHeight" value="1000" />
   <Property name="SailShipCoreTechID" value="SOLAR_SAIL" />
@@ -43,21 +46,25 @@
   <Property name="PulseDriveStationApproachSlowdownRange" value="5000" />
   <Property name="HandControllerActiveBlendMinTime" value="0.2" />
   <Property name="HandControllerActiveBlendTime" value="0.8" />
-  <Property name="HandControllerValueMultiplier" value="Vector2f.xml">
+  <Property name="HandControllerValueMultiplier" value="Vector3f.xml">
+    <Property name="x" value="1.5" />
+    <Property name="y" value="1.5" />
+    <Property name="z" value="1" />
+  </Property>
+  <Property name="HandControllerValueMultiplierSpace" value="Vector3f.xml">
     <Property name="x" value="1" />
     <Property name="y" value="1" />
+    <Property name="z" value="1" />
   </Property>
-  <Property name="HandControllerValueMultiplierSpace" value="Vector2f.xml">
-    <Property name="x" value="1" />
-    <Property name="y" value="1" />
+  <Property name="HandControllerDeadZone" value="Vector3f.xml">
+    <Property name="x" value="0.2" />
+    <Property name="y" value="0.2" />
+    <Property name="z" value="0.2" />
   </Property>
-  <Property name="HandControllerDeadZone" value="Vector2f.xml">
-    <Property name="x" value="0.08" />
-    <Property name="y" value="0.08" />
-  </Property>
-  <Property name="HandControllerExtents" value="Vector2f.xml">
+  <Property name="HandControllerExtents" value="Vector3f.xml">
     <Property name="x" value="0.8" />
     <Property name="y" value="0.8" />
+    <Property name="z" value="0.5" />
   </Property>
   <Property name="HandControllerXReorientationMove" value="40" />
   <Property name="HandControllerZReorientationMove" value="10" />
@@ -89,8 +96,8 @@
   <Property name="EnableDepthTestedCrosshairSections" value="False" />
   <Property name="CritsFromBehind" value="True" />
   <Property name="DrawLineLockTarget" value="True" />
-  <Property name="ApplyHeightForce" value="True" />
-  <Property name="ApplyHeightAlign" value="True" />
+  <Property name="ApplyHeightForce" value="false" />
+  <Property name="ApplyHeightAlign" value="false" />
   <Property name="DoPreCollision" value="True" />
   <Property name="SpeedTrackModeEnabled" value="False" />
   <Property name="TrailMaxNumPointsPerFrameOverride" value="2" />
@@ -859,6 +866,155 @@
     <Property name="ShipPlanetBrakeAlignMaxTime" value="8" />
     <Property name="ShipMinHeightForce" value="1" />
   </Property>
+  <Property name="ControlHover" value="GcPlayerSpaceshipControlData.xml">
+    <Property name="SpaceEngine" value="GcPlayerSpaceshipEngineData.xml">
+      <Property name="ThrustForce" value="40" />
+      <Property name="MaxSpeed" value="180" />
+      <Property name="MinSpeed" value="1" />
+      <Property name="Falloff" value="0.7" />
+      <Property name="MinSpeedForce" value="5" />
+      <Property name="BoostThrustForce" value="500" />
+      <Property name="BoostMaxSpeed" value="1100" />
+      <Property name="BoostFalloff" value="0.7" />
+      <Property name="BoostingTurnDamp" value="0.1" />
+      <Property name="DirectionBrakeMin" value="1" />
+      <Property name="DirectionBrake" value="1.5" />
+      <Property name="ReverseBrake" value="0.5" />
+      <Property name="OverspeedBrake" value="3" />
+      <Property name="LowSpeedTurnDamper" value="1" />
+      <Property name="TurnBrakeMin" value="1" />
+      <Property name="TurnBrakeMax" value="3" />
+      <Property name="TurnStrength" value="0.6" />
+      <Property name="RollAmount" value="1.5" />
+      <Property name="RollForce" value="1" />
+      <Property name="RollAutoTime" value="2" />
+      <Property name="BalanceTimeMin" value="0.4" />
+      <Property name="BalanceTimeMax" value="4" />
+      <Property name="FollowProportionalGain" value="0.1" />
+      <Property name="FollowDerivativeGain" value="0.05" />
+      <Property name="FollowIntegralGain" value="0.15" />
+      <Property name="FollowProportionalLimit" value="60" />
+      <Property name="FollowDerivativeLimit" value="10" />
+      <Property name="FollowIntegralLimit" value="1.2" />
+      <Property name="FollowIntegralDecay" value="0.99" />
+    </Property>
+    <Property name="PlanetEngine" value="GcPlayerSpaceshipEngineData.xml">
+      <Property name="ThrustForce" value="20" />
+      <Property name="MaxSpeed" value="130" />
+      <Property name="MinSpeed" value="1" />
+      <Property name="Falloff" value="0.5" />
+      <Property name="MinSpeedForce" value="31" />
+      <Property name="BoostThrustForce" value="400" />
+      <Property name="BoostMaxSpeed" value="185" />
+      <Property name="BoostFalloff" value="0.7" />
+      <Property name="BoostingTurnDamp" value="0.15" />
+      <Property name="DirectionBrakeMin" value="0.5" />
+      <Property name="DirectionBrake" value="1" />
+      <Property name="ReverseBrake" value="1" />
+      <Property name="OverspeedBrake" value="3" />
+      <Property name="LowSpeedTurnDamper" value="0.4" />
+      <Property name="TurnBrakeMin" value="1" />
+      <Property name="TurnBrakeMax" value="2" />
+      <Property name="TurnStrength" value="1.05" />
+      <Property name="RollAmount" value="1.25" />
+      <Property name="RollForce" value="1" />
+      <Property name="RollAutoTime" value="0.5" />
+      <Property name="BalanceTimeMin" value="0.65" />
+      <Property name="BalanceTimeMax" value="1.75" />
+      <Property name="FollowProportionalGain" value="0.1" />
+      <Property name="FollowDerivativeGain" value="0.05" />
+      <Property name="FollowIntegralGain" value="0.15" />
+      <Property name="FollowProportionalLimit" value="60" />
+      <Property name="FollowDerivativeLimit" value="10" />
+      <Property name="FollowIntegralLimit" value="1.2" />
+      <Property name="FollowIntegralDecay" value="0.99" />
+    </Property>
+    <Property name="CombatEngine" value="GcPlayerSpaceshipEngineData.xml">
+      <Property name="ThrustForce" value="40" />
+      <Property name="MaxSpeed" value="80" />
+      <Property name="MinSpeed" value="50" />
+      <Property name="Falloff" value="0.7" />
+      <Property name="MinSpeedForce" value="30" />
+      <Property name="BoostThrustForce" value="500" />
+      <Property name="BoostMaxSpeed" value="1100" />
+      <Property name="BoostFalloff" value="0.7" />
+      <Property name="BoostingTurnDamp" value="0.1" />
+      <Property name="DirectionBrakeMin" value="1" />
+      <Property name="DirectionBrake" value="2" />
+      <Property name="ReverseBrake" value="0.5" />
+      <Property name="OverspeedBrake" value="3" />
+      <Property name="LowSpeedTurnDamper" value="1" />
+      <Property name="TurnBrakeMin" value="1" />
+      <Property name="TurnBrakeMax" value="4" />
+      <Property name="TurnStrength" value="1" />
+      <Property name="RollAmount" value="1.5" />
+      <Property name="RollForce" value="1" />
+      <Property name="RollAutoTime" value="2" />
+      <Property name="BalanceTimeMin" value="0.4" />
+      <Property name="BalanceTimeMax" value="4" />
+      <Property name="FollowProportionalGain" value="0.1" />
+      <Property name="FollowDerivativeGain" value="0.05" />
+      <Property name="FollowIntegralGain" value="0.15" />
+      <Property name="FollowProportionalLimit" value="60" />
+      <Property name="FollowDerivativeLimit" value="10" />
+      <Property name="FollowIntegralLimit" value="1.2" />
+      <Property name="FollowIntegralDecay" value="0.99" />
+    </Property>
+    <Property name="AtmosCombatEngine" value="GcPlayerSpaceshipEngineData.xml">
+      <Property name="ThrustForce" value="40" />
+      <Property name="MaxSpeed" value="80" />
+      <Property name="MinSpeed" value="10" />
+      <Property name="Falloff" value="0.7" />
+      <Property name="MinSpeedForce" value="30" />
+      <Property name="BoostThrustForce" value="50" />
+      <Property name="BoostMaxSpeed" value="120" />
+      <Property name="BoostFalloff" value="0.7" />
+      <Property name="BoostingTurnDamp" value="0.1" />
+      <Property name="DirectionBrakeMin" value="1" />
+      <Property name="DirectionBrake" value="2" />
+      <Property name="ReverseBrake" value="0.5" />
+      <Property name="OverspeedBrake" value="3" />
+      <Property name="LowSpeedTurnDamper" value="0.01" />
+      <Property name="TurnBrakeMin" value="1" />
+      <Property name="TurnBrakeMax" value="4" />
+      <Property name="TurnStrength" value="1" />
+      <Property name="RollAmount" value="1.5" />
+      <Property name="RollForce" value="1" />
+      <Property name="RollAutoTime" value="2" />
+      <Property name="BalanceTimeMin" value="0.4" />
+      <Property name="BalanceTimeMax" value="4" />
+      <Property name="FollowProportionalGain" value="0.1" />
+      <Property name="FollowDerivativeGain" value="0.05" />
+      <Property name="FollowIntegralGain" value="0.15" />
+      <Property name="FollowProportionalLimit" value="60" />
+      <Property name="FollowDerivativeLimit" value="10" />
+      <Property name="FollowIntegralLimit" value="1.2" />
+      <Property name="FollowIntegralDecay" value="0.99" />
+    </Property>
+    <Property name="ExitHeightFactorMin" value="200" />
+    <Property name="ExitHeightFactorMax" value="1200" />
+    <Property name="ExitHeightFactorPlungeMin" value="500" />
+    <Property name="ExitHeightFactorPlungeMax" value="5000" />
+    <Property name="ExitAngleMin" value="-30" />
+    <Property name="ExitAngleMax" value="9" />
+    <Property name="ExitLeaveAngle" value="60" />
+    <Property name="ExitCurve" value="TkCurveType.xml">
+      <Property name="Curve" value="EaseInExpo" />
+    </Property>
+    <Property name="ExitDownCurve" value="TkCurveType.xml">
+      <Property name="Curve" value="Squared" />
+    </Property>
+    <Property name="AngularFactor" value="0.1" />
+    <Property name="MaxTorque" value="10000" />
+    <Property name="ShipPlanetBrakeMinSpeed" value="15" />
+    <Property name="ShipPlanetBrakeMaxSpeed" value="90" />
+    <Property name="ShipPlanetBrakeMinHeight" value="200" />
+    <Property name="ShipPlanetBrakeMaxHeight" value="5000" />
+    <Property name="ShipPlanetBrakeForce" value="50" />
+    <Property name="ShipPlanetBrakeAlignMinTime" value="0.3" />
+    <Property name="ShipPlanetBrakeAlignMaxTime" value="8" />
+    <Property name="ShipMinHeightForce" value="1" />
+  </Property>
   <Property name="ControlBonusC" value="GcPlayerSpaceshipClassBonuses.xml">
     <Property name="ThrustForceMax" value="30" />
     <Property name="ThrustForceMin" value="-5" />
@@ -977,15 +1133,15 @@
     <Property name="B" value="0" />
     <Property name="A" value="1" />
   </Property>
-  <Property name="ShieldRechargeMinHitTime" value="60" />
-  <Property name="ShieldRechargeRate" value="6" />
+  <Property name="ShieldRechargeMinHitTime" value="30" />
+  <Property name="ShieldRechargeRate" value="3" />
   <Property name="NoBoostStationDistance" value="2000" />
   <Property name="NoBoostAnomalyDistance" value="3000" />
   <Property name="NoBoostSpaceAnomalyDistance" value="700" />
   <Property name="NoBoostFreighterDistance" value="800" />
   <Property name="NoBoostFreighterAngle" value="10" />
   <Property name="NoBoostShipDistance" value="2000" />
-  <Property name="NoBoostShipNearMinTime" value="5" />
+  <Property name="NoBoostShipNearMinTime" value="3" />
   <Property name="NoBoostShipLastHitTime" value="10" />
   <Property name="NoBoostCombatEventMinBattleTime" value="35" />
   <Property name="NoBoostCombatEventMinFreighterBattleTime" value="55" />
@@ -1113,7 +1269,7 @@
     <Property name="Accelerate" value="0" />
     <Property name="AccelerateAngle" value="30" />
     <Property name="Turn" value="1.2" />
-    <Property name="TurnFast" value="1.3" />
+    <Property name="TurnFast" value="1.8" />
     <Property name="StickyFactor" value="1" />
   </Property>
   <Property name="ResourceCollectOffset" value="15" />

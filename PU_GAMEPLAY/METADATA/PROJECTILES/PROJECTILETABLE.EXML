@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (4.0.0)-->
+<!--File created using MBINCompiler version (4.20.0)-->
 <Data template="GcProjectileDataTable">
   <Property name="Table">
     <Property value="GcProjectileData.xml">
@@ -39,7 +39,7 @@
       <Property name="RagdollPush" value="2000000" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="8" />
-      <Property name="DefaultDamage" value="220" /> <!-- MELEE -->
+      <Property name="DefaultDamage" value="220" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Melee" />
@@ -54,14 +54,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -150,7 +150,7 @@
       <Property name="RagdollPush" value="2000000" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="8" />
-      <Property name="DefaultDamage" value="46" /> <!-- MELEE_KICK -->
+      <Property name="DefaultDamage" value="46" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Melee" />
@@ -165,14 +165,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -254,14 +254,14 @@
       <Property name="ApplyCombatLevelMultipliers" value="False" />
       <Property name="Radius" value="0.5" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="240" />
+      <Property name="DefaultSpeed" value="480" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0.75" />
-      <Property name="DefaultDamage" value="2" /> <!-- BOLTGUN -->
+      <Property name="DefaultDamage" value="2" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
@@ -276,14 +276,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.6" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -380,7 +380,7 @@
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="2" /> <!-- FLAMETHROW -->
+      <Property name="DefaultDamage" value="2" />
       <Property name="ExtraPlayerDamage" value="2" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Explosion" />
@@ -397,12 +397,12 @@
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
         <Property name="BulletLength" value="1" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="5" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="50" />
         <Property name="BulletMinScaleDistance" value="0" />
@@ -492,14 +492,14 @@
       <Property name="ApplyCombatLevelMultipliers" value="False" />
       <Property name="Radius" value="1" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="80" />
+      <Property name="DefaultSpeed" value="300" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="2" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="2" /> <!-- SHOTGUN -->
+      <Property name="DefaultDamage" value="2" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Shotgun" />
@@ -514,14 +514,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -611,14 +611,14 @@
       <Property name="ApplyCombatLevelMultipliers" value="False" />
       <Property name="Radius" value="0.25" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="90" />
+      <Property name="DefaultSpeed" value="60" />
       <Property name="Gravity" value="0.5" />
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="2" /> <!-- SMG -->
+      <Property name="DefaultDamage" value="2" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Burst" />
@@ -633,14 +633,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.6" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -737,7 +737,7 @@
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="3" />
-      <Property name="DefaultDamage" value="2" /> <!-- CANNON -->
+      <Property name="DefaultDamage" value="2" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Cannon" />
@@ -752,14 +752,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -782,7 +782,7 @@
         <Property name="B" value="1" />
         <Property name="A" value="1" />
       </Property>
-      <Property name="BehaviourFlags" value="96" />
+      <Property name="BehaviourFlags" value="ScareCreatures, ExplosionForce" />
       <Property name="Class" value="Player" />
       <Property name="DefaultImpact" value="BLASTOVERIMPACT" />
       <Property name="CriticalImpact" value="" />
@@ -840,7 +840,7 @@
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="8" />
-      <Property name="DefaultDamage" value="2" /> <!-- GRENADE -->
+      <Property name="DefaultDamage" value="2" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Explosion" />
@@ -855,14 +855,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -885,7 +885,7 @@
         <Property name="B" value="1" />
         <Property name="A" value="1" />
       </Property>
-      <Property name="BehaviourFlags" value="96" />
+      <Property name="BehaviourFlags" value="ScareCreatures, ExplosionForce" />
       <Property name="Class" value="Player" />
       <Property name="DefaultImpact" value="GRENADEEXPLODE" />
       <Property name="CriticalImpact" value="" />
@@ -943,7 +943,7 @@
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="50" /> <!-- MINE_GREN -->
+      <Property name="DefaultDamage" value="50" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Explosion" />
@@ -958,14 +958,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -1037,7 +1037,7 @@
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="0" /> <!-- STUN_GREN -->
+      <Property name="DefaultDamage" value="0" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Explosion" />
@@ -1052,14 +1052,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -1082,7 +1082,7 @@
         <Property name="B" value="1" />
         <Property name="A" value="1" />
       </Property>
-      <Property name="BehaviourFlags" value="96" />
+      <Property name="BehaviourFlags" value="ScareCreatures, ExplosionForce" />
       <Property name="Class" value="Player" />
       <Property name="DefaultImpact" value="STUNGRENADE" />
       <Property name="CriticalImpact" value="" />
@@ -1131,7 +1131,7 @@
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="1" /> <!-- MINIROBOTGUN -->
+      <Property name="DefaultDamage" value="1" />
       <Property name="ExtraPlayerDamage" value="3" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
@@ -1146,14 +1146,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -1227,14 +1227,14 @@
       <Property name="ApplyCombatLevelMultipliers" value="True" />
       <Property name="Radius" value="0.5" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="80" />
+      <Property name="DefaultSpeed" value="90" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="1" /> <!-- ROBOTGUN -->
+      <Property name="DefaultDamage" value="1" />
       <Property name="ExtraPlayerDamage" value="1.5" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
@@ -1249,14 +1249,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -1330,14 +1330,14 @@
       <Property name="ApplyCombatLevelMultipliers" value="False" />
       <Property name="Radius" value="2.5" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="80" />
+      <Property name="DefaultSpeed" value="90" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="100" /> <!-- ROBOTGUNFRIENDL -->
+      <Property name="DefaultDamage" value="100" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="PlayerWeapons" />
@@ -1352,14 +1352,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -1440,7 +1440,7 @@
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="1" /> <!-- ROBOTGUNWEAK -->
+      <Property name="DefaultDamage" value="1" />
       <Property name="ExtraPlayerDamage" value="1" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
@@ -1462,7 +1462,7 @@
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -1543,7 +1543,7 @@
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="1" /> <!-- ROBOTSMG -->
+      <Property name="DefaultDamage" value="1" />
       <Property name="ExtraPlayerDamage" value="1.8" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
@@ -1558,14 +1558,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="True" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.5" />
+        <Property name="BulletLength" value="0.8" />
         <Property name="BulletGlowWidthTime" value="1.5" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="1" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -1639,14 +1639,14 @@
       <Property name="ApplyCombatLevelMultipliers" value="True" />
       <Property name="Radius" value="0.35" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="40" />
+      <Property name="DefaultSpeed" value="50" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="1" /> <!-- ROBOTSHOTGUN -->
+      <Property name="DefaultDamage" value="1" />
       <Property name="ExtraPlayerDamage" value="4" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
@@ -1661,14 +1661,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -1742,14 +1742,14 @@
       <Property name="ApplyCombatLevelMultipliers" value="True" />
       <Property name="Radius" value="4" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="20" />
+      <Property name="DefaultSpeed" value="30" />
       <Property name="Gravity" value="30" />
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="25" /> <!-- ROBOTGRENADE -->
+      <Property name="DefaultDamage" value="25" />
       <Property name="ExtraPlayerDamage" value="5" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Explosion" />
@@ -1764,14 +1764,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -1794,7 +1794,7 @@
         <Property name="B" value="1" />
         <Property name="A" value="1" />
       </Property>
-      <Property name="BehaviourFlags" value="97" />
+      <Property name="BehaviourFlags" value="DestroyTerrain, ScareCreatures, ExplosionForce" />
       <Property name="Class" value="Robot" />
       <Property name="DefaultImpact" value="DRONEGRENEXPL" />
       <Property name="CriticalImpact" value="" />
@@ -1852,7 +1852,7 @@
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="25" /> <!-- ROBOTGRENADE2 -->
+      <Property name="DefaultDamage" value="25" />
       <Property name="ExtraPlayerDamage" value="5" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Explosion" />
@@ -1867,14 +1867,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -1897,7 +1897,7 @@
         <Property name="B" value="0" />
         <Property name="A" value="0" />
       </Property>
-      <Property name="BehaviourFlags" value="97" />
+      <Property name="BehaviourFlags" value="DestroyTerrain, ScareCreatures, ExplosionForce" />
       <Property name="Class" value="Robot" />
       <Property name="DefaultImpact" value="DRONEGRENEXPL" />
       <Property name="CriticalImpact" value="" />
@@ -1955,7 +1955,7 @@
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="1" /> <!-- ROBOTBIGGUN -->
+      <Property name="DefaultDamage" value="1" />
       <Property name="ExtraPlayerDamage" value="4" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
@@ -1972,12 +1972,12 @@
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
         <Property name="BulletLength" value="0.3" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="5" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -2042,14 +2042,14 @@
       <Property name="ApplyCombatLevelMultipliers" value="False" />
       <Property name="Radius" value="20" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="1800" />
+      <Property name="DefaultSpeed" value="3200" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="2" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="2000" /> <!-- SHIPGUN -->
+      <Property name="DefaultDamage" value="2000" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipGun" />
@@ -2064,14 +2064,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -2169,14 +2169,14 @@
       <Property name="ApplyCombatLevelMultipliers" value="False" />
       <Property name="Radius" value="40" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="1800" />
+      <Property name="DefaultSpeed" value="2000" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="2" /> <!-- SHIPSHOTGUN -->
+      <Property name="DefaultDamage" value="2" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipShotgun" />
@@ -2191,14 +2191,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -2303,7 +2303,7 @@
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="2" /> <!-- SHIPMINIGUN -->
+      <Property name="DefaultDamage" value="2" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipMinigun" />
@@ -2318,14 +2318,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="2" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -2423,14 +2423,14 @@
       <Property name="ApplyCombatLevelMultipliers" value="False" />
       <Property name="Radius" value="45" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="1800" />
+      <Property name="DefaultSpeed" value="1000" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="2" /> <!-- SHIPPLASMAGUN -->
+      <Property name="DefaultDamage" value="2" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipPlasma" />
@@ -2445,14 +2445,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -2559,14 +2559,14 @@
       <Property name="ApplyCombatLevelMultipliers" value="False" />
       <Property name="Radius" value="1" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="1800" />
+      <Property name="DefaultSpeed" value="3000" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="2" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="40" /> <!-- TRADERGUN -->
+      <Property name="DefaultDamage" value="40" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipGun" />
@@ -2583,12 +2583,12 @@
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
         <Property name="BulletLength" value="10" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="20" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="20" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="2" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -2670,14 +2670,14 @@
       <Property name="ApplyCombatLevelMultipliers" value="False" />
       <Property name="Radius" value="7.5" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="1800" />
+      <Property name="DefaultSpeed" value="3000" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="2" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="20" /> <!-- POLICEGUN -->
+      <Property name="DefaultDamage" value="20" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipGun" />
@@ -2694,12 +2694,12 @@
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
         <Property name="BulletLength" value="10" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="20" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="20" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="2" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -2781,14 +2781,14 @@
       <Property name="ApplyCombatLevelMultipliers" value="False" />
       <Property name="Radius" value="7.5" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="1800" />
+      <Property name="DefaultSpeed" value="3000" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="2" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="20" /> <!-- AISHIPGUN -->
+      <Property name="DefaultDamage" value="20" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipGun" />
@@ -2803,14 +2803,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -2892,14 +2892,14 @@
       <Property name="ApplyCombatLevelMultipliers" value="False" />
       <Property name="Radius" value="40" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="1800" />
+      <Property name="DefaultSpeed" value="1000" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="2" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="20" /> <!-- FREIGHTGUN -->
+      <Property name="DefaultDamage" value="20" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipGun" />
@@ -2914,14 +2914,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -3003,14 +3003,14 @@
       <Property name="ApplyCombatLevelMultipliers" value="False" />
       <Property name="Radius" value="40" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="1800" />
+      <Property name="DefaultSpeed" value="1000" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="2" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="300" /> <!-- COP_FREIGHTGUN -->
+      <Property name="DefaultDamage" value="300" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipGun" />
@@ -3025,14 +3025,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -3121,7 +3121,7 @@
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="200" /> <!-- BASE_TURRET_M -->
+      <Property name="DefaultDamage" value="200" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Explosion" />
@@ -3136,14 +3136,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -3215,7 +3215,7 @@
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="5" />
-      <Property name="DefaultDamage" value="2" /> <!-- VEHICLEGUN -->
+      <Property name="DefaultDamage" value="2" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="VehicleGun" />
@@ -3230,14 +3230,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -3302,14 +3302,14 @@
       <Property name="ApplyCombatLevelMultipliers" value="False" />
       <Property name="Radius" value="45" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="1800" />
+      <Property name="DefaultSpeed" value="2200" />
       <Property name="Gravity" value="0" />
       <Property name="Life" value="10" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="2" /> <!-- SHIPROCKET -->
+      <Property name="DefaultDamage" value="2" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipRockets" />
@@ -3324,14 +3324,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -3412,7 +3412,7 @@
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="5" /> <!-- FIENDSPIT -->
+      <Property name="DefaultDamage" value="5" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
@@ -3427,14 +3427,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -3499,14 +3499,14 @@
       <Property name="ApplyCombatLevelMultipliers" value="False" />
       <Property name="Radius" value="0.5" />
       <Property name="CapsuleHeight" value="0" />
-      <Property name="DefaultSpeed" value="35" />
+      <Property name="DefaultSpeed" value="41" />
       <Property name="Gravity" value="20" />
       <Property name="Life" value="3" />
       <Property name="Offset" value="0" />
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="1" /> <!-- SCUTTLERSPIT -->
+      <Property name="DefaultDamage" value="1" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
@@ -3521,14 +3521,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -3600,7 +3600,7 @@
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="1" /> <!-- TURRETINT -->
+      <Property name="DefaultDamage" value="1" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
@@ -3615,14 +3615,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -3703,7 +3703,7 @@
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="25" /> <!-- SENMECHCANON -->
+      <Property name="DefaultDamage" value="25" />
       <Property name="ExtraPlayerDamage" value="5" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Explosion" />
@@ -3718,14 +3718,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -3748,7 +3748,7 @@
         <Property name="B" value="1" />
         <Property name="A" value="1" />
       </Property>
-      <Property name="BehaviourFlags" value="97" />
+      <Property name="BehaviourFlags" value="DestroyTerrain, ScareCreatures, ExplosionForce" />
       <Property name="Class" value="Robot" />
       <Property name="DefaultImpact" value="DRONEGRENEXPL" />
       <Property name="CriticalImpact" value="" />
@@ -3806,7 +3806,7 @@
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="1" /> <!-- SENMECHSMG -->
+      <Property name="DefaultDamage" value="1" />
       <Property name="ExtraPlayerDamage" value="3" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
@@ -3823,12 +3823,12 @@
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
         <Property name="BulletLength" value="0.5" />
         <Property name="BulletGlowWidthTime" value="1.5" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="1" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -3909,7 +3909,7 @@
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="5" />
-      <Property name="DefaultDamage" value="1" /> <!-- VEHICLESTUNGUN -->
+      <Property name="DefaultDamage" value="1" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="VehicleGun" />
@@ -3924,14 +3924,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -3954,7 +3954,7 @@
         <Property name="B" value="1" />
         <Property name="A" value="1" />
       </Property>
-      <Property name="BehaviourFlags" value="96" />
+      <Property name="BehaviourFlags" value="ScareCreatures, ExplosionForce" />
       <Property name="Class" value="Player" />
       <Property name="DefaultImpact" value="VEHICLEGUNHIT" />
       <Property name="CriticalImpact" value="" />
@@ -4020,7 +4020,7 @@
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="15" /> <!-- PIRATERAIDGUN -->
+      <Property name="DefaultDamage" value="15" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipGun" />
@@ -4035,14 +4035,14 @@
       <Property name="PiercingDamagePercentage" value="0" />
       <Property name="UseCustomBulletData" value="False" />
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
-        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletLength" value="0.2" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="8" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -4131,7 +4131,7 @@
       <Property name="RagdollPush" value="5" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="80" /> <!-- SQUADGUN -->
+      <Property name="DefaultDamage" value="80" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipGun" />
@@ -4148,12 +4148,12 @@
       <Property name="CustomBulletData" value="GcProjectileLineData.xml">
         <Property name="BulletLength" value="15" />
         <Property name="BulletGlowWidthTime" value="0.15" />
-        <Property name="BulletGlowWidthMax" value="30" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
         <Property name="BulletGlowWidthMin" value="30" />
         <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
           <Property name="Curve" value="Linear" />
         </Property>
-        <Property name="BulletScaler" value="2" />
+        <Property name="BulletScaler" value="0.5" />
         <Property name="BulletScalerMinDist" value="0" />
         <Property name="BulletScalerMaxDist" value="800" />
         <Property name="BulletMinScaleDistance" value="200" />
@@ -4242,7 +4242,110 @@
       <Property name="RagdollPush" value="100" />
       <Property name="PhysicsPush" value="8" />
       <Property name="DroneImpulse" value="0" />
-      <Property name="DefaultDamage" value="0" /> <!-- CREATURE_SHOCK -->
+      <Property name="DefaultDamage" value="0" />
+      <Property name="ExtraPlayerDamage" value="0" />
+      <Property name="DamageType" value="GcDamageType.xml">
+        <Property name="DamageType" value="Melee" />
+      </Property>
+      <Property name="DefaultBounces" value="0" />
+      <Property name="BounceMaxSpeed" value="0" />
+      <Property name="BounceDamping" value="0.8" />
+      <Property name="BounceFinalStopTime" value="0" />
+      <Property name="HitOnBounce" value="True" />
+      <Property name="PlayerDamage" value="JELLYFISH_DMG" />
+      <Property name="CriticalHitModifier" value="1.5" />
+      <Property name="PiercingDamagePercentage" value="0" />
+      <Property name="UseCustomBulletData" value="False" />
+      <Property name="CustomBulletData" value="GcProjectileLineData.xml">
+        <Property name="BulletLength" value="0.2" />
+        <Property name="BulletGlowWidthTime" value="0.15" />
+        <Property name="BulletGlowWidthMax" value="0.5" />
+        <Property name="BulletGlowWidthMin" value="8" />
+        <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
+          <Property name="Curve" value="Linear" />
+        </Property>
+        <Property name="BulletScaler" value="0.5" />
+        <Property name="BulletScalerMinDist" value="0" />
+        <Property name="BulletScalerMaxDist" value="800" />
+        <Property name="BulletMinScaleDistance" value="200" />
+        <Property name="BulletMaxScaleDistance" value="2000" />
+      </Property>
+      <Property name="UseDamageNumberData" value="False" />
+      <Property name="DamageImpactMergeTime" value="0.2" />
+      <Property name="DamageImpactTimeBetweenNumbers" value="0.2" />
+      <Property name="DamageImpactMinDistance" value="5" />
+      <Property name="Colour" value="Colour.xml">
+        <Property name="R" value="1" />
+        <Property name="G" value="1" />
+        <Property name="B" value="1" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="OverrideLightColour" value="False" />
+      <Property name="LightColour" value="Colour.xml">
+        <Property name="R" value="1" />
+        <Property name="G" value="1" />
+        <Property name="B" value="1" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="BehaviourFlags" value="None" />
+      <Property name="Class" value="Player" />
+      <Property name="DefaultImpact" value="GUNHIT" />
+      <Property name="CriticalImpact" value="" />
+      <Property name="Impacts" />
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
+      <Property name="CombatEffectsOnImpact">
+        <Property value="GcImpactCombatEffectData.xml">
+          <Property name="CombatEffectType" value="GcCombatEffectType.xml">
+            <Property name="CombatEffectType" value="Stun" />
+          </Property>
+          <Property name="TotalDuration" value="5" />
+          <Property name="DamagePerSeccond" value="0" />
+          <Property name="CurrentDuration" value="0" />
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcProjectileData.xml">
+      <Property name="Id" value="CREATURE_SHOCK" />
+      <Property name="Model" value="GcResourceElement.xml">
+        <Property name="Filename" value="" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="AltId" value="" />
+        <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+          <Property name="Samplers" />
+        </Property>
+      </Property>
+      <Property name="FireAudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="ChargedFireAudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="OverheatAudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Scale" value="1" />
+      <Property name="IsAutonomous" value="False" />
+      <Property name="ApplyCombatLevelMultipliers" value="False" />
+      <Property name="Radius" value="0.1" />
+      <Property name="CapsuleHeight" value="0" />
+      <Property name="DefaultSpeed" value="200" />
+      <Property name="Gravity" value="0" />
+      <Property name="Life" value="3" />
+      <Property name="Offset" value="0" />
+      <Property name="RagdollPush" value="100" />
+      <Property name="PhysicsPush" value="2.5" />
+      <Property name="DroneImpulse" value="0" />
+      <Property name="DefaultDamage" value="0" />
       <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Melee" />
@@ -4308,6 +4411,434 @@
         </Property>
       </Property>
     </Property>
+    <Property value="GcProjectileData.xml">
+      <Property name="Id" value="CORRUPTSMG" />
+      <Property name="Model" value="GcResourceElement.xml">
+        <Property name="Filename" value="MODELS/EFFECTS/WEAPONS/ROBOTS/ROBOTPROJECTILE.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="AltId" value="" />
+        <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+          <Property name="Samplers" />
+        </Property>
+      </Property>
+      <Property name="FireAudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="DRONE_LASER" />
+      </Property>
+      <Property name="ChargedFireAudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="OverheatAudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Scale" value="3" />
+      <Property name="IsAutonomous" value="False" />
+      <Property name="ApplyCombatLevelMultipliers" value="True" />
+      <Property name="Radius" value="0.5" />
+      <Property name="CapsuleHeight" value="0" />
+      <Property name="DefaultSpeed" value="40" />
+      <Property name="Gravity" value="0" />
+      <Property name="Life" value="3" />
+      <Property name="Offset" value="0" />
+      <Property name="RagdollPush" value="5" />
+      <Property name="PhysicsPush" value="2.5" />
+      <Property name="DroneImpulse" value="0" />
+      <Property name="DefaultDamage" value="1" />
+      <Property name="ExtraPlayerDamage" value="1.8" />
+      <Property name="DamageType" value="GcDamageType.xml">
+        <Property name="DamageType" value="Gun" />
+      </Property>
+      <Property name="DefaultBounces" value="0" />
+      <Property name="BounceMaxSpeed" value="0" />
+      <Property name="BounceDamping" value="0.8" />
+      <Property name="BounceFinalStopTime" value="0" />
+      <Property name="HitOnBounce" value="True" />
+      <Property name="PlayerDamage" value="ROBOTGUNDMG" />
+      <Property name="CriticalHitModifier" value="1.5" />
+      <Property name="PiercingDamagePercentage" value="0" />
+      <Property name="UseCustomBulletData" value="True" />
+      <Property name="CustomBulletData" value="GcProjectileLineData.xml">
+        <Property name="BulletLength" value="0.5" />
+        <Property name="BulletGlowWidthTime" value="1.5" />
+        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMin" value="1" />
+        <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
+          <Property name="Curve" value="Linear" />
+        </Property>
+        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScalerMinDist" value="0" />
+        <Property name="BulletScalerMaxDist" value="800" />
+        <Property name="BulletMinScaleDistance" value="200" />
+        <Property name="BulletMaxScaleDistance" value="2000" />
+      </Property>
+      <Property name="UseDamageNumberData" value="False" />
+      <Property name="DamageImpactMergeTime" value="0.2" />
+      <Property name="DamageImpactTimeBetweenNumbers" value="0.2" />
+      <Property name="DamageImpactMinDistance" value="5" />
+      <Property name="Colour" value="Colour.xml">
+        <Property name="R" value="0.592" />
+        <Property name="G" value="0.272" />
+        <Property name="B" value="1" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="OverrideLightColour" value="True" />
+      <Property name="LightColour" value="Colour.xml">
+        <Property name="R" value="0.592" />
+        <Property name="G" value="0.272" />
+        <Property name="B" value="1" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="BehaviourFlags" value="ScareCreatures" />
+      <Property name="Class" value="Robot" />
+      <Property name="DefaultImpact" value="CORDRWPNIMP" />
+      <Property name="CriticalImpact" value="" />
+      <Property name="Impacts">
+        <Property value="GcProjectileImpactData.xml">
+          <Property name="Effect" value="BLOODSPLAT" />
+          <Property name="Impact" value="GcProjectileImpactType.xml">
+            <Property name="Impact" value="Creature" />
+          </Property>
+          <Property name="ImpactAlignment" value="ImpactNormal" />
+          <Property name="ImpactAttachment" value="World" />
+        </Property>
+      </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
+      <Property name="CombatEffectsOnImpact" />
+    </Property>
+    <Property value="GcProjectileData.xml">
+      <Property name="Id" value="CORRUPTGRENADE" />
+      <Property name="Model" value="GcResourceElement.xml">
+        <Property name="Filename" value="MODELS/COMMON/PROJECTILES/CORRUPTEDDRONEGRENADEPROJECTILE.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="AltId" value="" />
+        <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+          <Property name="Samplers" />
+        </Property>
+      </Property>
+      <Property name="FireAudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="WPN_PL_GRENADE" />
+      </Property>
+      <Property name="ChargedFireAudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="OverheatAudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Scale" value="1" />
+      <Property name="IsAutonomous" value="False" />
+      <Property name="ApplyCombatLevelMultipliers" value="True" />
+      <Property name="Radius" value="4" />
+      <Property name="CapsuleHeight" value="0" />
+      <Property name="DefaultSpeed" value="30" />
+      <Property name="Gravity" value="30" />
+      <Property name="Life" value="3" />
+      <Property name="Offset" value="0" />
+      <Property name="RagdollPush" value="5" />
+      <Property name="PhysicsPush" value="2.5" />
+      <Property name="DroneImpulse" value="0" />
+      <Property name="DefaultDamage" value="25" />
+      <Property name="ExtraPlayerDamage" value="5" />
+      <Property name="DamageType" value="GcDamageType.xml">
+        <Property name="DamageType" value="Explosion" />
+      </Property>
+      <Property name="DefaultBounces" value="0" />
+      <Property name="BounceMaxSpeed" value="0" />
+      <Property name="BounceDamping" value="0.8" />
+      <Property name="BounceFinalStopTime" value="0" />
+      <Property name="HitOnBounce" value="True" />
+      <Property name="PlayerDamage" value="ROBOTGRENADEDMG" />
+      <Property name="CriticalHitModifier" value="1.5" />
+      <Property name="PiercingDamagePercentage" value="0" />
+      <Property name="UseCustomBulletData" value="False" />
+      <Property name="CustomBulletData" value="GcProjectileLineData.xml">
+        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletGlowWidthTime" value="0.15" />
+        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMin" value="8" />
+        <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
+          <Property name="Curve" value="Linear" />
+        </Property>
+        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScalerMinDist" value="0" />
+        <Property name="BulletScalerMaxDist" value="800" />
+        <Property name="BulletMinScaleDistance" value="200" />
+        <Property name="BulletMaxScaleDistance" value="2000" />
+      </Property>
+      <Property name="UseDamageNumberData" value="False" />
+      <Property name="DamageImpactMergeTime" value="0" />
+      <Property name="DamageImpactTimeBetweenNumbers" value="0" />
+      <Property name="DamageImpactMinDistance" value="0" />
+      <Property name="Colour" value="Colour.xml">
+        <Property name="R" value="1" />
+        <Property name="G" value="1" />
+        <Property name="B" value="1" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="OverrideLightColour" value="True" />
+      <Property name="LightColour" value="Colour.xml">
+        <Property name="R" value="0.744" />
+        <Property name="G" value="0.542" />
+        <Property name="B" value="1" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="BehaviourFlags" value="ScareCreatures, ExplosionForce" />
+      <Property name="Class" value="Robot" />
+      <Property name="DefaultImpact" value="CORRUPTGRENEXPL" />
+      <Property name="CriticalImpact" value="" />
+      <Property name="Impacts">
+        <Property value="GcProjectileImpactData.xml">
+          <Property name="Effect" value="GRENEXPROBOT" />
+          <Property name="Impact" value="GcProjectileImpactType.xml">
+            <Property name="Impact" value="Robot" />
+          </Property>
+          <Property name="ImpactAlignment" value="ImpactNormal" />
+          <Property name="ImpactAttachment" value="World" />
+        </Property>
+      </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
+      <Property name="CombatEffectsOnImpact" />
+    </Property>
+    <Property value="GcProjectileData.xml">
+      <Property name="Id" value="CORRUPTSHOTGUN" />
+      <Property name="Model" value="GcResourceElement.xml">
+        <Property name="Filename" value="MODELS/COMMON/PROJECTILES/CORRUPTEDDRONE_SHOTGUN.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="AltId" value="" />
+        <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+          <Property name="Samplers" />
+        </Property>
+      </Property>
+      <Property name="FireAudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="DRONE_LASER" />
+      </Property>
+      <Property name="ChargedFireAudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="OverheatAudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Scale" value="1" />
+      <Property name="IsAutonomous" value="False" />
+      <Property name="ApplyCombatLevelMultipliers" value="True" />
+      <Property name="Radius" value="0.5" />
+      <Property name="CapsuleHeight" value="0" />
+      <Property name="DefaultSpeed" value="50" />
+      <Property name="Gravity" value="0" />
+      <Property name="Life" value="3" />
+      <Property name="Offset" value="0" />
+      <Property name="RagdollPush" value="5" />
+      <Property name="PhysicsPush" value="2.5" />
+      <Property name="DroneImpulse" value="0" />
+      <Property name="DefaultDamage" value="1" />
+      <Property name="ExtraPlayerDamage" value="4" />
+      <Property name="DamageType" value="GcDamageType.xml">
+        <Property name="DamageType" value="Gun" />
+      </Property>
+      <Property name="DefaultBounces" value="0" />
+      <Property name="BounceMaxSpeed" value="0" />
+      <Property name="BounceDamping" value="0.8" />
+      <Property name="BounceFinalStopTime" value="0" />
+      <Property name="HitOnBounce" value="True" />
+      <Property name="PlayerDamage" value="ROBOTBIGGUN" />
+      <Property name="CriticalHitModifier" value="1.5" />
+      <Property name="PiercingDamagePercentage" value="0" />
+      <Property name="UseCustomBulletData" value="False" />
+      <Property name="CustomBulletData" value="GcProjectileLineData.xml">
+        <Property name="BulletLength" value="0.1" />
+        <Property name="BulletGlowWidthTime" value="0.15" />
+        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMin" value="8" />
+        <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
+          <Property name="Curve" value="Linear" />
+        </Property>
+        <Property name="BulletScaler" value="1" />
+        <Property name="BulletScalerMinDist" value="0" />
+        <Property name="BulletScalerMaxDist" value="800" />
+        <Property name="BulletMinScaleDistance" value="200" />
+        <Property name="BulletMaxScaleDistance" value="2000" />
+      </Property>
+      <Property name="UseDamageNumberData" value="False" />
+      <Property name="DamageImpactMergeTime" value="0.2" />
+      <Property name="DamageImpactTimeBetweenNumbers" value="0.2" />
+      <Property name="DamageImpactMinDistance" value="5" />
+      <Property name="Colour" value="Colour.xml">
+        <Property name="R" value="0.744" />
+        <Property name="G" value="0.542" />
+        <Property name="B" value="1" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="OverrideLightColour" value="True" />
+      <Property name="LightColour" value="Colour.xml">
+        <Property name="R" value="0.796" />
+        <Property name="G" value="0.446" />
+        <Property name="B" value="0" />
+        <Property name="A" value="0" />
+      </Property>
+      <Property name="BehaviourFlags" value="ScareCreatures" />
+      <Property name="Class" value="Robot" />
+      <Property name="DefaultImpact" value="CORDRWPNIMP" />
+      <Property name="CriticalImpact" value="" />
+      <Property name="Impacts">
+        <Property value="GcProjectileImpactData.xml">
+          <Property name="Effect" value="BLOODSPLAT" />
+          <Property name="Impact" value="GcProjectileImpactType.xml">
+            <Property name="Impact" value="Creature" />
+          </Property>
+          <Property name="ImpactAlignment" value="ImpactNormal" />
+          <Property name="ImpactAttachment" value="World" />
+        </Property>
+      </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
+      <Property name="CombatEffectsOnImpact" />
+    </Property>
+    <Property value="GcProjectileData.xml">
+      <Property name="Id" value="CORRUPTFLAME" />
+      <Property name="Model" value="GcResourceElement.xml">
+        <Property name="Filename" value="MODELS/COMMON/PROJECTILES/CORRUPTEDFLAMETHROWER.SCENE.MBIN" />
+        <Property name="ResHandle" value="GcResource.xml">
+          <Property name="ResourceID" value="0" />
+        </Property>
+        <Property name="Seed" value="GcSeed.xml">
+          <Property name="Seed" value="0" />
+          <Property name="UseSeedValue" value="False" />
+        </Property>
+        <Property name="AltId" value="" />
+        <Property name="ProceduralTexture" value="TkProceduralTextureChosenOptionList.xml">
+          <Property name="Samplers" />
+        </Property>
+      </Property>
+      <Property name="FireAudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="WPN_GROUND_SIZZLE" />
+      </Property>
+      <Property name="ChargedFireAudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="OverheatAudioEvent" value="GcAudioWwiseEvents.xml">
+        <Property name="AkEvent" value="INVALID_EVENT" />
+      </Property>
+      <Property name="Scale" value="1" />
+      <Property name="IsAutonomous" value="False" />
+      <Property name="ApplyCombatLevelMultipliers" value="True" />
+      <Property name="Radius" value="1.5" />
+      <Property name="CapsuleHeight" value="0" />
+      <Property name="DefaultSpeed" value="30" />
+      <Property name="Gravity" value="10" />
+      <Property name="Life" value="0.5" />
+      <Property name="Offset" value="0" />
+      <Property name="RagdollPush" value="5" />
+      <Property name="PhysicsPush" value="2.5" />
+      <Property name="DroneImpulse" value="0" />
+      <Property name="DefaultDamage" value="1" />
+      <Property name="ExtraPlayerDamage" value="2" />
+      <Property name="DamageType" value="GcDamageType.xml">
+        <Property name="DamageType" value="Explosion" />
+      </Property>
+      <Property name="DefaultBounces" value="0" />
+      <Property name="BounceMaxSpeed" value="0" />
+      <Property name="BounceDamping" value="0.8" />
+      <Property name="BounceFinalStopTime" value="0" />
+      <Property name="HitOnBounce" value="True" />
+      <Property name="PlayerDamage" value="SENTINEL_FLAME" />
+      <Property name="CriticalHitModifier" value="1.5" />
+      <Property name="PiercingDamagePercentage" value="0" />
+      <Property name="UseCustomBulletData" value="False" />
+      <Property name="CustomBulletData" value="GcProjectileLineData.xml">
+        <Property name="BulletLength" value="1" />
+        <Property name="BulletGlowWidthTime" value="0.15" />
+        <Property name="BulletGlowWidthMax" value="1" />
+        <Property name="BulletGlowWidthMin" value="8" />
+        <Property name="BulletGlowWidthCurve" value="TkCurveType.xml">
+          <Property name="Curve" value="Linear" />
+        </Property>
+        <Property name="BulletScaler" value="5" />
+        <Property name="BulletScalerMinDist" value="0" />
+        <Property name="BulletScalerMaxDist" value="50" />
+        <Property name="BulletMinScaleDistance" value="0" />
+        <Property name="BulletMaxScaleDistance" value="50" />
+      </Property>
+      <Property name="UseDamageNumberData" value="False" />
+      <Property name="DamageImpactMergeTime" value="0.2" />
+      <Property name="DamageImpactTimeBetweenNumbers" value="0.2" />
+      <Property name="DamageImpactMinDistance" value="5" />
+      <Property name="Colour" value="Colour.xml">
+        <Property name="R" value="0.744" />
+        <Property name="G" value="0.542" />
+        <Property name="B" value="1" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="OverrideLightColour" value="True" />
+      <Property name="LightColour" value="Colour.xml">
+        <Property name="R" value="0.744" />
+        <Property name="G" value="0.542" />
+        <Property name="B" value="1" />
+        <Property name="A" value="1" />
+      </Property>
+      <Property name="BehaviourFlags" value="ScareCreatures" />
+      <Property name="Class" value="Player" />
+      <Property name="DefaultImpact" value="CORFLAMEIMPACT" />
+      <Property name="CriticalImpact" value="CORFLAMEIMPACT" />
+      <Property name="Impacts">
+        <Property value="GcProjectileImpactData.xml">
+          <Property name="Effect" value="CORFLAMEIMPACT" />
+          <Property name="Impact" value="GcProjectileImpactType.xml">
+            <Property name="Impact" value="Player" />
+          </Property>
+          <Property name="ImpactAlignment" value="ImpactNormal" />
+          <Property name="ImpactAttachment" value="World" />
+        </Property>
+        <Property value="GcProjectileImpactData.xml">
+          <Property name="Effect" value="CORFLAMEIMPACT" />
+          <Property name="Impact" value="GcProjectileImpactType.xml">
+            <Property name="Impact" value="Creature" />
+          </Property>
+          <Property name="ImpactAlignment" value="ImpactNormal" />
+          <Property name="ImpactAttachment" value="World" />
+        </Property>
+        <Property value="GcProjectileImpactData.xml">
+          <Property name="Effect" value="CORFLAMEIMPACT" />
+          <Property name="Impact" value="GcProjectileImpactType.xml">
+            <Property name="Impact" value="Robot" />
+          </Property>
+          <Property name="ImpactAlignment" value="ImpactNormal" />
+          <Property name="ImpactAttachment" value="World" />
+        </Property>
+      </Property>
+      <Property name="ImpactOffset" value="Vector3f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="0" />
+        <Property name="z" value="0" />
+      </Property>
+      <Property name="CombatEffectsOnImpact" />
+    </Property>
   </Property>
   <Property name="Lasers">
     <Property value="GcLaserBeamData.xml">
@@ -4329,14 +4860,14 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="WPN_PL_HANDLASER_OVERHEAT" />
       </Property>
-      <Property name="DefaultDamage" value="2" /> <!-- PLAYER -->
-      <Property name="ExtraPlayerDamage" value="0" /> <!-- PLAYER -->
+      <Property name="DefaultDamage" value="2" />
+      <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Laser" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="MPPLAYER" />
-      <Property name="ImpactEffect" value="LASERSUBSTANCE" /> <!-- PLAYER -->
+      <Property name="ImpactEffect" value="LASERSUBSTANCE" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="LASERNEEDTECH" />
@@ -4453,14 +4984,14 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="WPN_PL_HANDLASER_OVERHEAT" />
       </Property>
-      <Property name="DefaultDamage" value="2" /> <!-- PLAYER_RAIL -->
-      <Property name="ExtraPlayerDamage" value="0" /> <!-- PLAYER_RAIL -->
+      <Property name="DefaultDamage" value="2" />
+      <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Rail" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="MPPLAYER_RAIL" />
-      <Property name="ImpactEffect" value="RAILIMPACT" /> <!-- PLAYER_RAIL -->
+      <Property name="ImpactEffect" value="RAILIMPACT" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="RAILIMPACT" />
@@ -4561,14 +5092,14 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="WPN_PL_HANDLASER_OVERHEAT" />
       </Property>
-      <Property name="DefaultDamage" value="2" /> <!-- PLAYER_BOLT -->
-      <Property name="ExtraPlayerDamage" value="0" /> <!-- PLAYER_BOLT -->
+      <Property name="DefaultDamage" value="2" />
+      <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Rail" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="MPPLAYER_RAIL" />
-      <Property name="ImpactEffect" value="RAILIMPACT" /> <!-- PLAYER_BOLT -->
+      <Property name="ImpactEffect" value="RAILIMPACT" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="RAILIMPACT" />
@@ -4669,14 +5200,14 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="WPN_SHIP_OVERHEAT" />
       </Property>
-      <Property name="DefaultDamage" value="4" /> <!-- PLAYER_SHIP -->
-      <Property name="ExtraPlayerDamage" value="0" /> <!-- PLAYER_SHIP -->
+      <Property name="DefaultDamage" value="4" />
+      <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipLaser" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="MPPLAYER_SHIP" />
-      <Property name="ImpactEffect" value="LASERHIT" /> <!-- PLAYER_SHIP -->
+      <Property name="ImpactEffect" value="LASERHIT" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="LASERSHIP" />
@@ -4761,14 +5292,14 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
-      <Property name="DefaultDamage" value="9" /> <!-- AI_SHIP -->
-      <Property name="ExtraPlayerDamage" value="0" /> <!-- AI_SHIP -->
+      <Property name="DefaultDamage" value="9" />
+      <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipLaser" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="SHIPLASER" />
-      <Property name="ImpactEffect" value="LASERPLAYER" /> <!-- AI_SHIP -->
+      <Property name="ImpactEffect" value="LASERPLAYER" />
       <Property name="Impacts" />
       <Property name="HitRate" value="0.2" />
       <Property name="SingleHit" value="False" />
@@ -4820,14 +5351,14 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
-      <Property name="DefaultDamage" value="15" /> <!-- AI_FREIGHTER -->
-      <Property name="ExtraPlayerDamage" value="0" /> <!-- AI_FREIGHTER -->
+      <Property name="DefaultDamage" value="15" />
+      <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipLaser" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="FREIGHTERLASER" />
-      <Property name="ImpactEffect" value="LASERPLAYER" /> <!-- AI_FREIGHTER -->
+      <Property name="ImpactEffect" value="LASERPLAYER" />
       <Property name="Impacts" />
       <Property name="HitRate" value="0.2" />
       <Property name="SingleHit" value="False" />
@@ -4879,14 +5410,14 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
-      <Property name="DefaultDamage" value="15" /> <!-- COP_FREIGHTER -->
-      <Property name="ExtraPlayerDamage" value="0" /> <!-- COP_FREIGHTER -->
+      <Property name="DefaultDamage" value="15" />
+      <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipLaser" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="FREIGHTERLASER" />
-      <Property name="ImpactEffect" value="LASERPLAYER" /> <!-- COP_FREIGHTER -->
+      <Property name="ImpactEffect" value="LASERPLAYER" />
       <Property name="Impacts" />
       <Property name="HitRate" value="0.2" />
       <Property name="SingleHit" value="False" />
@@ -4938,14 +5469,14 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
-      <Property name="DefaultDamage" value="1" /> <!-- ROBOT_QUAD -->
-      <Property name="ExtraPlayerDamage" value="2" /> <!-- ROBOT_QUAD -->
+      <Property name="DefaultDamage" value="1" />
+      <Property name="ExtraPlayerDamage" value="2" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="LASERDAMAGE" />
-      <Property name="ImpactEffect" value="LASERPLAYER" /> <!-- ROBOT_QUAD -->
+      <Property name="ImpactEffect" value="LASERPLAYER" />
       <Property name="Impacts" />
       <Property name="HitRate" value="0.1" />
       <Property name="SingleHit" value="False" />
@@ -4997,14 +5528,14 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
-      <Property name="DefaultDamage" value="1" /> <!-- ROBOT_WALKER -->
-      <Property name="ExtraPlayerDamage" value="5" /> <!-- ROBOT_WALKER -->
+      <Property name="DefaultDamage" value="1" />
+      <Property name="ExtraPlayerDamage" value="5" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="WALKERLASER" />
-      <Property name="ImpactEffect" value="LASERPLAYERLRG" /> <!-- ROBOT_WALKER -->
+      <Property name="ImpactEffect" value="LASERPLAYERLRG" />
       <Property name="Impacts" />
       <Property name="HitRate" value="0.1" />
       <Property name="SingleHit" value="False" />
@@ -5056,14 +5587,14 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="WPN_SHIP_OVERHEAT" />
       </Property>
-      <Property name="DefaultDamage" value="1" /> <!-- VEHICLE -->
-      <Property name="ExtraPlayerDamage" value="0" /> <!-- VEHICLE -->
+      <Property name="DefaultDamage" value="1" />
+      <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="VehicleLaser" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="MPVEHICLE" />
-      <Property name="ImpactEffect" value="VEHICLELASERSUB" /> <!-- VEHICLE -->
+      <Property name="ImpactEffect" value="VEHICLELASERSUB" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="VEHICLELASERSUB" />
@@ -5164,14 +5695,14 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
-      <Property name="DefaultDamage" value="100" /> <!-- BASE_TURRET_L -->
-      <Property name="ExtraPlayerDamage" value="0" /> <!-- BASE_TURRET_L -->
+      <Property name="DefaultDamage" value="100" />
+      <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="LASERDAMAGE" />
-      <Property name="ImpactEffect" value="LASERPLAYER" /> <!-- BASE_TURRET_L -->
+      <Property name="ImpactEffect" value="LASERPLAYER" />
       <Property name="Impacts" />
       <Property name="HitRate" value="0.2" />
       <Property name="SingleHit" value="False" />
@@ -5223,14 +5754,14 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
-      <Property name="DefaultDamage" value="0" /> <!-- TURRET_POINTER -->
-      <Property name="ExtraPlayerDamage" value="0" /> <!-- TURRET_POINTER -->
+      <Property name="DefaultDamage" value="0" />
+      <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="LASERDAMAGE" />
-      <Property name="ImpactEffect" value="" /> <!-- TURRET_POINTER -->
+      <Property name="ImpactEffect" value="" />
       <Property name="Impacts" />
       <Property name="HitRate" value="0.2" />
       <Property name="SingleHit" value="False" />
@@ -5282,14 +5813,14 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
-      <Property name="DefaultDamage" value="2" /> <!-- PET -->
-      <Property name="ExtraPlayerDamage" value="0" /> <!-- PET -->
+      <Property name="DefaultDamage" value="2" />
+      <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="Gun" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="LASERDAMAGE" />
-      <Property name="ImpactEffect" value="" /> <!-- PET -->
+      <Property name="ImpactEffect" value="" />
       <Property name="Impacts" />
       <Property name="HitRate" value="0.2" />
       <Property name="SingleHit" value="False" />
@@ -5341,14 +5872,14 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="WPN_SHIP_OVERHEAT" />
       </Property>
-      <Property name="DefaultDamage" value="2" /> <!-- VEHICLE_ARM -->
-      <Property name="ExtraPlayerDamage" value="0" /> <!-- VEHICLE_ARM -->
+      <Property name="DefaultDamage" value="2" />
+      <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="VehicleLaser" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="MPVEHICLE" />
-      <Property name="ImpactEffect" value="VEHICLELASERSUB" /> <!-- VEHICLE_ARM -->
+      <Property name="ImpactEffect" value="VEHICLELASERSUB" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="VEHICLELASERSUB" />
@@ -5465,14 +5996,14 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="WPN_SHIP_OVERHEAT" />
       </Property>
-      <Property name="DefaultDamage" value="0" /> <!-- SHIP_TRACER -->
-      <Property name="ExtraPlayerDamage" value="0" /> <!-- SHIP_TRACER -->
+      <Property name="DefaultDamage" value="0" />
+      <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipLaser" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="MPPLAYER_SHIP" />
-      <Property name="ImpactEffect" value="LASERHIT" /> <!-- SHIP_TRACER -->
+      <Property name="ImpactEffect" value="LASERHIT" />
       <Property name="Impacts">
         <Property value="GcProjectileImpactData.xml">
           <Property name="Effect" value="LASERSHIP" />
@@ -5557,14 +6088,14 @@
       <Property name="AudioOverheat" value="GcAudioWwiseEvents.xml">
         <Property name="AkEvent" value="INVALID_EVENT" />
       </Property>
-      <Property name="DefaultDamage" value="9" /> <!-- AI_SHIP_MINING -->
-      <Property name="ExtraPlayerDamage" value="0" /> <!-- AI_SHIP_MINING -->
+      <Property name="DefaultDamage" value="9" />
+      <Property name="ExtraPlayerDamage" value="0" />
       <Property name="DamageType" value="GcDamageType.xml">
         <Property name="DamageType" value="ShipLaser" />
       </Property>
       <Property name="CriticalHitModifier" value="4" />
       <Property name="PlayerDamage" value="SHIPLASER" />
-      <Property name="ImpactEffect" value="MININGLASERIMP" /> <!-- AI_SHIP_MINING -->
+      <Property name="ImpactEffect" value="MININGLASERIMP" />
       <Property name="Impacts" />
       <Property name="HitRate" value="0.2" />
       <Property name="SingleHit" value="False" />

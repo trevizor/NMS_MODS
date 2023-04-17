@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (4.4.0)-->
+<!--File created using MBINCompiler version (4.20.0)-->
 <Data template="GcEnvironmentGlobals">
   <Property name="LODSettings">
     <Property name="Low" value="TkLODSettingsData.xml">
@@ -240,7 +240,7 @@
       <Property name="x" value="-0.5" />
       <Property name="y" value="0.5" />
     </Property>
-    <Property name="BaseScale" value="1" />
+    <Property name="BaseScale" value="1.3" />
     <Property name="SampleScalar" value="5" />
     <Property name="SampleThreshold" value="0.25" />
     <Property name="CloudBottomFade" value="1" />
@@ -296,6 +296,7 @@
   <Property name="VDeform" value="0.2" />
   <Property name="LocationStableTime" value="0.5" />
   <Property name="InterestStableTime" value="2.5" />
+  <Property name="CameraLocationStableTime" value="0.1" />
   <Property name="AsteroidFieldStableEnterTime" value="0.05" />
   <Property name="AsteroidFieldStableLeaveTime" value="0.25" />
   <Property name="TemperatureSmoothTime" value="0.5" />
@@ -541,10 +542,10 @@
     <Property name="AsteroidFadeHeightMin" value="700" />
     <Property name="AsteroidFadeHeightMax" value="1300" />
     <Property name="SkyHeight">
-      <Property value="1000" />
-      <Property value="800" />
-      <Property value="700" />
-      <Property value="500" />
+      <Property name="Large" value="1000" />
+      <Property name="Medium" value="800" />
+      <Property name="Small" value="700" />
+      <Property name="Moon" value="500" />
     </Property>
     <Property name="SkyAtmosphereHeight" value="6000" />
     <Property name="HorizonBlendHeight" value="500" />
@@ -575,10 +576,10 @@
     <Property name="AsteroidFadeHeightMin" value="1900" />
     <Property name="AsteroidFadeHeightMax" value="2500" />
     <Property name="SkyHeight">
-      <Property value="3500" />
-      <Property value="3000" />
-      <Property value="2500" />
-      <Property value="2000" />
+      <Property name="Large" value="3500" />
+      <Property name="Medium" value="3000" />
+      <Property name="Small" value="2500" />
+      <Property name="Moon" value="2000" />
     </Property>
     <Property name="SkyAtmosphereHeight" value="7200" />
     <Property name="HorizonBlendHeight" value="1700" />

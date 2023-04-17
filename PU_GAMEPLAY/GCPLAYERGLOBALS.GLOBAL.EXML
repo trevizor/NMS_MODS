@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--File created using MBINCompiler version (4.6.0)-->
 <Data template="GcPlayerGlobals">
+    <Property name="LeftHandModeWeaponAttachSocketCorrection" value="Vector3f.xml">
+    <Property name="x" value="-0.020975694" />
+    <Property name="y" value="-0.03368132" />
+    <Property name="z" value="0.03198331" />
+  </Property>
   <Property name="ForceFreighterProcTechRandom" value="False" />
   <Property name="AlienPodAggroDecay" value="0.15" />
   <Property name="AlienPodAggroSpring" value="0.8" />
@@ -14,17 +19,21 @@
   <Property name="MiniportalAppearEffectTime" value="0.8" />
   <Property name="MiniportalDisappearEffectTime" value="0.65" />
   <Property name="RecenterViewWhenEnteringShip" value="True" />
-  <Property name="UseInitialFacingForMoveDirection" value="True" />
-  <Property name="EmulateNoHandsForHandScreens" value="False" />
   <Property name="BinocularAimOffset" value="1" />
   <Property name="BinocularScopeScale" value="0.3" />
   <Property name="BinocularScopeSmoothing" value="0.2" />
   <Property name="MaxArmExtension" value="0.99" />
   <Property name="MinArmExtension" value="1.5" />
+  <Property name="ThirdPersonWeaponAttachRotationCorrectionAngle" value="15" />
+  <Property name="ThirdPersonWeaponXOffset" value="0" />
   <Property name="SummonArcRange" value="40" />
   <Property name="InteractionAimOffset" value="5" />
   <Property name="QuickMenuLauncherTransforms" value="GcProjectorOffsetData.xml">
     <Property name="Scale" value="0.045" />
+    <Property name="ScreenScale" value="Vector2f.xml">
+      <Property name="x" value="1" />
+      <Property name="y" value="1" />
+    </Property>
     <Property name="Active" value="GcInWorldUIScreenData.xml">
       <Property name="ScreenScale" value="0.03" />
       <Property name="ScreenOffset" value="Vector3f.xml">
@@ -32,10 +41,11 @@
         <Property name="y" value="0.15" />
         <Property name="z" value="0" />
       </Property>
-      <Property name="ScreenRotation" value="Vector3f.xml">
-        <Property name="x" value="20" />
-        <Property name="y" value="180" />
-        <Property name="z" value="30" />
+      <Property name="ScreenRotation" value="Vector4f.xml">
+        <Property name="x" value="0.255145" />
+        <Property name="y" value="0.952214" />
+        <Property name="z" value="0.167901" />
+        <Property name="t" value="3.051676" />
       </Property>
     </Property>
     <Property name="Inactive" value="GcInWorldUIScreenData.xml">
@@ -45,15 +55,55 @@
         <Property name="y" value="-0.025" />
         <Property name="z" value="0" />
       </Property>
-      <Property name="ScreenRotation" value="Vector3f.xml">
+      <Property name="ScreenRotation" value="Vector4f.xml">
         <Property name="x" value="0" />
-        <Property name="y" value="270" />
+        <Property name="y" value="1" />
         <Property name="z" value="0" />
+        <Property name="t" value="1.570796" />
       </Property>
     </Property>
   </Property>
-  <Property name="WeaponMenuLauncherTransforms" value="GcProjectorOffsetData.xml">
+  <Property name="QuickMenuLauncherTransformsNoBuildMenu" value="GcProjectorOffsetData.xml">
     <Property name="Scale" value="0.045" />
+    <Property name="ScreenScale" value="Vector2f.xml">
+      <Property name="x" value="0.666666" />
+      <Property name="y" value="1" />
+    </Property>
+    <Property name="Active" value="GcInWorldUIScreenData.xml">
+      <Property name="ScreenScale" value="0.03" />
+      <Property name="ScreenOffset" value="Vector3f.xml">
+        <Property name="x" value="0.05" />
+        <Property name="y" value="0.15" />
+        <Property name="z" value="0" />
+      </Property>
+      <Property name="ScreenRotation" value="Vector4f.xml">
+        <Property name="x" value="0.255145" />
+        <Property name="y" value="0.952214" />
+        <Property name="z" value="0.167901" />
+        <Property name="t" value="3.051676" />
+      </Property>
+    </Property>
+    <Property name="Inactive" value="GcInWorldUIScreenData.xml">
+      <Property name="ScreenScale" value="0.03" />
+      <Property name="ScreenOffset" value="Vector3f.xml">
+        <Property name="x" value="0.07" />
+        <Property name="y" value="-0.025" />
+        <Property name="z" value="0" />
+      </Property>
+      <Property name="ScreenRotation" value="Vector4f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="1" />
+        <Property name="z" value="0" />
+        <Property name="t" value="4.712389" />
+      </Property>
+    </Property>
+  </Property>
+  <Property name="WeaponMenuTransforms" value="GcProjectorOffsetData.xml">
+    <Property name="Scale" value="0.045" />
+    <Property name="ScreenScale" value="Vector2f.xml">
+      <Property name="x" value="1" />
+      <Property name="y" value="1" />
+    </Property>
     <Property name="Active" value="GcInWorldUIScreenData.xml">
       <Property name="ScreenScale" value="0.03" />
       <Property name="ScreenOffset" value="Vector3f.xml">
@@ -61,10 +111,11 @@
         <Property name="y" value="0.12" />
         <Property name="z" value="-0.05" />
       </Property>
-      <Property name="ScreenRotation" value="Vector3f.xml">
+      <Property name="ScreenRotation" value="Vector4f.xml">
         <Property name="x" value="0" />
-        <Property name="y" value="200" />
+        <Property name="y" value="1" />
         <Property name="z" value="0" />
+        <Property name="t" value="2.792527" />
       </Property>
     </Property>
     <Property name="Inactive" value="GcInWorldUIScreenData.xml">
@@ -74,10 +125,46 @@
         <Property name="y" value="0.03" />
         <Property name="z" value="0" />
       </Property>
-      <Property name="ScreenRotation" value="Vector3f.xml">
+      <Property name="ScreenRotation" value="Vector4f.xml">
         <Property name="x" value="0" />
-        <Property name="y" value="90" />
+        <Property name="y" value="1" />
         <Property name="z" value="0" />
+        <Property name="t" value="4.712389" />
+      </Property>
+    </Property>
+  </Property>
+  <Property name="LargeWeaponMenuTransforms" value="GcProjectorOffsetData.xml">
+    <Property name="Scale" value="0.045" />
+    <Property name="ScreenScale" value="Vector2f.xml">
+      <Property name="x" value="1" />
+      <Property name="y" value="1" />
+    </Property>
+    <Property name="Active" value="GcInWorldUIScreenData.xml">
+      <Property name="ScreenScale" value="0.03" />
+      <Property name="ScreenOffset" value="Vector3f.xml">
+        <Property name="x" value="0.02" />
+        <Property name="y" value="0.12" />
+        <Property name="z" value="-0.1" />
+      </Property>
+      <Property name="ScreenRotation" value="Vector4f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="1" />
+        <Property name="z" value="0" />
+        <Property name="t" value="1.919862" />
+      </Property>
+    </Property>
+    <Property name="Inactive" value="GcInWorldUIScreenData.xml">
+      <Property name="ScreenScale" value="0.03" />
+      <Property name="ScreenOffset" value="Vector3f.xml">
+        <Property name="x" value="-0.07" />
+        <Property name="y" value="0.03" />
+        <Property name="z" value="0" />
+      </Property>
+      <Property name="ScreenRotation" value="Vector4f.xml">
+        <Property name="x" value="0" />
+        <Property name="y" value="1" />
+        <Property name="z" value="0" />
+        <Property name="t" value="4.18879" />
       </Property>
     </Property>
   </Property>
@@ -88,10 +175,11 @@
       <Property name="y" value="0.01" />
       <Property name="z" value="0" />
     </Property>
-    <Property name="ScreenRotation" value="Vector3f.xml">
+    <Property name="ScreenRotation" value="Vector4f.xml">
       <Property name="x" value="0" />
       <Property name="y" value="0" />
       <Property name="z" value="0" />
+      <Property name="t" value="0" />
     </Property>
   </Property>
   <Property name="InventoryOffset" value="GcInWorldUIScreenData.xml">
@@ -101,10 +189,11 @@
       <Property name="y" value="0.15" />
       <Property name="z" value="0" />
     </Property>
-    <Property name="ScreenRotation" value="Vector3f.xml">
+    <Property name="ScreenRotation" value="Vector4f.xml">
       <Property name="x" value="0" />
       <Property name="y" value="0" />
       <Property name="z" value="0" />
+      <Property name="t" value="0" />
     </Property>
   </Property>
   <Property name="FrontendOffset" value="GcInWorldUIScreenData.xml">
@@ -114,10 +203,53 @@
       <Property name="y" value="0.1" />
       <Property name="z" value="-1.7" />
     </Property>
-    <Property name="ScreenRotation" value="Vector3f.xml">
+    <Property name="ScreenRotation" value="Vector4f.xml">
       <Property name="x" value="0" />
       <Property name="y" value="0" />
       <Property name="z" value="0" />
+      <Property name="t" value="0" />
+    </Property>
+  </Property>
+  <Property name="QuickMenuOffsetV2" value="GcInWorldUIScreenData.xml">
+    <Property name="ScreenScale" value="0.1" />
+    <Property name="ScreenOffset" value="Vector3f.xml">
+      <Property name="x" value="0" />
+      <Property name="y" value="0.01" />
+      <Property name="z" value="0" />
+    </Property>
+    <Property name="ScreenRotation" value="Vector4f.xml">
+      <Property name="x" value="0" />
+      <Property name="y" value="0" />
+      <Property name="z" value="0" />
+      <Property name="t" value="0" />
+    </Property>
+  </Property>
+  <Property name="InventoryOffsetV2" value="GcInWorldUIScreenData.xml">
+    <Property name="ScreenScale" value="0.13" />
+    <Property name="ScreenOffset" value="Vector3f.xml">
+      <Property name="x" value="0.1" />
+      <Property name="y" value="0.15" />
+      <Property name="z" value="0.09" />
+    </Property>
+    <Property name="ScreenRotation" value="Vector4f.xml">
+      <Property name="x" value="0" />
+      <Property name="y" value="0" />
+      <Property name="z" value="0" />
+      <Property name="t" value="0" />
+    </Property>
+  </Property>
+  <Property name="FrontendOffsetV2" value="GcInWorldUIScreenData.xml">
+    <Property name="ScreenScale" value="0.7" />
+    <Property name="ScreenOffset" value="Vector3f.xml">
+      <Property name="x" value="0" />
+      <Property name="y" value="0.1" />
+      <Property name="z" value="-2.3" />
+    </Property>
+    <Property name="ScreenRotation" value="Vector4f.xml">
+      <Property name="x" value="0" />
+      <Property name="y" value="0" />
+      <Property name="z" value="0" />
+      <Property name="t" value="0" />
     </Property>
   </Property>
   <Property name="FrontendMessagesOffset" value="GcInWorldUIScreenData.xml">
@@ -127,10 +259,11 @@
       <Property name="y" value="-0.3" />
       <Property name="z" value="-1.8" />
     </Property>
-    <Property name="ScreenRotation" value="Vector3f.xml">
+    <Property name="ScreenRotation" value="Vector4f.xml">
       <Property name="x" value="0" />
       <Property name="y" value="0" />
       <Property name="z" value="0" />
+      <Property name="t" value="0" />
     </Property>
   </Property>
   <Property name="DefaultLeftHandTransform" value="GcInWorldUIScreenData.xml">
@@ -140,10 +273,11 @@
       <Property name="y" value="-0.5" />
       <Property name="z" value="-1.3" />
     </Property>
-    <Property name="ScreenRotation" value="Vector3f.xml">
+    <Property name="ScreenRotation" value="Vector4f.xml">
       <Property name="x" value="0" />
       <Property name="y" value="0" />
       <Property name="z" value="0" />
+      <Property name="t" value="0" />
     </Property>
   </Property>
   <Property name="DefaultLeftHandTransformVehicle" value="GcInWorldUIScreenData.xml">
@@ -153,10 +287,11 @@
       <Property name="y" value="-0.4" />
       <Property name="z" value="-1" />
     </Property>
-    <Property name="ScreenRotation" value="Vector3f.xml">
+    <Property name="ScreenRotation" value="Vector4f.xml">
       <Property name="x" value="20" />
       <Property name="y" value="0" />
       <Property name="z" value="0" />
+      <Property name="t" value="0" />
     </Property>
   </Property>
   <Property name="BinocularInfoScreenOffset" value="GcInWorldUIScreenData.xml">
@@ -166,10 +301,11 @@
       <Property name="y" value="-0.55" />
       <Property name="z" value="-0.4" />
     </Property>
-    <Property name="ScreenRotation" value="Vector3f.xml">
+    <Property name="ScreenRotation" value="Vector4f.xml">
       <Property name="x" value="60" />
       <Property name="y" value="0" />
       <Property name="z" value="0" />
+      <Property name="t" value="0" />
     </Property>
   </Property>
   <Property name="BinocularInfoScreenOffsetGun" value="GcInWorldUIScreenData.xml">
@@ -179,10 +315,11 @@
       <Property name="y" value="-0.1" />
       <Property name="z" value="0" />
     </Property>
-    <Property name="ScreenRotation" value="Vector3f.xml">
+    <Property name="ScreenRotation" value="Vector4f.xml">
       <Property name="x" value="0" />
       <Property name="y" value="180" />
       <Property name="z" value="0" />
+      <Property name="t" value="0" />
     </Property>
   </Property>
   <Property name="FrontendPhotoModeVROffset" value="GcInWorldUIScreenData.xml">
@@ -192,10 +329,11 @@
       <Property name="y" value="0" />
       <Property name="z" value="-2" />
     </Property>
-    <Property name="ScreenRotation" value="Vector3f.xml">
+    <Property name="ScreenRotation" value="Vector4f.xml">
       <Property name="x" value="0" />
       <Property name="y" value="0" />
       <Property name="z" value="0" />
+      <Property name="t" value="0" />
     </Property>
   </Property>
   <Property name="FrontendBaseScreenshotVROffset" value="GcInWorldUIScreenData.xml">
@@ -205,10 +343,11 @@
       <Property name="y" value="-0.3" />
       <Property name="z" value="-2.75" />
     </Property>
-    <Property name="ScreenRotation" value="Vector3f.xml">
+    <Property name="ScreenRotation" value="Vector4f.xml">
       <Property name="x" value="0" />
       <Property name="y" value="0" />
       <Property name="z" value="0" />
+      <Property name="t" value="0" />
     </Property>
   </Property>
   <Property name="BinocularRayThicknessVR" value="0.2" />
@@ -242,8 +381,8 @@
     <Property name="x" value="0.06" />
     <Property name="y" value="0.06" />
   </Property>
-  <Property name="HandInteractionLightIntensity" value="0.5" />
-  <Property name="HandInteractionLightIntensityMax" value="4" />
+  <Property name="HandInteractionLightIntensity" value="0.0" />
+  <Property name="HandInteractionLightIntensityMax" value="0" />
   <Property name="HandInteractionFresnel" value="-9" />
   <Property name="HandInteractionFresnelMax" value="-2" />
   <Property name="HandInteractionLightOffset" value="0.2" />
@@ -271,10 +410,11 @@
       <Property name="y" value="-0.4" />
       <Property name="z" value="-2" />
     </Property>
-    <Property name="ScreenRotation" value="Vector3f.xml">
+    <Property name="ScreenRotation" value="Vector4f.xml">
       <Property name="x" value="-45" />
       <Property name="y" value="0" />
       <Property name="z" value="0" />
+      <Property name="t" value="0" />
     </Property>
   </Property>
   <Property name="FistClenchBlendInTime" value="0.1" />
@@ -301,17 +441,10 @@
     <Property name="y" value="-10" />
     <Property name="z" value="0" />
   </Property>
-  <Property name="HolsterOnHip" value="False" />
-  <Property name="HolsterHeadRotX" value="90" />
   <Property name="HolsterHeadOffset" value="Vector3f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="-0.1" />
     <Property name="z" value="0.3" />
-  </Property>
-  <Property name="HolsterGunHandOffset" value="Vector3f.xml">
-    <Property name="x" value="-0.02" />
-    <Property name="y" value="0.15" />
-    <Property name="z" value="0.2" />
   </Property>
   <Property name="GroundWalkForceMultiplier" value="8" />
   <Property name="GroundWalkBrake" value="8" />
@@ -345,15 +478,15 @@
   <Property name="TeleportLineFadeRange" value="1" />
   <Property name="TeleportInitiateThreshold" value="0.9" />
   <Property name="TeleportRecentre" value="False" />
-  <Property name="TeleportLineBezierOffset" value="0" />
-  <Property name="TeleportLineBezierDistanceFactor" value="0" />
+  <Property name="TeleportLineBezierOffset" value="0.8" />
+  <Property name="TeleportLineBezierDistanceFactor" value="0.25" />
   <Property name="InteractionLineSplineOffset" value="1" />
   <Property name="InteractionLineSplineOffsetMin" value="0.1" />
   <Property name="InteractionLineSplineMinDistance" value="0.5" />
   <Property name="InteractionLineSplineOffsetRange" value="2" />
-  <Property name="InteractionLineCircleRadius" value="0.0" />
-  <Property name="InteractionLineCircleThickness" value="0" />
-  <Property name="InteractionLineCircleSpeed" value="0.3" />
+  <Property name="InteractionLineCircleRadius" value="0.01" />
+  <Property name="InteractionLineCircleThickness" value="6" />
+  <Property name="InteractionLineCircleSpeed" value="-0.3" />
   <Property name="InteractionLineCircleOffsetMin" value="1" />
   <Property name="InteractionLineCircleOffsetMax" value="1" />
   <Property name="InteractionLineNumCirclesPerMetre" value="0" />
@@ -432,15 +565,6 @@
   <Property name="NoShadowMaterial" value="MODELS/COMMON/CHARACTERS/PLAYER/MATERIALS/PLAYER.MATERIAL.MBIN" />
   <Property name="HolsterGrabRadius" value="0.5" />
   <Property name="HolsterGrabFrontOffset" value="0.1" />
-  <Property name="HolsterScale" value="0.6" />
-  <Property name="HolsterRotY" value="-90" />
-  <Property name="HolsterRotZ" value="90" />
-  <Property name="HolsterHold" value="False" />
-  <Property name="HolsterOffset" value="Vector3f.xml">
-    <Property name="x" value="-0.2" />
-    <Property name="y" value="0.1" />
-    <Property name="z" value="-0.08" />
-  </Property>
   <Property name="HeadBinocularsOffset" value="-0.2" />
   <Property name="HeadBinocularsRadius" value="0.25" />
   <Property name="DebugSearchGroup" value="BONES" />
@@ -565,7 +689,7 @@
   <Property name="WeaponZoomFOV" value="0.7" />
   <Property name="PassiveWeaponZoomFOV" value="1" />
   <Property name="PassiveWeaponZoomFOVThirdPerson" value="1" />
-  <Property name="WeaponZoomRecoilMultiplier" value="2" />
+  <Property name="WeaponZoomRecoilMultiplier" value="1.2" />
   <Property name="WeaponZoomVertRotation" value="8" />
   <Property name="WeaponZoomHorzRotation" value="2" />
   <Property name="FrontShieldEnabled" value="True" />
@@ -573,6 +697,11 @@
   <Property name="FrontShieldOffsetOn" value="-1.2" />
   <Property name="FrontShieldSpeedSlowdown" value="0.5" />
   <Property name="FrontShieldSlerpTime" value="0.1" />
+  <Property name="FrontShieldScaleVR" value="0.5" />
+  <Property name="FrontShieldUpOffsetVR" value="-1.2" />
+  <Property name="FrontShieldOffsetOffVR" value="-1.5" />
+  <Property name="FrontShieldOffsetOnVR" value="-1.4" />
+  <Property name="FrontShieldSlerpTimeVR" value="0.05" />
   <Property name="CombatSpawnMinWantedTime" value="10" />
   <Property name="ExperiencePiratesDifficultyVariance" value="0.23" />
   <Property name="ExperienceHardPiratesDamageMaxOdds" value="0.61" />
@@ -769,7 +898,7 @@
   <Property name="MouseFlightCurve" value="TkCurveType.xml">
     <Property name="Curve" value="EaseOutExpo" />
   </Property>
-  <Property name="MaximumCrouchVR" value="-0.5" />
+  <Property name="MaximumCrouchVR" value="-1.25" />
   <Property name="MaximumHeadHeightIncreaseVR" value="0.5" />
   <Property name="MaximumHorizontalOffsetVR" value="0.65" />
   <Property name="CrouchHeightToDisableLegBlendingVR" value="-0.1" />
@@ -859,7 +988,7 @@
   <Property name="PulseEncounterSpawnEffectTime" value="0.3" />
   <Property name="PulseEncounterSpaceEggID" value="SPACE_EGG" />
   <Property name="LaserMiningDamageMultiplier" value="1" />
-  <Property name="ShieldRechargeMinTimeSinceDamage" value="15" />
+  <Property name="ShieldRechargeMinTimeSinceDamage" value="10" />
   <Property name="ShieldRechargeRate" value="4" />
   <Property name="MoveStickHighRangeLimit" value="0.75" />
   <Property name="WitnessAIDamageDistance" value="3000" />
@@ -990,19 +1119,19 @@
   <Property name="HeatShieldTime" value="200" />
   <Property name="LaserShakeMin" value="0.5" />
   <Property name="LaserShakeMax" value="2" />
-  <Property name="GunRecoil" value="5" />
-  <Property name="LaserRecoil" value="2" />
-  <Property name="BeamRecoil" value="6" />
-  <Property name="GrenadeRecoil" value="10" />
-  <Property name="GunRecoilSpring" value="0.33" />
-  <Property name="BlastRecoilSpring" value="0.3" />
+  <Property name="GunRecoil" value="2" />
+  <Property name="LaserRecoil" value="1" />
+  <Property name="BeamRecoil" value="3" />
+  <Property name="GrenadeRecoil" value="5" />
+  <Property name="GunRecoilSpring" value="0.13" />
+  <Property name="BlastRecoilSpring" value="0.15" />
   <Property name="RailRecoilSpring" value="0.1" />
-  <Property name="PulseRecoilSpring" value="0.19" />
+  <Property name="PulseRecoilSpring" value="0.09" />
   <Property name="CannonRecoilSpring" value="0.3" />
   <Property name="GunRecoilSettleSpring" value="0.4" />
-  <Property name="ThirdPersonRecoilMultiplier" value="1.5" />
+  <Property name="ThirdPersonRecoilMultiplier" value="1" />
   <Property name="GunRecoilMin" value="0.15" />
-  <Property name="GunRecoilMax" value="1.6" />
+  <Property name="GunRecoilMax" value="10" />
   <Property name="BoltcasterHasTracer" value="True" />
   <Property name="ProjectileDamageFalloff" value="1" />
   <Property name="ShotgunDispersion" value="0.8" />
@@ -1105,11 +1234,11 @@
     <Property name="TurnFast" value="4" />
     <Property name="StickyFactor" value="0.15" />
   </Property>
-  <Property name="AutoAim" value="False" />
+  <Property name="AutoAim" value="True" />
   <Property name="AutoAimMaxAccelFactor" value="0.2" />
   <Property name="AutoAimFixedInterceptSpeed" value="200" />
   <Property name="AutoAimTimeOut" value="0.15" />
-  <Property name="AutoAimMaxAngle" value="1" />
+  <Property name="AutoAimMaxAngle" value="2" />
   <Property name="AutoAimMinScreenDistance" value="25" />
   <Property name="AutoAimRadiusExtra" value="1" />
   <Property name="AutoAimStickyRailgun" value="0.15" />
@@ -1164,9 +1293,14 @@
   <Property name="ExperienceDroneSpawnOffset" value="25" />
   <Property name="ExperienceDroneSpawnAngle" value="120" />
   <Property name="ExperienceMessageBroadcastNearbyDistance" value="1000" />
+  <Property name="ExperienceDefeatLevel5SpaceSentinelsWarpDelay" value="5.5" />
+  <Property name="ExperienceDefeatLevel5SpaceSentinelsMessageDelay" value="4" />
+  <Property name="ExperienceDefeatLevel5SpaceSentinelsRewardDelay" value="9" />
+  <Property name="ExperienceDefeatLevel5SpaceSentinelsReward" value="R_SPACE_WANTED5" />
   <Property name="ExperienceDefeatLevel5SentinelsRewardDelay" value="5" />
   <Property name="ExperienceDefeatLevel5SentinelsReward" value="R_SHOW_HIVE" />
   <Property name="ExperienceDefeatLevel5SentinelsNearHiveReward" value="R_SENT_OFF_W5" />
+  <Property name="ExperienceDefeatLevel5SentinelsCorrupt" value="R_W5_CORRUPT" />
   <Property name="ExperienceDefeatLevel5SentinelsDisableWantedTime" value="60" />
   <Property name="WantedEnemyAttackAmount" value="0.1" />
   <Property name="Gun" value="MODELS//COMMON//WEAPONS//DEFAULTGUN//DEFAULTGUN.SCENE.MBIN" />
@@ -1322,7 +1456,7 @@
   <Property name="FlashSpeed" value="0.1" />
   <Property name="FlashPulse" value="0.08" />
   <Property name="FlashGrow" value="0.1" />
-  <Property name="GunRightOffset" value="0" />
+  <Property name="GunRightOffset" value="-1" />
   <Property name="GunUpOffset" value="-1" />
   <Property name="LaserBeamMineRate" value="0.3" />
   <Property name="LaserBeamCore" value="0.04" />

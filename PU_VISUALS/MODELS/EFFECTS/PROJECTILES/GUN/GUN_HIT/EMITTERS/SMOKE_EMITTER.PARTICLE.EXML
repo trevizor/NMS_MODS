@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.99.1)-->
+<!--File created using MBINCompiler version (4.22.0)-->
 <Data template="TkParticleData">
   <Property name="AudioEvent" value="0" />
   <Property name="StartEnabled" value="True" />
   <Property name="Oneshot" value="True" />
-  <Property name="MaxCount" value="0" />
+  <Property name="MaxCount" value="200" />
   <Property name="BurstData" value="TkParticleBurstData.xml">
     <Property name="BurstAmount" value="TkEmitterFloatProperty.xml">
       <Property name="Authoring" value="FixedValue" />
-      <Property name="FixedValue" value="0" />
+      <Property name="FixedValue" value="1" />
       <Property name="MinRandomValue" value="0.1" />
       <Property name="MaxRandomValue" value="1" />
       <Property name="CurveVariation" value="0" />
@@ -25,7 +25,7 @@
     </Property>
     <Property name="BurstInterval" value="TkEmitterFloatProperty.xml">
       <Property name="Authoring" value="FixedValue" />
-      <Property name="FixedValue" value="0" />
+      <Property name="FixedValue" value="1" />
       <Property name="MinRandomValue" value="0.1" />
       <Property name="MaxRandomValue" value="1" />
       <Property name="CurveVariation" value="0" />
@@ -271,13 +271,13 @@
     <Property name="R" value="2.59" />
     <Property name="G" value="3.207" />
     <Property name="B" value="5" />
-    <Property name="A" value="1" />
+    <Property name="A" value="0.2" />
   </Property>
   <Property name="ColourMiddle" value="Colour.xml">
     <Property name="R" value="0.854" />
     <Property name="G" value="0.918" />
     <Property name="B" value="1" />
-    <Property name="A" value="0.5" />
+    <Property name="A" value="0.05" />
   </Property>
   <Property name="ColourEnd" value="Colour.xml">
     <Property name="R" value="1" />

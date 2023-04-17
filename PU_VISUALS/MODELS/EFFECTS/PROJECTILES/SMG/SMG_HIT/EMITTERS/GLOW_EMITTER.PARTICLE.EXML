@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (3.99.1)-->
+<!--File created using MBINCompiler version (4.22.0)-->
 <Data template="TkParticleData">
   <Property name="AudioEvent" value="0" />
   <Property name="StartEnabled" value="True" />
@@ -65,10 +65,10 @@
     <Property name="EmissionRateType" value="PerParticle" />
   </Property>
   <Property name="ParticleLife" value="TkEmitterFloatProperty.xml">
-    <Property name="Authoring" value="FixedValue" />
-    <Property name="FixedValue" value="0.1" />
-    <Property name="MinRandomValue" value="0.3" />
-    <Property name="MaxRandomValue" value="0.5" />
+    <Property name="Authoring" value="RandomRangeFloat" />
+    <Property name="FixedValue" value="0.3" />
+    <Property name="MinRandomValue" value="0.2" />
+    <Property name="MaxRandomValue" value="0.3" />
     <Property name="CurveVariation" value="0" />
     <Property name="CurveStartValue" value="1" />
     <Property name="CurveMidValue" value="1" />
@@ -83,7 +83,7 @@
   </Property>
   <Property name="EmitterLife" value="TkEmitterFloatProperty.xml">
     <Property name="Authoring" value="FixedValue" />
-    <Property name="FixedValue" value="0.1" />
+    <Property name="FixedValue" value="0.05" />
     <Property name="MinRandomValue" value="0.1" />
     <Property name="MaxRandomValue" value="1" />
     <Property name="CurveVariation" value="0" />
@@ -114,7 +114,7 @@
   </Property>
   <Property name="ParticleSpeedMultiplier" value="TkEmitterFloatProperty.xml">
     <Property name="Authoring" value="FixedValue" />
-    <Property name="FixedValue" value="0" />
+    <Property name="FixedValue" value="1" />
     <Property name="MinRandomValue" value="0.1" />
     <Property name="MaxRandomValue" value="1" />
     <Property name="CurveVariation" value="0" />
@@ -192,11 +192,11 @@
   <Property name="ParticleSize" value="TkEmitterFloatProperty.xml">
     <Property name="Authoring" value="Curves" />
     <Property name="FixedValue" value="1" />
-    <Property name="MinRandomValue" value="0.1" />
-    <Property name="MaxRandomValue" value="1" />
+    <Property name="MinRandomValue" value="0.3" />
+    <Property name="MaxRandomValue" value="0.5" />
     <Property name="CurveVariation" value="2" />
-    <Property name="CurveStartValue" value="0.05" />
-    <Property name="CurveMidValue" value="0.02" />
+    <Property name="CurveStartValue" value="0.01" />
+    <Property name="CurveMidValue" value="0.01" />
     <Property name="CurveEndValue" value="0.01" />
     <Property name="CurveBlendMidpoint" value="0.5" />
     <Property name="Curve1Shape" value="TkCurveType.xml">
@@ -271,13 +271,13 @@
     <Property name="R" value="5.23" />
     <Property name="G" value="10" />
     <Property name="B" value="6.502" />
-    <Property name="A" value="1" />
+    <Property name="A" value="0.2" />
   </Property>
   <Property name="ColourMiddle" value="Colour.xml">
     <Property name="R" value="0.139" />
     <Property name="G" value="1" />
     <Property name="B" value="0.3" />
-    <Property name="A" value="1" />
+    <Property name="A" value="0.1" />
   </Property>
   <Property name="ColourEnd" value="Colour.xml">
     <Property name="R" value="0.023" />

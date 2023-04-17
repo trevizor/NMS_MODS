@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (4.4.0)-->
+<!--File created using MBINCompiler version (4.12.1)-->
 <Data template="GcSettlementGlobals">
   <Property name="ScanEventsThatPreventSentinelAlert">
     <Property value="NMSString0x20.xml">
       <Property name="Value" value="SE_SENT_SETTLEMENT_ENCOUNTER" />
     </Property>
   </Property>
-  <Property name="BuildingUpgradeTimeInSeconds" value="7200" />
+  <Property name="BuildingUpgradeTimeInSeconds" value="720" />
   <Property name="BuildingFreeUpgradeTimeInSeconds" value="10" />
   <Property name="JudgementWaitTimeMin" value="900" />
   <Property name="JudgementWaitTimeMax" value="7200" />
@@ -73,6 +73,8 @@
     <Property name="Settlement_Factory" value="560" />
     <Property name="Settlement_Clump" value="0" />
     <Property name="DroneHive" value="0" />
+    <Property name="SentinelDistressSignal" value="0" />
+    <Property name="AbandonedRobotCamp" value="0" />
   </Property>
   <Property name="SettlementBuildingCosts">
     <Property name="None" value="GcSettlementBuildingCost.xml">
@@ -3279,6 +3281,122 @@
         </Property>
       </Property>
     </Property>
+    <Property name="SentinelDistressSignal" value="GcSettlementBuildingCost.xml">
+      <Property name="StageCosts">
+        <Property name="Start" value="GcSettlementBuildingCostData.xml">
+          <Property name="Products" />
+          <Property name="Substances" />
+          <Property name="AmountMin" value="1" />
+          <Property name="AmountMax" value="1" />
+          <Property name="Currency" value="GcCurrency.xml">
+            <Property name="Currency" value="Units" />
+          </Property>
+        </Property>
+        <Property name="GroundStorey" value="GcSettlementBuildingCostData.xml">
+          <Property name="Products" />
+          <Property name="Substances" />
+          <Property name="AmountMin" value="1" />
+          <Property name="AmountMax" value="1" />
+          <Property name="Currency" value="GcCurrency.xml">
+            <Property name="Currency" value="Units" />
+          </Property>
+        </Property>
+        <Property name="RegularStorey" value="GcSettlementBuildingCostData.xml">
+          <Property name="Products" />
+          <Property name="Substances" />
+          <Property name="AmountMin" value="1" />
+          <Property name="AmountMax" value="1" />
+          <Property name="Currency" value="GcCurrency.xml">
+            <Property name="Currency" value="Units" />
+          </Property>
+        </Property>
+        <Property name="Roof" value="GcSettlementBuildingCostData.xml">
+          <Property name="Products" />
+          <Property name="Substances" />
+          <Property name="AmountMin" value="1" />
+          <Property name="AmountMax" value="1" />
+          <Property name="Currency" value="GcCurrency.xml">
+            <Property name="Currency" value="Units" />
+          </Property>
+        </Property>
+        <Property name="Decoration" value="GcSettlementBuildingCostData.xml">
+          <Property name="Products" />
+          <Property name="Substances" />
+          <Property name="AmountMin" value="1" />
+          <Property name="AmountMax" value="1" />
+          <Property name="Currency" value="GcCurrency.xml">
+            <Property name="Currency" value="Units" />
+          </Property>
+        </Property>
+        <Property name="Other" value="GcSettlementBuildingCostData.xml">
+          <Property name="Products" />
+          <Property name="Substances" />
+          <Property name="AmountMin" value="1" />
+          <Property name="AmountMax" value="1" />
+          <Property name="Currency" value="GcCurrency.xml">
+            <Property name="Currency" value="Units" />
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property name="AbandonedRobotCamp" value="GcSettlementBuildingCost.xml">
+      <Property name="StageCosts">
+        <Property name="Start" value="GcSettlementBuildingCostData.xml">
+          <Property name="Products" />
+          <Property name="Substances" />
+          <Property name="AmountMin" value="1" />
+          <Property name="AmountMax" value="1" />
+          <Property name="Currency" value="GcCurrency.xml">
+            <Property name="Currency" value="Units" />
+          </Property>
+        </Property>
+        <Property name="GroundStorey" value="GcSettlementBuildingCostData.xml">
+          <Property name="Products" />
+          <Property name="Substances" />
+          <Property name="AmountMin" value="1" />
+          <Property name="AmountMax" value="1" />
+          <Property name="Currency" value="GcCurrency.xml">
+            <Property name="Currency" value="Units" />
+          </Property>
+        </Property>
+        <Property name="RegularStorey" value="GcSettlementBuildingCostData.xml">
+          <Property name="Products" />
+          <Property name="Substances" />
+          <Property name="AmountMin" value="1" />
+          <Property name="AmountMax" value="1" />
+          <Property name="Currency" value="GcCurrency.xml">
+            <Property name="Currency" value="Units" />
+          </Property>
+        </Property>
+        <Property name="Roof" value="GcSettlementBuildingCostData.xml">
+          <Property name="Products" />
+          <Property name="Substances" />
+          <Property name="AmountMin" value="1" />
+          <Property name="AmountMax" value="1" />
+          <Property name="Currency" value="GcCurrency.xml">
+            <Property name="Currency" value="Units" />
+          </Property>
+        </Property>
+        <Property name="Decoration" value="GcSettlementBuildingCostData.xml">
+          <Property name="Products" />
+          <Property name="Substances" />
+          <Property name="AmountMin" value="1" />
+          <Property name="AmountMax" value="1" />
+          <Property name="Currency" value="GcCurrency.xml">
+            <Property name="Currency" value="Units" />
+          </Property>
+        </Property>
+        <Property name="Other" value="GcSettlementBuildingCostData.xml">
+          <Property name="Products" />
+          <Property name="Substances" />
+          <Property name="AmountMin" value="1" />
+          <Property name="AmountMax" value="1" />
+          <Property name="Currency" value="GcCurrency.xml">
+            <Property name="Currency" value="Units" />
+          </Property>
+        </Property>
+      </Property>
+    </Property>
   </Property>
   <Property name="Judgements">
     <Property value="GcSettlementJudgementData.xml">
@@ -5482,6 +5600,12 @@
       <Property name="Stats" />
     </Property>
     <Property name="DroneHive" value="GcSettlementStatChangeArray.xml">
+      <Property name="Stats" />
+    </Property>
+    <Property name="SentinelDistressSignal" value="GcSettlementStatChangeArray.xml">
+      <Property name="Stats" />
+    </Property>
+    <Property name="AbandonedRobotCamp" value="GcSettlementStatChangeArray.xml">
       <Property name="Stats" />
     </Property>
   </Property>

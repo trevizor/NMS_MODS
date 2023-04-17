@@ -1,9 +1,566 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (4.6.0)-->
+<!--File created using MBINCompiler version (4.20.0)-->
 <Data template="GcUIGlobals">
-  <Property name="ShowDifficultyForBases" value="False" />
+  <Property name="HoverPopScaleModification" value="0.1" />
+  <Property name="HoverPopAnimDuration" value="0.15" />
+  <Property name="WristMenuDefaultBorderColour" value="Colour.xml"> 
+    <Property name="R" value="0" /> 
+    <Property name="G" value="0.5" /> 
+    <Property name="B" value="1" /> 
+    <Property name="A" value="1" /> 
+  </Property> 
+  <Property name="WristMenuRepositionableBorderColour" value="Colour.xml">  
+    <Property name="R" value="1" /> 
+    <Property name="G" value="0.5" /> 
+    <Property name="B" value="0" /> 
+    <Property name="A" value="1" /> 
+  </Property>
+  <Property name="EyeTrackingTimeBeforePopupsActivate" value="0.25" />
+  <Property name="EyeTrackingPopupLookAwayTime" value="0.2" />
+  <Property name="EyeTrackingCursorBlendRateGameModeSelect" value="0.15" />
+  <Property name="EyeTrackingCursorBlendRate" value="0.375" />
+  <Property name="EyeTrackingStickyHoverTime" value="0.25" />
+  <Property name="NetworkPopupTextEnabledColour" value="Colour.xml">
+    <Property name="R" value="0.89" />
+    <Property name="G" value="0.667" />
+    <Property name="B" value="0.157" />
+    <Property name="A" value="1" />
+  </Property>
+  <Property name="NetworkPopupTextDisabledColour" value="Colour.xml">
+    <Property name="R" value="0.670588" />
+    <Property name="G" value="0.670588" />
+    <Property name="B" value="0.670588" />
+    <Property name="A" value="1" />
+  </Property>
+  <Property name="ShowDifficultyForBases" value="True" />
   <Property name="ShowPadlockForLockedSettings" value="True" />
   <Property name="DebugMedalRank" value="-1" />
+  <Property name="WonderTypeIcons">
+    <Property name="Treasure" value="TkTextureResource.xml">
+      <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.COLLECT.ON.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
+    </Property>
+    <Property name="WeirdBasePart" value="TkTextureResource.xml">
+      <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/MISSIONS/EXPEDITIONMISSIONS/MISSION.DIGGING.ON.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
+    </Property>
+    <Property name="Planet" value="TkTextureResource.xml">
+      <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/MISSIONS/EXPEDITIONMISSIONS/MISSION.PLANETS.ON.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
+    </Property>
+    <Property name="Creature" value="TkTextureResource.xml">
+      <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.CRESCAN.ON.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
+    </Property>
+    <Property name="Flora" value="TkTextureResource.xml">
+      <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/MISSIONS/EXPEDITIONMISSIONS/MISSION.TREESCAN.ON.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
+    </Property>
+    <Property name="Mineral" value="TkTextureResource.xml">
+      <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/WIKI/WIKI.RAWMAT.ON.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
+    </Property>
+    <Property name="Custom" value="TkTextureResource.xml">
+      <Property name="Filename" value="TEXTURES/UI/FRONTEND/ICONS/MISSIONS/MISSION.ATLASPATH.ON.DDS" />
+      <Property name="ResHandle" value="GcResource.xml">
+        <Property name="ResourceID" value="0" />
+      </Property>
+    </Property>
+  </Property>
+  <Property name="WonderPlanetCategoryConfig">
+    <Property name="TemperatureMax" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="39" />
+      <Property name="LocID" value="WONDER_PLANET_TEMP_MAX" />
+      <Property name="StatID" value="PLANET_TEMP_MAX" />
+    </Property>
+    <Property name="TemperatureMin" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Min" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_PLANET_TEMP_MIN" />
+      <Property name="StatID" value="PLANET_TEMP_MIN" />
+    </Property>
+    <Property name="ToxicityMax" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="19" />
+      <Property name="LocID" value="WONDER_PLANET_TOX" />
+      <Property name="StatID" value="PLANET_TOX" />
+    </Property>
+    <Property name="RadiationMax" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="5" />
+      <Property name="LocID" value="WONDER_PLANET_RAD" />
+      <Property name="StatID" value="PLANET_TOX" />
+    </Property>
+    <Property name="AnomalyMax" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_PLANET_ANOMALY" />
+      <Property name="StatID" value="PLANET_ANOMALY" />
+    </Property>
+    <Property name="RadiusMax" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="90000" />
+      <Property name="LocID" value="WONDER_PLANET_SIZE_MAX" />
+      <Property name="StatID" value="PLANET_SIZE_MAX" />
+    </Property>
+    <Property name="RadiusMin" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Min" />
+      <Property name="ThresholdValue" value="90000" />
+      <Property name="LocID" value="WONDER_PLANET_SIZE_MIN" />
+      <Property name="StatID" value="PLANET_SIZE_MIN" />
+    </Property>
+    <Property name="AltitudeReachedMax" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="200" />
+      <Property name="LocID" value="WONDER_PLANET_ALT_MAX" />
+      <Property name="StatID" value="PLANET_ALT_MAX" />
+    </Property>
+    <Property name="AltitudeReachedMin" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_PLANET_ALT_MIN" />
+      <Property name="StatID" value="PLANET_ALT_MIN" />
+    </Property>
+    <Property name="PerfectionMax" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="20" />
+      <Property name="LocID" value="WONDER_PLANET_PERFECT_MAX" />
+      <Property name="StatID" value="PLANET_PFCT_MAX" />
+    </Property>
+    <Property name="PerfectionMin" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Min" />
+      <Property name="ThresholdValue" value="50" />
+      <Property name="LocID" value="WONDER_PLANET_PERFECT_MIN" />
+      <Property name="StatID" value="PLANET_PFCT_MIN" />
+    </Property>
+  </Property>
+  <Property name="WonderCreatureCategoryConfig">
+    <Property name="HerbivoreSizeMax" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="1" />
+      <Property name="LocID" value="WONDER_CREAT_HERB_MAX" />
+      <Property name="StatID" value="CREAT_HERB_MAX" />
+    </Property>
+    <Property name="HerbivoreSizeMin" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Min" />
+      <Property name="ThresholdValue" value="1" />
+      <Property name="LocID" value="WONDER_CREAT_HERB_MIN" />
+      <Property name="StatID" value="CREAT_HERB_MIN" />
+    </Property>
+    <Property name="CarnivoreSizeMax" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="2" />
+      <Property name="LocID" value="WONDER_CREAT_CARN_MAX" />
+      <Property name="StatID" value="CREAT_CARN_MAX" />
+    </Property>
+    <Property name="CarnivoreSizeMin" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Min" />
+      <Property name="ThresholdValue" value="2" />
+      <Property name="LocID" value="WONDER_CREAT_CARN_MIN" />
+      <Property name="StatID" value="CREAT_CARN_MIN" />
+    </Property>
+    <Property name="IntelligenceMax" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_CREAT_INT" />
+      <Property name="StatID" value="CREAT_INT" />
+    </Property>
+    <Property name="ViciousnessMax" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_CREAT_VIS" />
+      <Property name="StatID" value="CREAT_VIC" />
+    </Property>
+    <Property name="Hot" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_CREAT_HOT" />
+      <Property name="StatID" value="CREAT_HOT" />
+    </Property>
+    <Property name="Cold" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_CREAT_COLD" />
+      <Property name="StatID" value="CREAT_COLD" />
+    </Property>
+    <Property name="Tox" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_CREAT_TOX" />
+      <Property name="StatID" value="CREAT_TOX" />
+    </Property>
+    <Property name="Rad" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_CREAT_RAD" />
+      <Property name="StatID" value="CREAT_RAD" />
+    </Property>
+    <Property name="Weird" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_CREAT_WEIRD" />
+      <Property name="StatID" value="CREAT_WEIRD" />
+    </Property>
+    <Property name="Water" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_CREAT_WATER" />
+      <Property name="StatID" value="CREAT_WATER" />
+    </Property>
+    <Property name="Robot" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_CREAT_ROBOT" />
+      <Property name="StatID" value="CREAT_ROBOT" />
+    </Property>
+    <Property name="Flyer" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_CREAT_FLY" />
+      <Property name="StatID" value="CREAT_FLY" />
+    </Property>
+    <Property name="Cave" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_CREAT_CAVE" />
+      <Property name="StatID" value="CREAT_CAVE" />
+    </Property>
+  </Property>
+  <Property name="WonderFloraCategoryConfig">
+    <Property name="GeneralFact0" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_FLORA_0" />
+      <Property name="StatID" value="FLORA_0" />
+    </Property>
+    <Property name="GeneralFact1" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_FLORA_1" />
+      <Property name="StatID" value="FLORA_1" />
+    </Property>
+    <Property name="GeneralFact2" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_FLORA_2" />
+      <Property name="StatID" value="FLORA_2" />
+    </Property>
+    <Property name="GeneralFact3" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_FLORA_3" />
+      <Property name="StatID" value="FLORA_3" />
+    </Property>
+    <Property name="ColdFact" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_FLORA_4" />
+      <Property name="StatID" value="FLORA_4" />
+    </Property>
+    <Property name="HotFact" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_FLORA_5" />
+      <Property name="StatID" value="FLORA_5" />
+    </Property>
+    <Property name="RadFact" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_FLORA_6" />
+      <Property name="StatID" value="FLORA_6" />
+    </Property>
+    <Property name="ToxFact" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_FLORA_7" />
+      <Property name="StatID" value="FLORA_7" />
+    </Property>
+  </Property>
+  <Property name="WonderMineralCategoryConfig">
+    <Property name="GeneralFact0" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_MINERAL_0" />
+      <Property name="StatID" value="MINERAL_0" />
+    </Property>
+    <Property name="GeneralFact1" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_MINERAL_1" />
+      <Property name="StatID" value="MINERAL_1" />
+    </Property>
+    <Property name="GeneralFact2" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_MINERAL_2" />
+      <Property name="StatID" value="MINERAL_2" />
+    </Property>
+    <Property name="MetalFact" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_MINERAL_METAL" />
+      <Property name="StatID" value="MINERAL_METAL" />
+    </Property>
+    <Property name="ColdFact" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_MINERAL_COLD" />
+      <Property name="StatID" value="MINERAL_COLD" />
+    </Property>
+    <Property name="HotFact" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_MINERAL_HOT" />
+      <Property name="StatID" value="MINERAL_HOT" />
+    </Property>
+    <Property name="RadFact" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_MINERAL_RAD" />
+      <Property name="StatID" value="MINERAL_RAD" />
+    </Property>
+    <Property name="ToxFact" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="WONDER_MINERAL_TOX" />
+      <Property name="StatID" value="MINERAL_TOX" />
+    </Property>
+  </Property>
+  <Property name="WonderTreasureCategoryConfig">
+    <Property name="Loot" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="TREASURE_SUB" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="Document" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="HIST_SUB" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="BioSample" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="BIO_SUB" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="Fossil" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="FOSSIL_SUB" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="Plant" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="PLANT_SUB" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="Tool" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="TOOL_SUB" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="Farm" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="PLANT_SUB" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="SeaLoot" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="ITEMGEN_WATER_SUB" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="SeaHorror" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="ITEMGEN_WATERWEIRD_SUB" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="Salvage" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="SALVAGE_SUB" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="Bones" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="BONES_SUB" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="SpaceHorror" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="ITEMGEN_SPACEFEAR_SUB" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="SpaceBones" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="ITEMGEN_SPACEBONE_SUB" />
+      <Property name="StatID" value="" />
+    </Property>
+  </Property>
+  <Property name="WonderWeirdBasePartCategoryConfig">
+    <Property name="EngineOrb" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="BLD_ENGINEORB_NAME_L" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="BeamStone" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="BLD_BEAMSTONE_NAME_L" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="BubbleCluster" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="BLD_BUBBLECLUSTER_NAME_L" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="MedGeometric" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="BLD_MEDGEOMETRIC_NAME_L" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="Shard" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="BLD_SHARD_NAME_L" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="StarJoint" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="BLD_STARJOINT_NAME_L" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="BoneGarden" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="BLD_BONEGARDEN_NAME_L" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="ContourPod" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="BLD_CONTOURPOD_NAME_L" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="HydroPod" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="BLD_HYDROPOD_NAME_L" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="ShellWhite" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="BLD_SHELLWHITE_NAME_L" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="WeirdCube" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="BLD_WEIRDCUBE_NAME_L" />
+      <Property name="StatID" value="" />
+    </Property>
+  </Property>
+  <Property name="WonderCustomCategoryConfig">
+    <Property name="Custom01" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="CUSTOM01" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="Custom02" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="CUSTOM02" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="Custom03" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="CUSTOM03" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="Custom04" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="CUSTOM04" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="Custom05" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="CUSTOM05" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="Custom06" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="CUSTOM06" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="Custom07" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="CUSTOM07" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="Custom08" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="CUSTOM08" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="Custom09" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="CUSTOM09" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="Custom10" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="CUSTOM10" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="Custom11" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="CUSTOM11" />
+      <Property name="StatID" value="" />
+    </Property>
+    <Property name="Custom12" value="GcWonderCategoryConfig.xml">
+      <Property name="WonderCategoryComparisonType" value="Max" />
+      <Property name="ThresholdValue" value="0" />
+      <Property name="LocID" value="CUSTOM12" />
+      <Property name="StatID" value="" />
+    </Property>
+  </Property>
   <Property name="PadCursorUICurve" value="TkCurveType.xml">
     <Property name="Curve" value="EaseInExpo" />
   </Property>
@@ -66,6 +623,7 @@
   <Property name="UseZoomedOutBuildCamRadius" value="3" />
   <Property name="ParagraphAutoScrollSpeed" value="10" />
   <Property name="AutoScrollParagraphs" value="True" />
+  <Property name="GameModeSelectColourFadeTime" value="0.1" />
   <Property name="EggModifiyAnimMaxSize" value="96" />
   <Property name="EggModifiyAnimLoopTime" value="1" />
   <Property name="SeasonFinalStageIndex" value="5" />
@@ -228,7 +786,7 @@
   <Property name="SeasonalRingMultiplier" value="1.6" />
   <Property name="SeasonalRingPulseTime" value="10" />
   <Property name="SeasonalRingChangeTime" value="0.35" />
-  <Property name="MinSeasonPlayTimeInDays" value="2" />
+  <Property name="MinSeasonPlayTimeInDays" value="0" />
   <Property name="ExpeditionStageChangeTime" value="0.25" />
   <Property name="MilestoneStingDisplayTime" value="6" />
   <Property name="StageStingDisplayTime" value="6" />
@@ -254,8 +812,9 @@
   <Property name="QuickMenuCentrePos" value="375" />
   <Property name="QuickMenuSideOffset" value="70" />
   <Property name="QuickMenuCentreSideOffset" value="100" />
-  <Property name="InWorldInteractLabelScale" value="1.0" />
-  <Property name="InWorldScreenScaleDistance" value="15" />
+  <Property name="InWorldInteractLabelScale" value="1" />
+  <Property name="InWorldInteractLabelScaleV2" value="0.3" />
+  <Property name="InWorldScreenScaleDistance" value="5" />
   <Property name="InWorldInteractLabelAlignment" value="Vector2f.xml">
     <Property name="x" value="0" />
     <Property name="y" value="0" />
@@ -313,8 +872,15 @@
     <Property name="y" value="0.4" />
     <Property name="z" value="0" />
   </Property>
+  <Property name="GalmapDiscoveryOffsetVR" value="200" />
   <Property name="FrontendOffsetVR" value="400" />
   <Property name="ProjectorScale" value="0.045" />
+  <Property name="MaxProjectorDistanceFromDefault" value="0" />
+  <Property name="ProjectorGrabResetTime" value="0" />
+  <Property name="AllowProjectorRepositioning" value="False" />
+  <Property name="MaxProjectorGrabDistance" value="0" />
+  <Property name="ProjectorGrabDistanceBias" value="0" />
+  <Property name="ProjectorGrabBorderPercent" value="0" />
   <Property name="CockpitGlassFrostTime" value="0.25" />
   <Property name="CockpitGlassDefrostTime" value="1" />
   <Property name="TextPrintoutMultiplier" value="3.5" />
@@ -515,6 +1081,7 @@
     <Property name="Anim" value="" />
     <Property name="HeightOffset" value="0" />
     <Property name="UsePlayerCameraInHmd" value="True" />
+    <Property name="AlignUIToCameraInHmd" value="False" />
     <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
     <Property name="LookForFocusInMasterModel" value="False" />
   </Property>
@@ -553,6 +1120,7 @@
     <Property name="Anim" value="" />
     <Property name="HeightOffset" value="0" />
     <Property name="UsePlayerCameraInHmd" value="True" />
+    <Property name="AlignUIToCameraInHmd" value="False" />
     <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
     <Property name="LookForFocusInMasterModel" value="False" />
   </Property>
@@ -591,6 +1159,7 @@
     <Property name="Anim" value="" />
     <Property name="HeightOffset" value="0" />
     <Property name="UsePlayerCameraInHmd" value="False" />
+    <Property name="AlignUIToCameraInHmd" value="False" />
     <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
     <Property name="LookForFocusInMasterModel" value="False" />
   </Property>
@@ -629,6 +1198,7 @@
     <Property name="Anim" value="" />
     <Property name="HeightOffset" value="0" />
     <Property name="UsePlayerCameraInHmd" value="False" />
+    <Property name="AlignUIToCameraInHmd" value="False" />
     <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
     <Property name="LookForFocusInMasterModel" value="False" />
   </Property>
@@ -655,7 +1225,13 @@
   <Property name="InteractionInWorldPlayerCamAlways" value="False" />
   <Property name="InteractionInWorldPitchDistance" value="1" />
   <Property name="InteractionInWorldMinScreenDistance" value="2" />
+  <Property name="InteractionInWorldMinScreenDistanceV2" value="0.7" />
   <Property name="InteractionInWorldSeatedNPCHeightAdjust" value="-0.3" />
+  <Property name="InteractionInWorldSeatedNPCHeightAdjustV2" value="0" />
+  <Property name="ShipHologramInWorldUIHeightAdjust" value="0.5" />
+  <Property name="ShipHologramInWorldUIHeightAdjustV2" value="0.5" />
+  <Property name="ShopInteractionInWorldForcedOffset" value="0" />
+  <Property name="ShopInteractionInWorldForcedOffsetV2" value="0" />
   <Property name="TravelTargetRadius" value="0.35" />
   <Property name="TravelLineThickness" value="12" />
   <Property name="TravelLineColour" value="Colour.xml">
@@ -855,6 +1431,7 @@
   <Property name="CompassDistanceSpaceScaleRange" value="100000" />
   <Property name="CompassDistanceScale" value="0.4" />
   <Property name="CompassDistanceShipMinScale" value="0.6" />
+  <Property name="CompassDistanceMarkerMinScale" value="0.6" />
   <Property name="CompassDistanceMaxAngle" value="12" />
   <Property name="CompassDistanceYOffset" value="56" />
   <Property name="CompassAngleClamp" value="90" />
@@ -919,7 +1496,7 @@
       <Property name="Value" value="UI_BUILD_MENU_TOGGLE_SELECT_ON" />
     </Property>
     <Property name="ToggleWiringMode" value="NMSString0x20.xml">
-      <Property name="Value" value="" />
+      <Property name="Value" value="UI_BUILD_MENU_TOGGLE_WIRING_ON" />
     </Property>
     <Property name="ViewRelatives" value="NMSString0x20.xml">
       <Property name="Value" value="" />
@@ -969,7 +1546,7 @@
       <Property name="Value" value="UI_BUILD_MENU_TOGGLE_SELECT_OFF" />
     </Property>
     <Property name="ToggleWiringMode" value="NMSString0x20.xml">
-      <Property name="Value" value="" />
+      <Property name="Value" value="UI_BUILD_MENU_TOGGLE_WIRING_OFF" />
     </Property>
     <Property name="ViewRelatives" value="NMSString0x20.xml">
       <Property name="Value" value="" />
@@ -1228,6 +1805,7 @@
     <Property name="Anim" value="" />
     <Property name="HeightOffset" value="0.005" />
     <Property name="UsePlayerCameraInHmd" value="True" />
+    <Property name="AlignUIToCameraInHmd" value="False" />
     <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="True" />
     <Property name="LookForFocusInMasterModel" value="False" />
   </Property>
@@ -1266,6 +1844,7 @@
     <Property name="Anim" value="" />
     <Property name="HeightOffset" value="0.005" />
     <Property name="UsePlayerCameraInHmd" value="True" />
+    <Property name="AlignUIToCameraInHmd" value="False" />
     <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
     <Property name="LookForFocusInMasterModel" value="False" />
   </Property>
@@ -1304,6 +1883,7 @@
     <Property name="Anim" value="" />
     <Property name="HeightOffset" value="0.005" />
     <Property name="UsePlayerCameraInHmd" value="True" />
+    <Property name="AlignUIToCameraInHmd" value="False" />
     <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
     <Property name="LookForFocusInMasterModel" value="False" />
   </Property>
@@ -1342,6 +1922,7 @@
     <Property name="Anim" value="" />
     <Property name="HeightOffset" value="0.005" />
     <Property name="UsePlayerCameraInHmd" value="True" />
+    <Property name="AlignUIToCameraInHmd" value="False" />
     <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
     <Property name="LookForFocusInMasterModel" value="False" />
   </Property>
@@ -1380,6 +1961,7 @@
     <Property name="Anim" value="" />
     <Property name="HeightOffset" value="0.005" />
     <Property name="UsePlayerCameraInHmd" value="True" />
+    <Property name="AlignUIToCameraInHmd" value="False" />
     <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
     <Property name="LookForFocusInMasterModel" value="False" />
   </Property>
@@ -1418,6 +2000,7 @@
     <Property name="Anim" value="" />
     <Property name="HeightOffset" value="0.005" />
     <Property name="UsePlayerCameraInHmd" value="True" />
+    <Property name="AlignUIToCameraInHmd" value="False" />
     <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
     <Property name="LookForFocusInMasterModel" value="False" />
   </Property>
@@ -1457,6 +2040,7 @@
       <Property name="Anim" value="" />
       <Property name="HeightOffset" value="0.005" />
       <Property name="UsePlayerCameraInHmd" value="True" />
+      <Property name="AlignUIToCameraInHmd" value="False" />
       <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="True" />
       <Property name="LookForFocusInMasterModel" value="False" />
     </Property>
@@ -1495,6 +2079,7 @@
       <Property name="Anim" value="" />
       <Property name="HeightOffset" value="0.005" />
       <Property name="UsePlayerCameraInHmd" value="True" />
+      <Property name="AlignUIToCameraInHmd" value="False" />
       <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="True" />
       <Property name="LookForFocusInMasterModel" value="False" />
     </Property>
@@ -1533,6 +2118,7 @@
       <Property name="Anim" value="" />
       <Property name="HeightOffset" value="0.005" />
       <Property name="UsePlayerCameraInHmd" value="True" />
+      <Property name="AlignUIToCameraInHmd" value="False" />
       <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="True" />
       <Property name="LookForFocusInMasterModel" value="False" />
     </Property>
@@ -1571,6 +2157,7 @@
       <Property name="Anim" value="" />
       <Property name="HeightOffset" value="0.005" />
       <Property name="UsePlayerCameraInHmd" value="True" />
+      <Property name="AlignUIToCameraInHmd" value="False" />
       <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="True" />
       <Property name="LookForFocusInMasterModel" value="False" />
     </Property>
@@ -1609,6 +2196,7 @@
       <Property name="Anim" value="" />
       <Property name="HeightOffset" value="0.005" />
       <Property name="UsePlayerCameraInHmd" value="True" />
+      <Property name="AlignUIToCameraInHmd" value="False" />
       <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="True" />
       <Property name="LookForFocusInMasterModel" value="False" />
     </Property>
@@ -1647,6 +2235,7 @@
       <Property name="Anim" value="" />
       <Property name="HeightOffset" value="0.005" />
       <Property name="UsePlayerCameraInHmd" value="True" />
+      <Property name="AlignUIToCameraInHmd" value="False" />
       <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="True" />
       <Property name="LookForFocusInMasterModel" value="False" />
     </Property>
@@ -1685,6 +2274,7 @@
       <Property name="Anim" value="" />
       <Property name="HeightOffset" value="0.005" />
       <Property name="UsePlayerCameraInHmd" value="True" />
+      <Property name="AlignUIToCameraInHmd" value="False" />
       <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="True" />
       <Property name="LookForFocusInMasterModel" value="False" />
     </Property>
@@ -1905,6 +2495,7 @@
   <Property name="SpaceMapCockpitScaleAdjustRoyal" value="1" />
   <Property name="SpaceMapCockpitScaleAdjustSail" value="1" />
   <Property name="SpaceMapCockpitScaleAdjustAlien" value="0.8" />
+  <Property name="SpaceMapCockpitScaleAdjustRobot" value="0.85" />
   <Property name="SpaceMapCockpitAngle" value="-18" />
   <Property name="TargetDisplayScale" value="0.01" />
   <Property name="TargetDisplayShipScale" value="0.08" />
@@ -2190,25 +2781,25 @@
   <Property name="CrosshairInterceptLockRange" value="600" />
   <Property name="CrosshairTargetLockSize" value="2" />
   <Property name="CrosshairTargetLockSizeSpecific">
-    <Property value="0" />
-    <Property value="160" />
-    <Property value="260" />
-    <Property value="0" />
-    <Property value="100" />
-    <Property value="0" />
-    <Property value="0" />
-    <Property value="0" />
-    <Property value="0" />
-    <Property value="0" />
-    <Property value="0" />
-    <Property value="0" />
-    <Property value="0" />
-    <Property value="0" />
-    <Property value="0" />
-    <Property value="0" />
-    <Property value="0" />
-    <Property value="0" />
-    <Property value="0" />
+    <Property name="Bolt" value="0" />
+    <Property name="Shotgun" value="160" />
+    <Property name="Burst" value="260" />
+    <Property name="Rail" value="0" />
+    <Property name="Cannon" value="100" />
+    <Property name="Laser" value="0" />
+    <Property name="Grenade" value="0" />
+    <Property name="MineGrenade" value="0" />
+    <Property name="Scope" value="0" />
+    <Property name="FrontShield" value="0" />
+    <Property name="Melee" value="0" />
+    <Property name="TerrainEdit" value="0" />
+    <Property name="SunLaser" value="0" />
+    <Property name="Spawner" value="0" />
+    <Property name="SpawnerAlt" value="0" />
+    <Property name="SoulLaser" value="0" />
+    <Property name="Flamethrower" value="0" />
+    <Property name="StunGrenade" value="0" />
+    <Property name="Stealth" value="0" />
   </Property>
   <Property name="CrosshairTargetLockCurve" value="TkCurveType.xml">
     <Property name="Curve" value="Linear" />
@@ -2276,6 +2867,7 @@
   </Property>
   <Property name="TrackTypeIconSize" value="64" />
   <Property name="TrackPrimaryCentreOffset" value="1" />
+  <Property name="TrackPoliceFreighterCentreOffset" value="0" />
   <Property name="TrackTimerAlpha" value="0.5" />
   <Property name="TrackTimerRadarPulseSize" value="5" />
   <Property name="TrackTimerIconOuterRadius" value="28" />
@@ -2512,13 +3104,13 @@
   <Property name="HUDPlayerTrackArrowTargetDist" value="450" />
   <Property name="HUDPlayerTrackArrowOffset" value="0.4" />
   <Property name="HUDPlayerTrackArrowScreenBorder" value="125" />
-  <Property name="HUDPlayerTrackArrowSize" value="0" />
-  <Property name="HUDPlayerTrackArrowSizeMin" value="0" />
-  <Property name="HUDPlayerTrackArrowSizeMax" value="0" />
-  <Property name="HUDPlayerTrackArrowIconSize" value="0" />
-  <Property name="HUDPlayerTrackArrowSmallIconSize" value="0" />
-  <Property name="HUDPlayerTrackArrowArrowSize" value="0" />
-  <Property name="HUDPlayerTrackArrowDotSize" value="0" />
+  <Property name="HUDPlayerTrackArrowSize" value="10" />
+  <Property name="HUDPlayerTrackArrowSizeMin" value="50" />
+  <Property name="HUDPlayerTrackArrowSizeMax" value="60" />
+  <Property name="HUDPlayerTrackArrowIconSize" value="0.7" />
+  <Property name="HUDPlayerTrackArrowSmallIconSize" value="1" />
+  <Property name="HUDPlayerTrackArrowArrowSize" value="0.6" />
+  <Property name="HUDPlayerTrackArrowDotSize" value="0.9" />
   <Property name="HUDPlayerTrackArrowDotColour" value="Colour.xml">
     <Property name="R" value="0.011" />
     <Property name="G" value="0.763" />
@@ -2886,18 +3478,25 @@
   <Property name="HUDElementsOffsetY_5" value="75" />
   <Property name="WorldUISettings" value="GcWorldUISettings.xml">
     <Property name="UIWorldQuadOffset" value="0.8" />
+    <Property name="UIWorldQuadOffsetV2" value="0.4" />
     <Property name="UIWorldQuadOffsetBuildMenu" value="0.2" />
+    <Property name="UIWorldQuadOffsetBuildMenuV2" value="0.6" />
     <Property name="UIWorldQuadSideOffset" value="-0.5" />
     <Property name="UIWorldQuadShipAddOffset" value="-0.9" />
+    <Property name="UIWorldQuadShipAddOffsetV2" value="-0.27" />
     <Property name="UIWorldQuadScale" value="0.32" />
     <Property name="UIWorldQuadShipScale" value="1" />
-    <Property name="HUDWorldQuadOffset" value="1.8" />
-    <Property name="HUDWorldQuadShipAddOffset" value="-2.5" />
+    <Property name="HUDDefWorldQuadOffset" value="1.8" />
+    <Property name="HUDDefWorldQuadOffsetV2" value="2.5" />
+    <Property name="HUDDefWorldQuadShipAddOffset" value="-2.5" />
+    <Property name="HUDDefWorldQuadShipAddOffsetV2" value="-2.2" />
     <Property name="HUDWorldQuadScale" value="1.2" />
     <Property name="HUDWorldQuadShipScale" value="1.4" />
     <Property name="HUDInterpSpeed" value="10" />
     <Property name="HUDThresholdVert" value="80" />
     <Property name="HUDThresholdHorz" value="15" />
+    <Property name="GameModeSelectorQuadOffset" value="2" />
+    <Property name="GameModeSelectorQuadOffsetV2" value="2.7" />
   </Property>
   <Property name="PauseMenuHoldTime" value="0.5" />
   <Property name="PlanetLabelOffset" value="Vector2f.xml">
@@ -3332,6 +3931,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="True" />
         <Property name="LookForFocusInMasterModel" value="True" />
       </Property>
@@ -3370,6 +3970,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -3408,6 +4009,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -3446,6 +4048,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="True" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -3484,6 +4087,7 @@
         <Property name="Anim" value="IDLE" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="True" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -3522,6 +4126,319 @@
         <Property name="Anim" value="IDLE" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
+        <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
+        <Property name="LookForFocusInMasterModel" value="False" />
+      </Property>
+      <Property name="WonderThumbnail" value="TkModelRendererData.xml">
+        <Property name="Camera" value="TkModelRendererCameraData.xml">
+          <Property name="Distance" value="1.1" />
+          <Property name="Offset" value="Vector3f.xml">
+            <Property name="x" value="0" />
+            <Property name="y" value="0" />
+            <Property name="z" value="0" />
+          </Property>
+          <Property name="Roll" value="0" />
+          <Property name="Pitch" value="5" />
+          <Property name="Rotate" value="20" />
+          <Property name="LightPitch" value="45" />
+          <Property name="LightRotate" value="46" />
+          <Property name="Wander" value="TkCameraWanderData.xml">
+            <Property name="CamWander" value="True" />
+            <Property name="CamWanderPhase" value="0.003" />
+            <Property name="CamWanderAmplitude" value="0.5" />
+          </Property>
+        </Property>
+        <Property name="Fov" value="20" />
+        <Property name="AspectRatio" value="1" />
+        <Property name="ThumbnailMode" value="None" />
+        <Property name="FocusType" value="NodeBoundingBox" />
+        <Property name="FocusLocator" value="" />
+        <Property name="FocusOffset" value="Vector3f.xml">
+          <Property name="x" value="0" />
+          <Property name="y" value="0" />
+          <Property name="z" value="0" />
+        </Property>
+        <Property name="FocusInterpTime" value="0" />
+        <Property name="BlendInTime" value="0.8" />
+        <Property name="BlendInOffset" value="0" />
+        <Property name="Anim" value="IDLE" />
+        <Property name="HeightOffset" value="0.005" />
+        <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
+        <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
+        <Property name="LookForFocusInMasterModel" value="False" />
+      </Property>
+      <Property name="WonderThumbnailCreatureSmall" value="TkModelRendererData.xml">
+        <Property name="Camera" value="TkModelRendererCameraData.xml">
+          <Property name="Distance" value="0" />
+          <Property name="Offset" value="Vector3f.xml">
+            <Property name="x" value="0.08" />
+            <Property name="y" value="0.6" />
+            <Property name="z" value="3" />
+          </Property>
+          <Property name="Roll" value="-5" />
+          <Property name="Pitch" value="5" />
+          <Property name="Rotate" value="-155" />
+          <Property name="LightPitch" value="30" />
+          <Property name="LightRotate" value="-33" />
+          <Property name="Wander" value="TkCameraWanderData.xml">
+            <Property name="CamWander" value="False" />
+            <Property name="CamWanderPhase" value="0.003" />
+            <Property name="CamWanderAmplitude" value="0.5" />
+          </Property>
+        </Property>
+        <Property name="Fov" value="50" />
+        <Property name="AspectRatio" value="1" />
+        <Property name="ThumbnailMode" value="None" />
+        <Property name="FocusType" value="DiscoveryView" />
+        <Property name="FocusLocator" value="" />
+        <Property name="FocusOffset" value="Vector3f.xml">
+          <Property name="x" value="0" />
+          <Property name="y" value="0" />
+          <Property name="z" value="0" />
+        </Property>
+        <Property name="FocusInterpTime" value="0" />
+        <Property name="BlendInTime" value="0.8" />
+        <Property name="BlendInOffset" value="0" />
+        <Property name="Anim" value="IDLE" />
+        <Property name="HeightOffset" value="0" />
+        <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
+        <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
+        <Property name="LookForFocusInMasterModel" value="False" />
+      </Property>
+      <Property name="WonderThumbnailCreatureMed" value="TkModelRendererData.xml">
+        <Property name="Camera" value="TkModelRendererCameraData.xml">
+          <Property name="Distance" value="0" />
+          <Property name="Offset" value="Vector3f.xml">
+            <Property name="x" value="0.02" />
+            <Property name="y" value="0.45" />
+            <Property name="z" value="1.5" />
+          </Property>
+          <Property name="Roll" value="-2" />
+          <Property name="Pitch" value="-2" />
+          <Property name="Rotate" value="-155" />
+          <Property name="LightPitch" value="30" />
+          <Property name="LightRotate" value="-33" />
+          <Property name="Wander" value="TkCameraWanderData.xml">
+            <Property name="CamWander" value="False" />
+            <Property name="CamWanderPhase" value="0.003" />
+            <Property name="CamWanderAmplitude" value="0.5" />
+          </Property>
+        </Property>
+        <Property name="Fov" value="50" />
+        <Property name="AspectRatio" value="1" />
+        <Property name="ThumbnailMode" value="None" />
+        <Property name="FocusType" value="DiscoveryView" />
+        <Property name="FocusLocator" value="" />
+        <Property name="FocusOffset" value="Vector3f.xml">
+          <Property name="x" value="0" />
+          <Property name="y" value="0" />
+          <Property name="z" value="0" />
+        </Property>
+        <Property name="FocusInterpTime" value="0" />
+        <Property name="BlendInTime" value="0.8" />
+        <Property name="BlendInOffset" value="0" />
+        <Property name="Anim" value="IDLE" />
+        <Property name="HeightOffset" value="0" />
+        <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
+        <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
+        <Property name="LookForFocusInMasterModel" value="False" />
+      </Property>
+      <Property name="WonderThumbnailCreatureLarge" value="TkModelRendererData.xml">
+        <Property name="Camera" value="TkModelRendererCameraData.xml">
+          <Property name="Distance" value="0" />
+          <Property name="Offset" value="Vector3f.xml">
+            <Property name="x" value="0.05" />
+            <Property name="y" value="0.45" />
+            <Property name="z" value="1.1" />
+          </Property>
+          <Property name="Roll" value="0" />
+          <Property name="Pitch" value="-6" />
+          <Property name="Rotate" value="-155" />
+          <Property name="LightPitch" value="30" />
+          <Property name="LightRotate" value="-33" />
+          <Property name="Wander" value="TkCameraWanderData.xml">
+            <Property name="CamWander" value="False" />
+            <Property name="CamWanderPhase" value="0.005" />
+            <Property name="CamWanderAmplitude" value="1" />
+          </Property>
+        </Property>
+        <Property name="Fov" value="50" />
+        <Property name="AspectRatio" value="1" />
+        <Property name="ThumbnailMode" value="None" />
+        <Property name="FocusType" value="DiscoveryView" />
+        <Property name="FocusLocator" value="" />
+        <Property name="FocusOffset" value="Vector3f.xml">
+          <Property name="x" value="0" />
+          <Property name="y" value="0" />
+          <Property name="z" value="0" />
+        </Property>
+        <Property name="FocusInterpTime" value="0" />
+        <Property name="BlendInTime" value="0.8" />
+        <Property name="BlendInOffset" value="0" />
+        <Property name="Anim" value="IDLE" />
+        <Property name="HeightOffset" value="0" />
+        <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
+        <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
+        <Property name="LookForFocusInMasterModel" value="False" />
+      </Property>
+      <Property name="WonderThumbnailFloraSmall" value="TkModelRendererData.xml">
+        <Property name="Camera" value="TkModelRendererCameraData.xml">
+          <Property name="Distance" value="1" />
+          <Property name="Offset" value="Vector3f.xml">
+            <Property name="x" value="0" />
+            <Property name="y" value="0.4" />
+            <Property name="z" value="1.2" />
+          </Property>
+          <Property name="Roll" value="0" />
+          <Property name="Pitch" value="30" />
+          <Property name="Rotate" value="-155" />
+          <Property name="LightPitch" value="30" />
+          <Property name="LightRotate" value="-33" />
+          <Property name="Wander" value="TkCameraWanderData.xml">
+            <Property name="CamWander" value="False" />
+            <Property name="CamWanderPhase" value="0.003" />
+            <Property name="CamWanderAmplitude" value="0.5" />
+          </Property>
+        </Property>
+        <Property name="Fov" value="50" />
+        <Property name="AspectRatio" value="1.1" />
+        <Property name="ThumbnailMode" value="None" />
+        <Property name="FocusType" value="DiscoveryView" />
+        <Property name="FocusLocator" value="" />
+        <Property name="FocusOffset" value="Vector3f.xml">
+          <Property name="x" value="0" />
+          <Property name="y" value="0" />
+          <Property name="z" value="0" />
+        </Property>
+        <Property name="FocusInterpTime" value="0" />
+        <Property name="BlendInTime" value="0.8" />
+        <Property name="BlendInOffset" value="0" />
+        <Property name="Anim" value="" />
+        <Property name="HeightOffset" value="0" />
+        <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
+        <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
+        <Property name="LookForFocusInMasterModel" value="False" />
+      </Property>
+      <Property name="WonderThumbnailFloraLarge" value="TkModelRendererData.xml">
+        <Property name="Camera" value="TkModelRendererCameraData.xml">
+          <Property name="Distance" value="0" />
+          <Property name="Offset" value="Vector3f.xml">
+            <Property name="x" value="0" />
+            <Property name="y" value="0.45" />
+            <Property name="z" value="1" />
+          </Property>
+          <Property name="Roll" value="0" />
+          <Property name="Pitch" value="-2" />
+          <Property name="Rotate" value="-155" />
+          <Property name="LightPitch" value="30" />
+          <Property name="LightRotate" value="-33" />
+          <Property name="Wander" value="TkCameraWanderData.xml">
+            <Property name="CamWander" value="False" />
+            <Property name="CamWanderPhase" value="0.003" />
+            <Property name="CamWanderAmplitude" value="0.5" />
+          </Property>
+        </Property>
+        <Property name="Fov" value="50" />
+        <Property name="AspectRatio" value="1" />
+        <Property name="ThumbnailMode" value="None" />
+        <Property name="FocusType" value="DiscoveryView" />
+        <Property name="FocusLocator" value="" />
+        <Property name="FocusOffset" value="Vector3f.xml">
+          <Property name="x" value="0" />
+          <Property name="y" value="0" />
+          <Property name="z" value="0" />
+        </Property>
+        <Property name="FocusInterpTime" value="0" />
+        <Property name="BlendInTime" value="0.8" />
+        <Property name="BlendInOffset" value="0" />
+        <Property name="Anim" value="" />
+        <Property name="HeightOffset" value="0" />
+        <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
+        <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
+        <Property name="LookForFocusInMasterModel" value="False" />
+      </Property>
+      <Property name="WonderThumbnailMineralSmall" value="TkModelRendererData.xml">
+        <Property name="Camera" value="TkModelRendererCameraData.xml">
+          <Property name="Distance" value="1" />
+          <Property name="Offset" value="Vector3f.xml">
+            <Property name="x" value="0" />
+            <Property name="y" value="0.3" />
+            <Property name="z" value="1" />
+          </Property>
+          <Property name="Roll" value="0" />
+          <Property name="Pitch" value="25" />
+          <Property name="Rotate" value="-155" />
+          <Property name="LightPitch" value="30" />
+          <Property name="LightRotate" value="-33" />
+          <Property name="Wander" value="TkCameraWanderData.xml">
+            <Property name="CamWander" value="False" />
+            <Property name="CamWanderPhase" value="0.003" />
+            <Property name="CamWanderAmplitude" value="0.5" />
+          </Property>
+        </Property>
+        <Property name="Fov" value="50" />
+        <Property name="AspectRatio" value="1" />
+        <Property name="ThumbnailMode" value="None" />
+        <Property name="FocusType" value="DiscoveryView" />
+        <Property name="FocusLocator" value="" />
+        <Property name="FocusOffset" value="Vector3f.xml">
+          <Property name="x" value="0" />
+          <Property name="y" value="0" />
+          <Property name="z" value="0" />
+        </Property>
+        <Property name="FocusInterpTime" value="0" />
+        <Property name="BlendInTime" value="0.8" />
+        <Property name="BlendInOffset" value="0" />
+        <Property name="Anim" value="" />
+        <Property name="HeightOffset" value="0" />
+        <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
+        <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
+        <Property name="LookForFocusInMasterModel" value="False" />
+      </Property>
+      <Property name="WonderThumbnailMineralLarge" value="TkModelRendererData.xml">
+        <Property name="Camera" value="TkModelRendererCameraData.xml">
+          <Property name="Distance" value="0" />
+          <Property name="Offset" value="Vector3f.xml">
+            <Property name="x" value="0" />
+            <Property name="y" value="0.45" />
+            <Property name="z" value="1.4" />
+          </Property>
+          <Property name="Roll" value="0" />
+          <Property name="Pitch" value="-3" />
+          <Property name="Rotate" value="-155" />
+          <Property name="LightPitch" value="30" />
+          <Property name="LightRotate" value="-33" />
+          <Property name="Wander" value="TkCameraWanderData.xml">
+            <Property name="CamWander" value="False" />
+            <Property name="CamWanderPhase" value="0.003" />
+            <Property name="CamWanderAmplitude" value="0.5" />
+          </Property>
+        </Property>
+        <Property name="Fov" value="50" />
+        <Property name="AspectRatio" value="1" />
+        <Property name="ThumbnailMode" value="None" />
+        <Property name="FocusType" value="DiscoveryView" />
+        <Property name="FocusLocator" value="" />
+        <Property name="FocusOffset" value="Vector3f.xml">
+          <Property name="x" value="0" />
+          <Property name="y" value="0" />
+          <Property name="z" value="0" />
+        </Property>
+        <Property name="FocusInterpTime" value="0" />
+        <Property name="BlendInTime" value="0.8" />
+        <Property name="BlendInOffset" value="0" />
+        <Property name="Anim" value="" />
+        <Property name="HeightOffset" value="0" />
+        <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -3560,6 +4477,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -3598,6 +4516,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -3636,6 +4555,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -3674,6 +4594,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -3712,6 +4633,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -3750,6 +4672,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -3788,6 +4711,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -3826,6 +4750,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -3864,6 +4789,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -3902,6 +4828,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -3940,6 +4867,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -3978,6 +4906,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -4016,6 +4945,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -4054,6 +4984,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -4092,6 +5023,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -4130,6 +5062,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="True" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -4168,6 +5101,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -4206,6 +5140,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="True" />
         <Property name="LookForFocusInMasterModel" value="True" />
       </Property>
@@ -4244,6 +5179,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -4282,6 +5218,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -4320,6 +5257,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="True" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -4358,6 +5296,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="True" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -4396,6 +5335,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="True" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -4434,6 +5374,7 @@
         <Property name="Anim" value="IDLE" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="True" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -4472,6 +5413,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -4510,6 +5452,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -4548,6 +5491,7 @@
         <Property name="Anim" value="" />
         <Property name="HeightOffset" value="0.005" />
         <Property name="UsePlayerCameraInHmd" value="True" />
+        <Property name="AlignUIToCameraInHmd" value="False" />
         <Property name="UseSensibleCameraFocusNodeIsNowOffsetNode" value="False" />
         <Property name="LookForFocusInMasterModel" value="False" />
       </Property>
@@ -5194,6 +6138,7 @@
   </Property>
   <Property name="HUDMarkerPrimaryIndicatorSize" value="64" />
   <Property name="HUDPetMarkerAngleTest" value="20" />
+  <Property name="HUDPetMarkerAngleVRMul" value="1.5" />
   <Property name="HUDMarkerHoverAngleTestGround" value="3.5" />
   <Property name="HUDPetCentreScreenAngle" value="15" />
   <Property name="HUDNetworkMarkerHoverAngleTestGround" value="1" />
@@ -5201,6 +6146,7 @@
   <Property name="HUDMarkerHoverAngleTestShip" value="10" />
   <Property name="HUDMarkerHoverShowLargeAngleTest" value="45" />
   <Property name="HUDNetworkMarkerHoverShowLargeAngleTest" value="1" />
+  <Property name="HUDNetworkMarkerHoverAngleVRMul" value="7.5" />
   <Property name="HUDMarkerShipOffsetMaxDist" value="1200" />
   <Property name="HUDMarkerShipOffsetMinDist" value="1800" />
   <Property name="HUDMarkerNearFadeDistance" value="3" />
@@ -5859,18 +6805,19 @@
     </Property>
   </Property>
   <Property name="MinimumHoldFill" value="0.05" />
-  <Property name="EnableAccessibleUI" value="False" />
+  <Property name="EnableAccessibleUIOnSwitch" value="True" />
   <Property name="AccessibleUIPopupScale" value="1.2" />
+  <Property name="AccessibleUIHUDPopupScale" value="1.1" />
   <Property name="DetailMessageDismissTime" value="0.3" />
-  <Property name="TouchScrollMaxDelta" value="30" />
-  <Property name="TextTouchScrollCap" value="0.1" />
-  <Property name="TouchScrollChangePageThreshold" value="35" />
   <Property name="ManualScrollChangePerInputMin" value="0.008" />
   <Property name="ManualScrollChangePerInputMax" value="0.1" />
-  <Property name="InfoPortalGuideCycleTime" value="5" />
-  <Property name="InfoPortalMilestonesCycleTime" value="5" />
+  <Property name="InfoPortalGuideCycleTime" value="15" />
+  <Property name="InfoPortalMilestonesCycleTime" value="6" />
   <Property name="FeedFrigateAnimPeriod" value="0.4" />
   <Property name="FeedFrigateAnimNumPeriods" value="1" />
   <Property name="FeedFrigateAnimScaleChange" value="0.15" />
   <Property name="FeedFrigateAnimAlphaChange" value="0.5" />
+  <Property name="TouchScrollMaxDelta" value="30" />
+  <Property name="TextTouchScrollCap" value="0.1" />
+  <Property name="TouchScrollChangePageThreshold" value="20" />
 </Data>
