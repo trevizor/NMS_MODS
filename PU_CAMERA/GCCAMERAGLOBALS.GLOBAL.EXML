@@ -3687,15 +3687,15 @@
       <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
-        <Property name="ShakeStrength" value="0.01" />
-        <Property name="ShakeFrequency" value="2" />
-        <Property name="VibrateStrength" value="0.1" />
-        <Property name="VibrateFrequency" value="10" />
+        <Property name="ShakeStrength" value="0.005" />
+        <Property name="ShakeFrequency" value="4" />
+        <Property name="VibrateStrength" value="0" />
+        <Property name="VibrateFrequency" value="6" />
       </Property>
       <Property name="MechanicalData" value="GcCameraShakeMechanicalData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="Vector3f.xml">
-          <Property name="x" value="0.004" />
+          <Property name="x" value="0.006" />
           <Property name="y" value="0" />
           <Property name="z" value="0" />
         </Property>
@@ -3705,8 +3705,8 @@
           <Property name="z" value="0" />
         </Property>
         <Property name="ExtraShakeFrequency" value="Vector3f.xml">
-          <Property name="x" value="7" />
-          <Property name="y" value="9" />
+          <Property name="x" value="4" />
+          <Property name="y" value="3" />
           <Property name="z" value="0" />
         </Property>
         <Property name="VibrateStrength" value="Vector3f.xml">
@@ -3738,8 +3738,8 @@
       <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
-        <Property name="ShakeStrength" value="0.015" />
-        <Property name="ShakeFrequency" value="4" />
+        <Property name="ShakeStrength" value="0.001" />
+        <Property name="ShakeFrequency" value="8" />
         <Property name="VibrateStrength" value="0" />
         <Property name="VibrateFrequency" value="10" />
       </Property>
@@ -3841,7 +3841,7 @@
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.01" />
-        <Property name="ShakeFrequency" value="0.35" />
+        <Property name="ShakeFrequency" value="1.3" />
         <Property name="VibrateStrength" value="0.03" />
         <Property name="VibrateFrequency" value="8.2" />
       </Property>
@@ -3853,14 +3853,14 @@
           <Property name="z" value="0.01" />
         </Property>
         <Property name="ShakeFrequency" value="Vector3f.xml">
-          <Property name="x" value="0.8" />
-          <Property name="y" value="1.0" />
-          <Property name="z" value="1.3" />
+          <Property name="x" value="1.3" />
+          <Property name="y" value="1.7" />
+          <Property name="z" value="3" />
         </Property>
         <Property name="ExtraShakeFrequency" value="Vector3f.xml">
-          <Property name="x" value="6" />
+          <Property name="x" value="13" />
           <Property name="y" value="0" />
-          <Property name="z" value="4" />
+          <Property name="z" value="9" />
         </Property>
         <Property name="VibrateStrength" value="Vector3f.xml">
           <Property name="x" value="0.001" />
@@ -4494,41 +4494,41 @@
       <Property name="FovFrequency" value="0" />
     </Property>
     <Property value="GcCameraShakeData.xml">
-      <Property name="Name" value="GUNSHAKE" />
+      <Property name="Name" value="BLACKHOLE" />
       <Property name="TimeStart" value="0" />
-      <Property name="TotalTime" value="0.4" />
+      <Property name="TotalTime" value="0" />
       <Property name="DecayRate" value="1" />
-      <Property name="StrengthScale" value="50" />
+      <Property name="StrengthScale" value="500" />
       <Property name="ThirdPersonDamp" value="1" />
       <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
-        <Property name="Active" value="False" />
-        <Property name="ShakeStrength" value="0" />
-        <Property name="ShakeFrequency" value="3" />
-        <Property name="VibrateStrength" value="0.1" />
-        <Property name="VibrateFrequency" value="2" />
+        <Property name="Active" value="True" />
+        <Property name="ShakeStrength" value="2.5" />
+        <Property name="ShakeFrequency" value="1" />
+        <Property name="VibrateStrength" value="0.2" />
+        <Property name="VibrateFrequency" value="1" />
       </Property>
       <Property name="MechanicalData" value="GcCameraShakeMechanicalData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="Vector3f.xml">
-          <Property name="x" value="2" />
-          <Property name="y" value="0" />
-          <Property name="z" value="0" />
+          <Property name="x" value="0.3" />
+          <Property name="y" value="0.3" />
+          <Property name="z" value="10" />
         </Property>
         <Property name="ShakeFrequency" value="Vector3f.xml">
-          <Property name="x" value="7" />
+          <Property name="x" value="3" />
           <Property name="y" value="3" />
           <Property name="z" value="0" />
         </Property>
         <Property name="ExtraShakeFrequency" value="Vector3f.xml">
-          <Property name="x" value="13" />
+          <Property name="x" value="7" />
           <Property name="y" value="9" />
           <Property name="z" value="0" />
         </Property>
         <Property name="VibrateStrength" value="Vector3f.xml">
           <Property name="x" value="0" />
           <Property name="y" value="0" />
-          <Property name="z" value="1" />
+          <Property name="z" value="0" />
         </Property>
         <Property name="VibrateFrequency" value="Vector3f.xml">
           <Property name="x" value="3" />
@@ -4647,57 +4647,6 @@
       <Property name="FovFrequency" value="0" />
     </Property>
     <Property value="GcCameraShakeData.xml">
-      <Property name="Name" value="GUNSHAKE" />
-      <Property name="TimeStart" value="0" />
-      <Property name="TotalTime" value="0.4" />
-      <Property name="DecayRate" value="1" />
-      <Property name="StrengthScale" value="50" />
-      <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="1" />
-      <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
-        <Property name="Active" value="False" />
-        <Property name="ShakeStrength" value="0" />
-        <Property name="ShakeFrequency" value="3" />
-        <Property name="VibrateStrength" value="0.1" />
-        <Property name="VibrateFrequency" value="2" />
-      </Property>
-      <Property name="MechanicalData" value="GcCameraShakeMechanicalData.xml">
-        <Property name="Active" value="True" />
-        <Property name="ShakeStrength" value="Vector3f.xml">
-          <Property name="x" value="2" />
-          <Property name="y" value="0" />
-          <Property name="z" value="0" />
-        </Property>
-        <Property name="ShakeFrequency" value="Vector3f.xml">
-          <Property name="x" value="7" />
-          <Property name="y" value="3" />
-          <Property name="z" value="0" />
-        </Property>
-        <Property name="ExtraShakeFrequency" value="Vector3f.xml">
-          <Property name="x" value="13" />
-          <Property name="y" value="9" />
-          <Property name="z" value="0" />
-        </Property>
-        <Property name="VibrateStrength" value="Vector3f.xml">
-          <Property name="x" value="0" />
-          <Property name="y" value="0" />
-          <Property name="z" value="1" />
-        </Property>
-        <Property name="VibrateFrequency" value="Vector3f.xml">
-          <Property name="x" value="3" />
-          <Property name="y" value="13" />
-          <Property name="z" value="7" />
-        </Property>
-        <Property name="ExtraVibrateFrequency" value="Vector3f.xml">
-          <Property name="x" value="13" />
-          <Property name="y" value="29" />
-          <Property name="z" value="23" />
-        </Property>
-      </Property>
-      <Property name="FovStrength" value="0" />
-      <Property name="FovFrequency" value="0" />
-    </Property>
-    <Property value="GcCameraShakeData.xml">
       <Property name="Name" value="SHIPLASERSHAKE" />
       <Property name="TimeStart" value="0" />
       <Property name="TotalTime" value="0" />
@@ -4733,6 +4682,57 @@
           <Property name="x" value="2" />
           <Property name="y" value="0" />
           <Property name="z" value="0" />
+        </Property>
+        <Property name="VibrateFrequency" value="Vector3f.xml">
+          <Property name="x" value="3" />
+          <Property name="y" value="13" />
+          <Property name="z" value="7" />
+        </Property>
+        <Property name="ExtraVibrateFrequency" value="Vector3f.xml">
+          <Property name="x" value="13" />
+          <Property name="y" value="29" />
+          <Property name="z" value="23" />
+        </Property>
+      </Property>
+      <Property name="FovStrength" value="0" />
+      <Property name="FovFrequency" value="0" />
+    </Property>
+    <Property value="GcCameraShakeData.xml">
+      <Property name="Name" value="GUNSHAKE" />
+      <Property name="TimeStart" value="0" />
+      <Property name="TotalTime" value="0.4" />
+      <Property name="DecayRate" value="1" />
+      <Property name="StrengthScale" value="50" />
+      <Property name="ThirdPersonDamp" value="1" />
+      <Property name="VRStrength" value="1" />
+      <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
+        <Property name="Active" value="False" />
+        <Property name="ShakeStrength" value="0" />
+        <Property name="ShakeFrequency" value="3" />
+        <Property name="VibrateStrength" value="0.1" />
+        <Property name="VibrateFrequency" value="2" />
+      </Property>
+      <Property name="MechanicalData" value="GcCameraShakeMechanicalData.xml">
+        <Property name="Active" value="True" />
+        <Property name="ShakeStrength" value="Vector3f.xml">
+          <Property name="x" value="2" />
+          <Property name="y" value="0" />
+          <Property name="z" value="0" />
+        </Property>
+        <Property name="ShakeFrequency" value="Vector3f.xml">
+          <Property name="x" value="7" />
+          <Property name="y" value="3" />
+          <Property name="z" value="0" />
+        </Property>
+        <Property name="ExtraShakeFrequency" value="Vector3f.xml">
+          <Property name="x" value="13" />
+          <Property name="y" value="9" />
+          <Property name="z" value="0" />
+        </Property>
+        <Property name="VibrateStrength" value="Vector3f.xml">
+          <Property name="x" value="0" />
+          <Property name="y" value="0" />
+          <Property name="z" value="1" />
         </Property>
         <Property name="VibrateFrequency" value="Vector3f.xml">
           <Property name="x" value="3" />
@@ -5259,57 +5259,6 @@
       <Property name="FovFrequency" value="0" />
     </Property>
     <Property value="GcCameraShakeData.xml">
-      <Property name="Name" value="PORTALOPEN" />
-      <Property name="TimeStart" value="0" />
-      <Property name="TotalTime" value="0.5" />
-      <Property name="DecayRate" value="0.5" />
-      <Property name="StrengthScale" value="1" />
-      <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="1" />
-      <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
-        <Property name="Active" value="True" />
-        <Property name="ShakeStrength" value="0.01" />
-        <Property name="ShakeFrequency" value="1.3" />
-        <Property name="VibrateStrength" value="0.03" />
-        <Property name="VibrateFrequency" value="8.2" />
-      </Property>
-      <Property name="MechanicalData" value="GcCameraShakeMechanicalData.xml">
-        <Property name="Active" value="False" />
-        <Property name="ShakeStrength" value="Vector3f.xml">
-          <Property name="x" value="1" />
-          <Property name="y" value="0" />
-          <Property name="z" value="0" />
-        </Property>
-        <Property name="ShakeFrequency" value="Vector3f.xml">
-          <Property name="x" value="7" />
-          <Property name="y" value="2" />
-          <Property name="z" value="0" />
-        </Property>
-        <Property name="ExtraShakeFrequency" value="Vector3f.xml">
-          <Property name="x" value="13" />
-          <Property name="y" value="9" />
-          <Property name="z" value="0" />
-        </Property>
-        <Property name="VibrateStrength" value="Vector3f.xml">
-          <Property name="x" value="1" />
-          <Property name="y" value="3" />
-          <Property name="z" value="3" />
-        </Property>
-        <Property name="VibrateFrequency" value="Vector3f.xml">
-          <Property name="x" value="7" />
-          <Property name="y" value="13" />
-          <Property name="z" value="4" />
-        </Property>
-        <Property name="ExtraVibrateFrequency" value="Vector3f.xml">
-          <Property name="x" value="13" />
-          <Property name="y" value="29" />
-          <Property name="z" value="23" />
-        </Property>
-      </Property>
-      <Property name="FovStrength" value="2" />
-      <Property name="FovFrequency" value="2" />
-    </Property>
-    <Property value="GcCameraShakeData.xml">
       <Property name="Name" value="NOSHAKE" />
       <Property name="TimeStart" value="0" />
       <Property name="TotalTime" value="0" />
@@ -5517,9 +5466,9 @@
       <Property name="Name" value="EXTRACTOR" />
       <Property name="TimeStart" value="0" />
       <Property name="TotalTime" value="0.5" />
-      <Property name="DecayRate" value="3" />
-      <Property name="StrengthScale" value="8" />
-      <Property name="ThirdPersonDamp" value="1" />
+      <Property name="DecayRate" value="0.66" />
+      <Property name="StrengthScale" value="30" />
+      <Property name="ThirdPersonDamp" value="0.5" />
       <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
