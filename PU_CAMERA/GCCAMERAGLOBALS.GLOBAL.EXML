@@ -2809,14 +2809,14 @@
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
   <Property name="SailShipFollowCam" value="GcCameraFollowSettings.xml">
-    <Property name="Name" value="SAILSHIP" />
+    <Property name="Name" value="SPACESHIP" />
     <Property name="MinSpeed" value="10" />
-    <Property name="SpeedRange" value="300" />
+    <Property name="SpeedRange" value="200" />
     <Property name="OffsetX" value="0" />
     <Property name="OffsetY" value="3.25" />
-    <Property name="OffsetYAlt" value="-1.5" />
+    <Property name="OffsetYAlt" value="0" />
     <Property name="OffsetYSlopeExtra" value="1.5" />
-    <Property name="OffsetZFlat" value="8" />
+    <Property name="OffsetZFlat" value="3" />
     <Property name="BackMinDistance" value="20" />
     <Property name="BackMaxDistance" value="30" />
     <Property name="BackSlopeAdjust" value="0" />
@@ -2827,16 +2827,16 @@
     <Property name="LeftMinDistance" value="0" />
     <Property name="LeftMaxDistance" value="0" />
     <Property name="OffsetYExtraMaxDistance" value="0" />
-    <Property name="PanNear" value="3" />
-    <Property name="PanFar" value="4" />
+    <Property name="PanNear" value="-2" />
+    <Property name="PanFar" value="-4" />
     <Property name="UpGamma" value="1.5" />
     <Property name="HorizRotationAngleMaxPerFrame" value="0" />
     <Property name="VertRotationSpeed" value="1" />
     <Property name="VertRotationMin" value="-90" />
     <Property name="VertRotationMax" value="90" />
-    <Property name="VertRotationOffset" value="13" />
-    <Property name="VertRotationOffsetMinAngle" value="-90" />
-    <Property name="VertRotationOffsetMaxAngle" value="90" />
+    <Property name="VertRotationOffset" value="14" />
+    <Property name="VertRotationOffsetMinAngle" value="-30" />
+    <Property name="VertRotationOffsetMaxAngle" value="30" />
     <Property name="VertStartLookingDown" value="False" />
     <Property name="DistSpeed" value="0.4" />
     <Property name="DistSpeedOutsideMainRange" value="1.5" />
@@ -2997,33 +2997,33 @@
     <Property name="UseCustomBlendTime" value="False" />
     <Property name="CustomBlendTime" value="0.5" />
   </Property>
-<Property name="RobotShipFollowCam" value="GcCameraFollowSettings.xml">
-    <Property name="Name" value="ROBOTSHIP" />
+  <Property name="RobotShipFollowCam" value="GcCameraFollowSettings.xml">
+    <Property name="Name" value="SPACESHIP" />
     <Property name="MinSpeed" value="10" />
     <Property name="SpeedRange" value="200" />
     <Property name="OffsetX" value="0" />
-    <Property name="OffsetY" value="-1.5" />
+    <Property name="OffsetY" value="3.25" />
     <Property name="OffsetYAlt" value="0" />
-    <Property name="OffsetYSlopeExtra" value="0.5" />
-    <Property name="OffsetZFlat" value="4" />
-    <Property name="BackMinDistance" value="18" />
-    <Property name="BackMaxDistance" value="40" />
+    <Property name="OffsetYSlopeExtra" value="1.5" />
+    <Property name="OffsetZFlat" value="3" />
+    <Property name="BackMinDistance" value="20" />
+    <Property name="BackMaxDistance" value="30" />
     <Property name="BackSlopeAdjust" value="0" />
     <Property name="BackSlopeRotationAdjust" value="0" />
-    <Property name="UpMinDistance" value="2" />
-    <Property name="UpMaxDistance" value="10" />
+    <Property name="UpMinDistance" value="6" />
+    <Property name="UpMaxDistance" value="15" />
     <Property name="UpSlopeAdjust" value="0" />
     <Property name="LeftMinDistance" value="0" />
     <Property name="LeftMaxDistance" value="0" />
     <Property name="OffsetYExtraMaxDistance" value="0" />
-    <Property name="PanNear" value="5" />
-    <Property name="PanFar" value="6" />
+    <Property name="PanNear" value="-2" />
+    <Property name="PanFar" value="-4" />
     <Property name="UpGamma" value="1.5" />
     <Property name="HorizRotationAngleMaxPerFrame" value="0" />
     <Property name="VertRotationSpeed" value="1" />
     <Property name="VertRotationMin" value="-90" />
     <Property name="VertRotationMax" value="90" />
-    <Property name="VertRotationOffset" value="20" />
+    <Property name="VertRotationOffset" value="14" />
     <Property name="VertRotationOffsetMinAngle" value="-30" />
     <Property name="VertRotationOffsetMaxAngle" value="30" />
     <Property name="VertStartLookingDown" value="False" />
@@ -3036,11 +3036,11 @@
     <Property name="CenterBlendTime" value="1" />
     <Property name="CenterMaxSpring" value="8" />
     <Property name="CenterMaxSpeed" value="5" />
-    <Property name="VelocityAnticipate" value="0.17" />
+    <Property name="VelocityAnticipate" value="0.07" />
     <Property name="VelocityAnticipateSpringSpeed" value="0.4" />
     <Property name="VertMaxSpring" value="5.5" />
     <Property name="CenterStartSpeed" value="0.5" />
-    <Property name="LookStickLimitAngle" value="45" />
+    <Property name="LookStickLimitAngle" value="70" />
     <Property name="EnableCollisionDetection" value="False" />
     <Property name="NumLRProbes" value="10" />
     <Property name="LRProbesRange" value="30" />
@@ -3517,7 +3517,7 @@
   <Property name="DebugAICam" value="False" />
   <Property name="DebugAICamUp" value="7" />
   <Property name="DebugAICamAt" value="53.3" />
-  <Property name="VRShakeMultiplier" value="0" />
+  <Property name="VRShakeMultiplier" value="1.2" />
   <Property name="PainShakeTime" value="0.6" />
   <Property name="ShipShakeDamper" value="0.5" />
   <Property name="IndoorCamShakeDamper" value="0.25" />
@@ -3531,7 +3531,7 @@
       <Property name="DecayRate" value="0" />
       <Property name="StrengthScale" value="1000" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="False" />
         <Property name="ShakeStrength" value="0.01" />
@@ -3582,7 +3582,7 @@
       <Property name="DecayRate" value="1" />
       <Property name="StrengthScale" value="400" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="False" />
         <Property name="ShakeStrength" value="1" />
@@ -3633,7 +3633,7 @@
       <Property name="DecayRate" value="1.7" />
       <Property name="StrengthScale" value="500" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.012" />
@@ -3684,12 +3684,12 @@
       <Property name="DecayRate" value="0" />
       <Property name="StrengthScale" value="1" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.5" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
-        <Property name="ShakeStrength" value="0.004" />
-        <Property name="ShakeFrequency" value="8" />
-        <Property name="VibrateStrength" value="0" />
+        <Property name="ShakeStrength" value="0.01" />
+        <Property name="ShakeFrequency" value="2" />
+        <Property name="VibrateStrength" value="0.1" />
         <Property name="VibrateFrequency" value="10" />
       </Property>
       <Property name="MechanicalData" value="GcCameraShakeMechanicalData.xml">
@@ -3700,8 +3700,8 @@
           <Property name="z" value="0" />
         </Property>
         <Property name="ShakeFrequency" value="Vector3f.xml">
-          <Property name="x" value="3" />
-          <Property name="y" value="3" />
+          <Property name="x" value="2" />
+          <Property name="y" value="2" />
           <Property name="z" value="0" />
         </Property>
         <Property name="ExtraShakeFrequency" value="Vector3f.xml">
@@ -3735,11 +3735,11 @@
       <Property name="DecayRate" value="0" />
       <Property name="StrengthScale" value="1" />
       <Property name="ThirdPersonDamp" value="0.3" />
-      <Property name="VRStrength" value="0" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
-        <Property name="ShakeStrength" value="0.001" />
-        <Property name="ShakeFrequency" value="8" />
+        <Property name="ShakeStrength" value="0.015" />
+        <Property name="ShakeFrequency" value="4" />
         <Property name="VibrateStrength" value="0" />
         <Property name="VibrateFrequency" value="10" />
       </Property>
@@ -3786,7 +3786,7 @@
       <Property name="DecayRate" value="2" />
       <Property name="StrengthScale" value="1" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.01" />
@@ -3837,11 +3837,11 @@
       <Property name="DecayRate" value="0.5" />
       <Property name="StrengthScale" value="1" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.7" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.01" />
-        <Property name="ShakeFrequency" value="1.3" />
+        <Property name="ShakeFrequency" value="0.35" />
         <Property name="VibrateStrength" value="0.03" />
         <Property name="VibrateFrequency" value="8.2" />
       </Property>
@@ -3853,14 +3853,14 @@
           <Property name="z" value="0.01" />
         </Property>
         <Property name="ShakeFrequency" value="Vector3f.xml">
-          <Property name="x" value="1.3" />
-          <Property name="y" value="1.7" />
-          <Property name="z" value="3" />
+          <Property name="x" value="0.8" />
+          <Property name="y" value="1.0" />
+          <Property name="z" value="1.3" />
         </Property>
         <Property name="ExtraShakeFrequency" value="Vector3f.xml">
-          <Property name="x" value="13" />
+          <Property name="x" value="6" />
           <Property name="y" value="0" />
-          <Property name="z" value="9" />
+          <Property name="z" value="4" />
         </Property>
         <Property name="VibrateStrength" value="Vector3f.xml">
           <Property name="x" value="0.001" />
@@ -3888,7 +3888,7 @@
       <Property name="DecayRate" value="0.5" />
       <Property name="StrengthScale" value="1" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.3" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.01" />
@@ -3939,7 +3939,7 @@
       <Property name="DecayRate" value="0" />
       <Property name="StrengthScale" value="100" />
       <Property name="ThirdPersonDamp" value="0.6" />
-      <Property name="VRStrength" value="0" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="1" />
@@ -3990,7 +3990,7 @@
       <Property name="DecayRate" value="1" />
       <Property name="StrengthScale" value="1" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.01" />
@@ -4041,7 +4041,7 @@
       <Property name="DecayRate" value="1" />
       <Property name="StrengthScale" value="50" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.3" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.01" />
@@ -4092,7 +4092,7 @@
       <Property name="DecayRate" value="5" />
       <Property name="StrengthScale" value="5" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.5" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.02" />
@@ -4143,7 +4143,7 @@
       <Property name="DecayRate" value="1" />
       <Property name="StrengthScale" value="2.2" />
       <Property name="ThirdPersonDamp" value="0.5" />
-      <Property name="VRStrength" value="0" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.02" />
@@ -4194,7 +4194,7 @@
       <Property name="DecayRate" value="1" />
       <Property name="StrengthScale" value="10" />
       <Property name="ThirdPersonDamp" value="0.5" />
-      <Property name="VRStrength" value="0" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.02" />
@@ -4245,7 +4245,7 @@
       <Property name="DecayRate" value="1" />
       <Property name="StrengthScale" value="1" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.7" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.01" />
@@ -4296,7 +4296,7 @@
       <Property name="DecayRate" value="0" />
       <Property name="StrengthScale" value="1" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.2" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="False" />
         <Property name="ShakeStrength" value="0.01" />
@@ -4347,7 +4347,7 @@
       <Property name="DecayRate" value="0" />
       <Property name="StrengthScale" value="500" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.2" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="False" />
         <Property name="ShakeStrength" value="0.01" />
@@ -4398,7 +4398,7 @@
       <Property name="DecayRate" value="0" />
       <Property name="StrengthScale" value="1" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="False" />
         <Property name="ShakeStrength" value="0.01" />
@@ -4449,7 +4449,7 @@
       <Property name="DecayRate" value="0" />
       <Property name="StrengthScale" value="1000" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="1" />
@@ -4500,7 +4500,7 @@
       <Property name="DecayRate" value="1" />
       <Property name="StrengthScale" value="50" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="False" />
         <Property name="ShakeStrength" value="0" />
@@ -4551,7 +4551,7 @@
       <Property name="DecayRate" value="1" />
       <Property name="StrengthScale" value="1" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.02" />
@@ -4602,7 +4602,7 @@
       <Property name="DecayRate" value="1" />
       <Property name="StrengthScale" value="50" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="False" />
         <Property name="ShakeStrength" value="0" />
@@ -4653,7 +4653,7 @@
       <Property name="DecayRate" value="1" />
       <Property name="StrengthScale" value="50" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="False" />
         <Property name="ShakeStrength" value="0" />
@@ -4704,7 +4704,7 @@
       <Property name="DecayRate" value="0" />
       <Property name="StrengthScale" value="1000" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="1" />
@@ -4755,7 +4755,7 @@
       <Property name="DecayRate" value="2" />
       <Property name="StrengthScale" value="1600" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="False" />
         <Property name="ShakeStrength" value="0" />
@@ -4806,7 +4806,7 @@
       <Property name="DecayRate" value="1" />
       <Property name="StrengthScale" value="1" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.4" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.03" />
@@ -4857,7 +4857,7 @@
       <Property name="DecayRate" value="1" />
       <Property name="StrengthScale" value="1" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.5" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.07" />
@@ -4908,7 +4908,7 @@
       <Property name="DecayRate" value="1" />
       <Property name="StrengthScale" value="1" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.5" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.01" />
@@ -4959,7 +4959,7 @@
       <Property name="DecayRate" value="2" />
       <Property name="StrengthScale" value="0.6" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.4" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.01" />
@@ -5010,7 +5010,7 @@
       <Property name="DecayRate" value="1" />
       <Property name="StrengthScale" value="1" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.02" />
@@ -5061,7 +5061,7 @@
       <Property name="DecayRate" value="1" />
       <Property name="StrengthScale" value="2000" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="30" />
@@ -5112,7 +5112,7 @@
       <Property name="DecayRate" value="0" />
       <Property name="StrengthScale" value="100" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.5" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="2" />
@@ -5163,7 +5163,7 @@
       <Property name="DecayRate" value="0.5" />
       <Property name="StrengthScale" value="1" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.5" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.01" />
@@ -5214,7 +5214,7 @@
       <Property name="DecayRate" value="0" />
       <Property name="StrengthScale" value="100" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.5" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="2" />
@@ -5265,7 +5265,7 @@
       <Property name="DecayRate" value="0.5" />
       <Property name="StrengthScale" value="1" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.3" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.01" />
@@ -5316,7 +5316,7 @@
       <Property name="DecayRate" value="1" />
       <Property name="StrengthScale" value="0" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="False" />
         <Property name="ShakeStrength" value="0" />
@@ -5367,7 +5367,7 @@
       <Property name="DecayRate" value="5" />
       <Property name="StrengthScale" value="5" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.3" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.15" />
@@ -5418,7 +5418,7 @@
       <Property name="DecayRate" value="0" />
       <Property name="StrengthScale" value="5" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.3" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.05" />
@@ -5469,7 +5469,7 @@
       <Property name="DecayRate" value="3" />
       <Property name="StrengthScale" value="1" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.5" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.3" />
@@ -5520,7 +5520,7 @@
       <Property name="DecayRate" value="3" />
       <Property name="StrengthScale" value="8" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.4" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.3" />
@@ -5571,7 +5571,7 @@
       <Property name="DecayRate" value="5" />
       <Property name="StrengthScale" value="5" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.4" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.15" />
@@ -5622,7 +5622,7 @@
       <Property name="DecayRate" value="3" />
       <Property name="StrengthScale" value="1" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.4" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.03" />
@@ -5673,7 +5673,7 @@
       <Property name="DecayRate" value="3" />
       <Property name="StrengthScale" value="1" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.2" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.03" />
@@ -5724,7 +5724,7 @@
       <Property name="DecayRate" value="1" />
       <Property name="StrengthScale" value="1.5" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.7" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.06" />
@@ -5775,7 +5775,7 @@
       <Property name="DecayRate" value="0" />
       <Property name="StrengthScale" value="1.5" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.5" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.004" />
@@ -5826,7 +5826,7 @@
       <Property name="DecayRate" value="1" />
       <Property name="StrengthScale" value="1.5" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.4" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.06" />
@@ -5877,7 +5877,7 @@
       <Property name="DecayRate" value="0" />
       <Property name="StrengthScale" value="1.5" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.3" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.004" />
@@ -5928,7 +5928,7 @@
       <Property name="DecayRate" value="3" />
       <Property name="StrengthScale" value="1" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.5" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.03" />
@@ -5979,7 +5979,7 @@
       <Property name="DecayRate" value="2" />
       <Property name="StrengthScale" value="0.6" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0.3" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.01" />
@@ -6030,7 +6030,7 @@
       <Property name="DecayRate" value="-1" />
       <Property name="StrengthScale" value="6" />
       <Property name="ThirdPersonDamp" value="0.5" />
-      <Property name="VRStrength" value="0.2" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.02" />
@@ -6081,7 +6081,7 @@
       <Property name="DecayRate" value="-1" />
       <Property name="StrengthScale" value="6" />
       <Property name="ThirdPersonDamp" value="0.5" />
-      <Property name="VRStrength" value="0" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.05" />
@@ -6132,7 +6132,7 @@
       <Property name="DecayRate" value="0" />
       <Property name="StrengthScale" value="5" />
       <Property name="ThirdPersonDamp" value="1" />
-      <Property name="VRStrength" value="0" />
+      <Property name="VRStrength" value="1" />
       <Property name="CapturedData" value="GcCameraShakeCapturedData.xml">
         <Property name="Active" value="True" />
         <Property name="ShakeStrength" value="0.05" />

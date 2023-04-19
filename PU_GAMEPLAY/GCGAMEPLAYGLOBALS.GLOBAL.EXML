@@ -33,7 +33,7 @@
         <Property name="AllSlotsUnlocked" value="False" />
         <Property name="WarpDriveRequirements" value="True" />
         <Property name="CraftingIsFree" value="False" />
-        <Property name="TutorialEnabled" value="True" />
+        <Property name="TutorialEnabled" value="False" />
         <Property name="StartWithAllItemsKnown" value="False" />
         <Property name="BaseAutoPower" value="False" />
         <Property name="DeathConsequences" value="GcDeathConsequencesDifficultyOption.xml">
@@ -103,7 +103,7 @@
         <Property name="AllSlotsUnlocked" value="False" />
         <Property name="WarpDriveRequirements" value="True" />
         <Property name="CraftingIsFree" value="False" />
-        <Property name="TutorialEnabled" value="True" />
+        <Property name="TutorialEnabled" value="False" />
         <Property name="StartWithAllItemsKnown" value="False" />
         <Property name="BaseAutoPower" value="False" />
         <Property name="DeathConsequences" value="GcDeathConsequencesDifficultyOption.xml">
@@ -173,7 +173,7 @@
         <Property name="AllSlotsUnlocked" value="False" />
         <Property name="WarpDriveRequirements" value="True" />
         <Property name="CraftingIsFree" value="False" />
-        <Property name="TutorialEnabled" value="True" />
+        <Property name="TutorialEnabled" value="False" />
         <Property name="StartWithAllItemsKnown" value="False" />
         <Property name="BaseAutoPower" value="False" />
         <Property name="DeathConsequences" value="GcDeathConsequencesDifficultyOption.xml">
@@ -313,7 +313,7 @@
         <Property name="AllSlotsUnlocked" value="False" />
         <Property name="WarpDriveRequirements" value="True" />
         <Property name="CraftingIsFree" value="False" />
-        <Property name="TutorialEnabled" value="True" />
+        <Property name="TutorialEnabled" value="False" />
         <Property name="StartWithAllItemsKnown" value="False" />
         <Property name="BaseAutoPower" value="True" />
         <Property name="DeathConsequences" value="GcDeathConsequencesDifficultyOption.xml">
@@ -383,7 +383,7 @@
         <Property name="AllSlotsUnlocked" value="False" />
         <Property name="WarpDriveRequirements" value="True" />
         <Property name="CraftingIsFree" value="False" />
-        <Property name="TutorialEnabled" value="True" />
+        <Property name="TutorialEnabled" value="False" />
         <Property name="StartWithAllItemsKnown" value="False" />
         <Property name="BaseAutoPower" value="False" />
         <Property name="DeathConsequences" value="GcDeathConsequencesDifficultyOption.xml">
@@ -453,7 +453,7 @@
         <Property name="AllSlotsUnlocked" value="False" />
         <Property name="WarpDriveRequirements" value="True" />
         <Property name="CraftingIsFree" value="False" />
-        <Property name="TutorialEnabled" value="True" />
+        <Property name="TutorialEnabled" value="False" />
         <Property name="StartWithAllItemsKnown" value="False" />
         <Property name="BaseAutoPower" value="False" />
         <Property name="DeathConsequences" value="GcDeathConsequencesDifficultyOption.xml">
@@ -524,7 +524,7 @@
       <Property name="AllSlotsUnlocked" value="False" />
       <Property name="WarpDriveRequirements" value="True" />
       <Property name="CraftingIsFree" value="False" />
-      <Property name="TutorialEnabled" value="True" />
+      <Property name="TutorialEnabled" value="False" />
       <Property name="StartWithAllItemsKnown" value="False" />
       <Property name="BaseAutoPower" value="False" />
       <Property name="DeathConsequences" value="GcDeathConsequencesDifficultyOption.xml">
@@ -1761,6 +1761,9 @@
           </Property>
           <Property value="NMSString0x10.xml">
             <Property name="Value" value="SUIT_ROCKET" />
+          </Property>
+          <Property value="NMSString0x10.xml">
+            <Property name="Value" value="STUN_GREN" />
           </Property>
         </Property>
         <Property name="KnownProducts">
@@ -5966,12 +5969,12 @@
   <Property name="HUDDamageRadius" value="420" />
   <Property name="HUDTarget" value="GcShipHUDTargetData.xml">
     <Property name="IconData" value="GcShipHUDTargetIconData.xml">
-      <Property name="Corner" value="" />
-      <Property name="LineHorizontal" value="" />
-      <Property name="LineVertical" value="" />
-      <Property name="GlowCorner" value="" />
-      <Property name="GlowLineHorizontal" value="" />
-      <Property name="GlowLineVertical" value="" />
+      <Property name="Corner" value="TEXTURES//UI//HUD//LINES//LINECORNERSOLID.DDS" />
+      <Property name="LineHorizontal" value="TEXTURES//UI//HUD//LINES//LINESOLID.DDS" />
+      <Property name="LineVertical" value="TEXTURES//UI//HUD//LINES//LINEVERTSOLID.DDS" />
+      <Property name="GlowCorner" value="TEXTURES//UI//HUD//LINES//LINECORNERGLOW.DDS" />
+      <Property name="GlowLineHorizontal" value="TEXTURES//UI//HUD//LINES//LINEGLOW.DDS" />
+      <Property name="GlowLineVertical" value="TEXTURES//UI//HUD//LINES//LINEVERTGLOW.DDS" />
     </Property>
     <Property name="Arrow" value="TEXTURES//UI//HUD//ARROW.DDS" />
     <Property name="IconSizeIn" value="1.2" />
@@ -6050,7 +6053,7 @@
   <Property name="HUDScaleFarTarget" value="50" />
   <Property name="HUDReticuleMoveBack" value="0.01" />
   <Property name="HUDReticuleMoveAim" value="0.08" />
-  <Property name="MouseSensitivity" value="0.3" />
+  <Property name="MouseSensitivity" value="0.4" />
   <Property name="MouseSensitivityShip" value="15" />
   <Property name="MouseSensitivityVehicle" value="15" />
   <Property name="PainTime" value="1.5" />
@@ -6184,8 +6187,8 @@
   <Property name="NonDominantRaceSpawnPercentagePirate" value="66" />
   <Property name="CorruptSentinelProbability" value="0.25" />
   <Property name="ViciousSentinelProbability" value="0.25" />
-  <Property name="ViciousStormProbability" value="0.35" />
-  <Property name="ViciousWeatherProbability" value="0.35" />
+  <Property name="ViciousStormProbability" value="0.5" />
+  <Property name="ViciousWeatherProbability" value="0.5" />
   <Property name="ScrapDroneProbability" value="0.5" />
   <Property name="MaxRespawnOnGroundHeight" value="60" />
   <Property name="DeadPlanetGravityFactor" value="0.8" />
