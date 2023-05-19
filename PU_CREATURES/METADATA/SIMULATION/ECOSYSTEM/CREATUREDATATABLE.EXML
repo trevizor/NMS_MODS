@@ -1278,7 +1278,7 @@
       <Property name="Tags" />
       <Property name="MoveArea" value="Air" />
       <Property name="MinScale" value="1" />
-      <Property name="MaxScale" value="14.5" />
+      <Property name="MaxScale" value="30" />
       <Property name="FurLengthModifierAtMinScale" value="1" />
       <Property name="FurLengthModifierAtMaxScale" value="1" />
       <Property name="FurChance" value="0.3" />
@@ -1407,11 +1407,11 @@
           <Property name="Herd" value="False" />
         </Property>
         <Property value="GcCreatureSwarmData.xml">
-          <Property name="MinCount" value="2" />
-          <Property name="MaxCount" value="3" />
+          <Property name="MinCount" value="1" />
+          <Property name="MaxCount" value="1" />
           <Property name="SwarmMovementSpeed" value="6" />
           <Property name="SwarmMovementRadius" value="2000" />
-          <Property name="SwarmMovementType" value="Circle" />
+          <Property name="SwarmMovementType" value="Random" />
           <Property name="Params">
             <Property value="GcCreatureSwarmDataParams.xml">
               <Property name="ValidDescriptors" />
