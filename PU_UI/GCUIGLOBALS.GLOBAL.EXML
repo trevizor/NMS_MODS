@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (4.20.0)-->
+<!--File created using MBINCompiler version (4.25.0)-->
 <Data template="GcUIGlobals">
   <Property name="HoverPopScaleModification" value="0.1" />
   <Property name="HoverPopAnimDuration" value="0.15" />
-  <Property name="WristMenuDefaultBorderColour" value="Colour.xml"> 
-    <Property name="R" value="0" /> 
-    <Property name="G" value="0.5" /> 
-    <Property name="B" value="1" /> 
-    <Property name="A" value="1" /> 
-  </Property> 
-  <Property name="WristMenuRepositionableBorderColour" value="Colour.xml">  
-    <Property name="R" value="1" /> 
-    <Property name="G" value="0.5" /> 
-    <Property name="B" value="0" /> 
-    <Property name="A" value="1" /> 
+  <Property name="WristMenuDefaultBorderColour" value="Colour.xml">
+    <Property name="R" value="0" />
+    <Property name="G" value="0.5" />
+    <Property name="B" value="1" />
+    <Property name="A" value="1" />
   </Property>
+  <Property name="WristMenuRepositionableBorderColour" value="Colour.xml">
+    <Property name="R" value="1" />
+    <Property name="G" value="0.5" />
+    <Property name="B" value="0" />
+    <Property name="A" value="1" />
+  </Property>
+  <Property name="InWorldUIInteractionDistanceWithEyeTrackingEnabled" value="0" />
   <Property name="EyeTrackingTimeBeforePopupsActivate" value="0.25" />
   <Property name="EyeTrackingPopupLookAwayTime" value="0.2" />
   <Property name="EyeTrackingCursorBlendRateGameModeSelect" value="0.15" />
@@ -994,6 +995,7 @@
   <Property name="HandControlMenuSelectRadius1" value="0.03" />
   <Property name="HandControlMenuSelectRadius2" value="0.02" />
   <Property name="HandControlTopMenuSelectRadius" value="0.025" />
+  <Property name="HandControlMenuDepth" value="0" />
   <Property name="HandScreenWeaponWidth" value="1200" />
   <Property name="HandScreenWeaponHeight" value="460" />
   <Property name="HandScreenWidth" value="1200" />
@@ -6480,6 +6482,7 @@
   <Property name="InstallTechSlotAction" value="GcInventorySlotActionData.xml">
     <Property name="Loops" value="False" />
     <Property name="Glows" value="False" />
+    <Property name="Disabled" value="False" />
     <Property name="Scales" value="True" />
     <Property name="Time" value="0.2" />
     <Property name="ScaleAtMin" value="2" />
@@ -6497,6 +6500,7 @@
   <Property name="BuildProductSlotAction" value="GcInventorySlotActionData.xml">
     <Property name="Loops" value="False" />
     <Property name="Glows" value="False" />
+    <Property name="Disabled" value="False" />
     <Property name="Scales" value="True" />
     <Property name="Time" value="0.4" />
     <Property name="ScaleAtMin" value="2" />
@@ -6514,6 +6518,7 @@
   <Property name="ChargeSlotAction" value="GcInventorySlotActionData.xml">
     <Property name="Loops" value="False" />
     <Property name="Glows" value="False" />
+    <Property name="Disabled" value="False" />
     <Property name="Scales" value="True" />
     <Property name="Time" value="0.25" />
     <Property name="ScaleAtMin" value="1" />
@@ -6531,6 +6536,7 @@
   <Property name="RepairSlotAction" value="GcInventorySlotActionData.xml">
     <Property name="Loops" value="False" />
     <Property name="Glows" value="False" />
+    <Property name="Disabled" value="False" />
     <Property name="Scales" value="True" />
     <Property name="Time" value="0.25" />
     <Property name="ScaleAtMin" value="1" />
@@ -6548,6 +6554,7 @@
   <Property name="NewSlotRevealAction" value="GcInventorySlotActionData.xml">
     <Property name="Loops" value="False" />
     <Property name="Glows" value="False" />
+    <Property name="Disabled" value="False" />
     <Property name="Scales" value="True" />
     <Property name="Time" value="0.15" />
     <Property name="ScaleAtMin" value="2" />
@@ -6565,6 +6572,7 @@
   <Property name="NewSlotPulseAction" value="GcInventorySlotActionData.xml">
     <Property name="Loops" value="True" />
     <Property name="Glows" value="True" />
+    <Property name="Disabled" value="False" />
     <Property name="Scales" value="True" />
     <Property name="Time" value="1" />
     <Property name="ScaleAtMin" value="1" />
@@ -6582,6 +6590,7 @@
   <Property name="InventoryHintAction" value="GcInventorySlotActionData.xml">
     <Property name="Loops" value="True" />
     <Property name="Glows" value="True" />
+    <Property name="Disabled" value="False" />
     <Property name="Scales" value="False" />
     <Property name="Time" value="1" />
     <Property name="ScaleAtMin" value="1" />
@@ -6594,6 +6603,24 @@
     </Property>
     <Property name="ActionAudio" value="GcAudioWwiseEvents.xml">
       <Property name="AkEvent" value="UI_NEW_SUIT_SLOT" />
+    </Property>
+  </Property>
+  <Property name="InventoryHintActionNoGlow" value="GcInventorySlotActionData.xml">
+    <Property name="Loops" value="False" />
+    <Property name="Glows" value="False" />
+    <Property name="Disabled" value="False" />
+    <Property name="Scales" value="False" />
+    <Property name="Time" value="0" />
+    <Property name="ScaleAtMin" value="0" />
+    <Property name="ScaleAtMax" value="0" />
+    <Property name="AnimCurve" value="TkCurveType.xml">
+      <Property name="Curve" value="Linear" />
+    </Property>
+    <Property name="SuitAudio" value="GcAudioWwiseEvents.xml">
+      <Property name="AkEvent" value="INVALID_EVENT" />
+    </Property>
+    <Property name="ActionAudio" value="GcAudioWwiseEvents.xml">
+      <Property name="AkEvent" value="INVALID_EVENT" />
     </Property>
   </Property>
   <Property name="ReportBaseFlashTime" value="0.3" />
