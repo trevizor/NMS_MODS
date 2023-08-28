@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (4.20.0)-->
+<!--File created using MBINCompiler version (4.34.0)-->
 <Data template="GcGameplayGlobals">
   <Property name="DifficultyConfig" value="GcDifficultyConfig.xml">
     <Property name="PresetLocId" value="DIFFICULTY_PRESET" />
@@ -4415,6 +4415,7 @@
       <Property name="High" value="2" />
     </Property>
   </Property>
+  <Property name="ScanToRevealVFXBaseScalingSize" value="0" />
   <Property name="PirateMissionPrimaryReward" value="R_PIRATEBOARD_A" />
   <Property name="PirateMissionSecondReward" value="R_PIRATEBOARD_B" />
   <Property name="UseSecondaryBiomeSubstances" value="False" />
@@ -4439,6 +4440,7 @@
   <Property name="PoliceAcceleratorNoCargoSkipScanOdds" value="0.75" />
   <Property name="ShipInterestAcceleratorInAsteroidField" value="2" />
   <Property name="InfestedPlanetDeepSpaceFlybyMultiplier" value="3.5" />
+  <Property name="ShipMiningMul" value="0" />
   <Property name="SmugglerSellingMarkup" value="1.66" />
   <Property name="IllegalTechProductTradingMod" value="0.2" />
   <Property name="CombatLevelBestWeaponBias" value="0.66" />
@@ -5292,83 +5294,17 @@
     <Property name="OffsetMax" value="30" />
   </Property>
   <Property name="ScanAngleCutoff" value="0.75" />
-  <Property name="ToolScan" value="GcScanData.xml">
-    <Property name="ScanType" value="Tool" />
-    <Property name="PulseRange" value="200" />
-    <Property name="PulseTime" value="1" />
-    <Property name="PlayAudioOnMarkers" value="True" />
-    <Property name="ChargeTime" value="30" />
-  </Property>
-  <Property name="ToolScanHardMode" value="GcScanData.xml">
-    <Property name="ScanType" value="Tool" />
-    <Property name="PulseRange" value="150" />
-    <Property name="PulseTime" value="1" />
-    <Property name="PlayAudioOnMarkers" value="True" />
-    <Property name="ChargeTime" value="90" />
-  </Property>
-  <Property name="WaypointScan" value="GcScanData.xml">
-    <Property name="ScanType" value="Waypoint" />
-    <Property name="PulseRange" value="5000" />
-    <Property name="PulseTime" value="4" />
-    <Property name="PlayAudioOnMarkers" value="True" />
-    <Property name="ChargeTime" value="4" />
-  </Property>
-  <Property name="BeaconScan" value="GcScanData.xml">
-    <Property name="ScanType" value="Beacon" />
-    <Property name="PulseRange" value="5000" />
-    <Property name="PulseTime" value="8" />
-    <Property name="PlayAudioOnMarkers" value="False" />
-    <Property name="ChargeTime" value="4" />
-  </Property>
-  <Property name="RadioTowerScan" value="GcScanData.xml">
-    <Property name="ScanType" value="RadioTower" />
-    <Property name="PulseRange" value="100000" />
-    <Property name="PulseTime" value="8" />
-    <Property name="PlayAudioOnMarkers" value="True" />
-    <Property name="ChargeTime" value="4" />
-  </Property>
-  <Property name="ObservatoryScan" value="GcScanData.xml">
-    <Property name="ScanType" value="Observatory" />
-    <Property name="PulseRange" value="100000" />
-    <Property name="PulseTime" value="8" />
-    <Property name="PlayAudioOnMarkers" value="True" />
-    <Property name="ChargeTime" value="4" />
-  </Property>
-  <Property name="DistressSignalScan" value="GcScanData.xml">
-    <Property name="ScanType" value="DistressSignal" />
-    <Property name="PulseRange" value="100000" />
-    <Property name="PulseTime" value="8" />
-    <Property name="PlayAudioOnMarkers" value="True" />
-    <Property name="ChargeTime" value="4" />
-  </Property>
-  <Property name="DebugScanPlanet" value="GcScanData.xml">
-    <Property name="ScanType" value="DebugPlanet" />
-    <Property name="PulseRange" value="1000000" />
-    <Property name="PulseTime" value="5" />
-    <Property name="PlayAudioOnMarkers" value="False" />
-    <Property name="ChargeTime" value="4" />
-  </Property>
-  <Property name="DebugScanSpace" value="GcScanData.xml">
-    <Property name="ScanType" value="DebugSpace" />
-    <Property name="PulseRange" value="1000000" />
-    <Property name="PulseTime" value="5" />
-    <Property name="PlayAudioOnMarkers" value="False" />
-    <Property name="ChargeTime" value="4" />
-  </Property>
-  <Property name="ShipScan" value="GcScanData.xml">
-    <Property name="ScanType" value="Ship" />
-    <Property name="PulseRange" value="10000" />
-    <Property name="PulseTime" value="3" />
-    <Property name="PlayAudioOnMarkers" value="True" />
-    <Property name="ChargeTime" value="10" />
-  </Property>
-  <Property name="VisualScan" value="GcScanData.xml">
-    <Property name="ScanType" value="VisualOnly" />
-    <Property name="PulseRange" value="10000" />
-    <Property name="PulseTime" value="8" />
-    <Property name="PlayAudioOnMarkers" value="False" />
-    <Property name="ChargeTime" value="4" />
-  </Property>
+  <Property name="ToolScan" value="GcScanData.xml" />
+  <Property name="ToolScanHardMode" value="GcScanData.xml" />
+  <Property name="WaypointScan" value="GcScanData.xml" />
+  <Property name="BeaconScan" value="GcScanData.xml" />
+  <Property name="RadioTowerScan" value="GcScanData.xml" />
+  <Property name="ObservatoryScan" value="GcScanData.xml" />
+  <Property name="DistressSignalScan" value="GcScanData.xml" />
+  <Property name="DebugScanPlanet" value="GcScanData.xml" />
+  <Property name="DebugScanSpace" value="GcScanData.xml" />
+  <Property name="ShipScan" value="GcScanData.xml" />
+  <Property name="VisualScan" value="GcScanData.xml" />
   <Property name="ZoomFindBuildingRange" value="600" />
   <Property name="TimeToDisplayScanResults" value="5" />
   <Property name="HoverTimeToScan" value="0" />

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (4.22.0)-->
+<!--File created using MBINCompiler version (4.34.0)-->
 <Data template="GcSpaceshipGlobals">
   <Property name="ShipThrottleNotchVibrationStrength" value="0.12" />
   <Property name="ShipThrottleBrakeVibrationStrength" value="0.33" />
@@ -96,13 +96,14 @@
   <Property name="EnableDepthTestedCrosshairSections" value="False" />
   <Property name="CritsFromBehind" value="True" />
   <Property name="DrawLineLockTarget" value="True" />
-  <Property name="ApplyHeightForce" value="false" />
-  <Property name="ApplyHeightAlign" value="false" />
+  <Property name="ApplyHeightForce" value="False" />
+  <Property name="ApplyHeightAlign" value="False" />
   <Property name="DoPreCollision" value="True" />
   <Property name="SpeedTrackModeEnabled" value="False" />
   <Property name="TrailMaxNumPointsPerFrameOverride" value="2" />
   <Property name="TestTrailSpeed" value="300" />
   <Property name="TestTrailRadius" value="2" />
+  <Property name="CockpitExitAnimMul" value="0" />
   <Property name="CockpitExitAnimTime" value="0.3" />
   <Property name="CockpitExitAnimOffset" value="0.5" />
   <Property name="CockpitExitAnimCurve" value="TkCurveType.xml">
@@ -1348,6 +1349,7 @@
   <Property name="AutoPilotAlignStrength" value="3" />
   <Property name="AutoPilotSmallShipAlignStrength" value="1.2" />
   <Property name="AutoPilotCallDistance" value="480" />
+  <Property name="AutoPilotCallDistanceSpacePOI" value="0" />
   <Property name="AutoPilotCallAngle" value="-10" />
   <Property name="AutoPilotCallAngleVertical" value="10" />
   <Property name="AutoPilotPositionAlignStrength" value="0.2" />

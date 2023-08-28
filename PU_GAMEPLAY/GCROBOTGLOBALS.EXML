@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (4.12.1)-->
+<!--File created using MBINCompiler version (4.34.0)-->
 <Data template="GcRobotGlobals">
   <Property name="ForceShowDebugMoveTrail" value="False" />
   <Property name="RobotCamoData" value="GcCamouflageData.xml">
@@ -121,13 +121,7 @@
   <Property name="RobotSteeringAvoidTurnWeight" value="3" />
   <Property name="RobotSteeringAvoidCreaturesWeight" value="0.5" />
   <Property name="RobotSteeringAvoidDangerWeight" value="0.5" />
-  <Property name="AttackScan" value="GcScanData.xml">
-    <Property name="ScanType" value="Tool" />
-    <Property name="PulseRange" value="50" />
-    <Property name="PulseTime" value="2" />
-    <Property name="PlayAudioOnMarkers" value="False" />
-    <Property name="ChargeTime" value="4" />
-  </Property>
+  <Property name="AttackScan" value="GcScanData.xml" />
   <Property name="RobotHUDMarkerRange" value="80" />
   <Property name="RobotHUDMarkerFalloff" value="50" />
   <Property name="DroneMoveDistancePlayerMechMultiplier" value="1.2" />
@@ -307,6 +301,7 @@
   <Property name="DroneScanMinPerpSpeed" value="20" />
   <Property name="EnergyExplodeTime" value="0.1" />
   <Property name="FollowRoutineArriveRadius" value="4" />
+  <Property name="CorruptedDroneRepairInteruptCooldownTime" value="0" />
   <Property name="RepairCheckForTargetCooldownTime" value="1" />
   <Property name="RepairOffsetChangeTime" value="6" />
   <Property name="RepairOffset" value="5" />
@@ -510,7 +505,6 @@
     <Property name="y" value="0.8" />
     <Property name="z" value="-0.5" />
   </Property>
-  
   <Property name="SpiderPounceAngle" value="75" />
   <Property name="SpiderPounceRange" value="25" />
   <Property name="SpiderPounceMinRange" value="8" />

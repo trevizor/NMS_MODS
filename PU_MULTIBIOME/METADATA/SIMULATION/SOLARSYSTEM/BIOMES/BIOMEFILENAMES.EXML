@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--File created using MBINCompiler version (4.30.0)-->
+<!--File created using MBINCompiler version (4.40.0)-->
 <Data template="GcBiomeFileList">
   <Property name="BiomeFiles">
     <Property name="Lush" value="GcBiomeFileListOptions.xml">
@@ -648,23 +648,6 @@
   </Property>
   <Property name="CommonExternalObjectLists">
     <Property value="GcExternalObjectListOptions.xml">
-      <Property name="Name" value="TESTOBJECTLIST" />
-      <Property name="ResourceHint" value="" />
-      <Property name="ResourceHintIcon" value="" />
-      <Property name="Probability" value="0" />
-      <Property name="SeasonalProbabilityOverride" value="1" />
-      <Property name="TileType" value="GcTerrainTileType.xml">
-        <Property name="TileType" value="Base" />
-      </Property>
-      <Property name="AllowLimiting" value="True" />
-      <Property name="ChooseUsingLifeLevel" value="False" />
-      <Property name="Options">
-        <Property value="NMSString0x80.xml">
-          <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHROOMBOBJECTS.MBIN" />
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcExternalObjectListOptions.xml">
       <Property name="Name" value="UNDERGROUND" />
       <Property name="ResourceHint" value="" />
       <Property name="ResourceHintIcon" value="" />
@@ -1187,52 +1170,17 @@
   </Property>
   <Property name="OptionalExternalObjectLists">
     <Property value="GcExternalObjectFileList.xml">
-      <Property name="Id" value="EXTRALUSH" />
-      <Property name="OnlyOnExtremeWeather" value="False" />
-      <Property name="OnlyOnExtremeSentinels" value="False" />
-      <Property name="OnlyOnCorruptSentinels" value="False" />
-      <Property name="OnlyOnDeepWater" value="False" />
-      <Property name="NotOnExtremePlanets" value="False" />
-      <Property name="NotOnStartPlanets" value="False" />
-      <Property name="NotOnWeirdPlanets" value="False" />
-      <Property name="NotOnDeadPlanets" value="True" />
-      <Property name="ForceOnSeasonStart" value="False" />
-      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
-        <Property name="Biome" value="All" />
-      </Property>
-      <Property name="ProbabilityOfBeingActive" value="0.6" />
-      <Property name="MinFilesToChoose" value="1" />
-      <Property name="MaxFilesToChoose" value="1" />
-      <Property name="ExternalObjectFiles">
-        <Property value="GcExternalObjectListOptions.xml">
-          <Property name="Name" value="EXTRALUSHHQOBJEC" />
-          <Property name="ResourceHint" value="" />
-          <Property name="ResourceHintIcon" value="" />
-          <Property name="Probability" value="1" />
-          <Property name="SeasonalProbabilityOverride" value="0" />
-          <Property name="TileType" value="GcTerrainTileType.xml">
-            <Property name="TileType" value="Base" />
-          </Property>
-          <Property name="AllowLimiting" value="True" />
-          <Property name="ChooseUsingLifeLevel" value="False" />
-          <Property name="Options">
-            <Property value="NMSString0x80.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/LUSH/EXTRALUSHHQOBJECTSFULL.6" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcExternalObjectFileList.xml">
       <Property name="Id" value="VALUABLE_STUFF" />
       <Property name="OnlyOnExtremeWeather" value="False" />
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="False" />
       <Property name="NotOnWeirdPlanets" value="True" />
       <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="False" />
       <Property name="ForceOnSeasonStart" value="True" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="All" />
@@ -1283,10 +1231,12 @@
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="False" />
       <Property name="NotOnWeirdPlanets" value="False" />
       <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="False" />
       <Property name="ForceOnSeasonStart" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="All" />
@@ -1320,10 +1270,12 @@
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="False" />
       <Property name="NotOnWeirdPlanets" value="False" />
       <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="False" />
       <Property name="ForceOnSeasonStart" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="All" />
@@ -1369,681 +1321,17 @@
       </Property>
     </Property>
     <Property value="GcExternalObjectFileList.xml">
-      <Property name="Id" value="EXTRALUSHToxic" />
-      <Property name="OnlyOnExtremeWeather" value="False" />
-      <Property name="OnlyOnExtremeSentinels" value="False" />
-      <Property name="OnlyOnCorruptSentinels" value="False" />
-      <Property name="OnlyOnDeepWater" value="False" />
-      <Property name="NotOnExtremePlanets" value="False" />
-      <Property name="NotOnStartPlanets" value="False" />
-      <Property name="NotOnWeirdPlanets" value="False" />
-      <Property name="NotOnDeadPlanets" value="True" />
-      <Property name="ForceOnSeasonStart" value="False" />
-      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
-        <Property name="Biome" value="Toxic" />
-      </Property>
-      <Property name="ProbabilityOfBeingActive" value="0.6" />
-      <Property name="MinFilesToChoose" value="1" />
-      <Property name="MaxFilesToChoose" value="1" />
-      <Property name="ExternalObjectFiles">
-        <Property value="GcExternalObjectListOptions.xml">
-          <Property name="Name" value="EXTRAGRASS" />
-          <Property name="ResourceHint" value="" />
-          <Property name="ResourceHintIcon" value="" />
-          <Property name="Probability" value="1" />
-          <Property name="SeasonalProbabilityOverride" value="1" />
-          <Property name="TileType" value="GcTerrainTileType.xml">
-            <Property name="TileType" value="Base" />
-          </Property>
-          <Property name="AllowLimiting" value="True" />
-          <Property name="ChooseUsingLifeLevel" value="False" />
-          <Property name="Options">
-            <Property value="NMSString0x80.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/GRASS.MBIN" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcExternalObjectFileList.xml">
-      <Property name="Id" value="EXTRALUSHScorche" />
-      <Property name="OnlyOnExtremeWeather" value="False" />
-      <Property name="OnlyOnExtremeSentinels" value="False" />
-      <Property name="OnlyOnCorruptSentinels" value="False" />
-      <Property name="OnlyOnDeepWater" value="False" />
-      <Property name="NotOnExtremePlanets" value="False" />
-      <Property name="NotOnStartPlanets" value="False" />
-      <Property name="NotOnWeirdPlanets" value="False" />
-      <Property name="NotOnDeadPlanets" value="True" />
-      <Property name="ForceOnSeasonStart" value="False" />
-      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
-        <Property name="Biome" value="Scorched" />
-      </Property>
-      <Property name="ProbabilityOfBeingActive" value="0.6" />
-      <Property name="MinFilesToChoose" value="1" />
-      <Property name="MaxFilesToChoose" value="1" />
-      <Property name="ExternalObjectFiles">
-        <Property value="GcExternalObjectListOptions.xml">
-          <Property name="Name" value="EXTRAGRASS" />
-          <Property name="ResourceHint" value="" />
-          <Property name="ResourceHintIcon" value="" />
-          <Property name="Probability" value="1" />
-          <Property name="SeasonalProbabilityOverride" value="1" />
-          <Property name="TileType" value="GcTerrainTileType.xml">
-            <Property name="TileType" value="Base" />
-          </Property>
-          <Property name="AllowLimiting" value="True" />
-          <Property name="ChooseUsingLifeLevel" value="False" />
-          <Property name="Options">
-            <Property value="NMSString0x80.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/GRASS.MBIN" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcExternalObjectFileList.xml">
-      <Property name="Id" value="EXTRALUSHRadioac" />
-      <Property name="OnlyOnExtremeWeather" value="False" />
-      <Property name="OnlyOnExtremeSentinels" value="False" />
-      <Property name="OnlyOnCorruptSentinels" value="False" />
-      <Property name="OnlyOnDeepWater" value="False" />
-      <Property name="NotOnExtremePlanets" value="False" />
-      <Property name="NotOnStartPlanets" value="False" />
-      <Property name="NotOnWeirdPlanets" value="False" />
-      <Property name="NotOnDeadPlanets" value="True" />
-      <Property name="ForceOnSeasonStart" value="False" />
-      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
-        <Property name="Biome" value="Radioactive" />
-      </Property>
-      <Property name="ProbabilityOfBeingActive" value="0.6" />
-      <Property name="MinFilesToChoose" value="1" />
-      <Property name="MaxFilesToChoose" value="1" />
-      <Property name="ExternalObjectFiles">
-        <Property value="GcExternalObjectListOptions.xml">
-          <Property name="Name" value="EXTRAGRASS" />
-          <Property name="ResourceHint" value="" />
-          <Property name="ResourceHintIcon" value="" />
-          <Property name="Probability" value="1" />
-          <Property name="SeasonalProbabilityOverride" value="1" />
-          <Property name="TileType" value="GcTerrainTileType.xml">
-            <Property name="TileType" value="Base" />
-          </Property>
-          <Property name="AllowLimiting" value="True" />
-          <Property name="ChooseUsingLifeLevel" value="False" />
-          <Property name="Options">
-            <Property value="NMSString0x80.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/GRASS.MBIN" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcExternalObjectFileList.xml">
-      <Property name="Id" value="EXTRALUSHFrozen" />
-      <Property name="OnlyOnExtremeWeather" value="False" />
-      <Property name="OnlyOnExtremeSentinels" value="False" />
-      <Property name="OnlyOnCorruptSentinels" value="False" />
-      <Property name="OnlyOnDeepWater" value="False" />
-      <Property name="NotOnExtremePlanets" value="False" />
-      <Property name="NotOnStartPlanets" value="False" />
-      <Property name="NotOnWeirdPlanets" value="False" />
-      <Property name="NotOnDeadPlanets" value="True" />
-      <Property name="ForceOnSeasonStart" value="False" />
-      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
-        <Property name="Biome" value="Frozen" />
-      </Property>
-      <Property name="ProbabilityOfBeingActive" value="0.6" />
-      <Property name="MinFilesToChoose" value="1" />
-      <Property name="MaxFilesToChoose" value="1" />
-      <Property name="ExternalObjectFiles">
-        <Property value="GcExternalObjectListOptions.xml">
-          <Property name="Name" value="EXTRAGRASS" />
-          <Property name="ResourceHint" value="" />
-          <Property name="ResourceHintIcon" value="" />
-          <Property name="Probability" value="1" />
-          <Property name="SeasonalProbabilityOverride" value="1" />
-          <Property name="TileType" value="GcTerrainTileType.xml">
-            <Property name="TileType" value="Base" />
-          </Property>
-          <Property name="AllowLimiting" value="True" />
-          <Property name="ChooseUsingLifeLevel" value="False" />
-          <Property name="Options">
-            <Property value="NMSString0x80.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/GRASS.MBIN" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcExternalObjectFileList.xml">
-      <Property name="Id" value="EXTRALUSHBarren" />
-      <Property name="OnlyOnExtremeWeather" value="False" />
-      <Property name="OnlyOnExtremeSentinels" value="False" />
-      <Property name="OnlyOnCorruptSentinels" value="False" />
-      <Property name="OnlyOnDeepWater" value="False" />
-      <Property name="NotOnExtremePlanets" value="False" />
-      <Property name="NotOnStartPlanets" value="False" />
-      <Property name="NotOnWeirdPlanets" value="False" />
-      <Property name="NotOnDeadPlanets" value="True" />
-      <Property name="ForceOnSeasonStart" value="False" />
-      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
-        <Property name="Biome" value="Barren" />
-      </Property>
-      <Property name="ProbabilityOfBeingActive" value="0.6" />
-      <Property name="MinFilesToChoose" value="1" />
-      <Property name="MaxFilesToChoose" value="1" />
-      <Property name="ExternalObjectFiles">
-        <Property value="GcExternalObjectListOptions.xml">
-          <Property name="Name" value="EXTRAGRASS" />
-          <Property name="ResourceHint" value="" />
-          <Property name="ResourceHintIcon" value="" />
-          <Property name="Probability" value="1" />
-          <Property name="SeasonalProbabilityOverride" value="1" />
-          <Property name="TileType" value="GcTerrainTileType.xml">
-            <Property name="TileType" value="Base" />
-          </Property>
-          <Property name="AllowLimiting" value="True" />
-          <Property name="ChooseUsingLifeLevel" value="False" />
-          <Property name="Options">
-            <Property value="NMSString0x80.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/GRASS.MBIN" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcExternalObjectFileList.xml">
-      <Property name="Id" value="EXTRALUSHWeird" />
-      <Property name="OnlyOnExtremeWeather" value="False" />
-      <Property name="OnlyOnExtremeSentinels" value="False" />
-      <Property name="OnlyOnCorruptSentinels" value="False" />
-      <Property name="OnlyOnDeepWater" value="False" />
-      <Property name="NotOnExtremePlanets" value="False" />
-      <Property name="NotOnStartPlanets" value="False" />
-      <Property name="NotOnWeirdPlanets" value="False" />
-      <Property name="NotOnDeadPlanets" value="True" />
-      <Property name="ForceOnSeasonStart" value="False" />
-      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
-        <Property name="Biome" value="Weird" />
-      </Property>
-      <Property name="ProbabilityOfBeingActive" value="0.6" />
-      <Property name="MinFilesToChoose" value="1" />
-      <Property name="MaxFilesToChoose" value="1" />
-      <Property name="ExternalObjectFiles">
-        <Property value="GcExternalObjectListOptions.xml">
-          <Property name="Name" value="EXTRAGRASS" />
-          <Property name="ResourceHint" value="" />
-          <Property name="ResourceHintIcon" value="" />
-          <Property name="Probability" value="1" />
-          <Property name="SeasonalProbabilityOverride" value="1" />
-          <Property name="TileType" value="GcTerrainTileType.xml">
-            <Property name="TileType" value="Base" />
-          </Property>
-          <Property name="AllowLimiting" value="True" />
-          <Property name="ChooseUsingLifeLevel" value="False" />
-          <Property name="Options">
-            <Property value="NMSString0x80.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/GRASS.MBIN" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcExternalObjectFileList.xml">
-      <Property name="Id" value="EXTRALUSHRed" />
-      <Property name="OnlyOnExtremeWeather" value="False" />
-      <Property name="OnlyOnExtremeSentinels" value="False" />
-      <Property name="OnlyOnCorruptSentinels" value="False" />
-      <Property name="OnlyOnDeepWater" value="False" />
-      <Property name="NotOnExtremePlanets" value="False" />
-      <Property name="NotOnStartPlanets" value="False" />
-      <Property name="NotOnWeirdPlanets" value="False" />
-      <Property name="NotOnDeadPlanets" value="True" />
-      <Property name="ForceOnSeasonStart" value="False" />
-      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
-        <Property name="Biome" value="Red" />
-      </Property>
-      <Property name="ProbabilityOfBeingActive" value="0.6" />
-      <Property name="MinFilesToChoose" value="1" />
-      <Property name="MaxFilesToChoose" value="1" />
-      <Property name="ExternalObjectFiles">
-        <Property value="GcExternalObjectListOptions.xml">
-          <Property name="Name" value="EXTRAGRASS" />
-          <Property name="ResourceHint" value="" />
-          <Property name="ResourceHintIcon" value="" />
-          <Property name="Probability" value="1" />
-          <Property name="SeasonalProbabilityOverride" value="1" />
-          <Property name="TileType" value="GcTerrainTileType.xml">
-            <Property name="TileType" value="Base" />
-          </Property>
-          <Property name="AllowLimiting" value="True" />
-          <Property name="ChooseUsingLifeLevel" value="False" />
-          <Property name="Options">
-            <Property value="NMSString0x80.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/GRASS.MBIN" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcExternalObjectFileList.xml">
-      <Property name="Id" value="EXTRALUSHGreen" />
-      <Property name="OnlyOnExtremeWeather" value="False" />
-      <Property name="OnlyOnExtremeSentinels" value="False" />
-      <Property name="OnlyOnCorruptSentinels" value="False" />
-      <Property name="OnlyOnDeepWater" value="False" />
-      <Property name="NotOnExtremePlanets" value="False" />
-      <Property name="NotOnStartPlanets" value="False" />
-      <Property name="NotOnWeirdPlanets" value="False" />
-      <Property name="NotOnDeadPlanets" value="True" />
-      <Property name="ForceOnSeasonStart" value="False" />
-      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
-        <Property name="Biome" value="Green" />
-      </Property>
-      <Property name="ProbabilityOfBeingActive" value="0.6" />
-      <Property name="MinFilesToChoose" value="1" />
-      <Property name="MaxFilesToChoose" value="1" />
-      <Property name="ExternalObjectFiles">
-        <Property value="GcExternalObjectListOptions.xml">
-          <Property name="Name" value="EXTRAGRASS" />
-          <Property name="ResourceHint" value="" />
-          <Property name="ResourceHintIcon" value="" />
-          <Property name="Probability" value="1" />
-          <Property name="SeasonalProbabilityOverride" value="1" />
-          <Property name="TileType" value="GcTerrainTileType.xml">
-            <Property name="TileType" value="Base" />
-          </Property>
-          <Property name="AllowLimiting" value="True" />
-          <Property name="ChooseUsingLifeLevel" value="False" />
-          <Property name="Options">
-            <Property value="NMSString0x80.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/GRASS.MBIN" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcExternalObjectFileList.xml">
-      <Property name="Id" value="EXTRALUSHBlue" />
-      <Property name="OnlyOnExtremeWeather" value="False" />
-      <Property name="OnlyOnExtremeSentinels" value="False" />
-      <Property name="OnlyOnCorruptSentinels" value="False" />
-      <Property name="OnlyOnDeepWater" value="False" />
-      <Property name="NotOnExtremePlanets" value="False" />
-      <Property name="NotOnStartPlanets" value="False" />
-      <Property name="NotOnWeirdPlanets" value="False" />
-      <Property name="NotOnDeadPlanets" value="True" />
-      <Property name="ForceOnSeasonStart" value="False" />
-      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
-        <Property name="Biome" value="Blue" />
-      </Property>
-      <Property name="ProbabilityOfBeingActive" value="0.6" />
-      <Property name="MinFilesToChoose" value="1" />
-      <Property name="MaxFilesToChoose" value="1" />
-      <Property name="ExternalObjectFiles">
-        <Property value="GcExternalObjectListOptions.xml">
-          <Property name="Name" value="EXTRAGRASS" />
-          <Property name="ResourceHint" value="" />
-          <Property name="ResourceHintIcon" value="" />
-          <Property name="Probability" value="1" />
-          <Property name="SeasonalProbabilityOverride" value="1" />
-          <Property name="TileType" value="GcTerrainTileType.xml">
-            <Property name="TileType" value="Base" />
-          </Property>
-          <Property name="AllowLimiting" value="True" />
-          <Property name="ChooseUsingLifeLevel" value="False" />
-          <Property name="Options">
-            <Property value="NMSString0x80.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/GRASS.MBIN" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcExternalObjectFileList.xml">
-      <Property name="Id" value="EXTRALUSHTREESTo" />
-      <Property name="OnlyOnExtremeWeather" value="False" />
-      <Property name="OnlyOnExtremeSentinels" value="False" />
-      <Property name="OnlyOnCorruptSentinels" value="False" />
-      <Property name="OnlyOnDeepWater" value="False" />
-      <Property name="NotOnExtremePlanets" value="False" />
-      <Property name="NotOnStartPlanets" value="False" />
-      <Property name="NotOnWeirdPlanets" value="False" />
-      <Property name="NotOnDeadPlanets" value="True" />
-      <Property name="ForceOnSeasonStart" value="False" />
-      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
-        <Property name="Biome" value="Toxic" />
-      </Property>
-      <Property name="ProbabilityOfBeingActive" value="0.3" />
-      <Property name="MinFilesToChoose" value="1" />
-      <Property name="MaxFilesToChoose" value="1" />
-      <Property name="ExternalObjectFiles">
-        <Property value="GcExternalObjectListOptions.xml">
-          <Property name="Name" value="EXTRATREES" />
-          <Property name="ResourceHint" value="" />
-          <Property name="ResourceHintIcon" value="" />
-          <Property name="Probability" value="1" />
-          <Property name="SeasonalProbabilityOverride" value="1" />
-          <Property name="TileType" value="GcTerrainTileType.xml">
-            <Property name="TileType" value="Base" />
-          </Property>
-          <Property name="AllowLimiting" value="True" />
-          <Property name="ChooseUsingLifeLevel" value="False" />
-          <Property name="Options">
-            <Property value="NMSString0x80.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/TREES.MBIN" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcExternalObjectFileList.xml">
-      <Property name="Id" value="EXTRALUSHTREESSc" />
-      <Property name="OnlyOnExtremeWeather" value="False" />
-      <Property name="OnlyOnExtremeSentinels" value="False" />
-      <Property name="OnlyOnCorruptSentinels" value="False" />
-      <Property name="OnlyOnDeepWater" value="False" />
-      <Property name="NotOnExtremePlanets" value="False" />
-      <Property name="NotOnStartPlanets" value="False" />
-      <Property name="NotOnWeirdPlanets" value="False" />
-      <Property name="NotOnDeadPlanets" value="True" />
-      <Property name="ForceOnSeasonStart" value="False" />
-      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
-        <Property name="Biome" value="Scorched" />
-      </Property>
-      <Property name="ProbabilityOfBeingActive" value="0.3" />
-      <Property name="MinFilesToChoose" value="1" />
-      <Property name="MaxFilesToChoose" value="1" />
-      <Property name="ExternalObjectFiles">
-        <Property value="GcExternalObjectListOptions.xml">
-          <Property name="Name" value="EXTRATREES" />
-          <Property name="ResourceHint" value="" />
-          <Property name="ResourceHintIcon" value="" />
-          <Property name="Probability" value="1" />
-          <Property name="SeasonalProbabilityOverride" value="1" />
-          <Property name="TileType" value="GcTerrainTileType.xml">
-            <Property name="TileType" value="Base" />
-          </Property>
-          <Property name="AllowLimiting" value="True" />
-          <Property name="ChooseUsingLifeLevel" value="False" />
-          <Property name="Options">
-            <Property value="NMSString0x80.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/TREES.MBIN" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcExternalObjectFileList.xml">
-      <Property name="Id" value="EXTRALUSHTREESRa" />
-      <Property name="OnlyOnExtremeWeather" value="False" />
-      <Property name="OnlyOnExtremeSentinels" value="False" />
-      <Property name="OnlyOnCorruptSentinels" value="False" />
-      <Property name="OnlyOnDeepWater" value="False" />
-      <Property name="NotOnExtremePlanets" value="False" />
-      <Property name="NotOnStartPlanets" value="False" />
-      <Property name="NotOnWeirdPlanets" value="False" />
-      <Property name="NotOnDeadPlanets" value="True" />
-      <Property name="ForceOnSeasonStart" value="False" />
-      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
-        <Property name="Biome" value="Radioactive" />
-      </Property>
-      <Property name="ProbabilityOfBeingActive" value="0.3" />
-      <Property name="MinFilesToChoose" value="1" />
-      <Property name="MaxFilesToChoose" value="1" />
-      <Property name="ExternalObjectFiles">
-        <Property value="GcExternalObjectListOptions.xml">
-          <Property name="Name" value="EXTRATREES" />
-          <Property name="ResourceHint" value="" />
-          <Property name="ResourceHintIcon" value="" />
-          <Property name="Probability" value="1" />
-          <Property name="SeasonalProbabilityOverride" value="1" />
-          <Property name="TileType" value="GcTerrainTileType.xml">
-            <Property name="TileType" value="Base" />
-          </Property>
-          <Property name="AllowLimiting" value="True" />
-          <Property name="ChooseUsingLifeLevel" value="False" />
-          <Property name="Options">
-            <Property value="NMSString0x80.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/TREES.MBIN" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcExternalObjectFileList.xml">
-      <Property name="Id" value="EXTRALUSHTREESFr" />
-      <Property name="OnlyOnExtremeWeather" value="False" />
-      <Property name="OnlyOnExtremeSentinels" value="False" />
-      <Property name="OnlyOnCorruptSentinels" value="False" />
-      <Property name="OnlyOnDeepWater" value="False" />
-      <Property name="NotOnExtremePlanets" value="False" />
-      <Property name="NotOnStartPlanets" value="False" />
-      <Property name="NotOnWeirdPlanets" value="False" />
-      <Property name="NotOnDeadPlanets" value="True" />
-      <Property name="ForceOnSeasonStart" value="False" />
-      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
-        <Property name="Biome" value="Frozen" />
-      </Property>
-      <Property name="ProbabilityOfBeingActive" value="0.3" />
-      <Property name="MinFilesToChoose" value="1" />
-      <Property name="MaxFilesToChoose" value="1" />
-      <Property name="ExternalObjectFiles">
-        <Property value="GcExternalObjectListOptions.xml">
-          <Property name="Name" value="EXTRATREES" />
-          <Property name="ResourceHint" value="" />
-          <Property name="ResourceHintIcon" value="" />
-          <Property name="Probability" value="1" />
-          <Property name="SeasonalProbabilityOverride" value="1" />
-          <Property name="TileType" value="GcTerrainTileType.xml">
-            <Property name="TileType" value="Base" />
-          </Property>
-          <Property name="AllowLimiting" value="True" />
-          <Property name="ChooseUsingLifeLevel" value="False" />
-          <Property name="Options">
-            <Property value="NMSString0x80.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/TREES.MBIN" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcExternalObjectFileList.xml">
-      <Property name="Id" value="EXTRALUSHTREESBa" />
-      <Property name="OnlyOnExtremeWeather" value="False" />
-      <Property name="OnlyOnExtremeSentinels" value="False" />
-      <Property name="OnlyOnCorruptSentinels" value="False" />
-      <Property name="OnlyOnDeepWater" value="False" />
-      <Property name="NotOnExtremePlanets" value="False" />
-      <Property name="NotOnStartPlanets" value="False" />
-      <Property name="NotOnWeirdPlanets" value="False" />
-      <Property name="NotOnDeadPlanets" value="True" />
-      <Property name="ForceOnSeasonStart" value="False" />
-      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
-        <Property name="Biome" value="Barren" />
-      </Property>
-      <Property name="ProbabilityOfBeingActive" value="0.3" />
-      <Property name="MinFilesToChoose" value="1" />
-      <Property name="MaxFilesToChoose" value="1" />
-      <Property name="ExternalObjectFiles">
-        <Property value="GcExternalObjectListOptions.xml">
-          <Property name="Name" value="EXTRATREES" />
-          <Property name="ResourceHint" value="" />
-          <Property name="ResourceHintIcon" value="" />
-          <Property name="Probability" value="1" />
-          <Property name="SeasonalProbabilityOverride" value="1" />
-          <Property name="TileType" value="GcTerrainTileType.xml">
-            <Property name="TileType" value="Base" />
-          </Property>
-          <Property name="AllowLimiting" value="True" />
-          <Property name="ChooseUsingLifeLevel" value="False" />
-          <Property name="Options">
-            <Property value="NMSString0x80.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/TREES.MBIN" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcExternalObjectFileList.xml">
-      <Property name="Id" value="EXTRALUSHTREESWe" />
-      <Property name="OnlyOnExtremeWeather" value="False" />
-      <Property name="OnlyOnExtremeSentinels" value="False" />
-      <Property name="OnlyOnCorruptSentinels" value="False" />
-      <Property name="OnlyOnDeepWater" value="False" />
-      <Property name="NotOnExtremePlanets" value="False" />
-      <Property name="NotOnStartPlanets" value="False" />
-      <Property name="NotOnWeirdPlanets" value="False" />
-      <Property name="NotOnDeadPlanets" value="True" />
-      <Property name="ForceOnSeasonStart" value="False" />
-      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
-        <Property name="Biome" value="Weird" />
-      </Property>
-      <Property name="ProbabilityOfBeingActive" value="0.3" />
-      <Property name="MinFilesToChoose" value="1" />
-      <Property name="MaxFilesToChoose" value="1" />
-      <Property name="ExternalObjectFiles">
-        <Property value="GcExternalObjectListOptions.xml">
-          <Property name="Name" value="EXTRATREES" />
-          <Property name="ResourceHint" value="" />
-          <Property name="ResourceHintIcon" value="" />
-          <Property name="Probability" value="1" />
-          <Property name="SeasonalProbabilityOverride" value="1" />
-          <Property name="TileType" value="GcTerrainTileType.xml">
-            <Property name="TileType" value="Base" />
-          </Property>
-          <Property name="AllowLimiting" value="True" />
-          <Property name="ChooseUsingLifeLevel" value="False" />
-          <Property name="Options">
-            <Property value="NMSString0x80.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/TREES.MBIN" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcExternalObjectFileList.xml">
-      <Property name="Id" value="EXTRALUSHTREESRe" />
-      <Property name="OnlyOnExtremeWeather" value="False" />
-      <Property name="OnlyOnExtremeSentinels" value="False" />
-      <Property name="OnlyOnCorruptSentinels" value="False" />
-      <Property name="OnlyOnDeepWater" value="False" />
-      <Property name="NotOnExtremePlanets" value="False" />
-      <Property name="NotOnStartPlanets" value="False" />
-      <Property name="NotOnWeirdPlanets" value="False" />
-      <Property name="NotOnDeadPlanets" value="True" />
-      <Property name="ForceOnSeasonStart" value="False" />
-      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
-        <Property name="Biome" value="Red" />
-      </Property>
-      <Property name="ProbabilityOfBeingActive" value="0.3" />
-      <Property name="MinFilesToChoose" value="1" />
-      <Property name="MaxFilesToChoose" value="1" />
-      <Property name="ExternalObjectFiles">
-        <Property value="GcExternalObjectListOptions.xml">
-          <Property name="Name" value="EXTRATREES" />
-          <Property name="ResourceHint" value="" />
-          <Property name="ResourceHintIcon" value="" />
-          <Property name="Probability" value="1" />
-          <Property name="SeasonalProbabilityOverride" value="1" />
-          <Property name="TileType" value="GcTerrainTileType.xml">
-            <Property name="TileType" value="Base" />
-          </Property>
-          <Property name="AllowLimiting" value="True" />
-          <Property name="ChooseUsingLifeLevel" value="False" />
-          <Property name="Options">
-            <Property value="NMSString0x80.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/TREES.MBIN" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcExternalObjectFileList.xml">
-      <Property name="Id" value="EXTRALUSHTREESGr" />
-      <Property name="OnlyOnExtremeWeather" value="False" />
-      <Property name="OnlyOnExtremeSentinels" value="False" />
-      <Property name="OnlyOnCorruptSentinels" value="False" />
-      <Property name="OnlyOnDeepWater" value="False" />
-      <Property name="NotOnExtremePlanets" value="False" />
-      <Property name="NotOnStartPlanets" value="False" />
-      <Property name="NotOnWeirdPlanets" value="False" />
-      <Property name="NotOnDeadPlanets" value="True" />
-      <Property name="ForceOnSeasonStart" value="False" />
-      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
-        <Property name="Biome" value="Green" />
-      </Property>
-      <Property name="ProbabilityOfBeingActive" value="0.3" />
-      <Property name="MinFilesToChoose" value="1" />
-      <Property name="MaxFilesToChoose" value="1" />
-      <Property name="ExternalObjectFiles">
-        <Property value="GcExternalObjectListOptions.xml">
-          <Property name="Name" value="EXTRATREES" />
-          <Property name="ResourceHint" value="" />
-          <Property name="ResourceHintIcon" value="" />
-          <Property name="Probability" value="1" />
-          <Property name="SeasonalProbabilityOverride" value="1" />
-          <Property name="TileType" value="GcTerrainTileType.xml">
-            <Property name="TileType" value="Base" />
-          </Property>
-          <Property name="AllowLimiting" value="True" />
-          <Property name="ChooseUsingLifeLevel" value="False" />
-          <Property name="Options">
-            <Property value="NMSString0x80.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/TREES.MBIN" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcExternalObjectFileList.xml">
-      <Property name="Id" value="EXTRALUSHTREESBl" />
-      <Property name="OnlyOnExtremeWeather" value="False" />
-      <Property name="OnlyOnExtremeSentinels" value="False" />
-      <Property name="OnlyOnCorruptSentinels" value="False" />
-      <Property name="OnlyOnDeepWater" value="False" />
-      <Property name="NotOnExtremePlanets" value="False" />
-      <Property name="NotOnStartPlanets" value="False" />
-      <Property name="NotOnWeirdPlanets" value="False" />
-      <Property name="NotOnDeadPlanets" value="True" />
-      <Property name="ForceOnSeasonStart" value="False" />
-      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
-        <Property name="Biome" value="Blue" />
-      </Property>
-      <Property name="ProbabilityOfBeingActive" value="0.3" />
-      <Property name="MinFilesToChoose" value="1" />
-      <Property name="MaxFilesToChoose" value="1" />
-      <Property name="ExternalObjectFiles">
-        <Property value="GcExternalObjectListOptions.xml">
-          <Property name="Name" value="EXTRATREES" />
-          <Property name="ResourceHint" value="" />
-          <Property name="ResourceHintIcon" value="" />
-          <Property name="Probability" value="1" />
-          <Property name="SeasonalProbabilityOverride" value="1" />
-          <Property name="TileType" value="GcTerrainTileType.xml">
-            <Property name="TileType" value="Base" />
-          </Property>
-          <Property name="AllowLimiting" value="True" />
-          <Property name="ChooseUsingLifeLevel" value="False" />
-          <Property name="Options">
-            <Property value="NMSString0x80.xml">
-              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/TREES.MBIN" />
-            </Property>
-          </Property>
-        </Property>
-      </Property>
-    </Property>
-    <Property value="GcExternalObjectFileList.xml">
       <Property name="Id" value="WEATHERLUSH" />
       <Property name="OnlyOnExtremeWeather" value="False" />
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="False" />
       <Property name="NotOnWeirdPlanets" value="False" />
       <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="False" />
       <Property name="ForceOnSeasonStart" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="Lush" />
@@ -2077,10 +1365,12 @@
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="False" />
       <Property name="NotOnWeirdPlanets" value="False" />
       <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="False" />
       <Property name="ForceOnSeasonStart" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="Toxic" />
@@ -2114,10 +1404,12 @@
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="False" />
       <Property name="NotOnWeirdPlanets" value="False" />
       <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="False" />
       <Property name="ForceOnSeasonStart" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="Scorched" />
@@ -2151,10 +1443,12 @@
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="False" />
       <Property name="NotOnWeirdPlanets" value="False" />
       <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="False" />
       <Property name="ForceOnSeasonStart" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="Radioactive" />
@@ -2188,10 +1482,12 @@
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="False" />
       <Property name="NotOnWeirdPlanets" value="False" />
       <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="False" />
       <Property name="ForceOnSeasonStart" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="Frozen" />
@@ -2225,10 +1521,12 @@
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="False" />
       <Property name="NotOnWeirdPlanets" value="False" />
       <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="False" />
       <Property name="ForceOnSeasonStart" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="Barren" />
@@ -2262,10 +1560,12 @@
       <Property name="OnlyOnExtremeSentinels" value="True" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="True" />
       <Property name="NotOnWeirdPlanets" value="False" />
       <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="False" />
       <Property name="ForceOnSeasonStart" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="All" />
@@ -2299,10 +1599,12 @@
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="False" />
       <Property name="NotOnWeirdPlanets" value="False" />
       <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="False" />
       <Property name="ForceOnSeasonStart" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="All" />
@@ -2370,10 +1672,12 @@
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="False" />
       <Property name="NotOnWeirdPlanets" value="False" />
       <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="True" />
       <Property name="ForceOnSeasonStart" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="Frozen" />
@@ -2419,15 +1723,73 @@
       </Property>
     </Property>
     <Property value="GcExternalObjectFileList.xml">
+      <Property name="Id" value="FROZEN_INFEST" />
+      <Property name="OnlyOnExtremeWeather" value="False" />
+      <Property name="OnlyOnExtremeSentinels" value="False" />
+      <Property name="OnlyOnCorruptSentinels" value="False" />
+      <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="True" />
+      <Property name="NotOnExtremePlanets" value="False" />
+      <Property name="NotOnStartPlanets" value="False" />
+      <Property name="NotOnWeirdPlanets" value="False" />
+      <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="False" />
+      <Property name="ForceOnSeasonStart" value="False" />
+      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
+        <Property name="Biome" value="Frozen" />
+      </Property>
+      <Property name="ProbabilityOfBeingActive" value="1" />
+      <Property name="MinFilesToChoose" value="2" />
+      <Property name="MaxFilesToChoose" value="2" />
+      <Property name="ExternalObjectFiles">
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="FARMSNOW_INF" />
+          <Property name="ResourceHint" value="PLANT_SNOW" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="False" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/FROZENINFESTED.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="WILDSNOW" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/FROZENWILD.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectFileList.xml">
       <Property name="Id" value="TOXIC" />
       <Property name="OnlyOnExtremeWeather" value="False" />
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="False" />
       <Property name="NotOnWeirdPlanets" value="False" />
       <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="True" />
       <Property name="ForceOnSeasonStart" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="Toxic" />
@@ -2473,15 +1835,73 @@
       </Property>
     </Property>
     <Property value="GcExternalObjectFileList.xml">
+      <Property name="Id" value="TOXIC_INFEST" />
+      <Property name="OnlyOnExtremeWeather" value="False" />
+      <Property name="OnlyOnExtremeSentinels" value="False" />
+      <Property name="OnlyOnCorruptSentinels" value="False" />
+      <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="True" />
+      <Property name="NotOnExtremePlanets" value="False" />
+      <Property name="NotOnStartPlanets" value="False" />
+      <Property name="NotOnWeirdPlanets" value="False" />
+      <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="False" />
+      <Property name="ForceOnSeasonStart" value="False" />
+      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
+        <Property name="Biome" value="Toxic" />
+      </Property>
+      <Property name="ProbabilityOfBeingActive" value="1" />
+      <Property name="MinFilesToChoose" value="2" />
+      <Property name="MaxFilesToChoose" value="2" />
+      <Property name="ExternalObjectFiles">
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="FARMTOXIC_INF" />
+          <Property name="ResourceHint" value="PLANT_TOXIC" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="False" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/TOXICINFESTED.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="WILDTOXIC" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/TOXICWILD.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectFileList.xml">
       <Property name="Id" value="SCORCHED" />
       <Property name="OnlyOnExtremeWeather" value="False" />
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="False" />
       <Property name="NotOnWeirdPlanets" value="False" />
       <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="True" />
       <Property name="ForceOnSeasonStart" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="Scorched" />
@@ -2527,15 +1947,73 @@
       </Property>
     </Property>
     <Property value="GcExternalObjectFileList.xml">
+      <Property name="Id" value="SCORCHED_INFEST" />
+      <Property name="OnlyOnExtremeWeather" value="False" />
+      <Property name="OnlyOnExtremeSentinels" value="False" />
+      <Property name="OnlyOnCorruptSentinels" value="False" />
+      <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="True" />
+      <Property name="NotOnExtremePlanets" value="False" />
+      <Property name="NotOnStartPlanets" value="False" />
+      <Property name="NotOnWeirdPlanets" value="False" />
+      <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="False" />
+      <Property name="ForceOnSeasonStart" value="False" />
+      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
+        <Property name="Biome" value="Scorched" />
+      </Property>
+      <Property name="ProbabilityOfBeingActive" value="1" />
+      <Property name="MinFilesToChoose" value="2" />
+      <Property name="MaxFilesToChoose" value="2" />
+      <Property name="ExternalObjectFiles">
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="FARMSCORCH_INF" />
+          <Property name="ResourceHint" value="PLANT_HOT" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="False" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/SCORCHEDINFESTED.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="WILDSCORCH" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/SCORCHEDWILD.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectFileList.xml">
       <Property name="Id" value="RADIOACTIVE" />
       <Property name="OnlyOnExtremeWeather" value="False" />
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="False" />
       <Property name="NotOnWeirdPlanets" value="False" />
       <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="True" />
       <Property name="ForceOnSeasonStart" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="Radioactive" />
@@ -2581,15 +2059,73 @@
       </Property>
     </Property>
     <Property value="GcExternalObjectFileList.xml">
+      <Property name="Id" value="RADIOACTIVE_INF" />
+      <Property name="OnlyOnExtremeWeather" value="False" />
+      <Property name="OnlyOnExtremeSentinels" value="False" />
+      <Property name="OnlyOnCorruptSentinels" value="False" />
+      <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="True" />
+      <Property name="NotOnExtremePlanets" value="False" />
+      <Property name="NotOnStartPlanets" value="False" />
+      <Property name="NotOnWeirdPlanets" value="False" />
+      <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="False" />
+      <Property name="ForceOnSeasonStart" value="False" />
+      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
+        <Property name="Biome" value="Radioactive" />
+      </Property>
+      <Property name="ProbabilityOfBeingActive" value="1" />
+      <Property name="MinFilesToChoose" value="2" />
+      <Property name="MaxFilesToChoose" value="2" />
+      <Property name="ExternalObjectFiles">
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="FARMRAD_INF" />
+          <Property name="ResourceHint" value="PLANT_RADIO" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="False" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/RADIOACTIVEINFESTED.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="WILDRADIO" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/RADIOACTIVEWILD.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectFileList.xml">
       <Property name="Id" value="BARREN" />
       <Property name="OnlyOnExtremeWeather" value="False" />
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="False" />
       <Property name="NotOnWeirdPlanets" value="False" />
       <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="True" />
       <Property name="ForceOnSeasonStart" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="Barren" />
@@ -2635,15 +2171,73 @@
       </Property>
     </Property>
     <Property value="GcExternalObjectFileList.xml">
+      <Property name="Id" value="BARREN_INFEST" />
+      <Property name="OnlyOnExtremeWeather" value="False" />
+      <Property name="OnlyOnExtremeSentinels" value="False" />
+      <Property name="OnlyOnCorruptSentinels" value="False" />
+      <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="True" />
+      <Property name="NotOnExtremePlanets" value="False" />
+      <Property name="NotOnStartPlanets" value="False" />
+      <Property name="NotOnWeirdPlanets" value="False" />
+      <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="False" />
+      <Property name="ForceOnSeasonStart" value="False" />
+      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
+        <Property name="Biome" value="Barren" />
+      </Property>
+      <Property name="ProbabilityOfBeingActive" value="1" />
+      <Property name="MinFilesToChoose" value="2" />
+      <Property name="MaxFilesToChoose" value="2" />
+      <Property name="ExternalObjectFiles">
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="FARMBARREN_INF" />
+          <Property name="ResourceHint" value="PLANT_DUST" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="False" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/BARRENINFESTED.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="WILDBARREN" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/BARRENWILD.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectFileList.xml">
       <Property name="Id" value="LUSH" />
       <Property name="OnlyOnExtremeWeather" value="False" />
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="False" />
       <Property name="NotOnWeirdPlanets" value="False" />
       <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="True" />
       <Property name="ForceOnSeasonStart" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="Lush" />
@@ -2689,15 +2283,73 @@
       </Property>
     </Property>
     <Property value="GcExternalObjectFileList.xml">
+      <Property name="Id" value="LUSH_INFEST" />
+      <Property name="OnlyOnExtremeWeather" value="False" />
+      <Property name="OnlyOnExtremeSentinels" value="False" />
+      <Property name="OnlyOnCorruptSentinels" value="False" />
+      <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="True" />
+      <Property name="NotOnExtremePlanets" value="False" />
+      <Property name="NotOnStartPlanets" value="False" />
+      <Property name="NotOnWeirdPlanets" value="False" />
+      <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="False" />
+      <Property name="ForceOnSeasonStart" value="False" />
+      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
+        <Property name="Biome" value="Lush" />
+      </Property>
+      <Property name="ProbabilityOfBeingActive" value="1" />
+      <Property name="MinFilesToChoose" value="2" />
+      <Property name="MaxFilesToChoose" value="2" />
+      <Property name="ExternalObjectFiles">
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="FARMLUSH_INF" />
+          <Property name="ResourceHint" value="PLANT_LUSH" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="False" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/LUSHINFESTED.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="WILDLUSH" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/PLANT/LUSHWILD.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectFileList.xml">
       <Property name="Id" value="WILDPLANT_ALL" />
       <Property name="OnlyOnExtremeWeather" value="False" />
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="False" />
       <Property name="NotOnWeirdPlanets" value="False" />
       <Property name="NotOnDeadPlanets" value="True" />
+      <Property name="NotOnInfested" value="False" />
       <Property name="ForceOnSeasonStart" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="All" />
@@ -2731,10 +2383,12 @@
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="True" />
       <Property name="NotOnWeirdPlanets" value="False" />
       <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="False" />
       <Property name="ForceOnSeasonStart" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="Weird" />
@@ -2768,10 +2422,12 @@
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="True" />
       <Property name="NotOnWeirdPlanets" value="False" />
       <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="False" />
       <Property name="ForceOnSeasonStart" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="Red" />
@@ -2805,10 +2461,12 @@
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="True" />
       <Property name="NotOnWeirdPlanets" value="False" />
       <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="False" />
       <Property name="ForceOnSeasonStart" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="Green" />
@@ -2842,10 +2500,12 @@
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="True" />
       <Property name="NotOnWeirdPlanets" value="False" />
       <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="False" />
       <Property name="ForceOnSeasonStart" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="Blue" />
@@ -2879,10 +2539,12 @@
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="False" />
       <Property name="NotOnWeirdPlanets" value="False" />
       <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="False" />
       <Property name="ForceOnSeasonStart" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="All" />
@@ -2933,10 +2595,12 @@
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="False" />
       <Property name="NotOnWeirdPlanets" value="False" />
       <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="False" />
       <Property name="ForceOnSeasonStart" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="All" />
@@ -2970,10 +2634,12 @@
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="False" />
       <Property name="NotOnWeirdPlanets" value="False" />
       <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="False" />
       <Property name="ForceOnSeasonStart" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="Dead" />
@@ -3007,10 +2673,12 @@
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="True" />
       <Property name="NotOnWeirdPlanets" value="False" />
       <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="False" />
       <Property name="ForceOnSeasonStart" value="True" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="All" />
@@ -3044,10 +2712,12 @@
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="False" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="False" />
       <Property name="NotOnWeirdPlanets" value="True" />
       <Property name="NotOnDeadPlanets" value="True" />
+      <Property name="NotOnInfested" value="False" />
       <Property name="ForceOnSeasonStart" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="All" />
@@ -3081,10 +2751,12 @@
       <Property name="OnlyOnExtremeSentinels" value="False" />
       <Property name="OnlyOnCorruptSentinels" value="True" />
       <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
       <Property name="NotOnExtremePlanets" value="False" />
       <Property name="NotOnStartPlanets" value="False" />
       <Property name="NotOnWeirdPlanets" value="False" />
       <Property name="NotOnDeadPlanets" value="False" />
+      <Property name="NotOnInfested" value="False" />
       <Property name="ForceOnSeasonStart" value="False" />
       <Property name="OnlyOnBiome" value="GcBiomeType.xml">
         <Property name="Biome" value="All" />
@@ -3124,6 +2796,708 @@
           <Property name="Options">
             <Property value="NMSString0x80.xml">
               <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/OBJECTS/RARE/ROBOTHEADS.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectFileList.xml">
+      <Property name="Id" value="EXTRALUSHToxic" />
+      <Property name="OnlyOnExtremeWeather" value="False" />
+      <Property name="OnlyOnExtremeSentinels" value="False" />
+      <Property name="OnlyOnCorruptSentinels" value="False" />
+      <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
+      <Property name="NotOnExtremePlanets" value="False" />
+      <Property name="NotOnStartPlanets" value="False" />
+      <Property name="NotOnWeirdPlanets" value="False" />
+      <Property name="NotOnDeadPlanets" value="True" />
+      <Property name="NotOnInfested" value="False" />
+      <Property name="ForceOnSeasonStart" value="False" />
+      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
+        <Property name="Biome" value="Toxic" />
+      </Property>
+      <Property name="ProbabilityOfBeingActive" value="0.6" />
+      <Property name="MinFilesToChoose" value="1" />
+      <Property name="MaxFilesToChoose" value="1" />
+      <Property name="ExternalObjectFiles">
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="EXTRAGRASS" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/GRASS.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectFileList.xml">
+      <Property name="Id" value="EXTRALUSHScorche" />
+      <Property name="OnlyOnExtremeWeather" value="False" />
+      <Property name="OnlyOnExtremeSentinels" value="False" />
+      <Property name="OnlyOnCorruptSentinels" value="False" />
+      <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
+      <Property name="NotOnExtremePlanets" value="False" />
+      <Property name="NotOnStartPlanets" value="False" />
+      <Property name="NotOnWeirdPlanets" value="False" />
+      <Property name="NotOnDeadPlanets" value="True" />
+      <Property name="NotOnInfested" value="False" />
+      <Property name="ForceOnSeasonStart" value="False" />
+      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
+        <Property name="Biome" value="Scorched" />
+      </Property>
+      <Property name="ProbabilityOfBeingActive" value="0.6" />
+      <Property name="MinFilesToChoose" value="1" />
+      <Property name="MaxFilesToChoose" value="1" />
+      <Property name="ExternalObjectFiles">
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="EXTRAGRASS" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/GRASS.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectFileList.xml">
+      <Property name="Id" value="EXTRALUSHRadioac" />
+      <Property name="OnlyOnExtremeWeather" value="False" />
+      <Property name="OnlyOnExtremeSentinels" value="False" />
+      <Property name="OnlyOnCorruptSentinels" value="False" />
+      <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
+      <Property name="NotOnExtremePlanets" value="False" />
+      <Property name="NotOnStartPlanets" value="False" />
+      <Property name="NotOnWeirdPlanets" value="False" />
+      <Property name="NotOnDeadPlanets" value="True" />
+      <Property name="NotOnInfested" value="False" />
+      <Property name="ForceOnSeasonStart" value="False" />
+      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
+        <Property name="Biome" value="Radioactive" />
+      </Property>
+      <Property name="ProbabilityOfBeingActive" value="0.6" />
+      <Property name="MinFilesToChoose" value="1" />
+      <Property name="MaxFilesToChoose" value="1" />
+      <Property name="ExternalObjectFiles">
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="EXTRAGRASS" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/GRASS.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectFileList.xml">
+      <Property name="Id" value="EXTRALUSHFrozen" />
+      <Property name="OnlyOnExtremeWeather" value="False" />
+      <Property name="OnlyOnExtremeSentinels" value="False" />
+      <Property name="OnlyOnCorruptSentinels" value="False" />
+      <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
+      <Property name="NotOnExtremePlanets" value="False" />
+      <Property name="NotOnStartPlanets" value="False" />
+      <Property name="NotOnWeirdPlanets" value="False" />
+      <Property name="NotOnDeadPlanets" value="True" />
+      <Property name="NotOnInfested" value="False" />
+      <Property name="ForceOnSeasonStart" value="False" />
+      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
+        <Property name="Biome" value="Frozen" />
+      </Property>
+      <Property name="ProbabilityOfBeingActive" value="0.6" />
+      <Property name="MinFilesToChoose" value="1" />
+      <Property name="MaxFilesToChoose" value="1" />
+      <Property name="ExternalObjectFiles">
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="EXTRAGRASS" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/GRASS.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectFileList.xml">
+      <Property name="Id" value="EXTRALUSHBarren" />
+      <Property name="OnlyOnExtremeWeather" value="False" />
+      <Property name="OnlyOnExtremeSentinels" value="False" />
+      <Property name="OnlyOnCorruptSentinels" value="False" />
+      <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
+      <Property name="NotOnExtremePlanets" value="False" />
+      <Property name="NotOnStartPlanets" value="False" />
+      <Property name="NotOnWeirdPlanets" value="False" />
+      <Property name="NotOnDeadPlanets" value="True" />
+      <Property name="NotOnInfested" value="False" />
+      <Property name="ForceOnSeasonStart" value="False" />
+      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
+        <Property name="Biome" value="Barren" />
+      </Property>
+      <Property name="ProbabilityOfBeingActive" value="0.6" />
+      <Property name="MinFilesToChoose" value="1" />
+      <Property name="MaxFilesToChoose" value="1" />
+      <Property name="ExternalObjectFiles">
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="EXTRAGRASS" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/GRASS.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectFileList.xml">
+      <Property name="Id" value="EXTRALUSHWeird" />
+      <Property name="OnlyOnExtremeWeather" value="False" />
+      <Property name="OnlyOnExtremeSentinels" value="False" />
+      <Property name="OnlyOnCorruptSentinels" value="False" />
+      <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
+      <Property name="NotOnExtremePlanets" value="False" />
+      <Property name="NotOnStartPlanets" value="False" />
+      <Property name="NotOnWeirdPlanets" value="False" />
+      <Property name="NotOnDeadPlanets" value="True" />
+      <Property name="NotOnInfested" value="False" />
+      <Property name="ForceOnSeasonStart" value="False" />
+      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
+        <Property name="Biome" value="Weird" />
+      </Property>
+      <Property name="ProbabilityOfBeingActive" value="0.6" />
+      <Property name="MinFilesToChoose" value="1" />
+      <Property name="MaxFilesToChoose" value="1" />
+      <Property name="ExternalObjectFiles">
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="EXTRAGRASS" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/GRASS.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectFileList.xml">
+      <Property name="Id" value="EXTRALUSHRed" />
+      <Property name="OnlyOnExtremeWeather" value="False" />
+      <Property name="OnlyOnExtremeSentinels" value="False" />
+      <Property name="OnlyOnCorruptSentinels" value="False" />
+      <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
+      <Property name="NotOnExtremePlanets" value="False" />
+      <Property name="NotOnStartPlanets" value="False" />
+      <Property name="NotOnWeirdPlanets" value="False" />
+      <Property name="NotOnDeadPlanets" value="True" />
+      <Property name="NotOnInfested" value="False" />
+      <Property name="ForceOnSeasonStart" value="False" />
+      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
+        <Property name="Biome" value="Red" />
+      </Property>
+      <Property name="ProbabilityOfBeingActive" value="0.6" />
+      <Property name="MinFilesToChoose" value="1" />
+      <Property name="MaxFilesToChoose" value="1" />
+      <Property name="ExternalObjectFiles">
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="EXTRAGRASS" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/GRASS.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectFileList.xml">
+      <Property name="Id" value="EXTRALUSHGreen" />
+      <Property name="OnlyOnExtremeWeather" value="False" />
+      <Property name="OnlyOnExtremeSentinels" value="False" />
+      <Property name="OnlyOnCorruptSentinels" value="False" />
+      <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
+      <Property name="NotOnExtremePlanets" value="False" />
+      <Property name="NotOnStartPlanets" value="False" />
+      <Property name="NotOnWeirdPlanets" value="False" />
+      <Property name="NotOnDeadPlanets" value="True" />
+      <Property name="NotOnInfested" value="False" />
+      <Property name="ForceOnSeasonStart" value="False" />
+      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
+        <Property name="Biome" value="Green" />
+      </Property>
+      <Property name="ProbabilityOfBeingActive" value="0.6" />
+      <Property name="MinFilesToChoose" value="1" />
+      <Property name="MaxFilesToChoose" value="1" />
+      <Property name="ExternalObjectFiles">
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="EXTRAGRASS" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/GRASS.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectFileList.xml">
+      <Property name="Id" value="EXTRALUSHBlue" />
+      <Property name="OnlyOnExtremeWeather" value="False" />
+      <Property name="OnlyOnExtremeSentinels" value="False" />
+      <Property name="OnlyOnCorruptSentinels" value="False" />
+      <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
+      <Property name="NotOnExtremePlanets" value="False" />
+      <Property name="NotOnStartPlanets" value="False" />
+      <Property name="NotOnWeirdPlanets" value="False" />
+      <Property name="NotOnDeadPlanets" value="True" />
+      <Property name="NotOnInfested" value="False" />
+      <Property name="ForceOnSeasonStart" value="False" />
+      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
+        <Property name="Biome" value="Blue" />
+      </Property>
+      <Property name="ProbabilityOfBeingActive" value="0.6" />
+      <Property name="MinFilesToChoose" value="1" />
+      <Property name="MaxFilesToChoose" value="1" />
+      <Property name="ExternalObjectFiles">
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="EXTRAGRASS" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/GRASS.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectFileList.xml">
+      <Property name="Id" value="EXTRALUSHTREESTo" />
+      <Property name="OnlyOnExtremeWeather" value="False" />
+      <Property name="OnlyOnExtremeSentinels" value="False" />
+      <Property name="OnlyOnCorruptSentinels" value="False" />
+      <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
+      <Property name="NotOnExtremePlanets" value="False" />
+      <Property name="NotOnStartPlanets" value="False" />
+      <Property name="NotOnWeirdPlanets" value="False" />
+      <Property name="NotOnDeadPlanets" value="True" />
+      <Property name="NotOnInfested" value="False" />
+      <Property name="ForceOnSeasonStart" value="False" />
+      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
+        <Property name="Biome" value="Toxic" />
+      </Property>
+      <Property name="ProbabilityOfBeingActive" value="0.3" />
+      <Property name="MinFilesToChoose" value="1" />
+      <Property name="MaxFilesToChoose" value="1" />
+      <Property name="ExternalObjectFiles">
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="EXTRATREES" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/TREES.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectFileList.xml">
+      <Property name="Id" value="EXTRALUSHTREESSc" />
+      <Property name="OnlyOnExtremeWeather" value="False" />
+      <Property name="OnlyOnExtremeSentinels" value="False" />
+      <Property name="OnlyOnCorruptSentinels" value="False" />
+      <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
+      <Property name="NotOnExtremePlanets" value="False" />
+      <Property name="NotOnStartPlanets" value="False" />
+      <Property name="NotOnWeirdPlanets" value="False" />
+      <Property name="NotOnDeadPlanets" value="True" />
+      <Property name="NotOnInfested" value="False" />
+      <Property name="ForceOnSeasonStart" value="False" />
+      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
+        <Property name="Biome" value="Scorched" />
+      </Property>
+      <Property name="ProbabilityOfBeingActive" value="0.3" />
+      <Property name="MinFilesToChoose" value="1" />
+      <Property name="MaxFilesToChoose" value="1" />
+      <Property name="ExternalObjectFiles">
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="EXTRATREES" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/TREES.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectFileList.xml">
+      <Property name="Id" value="EXTRALUSHTREESRa" />
+      <Property name="OnlyOnExtremeWeather" value="False" />
+      <Property name="OnlyOnExtremeSentinels" value="False" />
+      <Property name="OnlyOnCorruptSentinels" value="False" />
+      <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
+      <Property name="NotOnExtremePlanets" value="False" />
+      <Property name="NotOnStartPlanets" value="False" />
+      <Property name="NotOnWeirdPlanets" value="False" />
+      <Property name="NotOnDeadPlanets" value="True" />
+      <Property name="NotOnInfested" value="False" />
+      <Property name="ForceOnSeasonStart" value="False" />
+      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
+        <Property name="Biome" value="Radioactive" />
+      </Property>
+      <Property name="ProbabilityOfBeingActive" value="0.3" />
+      <Property name="MinFilesToChoose" value="1" />
+      <Property name="MaxFilesToChoose" value="1" />
+      <Property name="ExternalObjectFiles">
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="EXTRATREES" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/TREES.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectFileList.xml">
+      <Property name="Id" value="EXTRALUSHTREESFr" />
+      <Property name="OnlyOnExtremeWeather" value="False" />
+      <Property name="OnlyOnExtremeSentinels" value="False" />
+      <Property name="OnlyOnCorruptSentinels" value="False" />
+      <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
+      <Property name="NotOnExtremePlanets" value="False" />
+      <Property name="NotOnStartPlanets" value="False" />
+      <Property name="NotOnWeirdPlanets" value="False" />
+      <Property name="NotOnDeadPlanets" value="True" />
+      <Property name="NotOnInfested" value="False" />
+      <Property name="ForceOnSeasonStart" value="False" />
+      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
+        <Property name="Biome" value="Frozen" />
+      </Property>
+      <Property name="ProbabilityOfBeingActive" value="0.3" />
+      <Property name="MinFilesToChoose" value="1" />
+      <Property name="MaxFilesToChoose" value="1" />
+      <Property name="ExternalObjectFiles">
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="EXTRATREES" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/TREES.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectFileList.xml">
+      <Property name="Id" value="EXTRALUSHTREESBa" />
+      <Property name="OnlyOnExtremeWeather" value="False" />
+      <Property name="OnlyOnExtremeSentinels" value="False" />
+      <Property name="OnlyOnCorruptSentinels" value="False" />
+      <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
+      <Property name="NotOnExtremePlanets" value="False" />
+      <Property name="NotOnStartPlanets" value="False" />
+      <Property name="NotOnWeirdPlanets" value="False" />
+      <Property name="NotOnDeadPlanets" value="True" />
+      <Property name="NotOnInfested" value="False" />
+      <Property name="ForceOnSeasonStart" value="False" />
+      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
+        <Property name="Biome" value="Barren" />
+      </Property>
+      <Property name="ProbabilityOfBeingActive" value="0.3" />
+      <Property name="MinFilesToChoose" value="1" />
+      <Property name="MaxFilesToChoose" value="1" />
+      <Property name="ExternalObjectFiles">
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="EXTRATREES" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/TREES.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectFileList.xml">
+      <Property name="Id" value="EXTRALUSHTREESWe" />
+      <Property name="OnlyOnExtremeWeather" value="False" />
+      <Property name="OnlyOnExtremeSentinels" value="False" />
+      <Property name="OnlyOnCorruptSentinels" value="False" />
+      <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
+      <Property name="NotOnExtremePlanets" value="False" />
+      <Property name="NotOnStartPlanets" value="False" />
+      <Property name="NotOnWeirdPlanets" value="False" />
+      <Property name="NotOnDeadPlanets" value="True" />
+      <Property name="NotOnInfested" value="False" />
+      <Property name="ForceOnSeasonStart" value="False" />
+      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
+        <Property name="Biome" value="Weird" />
+      </Property>
+      <Property name="ProbabilityOfBeingActive" value="0.3" />
+      <Property name="MinFilesToChoose" value="1" />
+      <Property name="MaxFilesToChoose" value="1" />
+      <Property name="ExternalObjectFiles">
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="EXTRATREES" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/TREES.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectFileList.xml">
+      <Property name="Id" value="EXTRALUSHTREESRe" />
+      <Property name="OnlyOnExtremeWeather" value="False" />
+      <Property name="OnlyOnExtremeSentinels" value="False" />
+      <Property name="OnlyOnCorruptSentinels" value="False" />
+      <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
+      <Property name="NotOnExtremePlanets" value="False" />
+      <Property name="NotOnStartPlanets" value="False" />
+      <Property name="NotOnWeirdPlanets" value="False" />
+      <Property name="NotOnDeadPlanets" value="True" />
+      <Property name="NotOnInfested" value="False" />
+      <Property name="ForceOnSeasonStart" value="False" />
+      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
+        <Property name="Biome" value="Red" />
+      </Property>
+      <Property name="ProbabilityOfBeingActive" value="0.3" />
+      <Property name="MinFilesToChoose" value="1" />
+      <Property name="MaxFilesToChoose" value="1" />
+      <Property name="ExternalObjectFiles">
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="EXTRATREES" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/TREES.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectFileList.xml">
+      <Property name="Id" value="EXTRALUSHTREESGr" />
+      <Property name="OnlyOnExtremeWeather" value="False" />
+      <Property name="OnlyOnExtremeSentinels" value="False" />
+      <Property name="OnlyOnCorruptSentinels" value="False" />
+      <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
+      <Property name="NotOnExtremePlanets" value="False" />
+      <Property name="NotOnStartPlanets" value="False" />
+      <Property name="NotOnWeirdPlanets" value="False" />
+      <Property name="NotOnDeadPlanets" value="True" />
+      <Property name="NotOnInfested" value="False" />
+      <Property name="ForceOnSeasonStart" value="False" />
+      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
+        <Property name="Biome" value="Green" />
+      </Property>
+      <Property name="ProbabilityOfBeingActive" value="0.3" />
+      <Property name="MinFilesToChoose" value="1" />
+      <Property name="MaxFilesToChoose" value="1" />
+      <Property name="ExternalObjectFiles">
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="EXTRATREES" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/TREES.MBIN" />
+            </Property>
+          </Property>
+        </Property>
+      </Property>
+    </Property>
+    <Property value="GcExternalObjectFileList.xml">
+      <Property name="Id" value="EXTRALUSHTREESBl" />
+      <Property name="OnlyOnExtremeWeather" value="False" />
+      <Property name="OnlyOnExtremeSentinels" value="False" />
+      <Property name="OnlyOnCorruptSentinels" value="False" />
+      <Property name="OnlyOnDeepWater" value="False" />
+      <Property name="OnlyOnInfested" value="False" />
+      <Property name="NotOnExtremePlanets" value="False" />
+      <Property name="NotOnStartPlanets" value="False" />
+      <Property name="NotOnWeirdPlanets" value="False" />
+      <Property name="NotOnDeadPlanets" value="True" />
+      <Property name="NotOnInfested" value="False" />
+      <Property name="ForceOnSeasonStart" value="False" />
+      <Property name="OnlyOnBiome" value="GcBiomeType.xml">
+        <Property name="Biome" value="Blue" />
+      </Property>
+      <Property name="ProbabilityOfBeingActive" value="0.3" />
+      <Property name="MinFilesToChoose" value="1" />
+      <Property name="MaxFilesToChoose" value="1" />
+      <Property name="ExternalObjectFiles">
+        <Property value="GcExternalObjectListOptions.xml">
+          <Property name="Name" value="EXTRATREES" />
+          <Property name="ResourceHint" value="" />
+          <Property name="ResourceHintIcon" value="" />
+          <Property name="Probability" value="1" />
+          <Property name="SeasonalProbabilityOverride" value="1" />
+          <Property name="TileType" value="GcTerrainTileType.xml">
+            <Property name="TileType" value="Base" />
+          </Property>
+          <Property name="AllowLimiting" value="True" />
+          <Property name="ChooseUsingLifeLevel" value="False" />
+          <Property name="Options">
+            <Property value="NMSString0x80.xml">
+              <Property name="Value" value="METADATA/SIMULATION/SOLARSYSTEM/BIOMES/MB/LUSHEXTRA/TREES.MBIN" />
             </Property>
           </Property>
         </Property>

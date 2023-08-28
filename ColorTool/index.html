@@ -114,6 +114,26 @@
 		console.log(value)
 	}
 
+
+	var GenerateDimensionalArray = function(){
+		var array = [];
+		for(var i = 0; i< 2048; i++){
+			array[i] = {"x":parseFloat((Math.random()*2-1).toFixed(5)), "y":parseFloat((Math.random()*2-1).toFixed(5)), "z":parseFloat((Math.random()*2-1).toFixed(5))};
+		}
+		console.log(JSON.stringify(array));
+	}
+
+	var GenerateBiDimensionalArray = function(){
+		var array = [];
+		for(var i = 0; i< 512; i++){
+			array[i] = [];
+			for(var k = 0; k< 512; k++){
+				array[i][k] = {"x":parseFloat((Math.random()*2-1).toFixed(5)), "y":parseFloat((Math.random()*2-1).toFixed(5)), "z":parseFloat((Math.random()*2-1).toFixed(5))};
+			}
+		}
+		console.log(JSON.stringify(array));
+	}
+
 	var main = function () {
 		let firstHeader = "";
 		mainContainer.innerHTML = "";
@@ -159,6 +179,8 @@
 		<input id="min-value-input" value="0.2">MIN</input>
 		<input id="random-value-input" value="0.2">RANDOM</input>
 		<button onclick="replace()">REPLACE RANDOM!</button>
+		<button onclick="GenerateDimensionalArray()">CreateRandomArray</button>
+		<button onclick="GenerateBiDimensionalArray()">CreateDoubleRandomArray</button>
 	</div>
 	<div id="mainContainer">
 		
